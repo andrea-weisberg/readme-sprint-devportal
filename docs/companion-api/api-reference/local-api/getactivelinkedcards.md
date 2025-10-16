@@ -13,11 +13,11 @@ original_path: companion-api/api-reference/local-api
 <li>Session-Id=Encrypted AES Key e-g (AB521456236KHU52) is required if encryption is needed and the campaign is configured for encryption of sensitive data.</li>
 <li>This is optional if encryption is not needed and the campaign is not configured for encryption of sensitive data.</li>
 </ul>
-<p>You can read more on how our Secure API&#8217;s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a>.</p>
+<p>You can read more on how our Secure API’s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a>.</p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -32,7 +32,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -67,29 +67,8 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodcall>
-```
 
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| cards | Array | <p>Array of structs containing card data.</p> <p>Will contain encrypted fields (CVV2, card number and expiry date) and an IV key (using which fields are encrypted) for each entry of card in the array.</p> |
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| resultText | String | <p>Text indicating transaction result.</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <methodresponse>
   <params>
     <param>
@@ -162,12 +141,141 @@ original_path: companion-api/api-reference/local-api
     </param>
   </params>
 </methodresponse>
+
 ```
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| cards | Array | <p>Array of structs containing card data.</p> <p>Will contain encrypted fields (CVV2, card number and expiry date) and an IV key (using which fields are encrypted) for each entry of card in the array.</p> |
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+| resultText | String | <p>Text indicating transaction result.</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<methodcall>
+    <methodname>GetActiveLinkedCards</methodname>
+    <params>
+        <param>
+            <value>
+                <string>0014682067</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>TTKTEST</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>123456</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <datetime.iso8601>20200327T00:00:00</datetime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>B6942BA5F98449F067A3C7EC17E7B20545EF2B44</string>
+            </value>
+        </param>
+    </params>
+</methodcall>
+
+```,```xml
+<methodresponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>resultCode</name>
+            <value>
+              <int>1</int>
+            </value>
+          </member>
+          <member>
+            <name>resultText</name>
+            <value>
+              <string>Approved</string>
+            </value>
+          </member>
+          <member>
+            <name>cards</name>
+            <value>
+              <array>
+                <data>
+                  <value>
+                    <struct>
+                      <member>
+                        <name>cvv2</name>
+                        <value>
+                          <string>H524IK</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>cardNumber</name>
+                        <value>
+                          <string>GHT52789BNHP52F</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>validDate</name>
+                        <value>
+                          <string>10/22</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>expiryDate</name>
+                        <value>
+                          <string>HY98PMDEFR63254NMHA:GT5:6PLX</string> //expiry date
+                          
+                        </value>
+                      </member>
+                      <member>
+                        <name>trackingNumber</name>
+                        <value>
+                          <string>189469100000008</string>
+                        </value>
+                      </member>
+                      <member>
+                        <name>IV</name>
+                        <value>
+                          <string>GTYM521PL98THB72156HTBD5H</string>
+                        </value>
+                      </member>
+                    </struct>
+                  </value>
+                </data>
+              </array>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodresponse>
+
+```
+
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

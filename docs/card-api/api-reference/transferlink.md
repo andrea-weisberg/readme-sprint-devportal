@@ -10,7 +10,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -27,7 +27,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -73,35 +73,8 @@ original_path: card-api/api-reference
         </param>
     </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| terminalID | String | <p>The Paymentology issued terminal ID of the terminal requesting the transaction</p> |
-| customerReference | String | <p>The user defined reference to the card; for example a member id or wallet number</p> |
-| trackingNumberFrom | String | <p>Tracking number of the card being transferred FROM</p> |
-| trackingNumberTo | String | <p>Tracking number of the card being transferred TO. This parameter can’t be empty for this call</p> |
-| transactionID | String | <p>Client generated Transaction ID to assist in identify transactions on the client side</p> |
-| transactionDate | Date | <p>Client generated / local Transaction Date to assist in identifying transactions on the client side</p> |
-| resultText | String | <p>Result text whether its approved or not</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
     <params>
@@ -167,13 +140,152 @@ original_path: card-api/api-reference
         </param>
     </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+| terminalID | String | <p>The Paymentology issued terminal ID of the terminal requesting the transaction</p> |
+| customerReference | String | <p>The user defined reference to the card; for example a member id or wallet number</p> |
+| trackingNumberFrom | String | <p>Tracking number of the card being transferred FROM</p> |
+| trackingNumberTo | String | <p>Tracking number of the card being transferred TO. This parameter can’t be empty for this call</p> |
+| transactionID | String | <p>Client generated Transaction ID to assist in identify transactions on the client side</p> |
+| transactionDate | Date | <p>Client generated / local Transaction Date to assist in identifying transactions on the client side</p> |
+| resultText | String | <p>Result text whether its approved or not</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodCall>
+    <methodName>TransferLink</methodName>
+    <params>
+        <param>
+            <value>
+                <string>0028117378</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>customerref</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>528823600000002</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>903721101215894</string>
+            </value>
+        </param>
+                <param>
+            <value>
+                <string>4093920</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20110715T12:54:56</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>800792A6D9BFD31FC93135525AEEDA1D2837B56E</string>
+            </value>
+        </param>
+    </params>
+</methodCall>
+
+```,```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>terminalID</name>
+                        <value>
+                            <string>0028117378</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>customerReference</name>
+                        <value>
+                            <string>customerref</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>Approved</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>trackingNumberTo</name>
+                        <value>
+                            <string>903721101215894</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>transactionDate</name>
+                        <value>
+                            <dateTime.iso8601>20110715T12:54:56</dateTime.iso8601>
+                        </value>
+                    </member>
+                    <member>
+                        <name>servertransactionID</name>
+                        <value>
+                            <int>8DC650C7-F53C-5B1D-C89CAD741E93714B</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>transactionID</name>
+                        <value>
+                            <string>4093920</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>trackingNumberFrom</name>
+                        <value>
+                            <string>528823600000002</string>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API Menu</a></p>

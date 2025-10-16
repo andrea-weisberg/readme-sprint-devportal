@@ -10,7 +10,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -35,7 +35,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -121,28 +121,8 @@ original_path: companion-api/api-reference/local-api
         </param>
         </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
 <params>
@@ -166,9 +146,139 @@ original_path: companion-api/api-reference/local-api
     </param>
 </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0"?>
+<methodCall>
+    <methodName>PrintLinkedCard</methodName>
+    <params>
+        <param>
+            <value>
+                <string>0086762020</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>Mr</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>TEST1</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>Name2</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>ADDRESS1</string>
+                    </value>
+        </param>
+        <param>
+            <value>
+                <string>ADDRESS2</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>ADDRESS3</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>ADDRESS4</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>ADDRESS5</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>additionaldata</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>011-12345678</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>387692800000061</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>transactionid</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20200916T17:18:07</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>DD061EEAE753447EEF198714B18DE32A67D4145E</string>
+            </value>
+        </param>
+        </params>
+</methodCall>
+
+```,```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+<params>
+    <param>
+        <value>
+            <struct>
+                <member>
+                    <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                </member>
+                <member>
+                    <name>resultText</name>
+                        <value>
+                            <string>Approved</string>
+                        </value>
+                </member>
+             </struct>
+         </value>
+    </param>
+</params>
+</methodResponse>
+
+```
+
+<p> </p>
 
 
 

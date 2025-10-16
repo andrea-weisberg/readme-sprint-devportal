@@ -10,7 +10,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -28,7 +28,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -78,28 +78,8 @@ original_path: card-api/api-reference
     </param>
   </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <methodResponse>
     <params>
         <param>
@@ -116,13 +96,100 @@ original_path: card-api/api-reference
         </param>
     </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?><methodCall>
+<methodName>ToggleVoucherFeature</methodName>
+  <params>
+    <param>
+      <value>
+        <string>TID</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>b12b3a45-f678-4f98-b076-a54c1a32ccd1</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>443218987654321</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>PHYSICAL_CARD_DISABLED</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <int>0</int>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>4f012b3a3d456d2ba789b8dcadf2ccf9</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <dateTime.iso8601>20230721T23:54:28</dateTime.iso8601>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>CHECKSUM</string>
+      </value>
+    </param>
+  </params>
+</methodCall>
+
+```,```xml
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API Menu</a></p>

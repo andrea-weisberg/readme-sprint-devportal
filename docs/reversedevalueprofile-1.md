@@ -9,7 +9,7 @@ metadata:
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -20,7 +20,7 @@ metadata:
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -76,13 +76,14 @@ metadata:
     </param>
   </params>
 </methodCall>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
 
 
 #### Response schema
@@ -102,13 +103,13 @@ metadata:
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
 
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API menu</a></p>

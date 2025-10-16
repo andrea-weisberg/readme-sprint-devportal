@@ -10,7 +10,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -28,7 +28,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -78,28 +78,8 @@ original_path: companion-api/api-reference/local-api
     </param>
   </params>
 </methodCall>
-```
 
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| resultText | String | <p>Status text indicating transaction result</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <methodResponse>
     <params>
         <param>
@@ -122,12 +102,105 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodResponse>
+
 ```
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+| resultText | String | <p>Status text indicating transaction result</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<methodCall>
+  <methodName>ToggleVoucherFeature</methodName>
+  <params>
+    <param>
+      <value>
+        <string>123456789</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>Demo Ref</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>123456789</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>13245678</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <boolean>1</boolean>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>2321345</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <dateTime.iso8601>20191007T00:00:00</dateTime.iso8601>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>B2D78C6F5710AC56E8899A23E4FE6D20975576B5</string>
+      </value>
+    </param>
+  </params>
+</methodCall>
+
+```,```xml
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>OK</string>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
+```
+
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to  Local API MENU</a></p>

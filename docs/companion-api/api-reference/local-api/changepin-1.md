@@ -6,17 +6,17 @@ metadata:
   robots: index
 original_path: companion-api/api-reference/local-api
 ---
-<p>Change the specified card&#8217;s PIN.</p>
+<p>Change the specified card’s PIN.</p>
 <p><strong>IMPORTANT:</strong></p>
 <p><span style="color: #ff0000;"><strong>This API method contains PCI sensitive information.</strong></span></p>
 <ul>
 <li>Session-Id=Encrypted AES Key e-g (AB521456236KHU52) is required for encryption of sensitive data.</li>
 </ul>
-<p>You can read more on how our Secure API&#8217;s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a>.</p>
+<p>You can read more on how our Secure API’s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a>.</p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -34,7 +34,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -84,28 +84,8 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodCall>
-```
 
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| resultText | String | <p>Text indicating transaction result.</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <methodResponse>
     <params>
         <param>
@@ -128,12 +108,105 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodResponse>
+
 ```
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+| resultText | String | <p>Text indicating transaction result.</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<methodCall>
+    <methodName>ChangePin</methodName>
+    <params>
+        <param>
+            <value>
+                <string>0014682067</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>TESTTTK</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>4987057272502351</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>GB65YU</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string> GHT67KMJ983UJGB678TGEW</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>123456</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20200327T00:00:00</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>07B15A4A5D7E9DCB1F96094C2F011AD51CD6364A</string>
+            </value>
+        </param>
+    </params>
+</methodCall>
+
+```,```xml
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>Approved</string>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
+```
+
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

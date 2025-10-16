@@ -49,16 +49,16 @@ original_path: get-started
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><span style="font-weight: 400;">Whenever a transaction is undertaken for a card, all its associated settings are run through the Client Management System to determine their efficacy. For example, the system establishes whether it’s a Card or Companion model, if it’s 3DS or tokenization enabled, or its fees setup. </span></p>
-<p>&nbsp;</p>
+<p> </p>
 <p><span style="font-weight: 400;">Here is an illustration that shows how Paymentology manages clients’ cards programs on the Sprint platform:</span></p>
-<p>&nbsp;</p>
+<p> </p>
 <p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2346" src="https://developer.sprint.paymentology.com/wp-content/uploads/2021/09/Campaigns.png" alt="Card program management" width="1280" height="720" srcset="https://developer.sprint.paymentology.com/wp-content/uploads/2021/09/Campaigns.png 1280w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/09/Campaigns-300x169.png 300w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/09/Campaigns-1024x576.png 1024w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/09/Campaigns-768x432.png 768w" sizes="auto, (max-width: 1280px) 100vw, 1280px" /></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p> </p>
+<p> </p>
 <p><span style="font-weight: 400;">Let’s explain how it works:</span></p>
 <ul>
 <li><b>Client</b><span style="font-weight: 400;"><br />
@@ -66,10 +66,10 @@ original_path: get-started
 <li aria-level="1"><b>Program</b><b><br />
 </b><span style="font-weight: 400;">These are records that define the parameters of the product that Paymentology has sold to the client. </span></li>
 </ul>
-<p>&nbsp;</p>
+<p> </p>
 <p><span style="font-weight: 400;">A client can have more than 1 program linked to them and these will be managed accordingly:</span></p>
 <ul>
 <li><b>Multiple settings—</b><span style="font-weight: 400;">these are used for tracking different product types, such as virtual cards, physical cards and Digital First cards. They can be set up with different merchants (or partners), multiple VISA SREs’ and multiple BINs (one BIN per setting). The settings can also vary from one card to another, such as different spend limits, different MCCs and multiple reports per setting. They are applied for medium to large clients. These settings are billed individually per setting. </span></li>
 <li aria-level="1"><b>Single settings—</b><span style="font-weight: 400;">these are used to manage single card programs, such as one BIN, one VISA SRE, for small to medium clients. They are also billed individually per setting. </span></li>
 </ul>
-<p>&nbsp;</p>
+<p> </p>

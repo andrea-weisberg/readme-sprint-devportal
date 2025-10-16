@@ -8,11 +8,11 @@ original_path: companion-api/manage-funds
 ---
 <p><span style="font-weight: 400;">Automated Fuel Dispensers (AFD) are unattended terminals at fuel stations that allow cardholders to purchase fuel without requiring an attendant. The emergence of AFD transactions has revolutionized the fuel purchase industry and greatly benefitted both merchants and customers.</span></p>
 <p><span style="font-weight: 400;">In the past, fueling was a tedious process—an attendant had to manually pump the requested amount of fuel, usually resulting in lines and customer queues. However, AFDs has turned this around—no more direct engagements with staff and other time-consuming hassles.</span></p>
-<p><span style="font-weight: 400;">With Paymentology Sprint&#8217;s support for AFD transactions, you can make payments</span><span style="font-weight: 400;"> for your cardholders </span><span style="font-weight: 400;">at the pump painless, fast, and secure.</span></p>
+<p><span style="font-weight: 400;">With Paymentology Sprint’s support for AFD transactions, you can make payments</span><span style="font-weight: 400;"> for your cardholders </span><span style="font-weight: 400;">at the pump painless, fast, and secure.</span></p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2><b>Benefits of AFD Transactions</b></h2>
@@ -40,7 +40,7 @@ original_path: companion-api/manage-funds
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2><b>Best Practices For AFD Transactions</b></h2>
@@ -52,7 +52,7 @@ original_path: companion-api/manage-funds
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>AFD Transactions Flow</h2>

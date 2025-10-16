@@ -11,7 +11,7 @@ original_path: profile-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -28,7 +28,7 @@ original_path: profile-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -74,27 +74,8 @@ original_path: profile-api-reference
     </param>
   </params>
 </methodCall>
-```
 
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | String | <p>Status code indicating transaction result.</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <?xml version=""1.0"" encoding=""UTF-8""?>
 <methodResponse>
   <params>
@@ -118,9 +99,98 @@ original_path: profile-api-reference
     </param>
   </params>
 </methodResponse>
+
 ```
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | String | <p>Status code indicating transaction result.</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version=""1.0""?>
+<methodCall>
+  <methodName>TransferLink</methodName>
+  <params>
+    <param>
+      <value>
+        <string>0014682067</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>TESTTTK</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>5267262238630233</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>5267262930751857</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>123456</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <dateTime.iso8601>20200327T00:00:00</dateTime.iso8601>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>B96AFC35F3C59A6B89575CA70C32948CBDEE0F41</string>
+      </value>
+    </param>
+  </params>
+</methodCall>
+
+```,```xml
+<?xml version=""1.0"" encoding=""UTF-8""?>
+<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>resultCode</name>
+            <value>
+              <int>1</int>
+            </value>
+          </member>
+          <member>
+            <name>resultText</name>
+            <value>
+              <string>Approved</string>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>
+
+```
+
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}

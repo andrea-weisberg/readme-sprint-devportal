@@ -10,7 +10,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -29,7 +29,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -84,28 +84,8 @@ original_path: companion-api/api-reference/local-api
                 </param>
             </params>
         </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <methodResponse>
             <params>
                 <param>
@@ -128,13 +108,111 @@ original_path: companion-api/api-reference/local-api
                 </param>
             </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<methodCall>
+            <methodName>DeleteToken</methodName>
+            <params>
+                <param>
+                    <value>
+                        <string>0020787431</string>
+                    </value>
+                </param>
+                <param>
+                    <value>
+                        <string>Cyp001</string>
+                    </value>
+                </param>
+                <param>
+                    <value>
+                        <string>156554700000004</string>
+                    </value>
+                </param>
+                <param>
+                    <value>
+                        <string>DWSPMC00000000010906a349d9ca4eb1a4d53e3c90a11d9c</string>
+                    </value>
+                </param>
+                <param>
+                    <value>
+                        <int>1</int>
+                    </value>
+                </param>
+                <param>
+                    <value>
+                        <string>Card no longer in use</string>
+                    </value>
+                </param>
+                <param>
+                    <value>
+                        <string>fb8344c9-2fc9-467b-87e4-55eaf88d06f1</string>
+                    </value>
+                </param>
+                <param>
+                    <value>
+                        <dateTime.iso8601>20200101T09:00:00</dateTime.iso8601>
+                    </value>
+                </param>
+                <param>
+                    <value>
+                        <string>8D727BA9D567CB695FF17FDDE935F1AC1978E292</string>
+                    </value>
+                </param>
+            </params>
+        </methodCall>
+
+```,```xml
+<methodResponse>
+            <params>
+                <param>
+                    <value>
+                        <struct>
+                            <member>
+                                <name>resultCode</name>
+                                <value>
+                                    <int>1</int>
+                                </value>
+                            </member>
+                            <member>
+                                <name>resultText</name>
+                                <value>
+                                    <string>OK</string>
+                                </value>
+                            </member>
+                        </struct>
+                    </value>
+                </param>
+            </params>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

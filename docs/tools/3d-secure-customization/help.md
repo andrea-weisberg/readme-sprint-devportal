@@ -12,7 +12,7 @@ original_path: tools/3d-secure-customization
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>How to use the 3D Secure Screen Customization tool</h2>
@@ -44,14 +44,14 @@ original_path: tools/3d-secure-customization
 </ol>
 <p><b>Error Screen</b></p>
 <ol>
-<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">The error screen is displayed to the user when a system error occurs during the payment authentication process. Enter a name for this message in the &#8220;Title&#8221; box. </span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">The error screen is displayed to the user when a system error occurs during the payment authentication process. Enter a name for this message in the “Title” box. </span></li>
 <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Enter the text for the message in the “Main text” box.</span></li>
 <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Enter the text to direct the cardholder towards your support channels and provide contact details.</span></li>
 </ol>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>How to submit your file</h2>

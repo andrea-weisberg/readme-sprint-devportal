@@ -16,7 +16,7 @@ original_path: card-api/tokenization
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2><b>Tokenization Participants</b></h2>
@@ -24,6 +24,6 @@ original_path: card-api/tokenization
 <ul>
 <li aria-level="1"><b>Cardholder</b> – owns the payment card to be tokenized. Cardholders give their card details to a payment service provider, which then requests the card network to issue a token for the card.</li>
 <li aria-level="1"><b>Payment service provider</b> – (such as an online retailer or a digital wallet) requests and stores tokens for the payment cards. Payment service providers, also called token requesters, undergo integration and certification with the card networks to use their tokenization services. This enables them to request and make purchases using tokens.</li>
-<li aria-level="1"><b>Card scheme</b> – (such as Mastercard and Visa) offers the infrastructure for generating, storing, and managing the tokens. Paymentology&#8217;s Sprint tokenization solution currently leverages the MDES (Mastercard Digital Enablement Service) and, coming soon, VTS (Visa Token Service) tokenization management services. MDES enables online retailers and payment service providers to offer tokenization services for simple, fast, and secure payments worldwide. Mastercard MDES serves as the Token Service Provider, or TSP, in the provisioning and authorization process.</li>
-<li aria-level="1"><b>Issuer processor</b> – (Paymentology) issues the payment cards from which the tokens are derived. Paymentology must authorize every request to provision tokens for the payment cards. This authorization process requires integrating and certifying Paymentology&#8217;s Sprint solution with the tokenization management services at the card network. Paymentology is currently integrated to Mastercard’s MDES for notifying clients of card provisioning as well as authorizations on cards that have been provisioned.</li>
+<li aria-level="1"><b>Card scheme</b> – (such as Mastercard and Visa) offers the infrastructure for generating, storing, and managing the tokens. Paymentology’s Sprint tokenization solution currently leverages the MDES (Mastercard Digital Enablement Service) and, coming soon, VTS (Visa Token Service) tokenization management services. MDES enables online retailers and payment service providers to offer tokenization services for simple, fast, and secure payments worldwide. Mastercard MDES serves as the Token Service Provider, or TSP, in the provisioning and authorization process.</li>
+<li aria-level="1"><b>Issuer processor</b> – (Paymentology) issues the payment cards from which the tokens are derived. Paymentology must authorize every request to provision tokens for the payment cards. This authorization process requires integrating and certifying Paymentology’s Sprint solution with the tokenization management services at the card network. Paymentology is currently integrated to Mastercard’s MDES for notifying clients of card provisioning as well as authorizations on cards that have been provisioned.</li>
 </ul>

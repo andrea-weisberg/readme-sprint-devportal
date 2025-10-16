@@ -19,4 +19,4 @@ original_path: companion-api
 </ul>
 </li>
 </ul>
-<p>&nbsp;</p>
+<p> </p>

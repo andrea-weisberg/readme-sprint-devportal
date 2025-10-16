@@ -10,7 +10,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 #### Path parameters
@@ -26,7 +26,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -67,28 +67,8 @@ original_path: card-api/api-reference
         </param>
     </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
     <params>
@@ -148,13 +128,134 @@ original_path: card-api/api-reference
         </param>
     </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodCall>
+    <methodName>UpdateCVV</methodName>
+    <params>
+        <param>
+            <value>
+                <string>0014770292</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>TEST</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>558558400041720</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>123456</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20211019T10:00:00</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>EA4CBE0812916006F30FFBD57DEFB4F1CC3F2A3319E89158816142741B3E57CE</string>
+            </value>
+        </param>
+    </params>
+</methodCall>
+
+```,```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>clientTransactionID</name>
+                        <value>
+                            <string>123456</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>cvv2</name>
+                        <value>
+                            <int>312</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>terminalID</name>
+                        <value>
+                            <string>0014770292</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>customerReference</name>
+                        <value>
+                            <string>TEST</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>Approved</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>serverTransactionID</name>
+                        <value>
+                            <string>21FC8A60-9D7D-21DF-52631CB471B8B87D</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>trackingNumber</name>
+                        <value>
+                            <string>558558400041720</string>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">back to card api menu</a></p>

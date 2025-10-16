@@ -10,13 +10,13 @@ original_path: card-api/secure-cards
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
-<!-- unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":false,"text":"<p>As with any PIN, the offline PIN will be blocked after too many unsuccessful attempts.</p>\n"}]} -->
+{/* unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":false,"text":"<p>As with any PIN, the offline PIN will be blocked after too many unsuccessful attempts.</p>\n"}]} */}
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <section id="tutuka-block-5" class="tutuka-block tutuka-block--text-full-width">
@@ -28,7 +28,7 @@ original_path: card-api/secure-cards
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h3>How to update the Offline PIN</h3>

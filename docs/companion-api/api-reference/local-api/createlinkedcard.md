@@ -12,11 +12,11 @@ original_path: companion-api/api-reference/local-api
 <ul>
 <li>Session-Id=Encrypted AES Key e-g (AB521456236KHU52) is required for encryption of sensitive data.</li>
 </ul>
-<p>You can read more on how our Secure API&#8217;s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a>.</p>
+<p>You can read more on how our Secure API’s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a>.</p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -37,7 +37,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -98,35 +98,8 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| cvv2 | String | <p>Generated CVV2 for the created card</p> <p>(Masked or encrypted depending upon configuration)</p> |
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| cardNumber | String | <p>Generated PAN for the created card</p> <p>(Masked or encrypted depending upon configuration)</p> |
-| resultText | String | <p>Text indicating transaction result.</p> |
-| validDate | String | <p>String representation of the valid date as MM/YY as expected by web forms when doing online payments</p> |
-| expiryDate | Date | <p>The expiry date of the created card</p> |
-| trackingNumber | String | <p>Generated tracking number for the created card</p> |
-| IV | String | <p>The initialization vector used to initialize the encryption/decryption algorithm.</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <methodResponse>
     <params>
         <param>
@@ -185,12 +158,159 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodResponse>
+
+```
+
+<p> </p>
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| cvv2 | String | <p>Generated CVV2 for the created card</p> <p>(Masked or encrypted depending upon configuration)</p> |
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+| cardNumber | String | <p>Generated PAN for the created card</p> <p>(Masked or encrypted depending upon configuration)</p> |
+| resultText | String | <p>Text indicating transaction result.</p> |
+| validDate | String | <p>String representation of the valid date as MM/YY as expected by web forms when doing online payments</p> |
+| expiryDate | Date | <p>The expiry date of the created card</p> |
+| trackingNumber | String | <p>Generated tracking number for the created card</p> |
+| IV | String | <p>The initialization vector used to initialize the encryption/decryption algorithm.</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0"?>
+<methodCall>
+    <methodName>CreateLinkedCard</methodName>
+    <params>
+        <param>
+            <value>
+                <string>0092998153</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>105232700000440</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>Jhon</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>Foo</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>id123</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>0924769387</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>2029-09-01T00:00:00</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>e1ad2ce7-14b2-4f73-9d41-aaccd768521c</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20241028T11:27:58</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>2179242073DE2A5DAE99B98212277F87D3D0E413</string>
+            </value>
+        </param>
+    </params>
+</methodCall>
+
+```,```xml
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>cvv2</name>
+                        <value>
+                            <string>DHF67G</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>cardNumber</name>
+                        <value>
+                            <string>AGT67094GY453HNJGY524JUNDREW</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>Approved</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>validDate</name>
+                        <value>
+                            <string>06/22</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>expiryDate</name>
+                        <value>
+                            <string>AHY9076TG54GT6ED4SW88</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>trackingNumber</name>
+                        <value>
+                            <string>689348400002066</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>IV</name>
+                        <value>
+                            <string>GHT67KMJ983UJGB678TGEW</string>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
 ```
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>

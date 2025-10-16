@@ -10,7 +10,7 @@ original_path: chargeback-api/chargeback-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>Request/response fields and samples</h2>
@@ -33,7 +33,7 @@ original_path: chargeback-api/chargeback-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -49,12 +49,18 @@ original_path: chargeback-api/chargeback-api-reference
     "clientReferenceNumber": "CLIENT_REFERENCE_NUMBER",
     "caseNotes": "CASE_NOTES"
 }
+
+```,```json
+{
+    "caseId": "CASE_ID"
+}
+
 ```
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
 
 
 #### Response schema
@@ -65,14 +71,28 @@ original_path: chargeback-api/chargeback-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
 
 
 
 ```json
 {
+    "claimId": "CLAIM_ID",
+    "chargebackId": "CHARGEBACK_ID",
+    "preArbitrationAmount": "PREARBITRATION_AMOUNT",
+    "memo": "MEMO",
+    "messageText": "MESSAGE_TEXT",
+    "newReasonCode": "NEW_REASON_CODE",
+    "supportingDocument": "BASE64_ENCODED_FILE_HERE",
+    "clientReferenceNumber": "CLIENT_REFERENCE_NUMBER",
+    "caseNotes": "CASE_NOTES"
+}
+
+```,```json
+{
     "caseId": "CASE_ID"
 }
+
 ```
 
 
@@ -83,11 +103,11 @@ original_path: chargeback-api/chargeback-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>Additional info</h2>
 
 
 
-<!-- unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":""},{"c":""}],"caption":false,"body":[[{"c":"HTTP Method"},{"c":"POST"}],[{"c":"URL_URI (SIT/UAT)"},{"c":"https://chargebacks.test.tutuka.cloud/client/prearbitration"}],[{"c":"HTTP Headers"},{"c":"Content-Type text/plain"}],[{"c":"Query String Parameters"},{"c":"-"}],[{"c":"Format"},{"c":"JSON"}],[{"c":"Authentication"},{"c":"Bearer BEARER_TOKEN"}],[{"c":"Successful Response Code"},{"c":"200"}],[{"c":"Error Response Code"},{"c":"500"}],[{"c":"Validation Error Response Code"},{"c":"422"}]]}} -->
+\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":""\},\{"c":""\}],"caption":false,"body":[[\{"c":"HTTP Method"\},\{"c":"POST"\}],[\{"c":"URL_URI (SIT/UAT)"\},\{"c":"https://chargebacks.test.tutuka.cloud/client/prearbitration"\}],[\{"c":"HTTP Headers"\},\{"c":"Content-Type text/plain"\}],[\{"c":"Query String Parameters"\},\{"c":"-"\}],[\{"c":"Format"\},\{"c":"JSON"\}],[\{"c":"Authentication"\},\{"c":"Bearer BEARER_TOKEN"\}],[\{"c":"Successful Response Code"\},\{"c":"200"\}],[\{"c":"Error Response Code"\},\{"c":"500"\}],[\{"c":"Validation Error Response Code"\},\{"c":"422"\}]]}} */}

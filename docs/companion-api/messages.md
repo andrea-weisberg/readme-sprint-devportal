@@ -7,23 +7,23 @@ metadata:
 original_path: companion-api
 ---
 <p><strong>These are two types of messages that Paymentology Sprint can send to a client:</strong></p>
-<p>&nbsp;</p>
+<p> </p>
 <h2>1. Administrative Messages</h2>
 <p>These messages are <strong>sent to the client to complete certain actions</strong>.</p>
-<p>&nbsp;</p>
+<p> </p>
 <h3>Use cases:</h3>
 <ul>
-<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#AdminsitrativeMessage3DSecureOTP">3DS OTP authentication</a> &#8211; Paymentology will send OTP messages to the fintech this will be sent on to the card holder to input during checkout</li>
-<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#AdministrativeMessage">Token digitization</a> &#8211; During digitization, if authentication is required Paymentology will pass the authentication OTP to the fintech, the OTP will be passed to the card holder to complete digitization</li>
-<li><a href="https://developer.sprint.paymentology.com/administrative-message-values/">Token management notifications</a> &#8211; Paymentology will send token update notifications to the fintech if the status of the token changes</li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#AdminsitrativeMessage3DSecureOTP">3DS OTP authentication</a> – Paymentology will send OTP messages to the fintech this will be sent on to the card holder to input during checkout</li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#AdministrativeMessage">Token digitization</a> – During digitization, if authentication is required Paymentology will pass the authentication OTP to the fintech, the OTP will be passed to the card holder to complete digitization</li>
+<li><a href="https://developer.sprint.paymentology.com/administrative-message-values/">Token management notifications</a> – Paymentology will send token update notifications to the fintech if the status of the token changes</li>
 </ul>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p> </p>
+<p> </p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>2. Stop Messages</h2>

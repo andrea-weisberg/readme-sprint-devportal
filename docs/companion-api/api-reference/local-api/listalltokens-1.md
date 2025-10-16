@@ -10,11 +10,11 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -55,30 +55,8 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| resultText | String | <p>Status text indicating result</p> |
-| tokens | Array | <p>The tokens linked to this card. Array includes:</p> <p>DeviceName<br /> ProvisioningStatusCode<br /> DigitizationRequestDateTime<br /> TokenType<br /> ExpirationDate<br /> ProvisioningStatusDescription<br /> TokenActivatedDateTime<br /> TokenRequestorName<br /> WalletID<br /> DeviceId<br /> TokenUniqueReference<br /> DeviceType<br /> CurrentStatusDescription</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
     <params>
@@ -357,13 +335,355 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+| resultText | String | <p>Status text indicating result</p> |
+| tokens | Array | <p>The tokens linked to this card. Array includes:</p> <p>DeviceName<br /> ProvisioningStatusCode<br /> DigitizationRequestDateTime<br /> TokenType<br /> ExpirationDate<br /> ProvisioningStatusDescription<br /> TokenActivatedDateTime<br /> TokenRequestorName<br /> WalletID<br /> DeviceId<br /> TokenUniqueReference<br /> DeviceType<br /> CurrentStatusDescription</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodCall>
+    <methodName>ListAllTokens</methodName>
+    <params>
+        <param>
+            <value>
+                <string>0093270589</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>FRJMEO06</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>5432161234249497</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>TR_LAT_001</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20230519T10:02:59</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>381B25DE182481ECEB0BE4D2C0047FC8CFED6C050</string>
+            </value>
+        </param>
+    </params>
+</methodCall>
+
+```,```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>Approved</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>tokens</name>
+                        <value>
+                            <array>
+                                <data>
+                                    <value>
+                                        <struct>
+                                            <member>
+                                                <name>DeviceName</name>
+                                                <value>
+                                                    <string>Motorola Nexus 6</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>ProvisioningStatusCode</name>
+                                                <value>
+                                                    <string>S</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DigitizationRequestDateTime</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenType</name>
+                                                <value>
+                                                    <string>C</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>ExpirationDate</name>
+                                                <value>
+                                                    <double>0228</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>ProvisioningStatusDescription</name>
+                                                <value>
+                                                    <string>Provisioning successful</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenActivatedDateTime</name>
+                                                <value>
+                                                    <dateTime.iso8601>20230420T09:52:11</dateTime.iso8601>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenRequestorName</name>
+                                                <value>
+                                                    <string>MeaWallet</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>WalletId</name>
+                                                <value>
+                                                    <double>105</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceId</name>
+                                                <value>
+                                                    <double>1240402</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenUniqueReference</name>
+                                                <value>
+                                                    <string>DWSPMC00000000943623zciqsgv0cb4hnimlidfflk5spay2</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceType</name>
+                                                <value>
+                                                    <double>21</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>CurrentStatusDescription</name>
+                                                <value>
+                                                    <string>Active</string>
+                                                </value>
+                                            </member>
+                                        </struct>
+                                    </value>
+                                    <value>
+                                        <struct>
+                                            <member>
+                                                <name>DeviceName</name>
+                                                <value>
+                                                    <string>Motorola Nexus 6</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>ProvisioningStatusCode</name>
+                                                <value>
+                                                    <string>S</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DigitizationRequestDateTime</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenType</name>
+                                                <value>
+                                                    <string>C</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>ExpirationDate</name>
+                                                <value>
+                                                    <double>0228</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>ProvisioningStatusDescription</name>
+                                                <value>
+                                                    <string>Provisioning successful</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenActivatedDateTime</name>
+                                                <value>
+                                                    <dateTime.iso8601>20230420T09:52:11</dateTime.iso8601>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenRequestorName</name>
+                                                <value>
+                                                    <string>MeaWallet</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>WalletId</name>
+                                                <value>
+                                                    <double>105</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceId</name>
+                                                <value>
+                                                    <double>1240402</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenUniqueReference</name>
+                                                <value>
+                                                    <string>DWSPMC00000000943623zciqsgv0cb4hnimlidfflk5spay1</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceType</name>
+                                                <value>
+                                                    <double>21</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>CurrentStatusDescription</name>
+                                                <value>
+                                                    <string>Deactivated</string>
+                                                </value>
+                                            </member>
+                                        </struct>
+                                    </value>
+                                    <value>
+                                        <struct>
+                                            <member>
+                                                <name>DeviceName</name>
+                                                <value>
+                                                    <string>Motorola Nexus 6</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>ProvisioningStatusCode</name>
+                                                <value>
+                                                    <string>S</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DigitizationRequestDateTime</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenType</name>
+                                                <value>
+                                                    <string>C</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>ExpirationDate</name>
+                                                <value>
+                                                    <double>0228</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>ProvisioningStatusDescription</name>
+                                                <value>
+                                                    <string>Provisioning successful</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenActivatedDateTime</name>
+                                                <value>
+                                                    <dateTime.iso8601>20230420T09:52:11</dateTime.iso8601>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenRequestorName</name>
+                                                <value>
+                                                    <string>MeaWallet</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>WalletId</name>
+                                                <value>
+                                                    <double>105</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceId</name>
+                                                <value>
+                                                    <double>1240402</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenUniqueReference</name>
+                                                <value>
+                                                    <string>DWSPMC00000000943623zciqsgv0cb4hnimlidfflk5spay3</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceType</name>
+                                                <value>
+                                                    <double>21</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>CurrentStatusDescription</name>
+                                                <value>
+                                                    <string>Active</string>
+                                                </value>
+                                            </member>
+                                        </struct>
+                                    </value>
+                                </data>
+                            </array>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>

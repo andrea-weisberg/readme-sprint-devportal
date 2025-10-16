@@ -15,7 +15,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -34,7 +34,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -94,30 +94,8 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| resultText | String | <p>Status text indicating result</p> |
-| secret | String | <p>generated TOTP</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```null
+```,```null
 <methodResponse>
     <params>
         <param>
@@ -146,13 +124,124 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+| resultText | String | <p>Status text indicating result</p> |
+| secret | String | <p>generated TOTP</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```null
+<methodCall>
+    <methodName>GenerateTimeBasedSecret</methodName>
+    <params>
+        <param>
+            <value>
+                <string>0087654321</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>4523652122</string>
+            </value>
+        </param>
+        <param>
+        <param>
+          <value>
+            <string>5432000000001234</string> 
+          </value>
+       </param>
+            <value>
+                <string>711432100000123</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <numeric>60</numeric>
+            </value>
+        </param>
+        <param>
+            <value>
+                <numeric>8</numeric>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>HmacSHA512</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>123654789654</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20230215T12:43:46</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>6A401CCE9F40C338FE0AF63DD247A2BC13246CFCF1A04F6828C70F9262A3D24D</string>
+            </value>
+        </param>
+    </params>
+</methodCall>
+
+```,```null
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>Approved</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>secret</name>
+                        <value>
+                            <string>123#45236521</string>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>

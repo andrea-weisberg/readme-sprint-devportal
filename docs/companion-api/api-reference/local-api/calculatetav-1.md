@@ -10,7 +10,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 #### Path parameters
@@ -26,7 +26,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -64,29 +64,8 @@ original_path: companion-api/api-reference/local-api
        </param>
     </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| tav | String | <p>JSON fields encoded in Base-64 format.<br /> The returned JSON fields include:<br /> • version<br /> • signatureAlgorithm<br /> • dataValidUntilTimestamp<br /> • includedFieldsInOrder<br /> • signature (RSA-SHA256 signature/<br /> TAV)</p> |
-| resultCode | Integer | <p>Status code indicating transaction result. In the event of a successful result the code will be 1.</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```null
+```,```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
   <params>
@@ -115,13 +94,101 @@ original_path: companion-api/api-reference/local-api
     </param>
   </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| tav | String | <p>JSON fields encoded in Base-64 format.<br /> The returned JSON fields include:<br /> • version<br /> • signatureAlgorithm<br /> • dataValidUntilTimestamp<br /> • includedFieldsInOrder<br /> • signature (RSA-SHA256 signature/<br /> TAV)</p> |
+| resultCode | Integer | <p>Status code indicating transaction result. In the event of a successful result the code will be 1.</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<methodCall>
+  <methodName>CalculateTAV</methodName>
+    <params>
+      <param> 
+        <value>
+          <string>0084575617</string>
+        </value>
+      </param>
+      <param>
+        <value>
+          <string>701a7c3eda8b477388dfbfed277f1d80</string>
+        </value>
+      </param>
+      <param>
+       <value>
+         <string>124472200021642</string>
+       </value>
+      </param>
+       <param>
+         <value>
+           <string>1a0943a862bf4d7f8c69f75ccedd716f</string>
+         </value>
+       </param>
+       <param>
+         <value><dateTime.iso8601>20220915T16:18:53</dateTime.iso8601></value>
+       </param>
+       <param>
+         <value>
+           <string>74CCECB2260F05A28B3981B6675104EC2FFC5BE5AA6334FE91F9B352643353CE</string>
+         </value>
+       </param>
+    </params>
+</methodCall>
+
+```,```null
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>resultCode</name>
+              <value>
+                <int>1</int>
+              </value>
+          </member>
+          <member>
+            <name>resultText</name>
+              <value>
+                <string>Approved</string>
+              </value>
+          </member>
+          <member>
+            <name>tav</name>
+            <value> <string>eyJpbmNsdWRlZEZpZWxkc0luT3JkZXIiOiJkYXRhVmFsaWRVbnRpbFRpbWVzdGFtcHxhY2NvdW50TnVtYmVyfGFjY291bnRFeHBpcnkiLCJkYXRhVmFsaWRVbnRpbFRpbWVzdGFtcCI6IjIwMjItMDktMTZUMDg6MTg6NTRaIiwidmVyc2lvbiI6IjMiLCJzaWduYXR1cmVBbGdvcml0aG0iOiJSU0EtU0hBMjU2Iiwic2lnbmF0dXJlIjoiT0xrc0lTZVdPNWljMWVWa0RlZW9FZDdxRkp3eXVucUl5bjRoRTlzMnd6NXMrcVJ2TVRhNDJicjllbUZDZ3ZuN1Q5Ly9xL1FFOFUvQkI1SmdOdE1FL1JiVmJHaVJlV0ZLOTRoaHJIUkd4ZlgwbWVSU1BPS1U0UnNKdks2MXhwUVV1ZS85V2ZZYWVkNW04cGFENDZXUzBuenNoenU4c09uRnU2dVZMRm9vQWpZM21sNjdZcnRRc2dYZDl3cFArVWpNN21PeDNNT3dyWFQ2YzBmcmZVSHZlNzlNQkEvV2ZiR1d3TjRqbFl6SkhicjF0ZzJaMmM2NXUvTGZCemsxOGpBcnBRWG9Nd1M3OFFkSUJTaXp6MXA0WFlMY0FVQkhmWWthOWlvU3RTUzBRUlA1TFNEN2RsdnZWSXo0TjVMc1M4RklBS1NXM1Z3cG5DUTVidTdlVzViOVZ3PT0ifQ==</string>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>

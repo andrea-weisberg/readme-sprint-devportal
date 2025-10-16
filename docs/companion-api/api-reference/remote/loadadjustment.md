@@ -10,7 +10,7 @@ original_path: companion-api/api-reference/remote
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -30,7 +30,7 @@ original_path: companion-api/api-reference/remote
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -150,28 +150,8 @@ Load Adjustment (Refund)
     </param>
   </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 "<methodResponse>
   <params>
     <param>
@@ -188,13 +168,170 @@ Load Adjustment (Refund)
     </param>
   </params>
 </methodResponse>"
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```null
+Load Adjustment (Forex)
+<?xml version="1.0"?>
+<methodCall>
+    <methodName>LoadAdjustment</methodName>
+    <params>
+        <param>
+            <value>
+                <string>0067545417</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>d4b9d9d7-8c21-42bc-9b11-88564aade690</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <int>146</int>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>20200823T06:13:45/IDIGIC                 INTERNET      NOR</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>00215719318600032099004120000000001490260473110410004215000000000204294049038400850025003ADJ25110Adjustment25201025304735225400255002560201</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>571894</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20200823T06:13:45</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>2C77948C-F65A-8554-EC6BF66A619DF8F7</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20200824T03:18:55</dateTime.iso8601>
+            </value>
+        </param>
+    </params>
+    <param>
+        <value>
+            <string>2D3E695617493BC1F3788181143975E6865A2C14</string>
+        </value>
+    </param>
+</methodCall>
+
+Load Adjustment (Refund)
+<?xml version="1.0"?>
+<methodCall>
+  <methodName>LoadAdjustment</methodName>
+  <params>
+    <param>
+      <value>
+        <string>0094363483</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>aabcd006-ec60-4060-aa2b-6fcd93cffcca</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <int>4591</int>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>20200816T00:00:00/ALIPAY *Taobao com\1 Matheson Street\Hong Kong\-         HKGHKG</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>002152850196000106910041200000000459102604539903745200816000000-15414100234030009760894-0000028604108000000050421524588775       049033440850025003ADJ25110Adjustment25201025304452225400255002560204</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>15414100234030009760894</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <dateTime.iso8601>20200816T00:00:00</dateTime.iso8601>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>9899308D-DB2D-E233-5F03240F4588DB02</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <dateTime.iso8601>20200821T06:24:16</dateTime.iso8601>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>936186B91A70F67F81DEB3760095F8C852E3BDC7</string>
+      </value>
+    </param>
+  </params>
+</methodCall>
+
+```,```xml
+"<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>resultCode</name>
+            <value>
+              <int>1</int>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>"
+
+```
+
+<p> </p>
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/">Back to Remote API menu</a></p>

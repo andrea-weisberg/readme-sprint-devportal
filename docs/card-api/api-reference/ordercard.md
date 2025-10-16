@@ -10,7 +10,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -34,7 +34,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -115,40 +115,8 @@ original_path: card-api/api-reference
     </param>
   </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| terminalID | String | <p>Echo</p> |
-| campaignUUID | String | <p>Echo</p> |
-| title | String | <p>Echo</p> |
-| initials | String | <p>Echo</p> |
-| lastName | String | <p>Echo</p> |
-| Address1 | String | <p>Echo</p> |
-| Address2 | String | <p>Echo</p> |
-| Address3 | String | <p>Echo</p> |
-| Address4 | String | <p>Echo</p> |
-| Address5 | String | <p>Echo</p> |
-| additionalData | String | <p>Echo</p> |
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| resultText | String | <p>Status text indicating transaction result</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <methodResponse>
     <params>
         <param>
@@ -237,13 +205,215 @@ original_path: card-api/api-reference
         </param>
     </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| terminalID | String | <p>Echo</p> |
+| campaignUUID | String | <p>Echo</p> |
+| title | String | <p>Echo</p> |
+| initials | String | <p>Echo</p> |
+| lastName | String | <p>Echo</p> |
+| Address1 | String | <p>Echo</p> |
+| Address2 | String | <p>Echo</p> |
+| Address3 | String | <p>Echo</p> |
+| Address4 | String | <p>Echo</p> |
+| Address5 | String | <p>Echo</p> |
+| additionalData | String | <p>Echo</p> |
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+| resultText | String | <p>Status text indicating transaction result</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version=""1.0""?>
+<methodCall>
+  <methodName>OrderCard</methodName>
+  <params>
+    <param>
+      <value>
+        <string>00134564</string>
+      </value>
+    </param>
+<param>
+      <value>
+        <string>1234-5678-9087</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>Miss</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>MT</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>Tutuka</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>7 Plein</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>Wanderers</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>Johannesburg</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>2001</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>South Africa</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>test123</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>123456</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <dateTime.iso8601>20200327T00:00:00</dateTime.iso8601>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>47E71AB6DD2D292A585399BAF8757E1352DBAA64</string>
+      </value>
+    </param>
+  </params>
+</methodCall>
+
+```,```xml
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+      <member>
+                        <name>terminalID</name>
+                        <value>
+                            <string>00134564</string>
+                        </value>
+                    </member>
+      <member>
+                        <name>campaignUUID</name>
+                        <value>
+                            <string>1234-5678-9087</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>title</name>
+                        <value>
+                            <string>Miss</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>initials</name>
+                        <value>
+                            <string>MT</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>surname</name>
+                        <value>
+                            <string>Tutuka</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>address1</name>
+                        <value>
+                            <string>7 Plein</string>
+                        </value>
+                    </member>
+<member>
+                        <name>address2</name>
+                        <value>
+                            <string>Wanderers</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>address3</name>
+                        <value>
+                            <string>Johannesburg</string>
+                        </value>
+                    </member>
+      <member>
+                        <name>address4</name>
+                        <value>
+                            <string>2001</string>
+                        </value>
+                    </member>
+<member>
+                        <name>address5</name>
+                        <value>
+                            <string>South Africa</string>
+                        </value>
+                    </member>
+<member>
+                        <name>additionalData</name>
+                        <value>
+                            <string>1234567</string>
+                        </value>
+                    </member>
+      <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+      <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>Approved</string>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">back to card api menu</a></p>

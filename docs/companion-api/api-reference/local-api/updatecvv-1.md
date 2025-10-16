@@ -13,11 +13,11 @@ original_path: companion-api/api-reference/local-api
 <li>Session-Id=Encrypted AES Key e-g (AB521456236KHU52) is required if encryption is needed and the campaign is configured for encryption of sensitive data.</li>
 <li>This is optional if encryption is not needed and the campaign is not configured for encryption of sensitive data.</li>
 </ul>
-<p>You can read more on how our Secure API&#8217;s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a>.</p>
+<p>You can read more on how our Secure API’s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a>.</p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -33,7 +33,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -74,30 +74,8 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodCall>
-```
 
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result.</p> |
-| resultText | String | <p>Text indicating transaction result.</p> |
-| cvv2 | Integer | <p>Newly updated CVV2 returned.</p> <p>(Encrypted depending on configuration).</p> |
-| IV | String | <p>(optional)</p> <p>The key with which encrypted data in response is encrypted.</p> <p>(Key used for encryption).</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
     <params>
@@ -127,12 +105,105 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodResponse>
+
 ```
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result.</p> |
+| resultText | String | <p>Text indicating transaction result.</p> |
+| cvv2 | Integer | <p>Newly updated CVV2 returned.</p> <p>(Encrypted depending on configuration).</p> |
+| IV | String | <p>(optional)</p> <p>The key with which encrypted data in response is encrypted.</p> <p>(Key used for encryption).</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodCall>
+    <methodName>UpdateCVV</methodName>
+    <params>
+        <param>
+            <value>
+                <string>0098510643</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>123456</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>000000875421</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>788ea4d7-46bb-4265-b89f-0c7c6c417220</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20240702T10:00:00</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>04EECD5E5A25F12CA3E5245AF58030B4AAAED1583F8EE48DC2CEAF547FAAE979</string>
+            </value>
+        </param>
+    </params>
+</methodCall>
+
+```,```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>cvv2</name>
+                        <value>
+                            <int>111</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>Approved</string>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
+```
+
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

@@ -9,7 +9,7 @@ metadata:
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -26,7 +26,7 @@ metadata:
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -72,28 +72,8 @@ metadata:
         </param>
     </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <?xml version=""1.0"" encoding=""UTF-8""?>
 <methodResponse>
 <params>
@@ -111,13 +91,97 @@ metadata:
 </param>
 </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0"?>
+<methodCall>
+    <methodName>AdministrativeMessage</methodName>
+    <params>
+        <param>
+            <value>
+                <string>0048149752</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>32446085</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>3DSecureOTP</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>4603253853400000093700404180004305test10490384090006726326</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>460325381</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20210401T14:12:22</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>69291805E1C24E5A3ABEF5A7E0104D1E31324F4E</string>
+            </value>
+        </param>
+    </params>
+</methodCall>
+
+```,```xml
+<?xml version=""1.0"" encoding=""UTF-8""?>
+<methodResponse>
+<params>
+<param>
+<value>
+<struct>
+<member>
+<name>resultCode</name>
+<value>
+<int>1</int>
+</value>
+</member>
+</struct>
+</value>
+</param>
+</params>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/">Back to Remote API menu</a></p>

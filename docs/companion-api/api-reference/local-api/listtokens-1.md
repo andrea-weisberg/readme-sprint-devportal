@@ -10,7 +10,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -26,7 +26,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -67,30 +67,8 @@ original_path: companion-api/api-reference/local-api
       </param>
     </params>
   </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| resultText | String | <p>Status text indicating result</p> |
-| tokens | Array | <p>The tokens linked to this card, where each token has the following fields:</p> <p><span class="xml-highlight">TokenUniqueReference</span>,  string,  48 characters</p> <p><em>Unique reference to the token.</em></p> <p>&nbsp;</p> <p><span class="xml-highlight">DigitizationRequestDateTime</span>,  string</p> <p><em>Date and time of the initial request for digitization of the Account PAN for this token. This is a conditional field, not present for CoF tokens, string in ISO 8601 format eg. &#8220;20150121T02:04:35&#8221;</em></p> <p>&nbsp;</p> <p><span class="xml-highlight">TokenType</span>,  string = <em>Type of token. Valid values:</em></p> <p><em>&#8220;S&#8221; &#8211; Embedded Secure Element Token</em></p> <p><em>&#8220;C&#8221; &#8211; Mastercard Cloud-Based Payments token</em></p> <p><em>&#8220;F&#8221; &#8211; CoF (Card on File) token</em></p> <p>&nbsp;</p> <p><span class="xml-highlight">DeviceID</span>,  string</p> <p><em>Serial number of the device provisioned with the token. May be masked. Conditional field, not present for CoF tokens, and only present when provided by a Wallet Provider. May be masked (by the Wallet Provider). Example (unmasked) &#8220;C2ZBY14310005664&#8221;. Example (masked) &#8220;xxxxY1431xxxxxxx&#8221;.</em></p> <p>&nbsp;</p> <p><span class="xml-highlight">DeviceName</span>,  string</p> <p><em>Nickname of the device provisioned with the token. Conditional field, not present for CoF tokens, and only present when the Payment App Provider has implemented the &#8216;Get Device Info&#8217; MDES API. Eg: &#8220;John&#8217;s phone”</em></p> <p>&nbsp;</p> <p><span class="xml-highlight">DeviceType</span>,  string</p> <p><em>Type of the device provisioned with the token. Valid values: NOTE &#8211; Some values from 00–19 may indicate not only the physical form factor but also other attributes such as device technology and payment app specifications.</em></p> <p>&nbsp;</p> <p><em>&#8217;00&#8217; &#8211; Card.</em></p> <p><em>&#8217;01&#8217; &#8211; Mobile Network Operator (MNO) controlled removable secure element (SIM or UICC) personalized for use with a mobile phone or smartphone.</em></p> <p><em>&#8217;02&#8217; &#8211; Key Fob.</em></p> <p><em>&#8217;03&#8217; &#8211; Watch using a contactless chip or a fixed (non-removable) secure element not controlled by the MNO.</em></p> <p><em>&#8217;04&#8217; &#8211; Mobile Tag.</em></p> <p><em>&#8217;05&#8217; &#8211; Wristband.</em></p> <p><em>&#8217;06&#8217; &#8211; Mobile Phone Case or Sleeve.</em></p> <p><em>&#8217;07&#8217; &#8211; Mobile phone or smartphone with a fixed (non-removable) secure element controlled by the MNO, for example, code division multiple access (CDMA).</em></p> <p><em>&#8217;08&#8217; &#8211; Removable secure element not controlled by the MNO, for example, memory card personalized for used with a mobile phone or smartphone.</em></p> <p><em>&#8217;09&#8217; &#8211; Mobile Phone or smartphone with a fixed (non-removable) secure element not controlled by the MNO.</em></p> <p><em>&#8217;10&#8217; &#8211; MNO controlled removable secure element (SIM or UICC) personalized for use with a tablet or e-book.</em></p> <p><em>&#8217;11&#8217; &#8211; Tablet or e-book with a fixed (non-removable) secure element controlled by the MNO.</em></p> <p><em>&#8217;12&#8217; &#8211; Removable secure element not controlled by the MNO, for example, memory card personalized for use with a tablet or e-book.</em></p> <p><em>&#8217;13&#8217; &#8211; Tablet or e-book with fixed (non-removable) secure element not controlled by the MNO.</em></p> <p><em>&#8217;14&#8217; &#8211; Mobile phone or smartphone with a payment application running in a host processor.</em></p> <p><em>&#8217;15&#8217; &#8211; Tablet or e-book with a payment application running in a host processor.</em></p> <p><em>&#8217;16&#8217; &#8211; Mobile phone or smartphone with a payment application running in the Trusted Execution Environment (TEE) of a host processor.</em></p> <p><em>&#8217;17&#8217; &#8211; Tablet or e-book with a payment application running in the TEE of a host processor.</em></p> <p><em>&#8217;18&#8217; &#8211; Watch with a payment application running in the TEE of a host processor.</em></p> <p><em>&#8217;19&#8217; &#8211; Watch with a payment application running in a host processor. NOTE &#8211; Values from 20–99 exclusively indicate the form factor only without also indicating the storage technology.</em></p> <p><em>&#8217;20&#8217; &#8211; Card.</em></p> <p><em>&#8217;21&#8217; &#8211; Phone Mobile phone.</em></p> <p><em>&#8217;22&#8217; &#8211; Tablet/e-reader Tablet computer or e-reader.</em></p> <p><em>&#8217;23&#8217; &#8211; Watch/Wristband Watch or wristband, including a fitness band, smart strap, disposable band, watch add-on, and security/ID band.</em></p> <p><em>&#8217;24&#8217; &#8211; Sticker.</em></p> <p><em>&#8217;25&#8217; &#8211; PC PC or laptop.</em></p> <p><em>&#8217;26&#8217; &#8211; Device Peripheral Mobile phone case or sleeve.</em></p> <p><em>&#8217;27&#8217; &#8211; Tag Key fob or mobile tag.</em></p> <p><em>&#8217;28&#8217; &#8211; Jewelry Ring, bracelet, necklace, and cuff links.</em></p> <p><em>&#8217;29&#8217; &#8211; Fashion Accessory Handbag, bag charm, and glasses.</em></p> <p><em>&#8217;30&#8217; &#8211; Garment Dress.</em></p> <p><em>&#8217;31&#8217; &#8211; Domestic Appliance Refrigerator, washing machine.</em></p> <p><em>&#8217;32&#8217; &#8211; Vehicle Vehicle, including vehicle attached devices.</em></p> <p><em>&#8217;33&#8217; &#8211; Media/Gaming Device Media or gaming device, including a set top box, media player, and television.</em></p> <p><em>&#8217;34&#8217; to &#8217;99&#8217; &#8211; Reserved for future form factors. Any value in this range may occur within form factor and transaction data without prior notice. Conditional field, not present for CoF tokens, and only present when supplied by the Payment App Provider.</em></p> <p><em>example: 14</em></p> <p>&nbsp;</p> <p><span class="xml-highlight">ExpirationDate</span>,  date</p> <p><em>Expiration date of token. Conditional field, present once the token has been designated for the digitization. Four digit string. Format &#8220;mmyy&#8221;. Eg. 1016</em></p> <p>&nbsp;</p> <p><span class="xml-highlight">CurrentStatusDescription</span>, string</p> <p><em>Description of the current status.</em></p> <p><em>Unmapped. The token has not yet been linked to the Account PAN. The process of tokenization is In Progress. </em></p> <p><em>Active. The token is linked to the Account PAN and may initiate new transactions to be authorized. </em></p> <p><em>Suspended. The token is linked to the Account PAN but may not perform transactions at the request of one or more suspenders. </em></p> <p><em>Deleted. The token is logically deleted but is still linked to the Account PAN for the purposes of post-authorization transaction processing. Eg. &#8220;Active&#8221;</em></p> <p>&nbsp;</p> <p><span class="xml-highlight">TokenActivatedDateTime</span>,  date</p> <p><em>Date and time that the token was activated. Conditional field, present only once the Token has been activated. string in ISO 8601</em></p> <p><em>Example: &#8220;20150121T02:04:45&#8221;</em></p> <p>&nbsp;</p> <p><span class="xml-highlight">TokenRequestorName</span>,  string</p> <p><em>The legal name of the token requestor.</em></p> <p><em>Example: &#8220;Popular High Street Merchant”</em></p> <p>&nbsp;</p> <p><span class="xml-highlight">WalletID</span>,  string</p> <p><em>Identifier of the Wallet Provider who requested the digitization or tokenization. Always populated for any token.</em></p> <p><em>Example: 123</em></p> <p>&nbsp;</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
     <params>
@@ -543,13 +521,529 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+| resultText | String | <p>Status text indicating result</p> |
+| tokens | Array | <p>The tokens linked to this card, where each token has the following fields:</p> <p><span class="xml-highlight">TokenUniqueReference</span>,  string,  48 characters</p> <p><em>Unique reference to the token.</em></p> <p> </p> <p><span class="xml-highlight">DigitizationRequestDateTime</span>,  string</p> <p><em>Date and time of the initial request for digitization of the Account PAN for this token. This is a conditional field, not present for CoF tokens, string in ISO 8601 format eg. “20150121T02:04:35”</em></p> <p> </p> <p><span class="xml-highlight">TokenType</span>,  string = <em>Type of token. Valid values:</em></p> <p><em>“S” – Embedded Secure Element Token</em></p> <p><em>“C” – Mastercard Cloud-Based Payments token</em></p> <p><em>“F” – CoF (Card on File) token</em></p> <p> </p> <p><span class="xml-highlight">DeviceID</span>,  string</p> <p><em>Serial number of the device provisioned with the token. May be masked. Conditional field, not present for CoF tokens, and only present when provided by a Wallet Provider. May be masked (by the Wallet Provider). Example (unmasked) “C2ZBY14310005664”. Example (masked) “xxxxY1431xxxxxxx”.</em></p> <p> </p> <p><span class="xml-highlight">DeviceName</span>,  string</p> <p><em>Nickname of the device provisioned with the token. Conditional field, not present for CoF tokens, and only present when the Payment App Provider has implemented the ‘Get Device Info’ MDES API. Eg: “John’s phone”</em></p> <p> </p> <p><span class="xml-highlight">DeviceType</span>,  string</p> <p><em>Type of the device provisioned with the token. Valid values: NOTE – Some values from 00–19 may indicate not only the physical form factor but also other attributes such as device technology and payment app specifications.</em></p> <p> </p> <p><em>’00’ – Card.</em></p> <p><em>’01’ – Mobile Network Operator (MNO) controlled removable secure element (SIM or UICC) personalized for use with a mobile phone or smartphone.</em></p> <p><em>’02’ – Key Fob.</em></p> <p><em>’03’ – Watch using a contactless chip or a fixed (non-removable) secure element not controlled by the MNO.</em></p> <p><em>’04’ – Mobile Tag.</em></p> <p><em>’05’ – Wristband.</em></p> <p><em>’06’ – Mobile Phone Case or Sleeve.</em></p> <p><em>’07’ – Mobile phone or smartphone with a fixed (non-removable) secure element controlled by the MNO, for example, code division multiple access (CDMA).</em></p> <p><em>’08’ – Removable secure element not controlled by the MNO, for example, memory card personalized for used with a mobile phone or smartphone.</em></p> <p><em>’09’ – Mobile Phone or smartphone with a fixed (non-removable) secure element not controlled by the MNO.</em></p> <p><em>’10’ – MNO controlled removable secure element (SIM or UICC) personalized for use with a tablet or e-book.</em></p> <p><em>’11’ – Tablet or e-book with a fixed (non-removable) secure element controlled by the MNO.</em></p> <p><em>’12’ – Removable secure element not controlled by the MNO, for example, memory card personalized for use with a tablet or e-book.</em></p> <p><em>’13’ – Tablet or e-book with fixed (non-removable) secure element not controlled by the MNO.</em></p> <p><em>’14’ – Mobile phone or smartphone with a payment application running in a host processor.</em></p> <p><em>’15’ – Tablet or e-book with a payment application running in a host processor.</em></p> <p><em>’16’ – Mobile phone or smartphone with a payment application running in the Trusted Execution Environment (TEE) of a host processor.</em></p> <p><em>’17’ – Tablet or e-book with a payment application running in the TEE of a host processor.</em></p> <p><em>’18’ – Watch with a payment application running in the TEE of a host processor.</em></p> <p><em>’19’ – Watch with a payment application running in a host processor. NOTE – Values from 20–99 exclusively indicate the form factor only without also indicating the storage technology.</em></p> <p><em>’20’ – Card.</em></p> <p><em>’21’ – Phone Mobile phone.</em></p> <p><em>’22’ – Tablet/e-reader Tablet computer or e-reader.</em></p> <p><em>’23’ – Watch/Wristband Watch or wristband, including a fitness band, smart strap, disposable band, watch add-on, and security/ID band.</em></p> <p><em>’24’ – Sticker.</em></p> <p><em>’25’ – PC PC or laptop.</em></p> <p><em>’26’ – Device Peripheral Mobile phone case or sleeve.</em></p> <p><em>’27’ – Tag Key fob or mobile tag.</em></p> <p><em>’28’ – Jewelry Ring, bracelet, necklace, and cuff links.</em></p> <p><em>’29’ – Fashion Accessory Handbag, bag charm, and glasses.</em></p> <p><em>’30’ – Garment Dress.</em></p> <p><em>’31’ – Domestic Appliance Refrigerator, washing machine.</em></p> <p><em>’32’ – Vehicle Vehicle, including vehicle attached devices.</em></p> <p><em>’33’ – Media/Gaming Device Media or gaming device, including a set top box, media player, and television.</em></p> <p><em>’34’ to ’99’ – Reserved for future form factors. Any value in this range may occur within form factor and transaction data without prior notice. Conditional field, not present for CoF tokens, and only present when supplied by the Payment App Provider.</em></p> <p><em>example: 14</em></p> <p> </p> <p><span class="xml-highlight">ExpirationDate</span>,  date</p> <p><em>Expiration date of token. Conditional field, present once the token has been designated for the digitization. Four digit string. Format “mmyy”. Eg. 1016</em></p> <p> </p> <p><span class="xml-highlight">CurrentStatusDescription</span>, string</p> <p><em>Description of the current status.</em></p> <p><em>Unmapped. The token has not yet been linked to the Account PAN. The process of tokenization is In Progress. </em></p> <p><em>Active. The token is linked to the Account PAN and may initiate new transactions to be authorized. </em></p> <p><em>Suspended. The token is linked to the Account PAN but may not perform transactions at the request of one or more suspenders. </em></p> <p><em>Deleted. The token is logically deleted but is still linked to the Account PAN for the purposes of post-authorization transaction processing. Eg. “Active”</em></p> <p> </p> <p><span class="xml-highlight">TokenActivatedDateTime</span>,  date</p> <p><em>Date and time that the token was activated. Conditional field, present only once the Token has been activated. string in ISO 8601</em></p> <p><em>Example: “20150121T02:04:45”</em></p> <p> </p> <p><span class="xml-highlight">TokenRequestorName</span>,  string</p> <p><em>The legal name of the token requestor.</em></p> <p><em>Example: “Popular High Street Merchant”</em></p> <p> </p> <p><span class="xml-highlight">WalletID</span>,  string</p> <p><em>Identifier of the Wallet Provider who requested the digitization or tokenization. Always populated for any token.</em></p> <p><em>Example: 123</em></p> <p> </p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0"?>
+  <methodCall>
+    <methodName>ListTokens</methodName>
+    <params>
+      <param>
+        <value>
+          <string>0053897254</string>
+        </value>
+      </param>
+      <param>
+        <value>
+          <string>66816921087</string>
+        </value>
+      </param>
+      <param>
+        <value>
+          <string>755348400000058</string>
+        </value>
+      </param>
+      <param>
+        <value>
+          <string>fb8344c9-2fc9-467b-87e4-55eaf88d06f2</string>
+        </value>
+      </param>
+      <param>
+        <value>
+          <dateTime.iso8601>20201102T12:01:01</dateTime.iso8601>
+        </value>
+      </param>
+      <param>
+        <value>
+          <string>6868417A5B171A2E113DAF6F232AD0C30D915AFD</string>
+        </value>
+      </param>
+    </params>
+  </methodCall>
+
+```,```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>Approved</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>tokens</name>
+                        <value>
+                            <array>
+                                <data>
+                                    <value>
+                                        <struct>
+                                            <member>
+                                                <name>DeviceId</name>
+                                                <value>
+                                                    <string>6b24f24a24ba98e27d43e345b532a245e4723d7a9c4f624e93452c92de93</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceName</name>
+                                                <value>
+                                                    <string>John Phone</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenUniqueReference</name>
+                                                <value>
+                                                    <string>DWSPMC00000000010906a349d9ca4eb1a4d53e3c90a11d9c</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DigitizationRequestDateTime</name>
+                                                <value>
+                                                    <dateTime.iso8601>20150121T02:04:35</dateTime.iso8601>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenType</name>
+                                                <value>
+                                                    <string>S</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceType</name>
+                                                <value>
+                                                    <double>09</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>ExpirationDate</name>
+                                                <value>
+                                                    <double>0416</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>CurrentStatusDescription</name>
+                                                <value>
+                                                    <string>Active</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenActivatedDateTime</name>
+                                                <value>
+                                                    <dateTime.iso8601>20150121T02:04:45</dateTime.iso8601>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenRequestorName</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>WalletId</name>
+                                                <value>
+                                                    <double>103</double>
+                                                </value>
+                                            </member>
+                                        </struct>
+                                    </value>
+                                    <value>
+                                        <struct>
+                                            <member>
+                                                <name>DeviceId</name>
+                                                <value>
+                                                    <string>84f624e93452c9243e345b532a245e4723d7a9c4f624e93452c92de9357a</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceName</name>
+                                                <value>
+                                                    <string>John Tablet</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenUniqueReference</name>
+                                                <value>
+                                                    <string>DWSPMC00000000010906a349d9ca4eb1a4d53esddddws</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DigitizationRequestDateTime</name>
+                                                <value>
+                                                    <dateTime.iso8601>20141021T02:04:35</dateTime.iso8601>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenType</name>
+                                                <value>
+                                                    <string>S</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceType</name>
+                                                <value>
+                                                    <double>13</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>ExpirationDate</name>
+                                                <value>
+                                                    <double>0216</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>CurrentStatusDescription</name>
+                                                <value>
+                                                    <string>Deleted</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenActivatedDateTime</name>
+                                                <value>
+                                                    <dateTime.iso8601>20150121T02:04:45</dateTime.iso8601>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenRequestorName</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>WalletId</name>
+                                                <value>
+                                                    <double>103</double>
+                                                </value>
+                                            </member>
+                                        </struct>
+                                    </value>
+                                    <value>
+                                        <struct>
+                                            <member>
+                                                <name>DeviceId</name>
+                                                <value>
+                                                    <string>24a24ba98e27d43e345b532a245e4723d7a9c4f624e93452c92de9357a53</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceName</name>
+                                                <value>
+                                                    <string>Smart phone</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenUniqueReference</name>
+                                                <value>
+                                                    <string>DWSPMC00000000010906a349d9ca4eb1a4d53esdsdseee</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DigitizationRequestDateTime</name>
+                                                <value>
+                                                    <dateTime.iso8601>20150121T02:04:35</dateTime.iso8601>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenType</name>
+                                                <value>
+                                                    <string>S</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceType</name>
+                                                <value>
+                                                    <double>09</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>ExpirationDate</name>
+                                                <value>
+                                                    <double>0116</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>CurrentStatusDescription</name>
+                                                <value>
+                                                    <string>Suspended</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenActivatedDateTime</name>
+                                                <value>
+                                                    <dateTime.iso8601>20150121T02:04:45</dateTime.iso8601>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenRequestorName</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>WalletId</name>
+                                                <value>
+                                                    <double>103</double>
+                                                </value>
+                                            </member>
+                                        </struct>
+                                    </value>
+                                    <value>
+                                        <struct>
+                                            <member>
+                                                <name>DeviceId</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceName</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenUniqueReference</name>
+                                                <value>
+                                                    <string>DWSPMC00000000010906a349d9ca4eb1a4d53e3c90a22557</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DigitizationRequestDateTime</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenType</name>
+                                                <value>
+                                                    <string>F</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceType</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>ExpirationDate</name>
+                                                <value>
+                                                    <double>0416</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>CurrentStatusDescription</name>
+                                                <value>
+                                                    <string>Active</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenActivatedDateTime</name>
+                                                <value>
+                                                    <dateTime.iso8601>20150121T02:04:45</dateTime.iso8601>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenRequestorName</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>WalletId</name>
+                                                <value>
+                                                    <double>103</double>
+                                                </value>
+                                            </member>
+                                        </struct>
+                                    </value>
+                                    <value>
+                                        <struct>
+                                            <member>
+                                                <name>DeviceId</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceName</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenUniqueReference</name>
+                                                <value>
+                                                    <string>DWSPMC00000000010906a349d9ca4eb1a4d53e3c90a22556</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DigitizationRequestDateTime</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenType</name>
+                                                <value>
+                                                    <string>F</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceType</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>ExpirationDate</name>
+                                                <value>
+                                                    <double>0416</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>CurrentStatusDescription</name>
+                                                <value>
+                                                    <string>Suspended</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenActivatedDateTime</name>
+                                                <value>
+                                                    <dateTime.iso8601>20150121T02:04:45</dateTime.iso8601>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenRequestorName</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>WalletId</name>
+                                                <value>
+                                                    <double>103</double>
+                                                </value>
+                                            </member>
+                                        </struct>
+                                    </value>
+                                    <value>
+                                        <struct>
+                                            <member>
+                                                <name>DeviceId</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceName</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenUniqueReference</name>
+                                                <value>
+                                                    <string>DWSPMC00000000010906a349d9ca4eb1a4d53e3c90a22555</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DigitizationRequestDateTime</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenType</name>
+                                                <value>
+                                                    <string>F</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>DeviceType</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>ExpirationDate</name>
+                                                <value>
+                                                    <double>0416</double>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>CurrentStatusDescription</name>
+                                                <value>
+                                                    <string>Deleted</string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenActivatedDateTime</name>
+                                                <value>
+                                                    <dateTime.iso8601>20150121T02:04:45</dateTime.iso8601>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>TokenRequestorName</name>
+                                                <value>
+                                                    <string></string>
+                                                </value>
+                                            </member>
+                                            <member>
+                                                <name>WalletId</name>
+                                                <value>
+                                                    <double>103</double>
+                                                </value>
+                                            </member>
+                                        </struct>
+                                    </value>
+                                </data>
+                            </array>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

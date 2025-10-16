@@ -34,7 +34,7 @@ metadata:
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2><b>How to Integrate Transaction Stream</b></h2>
@@ -57,23 +57,23 @@ metadata:
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h3><b>Step 1: Get authentication data </b></h3>
 <p><span style="font-weight: 400;">First, you need to authenticate against the events system and get session and listening endpoint information before consuming the PubNub API.</span></p>
-<p><span style="font-weight: 400;">So, you need to make a GET request to Paymentology&#8217;s</span><span style="font-weight: 400;"> PubNub Authenticate REST API.</span></p>
+<p><span style="font-weight: 400;">So, you need to make a GET request to Paymentology’s</span><span style="font-weight: 400;"> PubNub Authenticate REST API.</span></p>
 <p><span style="font-weight: 400;">To consume the API, you need to call the following endpoint:</span></p>
 <p><b>https://api.tutuka.com/pubnub/json.cfm</b></p>
-<p>&nbsp;</p>
+<p> </p>
 <p><span style="font-weight: 400;">Here is an example of a GET request to the REST API:</span></p>
-<p><a href="https://api.tutuka.com/pubnub/json.cfm?method=Authenticate&amp;deviceID=DUNNE_PC&amp;transactionID=49716b6b-1cfa-4355-bef3-1e71281c1862&amp;transactionDate=2017-02-01T12%3A37%3A20.108%2B02%3A00&amp;terminalID=0090424741&amp;checksum=54CDCAD914E6E97E648F3DF1BA64F41C2C441862"><b>https://api.tutuka.com/pubnub/json.cfm?method=Authenticate&amp;deviceID=DUNNE_PC&amp;transactionID=49716b6b-1cfa-4355-bef3-1e71281c1862&amp;transactionDate=2017-02-01T12%3A37%3A20.108%2B02%3A00&amp;terminalID=0090424741&amp;checksum=54CDCAD914E6E97E648F3DF1BA64F41C2C441862</b></a></p>
-<p>&nbsp;</p>
+<p><a href="https://api.tutuka.com/pubnub/json.cfm?method=Authenticate&deviceID=DUNNE_PC&transactionID=49716b6b-1cfa-4355-bef3-1e71281c1862&transactionDate=2017-02-01T12%3A37%3A20.108%2B02%3A00&terminalID=0090424741&checksum=54CDCAD914E6E97E648F3DF1BA64F41C2C441862"><b>https://api.tutuka.com/pubnub/json.cfm?method=Authenticate&deviceID=DUNNE_PC&transactionID=49716b6b-1cfa-4355-bef3-1e71281c1862&transactionDate=2017-02-01T12%3A37%3A20.108%2B02%3A00&terminalID=0090424741&checksum=54CDCAD914E6E97E648F3DF1BA64F41C2C441862</b></a></p>
+<p> </p>
 <p><span style="font-weight: 400;">The above request will give the following response:</span></p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -88,13 +88,14 @@ metadata:
   "SUBSCRIBEURI": "https://pubsub.pubnub.com/v2/subscribe/",
   "TTL": "86400"
 }
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} */}
 
 
 <h3><b>Step 2: Subscribe users to channel</b></h3>
@@ -102,7 +103,7 @@ metadata:
 <p><span style="font-weight: 400;">This will involve making a GET request to the </span><a href="https://www.pubnub.com/docs/pubnub-rest-api-documentation#publish-subscribe-subscribe-get"><span style="font-weight: 400;">PubNub REST API</span></a><span style="font-weight: 400;">, via the </span><b>subscribe </b><span style="font-weight: 400;">endpoint:</span></p>
 <p><b>https://pubsub.pubnub.com/v2/subscribe/</b></p>
 <p><span style="font-weight: 400;">Note that the endpoint corresponds to the </span><b>SUBSCRIBEURI</b><span style="font-weight: 400;"> value from the previous response data.</span></p>
-<p>&nbsp;</p>
+<p> </p>
 <p><span style="font-weight: 400;">You need to specify the following path parameters:</span></p>
 <ul>
 <li style="font-weight: 400;" aria-level="1"><b>SUBKEY</b><span style="font-weight: 400;">—this is your PubNub subscribe API key.</span></li>
@@ -110,20 +111,20 @@ metadata:
 <li style="font-weight: 400;" aria-level="1"><b>Callback</b><span style="font-weight: 400;">—this is a JSONP callback name. If there is none, just specify it as 0 (zero).</span></li>
 <li style="font-weight: 400;" aria-level="1"><b>Timetoken</b><span style="font-weight: 400;">—for the initial subscribe, just specify it as 0 (zero).</span></li>
 </ul>
-<p>&nbsp;</p>
+<p> </p>
 <p><span style="font-weight: 400;">The above request will give the following response:</span></p>
-<p><span style="font-weight: 400;">{&#8220;t&#8221;:{&#8220;t&#8221;:&#8221;16081395170424173&#8243;,&#8221;r&#8221;:7},&#8221;m&#8221;:[]}</span></p>
-<p>&nbsp;</p>
+<p><span style="font-weight: 400;">{“t”:{“t”:”16081395170424173″,”r”:7},”m”:[]}</span></p>
+<p> </p>
 <p><span style="font-weight: 400;">As you can see above, the response is an object that contains two elements:</span></p>
 <ul>
 <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">The first element is an object consisting of two values: </span><b>t</b><span style="font-weight: 400;">—timetoken and </span><b>r</b><span style="font-weight: 400;">—region.</span></li>
 <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">The second element is an array of messages delivered from the subscribed channel.</span></li>
 </ul>
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} */}
 
 
 <h2><b>Troubleshooting Transaction Stream</b></h2>

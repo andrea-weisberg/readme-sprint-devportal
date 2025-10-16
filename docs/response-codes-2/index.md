@@ -1,22 +1,22 @@
 ---
-title: Response Codes &#8211; Remote API
+title: Response Codes – Remote API
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-<!-- unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":"Code"},{"c":"Description"}],"caption":false,"body":[[{"c":"1"},{"c":"Approved"}],[{"c":"2"},{"c":"Approved - Partial amount"}],[{"c":"-2"},{"c":"Invalid card number"}],[{"c":"-3"},{"c":"Duplicate transmission"}],[{"c":"-4"},{"c":"Invalid card number (use for invalid wallet reference)"}],[{"c":"-5"},{"c":"Transaction not permitted to Terminal / Transaction not permitted to Acquirer"}],[{"c":"-6"},{"c":"Function not supported / Invalid transaction"}],[{"c":"-7"},{"c":"Transaction timeout"}],[{"c":"-8"},{"c":"Authentication failed (Incorrect checksum)"}],[{"c":"-9"},{"c":"Do not honor (general decline, no specific reason given, technical error)"}],[{"c":"-13"},{"c":"Stolen card"}],[{"c":"-14"},{"c":"Insufficient funds"}],[{"c":"-16"},{"c":"Exceeds Purchase amount limit"}],[{"c":"-17"},{"c":"Not sufficient funds"}],[{"c":"-18"},{"c":"Exceeds withdrawal amount limit"}],[{"c":"-19"},{"c":"Invalid amount"}],[{"c":"-24"},{"c":"Security violation"}],[{"c":"-25"},{"c":"Incorrect PIN"}],[{"c":"-26"},{"c":"Allowable PIN tries exceeded"}],[{"c":"-27"},{"c":"Invalid PIN block"}],[{"c":"-28"},{"c":"PIN length error"}],[{"c":"-29"},{"c":"Restricted card"}],[{"c":"-34"},{"c":"Account closed / Invalid account"}],[{"c":"-36"},{"c":"Expired card"}],[{"c":"-37"},{"c":"Suspected fraud"}],[{"c":"-38"},{"c":"Lost card"}],[{"c":"-39"},{"c":"Stolen card"}],[{"c":"-41"},{"c":"Requested function not supported / Invalid transaction"}],[{"c":"-783"},{"c":"Do not honor (general decline, no specific reason given, technical  error)"}],[{"c":"-784"},{"c":"Transaction not permitted to Cardholder / Transaction not permitted to Issuer"}]]}} -->
+\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":"Code"\},\{"c":"Description"\}],"caption":false,"body":[[\{"c":"1"\},\{"c":"Approved"\}],[\{"c":"2"\},\{"c":"Approved - Partial amount"\}],[\{"c":"-2"\},\{"c":"Invalid card number"\}],[\{"c":"-3"\},\{"c":"Duplicate transmission"\}],[\{"c":"-4"\},\{"c":"Invalid card number (use for invalid wallet reference)"\}],[\{"c":"-5"\},\{"c":"Transaction not permitted to Terminal / Transaction not permitted to Acquirer"\}],[\{"c":"-6"\},\{"c":"Function not supported / Invalid transaction"\}],[\{"c":"-7"\},\{"c":"Transaction timeout"\}],[\{"c":"-8"\},\{"c":"Authentication failed (Incorrect checksum)"\}],[\{"c":"-9"\},\{"c":"Do not honor (general decline, no specific reason given, technical error)"\}],[\{"c":"-13"\},\{"c":"Stolen card"\}],[\{"c":"-14"\},\{"c":"Insufficient funds"\}],[\{"c":"-16"\},\{"c":"Exceeds Purchase amount limit"\}],[\{"c":"-17"\},\{"c":"Not sufficient funds"\}],[\{"c":"-18"\},\{"c":"Exceeds withdrawal amount limit"\}],[\{"c":"-19"\},\{"c":"Invalid amount"\}],[\{"c":"-24"\},\{"c":"Security violation"\}],[\{"c":"-25"\},\{"c":"Incorrect PIN"\}],[\{"c":"-26"\},\{"c":"Allowable PIN tries exceeded"\}],[\{"c":"-27"\},\{"c":"Invalid PIN block"\}],[\{"c":"-28"\},\{"c":"PIN length error"\}],[\{"c":"-29"\},\{"c":"Restricted card"\}],[\{"c":"-34"\},\{"c":"Account closed / Invalid account"\}],[\{"c":"-36"\},\{"c":"Expired card"\}],[\{"c":"-37"\},\{"c":"Suspected fraud"\}],[\{"c":"-38"\},\{"c":"Lost card"\}],[\{"c":"-39"\},\{"c":"Stolen card"\}],[\{"c":"-41"\},\{"c":"Requested function not supported / Invalid transaction"\}],[\{"c":"-783"\},\{"c":"Do not honor (general decline, no specific reason given, technical  error)"\}],[\{"c":"-784"\},\{"c":"Transaction not permitted to Cardholder / Transaction not permitted to Issuer"\}]]}} */}
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2>Important</h2>
-<p>Any argument that has the type <span class="xml-highlight">date</span> needs to follow the XML-RPC specified ISO 8601 date-time format: &lt;dateTime.iso8601&gt;YYYYMMDDTHH:mm:ss&lt;dateTime.iso8601&gt;</p>
+<p>Any argument that has the type <span class="xml-highlight">date</span> needs to follow the XML-RPC specified ISO 8601 date-time format: <dateTime.iso8601>YYYYMMDDTHH:mm:ss<dateTime.iso8601></p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p>Any transaction amount is represented as its cent value; therefore an integer rather than a decimal.</p>
@@ -27,7 +27,7 @@ metadata:
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p>KLV: A type of TLV encoded string with characteristics:</p>
@@ -54,7 +54,7 @@ metadata:
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>Matching response codes</h2>

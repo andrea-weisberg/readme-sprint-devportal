@@ -10,7 +10,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -124,29 +124,8 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| resultText | String | <p>Result text indicating Approved or Declined</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
     <params>
@@ -170,12 +149,148 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodResponse>
+
+```
+
+<p> </p>
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+| resultText | String | <p>Result text indicating Approved or Declined</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodCall>
+    <methodName>PrintLinkedCardWithPINBlock</methodName>
+    <params>
+        <param>
+            <value>
+                <string>12345678</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>Mr</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>JDF</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>Foo</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>address1</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>address2</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>address3</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>address4</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>address5</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string></string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>0924769387</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>105232700000440</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>pinBlock</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>68629cfb-a9eb-4058-a759-17b36a97df13</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20241028T11:27:58</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>2179242073DE2A5DAE99B98212277F87D3D0E413</string>
+            </value>
+        </param>
+    </params>
+</methodCall>
+
+```,```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>Approved</string>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
 ```
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>

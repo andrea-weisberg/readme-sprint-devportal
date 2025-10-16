@@ -10,7 +10,7 @@ original_path: chargeback-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>How it works:</h2>
@@ -26,7 +26,7 @@ original_path: chargeback-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>Available methods</h2>

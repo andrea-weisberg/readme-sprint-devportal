@@ -14,7 +14,7 @@ original_path: companion-api/tokenization2
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><b>Step 1</b><span style="font-weight: 400;">: The cardholder initiates the request for a token via push provisioning or manual provisioning. You can learn more about the two provisioning methods <a href="https://developer.sprint.paymentology.com/companion-api/tokenization2/token-provisioning/">here</a>.</span></p>
@@ -35,4 +35,4 @@ original_path: companion-api/tokenization2
 <p><b>Step 7: </b><span style="font-weight: 400;">If the token approval process succeeds, the card network generates a payment token. The card network then stores the information in their secure token vault, while associating the card details with the created token.</span></p>
 <p><b>Step 8: </b><span style="font-weight: 400;">The card network sends the unique token to the payment service provider to incorporate into its platform and complete the current transaction. The provider may also store the token to ease future repeat purchases.</span></p>
 <p><b>Step 9: </b><span style="font-weight: 400;">Optionally, additional cardholder authentication may be required before the token is activated. In that case, the client will need to call the </span><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/activatetoken/"><b>ActivateToken</b></a><span style="font-weight: 400;"> method to activate the token.</span></p>
-<p><span style="font-weight: 400;">The method is used to activate a token that has been approved and provisioned but a cardholder authentication is required before it is activated. It is expected that a cardholder will carry out the authentication process via an issuer&#8217;s </span><span style="font-weight: 400;"> </span><span style="font-weight: 400;">(wallet / Paymentology&#8217;s client) call center or via a backend service called by the issuer’s mobile application. </span></p>
+<p><span style="font-weight: 400;">The method is used to activate a token that has been approved and provisioned but a cardholder authentication is required before it is activated. It is expected that a cardholder will carry out the authentication process via an issuer’s </span><span style="font-weight: 400;"> </span><span style="font-weight: 400;">(wallet / Paymentology’s client) call center or via a backend service called by the issuer’s mobile application. </span></p>

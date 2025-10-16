@@ -10,7 +10,7 @@ original_path: profile-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -28,7 +28,7 @@ original_path: profile-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -79,29 +79,8 @@ original_path: profile-api-reference
     </param>
   </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| resultText | String | <p>Text indicating transaction result</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```null
+```,```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
   <params>
@@ -125,25 +104,8 @@ original_path: profile-api-reference
     </param>
   </params>
 </methodResponse>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-<!-- unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Response codes","table":{"use_header":true,"header":[{"c":"Code"},{"c":"Description"}],"caption":false,"body":[[{"c":"1"},{"c":"Ok"}],[{"c":"-10"},{"c":"Custom error message (see ResultText field for description)"}],[{"c":"-395"},{"c":"card not linked to profile"}],[{"c":"-396"},{"c":"Profile not linked to terminal"}],[{"c":"-398"},{"c":"Card is not allocated"}]]}} -->
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-<h3>Error Objects</h3>
-<p>Error Fault for invalid checksum authentication returns the following message:</p>
-
-```null
+```,```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
   <fault>
@@ -165,13 +127,246 @@ original_path: profile-api-reference
     </value>
   </fault>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+| resultText | String | <p>Text indicating transaction result</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```null
+<?xml version="1.0"?>
+<methodCall>
+  <methodName>TransferToken</methodName>
+  <params>
+    <param>
+      <value>
+        <string>0020787431</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>Cyp001</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>DWSPMC00000000010906a349d9ca4eb1a4d53e3c90a11d9c</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>156554700000004</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>156554700000005</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>fb8344c9-2fc9-467b-87e4-55eaf88d06f1</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <dateTime.iso8601>20200101T09:00:00</dateTime.iso8601>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>FC600F94C3C800377B5E93D518DDA1D1B56E88D0</string>
+      </value>
+    </param>
+  </params>
+</methodCall>
+
+```,```null
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>resultCode</name>
+            <value>
+              <int>1</int>
+            </value>
+          </member>
+          <member>
+            <name>resultText</name>
+            <value>
+              <string>OK</string>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>
+
+```,```null
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+  <fault>
+    <value>
+      <struct>
+        <member>
+          <name>faultCode</name>
+          <value>
+            <int>-8</int>
+          </value>
+        </member>
+        <member>
+          <name>faultString</name>
+          <value>
+            <string>Authentication failed</string>
+          </value>
+        </member>
+      </struct>
+    </value>
+  </fault>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
+
+
+\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Response codes","table":{"use_header":true,"header":[{"c":"Code"\},\{"c":"Description"\}],"caption":false,"body":[[\{"c":"1"\},\{"c":"Ok"\}],[\{"c":"-10"\},\{"c":"Custom error message (see ResultText field for description)"\}],[\{"c":"-395"\},\{"c":"card not linked to profile"\}],[\{"c":"-396"\},\{"c":"Profile not linked to terminal"\}],[\{"c":"-398"\},\{"c":"Card is not allocated"\}]]}} */}
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
+
+
+<h3>Error Objects</h3>
+<p>Error Fault for invalid checksum authentication returns the following message:</p>
+
+```null
+<?xml version="1.0"?>
+<methodCall>
+  <methodName>TransferToken</methodName>
+  <params>
+    <param>
+      <value>
+        <string>0020787431</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>Cyp001</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>DWSPMC00000000010906a349d9ca4eb1a4d53e3c90a11d9c</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>156554700000004</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>156554700000005</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>fb8344c9-2fc9-467b-87e4-55eaf88d06f1</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <dateTime.iso8601>20200101T09:00:00</dateTime.iso8601>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>FC600F94C3C800377B5E93D518DDA1D1B56E88D0</string>
+      </value>
+    </param>
+  </params>
+</methodCall>
+
+```,```null
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>resultCode</name>
+            <value>
+              <int>1</int>
+            </value>
+          </member>
+          <member>
+            <name>resultText</name>
+            <value>
+              <string>OK</string>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>
+
+```,```null
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+  <fault>
+    <value>
+      <struct>
+        <member>
+          <name>faultCode</name>
+          <value>
+            <int>-8</int>
+          </value>
+        </member>
+        <member>
+          <name>faultString</name>
+          <value>
+            <string>Authentication failed</string>
+          </value>
+        </member>
+      </struct>
+    </value>
+  </fault>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
 
 
 <p><a class="btn btn--primary" href="#https://developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Reference</a></p>

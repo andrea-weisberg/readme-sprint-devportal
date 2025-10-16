@@ -10,7 +10,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -26,7 +26,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -67,30 +67,8 @@ original_path: card-api/api-reference
         </param>
     </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result. In the event of a successful result the code will be 1.</p> |
-| resultText | String | <p>Text indicating transaction result</p> |
-| tav | String | <p>JSON fields encoded in Base-64 format.<br /> The returned JSON fields include:<br /> • version<br /> • signatureAlgorithm<br /> • dataValidUntilTimestamp<br /> • includedFieldsInOrder<br /> • signature (RSA-SHA256 signature/<br /> TAV)</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```null
+```,```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
     <params>
@@ -120,13 +98,106 @@ original_path: card-api/api-reference
         </param>
     </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result. In the event of a successful result the code will be 1.</p> |
+| resultText | String | <p>Text indicating transaction result</p> |
+| tav | String | <p>JSON fields encoded in Base-64 format.<br /> The returned JSON fields include:<br /> • version<br /> • signatureAlgorithm<br /> • dataValidUntilTimestamp<br /> • includedFieldsInOrder<br /> • signature (RSA-SHA256 signature/<br /> TAV)</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```null
+<?xml version="1.0" encoding="UTF-8"?>
+<methodCall>
+    <methodName>CalculateTAV</methodName>
+    <params>
+        <param>
+            <value>
+                <string>{{terminalID}}</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>{{customerReference}}</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>{{trackingNumber}}</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>{{transactionID}}</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>{{transactionDate}}</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>{{checksum}}</string>
+            </value>
+        </param>
+    </params>
+</methodCall>
+
+```,```null
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>Approved</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>tav</name>
+                        <value>
+                            <string>tav</string>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">Back To Card API Menu</a></p>

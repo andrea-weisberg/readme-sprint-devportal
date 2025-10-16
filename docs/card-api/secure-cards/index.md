@@ -14,12 +14,12 @@ original_path: card-api
 <li>PIN on physical cards</li>
 <li>Adding pockets to your card</li>
 </ul>
-<p>&nbsp;</p>
-<p>Let&#8217;s look at each of them.</p>
+<p> </p>
+<p>Let’s look at each of them.</p>
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2 class="block highlight" data-element="bridgehead" data-attr-renderas="sect3" data-attr-xml-id="bridgehead-idm4580796441427231693872562228"><span class="inline translation current" data-element="emphasis" data-attr-role="bold" data-attr-xinfo-text="10337">1. Using a dynamic secure code on virtual cards​</span>​</h2>
@@ -36,7 +36,7 @@ original_path: card-api
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2 class="block highlight" data-element="bridgehead" data-attr-renderas="sect3" data-attr-xml-id="bridgehead-idm4646117344587231693882666982"><span class="inline translation current" data-element="emphasis" data-attr-role="bold" data-attr-xinfo-text="10343">2. Using a dynamic CVV on virtual cards​</span>​</h2>
@@ -49,7 +49,7 @@ original_path: card-api
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2 class="block highlight" data-element="bridgehead" data-attr-renderas="sect3" data-attr-xml-id="bridgehead-idm4575661939452831693886418008"><span class="inline translation current" data-element="emphasis" data-attr-role="bold" data-attr-xinfo-text="10348">3. Using a PIN on physical cards​</span>​</h2>
@@ -60,7 +60,7 @@ original_path: card-api
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2 class="block highlight" data-element="bridgehead" data-attr-renderas="sect3" data-attr-xml-id="bridgehead-idm4511158928099231693890860727"><span class="inline translation current" data-element="emphasis" data-attr-role="bold" data-attr-xinfo-text="10353">4. Adding pockets to your card​</span>​</h2>

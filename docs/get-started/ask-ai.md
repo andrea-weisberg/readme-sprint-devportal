@@ -10,7 +10,7 @@ original_path: get-started
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>What can Ask AI do?</h2>
@@ -24,7 +24,7 @@ original_path: get-started
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>How can I use Ask AI?</h2>
@@ -55,7 +55,7 @@ original_path: get-started
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h3><a id="AAIS"></a>Ask AI Search</h3>
@@ -73,20 +73,20 @@ original_path: get-started
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>Ask AI tips</h2>
-<p>Ask AI prioritizes accuracy and relevance in responses. It&#8217;s important to acknowledge that there may be situations where you need to try different prompts to achieve the desired outcome.</p>
+<p>Ask AI prioritizes accuracy and relevance in responses. It’s important to acknowledge that there may be situations where you need to try different prompts to achieve the desired outcome.</p>
 <p>You can try by:</p>
 <ul>
 <li><strong>Refining your search:</strong> you can try refining your search by using different words or rephrasing your question.</li>
-<li><strong>Using specific keywords:</strong> make sure to include relevant keywords when defining what you&#8217;re after.</li>
+<li><strong>Using specific keywords:</strong> make sure to include relevant keywords when defining what you’re after.</li>
 <li><strong>Experimenting with different prompts:</strong> sometimes, a different approach to your question can provide better results.</li>
 </ul>
-<p>Make sure to use the feedback buttons, as this can help ensure the accuracy of answers provided. The feedback buttons are located on the bottom right corner of Ask AI&#8217;s response.</p>
+<p>Make sure to use the feedback buttons, as this can help ensure the accuracy of answers provided. The feedback buttons are located on the bottom right corner of Ask AI’s response.</p>
 <p><img loading="lazy" decoding="async" class="alignleft wp-image-5123 size-full" src="https://developer.sprint.paymentology.com/wp-content/uploads/2025/04/Sprint-feedback-buttons-1-e1743472145749.png" alt="" width="500" height="248" /></p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}

@@ -11,7 +11,7 @@ original_path: card-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>Types of Disputes:</h2>
@@ -23,7 +23,7 @@ original_path: card-api
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h1>How Disputes Work</h1>
@@ -33,7 +33,7 @@ original_path: card-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>What is a Second Presentment?</h2>
@@ -41,7 +41,7 @@ original_path: card-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>What is Pre-Arbitration and Arbitration?</h2>
@@ -49,7 +49,7 @@ original_path: card-api
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h1>Dispute Lifecycle</h1>
@@ -61,7 +61,7 @@ original_path: card-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>1. Individual chargeback submission</h2>
@@ -70,14 +70,14 @@ original_path: card-api
 – General dispute form<br />
 – Fraud dispute form</li>
 <li>The client’s merchant/customer will complete the form and select the appropriate reason</li>
-<li>The client will send this dispute to Paymentology&#8217;s Global support team via email &#8211; support@paymentology.com</li>
+<li>The client will send this dispute to Paymentology’s Global support team via email – support@paymentology.com</li>
 <li>Based on the information provided, Paymentology will investigate the transaction being disputed</li>
 <li>Paymentology will submit the chargeback using the appropriate chargeback reason code</li>
 </ul>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>2. Batch chargeback process</h2>
@@ -92,7 +92,7 @@ original_path: card-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h1>Chargeback Process Flow</h1>
@@ -100,7 +100,7 @@ original_path: card-api
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h1>Mastercard: Dispute/Chargeback categories and timeframes</h1>
@@ -109,27 +109,27 @@ original_path: card-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
-<!-- unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Mastercard Categories and Timeframes","table":{"use_header":true,"header":[{"c":"REASON CODE"},{"c":"REASON CODE DESCRIPTION"},{"c":"TIMEFRAME"}],"caption":false,"body":[[{"c":"4808"},{"c":"Authorization-related Chargeback"},{"c":"90 calendar days"}],[{"c":"4853"},{"c":"Cardholder dispute"},{"c":"120 calendar days"}],[{"c":"4837/4849/4870/4871"},{"c":"Fraud <br>\n- No cardholder authorization <br>\n- Questionable merchant activity <br>\n- Chip liability shift <br>\n- Chip liability shift - Lost/Stolen/ Never Received Issue (NRI) fraud "},{"c":"120 calendar days"}],[{"c":"4834"},{"c":"Point-of-interaction error"},{"c":"90 calendar days but for ATM related disputes - 120 calendar days apply"}]]}} -->
+\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Mastercard Categories and Timeframes","table":{"use_header":true,"header":[{"c":"REASON CODE"\},\{"c":"REASON CODE DESCRIPTION"\},\{"c":"TIMEFRAME"\}],"caption":false,"body":[[\{"c":"4808"\},\{"c":"Authorization-related Chargeback"\},\{"c":"90 calendar days"\}],[\{"c":"4853"\},\{"c":"Cardholder dispute"\},\{"c":"120 calendar days"\}],[\{"c":"4837/4849/4870/4871"\},{"c":"Fraud <br>\n- No cardholder authorization <br>\n- Questionable merchant activity <br>\n- Chip liability shift <br>\n- Chip liability shift - Lost/Stolen/ Never Received Issue (NRI) fraud "},\{"c":"120 calendar days"\}],[\{"c":"4834"\},\{"c":"Point-of-interaction error"\},\{"c":"90 calendar days but for ATM related disputes - 120 calendar days apply"\}]]}} */}
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/Dispute-Resolution-Form-Fraud.docx">Dispute Resolution Form &#8211; Fraud</a></p>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/Dispute-Resolution-Form-Fraud.docx">Dispute Resolution Form – Fraud</a></p>
 <p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Dispute-Resolution-Form.docx">Dispute Resolution Form</a></p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
-<!-- unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":false,"text":"<p>Mastercard chargeback collaboration period is between 24-72 hours. Chargebacks can take up to 72 hours to reflect as processed by Mastercard. This means that the chargeback is actually paused for that period and the <strong>45 days waiting for second presentment</strong> only starts from the date the chargeback is actually processed. If no second presentment is received within 45 days, we automatically load the funds thereafter.</p>\n<p><strong>Please be informed that all Mastercard chargebacks will have to wait for 48 days to see if a chargeback is successful (no second presentment) and then the funds will be loaded. Our Dispute Team will notify due date on each chargeback case accordingly.</strong></p>\n"}]} -->
+{/* unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":false,"text":"<p>Mastercard chargeback collaboration period is between 24-72 hours. Chargebacks can take up to 72 hours to reflect as processed by Mastercard. This means that the chargeback is actually paused for that period and the <strong>45 days waiting for second presentment</strong> only starts from the date the chargeback is actually processed. If no second presentment is received within 45 days, we automatically load the funds thereafter.</p>\n<p><strong>Please be informed that all Mastercard chargebacks will have to wait for 48 days to see if a chargeback is successful (no second presentment) and then the funds will be loaded. Our Dispute Team will notify due date on each chargeback case accordingly.</strong></p>\n"}]} */}
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h1>Visa: Dispute/Chargeback categories and timeframes</h1>
@@ -138,23 +138,23 @@ original_path: card-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
-<!-- unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":"FRAUD"},{"c":"AUTHORIZATION"},{"c":"PROCESSING ERRORS"},{"c":"CONSUMER DISPUTES"}],"caption":false,"body":[[{"c":"EMV Liability Shift Non-Counterfeit Fraud"},{"c":"Visa Fraud Monitoring Program"},{"c":"Late Presentment"},{"c":"Merchandise/Services not received "}],[{"c":"EMV Liability Shift Non-Counterfeit Fraud"},{"c":"Declined Authorization"},{"c":"Incorrect Transaction Code"},{"c":"Cancelled Recurring"}],[{"c":"EMV Liability Shift Non-Counterfeit Fraud"},{"c":"No Authorization"},{"c":"Incorrect Currency"},{"c":"Not as Described or Defective Merchandise/Services"}],[{"c":"EMV Liability Shift Non-Counterfeit Fraud"},{"c":""},{"c":"Incorrect Account Number"},{"c":"Counterfeit Merchandise"}],[{"c":"Visa Fraud Monitoring Program"},{"c":""},{"c":"Incorrect Amount"},{"c":"Misrepresentation"}],[{"c":""},{"c":""},{"c":"Duplicate Processing/Paid by Other Means"},{"c":"Credit Not Processed"}],[{"c":""},{"c":""},{"c":"Invalid Data"},{"c":"Cancelled Merchandise/Services"}],[{"c":""},{"c":""},{"c":""},{"c":"Original Transaction Not Accepted"}],[{"c":""},{"c":""},{"c":""},{"c":"Non-Receipt of Cash or Load Transaction Value"}]]}} -->
+\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":"FRAUD"\},\{"c":"AUTHORIZATION"\},\{"c":"PROCESSING ERRORS"\},\{"c":"CONSUMER DISPUTES"\}],"caption":false,"body":[[\{"c":"EMV Liability Shift Non-Counterfeit Fraud"\},\{"c":"Visa Fraud Monitoring Program"\},\{"c":"Late Presentment"\},\{"c":"Merchandise/Services not received "\}],[\{"c":"EMV Liability Shift Non-Counterfeit Fraud"\},\{"c":"Declined Authorization"\},\{"c":"Incorrect Transaction Code"\},\{"c":"Cancelled Recurring"\}],[\{"c":"EMV Liability Shift Non-Counterfeit Fraud"\},\{"c":"No Authorization"\},\{"c":"Incorrect Currency"\},\{"c":"Not as Described or Defective Merchandise/Services"\}],[\{"c":"EMV Liability Shift Non-Counterfeit Fraud"\},\{"c":""\},\{"c":"Incorrect Account Number"\},\{"c":"Counterfeit Merchandise"\}],[\{"c":"Visa Fraud Monitoring Program"\},\{"c":""\},\{"c":"Incorrect Amount"\},\{"c":"Misrepresentation"\}],[\{"c":""\},\{"c":""\},\{"c":"Duplicate Processing/Paid by Other Means"\},\{"c":"Credit Not Processed"\}],[\{"c":""\},\{"c":""\},\{"c":"Invalid Data"\},\{"c":"Cancelled Merchandise/Services"\}],[\{"c":""\},\{"c":""\},\{"c":""\},\{"c":"Original Transaction Not Accepted"\}],[\{"c":""\},\{"c":""\},\{"c":""\},\{"c":"Non-Receipt of Cash or Load Transaction Value"\}]]}} */}
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Visa-Generic-Dispute-Form.docx">Visa Generic Dispute Form</a></p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h1>What is a Fraud Dispute?</h1>

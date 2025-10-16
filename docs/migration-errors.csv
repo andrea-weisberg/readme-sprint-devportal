@@ -69,7 +69,7 @@ These are the supported options for managing funds:​</p>
 <p><strong>Reconciliation is the process of matching transactions reported by Paymentology to the transactions recorded on the client platform to ensure that the amount settled by the card scheme is accurate.</strong></p>
 
 "
-/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/reports/apple-pay-monthly-declines-report.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""card-api/reports""
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/reports/apple-pay-monthly-declines-report.md,"Unexpected character `1` (U+0031) before name, expected a character that can start a name, such as a letter, `$`, or `_`",mdx-parse-error,7,"original_path: ""card-api/reports""
 ---
 <p>For clients using Paymentology’s tokenization, Paymentology can issue monthly reports to clients to utilize the report data to compile their Apple report through the Apple Partner Connect platform.</p>
 <p>The purpose of the Apple Pay monthly declines report is to provide oversight on Apple Pay transactions that have been declined. It is important to note that failed transactions are NOT considered as declined and therefore not considered for this report.</p>
@@ -374,7 +374,7 @@ Issuers and acquirers then follow a process to attempt to resolve the dispute. I
 <p><strong>When the cardholder has either a virtual or a physical companion card (or both), they can start transacting against their store of value. These transactions originate from the merchant and are then sent to Paymentology via the card schemes, before being forwarded to the store of value for validation and authorization.</strong></p>
 
 "
-/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/reports/apple-pay-monthly-declines-report-1.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api/reports""
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/reports/apple-pay-monthly-declines-report-1.md,"Unexpected character `1` (U+0031) before name, expected a character that can start a name, such as a letter, `$`, or `_`",mdx-parse-error,7,"original_path: ""companion-api/reports""
 ---
 <p>For clients using Paymentology’s tokenization, Paymentology can issue monthly reports to clients to utilize the report data to compile their Apple report through the Apple Partner Connect platform.</p>
 <p>The purpose of the Apple Pay monthly declines report is to provide oversight on Apple Pay transactions that have been declined. It is important to note that failed transactions are NOT considered as declined and therefore not considered for this report.</p>
@@ -689,6 +689,11 @@ The report includes details about vouchers and reasons for transactions being fi
 <p>Each action taken on a transaction is associated with a code; different codes are assigned to the same action by different parties/networks i.e. Mastercard, Visa, Remote API, Transaction Stream.</p>
 <p>The table below shows the different codes used by Mastercard, UnionPay and Visa and how they are mapped to <a href=""https://developer.sprint.paymentology.com/response-codes-2/"">Remote API Response Codes</a> and <a href=""https://developer.sprint.paymentology.com/notifications/"">Paymentology&#8217;s Transaction Stream (PubNub)</a>.</p>
 "
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/tools/checksum-generator/checksum-generator-help.md,"Unexpected character `?` (U+003F) before name, expected a character that can start a name, such as a letter, `$`, or `_`",mdx-parse-error,7,"original_path: ""tools/checksum-generator""
+---
+<h2 id=""intro"">About the Checksum Generator</h2>
+<p>The Checksum Generator is used to verify that the checksum calculation is correct and that it arrives at the same checksum result as our system.</p>
+<h2 id=""intro"">Testing with the Checksum Generator</h2>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/tools/simpos/simpos-result-codes.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""tools/simpos""
 ---
 <!-- unsupported_acf_block: table_block {""acf_fc_layout"":""table_block"",""table_caption"":"""",""table"":{""use_header"":true,""header"":[{""c"":""Code""},{""c"":""Description""}],""caption"":false,""body"":[[{""c"":""0""},{""c"":""Approved""}],[{""c"":""1000""},{""c"":""Do not honor (general decline, no specific reason given)""}],[{""c"":""1001""},{""c"":""Expired card""}],[{""c"":""1002""},{""c"":""Suspected fraud""}],[{""c"":""1006""},{""c"":""Allowable PIN tries exceeded""}],[{""c"":""1010""},{""c"":""Invalid amount""}],[{""c"":""1011""},{""c"":""Invalid card number (use for invalid wallet reference)""}],[{""c"":""1015""},{""c"":""General error (technical error)""}],[{""c"":""1016""},{""c"":""Insufficient funds""}],[{""c"":""1017""},{""c"":""Incorrect PIN""}],[{""c"":""1021""},{""c"":""Exceeds withdrawal amount limit""}],[{""c"":""1022""},{""c"":""Security violation ""}],[{""c"":""1026""},{""c"":""Invalid PIN block""}],[{""c"":""1027""},{""c"":""PIN length error""}],[{""c"":""1061""},{""c"":""Transaction not permitted to cardholder""}],[{""c"":""2008""},{""c"":""Lost card""}],[{""c"":""2009""},{""c"":""Stolen card""}],[{""c"":""9111""},{""c"":""Transaction timeout (send reversal)""}]]}} -->

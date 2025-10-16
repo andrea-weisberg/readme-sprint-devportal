@@ -10,7 +10,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -31,7 +31,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -96,35 +96,8 @@ original_path: card-api/api-reference
         </param>
     </params>
 </methodCall>
-```
 
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| terminalID | String | <p>Echo</p> |
-| customerReference | String | <p>Echo</p> |
-| trackingNumber | String | <p>Echo</p> |
-| pocketTypeUUIDFrom | String | <p>Echo</p> |
-| pocketTypeUUIDTo | String | <p>Echo</p> |
-| requestAmount | Integer | <p>Echo</p> |
-| clientTransactionID | String | <p>Echo</p> |
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| resultText | String | <p>Status text indicating transaction result</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <methodResponse>
     <params>
         <param>
@@ -197,12 +170,177 @@ original_path: card-api/api-reference
         </param>
     </params>
 </methodResponse>
+
 ```
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| terminalID | String | <p>Echo</p> |
+| customerReference | String | <p>Echo</p> |
+| trackingNumber | String | <p>Echo</p> |
+| pocketTypeUUIDFrom | String | <p>Echo</p> |
+| pocketTypeUUIDTo | String | <p>Echo</p> |
+| requestAmount | Integer | <p>Echo</p> |
+| clientTransactionID | String | <p>Echo</p> |
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+| resultText | String | <p>Status text indicating transaction result</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<methodCall>
+    <methodName>PocketTransferReverse</methodName>
+    <params>
+        <param>
+            <value>
+                <string>0070499260</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>1233</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>01211631</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>5784B0EF-155D-0028-9DE2D22646AD35D0</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>5756DA04-155D-0028-9D1E345F63AD8680</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <int>10</int>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>006001007020700#31180000#PP0914799521</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20170828T12:56:00</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>006001007020700#31180000#PP0914799520</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20170828T12:56:00</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>39205E153EDC01C9605172E2D376889DBB8D94EF</string>
+            </value>
+        </param>
+    </params>
+</methodCall>
+
+```,```xml
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>clientTransactionID</name>
+                        <value>
+                            <string>006001007020700#31180000#PP0914799521</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>0</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>terminalID</name>
+                        <value>
+                            <string>0070499260</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>pocketCampaignUUIDTo</name>
+                        <value>
+                            <string>5756DA04-155D-0028-9D1E345F63AD8680</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>requestAmount</name>
+                        <value>
+                            <int>10</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>customerReference</name>
+                        <value>
+                            <string>1233</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>pocketCampaignUUIDFrom</name>
+                        <value>
+                            <string>5784B0EF-155D-0028-9DE2D22646AD35D0</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>Approved - No Action</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>trackingNumber</name>
+                        <value>
+                            <string>01211631</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>balance</name>
+                        <value>
+                            <array>
+                                <data/>
+                            </array>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
+```
+
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

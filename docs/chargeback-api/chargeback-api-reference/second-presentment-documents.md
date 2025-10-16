@@ -10,7 +10,7 @@ original_path: chargeback-api/chargeback-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>Request/response fields and samples</h2>
@@ -27,7 +27,7 @@ original_path: chargeback-api/chargeback-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -37,12 +37,21 @@ original_path: chargeback-api/chargeback-api-reference
     "claimID": "CLAIM_ID",
     "format": "ORIGINAL_TIFF"
 }
+
+```,```json
+{
+    "fileAttachment": {
+        "filename": "FILE_NAME",
+        "file": "BASE64_ENCODED_FILE"
+    }
+}
+
 ```
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
 
 
 #### Response schema
@@ -55,17 +64,25 @@ original_path: chargeback-api/chargeback-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
 
 
 
 ```json
+{
+    "chargebackId": "CHARGEBACK ID",
+    "claimID": "CLAIM_ID",
+    "format": "ORIGINAL_TIFF"
+}
+
+```,```json
 {
     "fileAttachment": {
         "filename": "FILE_NAME",
         "file": "BASE64_ENCODED_FILE"
     }
 }
+
 ```
 
 
@@ -76,11 +93,11 @@ original_path: chargeback-api/chargeback-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>Additional info</h2>
 
 
 
-<!-- unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":""},{"c":""}],"caption":false,"body":[[{"c":"HTTP Method"},{"c":"GET"}],[{"c":"URL_URI (SIT/UAT)"},{"c":"https://chargebacks.test.tutuka.cloud/client/claims/{claim-id}/chargebacks/{chargebackId}/documents?format={format}"}],[{"c":"HTTP Headers"},{"c":"Content-Type text/plain"}],[{"c":"Query String Parameters"},{"c":"format={format}"}],[{"c":"Format"},{"c":"JSON"}],[{"c":"Authentication"},{"c":"Bearer BEARER_TOKEN"}],[{"c":"Success Response Code"},{"c":"200"}],[{"c":"Error Response Code"},{"c":"500"}]]}} -->
+\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":""\},\{"c":""\}],"caption":false,"body":[[\{"c":"HTTP Method"\},\{"c":"GET"\}],[\{"c":"URL_URI (SIT/UAT)"\},\{"c":"https://chargebacks.test.tutuka.cloud/client/claims/{claim-id\}/chargebacks/\{chargebackId\}/documents?format=\{format\}"}],[\{"c":"HTTP Headers"\},\{"c":"Content-Type text/plain"\}],[\{"c":"Query String Parameters"\},\{"c":"format={format\}"}],[\{"c":"Format"\},\{"c":"JSON"\}],[\{"c":"Authentication"\},\{"c":"Bearer BEARER_TOKEN"\}],[\{"c":"Success Response Code"\},\{"c":"200"\}],[\{"c":"Error Response Code"\},\{"c":"500"\}]]}} */}

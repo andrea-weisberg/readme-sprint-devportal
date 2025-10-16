@@ -10,7 +10,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -28,7 +28,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -78,29 +78,8 @@ original_path: card-api/api-reference
                 </param>
             </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| resultText | String | <p>Status text indicating transaction result</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <methodResponse>
             <params>
                 <param>
@@ -123,13 +102,107 @@ original_path: card-api/api-reference
                 </param>
             </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+| resultText | String | <p>Status text indicating transaction result</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<methodCall>
+            <methodName>TransferToken</methodName>
+            <params>
+                <param>
+                    <value>
+                        <string>0020787431</string>
+                    </value>
+                </param>
+                <param>
+                    <value>
+                        <string>Cyp001</string>
+                    </value>
+                </param>
+                <param>
+                    <value>
+           <string>DWSPMC00000000010906a349d9ca4eb1a4d53e3c90a11d9c</string>
+                    </value>
+                </param>
+                <param>
+                    <value>
+                        <string>156554700000004</string>
+                    </value>
+                </param>
+                <param>
+                    <value>
+                        <string>156554700000005</string>
+                    </value>
+                </param>
+                <param>
+                    <value>
+                        <string>fb8344c9-2fc9-467b-87e4-55eaf88d06f1</string>
+                    </value>
+                </param>
+                <param>
+                    <value>
+                        <dateTime.iso8601>20200101T09:00:00</dateTime.iso8601>
+                    </value>
+                </param>
+                <param>
+                    <value>
+                        <string>FC600F94C3C800377B5E93D518DDA1D1B56E88D0</string>
+                    </value>
+                </param>
+            </params>
+</methodCall>
+
+```,```xml
+<methodResponse>
+            <params>
+                <param>
+                    <value>
+                        <struct>
+                            <member>
+                                <name>resultCode</name>
+                                <value>
+                                    <int>1</int>
+                                </value>
+                            </member>
+                            <member>
+                                <name>resultText</name>
+                                <value>
+                                    <string>OK</string>
+                                </value>
+                            </member>
+                        </struct>
+                    </value>
+                </param>
+            </params>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><span style="background-color: #bfe6ff;"><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></span></p>

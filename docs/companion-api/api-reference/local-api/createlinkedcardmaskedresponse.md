@@ -10,7 +10,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -30,7 +30,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -91,33 +91,8 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodCall>
-```
 
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| cvv2 | String | <p>Masked CVV2 of the specified card.</p> |
-| resultCode | Integer | <div class="param-single d-flex"> <div class="info"> <p>Status code indicating transaction result.</p> </div> </div> |
-| cardNumber | String | <p>Masked PAN for the created card.</p> |
-| resultText | String | <section class="tutuka-block tutuka-block--api-response"> <div class="api-reference"> <div class="api-reference__single"> <div class="params-wrapper"> <div class="param-single d-flex"> <div class="info"> <p>Text indicating transaction result.</p> </div> </div> </div> </div> </div> </section> |
-| validDate | String | <p>String representation of the valid date as MM/YY as expected by web forms when doing online payments.</p> |
-| expiryDate | String | <p>Masked expiry date of the created card.</p> |
-| trackingNumber | String | <p>Generated tracking number for the created card.</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <methodResponse>
     <params>
         <param>
@@ -170,16 +145,155 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodResponse>
+
 ```
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| cvv2 | String | <p>Masked CVV2 of the specified card.</p> |
+| resultCode | Integer | <div class="param-single d-flex"> <div class="info"> <p>Status code indicating transaction result.</p> </div> </div> |
+| cardNumber | String | <p>Masked PAN for the created card.</p> |
+| resultText | String | <section class="tutuka-block tutuka-block--api-response"> <div class="api-reference"> <div class="api-reference__single"> <div class="params-wrapper"> <div class="param-single d-flex"> <div class="info"> <p>Text indicating transaction result.</p> </div> </div> </div> </div> </div> </section> |
+| validDate | String | <p>String representation of the valid date as MM/YY as expected by web forms when doing online payments.</p> |
+| expiryDate | String | <p>Masked expiry date of the created card.</p> |
+| trackingNumber | String | <p>Generated tracking number for the created card.</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0"?>
+<methodCall>
+    <methodName> CreateLinkedCardMaskedResponse</methodName>
+    <params>
+        <param>
+            <value>
+                <string>0014682067</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>123TEST</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>TTK</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>TEST</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>id123</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>0924769387</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>20221031T00:00:00</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>123456</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20200327T00:00:00</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>B112B8EAD306AB279C775EDB21990504FD87B0BA</string>
+            </value>
+        </param>
+    </params>
+</methodCall>
+
+```,```xml
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>cvv2</name>
+                        <value>
+                            <string>DHF67G</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>cardNumber</name>
+                        <value>
+                            <string>54321xxxxxxxx4125</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>Approved</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>validDate</name>
+                        <value>
+                            <string>06/22</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>expiryDate</name>
+                        <value>
+                            <string>20xxxxxxT00:00:00</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>trackingNumber</name>
+                        <value>
+                            <string>689348400002066</string>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
+```
+
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}

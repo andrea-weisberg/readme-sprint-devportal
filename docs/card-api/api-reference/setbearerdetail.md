@@ -10,7 +10,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -42,7 +42,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -162,29 +162,8 @@ original_path: card-api/api-reference
     </param>
   </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| resultText | String | <p>Text indicating transaction result</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <methodResponse>
   <params>
     <param>
@@ -237,12 +216,206 @@ original_path: card-api/api-reference
     </param>
   </params>
 </methodResponse>
+
+```
+
+<p> </p>
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+| resultText | String | <p>Text indicating transaction result</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<methodCall>
+  <methodName>SetBearerDetail</methodName>
+  <params>
+    <param>
+      <value>
+        <string>terminal_equipo_id</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>customer_ref</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>998489300000075</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>SBD-0000001</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <dateTime.iso8601>20221130T11:03:42</dateTime.iso8601>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string></string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>Fulano</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string></string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>de Tal</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>12345678901</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>5514</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>981927788</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>Brazil</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>1985-01-27</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <int>0</int>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string></string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>22 Walnut St #23</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>017404074</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>Belo Horizonte</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>BRA</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>anonimous@mail.com</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>F7324F6C44762237F3221D08A8D2E86A8DEA302EFDF3D9F6EF071ECB82239B1E</string>
+      </value>
+    </param>
+  </params>
+</methodCall>
+
+```,```xml
+<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>clientTransactionID</name>
+            <value>
+              <string>fb8344c9-2fc9-467b-87e4-55eaf88d06f1</string>
+            </value>
+          </member>
+          <member>
+            <name>resultCode</name>
+            <value>
+              <int>1</int>
+            </value>
+          </member>
+          <member>
+            <name>terminalID</name>
+            <value>
+              <string>0020787431</string>
+            </value>
+          </member>
+          <member>
+            <name>customerReference</name>
+            <value>
+              <string>Cyp001</string>
+            </value>
+          </member>
+          <member>
+            <name>resultText</name>
+            <value>
+              <string>Success</string>
+            </value>
+          </member>
+          <member>
+            <name>serverTransactionID</name>
+            <value>
+              <string>F7055AEA-155D-00FA-4D41AC43204172A1</string>
+            </value>
+          </member>
+          <member>
+            <name>trackingNumber</name>
+            <value>
+              <string>412084400000001</string>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>
+
 ```
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

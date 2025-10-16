@@ -10,7 +10,7 @@ original_path: qr-payments-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p>These are some of the reports you can generate:</p>
@@ -22,7 +22,7 @@ original_path: qr-payments-api
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2>1. <a id="Markoff"></a>Mark-off file</h2>
@@ -39,29 +39,29 @@ original_path: qr-payments-api
 <li><b>Transaction ID</b> – the Transaction ID of the transaction, as created by the card network<b>. </b></li>
 <li><b>Transaction type </b>– it can be marked as 00 (for POS transactions), 01 (for ATM transactions), 02 (for adjustments), 09 (for cashback at POS), or 21 (for deposits).</li>
 <li><b>Wallet / unique reference</b> – your unique customer reference information.</li>
-<li><b>System date</b> – Paymentology&#8217;s system date in UTC +7 time zone.</li>
-<li><b>Sequence number</b> – Paymentology&#8217;s unique sequence identifier for the specific card used.</li>
-<li><b>Tracking number</b> – Paymentology&#8217;s unique tracking identifier for the specific card used.</li>
+<li><b>System date</b> – Paymentology’s system date in UTC +7 time zone.</li>
+<li><b>Sequence number</b> – Paymentology’s unique sequence identifier for the specific card used.</li>
+<li><b>Tracking number</b> – Paymentology’s unique tracking identifier for the specific card used.</li>
 </ul>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
-<!-- unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Report Time Frames","table":{"use_header":true,"header":[{"c":"UTC+2"},{"c":"UTC+7"},{"c":"REMARKS"}],"caption":false,"body":[[{"c":"19:00"},{"c":"00:00"},{"c":"When the report is generated at 19:00 UTC+2 2020-09-10 / 00:00: UTC+7 2020-09-11, the timeframe of all the authorized transactions captured in this report is from: <br>\n• 2020-09-09 00:00:00 UTC+2(system time) to 2020-09-09 11:59:59 UTC+2(system time)<br>\n• 2020-09-10 00:00:00 UTC+7(Asia client time) to 2020-09-10 11:59:59 UTC+7(Asia client time)"}]]}} -->
+\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Report Time Frames","table":{"use_header":true,"header":[{"c":"UTC+2"\},\{"c":"UTC+7"\},\{"c":"REMARKS"\}],"caption":false,"body":[[\{"c":"19:00"\},\{"c":"00:00"\},{"c":"When the report is generated at 19:00 UTC+2 2020-09-10 / 00:00: UTC+7 2020-09-11, the timeframe of all the authorized transactions captured in this report is from: <br>\n• 2020-09-09 00:00:00 UTC+2(system time) to 2020-09-09 11:59:59 UTC+2(system time)<br>\n• 2020-09-10 00:00:00 UTC+7(Asia client time) to 2020-09-10 11:59:59 UTC+7(Asia client time)"}]]}} */}
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>Report Sample</h2>
-<p>&nbsp;</p>
+<p> </p>
 <p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1547" src="https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Mark-Off-report-Companion-final.png" alt="" width="1272" height="324" srcset="https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Mark-Off-report-Companion-final.png 1272w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Mark-Off-report-Companion-final-300x76.png 300w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Mark-Off-report-Companion-final-1024x261.png 1024w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Mark-Off-report-Companion-final-768x196.png 768w" sizes="auto, (max-width: 1272px) 100vw, 1272px" /></p>
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2>2. <a id="summary"></a>Summary settlement report</h2>
@@ -81,18 +81,18 @@ original_path: qr-payments-api
 <li><b>Unique Transactions </b>– consist of transactions from merchants, such as casinos, gambling sites and pharmacies.</li>
 <li><b>ATM Interchange</b> – it’s a debit fee that the card issuer sends to a card network to pay the bank agent where the ATM transaction took place.</li>
 <li><b>Card Association Fee</b> – this can be either a debit or a credit transaction. As a debit transaction, there is a fee paid to a card network for a specific service rendered. As a credit transaction, there can be some discounts applied to the paid services. There is a difference between Card Association Fee Credit and Card Association Fee Reversal. The latter refers to a reversal provided back to the issuer via an incorrect charge, whereas the former is a discount given off the fees.</li>
-<li><strong>Payment transaction</strong> &#8211; shows the settlements for MoneySend transactions</li>
+<li><strong>Payment transaction</strong> – shows the settlements for MoneySend transactions</li>
 </ul>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
-<!-- unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Report Time Frames","table":{"use_header":true,"header":[{"c":"UTC+2"},{"c":"UTC+7"},{"c":"REMARKS"}],"caption":false,"body":[[{"c":"08:00"},{"c":"13:00"},{"c":"When the report is generated at 08:00 UTC+2 / 13:00 UTC+7 2020-09-10, the timeframe of all settled transactions captured in this report is from 2020-09-09 00:00:00 to 2020-09-09 11:59:59 in:<br>\n• System time zone UTC+2 <br>\n• Asia client time zone UTC+7 <br>\n• Merchant time zone"}]]}} -->
+\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Report Time Frames","table":{"use_header":true,"header":[{"c":"UTC+2"\},\{"c":"UTC+7"\},\{"c":"REMARKS"\}],"caption":false,"body":[[\{"c":"08:00"\},\{"c":"13:00"\},{"c":"When the report is generated at 08:00 UTC+2 / 13:00 UTC+7 2020-09-10, the timeframe of all settled transactions captured in this report is from 2020-09-09 00:00:00 to 2020-09-09 11:59:59 in:<br>\n• System time zone UTC+2 <br>\n• Asia client time zone UTC+7 <br>\n• Merchant time zone"}]]}} */}
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>Report Sample</h2>

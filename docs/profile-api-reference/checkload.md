@@ -10,7 +10,7 @@ original_path: profile-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -27,7 +27,7 @@ original_path: profile-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -73,33 +73,8 @@ original_path: profile-api-reference
     </param>
   </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| terminalID | String | <p>Echo of incoming value.</p> |
-| profileNumber | String | <p>Echo of incoming value.</p> |
-| cardNumber | String | <p>Number of the card found using the cardIdentifier.</p> |
-| clientTransactionID | String | <p>Echo of incoming value.</p> |
-| resultCode | Integer | <p>Status code indicating transaction result.</p> |
-| resultText | String | <p>Text indicating transaction result.</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
   <params>
@@ -147,10 +122,129 @@ original_path: profile-api-reference
     </param>
   </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| terminalID | String | <p>Echo of incoming value.</p> |
+| profileNumber | String | <p>Echo of incoming value.</p> |
+| cardNumber | String | <p>Number of the card found using the cardIdentifier.</p> |
+| clientTransactionID | String | <p>Echo of incoming value.</p> |
+| resultCode | Integer | <p>Status code indicating transaction result.</p> |
+| resultText | String | <p>Text indicating transaction result.</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodCall>
+  <methodName>CheckLoad</methodName>
+  <params>
+    <param>
+      <value>
+        <string>1234123412</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>3444495478</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>5333123</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <i4>145000</i4>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>3658-2589-1234-56782</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <dateTime.iso8601>20230228T11:38:08</dateTime.iso8601>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>B322EB366737A1BE95ABE1AF2703590070FD43B7</string>
+      </value>
+    </param>
+  </params>
+</methodCall>
+
+```,```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>clientTransactionID</name>
+            <value>
+              <string>3658-2589-1458-36582</string>
+            </value>
+          </member>
+          <member>
+            <name>resultCode</name>
+            <value>
+              <int>-11</int>
+            </value>
+          </member>
+          <member>
+            <name>terminalID</name>
+            <value>
+              <string>1234123412</string>
+            </value>
+          </member>
+          <member>
+            <name>profileNumber</name>
+            <value>
+              <string>3444495478</string>
+            </value>
+          </member>
+          <member>
+            <name>cardNumber</name>
+            <value>
+              <string>5456745676789563</string>
+            </value>
+          </member>
+          <member>
+            <name>resultText</name>
+            <value>
+              <string>Transaction could not be found</string>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}

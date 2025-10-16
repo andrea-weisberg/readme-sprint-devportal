@@ -10,7 +10,7 @@ original_path: profile-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -27,7 +27,7 @@ original_path: profile-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -73,33 +73,8 @@ original_path: profile-api-reference
        </param>
    </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| terminalID | String | <p>Echo of the incoming value.</p> |
-| profileNumber | String | <p>Echo of the incoming value.</p> |
-| cardNumber | String | <p>Number of the card found using the cardIdentifier</p> |
-| clientTransactionID | String | <p>Echo of the incoming value.</p> |
-| resultCode | Integer | <p>Status code indicating the transaction result.</p> |
-| resultText | String | <p>Text indicating the transaction result.</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
     <params>
@@ -147,9 +122,128 @@ original_path: profile-api-reference
         </param>
     </params>
 </methodResponse>
+
+```
+
+<p> </p>
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| terminalID | String | <p>Echo of the incoming value.</p> |
+| profileNumber | String | <p>Echo of the incoming value.</p> |
+| cardNumber | String | <p>Number of the card found using the cardIdentifier</p> |
+| clientTransactionID | String | <p>Echo of the incoming value.</p> |
+| resultCode | Integer | <p>Status code indicating the transaction result.</p> |
+| resultText | String | <p>Text indicating the transaction result.</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodCall>
+   <methodName>CheckAuthorisation</methodName>
+   <params>
+       <param>
+           <value>
+               <string>0020123425</string>
+           </value>
+       </param>
+       <param>
+           <value>
+               <string>9012349072</string>
+           </value>
+       </param>
+       <param>
+           <value>
+               <string>401234567800001</string>
+           </value>
+       </param>
+       <param>
+           <value>
+               <int>20</int>
+           </value>
+       </param>
+        <param>
+           <value>
+               <string>txn123456</string>
+           </value>
+       </param>
+       <param>
+           <value>
+               <dateTime.iso8601>20240531T12:00:00</dateTime.iso8601>
+           </value>
+       </param>
+       <param>
+           <value>
+               <string>42801707830541bd6789abcfcd4bc18ae272611ca73d881f484d83a1d1f80bb3</string>
+           </value>
+       </param>
+   </params>
+</methodCall>
+
+```,```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>clientTransactionID</name>
+                        <value>
+                            <string>txn123456</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>terminalID</name>
+                        <value>
+                            <string>0020123425</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>profileNumber</name>
+                        <value>
+                            <string>9012349072</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>cardNumber</name>
+                        <value>
+                            <string>4119876547004528</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>OK</string>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
 ```
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}

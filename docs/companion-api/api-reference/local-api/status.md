@@ -10,7 +10,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -26,7 +26,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -66,40 +66,8 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| valid | Boolean | <div class="param-single d-flex"> <div class="info"> <p>Is the card valid</p> </div> </div> |
-| pinBlocked | Boolean | <p>Is the card blocked for exceeding maximum PIN tries</p> |
-| activated | Boolean | <p>Is the card activated</p> |
-| retired | Boolean | <p>Is the card retired</p> |
-| loaded | Boolean | <p>Is the card loaded</p> |
-| redeemed | Boolean | <p>Is the card redeemed</p> |
-| empty | Boolean | <p>Is the card empty</p> |
-| cancelled | Boolean | <p>Is the card cancelled</p> |
-| stopped | Boolean | <p>Is the card stopped</p> |
-| lost | Boolean | <p>Is the card lost</p> |
-| stolen | Boolean | <p>Is the card stolen</p> |
-| expired | Boolean | <p>Is the card expired</p> |
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <methodResponse>
 <params>
     <param>
@@ -194,13 +162,180 @@ original_path: companion-api/api-reference/local-api
     </param>
 </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| valid | Boolean | <div class="param-single d-flex"> <div class="info"> <p>Is the card valid</p> </div> </div> |
+| pinBlocked | Boolean | <p>Is the card blocked for exceeding maximum PIN tries</p> |
+| activated | Boolean | <p>Is the card activated</p> |
+| retired | Boolean | <p>Is the card retired</p> |
+| loaded | Boolean | <p>Is the card loaded</p> |
+| redeemed | Boolean | <p>Is the card redeemed</p> |
+| empty | Boolean | <p>Is the card empty</p> |
+| cancelled | Boolean | <p>Is the card cancelled</p> |
+| stopped | Boolean | <p>Is the card stopped</p> |
+| lost | Boolean | <p>Is the card lost</p> |
+| stolen | Boolean | <p>Is the card stolen</p> |
+| expired | Boolean | <p>Is the card expired</p> |
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<methodCall>
+    <methodName>Status</methodName>
+    <params>
+        <param>
+            <value>
+                <string>0074223123</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>03381441349</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>633789401231489</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>9047</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20170314T09:05:59</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>B466A5A08AEBF767D685FA477F1F472A3A948D61</string>
+            </value>
+        </param>
+    </params>
+</methodCall>
+
+```,```xml
+<methodResponse>
+<params>
+    <param>
+        <value>
+            <struct>
+                <member>
+                    <name>pinBlocked</name>
+                    <value>
+                        <boolean>0</boolean>
+                    </value>
+                </member>
+                <member>
+                    <name>stolen</name>
+                    <value>
+                        <boolean>0</boolean>
+                    </value>
+                </member>
+                <member>
+                    <name>valid</name>
+                    <value>
+                        <boolean>1</boolean>
+                    </value>
+                </member>
+                <member>
+                    <name>lost</name>
+                    <value>
+                        <boolean>0</boolean>
+                    </value>
+                </member>
+                <member>
+                    <name>expired</name>
+                    <value>
+                        <boolean>0</boolean>
+                    </value>
+                </member>
+                <member>
+                    <name>resultText</name>
+                    <value>
+                        <string>Approved</string>
+                    </value>
+                </member>
+                <member>
+                    <name>loaded</name>
+                    <value>
+                        <boolean>1</boolean>
+                    </value>
+                </member>
+                <member>
+                    <name>resultCode</name>
+                    <value>
+                        <int>1</int>
+                    </value>
+                </member>
+                <member>
+                    <name>cancelled</name>
+                    <value>
+                        <boolean>0</boolean>
+                    </value>
+                </member>
+                <member>
+                    <name>retired</name>
+                    <value>
+                        <boolean>0</boolean>
+                    </value>
+                </member>
+                <member>
+                    <name>stopped</name>
+                    <value>
+                        <boolean>0</boolean>
+                    </value>
+                </member>
+                <member>
+                    <name>activated</name>
+                    <value>
+                        <boolean>1</boolean>
+                    </value>
+                </member>
+                <member>
+                    <name>empty</name>
+                    <value>
+                        <boolean>1</boolean>
+                    </value>
+                </member>
+                <member>
+                    <name>redeemed</name>
+                    <value>
+                        <boolean>1</boolean>
+                    </value>
+                </member>
+            </struct>
+        </value>
+    </param>
+</params>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

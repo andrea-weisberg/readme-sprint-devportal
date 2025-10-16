@@ -10,7 +10,7 @@ original_path: companion-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><span style="font-weight: 400;">These are the supported card management options:</span></p>
@@ -22,11 +22,11 @@ original_path: companion-api
 <li><a href="#retrieve">Retrieving</a> card details</li>
 <li>Getting the <a href="#status">status</a> on a card</li>
 </ul>
-<p><span style="font-weight: 400;">Let&#8217;s look at each of them.</span></p>
+<p><span style="font-weight: 400;">Let’s look at each of them.</span></p>
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2><a id="stop"></a>1. Stopping a card</h2>
@@ -34,7 +34,7 @@ original_path: companion-api
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2><a id="unstop"></a>2. Unstopping a card</h2>
@@ -42,7 +42,7 @@ original_path: companion-api
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2><a id="retire"></a>3. Retiring a card</h2>
@@ -50,7 +50,7 @@ original_path: companion-api
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2><a id="replace"></a>4. Replacing a card</h2>
@@ -58,7 +58,7 @@ original_path: companion-api
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2><a id="retrieve"></a>5. Retrieving card details</h2>
@@ -66,7 +66,7 @@ original_path: companion-api
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2><a id="status"></a>6. Getting the status on a card</h2>

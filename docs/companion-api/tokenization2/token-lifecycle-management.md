@@ -20,7 +20,7 @@ original_path: companion-api/tokenization2
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p>These are the possible values for the <b>messageName </b>data field when managing tokens:</p>
@@ -32,27 +32,27 @@ original_path: companion-api/tokenization2
 <li aria-level="1"><a href="https://developer.sprint.paymentology.com/administrative-message-values/#replacement">digitization.event.Replacement</a> (token re-digitized or replaced)</li>
 </ul>
 <p>Let’s talk about each of the values in detail.</p>
-<p>&nbsp;</p>
+<p> </p>
 <ol>
 <li><a href="https://developer.sprint.paymentology.com/administrative-message-values/#stopped"><b>Digitization.event.stopped</b></a></li>
 </ol>
 <p>This is when Paymentology informs a wallet that a token has been stopped or suspended. Paymentology will request the MDES to stop all the token transactions associated with the card’s full PAN.</p>
-<p>&nbsp;</p>
+<p> </p>
 <ol start="2">
 <li><a href="https://developer.sprint.paymentology.com/administrative-message-values/#digitized"><b>Digitization.event.digitized</b></a></li>
 </ol>
 <p>This is when Paymentology informs a wallet that a stopped token has been resumed. Paymentology will request MDES to reactivate the token mapped to the card.</p>
-<p>&nbsp;</p>
+<p> </p>
 <ol start="3">
 <li><a href="https://developer.sprint.paymentology.com/administrative-message-values/#deletedfromdevice"><b>Digitization.event.Deleted_from_device</b></a></li>
 </ol>
 <p>This is when Paymentology informs a wallet that the account holder has deleted the token from the wallet program on their device.</p>
-<p>&nbsp;</p>
+<p> </p>
 <ol start="4">
 <li><a href="https://developer.sprint.paymentology.com/administrative-message-values/#eventdeleted"><b>Digitization.event.Deleted</b></a></li>
 </ol>
 <p>This is when Paymentology informs the wallet that a token has been removed in its entirety.</p>
-<p>&nbsp;</p>
+<p> </p>
 <ol start="5">
 <li><b><a href="https://developer.sprint.paymentology.com/administrative-message-values/#replacement">Digitization.event.Replacement</a> </b></li>
 </ol>
@@ -60,22 +60,22 @@ original_path: companion-api/tokenization2
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2><a id="WID"></a>Tokenization with Digital Wallets</h2>
 <p>To allow for tokenization, issuers have historically needed to contract and integrate with each service or wallet separately. Every digital wallet has different capabilities for enabling tokenization.</p>
-<p>On Paymentology&#8217;s Sprint platform, these are the IDs associated with the various digital wallet programs:</p>
+<p>On Paymentology’s Sprint platform, these are the IDs associated with the various digital wallet programs:</p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
-<!-- unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Digital Wallet IDs","table":{"use_header":true,"header":[{"c":"WALLET NAME"},{"c":"WID (WALLET ID)"}],"caption":false,"body":[[{"c":"Apple Pay"},{"c":"103"}],[{"c":"Samsung Pay"},{"c":"217"}],[{"c":"Google Pay"},{"c":"216"}],[{"c":"M4M"},{"c":"327"}]]}} -->
+\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Digital Wallet IDs","table":{"use_header":true,"header":[{"c":"WALLET NAME"\},\{"c":"WID (WALLET ID)"\}],"caption":false,"body":[[\{"c":"Apple Pay"\},\{"c":"103"\}],[\{"c":"Samsung Pay"\},\{"c":"217"\}],[\{"c":"Google Pay"\},\{"c":"216"\}],[\{"c":"M4M"\},\{"c":"327"\}]]}} */}
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p>Note that a 3-digit numeric value represents the IDs.</p>

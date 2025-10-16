@@ -10,7 +10,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -30,7 +30,7 @@ original_path: card-api/api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -146,29 +146,8 @@ original_path: card-api/api-reference
     </params>
 
   </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| resultText | String | <p>Resulting text provides further context to the resultCode</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
     <params>
@@ -192,6 +171,167 @@ original_path: card-api/api-reference
         </param>
     </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+| resultText | String | <p>Resulting text provides further context to the resultCode</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0"?>
+
+  <methodCall>
+
+    <methodName>ActivateToken</methodName>
+
+    <params>
+
+      <param>
+
+        <value>
+
+          <string>0006125612</string>
+
+        </value>
+
+      </param>
+
+      <param>
+
+        <value>
+
+          <string>testReference123</string>
+
+        </value>
+
+      </param>     
+
+      <param>
+
+        <value>
+
+          <string>767761230000071</string>
+
+        </value>
+
+      </param>
+
+      <param>
+
+        <value>
+
+          <string>DWSPMC00123456010906a349d9ca4eb1a4d53e3c90a11d9c</string>
+
+        </value>
+
+      </param>
+
+      <param>
+
+        <value>
+
+          <string>123456</string>
+
+        </value>
+
+      </param>
+
+      <param>
+
+        <value>
+
+          <string>A</string>
+
+        </value>
+
+      </param>
+
+      <param>
+
+        <value>
+
+          <string>Cardholder authenticated sucessfully</string>
+
+        </value>
+
+      </param>
+
+      <param>
+
+        <value>
+
+          <string>fb1234c9-2fc9-467b-87e4-55eaf12d06f2</string>
+
+        </value>
+
+      </param>
+
+      <param>
+
+        <value>
+
+          <dateTime.iso8601>20200101T09:00:00</dateTime.iso8601>
+
+        </value>
+
+      </param>
+
+      <param>
+
+        <value>
+
+          <string>36a5ca8e88f7ee0a05ee5c1234567b204883e662</string>
+
+        </value>
+
+      </param>
+
+    </params>
+
+  </methodCall>
+
+```,```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>Approved</string>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
+```
+
+<p> </p>

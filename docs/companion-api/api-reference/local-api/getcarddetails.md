@@ -13,11 +13,11 @@ original_path: companion-api/api-reference/local-api
 <li>Session-Id=Encrypted AES Key e-g (AB521456236KHU52) is required if encryption is needed and the campaign is configured for encryption of sensitive data.</li>
 <li>This is optional if encryption is not needed and the campaign is not configured for encryption of sensitive data.</li>
 </ul>
-<p>You can read more on how our Secure API&#8217;s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a> .</p>
+<p>You can read more on how our Secure API’s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a> .</p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -33,7 +33,7 @@ original_path: companion-api/api-reference/local-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -73,38 +73,8 @@ original_path: companion-api/api-reference/local-api
     </param>
   </params>
 </methodCall>
-```
 
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| cvv2 | String | <p>New CVV2 of the specified card.</p> <p>(Encrypted depending on configuration).</p> |
-| cardNumber | String | <p>Card number.</p> <p>(Encrypted depending on configuration).</p> |
-| validDate | String | <div class="param-single d-flex"> <div class="info"> <p>String representation of the valid date as MM/YY as expected by web forms when doing online payments.</p> </div> </div> |
-| expiryDate | Date | <div class="param-single d-flex"> <div class="info"> <p>The expiry date of the created card.</p> <p>(Encrypted depending on configuration).</p> </div> </div> |
-| trackingNumber | String | <p>Tracking number of the card.</p> |
-| retired | Boolean | <p>If card is retired.</p> |
-| stopped | Boolean | <p>If card is stopped.</p> |
-| activated | Boolean | <p>If card is activated.</p> |
-| expired | Boolean | <p>If card is expired.</p> |
-| IV | String | <p>The key with which encrypted data in response is encrypted.</p> <p>(Key used for encryption).</p> |
-| resultCode | Integer | <section class="tutuka-block tutuka-block--api-response"> <div class="api-reference"> <div class="api-reference__single"> <div class="params-wrapper"> <div class="param-single d-flex"> <div class="info"> <p>Status code indicating transaction result.</p> </div> </div> </div> </div> </div> </section> |
-| resultText | String | <section class="tutuka-block tutuka-block--api-response"> <div class="api-reference"> <div class="api-reference__single"> <div class="params-wrapper"> <div class="param-single d-flex"> <div class="info"> <p>Text indicating transaction result.</p> </div> </div> </div> </div> </div> </section> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <methodresponse>
     <params>
         <param>
@@ -187,16 +157,169 @@ original_path: companion-api/api-reference/local-api
         </param>
     </params>
 </methodresponse>
+
 ```
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| cvv2 | String | <p>New CVV2 of the specified card.</p> <p>(Encrypted depending on configuration).</p> |
+| cardNumber | String | <p>Card number.</p> <p>(Encrypted depending on configuration).</p> |
+| validDate | String | <div class="param-single d-flex"> <div class="info"> <p>String representation of the valid date as MM/YY as expected by web forms when doing online payments.</p> </div> </div> |
+| expiryDate | Date | <div class="param-single d-flex"> <div class="info"> <p>The expiry date of the created card.</p> <p>(Encrypted depending on configuration).</p> </div> </div> |
+| trackingNumber | String | <p>Tracking number of the card.</p> |
+| retired | Boolean | <p>If card is retired.</p> |
+| stopped | Boolean | <p>If card is stopped.</p> |
+| activated | Boolean | <p>If card is activated.</p> |
+| expired | Boolean | <p>If card is expired.</p> |
+| IV | String | <p>The key with which encrypted data in response is encrypted.</p> <p>(Key used for encryption).</p> |
+| resultCode | Integer | <section class="tutuka-block tutuka-block--api-response"> <div class="api-reference"> <div class="api-reference__single"> <div class="params-wrapper"> <div class="param-single d-flex"> <div class="info"> <p>Status code indicating transaction result.</p> </div> </div> </div> </div> </div> </section> |
+| resultText | String | <section class="tutuka-block tutuka-block--api-response"> <div class="api-reference"> <div class="api-reference__single"> <div class="params-wrapper"> <div class="param-single d-flex"> <div class="info"> <p>Text indicating transaction result.</p> </div> </div> </div> </div> </div> </section> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<methodCall>
+  <methodName>GetCardDetails</methodName>
+  <params>
+    <param>
+      <value>
+        <string>0084711380</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>PPDEC07201</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>4987057272502351</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>1234567</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <dateTime.iso8601>20201207T09:06:40</dateTime.iso8601>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>7a6ab8939b9585f49e397fd143de38bd454472e1</string>
+      </value>
+    </param>
+  </params>
+</methodCall>
+
+```,```xml
+<methodresponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>resultText</name>
+                        <value>
+                            <string>Approved</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>cvv2</name>
+                        <value>
+                            <string>H524IK</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>cardNumber</name>
+                        <value>
+                            <string>GHT52789BNHP52F</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>validDate</name>
+                        <value>
+                            <string>10/22</string>
+                        </value>
+                    </member>
+                    <member>
+                        <name>expiryDate</name>
+                        <value>
+                            <string>HY98PMDEFR63254NMHA:GT5:6PLX</string> //expiry date
+                        </value>
+                    </member>
+                    <member>
+                        <name>trackingNumber</name>
+                        <value>
+                            <string>189469100000008</string>
+                        </value>
+                    </member>
+                    <member>
+                      <name>retired</name>
+                      <value>
+                        <boolean>0</boolean>
+                      </value>
+                    <member>
+                    <member>
+                      <name>stopped</name>
+                      <value>
+                        <boolean>0</boolean>
+                      </value>
+                    </member>
+                    <member>
+                      <name>activated</name>
+                      <value>
+                       <boolean>1</boolean>
+                      </value>
+                    </member>
+                    <member>
+                      <name>expired</name>
+                      <value>
+                        <boolean>0</boolean>
+                      </value>
+                    </member>
+                    <member>
+                        <name>IV</name>
+                        <value>
+                            <string>GTYM521PL98THB72156HTBD5H</string>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodresponse>
+
+```
+
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}

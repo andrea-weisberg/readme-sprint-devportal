@@ -10,7 +10,7 @@ original_path: profile-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -28,7 +28,7 @@ original_path: profile-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -79,35 +79,8 @@ original_path: profile-api-reference
     </param>
   </params>
 </methodCall>
-```
 
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| cardIdentifier | String | <div class="param-single d-flex"> <div class="info"> <p>Echo of incoming value.</p> </div> </div> |
-| resultCode | Integer | <p>Status code indicating transaction result.</p> |
-| terminalID | String | <div class="param-single d-flex"> <div class="info"> <p>Echo of incoming value.</p> </div> </div> |
-| profileNumber | String | <div class="param-single d-flex"> <div class="info"> <p>Echo of incoming value.</p> </div> </div> |
-| featureName | String |  |
-| resultText | String | <p>Status text indicating transaction result.</p> |
-| transactionDate | String | <div class="param-single d-flex"> <div class="info"> <p>Echo of incoming value.</p> </div> </div> |
-| transactionID | String | <div class="param-single d-flex"> <div class="info"> <p>Echo of incoming value.</p> </div> </div> |
-| featureStatus | Boolean |  |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
   <params>
@@ -173,12 +146,156 @@ original_path: profile-api-reference
     </param>
   </params>
 </methodResponse>
+
 ```
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| cardIdentifier | String | <div class="param-single d-flex"> <div class="info"> <p>Echo of incoming value.</p> </div> </div> |
+| resultCode | Integer | <p>Status code indicating transaction result.</p> |
+| terminalID | String | <div class="param-single d-flex"> <div class="info"> <p>Echo of incoming value.</p> </div> </div> |
+| profileNumber | String | <div class="param-single d-flex"> <div class="info"> <p>Echo of incoming value.</p> </div> </div> |
+| featureName | String |  |
+| resultText | String | <p>Status text indicating transaction result.</p> |
+| transactionDate | String | <div class="param-single d-flex"> <div class="info"> <p>Echo of incoming value.</p> </div> </div> |
+| transactionID | String | <div class="param-single d-flex"> <div class="info"> <p>Echo of incoming value.</p> </div> </div> |
+| featureStatus | Boolean |  |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodCall>
+  <methodName>ToggleVoucherFeature</methodName>
+  <params>
+    <param>
+      <value>
+        <string>123456789</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>12345</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>5165641045432078</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>NFC_ENABLED</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <int>1</int>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>4f012b3a3d456d2ba789b8dcadf2ccf9</string>
+      </value>
+    </param>
+    <param>
+      <value>
+        <dateTime.iso8601>20240724T23:54:28</dateTime.iso8601>
+      </value>
+    </param>
+    <param>
+      <value>
+        <string>12345678930</string>
+      </value>
+    </param>
+  </params>
+</methodCall>
+
+```,```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+  <params>
+    <param>
+      <value>
+        <struct>
+          <member>
+            <name>cardIdentifier</name>
+            <value>
+              <string>5165641045432078</string>
+            </value>
+          </member>
+          <member>
+            <name>resultCode</name>
+            <value>
+              <int>1</int>
+            </value>
+          </member>
+          <member>
+            <name>terminalID</name>
+            <value>
+              <string>123456789</string>
+            </value>
+          </member>
+          <member>
+            <name>profileNumber</name>
+            <value>
+              <string>12345</string>
+            </value>
+          </member>
+          <member>
+            <name>featureName</name>
+            <value>
+              <string>NFC_ENABLED</string>
+            </value>
+          </member>
+          <member>
+            <name>resultText</name>
+            <value>
+              <string>NFC_ENABLED was turned on</string>
+            </value>
+          </member>
+          <member>
+            <name>transactionDate</name>
+            <value>
+              <dateTime.iso8601>20240724T23:54:28</dateTime.iso8601>
+            </value>
+          </member>
+          <member>
+            <name>transactionID</name>
+            <value>
+              <string>4f012b3a3d456d2ba789b8dcadf2ccf9</string>
+            </value>
+          </member>
+          <member>
+            <name>featureStatus</name>
+            <value>
+              <boolean>1</boolean>
+            </value>
+          </member>
+        </struct>
+      </value>
+    </param>
+  </params>
+</methodResponse>
+
+```
+
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Reference</a></p>

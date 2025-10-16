@@ -12,7 +12,7 @@ original_path: card-api/tokenization
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <section id="tutuka-block-3" class="tutuka-block tutuka-block--text-full-width"><b>Step 1: </b>The cardholder initiates the request process via push provisioning or manual provisioning.</section>
@@ -23,11 +23,11 @@ original_path: card-api/tokenization
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2><b>Types of Provisioning Methods</b></h2>
-<p>Paymentology&#8217;s Sprint platform supports the following two main methods for provisioning a token to incorporate a payment card into a digitized wallet:</p>
+<p>Paymentology’s Sprint platform supports the following two main methods for provisioning a token to incorporate a payment card into a digitized wallet:</p>
 <ul>
 <li aria-level="1"><b>Push provisioning</b>—this is in-app provisioning where a cardholder pushes the card from their card app directly into a digitized wallet with a click of the button.</li>
 <li aria-level="1"><b>Manual provisioning</b>—this is where a cardholder physically enters the card details into the digitized wallet.</li>
@@ -36,13 +36,13 @@ original_path: card-api/tokenization
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
-<!-- unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Push Provisioning vs Manual Provisioning","table":{"use_header":true,"header":[{"c":"PUSH PROVISIONING "},{"c":"MANUAL PROVISIONING"}],"caption":false,"body":[[{"c":"OTP verification not required"},{"c":"OTP verification required. However, some wallets, such as Samsung Pay do not require OTP verification."}],[{"c":"TAV certification required"},{"c":"TAV certification not required"}]]}} -->
+\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Push Provisioning vs Manual Provisioning","table":{"use_header":true,"header":[{"c":"PUSH PROVISIONING "\},\{"c":"MANUAL PROVISIONING"\}],"caption":false,"body":[[\{"c":"OTP verification not required"\},\{"c":"OTP verification required. However, some wallets, such as Samsung Pay do not require OTP verification."\}],[\{"c":"TAV certification required"\},\{"c":"TAV certification not required"\}]]}} */}
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2><b>How Push Provisioning Works</b></h2>
@@ -53,13 +53,13 @@ original_path: card-api/tokenization
 <li aria-level="1">Card data encryption</li>
 </ul>
 <p>Let’s talk about them in detail.</p>
-<p>&nbsp;</p>
+<p> </p>
 <h3>a) TAV certification</h3>
 <p>TAV (Token Authentication Value) is an encrypted digital signature that authenticates a push provisioning request from the token requester to the issuer/client. TAV certification is required to ensure the security and authenticity of the push provisioning process.</p>
 <p>When a card is pushed on an XPay wallet, the client app will notify Paymentology that a card is being provisioned, and Paymentology needs to calculate its TAV value—based on the card number, expiry date, and CVV. After calculating this value, Paymentology will then pass it to MDES for MDES to tokenize the card. After tokenization, MDES will store that information in their secure token vault, while associating the card details to the generated token.</p>
 <p>If a client app relies on Paymentology for TAV calculation, they’ll need to call the <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/calculatetav/"><b>CalculateTAV</b></a> API method, which is part of the Companion API. Paymentology will also need to get the necessary keys from Mastercard.</p>
 <p>Note that even if Paymentology assists with TAV calculation, clients will still be responsible for other encryption tasks through the wallet to the MDES.</p>
-<p>&nbsp;</p>
+<p> </p>
 <h3>b) Card data encryption</h3>
 <p>Other than the TAV, the card information is also structured and encrypted, and passed to the Wallet Provider, and eventually to MDES. MDES actually receives the encrypted card data from the issuer via the Wallet Provider.</p>
 <p>The information is encrypted using the PEPK (Play Encrypt Private Key) tool provided by Mastercard. The client does PEPK encryption as part of the direct integration to a digitized wallet.</p>
@@ -75,7 +75,7 @@ original_path: card-api/tokenization
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2><b>How Manual Provisioning Works</b></h2>
@@ -84,10 +84,10 @@ original_path: card-api/tokenization
 <p><b>RemoteMessaging API</b></p>
 <p>The Remote Messaging API for non-Companion clients is hosted on your platform and allows us to call you to send administrative advice messages:</p>
 <ul>
-<li aria-level="1"><a href="https://developer.sprint.paymentology.com/remotemessaging/#3DSecure">3DSecure.OTP</a> &#8211; process 3DS OTP token for an end customer to be able to complete the challenge of a live transaction</li>
-<li aria-level="1"><a href="https://developer.sprint.paymentology.com/remotemessaging/#activation">digitization.activation</a> &#8211; process MDES OTP token for an end customer to be able to complete the challenge and activate the wallet</li>
-<li aria-level="1"><a href="https://developer.sprint.paymentology.com/remotemessaging/#activationmethods">digitization.activationmethods</a> &#8211; this message signals that a token provision has been made and requires a verification method in order to push the OTP validation</li>
-<li aria-level="1"><a href="https://developer.sprint.paymentology.com/remotemessaging/#event">digitization.event</a> &#8211; used to communicate tokenization events in MDES</li>
+<li aria-level="1"><a href="https://developer.sprint.paymentology.com/remotemessaging/#3DSecure">3DSecure.OTP</a> – process 3DS OTP token for an end customer to be able to complete the challenge of a live transaction</li>
+<li aria-level="1"><a href="https://developer.sprint.paymentology.com/remotemessaging/#activation">digitization.activation</a> – process MDES OTP token for an end customer to be able to complete the challenge and activate the wallet</li>
+<li aria-level="1"><a href="https://developer.sprint.paymentology.com/remotemessaging/#activationmethods">digitization.activationmethods</a> – this message signals that a token provision has been made and requires a verification method in order to push the OTP validation</li>
+<li aria-level="1"><a href="https://developer.sprint.paymentology.com/remotemessaging/#event">digitization.event</a> – used to communicate tokenization events in MDES</li>
 </ul>
 <p>Let’s talk about the methods in detail.</p>
 <ol>
@@ -99,10 +99,10 @@ original_path: card-api/tokenization
 <p>The client will respond to Paymentology with the required details. Paymentology will pass the data to the MDES to pass to the XPay app. The XPay app will then display the options the cardholder can select for receiving the OTP.</p>
 <p><b>Digitization.activationmethods </b>requires the type of contact method as well as the data for the method to be passed to it.</p>
 <p>Also, no KLV fields are required to be passed. So, they’ll be no <b>MessageData</b> string included in the AdministrativeMessage request from Paymentology.</p>
-<p>&nbsp;</p>
+<p> </p>
 <ol start="2">
 <li><a href="https://developer.sprint.paymentology.com/remotemessaging/#activation"><b>Digitization.activation</b></a></li>
 </ol>
 <p>Once the cardholder selects their preferred method of verification, the XPay wallet will send this information to the MDES, and the MDES will send it to Paymentology.</p>
 <p>Paymentology will then send an activation code via <b>Digitization.activation</b> to the client. The client will then pass an OTP to the cardholder, through their preferred contact method, to input it on their XPay wallet app.</p>
-<p>&nbsp;</p>
+<p> </p>

@@ -10,7 +10,7 @@ original_path: companion-api/api-reference/remote
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -27,7 +27,7 @@ original_path: companion-api/api-reference/remote
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -73,31 +73,8 @@ original_path: companion-api/api-reference/remote
         </param>
     </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| balanceAmount | Integer | <p>Balance amount in cents</p> |
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| actualBalance | Integer | <p>(Optional) Actual/settled balance in cents</p> |
-| addressVerificationResult | Integer | <p>(Optional) Address Verification Result</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <methodResponse>
     <params>
         <param>
@@ -120,13 +97,105 @@ original_path: companion-api/api-reference/remote
         </param>
     </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| balanceAmount | Integer | <p>Balance amount in cents</p> |
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+| actualBalance | Integer | <p>(Optional) Actual/settled balance in cents</p> |
+| addressVerificationResult | Integer | <p>(Optional) Address Verification Result</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0"?>
+<methodCall>
+    <methodName>Balance</methodName>
+    <params>
+        <param>
+            <value>
+                <string>0029504320</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>556789731480</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>STARBUCKS              HANOI         VNM</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>002157613861000015920041200000000000002604601103712127399089060041081234567804205123450490370405002300850025003MAG25110MasterCard252010253044562258010</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>415099</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20200824T14:17:06</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>46719079E3BACE48D631E0A4361196BEB89C22B8</string>
+            </value>
+        </param>
+    </params>
+</methodCall>
+
+```,```xml
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                    <member>
+                        <name>balanceAmount</name>
+                        <value>
+                            <int>626900</int>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/">Back to Remote API menu</a></p>

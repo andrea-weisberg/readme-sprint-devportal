@@ -8,11 +8,11 @@ original_path: companion-api
 ---
 <p>In the payment industry sensitive data has a real importance. Confidentiality of the sensitive data is important even while processing transactions and should be kept private (encrypted).</p>
 <p>To achieve this we offer Secure API methods to support end to end encryption of data.</p>
-<p><span style="color: #ff0000;"><strong>IMPORTANT:</strong></span> <span style="color: #000000;">Specific campaign settings are required for these Secure API&#8217;s. To have these enabled, please reach out to your Client Executive or lodge a request via our <a href="https://support.paymentology.com/">Customer Support Platform</a>.</span></p>
+<p><span style="color: #ff0000;"><strong>IMPORTANT:</strong></span> <span style="color: #000000;">Specific campaign settings are required for these Secure API’s. To have these enabled, please reach out to your Client Executive or lodge a request via our <a href="https://support.paymentology.com/">Customer Support Platform</a>.</span></p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>Encryption details</h2>
@@ -21,7 +21,7 @@ original_path: companion-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h3>Encryption steps</h3>
@@ -51,7 +51,7 @@ original_path: companion-api
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>Keys</h2>
@@ -65,8 +65,8 @@ original_path: companion-api
 <p>AES 256 Encryption (AES/CBC/PKCS5PADDING) will be used for Encryption of the Sensitive data e.g. PIN, PAN, and CVV2.  This will be a random key generated for each call and shared under the RSA Key Pair, stronger than conventional Triple DES algorithm. <em>(https://simple.wikipedia.org/wiki/Advanced_Encryption_Standard)</em></p>
 <h3>Session-Id Generation</h3>
 <ol>
-<li>Create a 32 bytes length random string -&gt; session_key</li>
-<li>Encrypt session_key with rsa_public Key -&gt; Session-Id</li>
+<li>Create a 32 bytes length random string -> session_key</li>
+<li>Encrypt session_key with rsa_public Key -> Session-Id</li>
 </ol>
 <h3>PIN Block Format</h3>
 <p>PIN BLOCK Format ISO format 2 will be used to communicate the encrypted PIN block to and from the cardholder to Paymentology.</p>
@@ -79,7 +79,7 @@ original_path: companion-api
 
 
 
-<!-- unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":""},{"c":""}],"caption":false,"body":[[{"c":"Algorithm"},{"c":"AES"}],[{"c":"Key size options"},{"c":"256 bits (32 bytes)"}],[{"c":"Preferred key size"},{"c":"256 bits (32 bytes)"}],[{"c":"Transformation"},{"c":"AES/GCM/NoPadding (or AES/CBC/PKCS5Padding if considered)"}],[{"c":"Additional parameters"},{"c":"Initialization vector (IV)"}],[{"c":"Initialization vector sizes (AES/GCM/NoPadding)"},{"c":"The length of IV key will be dependent on the mode of encryption used."}],[{"c":"Initialization vector sizes (AES/CBC/PKCS5Padding)"},{"c":"The length of IV key will be dependent on the mode of encryption used."}],[{"c":"AES key generation"},{"c":"Preferred method is to use Java KeyGenerator class, doing it with only a random generator may result in weak keys."}],[{"c":"IV generation"},{"c":"Preferred method is to use Java SecureRandom() implementation."}]]}} -->
+\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":""\},\{"c":""\}],"caption":false,"body":[[\{"c":"Algorithm"\},\{"c":"AES"\}],[\{"c":"Key size options"\},\{"c":"256 bits (32 bytes)"\}],[\{"c":"Preferred key size"\},\{"c":"256 bits (32 bytes)"\}],[\{"c":"Transformation"\},\{"c":"AES/GCM/NoPadding (or AES/CBC/PKCS5Padding if considered)"\}],[\{"c":"Additional parameters"\},\{"c":"Initialization vector (IV)"\}],[\{"c":"Initialization vector sizes (AES/GCM/NoPadding)"\},\{"c":"The length of IV key will be dependent on the mode of encryption used."\}],[\{"c":"Initialization vector sizes (AES/CBC/PKCS5Padding)"\},\{"c":"The length of IV key will be dependent on the mode of encryption used."\}],[\{"c":"AES key generation"\},\{"c":"Preferred method is to use Java KeyGenerator class, doing it with only a random generator may result in weak keys."\}],[\{"c":"IV generation"\},\{"c":"Preferred method is to use Java SecureRandom() implementation."\}]]}} */}
 
 
 <h3>Algorithm used for protecting keys</h3>
@@ -87,7 +87,7 @@ original_path: companion-api
 
 
 
-<!-- unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":""},{"c":""}],"caption":false,"body":[[{"c":"Algorithm"},{"c":"RSA"}],[{"c":"Key size options"},{"c":"1024, 2048, 3072, 4096 bits."}],[{"c":"Preferred key size"},{"c":"2048 bits"}],[{"c":"Transformations"},{"c":"RSA/ECB/OAEPWithSHA-256AndMGF1Padding or RSA/ECB/OAEPWithSHA-512AndMGF1Padding."}],[{"c":"Additional parameters for the algorithm"},{"c":"OAEP configuration. Specified during wrapping/unwrapping."}],[{"c":"RSA keypair generation"},{"c":"Use Java KeyPairGenerator."}]]}} -->
+\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":""\},\{"c":""\}],"caption":false,"body":[[\{"c":"Algorithm"\},\{"c":"RSA"\}],[\{"c":"Key size options"\},\{"c":"1024, 2048, 3072, 4096 bits."\}],[\{"c":"Preferred key size"\},\{"c":"2048 bits"\}],[\{"c":"Transformations"\},\{"c":"RSA/ECB/OAEPWithSHA-256AndMGF1Padding or RSA/ECB/OAEPWithSHA-512AndMGF1Padding."\}],[\{"c":"Additional parameters for the algorithm"\},\{"c":"OAEP configuration. Specified during wrapping/unwrapping."\}],[\{"c":"RSA keypair generation"\},\{"c":"Use Java KeyPairGenerator."\}]]}} */}
 
 
 <h3>Important notes</h3>
@@ -103,6 +103,7 @@ new OAEPParameterSpec(
     new MGF1ParameterSpec("SHA-256"),
     PSource.PSpecified.DEFAULT
 );
+
 ```
 
 <ul>
@@ -118,7 +119,7 @@ new OAEPParameterSpec(
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
 
 
 <h2>API methods using card data encryption</h2>
@@ -126,18 +127,18 @@ new OAEPParameterSpec(
 <h3>API methods with encrypted data in the response</h3>
 <p>The following API methods return encrypted data in the API response. Along with the encrypted data, they will also return an extra element <code class="code cc-1o5d2cw" data-renderer-mark="true">iv</code> that is needed by the calling code in order to decrypt the data:</p>
 <ul>
-<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getactivelinkedcards/">GetActiveLinkedCards</a> &#8211; <code class="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code class="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code class="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response.</li>
-<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getcarddetails/">GetCardDetails</a> &#8211; <code class="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code class="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code class="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response.</li>
-<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getlinkedcards/">GetLinkedCards</a> &#8211;  <code class="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code class="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code class="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response.</li>
-<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/updatecvv/">UpdateCVV</a> &#8211;  <code class="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code>  will be encrypted in the response.</li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getactivelinkedcards/">GetActiveLinkedCards</a> – <code class="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code class="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code class="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response.</li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getcarddetails/">GetCardDetails</a> – <code class="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code class="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code class="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response.</li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getlinkedcards/">GetLinkedCards</a> –  <code class="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code class="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code class="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response.</li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/updatecvv/">UpdateCVV</a> –  <code class="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code>  will be encrypted in the response.</li>
 </ul>
 <h3>API methods with encrypted data in the request</h3>
 <p>The following API methods will contain encrypted card data in the API request, the Companion API will decrypt the data using the provided Session-Id header:</p>
 <ul>
-<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/changepin/">ChangePin</a> &#8211; <code class="code cc-1o5d2cw" data-renderer-mark="true">newPin</code> will be encrypted in the request.</li>
-<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/createlinkedcard/">CreateLinkedCard</a> &#8211; <code class="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code class="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code class="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response. Note: this is only applicable if the campaign setting &#8220;Companion API Return Masked PAN for Create Methods&#8221; is set to  false.</li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/changepin/">ChangePin</a> – <code class="code cc-1o5d2cw" data-renderer-mark="true">newPin</code> will be encrypted in the request.</li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/createlinkedcard/">CreateLinkedCard</a> – <code class="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code class="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code class="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response. Note: this is only applicable if the campaign setting “Companion API Return Masked PAN for Create Methods” is set to  false.</li>
 </ul>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}

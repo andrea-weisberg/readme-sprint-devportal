@@ -9,20 +9,20 @@ metadata:
 
 
 
-<!-- spacing: desktop=15, mobile=10 -->
+\{/* spacing: desktop=15, mobile=10 */\}
 
 
-<!-- unsupported_acf_block: api_endpoint_example {"acf_fc_layout":"api_endpoint_example","endpoint":"/forms/{form_id}/webhooks/{tag}"} -->
+\{/* unsupported_acf_block: api_endpoint_example {"acf_fc_layout":"api_endpoint_example","endpoint":"/forms/{form_id\}/webhooks/\{tag\}"} */}
 
 
-<!-- spacing: desktop=30, mobile=15 -->
+\{/* spacing: desktop=30, mobile=15 */\}
 
 
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
 |---|---|---|:--:|---|
-|  form_id | String |  | ✓ | <p>Unique ID for the form. Find in your form URL. For example, in the URL &#8220;https://mysite.typeform.com/to/u6nXL7&#8221; the form_id is</p> |
+|  form_id | String |  | ✓ | <p>Unique ID for the form. Find in your form URL. For example, in the URL “https://mysite.typeform.com/to/u6nXL7” the form_id is</p> |
 | tag | String |  | ✓ | <p>Unique name you want to use for the webhook.</p> |
 
 
@@ -34,6 +34,19 @@ metadata:
   "url": "https://test.com",
   "enabled": true
 }
+
+```,```null
+{
+  "id": "yRtagDm8AT",
+  "form_id": "abc123",
+  "tag": "phoenix",
+  "url": "https://test.com",
+  "enabled": true,
+  "verify_ssl": true,
+  "created_at": "2016-11-21T12:23:28Z",
+  "updated_at": "2016-11-21T12:23:28Z"
+}
+
 ```
 
 
@@ -59,6 +72,12 @@ metadata:
 
 ```null
 {
+  "url": "https://test.com",
+  "enabled": true
+}
+
+```,```null
+{
   "id": "yRtagDm8AT",
   "form_id": "abc123",
   "tag": "phoenix",
@@ -68,4 +87,5 @@ metadata:
   "created_at": "2016-11-21T12:23:28Z",
   "updated_at": "2016-11-21T12:23:28Z"
 }
+
 ```

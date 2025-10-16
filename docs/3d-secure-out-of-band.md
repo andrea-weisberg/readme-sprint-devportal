@@ -1,5 +1,5 @@
 ---
-title: 3D Secure &#8211; Out of band Authentication
+title: 3D Secure – Out of band Authentication
 deprecated: false
 hidden: false
 metadata:
@@ -11,7 +11,7 @@ metadata:
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h3>Operational Workflow</h3>
@@ -21,10 +21,10 @@ metadata:
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
-<h3>Paymentology&#8217;s OOB Solution:</h3>
+<h3>Paymentology’s OOB Solution:</h3>
 <p>In the OOB Solution, several participants play crucial roles:</p>
 <ul>
 <li><strong>Cardholder:</strong> Undertakes online purchases and authenticates via the Issuer Mobile app.</li>
@@ -35,7 +35,7 @@ metadata:
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h3>Interaction Sequence:</h3>
@@ -46,7 +46,7 @@ metadata:
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>Transaction flow</h2>
@@ -83,8 +83,8 @@ MessageType: <strong data-renderer-mark="true"><a href="https://developer.sprint
 <li>
 <p data-renderer-start-pos="3365">The client sends a request to the <strong>ThreeDSAuthenticationOutcome</strong> API saying whether the authentication was successful or not.</p>
 <ul class="ak-ul" data-indent-level="5">
-<li>Companion API client&#8217;s use this <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/threedsauthenticationoutcome/">ThreeDSAuthenticationOutcome</a> API.</li>
-<li>Card API client&#8217;s use this <a href="https://developer.sprint.paymentology.com/card-api/api-reference/threedsauthenticationoutcome/">ThreeDSAuthenticationOutcome</a> API.</li>
+<li>Companion API client’s use this <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/threedsauthenticationoutcome/">ThreeDSAuthenticationOutcome</a> API.</li>
+<li>Card API client’s use this <a href="https://developer.sprint.paymentology.com/card-api/api-reference/threedsauthenticationoutcome/">ThreeDSAuthenticationOutcome</a> API.</li>
 </ul>
 </li>
 <li>
@@ -113,7 +113,7 @@ MessageType: <a href="https://developer.sprint.paymentology.com/card-api/api-ref
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h3>In Summary:</h3>

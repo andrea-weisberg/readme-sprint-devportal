@@ -11,7 +11,7 @@ original_path: companion-api/api-reference/remote
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 #### Path parameters
@@ -31,7 +31,7 @@ original_path: companion-api/api-reference/remote
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -92,28 +92,8 @@ original_path: companion-api/api-reference/remote
         </param>
     </params>
 </methodCall>
-```
 
-<p>&nbsp;</p>
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-#### Response schema
-
-| Field | Type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-
-
-
-<!-- spacing: desktop=20, mobile=10 -->
-
-
-
-```xml
+```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
     <params>
@@ -131,13 +111,112 @@ original_path: companion-api/api-reference/remote
         </param>
     </params>
 </methodResponse>
+
 ```
 
-<p>&nbsp;</p>
+<p> </p>
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
+
+
+#### Response schema
+
+| Field | Type | Description |
+|---|---|---|
+| resultCode | Integer | <p>Status code indicating transaction result</p> |
+
+
+
+{/* spacing: desktop=20, mobile=10 */}
+
+
+
+```xml
+<?xml version="1.0"?>
+<methodCall>
+    <methodName>LoadAuthReversal</methodName>
+    <params>
+        <param>
+            <value>
+                <string>0014682067</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>IMPLTest</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <int>10000</int>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>Tutuka Test            Pretoria      ZAF</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string></string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>192316</string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <dateTime.iso8601>20240313T11:20:00</dateTime.iso8601>
+            </value>
+        </param>
+         <param>
+            <value>
+                <string>192325</string>
+            </value>
+        </param>
+         <param>
+            <value>
+                <dateTime.iso8601>20240313T11:20:00</dateTime.iso8601>
+            </value>
+        </param>
+        <param>
+            <value>
+                <string>47D4F5C6E263FA295D492A925DF607773D3F1B9B</string>
+            </value>
+        </param>
+    </params>
+</methodCall>
+
+```,```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <struct>
+                    <member>
+                        <name>resultCode</name>
+                        <value>
+                            <int>1</int>
+                        </value>
+                    </member>
+                </struct>
+            </value>
+        </param>
+    </params>
+</methodResponse>
+
+```
+
+<p> </p>
+
+
+
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/">Back to Remote API menu</a></p>

@@ -10,7 +10,7 @@ original_path: chargeback-api/chargeback-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2>Request/response fields and samples</h2>
@@ -31,7 +31,7 @@ original_path: chargeback-api/chargeback-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 
@@ -45,12 +45,21 @@ original_path: chargeback-api/chargeback-api-reference
     " chargebackAmount": "CHARGEBACK_AMOUNT",
     " reasonCode": "REASON_CODE"
 }
+
+```,```json
+[
+    {
+        " claimID": "CLAIM_ID",
+        " chargebackID": "CHARGEBACK_ID"
+    }
+]
+
 ```
 
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
 
 
 #### Response schema
@@ -62,15 +71,27 @@ original_path: chargeback-api/chargeback-api-reference
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+{/* spacing: desktop=20, mobile=10 */}
 
 
 
 ```json
+{
+    "trackingNumber": "TRACKING_NUMBER",
+    "transactionId": "TRANSACTION_ID",
+    "authNumber": "AUTH_NUMBER",
+    " systemDate": "systemDate",
+    " settlementAmount": "SETTLEMENT_AMOUNT",
+    " chargebackAmount": "CHARGEBACK_AMOUNT",
+    " reasonCode": "REASON_CODE"
+}
+
+```,```json
 [
     {
         " claimID": "CLAIM_ID",
         " chargebackID": "CHARGEBACK_ID"
     }
 ]
+
 ```

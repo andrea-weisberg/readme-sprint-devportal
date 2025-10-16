@@ -16,7 +16,7 @@ original_path: companion-api/tokenization2
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2><b>Tokenization Participants</b></h2>

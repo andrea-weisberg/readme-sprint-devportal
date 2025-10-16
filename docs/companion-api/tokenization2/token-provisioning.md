@@ -12,7 +12,7 @@ original_path: companion-api/tokenization2
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <p><b>Step 1: </b>The cardholder initiates the request process via push provisioning or manual provisioning.</p>
@@ -24,7 +24,7 @@ original_path: companion-api/tokenization2
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <h2><b>Types of Provisioning Methods</b></h2>
@@ -37,13 +37,13 @@ original_path: companion-api/tokenization2
 
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
-<!-- unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Push Provisioning vs Manual Provisioning ","table":{"use_header":true,"header":[{"c":"PUSH PROVISIONING"},{"c":"MANUAL PROVISIONING"}],"caption":false,"body":[[{"c":"OTP verification not required"},{"c":"OTP verification required. However, some wallets, such as Samsung Pay do not require OTP verification."}],[{"c":"TAV certification required"},{"c":"TAV certification not required"}]]}} -->
+\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Push Provisioning vs Manual Provisioning ","table":{"use_header":true,"header":[{"c":"PUSH PROVISIONING"\},\{"c":"MANUAL PROVISIONING"\}],"caption":false,"body":[[\{"c":"OTP verification not required"\},\{"c":"OTP verification required. However, some wallets, such as Samsung Pay do not require OTP verification."\}],[\{"c":"TAV certification required"\},\{"c":"TAV certification not required"\}]]}} */}
 
 
-<!-- spacing: desktop=20, mobile=10 -->
+\{/* spacing: desktop=20, mobile=10 */\}
 
 
 <h2><b>How Push Provisioning Works</b></h2>
@@ -55,13 +55,13 @@ original_path: companion-api/tokenization2
 <li aria-level="1">Card data encryption</li>
 </ul>
 <p>Let’s talk about them in detail.</p>
-<p>&nbsp;</p>
+<p> </p>
 <h3>a) TAV certification</h3>
 <p>TAV (Token Authentication Value) is an encrypted digital signature that authenticates a push provisioning request from the token requester to the issuer/client. TAV certification is required to ensure the security and authenticity of the push provisioning process.</p>
 <p>When a card is pushed on an XPay wallet, the client app will notify Paymentology that a card is being provisioned, and Paymentology needs to calculate its TAV value—based on the card number, expiry date, and CVV. After calculating this value, Paymentology will then pass it to MDES for MDES to tokenize the card. After tokenization, MDES will store that information in their secure token vault, while associating the card details to the generated token.</p>
 <p>If a client app relies on Paymentology for TAV calculation, they’ll need to call the <b>CalculateTAV</b> API method, which is part of the Companion API. Paymentology will also need to get the necessary keys from Mastercard.</p>
 <p>Note that even if Paymentology assists with TAV calculation, clients will still be responsible for other encryption tasks through the wallet to the MDES.</p>
-<p>&nbsp;</p>
+<p> </p>
 <h3>b) Card data encryption</h3>
 <p>Other than the TAV, the card information is also structured and encrypted, and passed to the Wallet Provider, and eventually to MDES. MDES actually receives the encrypted card data from the issuer via the Wallet Provider.</p>
 <p>The information is encrypted using the PEPK (Play Encrypt Private Key) tool provided by Mastercard. The client does PEPK encryption as part of the direct integration to a digitized wallet.</p>
@@ -77,13 +77,13 @@ original_path: companion-api/tokenization2
 
 
 
-<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
 
 
 <section id="tutuka-block-21" class="tutuka-block tutuka-block--text-full-width">
 <h2><b>How Manual Provisioning Works</b></h2>
 <p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2273" src="https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Mdes-Manual-provisioning-v2.png" alt="" width="6300" height="3600" /></p>
-<p>&nbsp;</p>
+<p> </p>
 <p>Manual provisioning is where the cardholder physically enters the card details, such as PAN, expiry date, and CVV, into the digitized wallet. It requires the cardholder to enter an OTP via the selected verification method, usually SMS or email, to verify that they indeed own the card.</p>
 <p>In manual provisioning, Paymentology will use the<a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#AdministrativeMessage"><b> AdministrativeMessage </b></a>method to handle various <a href="https://developer.sprint.paymentology.com/administrative-message-values/">digitization</a> tasks.</p>
 <p><b>AdministrativeMessage Method</b></p>
@@ -92,7 +92,7 @@ original_path: companion-api/tokenization2
 <li aria-level="1">Notifying the client when a cardholder requests to provision their card, using either the push method or the manual method.</li>
 <li aria-level="1">Notifying the client of any token lifecycle events coming from the MDES.</li>
 </ul>
-<p>&nbsp;</p>
+<p> </p>
 <p>The <b>messageName </b>path parameter, required in the AdministrativeMessage method, specifies the name of the administrative messages sent to the client.</p>
 <p>These are the possible values for the <b>messageName </b>data field during manual provisioning:</p>
 <ul>
@@ -102,7 +102,7 @@ original_path: companion-api/tokenization2
 <li aria-level="1"><b><a href="https://developer.sprint.paymentology.com/administrative-message-values/#exception">Digitization.exception</a></b>—sends a notification when there is a problem with the provisioning process.</li>
 </ul>
 <p>Let’s talk about each of the values in detail.</p>
-<p>&nbsp;</p>
+<p> </p>
 <ol>
 <li><b><a href="https://developer.sprint.paymentology.com/administrative-message-values/#activationmethods">Digitization.activationmethods</a></b></li>
 </ol>
@@ -112,19 +112,19 @@ original_path: companion-api/tokenization2
 <p>The client will respond to Paymentology with the required details. Paymentology will pass the data to the MDES to pass to the XPay app. The XPay app will then display the options the cardholder can select for receiving the OTP.</p>
 <p><b>Digitization.activationmethods</b>requires the type of contact method as well as the data for the method to be passed to it.</p>
 <p>Also, no KLV fields are required to be passed. So, they’ll be no <b>MessageData</b> string included in the AdministrativeMessage request from Paymentology.</p>
-<p>&nbsp;</p>
+<p> </p>
 <ol start="2">
 <li><b><a href="https://developer.sprint.paymentology.com/administrative-message-values/#activation">Digitization.activation</a></b></li>
 </ol>
 <p>Once the cardholder selects their preferred method of verification, the XPay wallet will send this information to the MDES, and the MDES will send it to Paymentology.</p>
 <p>Paymentology will then send an activation code via <b>Digitization.activation</b> to the client. The client will then pass an OTP to the cardholder, through their preferred contact method, to input it on their XPay wallet app.</p>
-<p>&nbsp;</p>
+<p> </p>
 <ol start="3">
 <li><b><a href="https://developer.sprint.paymentology.com/administrative-message-values/#complete">Digitization.complete</a></b></li>
 </ol>
 <p>Once the cardholder enters the OTP, Paymentology will verify the OTP. And MDES will activate the PAN’s token. MDES will also map the token to the full PAN and store this information in its token vault. MDES will then send a notification to Paymentology confirming that the token creation process is complete.</p>
 <p>Paymentology will then notify the client via <b>Digitization.complete </b>of the successful provisioning of the cardholder’s card.</p>
-<p>&nbsp;</p>
+<p> </p>
 <ol start="4">
 <li><b><a href="https://developer.sprint.paymentology.com/administrative-message-values/#exception">Digitization.exception</a></b></li>
 </ol>
