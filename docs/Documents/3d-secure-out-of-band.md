@@ -1,5 +1,5 @@
 ---
-title: 3D Secure – Out of band Authentication
+title: 3D Secure - Out of band Authentication
 deprecated: false
 hidden: false
 metadata:
