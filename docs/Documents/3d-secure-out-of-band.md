@@ -5,24 +5,15 @@ hidden: false
 metadata:
   robots: index
 ---
+
 <h2>Overview of Out-of-Band (OOB) Authentication</h2>
 <p>Out-of-Band (OOB) authentication is an advanced type of two-factor authentication (2FA) that necessitates an additional verification method via a distinct communication channel. It is an optional yet highly advised Challenge flow authentication method for conducting 3DS transactions for Paymentology clients.</p>
-<p data-renderer-start-pos="179">This applies to both Mastercard and Visa transactions.</p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
+<p>This applies to both Mastercard and Visa transactions.</p>
 
 <h3>Operational Workflow</h3>
 <p>OOB serves as an authentication technique during the 3DS Challenge flow, steering the process to an Issuer’s mobile application rather than utilizing a one-time password (OTP) dispatched through SMS or text message.</p>
 <p>During the 3DS Challenge flow, a Push Notification is sent to the Issuer’s mobile application. This initiates the sending of an authentication request to the cardholder. Subsequently, the cardholder undergoes authentication in the Issuer’s application using biometric methods like facial recognition or thumbprint, or a one-time password.</p>
 <p>Following the authentication, the issuer communicates the result. If authenticated successfully, the merchant is enabled to initiate the authorization request, culminating in the completion of the transaction processing.</p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h3>Paymentology’s OOB Solution:</h3>
 <p>In the OOB Solution, several participants play crucial roles:</p>
@@ -33,21 +24,11 @@ metadata:
 <li><strong>Issuing Client:</strong> Manages the OOB Issuer Mobile app and authenticates the client.</li>
 </ul>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h3>Interaction Sequence:</h3>
 <ol>
 <li><strong>Message Reception and Forwarding:</strong> Paymentology intercepts a JSON message from the ACS provider at a newly defined endpoint, enclosing pertinent details. This data is relayed to our clients (administrative messages to Companion clients and Remote Messaging to others). The client, upon receipt, acknowledges and responds directly to Paymentology’s request and contacts their cardholder.</li>
 <li><strong>Transaction Approval/Denial:</strong> Subsequently, the client, in a separate API request sent to Paymentology’s Card or Companion API, sanctions or refutes the transaction. Post-receipt, this acknowledgment is forwarded from Paymentology to the ACS provider, culminating in the process.</li>
 </ol>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h2>Transaction flow</h2>
 <p>When a 3DS enrolled cardholder performs an e-commerce transaction, authentication will need to take place:</p>
@@ -74,8 +55,6 @@ MessageType: <strong data-renderer-mark="true"><a href="https://developer.sprint
 </li>
 </ul>
 <p><img loading="lazy" decoding="async" class="alignleft size-full wp-image-4167" src="https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Request-and-initial-response-Light.png" alt="3DS OOB Request and initial response" width="6042" height="8262" srcset="https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Request-and-initial-response-Light.png 6042w, https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Request-and-initial-response-Light-219x300.png 219w, https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Request-and-initial-response-Light-749x1024.png 749w, https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Request-and-initial-response-Light-768x1050.png 768w, https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Request-and-initial-response-Light-1123x1536.png 1123w, https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Request-and-initial-response-Light-1498x2048.png 1498w" sizes="auto, (max-width: 6042px) 100vw, 6042px" /></p>
-
-
 
 <h3>Final response and final confirmation</h3>
 <p data-renderer-start-pos="2993">Once the client completes the authentication with the cardholder:</p>
@@ -110,11 +89,6 @@ MessageType: <a href="https://developer.sprint.paymentology.com/card-api/api-ref
 </li>
 </ul>
 <p><img loading="lazy" decoding="async" class="alignleft size-full wp-image-4168" src="https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Final-Response-and-Final-Confirmation-Light.png" alt="3DS OOB Final response and final confirmation" width="6041" height="8262" srcset="https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Final-Response-and-Final-Confirmation-Light.png 6041w, https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Final-Response-and-Final-Confirmation-Light-219x300.png 219w, https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Final-Response-and-Final-Confirmation-Light-749x1024.png 749w, https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Final-Response-and-Final-Confirmation-Light-768x1050.png 768w, https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Final-Response-and-Final-Confirmation-Light-1123x1536.png 1123w, https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Final-Response-and-Final-Confirmation-Light-1497x2048.png 1497w" sizes="auto, (max-width: 6041px) 100vw, 6041px" /></p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h3>In Summary:</h3>
 <p>This secure and advanced authentication method ensures a seamless and secure transaction process, reinforcing the security apparatus by involving distinct communication channels for verification, thereby fostering enhanced security in online transactions. It is recommended for Paymentology clients aiming for robust and secure 3DS transaction processing.</p>
