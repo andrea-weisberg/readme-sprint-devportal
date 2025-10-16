@@ -1,29 +1,28 @@
-- 3d Secure Out Of Band
-- Administrativemessage3dsecureotp
-- Api Reference Sample
-- Card Api
-- Chargeback Api
-- Companion Api
-- Contact Us
-- Documentation
-- Generatetimebasedsecret 1
-- Get Started
+- 3D Secure – Out of band Authentication
+- AdministrativeMessage3DSecureOTP
+- API Reference Sample
+- card-api
+- chargeback-api
+- companion-api
+- Contact us
+- generateTimeBasedSecret
+- get-started
 - Home
 - How Payments Work
 - Login
 - Notifications
 - Privacy Policy
-- Profile Api Reference
-- Qr Payments Api
-- Register 1
-- Register Thank You
-- Report Generator Offline
-- Reporting Api 2
-- Reporting Api
+- profile-api-reference
+- qr-payments-api
+- Register
+- Register – Thank you
+- report-generator-offline
+- Reporting API (companion)
+- Reporting API (Card)
 - Reset
-- Response Codes 1
-- Response Codes 2
-- Reversedevalueprofile 1
-- Tools
-- Tutuka Transaction Stream 2
-- Updateprofile 1
+- Response Codes – Local API
+- response-codes-2
+- ReverseDevalueProfile
+- tools
+- Transaction Stream
+- UpdateProfile

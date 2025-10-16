@@ -9,11 +9,11 @@ File Path,Error Message,Error Type,Line Number,Code Context
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas, ligula et tristique vestibulum, tellus mauris eleifend nibh, eget rutrum arcu libero commodo eros. Morbi est metus, scelerisque id consequat a, malesuada feugiat nisi.</p>
 
 "
-/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/api-reference/appendix.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""card-api/api-reference""
----
-<!-- unsupported_acf_block: table_block {""acf_fc_layout"":""table_block"",""table_caption"":""Result Codes"",""table"":{""use_header"":true,""header"":[{""c"":""Code""},{""c"":""Description""}],""caption"":false,""body"":[[{""c"":""\""0\""""},{""c"":""Approved no action. Note: code is 0 and does not include \""\""""}],[{""c"":""1""},{""c"":""Approved""}],[{""c"":""-3""},{""c"":""Duplicate Transaction ID""}],[{""c"":""-4""},{""c"":""Validation error. Please verify the values you provided are correct""}],[{""c"":""-5""},{""c"":""Operation not Allowed""}],[{""c"":""-6""},{""c"":""Operation not Supported""}],[{""c"":""-7""},{""c"":""Transaction Timeout""}],[{""c"":""-8""},{""c"":""Authentication failed""}],[{""c"":""-9""},{""c"":""Do not honour (general decline, no specific reason given)""}],[{""c"":""-10""},{""c"":""Transaction could not be processed. Please check card is valid and working""}],[{""c"":""-17""},{""c"":""Insufficient funds""}],[{""c"":""-18""},{""c"":""Exceeds withdrawal amount limit""}],[{""c"":""-19""},{""c"":""Invalid amount""}],[{""c"":""-21""},{""c"":""Maximum card value would be exceeded""}],[{""c"":""-22""},{""c"":""Maximum monthly load value would be exceeded""}],[{""c"":""-23""},{""c"":""Invalid terminal for campaign""}],[{""c"":""-24""},{""c"":""Security violation""}],[{""c"":""-25""},{""c"":""Incorrect PIN""}],[{""c"":""-26""},{""c"":""Allowable PIN tries exceeded""}],[{""c"":""-27""},{""c"":""Invalid PIN block""}],[{""c"":""-28""},{""c"":""PIN length error""}],[{""c"":""-29""},{""c"":""Invalid Card Data""}],[{""c"":""-33""},{""c"":""Card has a balance""}],[{""c"":""-34""},{""c"":""Card already active""}],[{""c"":""-35""},{""c"":""Card not active""}],[{""c"":""-36""},{""c"":""Expired Card""}],[{""c"":""-37""},{""c"":""Suspected fraud""}],[{""c"":""-38""},{""c"":""Lost card""}],[{""c"":""-39""},{""c"":""Stolen card""}],[{""c"":""-248""},{""c"":""Invalid MSISDN""}],[{""c"":""-250""},{""c"":""Invalid initials""}],[{""c"":""-251""},{""c"":""Invalid Address OR Invalid Contact Number""}],[{""c"":""-252""},{""c"":""Invalid Address 2""}],[{""c"":""-253""},{""c"":""Invalid Address 3""}],[{""c"":""-254""},{""c"":""Invalid Address 4""}],[{""c"":""-255""},{""c"":""Invalid Address 5 OR Invalid PinBlock""}],[{""c"":""-294""},{""c"":""Invalid stop reason code""}],[{""c"":""-295""},{""c"":""Invalid expiry date""}],[{""c"":""-296""},{""c"":""Invalid transaction date""}],[{""c"":""-297""},{""c"":""Invalid transaction ID""}],[{""c"":""-298""},{""c"":""Invalid reference data""}],[{""c"":""-299""},{""c"":""Invalid reference ID\n""}],[{""c"":""-780""},{""c"":""Invalid card reference""}],[{""c"":""-781""},{""c"":""Invalid card - Not a physical card""}],[{""c"":""-782""},{""c"":""Cannot disable physical card OR Print card request already requested""}]]}} -->
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/api-reference/appendix.md,Could not parse expression with acorn,mdx-parse-error,13,"
 
-"
+<h2>Important</h2>
+<p>Any argument that has the type ‘date’ needs to follow the XML-RPC specified ISO 8601 date-time format:</p>
+<p><span class=""xml-highlight""><dateTime.iso8601>YYYYMMDDTHH:mm:ss<dateTime.iso8601></span></p>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/api-reference/index.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""card-api""
 ---
 <p>The Card API contains the API and API methods that we use to call you to send transactions on to the store of value for authorizations. Transactions originate from the merchant and are sent to Paymentology via the financial networks and then are forwarded to the store of value for authorization.</p>
@@ -23,7 +23,7 @@ File Path,Error Message,Error Type,Line Number,Code Context
 ---
 <p>Order a card for a specific cardholder. You can choose this method if you want the PIN of the card printed on its card carrier or if you have Offline PIN validation in your country.</p>
 <p><strong>IMPORTANT:</strong> No commas, question marks or quotation marks are allowed in any of the fields.</p>
-<p>&nbsp;</p>"
+<p> </p>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/api-reference/remotemessaging.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""card-api/api-reference""
 ---
 <p class=""BodyA""><strong><span lang=""EN-US"">Remote messaging API allows Paymentology to call you to send administrative advice messages for Card API. These advice messages are sent using webhook-like schema. If you are integrating the service, you must create an endpoint accessible from the Paymentology network, which would be able to process the requests outlined below.</span></strong></p>
@@ -46,7 +46,7 @@ File Path,Error Message,Error Type,Line Number,Code Context
 "
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/index.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 16
 ---
-<h2>Card API is a simple API where we hold your customer&#8217;s balance for you</h2>
+<h2>Card API is a simple API where we hold your customer’s balance for you</h2>
 <p><strong>The Card API is a prepaid card management interface that enables you to instantly generate and issue virtual and/or physical cards. These cards are funded from a stored value account (SVA) and are loaded as a balance on the card. The Card API is different from the Companion API in that Paymentology stores the customer’s balance and we are responsible for authorizing transactions based on the stipulated card balances and limits. </strong></p>
 <p><span style=""font-weight: 400;"">With this API, you can provide anything from simple gift cards to multi-currency cards for traveling, payout and payroll cards or general-purpose reloadable cards for the unbanked, and many other types of secure payment cards. It offers a prepaid card and pocket management solution that acts as a link between Mastercard, Visa, Union Pay International, bank switches, and various customer cards.</span></p>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/issue-card.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""card-api""
@@ -101,9 +101,9 @@ These are the supported options for managing funds:​</p>
 <ul>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/reports/authorisation-income-report.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""card-api/reports""
 ---
-<p data-pm-slice=""1 1 []"">This daily report provides client&#8217;s with transaction markup data to support their internal reporting and P &amp; L reconciliation. The report includes the following details:</p>
+<p data-pm-slice=""1 1 []"">This daily report provides client’s with transaction markup data to support their internal reporting and P & L reconciliation. The report includes the following details:</p>
 <ul>
-<li><strong>CampaignID</strong> &#8211; ID number of client’s campaign.</li>"
+<li><strong>CampaignID</strong> – ID number of client’s campaign.</li>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/reports/blocked-transactions-report.md,Could not parse expression with acorn,mdx-parse-error,8,"---
 <p>This report lists detailed information about filtered transactions for a specific set of campaigns, during a specified date range.<br />
 The report includes details about vouchers and reasons for transactions being filtered. This reports helps clients to identify if any whitelisted merchants (approved merchants) are blocked.</p>
@@ -131,7 +131,7 @@ The report includes details about vouchers and reasons for transactions being fi
 <ul>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/reports/daily-statement-report.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""card-api/reports""
 ---
-<p>The daily statement report can be used by client&#8217;s to assist with their reconciliation and program activity reporting.</p>
+<p>The daily statement report can be used by client’s to assist with their reconciliation and program activity reporting.</p>
 <p>The report includes the following details:</p>
 <ul>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/reports/detailed-settlement-report.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""card-api/reports""
@@ -156,12 +156,12 @@ The report includes details about vouchers and reasons for transactions being fi
 <div class=""placeholder"">"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/reports/google-pay-monthly-report.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""card-api/reports""
 ---
-<p>A report which provides detailed information about cards that were tokenised to a Google Pay wallet within a given month. Client&#8217;s can use the data from this report to fulfil their Google Pay reporting requirements.</p>
+<p>A report which provides detailed information about cards that were tokenised to a Google Pay wallet within a given month. Client’s can use the data from this report to fulfil their Google Pay reporting requirements.</p>
 <p>The report includes the following details:</p>
 <ul>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/reports/inactive-cards-report.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""card-api/reports""
 ---
-<p data-pm-slice=""1 3 []"">This report provides client&#8217;s with a list of inactive cards across their campaign. This allows client&#8217;s to better manage their campaign&#8217;s and internal reporting requirements.</p>
+<p data-pm-slice=""1 3 []"">This report provides client’s with a list of inactive cards across their campaign. This allows client’s to better manage their campaign’s and internal reporting requirements.</p>
 <p>The report includes the following details:</p>
 <ul>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/reports/index.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""card-api""
@@ -181,7 +181,7 @@ The report includes details about vouchers and reasons for transactions being fi
 <p>Ideally, the Mark-off file report and the store of value report should be in sync each day as the systems mirror one another. In case of any discrepancy, you should log a ticket via your Zendesk Portal. Select the *<strong data-renderer-mark=""true"">Report a Service Incident</strong>* form, and then choose *<strong data-renderer-mark=""true"">Reporting</strong>* and *<strong data-renderer-mark=""true"">Discrepancy</strong>* under the Request Type, indicate the file’s date and the transaction in question. We’ll promptly address the issue.</p>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/reports/qmr-data-report.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""card-api/reports""
 ---
-<p>Paymentology&#8217;s QMR (Quarterly Mastercard Report) data report contains transaction data and card/account data for the given quarter. The report can be provided to clients using Mastercard, to assist clients with their Mastercard quarterly reporting requirements.</p>
+<p>Paymentology’s QMR (Quarterly Mastercard Report) data report contains transaction data and card/account data for the given quarter. The report can be provided to clients using Mastercard, to assist clients with their Mastercard quarterly reporting requirements.</p>
 <p>The report includes the following:</p>
 <h3>Cardholder activity</h3>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/reports/qvr-data-report.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""card-api/reports""
@@ -227,7 +227,7 @@ The report includes details about vouchers and reasons for transactions being fi
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/chargeback-api/chargeback-api-reference/first-chargeback.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""chargeback-api/chargeback-api-reference""
 ---
 <p>After successfully connecting to the API Proxy, you can send the <b><i>fields/parameters</i></b> for the API request (as specified below) and receive a <b><i>response</i></b>.</p>
-<p>A successfully submitted First Chargeback will remain in a &#8220;pending status&#8221; (no more than 72 hours) on issuers&#8217; behalf to allow merchants to respond and resolve the inquiry.</p>
+<p>A successfully submitted First Chargeback will remain in a “pending status” (no more than 72 hours) on issuers’ behalf to allow merchants to respond and resolve the inquiry.</p>
 "
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/chargeback-api/chargeback-api-reference/index.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""chargeback-api""
 ---
@@ -272,7 +272,7 @@ Issuers and acquirers then follow a process to attempt to resolve the dispute. I
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/chargeback-api/response-codes.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""chargeback-api""
 ---
 <h2>Error response code 400</h2>
-<p>An error response code of 400 indicates client authentication failure. The response message will contain a &#8220;responseCode&#8221; of 0 and the &#8220;responseMessage&#8221; will contain either of the below values:</p>
+<p>An error response code of 400 indicates client authentication failure. The response message will contain a “responseCode” of 0 and the “responseMessage” will contain either of the below values:</p>
 "
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/api-reference/index.md,Expected a closing tag for `<li>` (9:1-9:5) before the end of `paragraph`,mdx-parse-error,7,"original_path: ""companion-api""
 ---
@@ -298,7 +298,7 @@ Issuers and acquirers then follow a process to attempt to resolve the dispute. I
 ---
 <p>Order a card for a specific cardholder. You can choose this method if you want the PIN of the card printed on its card carrier or if you have Offline PIN validation in your country.</p>
 <p><strong>IMPORTANT:</strong> No commas, question marks or quotation marks are allowed in any of the fields.</p>
-<p>&nbsp;</p>"
+<p> </p>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/api-reference/local-api/stoptoken-1.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api/api-reference/local-api""
 ---
 <p>Stops a token reference or all the ones linked to a card. The token or tokens can be unstopped using UnStopToken</p>
@@ -321,9 +321,9 @@ Issuers and acquirers then follow a process to attempt to resolve the dispute. I
 <li><a href=""#activationmethods"">digitization.activationmethods</a></li>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/api-reference/remote/administrativemessage/index.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api/api-reference/remote""
 ---
-<p><a href=""#Tokenization"">Administrative Message &#8211; Tokenization</a> &#8211; Sends tokenization related messages to the client.</p>
-<p><a href=""#3DSecure"">Administrative Message &#8211; 3D Secure OTP</a> &#8211; Sends message with 3D Secure OTP.</p>
-<p><a href=""#3DSecureCCD"">Administrative Message &#8211; 3D Secure Cardholder Contact Detail Collection</a> &#8211; Collects the cardholder’s masked contact details to be used upon 3DS checkout.</p>"
+<p><a href=""#Tokenization"">Administrative Message – Tokenization</a> – Sends tokenization related messages to the client.</p>
+<p><a href=""#3DSecure"">Administrative Message – 3D Secure OTP</a> – Sends message with 3D Secure OTP.</p>
+<p><a href=""#3DSecureCCD"">Administrative Message – 3D Secure Cardholder Contact Detail Collection</a> – Collects the cardholder’s masked contact details to be used upon 3DS checkout.</p>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/api-reference/remote/loadreversal.md,"Unexpected closing tag `</p>`, expected corresponding closing tag for `<section>` (7:1-7:82)",mdx-parse-error,7,"original_path: ""companion-api/api-reference/remote""
 ---
 <section id=""tutuka-block-33"" class=""tutuka-block tutuka-block--text-full-width"">Reverse a load that was previously requested on a wallet.<strong>KLV will not be sent for reversals. Only reference data will be included if there is any. If KLV data is needed please lookup <a href=""https://developer.sprint.paymentology.com/companion-api/klv-lookup/"">KLV</a> from the reference data included.</strong></p>
@@ -341,8 +341,8 @@ Issuers and acquirers then follow a process to attempt to resolve the dispute. I
 "
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/index.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 14
 ---
-<h2>Companion API is a simple API that allows you to issue cards and hold your customers&#8217; card balances on your platform</h2>
-<p><span style=""font-weight: 400;""><strong>A Companion card is a card that is linked to a store of value (SVA) like a wallet or a bank account. What makes this API different from the others we offer, is that the customer&#8217;s card balance sits within the SVA and not on the card. Choose the Companion API if you want to issue cards and hold your customers&#8217; card balances on your own platform.</strong></span></p>
+<h2>Companion API is a simple API that allows you to issue cards and hold your customers’ card balances on your platform</h2>
+<p><span style=""font-weight: 400;""><strong>A Companion card is a card that is linked to a store of value (SVA) like a wallet or a bank account. What makes this API different from the others we offer, is that the customer’s card balance sits within the SVA and not on the card. Choose the Companion API if you want to issue cards and hold your customers’ card balances on your own platform.</strong></span></p>
 <p>With this API, you can issue physical and virtual prepaid cards linked to a separate SVA. Cards are linked to the SVA, so whenever transactions are made, the SVA is debited.</p>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/issue-cards/digital-first.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api/issue-cards""
 ---
@@ -356,7 +356,7 @@ Issuers and acquirers then follow a process to attempt to resolve the dispute. I
 "
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/klv-lookup.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api""
 ---
-<p>Key-Length-Value (KLV) is a data encoding standard where the <strong>Key</strong> identifies the data, <strong>Length</strong> specifies the data&#8217;s length and <strong>Value </strong>is the data itself. KLV is an instance of the TLV encoding scheme used for optional information element within communication protocols.</p>
+<p>Key-Length-Value (KLV) is a data encoding standard where the <strong>Key</strong> identifies the data, <strong>Length</strong> specifies the data’s length and <strong>Value </strong>is the data itself. KLV is an instance of the TLV encoding scheme used for optional information element within communication protocols.</p>
 <p><strong>The length of each string is:</strong></p>
 <ol>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/manage-cards-1.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api""
@@ -406,9 +406,9 @@ Issuers and acquirers then follow a process to attempt to resolve the dispute. I
 <ul>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/reports/authorisation-income-report-1.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api/reports""
 ---
-<p data-pm-slice=""1 1 []"">This daily report provides client&#8217;s with transaction markup data to support their internal reporting and P &amp; L reconciliation. The report includes the following details:</p>
+<p data-pm-slice=""1 1 []"">This daily report provides client’s with transaction markup data to support their internal reporting and P & L reconciliation. The report includes the following details:</p>
 <ul>
-<li><strong>CampaignID</strong> &#8211; ID number of client’s campaign.</li>"
+<li><strong>CampaignID</strong> – ID number of client’s campaign.</li>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/reports/blocked-transactions-report-1.md,Could not parse expression with acorn,mdx-parse-error,8,"---
 <p>This report lists detailed information about filtered transactions for a specific set of campaigns, during a specified date range.<br />
 The report includes details about vouchers and reasons for transactions being filtered. This reports helps clients to identify if any whitelisted merchants (approved merchants) are blocked.</p>
@@ -419,11 +419,11 @@ The report includes details about vouchers and reasons for transactions being fi
 <p>This report provides clients with card details such as, current available balance, last load and lifetime expenditure. It is available for each Campaign.</p>
 <p>The report includes the following details:</p>
 <ul>"
-/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/reports/card-order-report.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api/reports""
----
-<!-- spacing: desktop=40, mobile=20 -->
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/reports/card-order-report.md,Could not parse expression with acorn,mdx-parse-error,10,"
 
-"
+<p>A <strong>card order</strong> is a request to print a physical card. With the Companion API, you can optionally issue a physical card to a customer by sending an order for printing to the card manufacturer. To initiate a request to print a physical card, you use the <a href=""https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/ordercard/""><span class=""xml-highlight"">OrderCard</span></a> method in the Local API. On a daily basis at 19:30 UTC+2, Paymentology creates a batch order and submits it to the manufacturer for printing. A <strong>card order </strong>report lists all the orders that were processed on the previous day.{/* <strong>Stored in:</strong> Paymentology-hosted <span class=""GlossaryItem-trigger"">SFTP</span> folder */}</p>
+<p>The report includes the following details:</p>
+<ul>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/reports/daily-negative-balance-report-1.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api/reports""
 ---
 <p>This report provides clients with detailed information on cards that have entered into a negative balance status. It provides essential, actionable information to trace the transactions and correct the negative balance scenarios.</p>
@@ -436,7 +436,7 @@ The report includes details about vouchers and reasons for transactions being fi
 <ul>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/reports/daily-statement-report-1.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api/reports""
 ---
-<p>The daily statement report can be used by client&#8217;s to assist with their reconciliation and program activity reporting.</p>
+<p>The daily statement report can be used by client’s to assist with their reconciliation and program activity reporting.</p>
 <p>The report includes the following details:</p>
 <ul>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/reports/detailed-settlement-report-1.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api/reports""
@@ -461,12 +461,12 @@ The report includes details about vouchers and reasons for transactions being fi
 <div class=""placeholder"">​</div>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/reports/google-pay-monthly-report-1.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api/reports""
 ---
-<p>A report which provides detailed information about cards that were tokenised to a Google Pay wallet within a given month. Client&#8217;s can use the data from this report to fulfil their Google Pay reporting requirements.</p>
+<p>A report which provides detailed information about cards that were tokenised to a Google Pay wallet within a given month. Client’s can use the data from this report to fulfil their Google Pay reporting requirements.</p>
 <p>The report includes the following details:</p>
 <ul>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/reports/inactive-cards-report-1.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api/reports""
 ---
-<p data-pm-slice=""1 3 []"">This report provides client&#8217;s with a list of inactive cards across their campaign. This allows client&#8217;s to better manage their campaign&#8217;s and internal reporting requirements.</p>
+<p data-pm-slice=""1 3 []"">This report provides client’s with a list of inactive cards across their campaign. This allows client’s to better manage their campaign’s and internal reporting requirements.</p>
 <p>The report includes the following details:</p>
 <ul>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/reports/index.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api""
@@ -486,7 +486,7 @@ The report includes details about vouchers and reasons for transactions being fi
 <p>Ideally, the Mark-off file report and the store of value report should be in sync each day as the systems mirror one another. In case of any discrepancy, you should log a ticket via your Zendesk Portal. Select the *<strong data-renderer-mark=""true"">Report a Service Incident</strong>* form, and then choose *<strong data-renderer-mark=""true"">Reporting</strong>* and *<strong data-renderer-mark=""true"">Discrepancy</strong>* under the Request Type, indicate the file’s date and the transaction in question. We’ll promptly address the issue.</p>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/reports/qmr-data-report-1.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api/reports""
 ---
-<p>Paymentology&#8217;s QMR (Quarterly Mastercard Report) data report contains transaction data and card/account data for the given quarter. The report can be provided to clients using Mastercard, to assist clients with their Mastercard quarterly reporting requirements.</p>
+<p>Paymentology’s QMR (Quarterly Mastercard Report) data report contains transaction data and card/account data for the given quarter. The report can be provided to clients using Mastercard, to assist clients with their Mastercard quarterly reporting requirements.</p>
 <p>The report includes the following:</p>
 <h3>Cardholder activity</h3>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/reports/qvr-data-report-1.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api/reports""
@@ -501,7 +501,7 @@ The report includes details about vouchers and reasons for transactions being fi
 <p><b>Note:</b> If the client chooses to settle in one currency, then both domestic and international settlements will fall under one tab.</p>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/reports/unsettled-transactions-report-2.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api/reports""
 ---
-<p>This report provides client&#8217;s with a full list of unsettled transactions, it assists with overall reconciliation.</p>
+<p>This report provides client’s with a full list of unsettled transactions, it assists with overall reconciliation.</p>
 <p>There are two versions of this report available:</p>
 <p><a href=""#UTRV1"">Version 1.0</a></p>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/reports/vau-transaction-report-1.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api/reports""
@@ -513,7 +513,7 @@ The report includes details about vouchers and reasons for transactions being fi
 ---
 <p>In the payment industry sensitive data has a real importance. Confidentiality of the sensitive data is important even while processing transactions and should be kept private (encrypted).</p>
 <p>To achieve this we offer Secure API methods to support end to end encryption of data.</p>
-<p><span style=""color: #ff0000;""><strong>IMPORTANT:</strong></span> <span style=""color: #000000;"">Specific campaign settings are required for these Secure API&#8217;s. To have these enabled, please reach out to your Client Executive or lodge a request via our <a href=""https://support.paymentology.com/"">Customer Support Platform</a>.</span></p>"
+<p><span style=""color: #ff0000;""><strong>IMPORTANT:</strong></span> <span style=""color: #000000;"">Specific campaign settings are required for these Secure API’s. To have these enabled, please reach out to your Client Executive or lodge a request via our <a href=""https://support.paymentology.com/"">Customer Support Platform</a>.</span></p>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/companion-api/secure-cards/index.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""companion-api""
 ---
 <div class=""block translation current highlight"" data-element=""para"" data-attr-xinfo-text=""10605"">
@@ -547,7 +547,7 @@ The report includes details about vouchers and reasons for transactions being fi
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/get-started/client-testing-guide.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""get-started""
 ---
 <h2>How to start testing</h2>
-<p><span style=""font-weight: 400;"">Testing with Paymentology&#8217;s Sprint platform is easy. By following the steps below you can safely try out our API functionality:</span></p>
+<p><span style=""font-weight: 400;"">Testing with Paymentology’s Sprint platform is easy. By following the steps below you can safely try out our API functionality:</span></p>
 <ol>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/get-started/fraud.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""get-started""
 ---
@@ -561,14 +561,19 @@ The report includes details about vouchers and reasons for transactions being fi
 "
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/get-started/index.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 12
 ---
-<!-- unsupported_acf_block: top_banner {""acf_fc_layout"":""top_banner"",""title"":""Get started"",""text"":""<p>Welcome to Paymentology’s Sprint Developer Portal, where you will find everything you need to start integrating with our platform. Use our APIs to start issuing physical and virtual cards quickly and easily with just a few lines of code.</p>\n"",""image"":2539} -->
+{/* unsupported_acf_block: top_banner {""acf_fc_layout"":""top_banner"",""title"":""Get started"",""text"":""<p>Welcome to Paymentology’s Sprint Developer Portal, where you will find everything you need to start integrating with our platform. Use our APIs to start issuing physical and virtual cards quickly and easily with just a few lines of code.</p>\n"",""image"":2539} */}
 
 "
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/get-started/our-apis.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""get-started""
 ---
-<p><strong>Paymentology&#8217;s Sprint product provides simple, seamless, and scalable API integration solutions that enable quick and easy implementation and management of your card programs. We act as a payment enabler between card schemes like Mastercard, Visa, and Union Pay and your closed-loop wallet platform. Through our APIs, we are able to connect you with the card scheme of your choice, shielding you from all the complexities necessary for direct integration, so that you can focus on your business.</strong></p>
+<p><strong>Paymentology’s Sprint product provides simple, seamless, and scalable API integration solutions that enable quick and easy implementation and management of your card programs. We act as a payment enabler between card schemes like Mastercard, Visa, and Union Pay and your closed-loop wallet platform. Through our APIs, we are able to connect you with the card scheme of your choice, shielding you from all the complexities necessary for direct integration, so that you can focus on your business.</strong></p>
 
 "
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/get-started/security.md,"Unexpected closing tag `</span>`, expected corresponding closing tag for `<comment>` (24:124-24:133)",mdx-parse-error,7,"original_path: ""get-started""
+---
+<p><b>Security is central to everything we do at Paymentology</b></p>
+<p><span style=""font-weight: 400;"">These are the measures Paymentology implements to ensure the <span style=""color: #79dbbf;"">security</span> of  Sprint’s API services:</span></p>
+<p> </p>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/get-started/testing.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""get-started""
 ---
 <p><strong>To facilitate easier API integrations, Paymentology provides two integration environments: test environment and live environment.</strong></p>
@@ -577,11 +582,11 @@ The report includes details about vouchers and reasons for transactions being fi
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/how_payments_work.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 2288
 ---
 <p><b>There are different stages of a transaction when a card is used to pay for goods and services. </b></p>
-<p>Let&#8217;s look at each of them.</p>
+<p>Let’s look at each of them.</p>
 "
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/notifications.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 1573
 ---
-<p><strong>Paymentology&#8217;s Sprint Transaction Stream service allows API consumers to receive real-time notifications of the undertaken transactions. By subscribing to the notification service, consumers can know the status of transactions in real-time. </strong></p>
+<p><strong>Paymentology’s Sprint Transaction Stream service allows API consumers to receive real-time notifications of the undertaken transactions. By subscribing to the notification service, consumers can know the status of transactions in real-time. </strong></p>
 <p><span style=""font-weight: 400;"">You can use the service for various purposes, including:</span></p>
 <ul>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/profile-api-reference/activatetoken-2.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""profile-api-reference""
@@ -601,7 +606,7 @@ The report includes details about vouchers and reasons for transactions being fi
 "
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/profile-api-reference/getschedulestopdetail.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""profile-api-reference""
 ---
-<p>Returns the existing scheduled stops for a card. The response may return multiple records but only one of them can be in &#8216;SCHEDULED&#8217; state.</p>
+<p>Returns the existing scheduled stops for a card. The response may return multiple records but only one of them can be in ‘SCHEDULED’ state.</p>
 
 "
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/profile-api-reference/listalltokens-2.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""profile-api-reference""
@@ -643,17 +648,17 @@ The report includes details about vouchers and reasons for transactions being fi
 ---
 <h2>Available Methods</h2>
 <ul>
-<li><a href =""https://developer.sprint.paymentology.com/qr-payments-api/api-reference/originating-institution/#TransferPaymentToMerchant"">TransferPaymentToMerchant</a> &#8211; Transfer payment to merchant</li>"
+<li><a href =""https://developer.sprint.paymentology.com/qr-payments-api/api-reference/originating-institution/#TransferPaymentToMerchant"">TransferPaymentToMerchant</a> – Transfer payment to merchant</li>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/qr-payments-api/api-reference/receiving-institution-remote.md,"Unexpected character `<` (U+003C) before attribute name, expected a character that can start an attribute name, such as a letter, `$`, or `_`; whitespace before attributes; or the end of the tag",mdx-parse-error,7,"original_path: ""qr-payments-api/api-reference""
 ---
 <h2>Available Methods</h2>
 <ul>
-<li><a href=""https://developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution-remote/#Load"">Load</a> &#8211; Load to a wallet</li>"
+<li><a href=""https://developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution-remote/#Load"">Load</a> – Load to a wallet</li>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/qr-payments-api/api-reference/receiving-institution.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""qr-payments-api/api-reference""
 ---
 <h2>Available Methods</h2>
 <ul>
-<li><a href=""https://developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution/#CreateQRData"">CreateQRData</a> &#8211; The method returns a QR including the received information and a new card number linked to the input reference with every request.</li>"
+<li><a href=""https://developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution/#CreateQRData"">CreateQRData</a> – The method returns a QR including the received information and a new card number linked to the input reference with every request.</li>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/qr-payments-api/qr-payments.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""qr-payments-api""
 ---
 <p><span style=""font-weight: 400;"">The QR payments API allows you to create a contactless merchant payment system where customers can make electronic payments by scanning a QR code from a smartphone application. It’s a simple and secure way for consumers to push payments to merchants using their mobile money wallets or bank account balances. </span></p>
@@ -676,32 +681,33 @@ The report includes details about vouchers and reasons for transactions being fi
 "
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/response-codes-1.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 1116
 ---
-<!-- unsupported_acf_block: table_block {""acf_fc_layout"":""table_block"",""table_caption"":""Result Codes"",""table"":{""use_header"":true,""header"":[{""c"":""Code""},{""c"":""Description""}],""caption"":false,""body"":[[{""c"":""\""0\""""},{""c"":""Approved no Action. Note; code is 0 and does not include \""\""""}],[{""c"":""1""},{""c"":""Approved""}],[{""c"":""-3""},{""c"":""Duplicate Transaction ID""}],[{""c"":""-4""},{""c"":""Validation error. Please verify the values you provided are correct""}],[{""c"":""-5""},{""c"":""Operation not Allowed""}],[{""c"":""-6""},{""c"":""Operation not Supported""}],[{""c"":""-7""},{""c"":""Transaction Timeout""}],[{""c"":""-8""},{""c"":""Authentication Failed""}],[{""c"":""-9""},{""c"":""Do not honor (general decline, no specific reason given)""}],[{""c"":""-29""},{""c"":""There are invalid characters in either the pin block or one of these fields:<br>\ntitle, initials, surname, address1,  address2, address3, address4, address5, additionalData""}],[{""c"":""-34""},{""c"":""Card already active""}],[{""c"":""-35""},{""c"":""Card not active""}],[{""c"":""-36""},{""c"":""Expired card""}],[{""c"":""-38""},{""c"":""Lost card""}],[{""c"":""-39""},{""c"":""Stolen card""}],[{""c"":""-244""},{""c"":""Invalid last name""}],[{""c"":""-246""},{""c"":""Invalid first name""}],[{""c"":""-247""},{""c"":""Invalid ID number""}],[{""c"":""-248""},{""c"":""Invalid MSISDN""}],[{""c"":""-250""},{""c"":""Invalid initials""}],[{""c"":""-251""},{""c"":""Invalid Address 1 OR Invalid Contact Number""}],[{""c"":""-252""},{""c"":""Invalid Address 2""}],[{""c"":""-253""},{""c"":""Invalid Address 3""}],[{""c"":""-254""},{""c"":""Invalid Address 4""}],[{""c"":""-255""},{""c"":""Invalid Address 5 OR Invalid PinBlock""}],[{""c"":""-295""},{""c"":""Invalid expiry date""}],[{""c"":""-333""},{""c"":""sessionKey not present in header and \""Companion API Require Session Key\"" is enabled""}],[{""c"":""-334""},{""c"":""sessionKey present and not decryptable/parsable""}],[{""c"":""-778""},{""c"":""Reference has no linked cards""}],[{""c"":""-779""},{""c"":""Card already linked to a different reference""}],[{""c"":""-780""},{""c"":""Invalid card reference""}],[{""c"":""-781""},{""c"":""Invalid card - Not a physical card""}],[{""c"":""-782""},{""c"":""Cannot disable physical card OR Print card request already requested""}]]}} -->
+\{/* unsupported_acf_block: table_block {""acf_fc_layout"":""table_block"",""table_caption"":""Result Codes"",""table"":{""use_header"":true,""header"":[{""c"":""Code""\},\{""c"":""Description""\}],""caption"":false,""body"":[[\{""c"":""\""0\""""\},\{""c"":""Approved no Action. Note; code is 0 and does not include \""\""""\}],[\{""c"":""1""\},\{""c"":""Approved""\}],[\{""c"":""-3""\},\{""c"":""Duplicate Transaction ID""\}],[\{""c"":""-4""\},\{""c"":""Validation error. Please verify the values you provided are correct""\}],[\{""c"":""-5""\},\{""c"":""Operation not Allowed""\}],[\{""c"":""-6""\},\{""c"":""Operation not Supported""\}],[\{""c"":""-7""\},\{""c"":""Transaction Timeout""\}],[\{""c"":""-8""\},\{""c"":""Authentication Failed""\}],[\{""c"":""-9""\},\{""c"":""Do not honor (general decline, no specific reason given)""\}],[\{""c"":""-29""\},{""c"":""There are invalid characters in either the pin block or one of these fields:<br>\ntitle, initials, surname, address1,  address2, address3, address4, address5, additionalData""}],[\{""c"":""-34""\},\{""c"":""Card already active""\}],[\{""c"":""-35""\},\{""c"":""Card not active""\}],[\{""c"":""-36""\},\{""c"":""Expired card""\}],[\{""c"":""-38""\},\{""c"":""Lost card""\}],[\{""c"":""-39""\},\{""c"":""Stolen card""\}],[\{""c"":""-244""\},\{""c"":""Invalid last name""\}],[\{""c"":""-246""\},\{""c"":""Invalid first name""\}],[\{""c"":""-247""\},\{""c"":""Invalid ID number""\}],[\{""c"":""-248""\},\{""c"":""Invalid MSISDN""\}],[\{""c"":""-250""\},\{""c"":""Invalid initials""\}],[\{""c"":""-251""\},\{""c"":""Invalid Address 1 OR Invalid Contact Number""\}],[\{""c"":""-252""\},\{""c"":""Invalid Address 2""\}],[\{""c"":""-253""\},\{""c"":""Invalid Address 3""\}],[\{""c"":""-254""\},\{""c"":""Invalid Address 4""\}],[\{""c"":""-255""\},\{""c"":""Invalid Address 5 OR Invalid PinBlock""\}],[\{""c"":""-295""\},\{""c"":""Invalid expiry date""\}],[\{""c"":""-333""\},\{""c"":""sessionKey not present in header and \""Companion API Require Session Key\"" is enabled""\}],[\{""c"":""-334""\},\{""c"":""sessionKey present and not decryptable/parsable""\}],[\{""c"":""-778""\},\{""c"":""Reference has no linked cards""\}],[\{""c"":""-779""\},\{""c"":""Card already linked to a different reference""\}],[\{""c"":""-780""\},\{""c"":""Invalid card reference""\}],[\{""c"":""-781""\},\{""c"":""Invalid card - Not a physical card""\}],[\{""c"":""-782""\},\{""c"":""Cannot disable physical card OR Print card request already requested""\}]]}} */}
 
 "
-/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/response-codes-2/index.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 1118
----
-<!-- unsupported_acf_block: table_block {""acf_fc_layout"":""table_block"",""table_caption"":"""",""table"":{""use_header"":true,""header"":[{""c"":""Code""},{""c"":""Description""}],""caption"":false,""body"":[[{""c"":""1""},{""c"":""Approved""}],[{""c"":""2""},{""c"":""Approved - Partial amount""}],[{""c"":""-2""},{""c"":""Invalid card number""}],[{""c"":""-3""},{""c"":""Duplicate transmission""}],[{""c"":""-4""},{""c"":""Invalid card number (use for invalid wallet reference)""}],[{""c"":""-5""},{""c"":""Transaction not permitted to Terminal / Transaction not permitted to Acquirer""}],[{""c"":""-6""},{""c"":""Function not supported / Invalid transaction""}],[{""c"":""-7""},{""c"":""Transaction timeout""}],[{""c"":""-8""},{""c"":""Authentication failed (Incorrect checksum)""}],[{""c"":""-9""},{""c"":""Do not honor (general decline, no specific reason given, technical error)""}],[{""c"":""-13""},{""c"":""Stolen card""}],[{""c"":""-14""},{""c"":""Insufficient funds""}],[{""c"":""-16""},{""c"":""Exceeds Purchase amount limit""}],[{""c"":""-17""},{""c"":""Not sufficient funds""}],[{""c"":""-18""},{""c"":""Exceeds withdrawal amount limit""}],[{""c"":""-19""},{""c"":""Invalid amount""}],[{""c"":""-24""},{""c"":""Security violation""}],[{""c"":""-25""},{""c"":""Incorrect PIN""}],[{""c"":""-26""},{""c"":""Allowable PIN tries exceeded""}],[{""c"":""-27""},{""c"":""Invalid PIN block""}],[{""c"":""-28""},{""c"":""PIN length error""}],[{""c"":""-29""},{""c"":""Restricted card""}],[{""c"":""-34""},{""c"":""Account closed / Invalid account""}],[{""c"":""-36""},{""c"":""Expired card""}],[{""c"":""-37""},{""c"":""Suspected fraud""}],[{""c"":""-38""},{""c"":""Lost card""}],[{""c"":""-39""},{""c"":""Stolen card""}],[{""c"":""-41""},{""c"":""Requested function not supported / Invalid transaction""}],[{""c"":""-783""},{""c"":""Do not honor (general decline, no specific reason given, technical  error)""}],[{""c"":""-784""},{""c"":""Transaction not permitted to Cardholder / Transaction not permitted to Issuer""}]]}} -->
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/response-codes-2/index.md,Could not parse expression with acorn,mdx-parse-error,12,"
 
+<h2>Important</h2>
+<p>Any argument that has the type <span class=""xml-highlight"">date</span> needs to follow the XML-RPC specified ISO 8601 date-time format: <dateTime.iso8601>YYYYMMDDTHH:mm:ss<dateTime.iso8601></p>
 "
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/response-codes-2/response-and-action-code-mapping.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""response-codes-2""
 ---
 <p>Each action taken on a transaction is associated with a code; different codes are assigned to the same action by different parties/networks i.e. Mastercard, Visa, Remote API, Transaction Stream.</p>
-<p>The table below shows the different codes used by Mastercard, UnionPay and Visa and how they are mapped to <a href=""https://developer.sprint.paymentology.com/response-codes-2/"">Remote API Response Codes</a> and <a href=""https://developer.sprint.paymentology.com/notifications/"">Paymentology&#8217;s Transaction Stream (PubNub)</a>.</p>
+<p>The table below shows the different codes used by Mastercard, UnionPay and Visa and how they are mapped to <a href=""https://developer.sprint.paymentology.com/response-codes-2/"">Remote API Response Codes</a> and <a href=""https://developer.sprint.paymentology.com/notifications/"">Paymentology’s Transaction Stream (PubNub)</a>.</p>
+"
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/tools/3d-secure-customization/index.md,"Unexpected character `""` (U+0022) in attribute name, expected an attribute name character such as letters, digits, `$`, or `_`; `=` to initialize a value; whitespace before attributes; or the end of the tag",mdx-parse-error,7,"original_path: ""tools""
+---
+<p data-pm-slice=""1 1 [""list"",\{\},""list_item"",\{""indent"":3,""type"":""bulleted""\}]"">The 3D Secure Screen Customization tool is available to clients who have already signed up with Paymentology and are using the Sprint platform and are implementing the 3D Secure functionality for your chosen API (Card or Companion). We support different cardholder authentication methods to suit your needs, please choose the tool corresponding to the method you are implementing with Paymentology.</p>
 "
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/tools/checksum-generator/checksum-generator-help.md,"Unexpected character `?` (U+003F) before name, expected a character that can start a name, such as a letter, `$`, or `_`",mdx-parse-error,7,"original_path: ""tools/checksum-generator""
 ---
 <h2 id=""intro"">About the Checksum Generator</h2>
 <p>The Checksum Generator is used to verify that the checksum calculation is correct and that it arrives at the same checksum result as our system.</p>
 <h2 id=""intro"">Testing with the Checksum Generator</h2>"
-/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/tools/simpos/simpos-result-codes.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""tools/simpos""
----
-<!-- unsupported_acf_block: table_block {""acf_fc_layout"":""table_block"",""table_caption"":"""",""table"":{""use_header"":true,""header"":[{""c"":""Code""},{""c"":""Description""}],""caption"":false,""body"":[[{""c"":""0""},{""c"":""Approved""}],[{""c"":""1000""},{""c"":""Do not honor (general decline, no specific reason given)""}],[{""c"":""1001""},{""c"":""Expired card""}],[{""c"":""1002""},{""c"":""Suspected fraud""}],[{""c"":""1006""},{""c"":""Allowable PIN tries exceeded""}],[{""c"":""1010""},{""c"":""Invalid amount""}],[{""c"":""1011""},{""c"":""Invalid card number (use for invalid wallet reference)""}],[{""c"":""1015""},{""c"":""General error (technical error)""}],[{""c"":""1016""},{""c"":""Insufficient funds""}],[{""c"":""1017""},{""c"":""Incorrect PIN""}],[{""c"":""1021""},{""c"":""Exceeds withdrawal amount limit""}],[{""c"":""1022""},{""c"":""Security violation ""}],[{""c"":""1026""},{""c"":""Invalid PIN block""}],[{""c"":""1027""},{""c"":""PIN length error""}],[{""c"":""1061""},{""c"":""Transaction not permitted to cardholder""}],[{""c"":""2008""},{""c"":""Lost card""}],[{""c"":""2009""},{""c"":""Stolen card""}],[{""c"":""9111""},{""c"":""Transaction timeout (send reversal)""}]]}} -->
-"
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/tools/simpos/simpos-result-codes.md,Could not parse expression with acorn,mdx-parse-error,N/A,N/A
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/tools/xml-generator/help-2.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""tools/xml-generator""
 ---
 <h2 id=""intro"">When to use XML Generator</h2>
-<p>You will use XML Generator to confirm that XML requests generated through your code are generated with the same request parameters as Paymentology Sprint &#8211; including the checksum, to ensure compatibility.</p>
+<p>You will use XML Generator to confirm that XML requests generated through your code are generated with the same request parameters as Paymentology Sprint – including the checksum, to ensure compatibility.</p>
 <p>If the XML is identical but the checksums do not match, you can use the <strong>Checksum Generator</strong> tool to work solely on the checksum and debug further.</p>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/tutuka-transaction-stream-2.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 1610
 ---

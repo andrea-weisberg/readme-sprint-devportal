@@ -1,5 +1,5 @@
 ---
-title: Register &#8211; Thank you
+title: Register – Thank you
 deprecated: false
 hidden: false
 metadata:
