@@ -9,9 +9,9 @@ metadata:
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal ID of the terminal requesting the transaction</p> |
+| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal id of the terminal requesting the transaction</p> |
 | customerReference | String | 1-255 characters | ✓ | <p>The user defined reference to the card; for example a member id or wallet number</p> |
 | trackingNumberFrom | String | 1-20 characters | ✓ | <p>Tracking number of the card being transferred FROM</p> |
 | trackingNumberTo | String | 1-20 characters | ✓ | <p>Tracking number of the card being transferred TO. This parameter can’t be empty for this call</p> |
@@ -23,38 +23,38 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>TransferLink</methodName>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <string>0028117378</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>customerref</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>528823600000002</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>903721101215894</string>
             </value>
         </param>
-                <param>
+                <param >
             <value>
                 <string>4093920</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <dateTime.iso8601>20110715T12:54:56</dateTime.iso8601>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>800792A6D9BFD31FC93135525AEEDA1D2837B56E</string>
             </value>
@@ -65,8 +65,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -135,14 +135,14 @@ metadata:
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
-| terminalID | String | <p>The Paymentology issued terminal ID of the terminal requesting the transaction</p> |
+| terminalID | String | <p>The Paymentology issued terminal id of the terminal requesting the transaction</p> |
 | customerReference | String | <p>The user defined reference to the card; for example a member id or wallet number</p> |
 | trackingNumberFrom | String | <p>Tracking number of the card being transferred FROM</p> |
 | trackingNumberTo | String | <p>Tracking number of the card being transferred TO. This parameter can’t be empty for this call</p> |
-| transactionID | String | <p>Client generated Transaction ID to assist in identify transactions on the client side</p> |
+| transactionID | String | <p>Client generated Transaction id to assist in identify transactions on the client side</p> |
 | transactionDate | Date | <p>Client generated / local Transaction Date to assist in identifying transactions on the client side</p> |
 | resultText | String | <p>Result text whether its approved or not</p> |
 
@@ -150,38 +150,38 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>TransferLink</methodName>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <string>0028117378</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>customerref</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>528823600000002</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>903721101215894</string>
             </value>
         </param>
-                <param>
+                <param >
             <value>
                 <string>4093920</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <dateTime.iso8601>20110715T12:54:56</dateTime.iso8601>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>800792A6D9BFD31FC93135525AEEDA1D2837B56E</string>
             </value>
@@ -192,8 +192,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -260,5 +260,5 @@ metadata:
 
 <p> </p>
 
-<p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API Menu</a></p>
+<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API Menu</a></p>
 </a></p></p></string></value></name></member></string></value></name></member></int></value></name></member></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></int></value></name></member></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p>

@@ -11,15 +11,15 @@ metadata:
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| chargebackId | String |  | ✓ | <p>Chargeback ID</p> |
-| claimID | String |  | ✓ | <p>Claim ID</p> |
-| format | String |  | ✓ | <p>File format. Possible values:<br /> ORIGINAL,<br /> MERGED_TIFF,<br /> MERGED PDF</p> |
+| chargebackId | String |  | ✓ | <p>Chargeback id</p> |
+| claimID | String |  | ✓ | <p>Claim id</p> |
+| format | String |  | ✓ | <p>File format. Possible values:<br > ORIGINAL,<br > MERGED_TIFF,<br > MERGED PDF</p> |
 
 ```json
 {
-    "chargebackId": "CHARGEBACK ID",
+    "chargebackId": "CHARGEBACK id",
     "claimID": "CLAIM_ID",
     "format": "ORIGINAL_TIFF"
 }
@@ -36,7 +36,7 @@ metadata:
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | fileAttachment | Object | <p>File attachment</p> |
 | filename | String | <p>Filename</p> |
@@ -44,7 +44,7 @@ metadata:
 
 ```json
 {
-    "chargebackId": "CHARGEBACK ID",
+    "chargebackId": "CHARGEBACK id",
     "claimID": "CLAIM_ID",
     "format": "ORIGINAL_TIFF"
 }
@@ -60,7 +60,7 @@ metadata:
 ```
 
 <h4>Other response codes</h4>
-<p>Further response codes and details can be found <a href="https://developer.sprint.paymentology.com/chargeback-api/response-codes/">here</a>.</p>
+<p>Further response codes and details can be found <a href="https:developer.sprint.paymentology.com/chargeback-api/response-codes/">here</a>.</p>
 
 <h2>Additional info</h2>
 

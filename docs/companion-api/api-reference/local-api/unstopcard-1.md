@@ -9,9 +9,9 @@ metadata:
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal ID of the terminal requesting the transaction</p> |
+| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal id of the terminal requesting the transaction</p> |
 | reference | String | 1-255 characters | ✓ | <p>The user defined reference to the card; for example a member id or wallet number</p> |
 | cardIdentifier | String | 1-20 characters | ✓ | <p>The card number, sequence number or tracking number of the specified card. Field is required but can accept empty string</p> |
 | note | String | 0-255 characters | ✓ | <p>A note / reason about unstopping the card. Field is required but can accept empty string</p> |
@@ -23,38 +23,38 @@ metadata:
 <?xml version=""1.0""?>
 <methodCall>
   <methodName>UnstopCard</methodName>
-  <params>
-    <param>
+  <params >
+    <param >
       <value>
         <string>0014682067</string>
       </value>
     </param>
-    <param>
+    <param >
       <value>
         <string>TTKTEST</string>
       </value>
     </param>
-    <param>
+    <param >
       <value>
         <string>5267264108771089</string>
       </value>
     </param>
-    <param>
+    <param >
       <value>
         <string>Testing UnstopCard</string>
       </value>
     </param>
-    <param>
+    <param >
       <value>
         <string>123456</string>
       </value>
     </param>
-    <param>
+    <param >
       <value>
         <dateTime.iso8601>20200327T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param>
+    <param >
       <value>
         <string>97DD1ADD9BB6CBF025149C9069DFBD20884F0A62</string>
       </value>
@@ -65,8 +65,8 @@ metadata:
 ```,```xml
 <?xml version=""1.0"" encoding=""UTF-8""?>
 <methodResponse>
-  <params>
-    <param>
+  <params >
+    <param >
       <value>
         <struct>
           <member>
@@ -93,7 +93,7 @@ metadata:
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 
@@ -101,38 +101,38 @@ metadata:
 <?xml version=""1.0""?>
 <methodCall>
   <methodName>UnstopCard</methodName>
-  <params>
-    <param>
+  <params >
+    <param >
       <value>
         <string>0014682067</string>
       </value>
     </param>
-    <param>
+    <param >
       <value>
         <string>TTKTEST</string>
       </value>
     </param>
-    <param>
+    <param >
       <value>
         <string>5267264108771089</string>
       </value>
     </param>
-    <param>
+    <param >
       <value>
         <string>Testing UnstopCard</string>
       </value>
     </param>
-    <param>
+    <param >
       <value>
         <string>123456</string>
       </value>
     </param>
-    <param>
+    <param >
       <value>
         <dateTime.iso8601>20200327T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param>
+    <param >
       <value>
         <string>97DD1ADD9BB6CBF025149C9069DFBD20884F0A62</string>
       </value>
@@ -143,8 +143,8 @@ metadata:
 ```,```xml
 <?xml version=""1.0"" encoding=""UTF-8""?>
 <methodResponse>
-  <params>
-    <param>
+  <params >
+    <param >
       <value>
         <struct>
           <member>
@@ -169,5 +169,5 @@ metadata:
 
 <p> </p>
 
-<p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>
+<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>
 </a></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p>

@@ -5,18 +5,18 @@ hidden: false
 metadata:
   robots: index
 ---
-<section id="tutuka-block-1" class="tutuka-block tutuka-block--text-full-width">
-<div class="tutuka-block--text-full-width__content">
+<section id="tutuka-block-1" className="tutuka-block tutuka-block--text-full-width">
+<div className="tutuka-block--text-full-width__content">
 <p>Generates a “secret token” to enable communication with our tokenisation APIs.</p>
-<p><strong>IMPORTANT:</strong> As push provisioning needs to be completed in one minute or less, the recommended setting for the Request Parameter: <span style="text-decoration: underline;">timeStep</span> is 60.</p>
+<p><strong>IMPORTANT:</strong> As push provisioning needs to be completed in one minute or less, the recommended setting for the Request Parameter: <span style={{textDecoration: "underline"}}>timeStep</span> is 60.</p>
 </div>
 </section>
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal ID of the terminal requesting the transaction</p> |
+| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal id of the terminal requesting the transaction</p> |
 | reference | String | 1-255 characters | ✓ | <p>Customer reference linked with this card</p> |
 | cardIdentifier | String | 1-20 characters | ✓ | <p>The card number, sequence number or tracking number of the specified card</p> |
 | timeStep | Integer |  | ✓ | <p>Window during which TOTP is valid in seconds.</p> <p><strong>IMPORTANT:</strong> The recommended value for this is 60 as push provisioning needs to be completed in one minute or less.</p> |
@@ -29,19 +29,19 @@ metadata:
 ```null
 <methodCall>
     <methodName>GenerateTimeBasedSecret</methodName>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <string>0087654321</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>4523652122</string>
             </value>
         </param>
-        <param>
-        <param>
+        <param >
+        <param >
           <value>
             <string>5432000000001234</string> 
           </value>
@@ -50,32 +50,32 @@ metadata:
                 <string>711432100000123</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <numeric>60</numeric>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <numeric>8</numeric>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>HmacSHA512</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>123654789654</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <dateTime.iso8601>20230215T12:43:46</dateTime.iso8601>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>6A401CCE9F40C338FE0AF63DD247A2BC13246CFCF1A04F6828C70F9262A3D24D</string>
             </value>
@@ -85,8 +85,8 @@ metadata:
 
 ```,```null
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -119,7 +119,7 @@ metadata:
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 | resultText | String | <p>Status text indicating result</p> |
@@ -128,19 +128,19 @@ metadata:
 ```null
 <methodCall>
     <methodName>GenerateTimeBasedSecret</methodName>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <string>0087654321</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>4523652122</string>
             </value>
         </param>
-        <param>
-        <param>
+        <param >
+        <param >
           <value>
             <string>5432000000001234</string> 
           </value>
@@ -149,32 +149,32 @@ metadata:
                 <string>711432100000123</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <numeric>60</numeric>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <numeric>8</numeric>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>HmacSHA512</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>123654789654</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <dateTime.iso8601>20230215T12:43:46</dateTime.iso8601>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>6A401CCE9F40C338FE0AF63DD247A2BC13246CFCF1A04F6828C70F9262A3D24D</string>
             </value>
@@ -184,8 +184,8 @@ metadata:
 
 ```,```null
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -216,5 +216,5 @@ metadata:
 
 <p> </p>
 
-<p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
+<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
 </a></p></p></string></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></numeric></value></numeric></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></string></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></numeric></value></numeric></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></strong></p></strong></p></strong></p></p></p></p></p></span></strong></p></p></div></section>

@@ -9,12 +9,12 @@ metadata:
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-|  form_id | String |  | ✓ | <p>Unique ID for the form. Find in your form URL. For example, in the URL “https://mysite.typeform.com/to/u6nXL7” the form_id is</p> |
+|  form_id | String |  | ✓ | <p>Unique id for the form. Find in your form URL. For example, in the URL “https://mysite.typeform.com/to/u6nXL7” the form_id is</p> |
 | tag | String |  | ✓ | <p>Unique name you want to use for the webhook.</p> |
 
-<p><span style="font-size: 14px; color: #7b7c7c;">EXAMPLE</span></p>
+<p><span style={{fontSize: "14px", color: "#7b7c7c"}}>EXAMPLE</span></p>
 
 ```null
 {
@@ -38,10 +38,10 @@ metadata:
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
-| id | String | <p>Unique ID for the webhook</p> |
-| form_id | String | <p>Unique ID for the typeform</p> |
+| id | String | <p>Unique id for the webhook</p> |
+| form_id | String | <p>Unique id for the typeform</p> |
 | tag | String | <p>Unique name you want to use for the webhook</p> |
 | url | String | <p>Webhook URL</p> |
 | enabled | Boolean | <p>True if you want to send responses to the webhook immediately. Otherwise, false</p> |
@@ -50,7 +50,7 @@ metadata:
 | created_at | String | <p>Date and time when webhook was created. In ISO 8601 format, UTC time, to the second, with T as a delimiter between the date and time</p> |
 | updated_at | String | <p>Date of last update to webhook. In ISO 8601 format, UTC time, to the second, with T as a delimiter between the date and time</p> |
 
-<p><span style="font-size: 14px; color: #7b7c7c;">EXAMPLE</span></p>
+<p><span style={{fontSize: "14px", color: "#7b7c7c"}}>EXAMPLE</span></p>
 
 ```null
 {

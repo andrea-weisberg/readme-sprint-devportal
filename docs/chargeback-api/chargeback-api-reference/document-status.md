@@ -11,14 +11,14 @@ metadata:
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| chargebackId | String |  | ✓ | <p>Chargeback ID</p> |
-| claimID | String |  | ✓ | <p>Claim ID</p> |
+| chargebackId | String |  | ✓ | <p>Chargeback id</p> |
+| claimID | String |  | ✓ | <p>Claim id</p> |
 
 ```json
 {
-    "chargebackId": "CHARGEBACK ID",
+    "chargebackId": "CHARGEBACK id",
     "claimID": "CLAIM_ID"
 }
 
@@ -31,13 +31,13 @@ metadata:
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | status | String | <p>Chargeback document status</p> |
 
 ```json
 {
-    "chargebackId": "CHARGEBACK ID",
+    "chargebackId": "CHARGEBACK id",
     "claimID": "CLAIM_ID"
 }
 
@@ -49,7 +49,7 @@ metadata:
 ```
 
 <h4>Other response codes</h4>
-<p>Further response codes and details can be found <a href="https://developer.sprint.paymentology.com/chargeback-api/response-codes/">here</a>.</p>
+<p>Further response codes and details can be found <a href="https:developer.sprint.paymentology.com/chargeback-api/response-codes/">here</a>.</p>
 
 <h2>Additional info</h2>
 

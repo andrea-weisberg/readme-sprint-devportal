@@ -8,7 +8,7 @@ metadata:
 
 <h2>Important</h2>
 <p>Any argument that has the type ‘date’ needs to follow the XML-RPC specified ISO 8601 date-time format:</p>
-<p><span class="xml-highlight"><dateTime.iso8601>YYYYMMDDTHH:mm:ss<dateTime.iso8601></span></p>
+<p><span className="xml-highlight"><dateTime.iso8601>YYYYMMDDTHH:mm:ss<dateTime.iso8601></span></p>
 <p> </p>
 <p>Any transaction amount is represented as it’s cents value. Therefore, an integer rather than a decimal.</p>
 <ul>

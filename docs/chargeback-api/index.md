@@ -9,12 +9,12 @@ metadata:
 <p>Find out how our Chargeback API works through the links below:</p>
 
 <ul>
-<li><a href="https://developer.sprint.paymentology.com/chargeback-api/connectivity/">Connectivity</a></li>
-<li><a href="https://developer.sprint.paymentology.com/chargeback-api/process-overview/">Process overview</a></li>
-<li><a href="https://developer.sprint.paymentology.com/chargeback-api/chargeback-reason-codes/">Chargeback reason codes</a></li>
-<li><a href="https://developer.sprint.paymentology.com/chargeback-api/response-codes/">Response codes</a></li>
-<li><a href="https://developer.sprint.paymentology.com/chargeback-api/chargeback-api-reference/">Chargeback API REFERENCE</a></li>
-<li><a href="https://developer.sprint.paymentology.com/chargeback-api/remote-messaging-api/">Chargeback notifications</a></li>
+<li><a href="https:developer.sprint.paymentology.com/chargeback-api/connectivity/">Connectivity</a></li>
+<li><a href="https:developer.sprint.paymentology.com/chargeback-api/process-overview/">Process overview</a></li>
+<li><a href="https:developer.sprint.paymentology.com/chargeback-api/chargeback-reason-codes/">Chargeback reason codes</a></li>
+<li><a href="https:developer.sprint.paymentology.com/chargeback-api/response-codes/">Response codes</a></li>
+<li><a href="https:developer.sprint.paymentology.com/chargeback-api/chargeback-api-reference/">Chargeback API REFERENCE</a></li>
+<li><a href="https:developer.sprint.paymentology.com/chargeback-api/remote-messaging-api/">Chargeback notifications</a></li>
 </ul>
 <p> </p>
 

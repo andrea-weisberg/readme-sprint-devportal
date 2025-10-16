@@ -10,7 +10,7 @@ metadata:
 <p>These are some of the reports you can generate:</p>
 <ul>
 <li><a href="#Markoff">Mark-off file</a></li>
-<li><a href="#summary">Summary settlement report</a></li>
+<li><a href="#summary">summary settlement report</a></li>
 </ul>
 <p>Let’s look at each of them.</p>
 
@@ -25,7 +25,7 @@ metadata:
 <li><b>Amount </b>– the transaction amount in cents.</li>
 <li><b>Merchant description</b> – the merchant’s name, city and country.</li>
 <li><b>Transaction description</b> – the API’s naming convention, such as card deduct, card reversal and card load.</li>
-<li><b>Transaction ID</b> – the Transaction ID of the transaction, as created by the card network<b>. </b></li>
+<li><b>Transaction id</b> – the Transaction id of the transaction, as created by the card network<b>. </b></li>
 <li><b>Transaction type </b>– it can be marked as 00 (for POS transactions), 01 (for ATM transactions), 02 (for adjustments), 09 (for cashback at POS), or 21 (for deposits).</li>
 <li><b>Wallet / unique reference</b> – your unique customer reference information.</li>
 <li><b>System date</b> – Paymentology’s system date in UTC +7 time zone.</li>
@@ -37,10 +37,10 @@ metadata:
 <p> </p>
 <p>**Mark-Off-report-Companion-final.png IMAGE GOES HERE.**</p>
 
-<h2>2. <a id="summary"></a>Summary settlement report</h2>
+<h2>2. <a id="summary"></a>summary settlement report</h2>
 <p>This gives a daily summary of all the transactions settled by the card association. Paymentology gathers the information from the card association file and packages it into a summary report.</p>
 <p>It is a report where you can find a summary of transaction types, the number of transactions that have been settled for the day, fees and interchanges earned.</p>
-<p>The Summary Settlement Report includes a separate tab for each currency you decide to settle in.</p>
+<p>The summary Settlement Report includes a separate tab for each currency you decide to settle in.</p>
 <p><b>Note:</b> If the client chooses to settle in one currency, then both domestic and international settlements will fall under one tab.</p>
 <p>The report includes a combination of debits and credits that the network processes daily.</p>
 <ul>
@@ -48,7 +48,7 @@ metadata:
 <li><strong>Debits</strong> – include POS and ATM settlements, fees and unique transactions.</li>
 </ul>
 <p>The network NETTs off the credits from the debits. So, only a single transfer will need to be made when settling with the network daily.</p>
-<p>You can generate the Summary Settlement Report by sending an HTTP GET request and download it in Excel format. The report is available daily from 2.00 a.m. (UTC+7).</p>
+<p>You can generate the summary Settlement Report by sending an HTTP GET request and download it in Excel format. The report is available daily from 2.00 a.m. (UTC+7).</p>
 <p>Here is a description of the transactions you can find in the report:</p>
 <ul>
 <li><b>Unique Transactions </b>– consist of transactions from merchants, such as casinos, gambling sites and pharmacies.</li>
@@ -58,5 +58,5 @@ metadata:
 </ul>
 
 <h2>Report Sample</h2>
-<p>**Summary-Settlement-report-final.png IMAGE GOES HERE.**</p>
+<p>**summary-Settlement-report-final.png IMAGE GOES HERE.**</p>
 </p></h2></strong></li></b></li></b></li></b></li></ul></p></p></p></strong></li></strong></li></ul></p></b></p></p></p></p></a></h2></p></p></h2></b></li></b></li></b></li></b></li></b></li></b></b></li></b></li></b></li></b></li></b></li></ul></p></p></a></p></p></p></a></h2></p></a></li></a></li></ul></p></strong></p>

@@ -12,7 +12,7 @@ metadata:
 <h3><a id="UTRV1"></a>Version 1</h3>
 <p>This report includes the following details:</p>
 <ul>
-<li><strong>CampaignName</strong> – Name of client’s campaign</li>
+<li><strong>CampaignName</strong> – name of client’s campaign</li>
 <li><strong>TransactionDate </strong>– This is the authorization date of the transaction</li>
 <li><strong>TransactionAmount</strong> – the value of the transaction</li>
 <li><strong>TransactionNarrative</strong> – it’s the merchant’s description</li>
@@ -41,7 +41,7 @@ metadata:
 <h3><a id="UTRV2.0"></a>Version 2</h3>
 <p>This report includes the following details:</p>
 <ul>
-<li><strong>CampaignName</strong> – Name of client’s campaign</li>
+<li><strong>CampaignName</strong> – name of client’s campaign</li>
 <li><strong>TransactionDate </strong>– This is the authorization date of the transaction</li>
 <li><strong>TransactionAmount</strong> – the value of the transaction</li>
 <li><strong>TransactionNarrative</strong> – it’s the merchant’s description</li>
@@ -64,7 +64,7 @@ metadata:
 <li><strong>SystemDate</strong> – this is Paymentology’s system date in UTC +2 time zone.</li>
 <li><strong>SequenceNumber </strong>– this is a unique sequence card identifier showing a running number for the cards created.</li>
 <li><strong>TrackingNumber</strong> – this is a unique 15-digit tracking identifier for the card.</li>
-<li><strong>NetworkTransactionID</strong> – the Transaction ID of the transaction, as created by the card network. You can match this against the Transaction ID on the <a href="https://developer.sprint.paymentology.com/companion-api/reports/mark-off-file/">Mark-off file</a></li>
+<li><strong>NetworkTransactionID</strong> – the Transaction id of the transaction, as created by the card network. You can match this against the Transaction id on the <a href="https:developer.sprint.paymentology.com/companion-api/reports/mark-off-file/">Mark-off file</a></li>
 </ul>
 <p> </p>
 
@@ -75,7 +75,7 @@ metadata:
 <h2>Report sample</h2>
 <p>**CampaignName_UnsettledTransactionReport_YYYYMMDD-.png IMAGE GOES HERE.**</p>
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_UnsettledTransactionReport_YYYYMMDD.csv">CampaignName_UnsettledTransactionReport_YYYYMMDD.csv</a></p>
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/CampaignName_UnsettledTransactionReport_YYYYMMDD-V2sample.csv">CampaignName_UnsettledTransactionReport_YYYYMMDD.csv V2 sample</a></p>
+<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_UnsettledTransactionReport_YYYYMMDD.csv">CampaignName_UnsettledTransactionReport_YYYYMMDD.csv</a></p>
+<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2024/01/CampaignName_UnsettledTransactionReport_YYYYMMDD-V2sample.csv">CampaignName_UnsettledTransactionReport_YYYYMMDD.csv V2 sample</a></p>
 
 </a></p></a></p></p></h2></h2></h2></p></a></strong></li></strong></li></strong></li></strong></li></strong></li></li></li></li></ul></strong></li></strong></li></li></li></li></ul></strong></li></strong></li></strong></li></strong></li></strong></li></ul></p></a></h3></p></strong></li></strong></li></strong></li></strong></li></li></li></li></ul></strong></li></strong></li></li></li></li></ul></strong></li></strong></li></strong></li></strong></li></strong></li></ul></p></a></h3></a></p></a></p></p></p>

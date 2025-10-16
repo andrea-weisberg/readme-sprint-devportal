@@ -5,9 +5,9 @@ hidden: false
 metadata:
   robots: index
 ---
-<div class="block translation current highlight" data-element="para" data-attr-xinfo-text="10745">
+<div className="block translation current highlight" data-element="para" data-attr-xinfo-text="10745">
 <p>This file contains a record of all successful transactions that Paymentology processes on behalf of a store of value like a wallet or a bank account. It includes the financial transactions between a store of value and Paymentology.Paymentology generates the Mark-off file daily at midnight in your local time zone. The file matches a report from a store of value for all successfully processed transactions.</p>
-<p>Ideally, the Mark-off file report and the store of value report should be in sync each day as the systems mirror one another. In case of any discrepancy, you should log a ticket via your Zendesk Portal. Select the *<strong data-renderer-mark="true">Report a Service Incident</strong>* form, and then choose *<strong data-renderer-mark="true">Reporting</strong>* and *<strong data-renderer-mark="true">Discrepancy</strong>* under the Request Type, indicate the file’s date and the transaction in question. We’ll promptly address the issue.</p>
+<p>Ideally, the Mark-off file report and the store of value report should be in sync each day as the systems mirror one another. In case of any discrepancy, you should log a ticket via your Zendesk Portal. Select the *<strong data-renderer-mark="true">Report a Service Incident</strong>* form, and then choose *<strong data-renderer-mark="true">Reporting</strong>* and *<strong data-renderer-mark="true">Discrepancy</strong>* under the Request type, indicate the file’s date and the transaction in question. We’ll promptly address the issue.</p>
 <p>You can generate the Mark-off file by sending an HTTP GET request and downloading the report as a CSV file.</p>
 <p>The Mark-off file has the following fields:</p>
 <ul>
@@ -21,7 +21,7 @@ metadata:
 <li data-renderer-start-pos="699">Load – a refund/credit.</li>
 </ul>
 </li>
-<li><b>TransactionID</b> – the Transaction ID of the transaction, as created by the card network<b>. </b></li>
+<li><b>TransactionID</b> – the Transaction id of the transaction, as created by the card network<b>. </b></li>
 <li><b>TransactionType </b>– it can be marked as any of the following:
 <ul>
 <li>0 – POS transaction</li>
@@ -47,5 +47,5 @@ metadata:
 <p> </p>
 <p>**Mark-Off-report-Companion-final.png IMAGE GOES HERE.**</p>
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2024/02/CampaignName_MarkOffFile_GMT_plus_3_00h00_YYYYMMDD.csv">CampaignName_MarkOffFile_GMT_plus_3_00h00_YYYYMMDD.csv</a></p>
+<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2024/02/CampaignName_MarkOffFile_GMT_plus_3_00h00_YYYYMMDD.csv">CampaignName_MarkOffFile_GMT_plus_3_00h00_YYYYMMDD.csv</a></p>
 </a></p></p></p></h2></h2></h2></strong></li></b></li></b></li></b></li></b></li></li></li></li></li></li></ul></b></li></b></b></li></li></li></ul></b></li></b></li></b></li></b></li></strong></li></ul></p></p></strong></strong></strong></p></p></div>

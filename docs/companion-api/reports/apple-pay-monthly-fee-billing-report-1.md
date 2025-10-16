@@ -9,7 +9,7 @@ metadata:
 <p>The Apple Pay monthly fee billing report includes the following details:</p>
 <ul>
 <li><strong>Total Debit Spend </strong>– this is the total settled transaction value of Apple Pay transactions in a given month. This includes contactless and eCommerce transactions that have been made using Apple Pay.</li>
-<li><strong>POS debit spend share </strong>– this is the percentage of <strong>Total Debit Spend</strong> that was made at Point of Sale (POS) using Apple Pay. This includes the following Capture Mode’s:
+<li><strong>POS debit spend share </strong>– this is the percentage of <strong>Total Debit Spend</strong> that was made at Point of Sale (POS) using Apple Pay. This includes the following capture Mode’s:
 <ul>
 <li>EMV</li>
 <li>NFC</li>
@@ -17,7 +17,7 @@ metadata:
 <li>MAN</li>
 </ul>
 </li>
-<li><strong>E-commerce debit spend share </strong>– this is the percentage of <strong>Total Debit Spend</strong> that was eCommerce using Apple Pay. This includes the following Capture Mode’s:
+<li><strong>E-commerce debit spend share </strong>– this is the percentage of <strong>Total Debit Spend</strong> that was eCommerce using Apple Pay. This includes the following capture Mode’s:
 <ul>
 <li>ECOM</li>
 <li>ECOF</li>
@@ -32,6 +32,6 @@ metadata:
 <h2>Report sample</h2>
 <p>**CampaignName_ApplePay-Monthly-Fee-Billing-Report-Month-YYYY-_-002.png IMAGE GOES HERE.**</p>
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Monthly-Fee-Billing-Report-Month-YYYY.xls">CampaignName_ApplePay Monthly Fee Billing Report Month YYYY.xls</a></p>
+<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Monthly-Fee-Billing-Report-Month-YYYY.xls">CampaignName_ApplePay Monthly Fee Billing Report Month YYYY.xls</a></p>
 
 </a></p></p></h2></h2></h2></li></li></ul></strong></strong></li></li></li></li></li></ul></strong></strong></li></strong></li></ul></p></p>

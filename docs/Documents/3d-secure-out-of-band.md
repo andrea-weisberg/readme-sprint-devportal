@@ -33,17 +33,17 @@ metadata:
 <p>When a 3DS enrolled cardholder performs an e-commerce transaction, authentication will need to take place:</p>
 <h3>Request and initial response</h3>
 <p data-renderer-start-pos="2282">Paymentology is informed of the requested authentication by the ACS provider via an <strong data-renderer-mark="true">Authentication Request</strong> message.</p>
-<ul class="ak-ul" data-indent-level="5">
+<ul className="ak-ul" data-indent-level="5">
 <li>
 <p data-renderer-start-pos="2392">Paymentology check what type of product the client uses:</p>
-<ul class="ak-ul" data-indent-level="6">
+<ul className="ak-ul" data-indent-level="6">
 <li>
-<p data-renderer-start-pos="2451">If the client is a Companion API client, Paymentology sends an Administrative Message to the client<br />
-MessageType: <strong data-renderer-mark="true"><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/#3DSAppAuth">3DSecureAppAuthentication</a><br />
+<p data-renderer-start-pos="2451">If the client is a Companion API client, Paymentology sends an Administrative Message to the client<br >
+MessageType: <strong data-renderer-mark="true"><a href="https:developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/#3DSAppAuth">3DSecureAppAuthentication</a><br >
 </strong></p>
 </li>
-<li>If the client is a Card API client, Paymentology sends a RemoteMessaging message to the client<br />
-MessageType: <strong data-renderer-mark="true"><a href="https://developer.sprint.paymentology.com/card-api/api-reference/remotemessaging/#appauth">3DSecure.AppAuthentication</a> </strong></li>
+<li>If the client is a Card API client, Paymentology sends a RemoteMessaging message to the client<br >
+MessageType: <strong data-renderer-mark="true"><a href="https:developer.sprint.paymentology.com/card-api/api-reference/remotemessaging/#appauth">3DSecure.AppAuthentication</a> </strong></li>
 </ul>
 </li>
 <li>
@@ -57,38 +57,38 @@ MessageType: <strong data-renderer-mark="true"><a href="https://developer.sprint
 
 <h3>Final response and final confirmation</h3>
 <p data-renderer-start-pos="2993">Once the client completes the authentication with the cardholder:</p>
-<ul class="ak-ul" data-indent-level="5">
+<ul className="ak-ul" data-indent-level="5">
 <li>
 <p data-renderer-start-pos="3365">The client sends a request to the <strong>ThreeDSAuthenticationOutcome</strong> API saying whether the authentication was successful or not.</p>
-<ul class="ak-ul" data-indent-level="5">
-<li>Companion API client’s use this <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/threedsauthenticationoutcome/">ThreeDSAuthenticationOutcome</a> API.</li>
-<li>Card API client’s use this <a href="https://developer.sprint.paymentology.com/card-api/api-reference/threedsauthenticationoutcome/">ThreeDSAuthenticationOutcome</a> API.</li>
+<ul className="ak-ul" data-indent-level="5">
+<li>Companion API client’s use this <a href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/threedsauthenticationoutcome/">ThreeDSAuthenticationOutcome</a> API.</li>
+<li>Card API client’s use this <a href="https:developer.sprint.paymentology.com/card-api/api-reference/threedsauthenticationoutcome/">ThreeDSAuthenticationOutcome</a> API.</li>
 </ul>
 </li>
 <li>
 <p data-renderer-start-pos="3365">Paymentology sends a message to the ACS provider containing the authentication outcome.</p>
 </li>
 </ul>
-<ul class="ak-ul" data-indent-level="5">
+<ul className="ak-ul" data-indent-level="5">
 <li>
 <p data-renderer-start-pos="3617">The ACS provider sends a final confirmation message to Paymentology.</p>
 </li>
 <li>
 <p data-renderer-start-pos="3617">Paymentology check what type of product the client uses:</p>
-<ul class="ak-ul" data-indent-level="5">
+<ul className="ak-ul" data-indent-level="5">
 <li>
-<p data-renderer-start-pos="3733">Companion API clients receive an Administrative Message from Paymentology.<br />
-MessageType: <strong data-renderer-mark="true"><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/#3DSAppFinal">3DSecureAppFinalisation</a> </strong></p>
+<p data-renderer-start-pos="3733">Companion API clients receive an Administrative Message from Paymentology.<br >
+MessageType: <strong data-renderer-mark="true"><a href="https:developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/#3DSAppFinal">3DSecureAppFinalisation</a> </strong></p>
 </li>
 <li>
-<p data-renderer-start-pos="3982">Card API clients receive a RemoteMessaging message from Paymentology.<br />
-MessageType: <a href="https://developer.sprint.paymentology.com/card-api/api-reference/remotemessaging/#appfinal"><strong data-renderer-mark="true">3DSecure.AppFinalisation </strong></a></p>
+<p data-renderer-start-pos="3982">Card API clients receive a RemoteMessaging message from Paymentology.<br >
+MessageType: <a href="https:developer.sprint.paymentology.com/card-api/api-reference/remotemessaging/#appfinal"><strong data-renderer-mark="true">3DSecure.AppFinalisation </strong></a></p>
 </li>
 </ul>
 </li>
 </ul>
 <p>**Final-Response-and-Final-Confirmation-Light.png IMAGE GOES HERE.**</p>
 
-<h3>In Summary:</h3>
+<h3>In summary:</h3>
 <p>This secure and advanced authentication method ensures a seamless and secure transaction process, reinforcing the security apparatus by involving distinct communication channels for verification, thereby fostering enhanced security in online transactions. It is recommended for Paymentology clients aiming for robust and secure 3DS transaction processing.</p>
 </p></h3></p></strong></a></p></li></a></strong></p></li></ul></p></li></p></li></ul></p></li></a></li></a></li></ul></strong></p></li></ul></p></h3></p></strong></p></li></strong></p></li></a></strong></li></a></strong></p></li></ul></p></li></ul></strong></p></h3></p></h2></strong></li></strong></li></ol></h3></strong></li></strong></li></strong></li></strong></li></ul></p></h3></p></p></p></h3></p></p></h2>

@@ -9,13 +9,13 @@ metadata:
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| terminalID | String | 10 characaters | ✓ | <p>The Paymentology issued terminal ID of the terminal requesting the transaction</p> |
+| terminalID | String | 10 characaters | ✓ | <p>The Paymentology issued terminal id of the terminal requesting the transaction</p> |
 | title | String | special - see description | ✓ | <p>This field can be used to enter the person’s title (e.g. Mr / Ms / Mrs / Dr / etc). Field is required but can accept empty string.</p> <p>(The combined value of title, initials and surname delimited with spaces should be maximum 20 characters.)</p> |
 | initials | String | special - see description | ✓ | <p>This field can only contain alphabetic characters in UPPER CASE – no full stops are allowed between initials. Field is required but can accept empty string.</p> <p>(The combined value of title, initials and surname delimited with spaces should be maximum 20 characters.)</p> |
-| lastName | String | special - see description | ✓ | <p>This field can only be alphabetic characters in UPPER CASE – no full stops and/or special characters are allowed. In the case of -double barrel- surnames, such as FABER-SMITH we may have a hyphen between the two parts of the surname but without any spaces.</p> <p>(The combined value of title, initials and surname delimited with spaces should be maximum 20 characters.)<br /> Field is required but can accept empty string.</p> |
-| address1 | String | special - see description | ✓ | <p>This is the first line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 50 characters (Manufacturer dependent).</p> <p>The field may not start (first character) with a space or a full stop.<br /> Field is required but can accept empty string.</p> |
+| lastName | String | special - see description | ✓ | <p>This field can only be alphabetic characters in UPPER CASE – no full stops and/or special characters are allowed. In the case of -double barrel- surnames, such as FABER-SMITH we may have a hyphen between the two parts of the surname but without any spaces.</p> <p>(The combined value of title, initials and surname delimited with spaces should be maximum 20 characters.)<br > Field is required but can accept empty string.</p> |
+| address1 | String | special - see description | ✓ | <p>This is the first line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 50 characters (Manufacturer dependent).</p> <p>The field may not start (first character) with a space or a full stop.<br > Field is required but can accept empty string.</p> |
 | address2 | String | special - see description | ✓ | <p>This is the second line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 50 characters (Manufacturer dependent).</p> <p>The field may not start (first character) with a space or a full stop. Field is required but can accept empty string.</p> |
 | address3 | String | special - see description | ✓ | <p>This is the third line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 50 characters (Manufacturer dependent).</p> <p>The field may not start (first character) with a space or a full stop. Field is required but can accept empty string.</p> |
 | address4 | String | special - see description | ✓ | <p>This is the fourth line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 50 characters (Manufacturer dependent).</p> <p>The field may not start (first character) with a space or a full stop. Field is required but can accept empty string.</p> |
@@ -32,83 +32,83 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>PrintLinkedCardWithPINBlock</methodName>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <string>12345678</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>Mr</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>JDF</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>Foo</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>address1</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>address2</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>address3</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>address4</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>address5</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string></string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>0924769387</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>105232700000440</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>pinBlock</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>68629cfb-a9eb-4058-a759-17b36a97df13</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <dateTime.iso8601>20241028T11:27:58</dateTime.iso8601>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>2179242073DE2A5DAE99B98212277F87D3D0E413</string>
             </value>
@@ -119,8 +119,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -147,7 +147,7 @@ metadata:
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 | resultText | String | <p>Result text indicating Approved or Declined</p> |
@@ -156,83 +156,83 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>PrintLinkedCardWithPINBlock</methodName>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <string>12345678</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>Mr</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>JDF</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>Foo</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>address1</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>address2</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>address3</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>address4</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>address5</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string></string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>0924769387</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>105232700000440</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>pinBlock</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>68629cfb-a9eb-4058-a759-17b36a97df13</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <dateTime.iso8601>20241028T11:27:58</dateTime.iso8601>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>2179242073DE2A5DAE99B98212277F87D3D0E413</string>
             </value>
@@ -243,8 +243,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -267,5 +267,5 @@ metadata:
 
 ```
 
-<p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
+<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
 </a></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>

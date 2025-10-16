@@ -14,7 +14,7 @@ metadata:
 <p data-renderer-start-pos="469">The token will remain valid for 24 hours, after which a fresh token should be obtained.</p>
 <p data-renderer-start-pos="558">To obtain a token from the Token service, you will require a<em data-renderer-mark="true"><strong data-renderer-mark="true"> ClientID</strong></em> and <em data-renderer-mark="true"><strong data-renderer-mark="true">Client secret </strong></em>which can be obtained from your Client Executive. These values are highly sensitive and should be treated as such. Storing these values in browsers, local disk and source control is not recommended. Should these values be compromised, contact your Client executive urgently.</p>
 
-<p>In order to obtain a token, an http request to : <code class="code css-9z42f9" data-renderer-mark="true">https://auth.uat.tutuka.cloud/oauth/token</code> using Basic Authentication and providing the BASE64 encoded ClientID and Secret in the Authorization Header specifying the <code class="code css-9z42f9" data-renderer-mark="true">client_credentials</code> grant type in the body. e.g.</p>
+<p>In order to obtain a token, an http request to : <code className="code css-9z42f9" data-renderer-mark="true">https://auth.uat.tutuka.cloud/oauth/token</code> using Basic Authentication and providing the BASE64 encoded ClientID and Secret in the Authorization Header specifying the <code className="code css-9z42f9" data-renderer-mark="true">client_credentials</code> grant type in the body. e.g.</p>
 
 ```null
 async function getAccessToken() {
@@ -26,7 +26,7 @@ async function getAccessToken() {
     'path': '/oauth/token',
     'headers': {
       'Authorization': `Basic ${buffer.toString('base64')}`,
-      'Content-Type': 'text/html'
+      'Content-type': 'text/html'
     }
   };
 
@@ -47,7 +47,7 @@ async function getCampaignReports(token) {
     'protocol': 'https:',  
     'headers': {
       'Authorization': 'Bearer ' + token,
-      'Content-Type': 'application/json'
+      'Content-type': 'application/json'
     }
   };
   let GetCampaignReportsResp = await httpCall(options, "");
@@ -68,7 +68,7 @@ async function getCampaignReports(token) {
   },
   {
     "reportId":5,
-    "reportName":"Daily Settlement Summary"
+    "reportName":"Daily Settlement summary"
   },
   {
     "reportId":12,
@@ -116,7 +116,7 @@ async function getAccessToken() {
     'path': '/oauth/token',
     'headers': {
       'Authorization': `Basic ${buffer.toString('base64')}`,
-      'Content-Type': 'text/html'
+      'Content-type': 'text/html'
     }
   };
 
@@ -137,7 +137,7 @@ async function getCampaignReports(token) {
     'protocol': 'https:',  
     'headers': {
       'Authorization': 'Bearer ' + token,
-      'Content-Type': 'application/json'
+      'Content-type': 'application/json'
     }
   };
   let GetCampaignReportsResp = await httpCall(options, "");
@@ -158,7 +158,7 @@ async function getCampaignReports(token) {
   },
   {
     "reportId":5,
-    "reportName":"Daily Settlement Summary"
+    "reportName":"Daily Settlement summary"
   },
   {
     "reportId":12,
@@ -202,7 +202,7 @@ async function getCampaignReports(token) {
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
 | ClientUUID | String |  | ✓ | <p>Your client UUID</p> |
 | CampaignUUID | String |  | ✓ | <p>The campaignUUID for which you want to obtain a list of report types.</p> |
@@ -217,7 +217,7 @@ async function getAccessToken() {
     'path': '/oauth/token',
     'headers': {
       'Authorization': `Basic ${buffer.toString('base64')}`,
-      'Content-Type': 'text/html'
+      'Content-type': 'text/html'
     }
   };
 
@@ -238,7 +238,7 @@ async function getCampaignReports(token) {
     'protocol': 'https:',  
     'headers': {
       'Authorization': 'Bearer ' + token,
-      'Content-Type': 'application/json'
+      'Content-type': 'application/json'
     }
   };
   let GetCampaignReportsResp = await httpCall(options, "");
@@ -259,7 +259,7 @@ async function getCampaignReports(token) {
   },
   {
     "reportId":5,
-    "reportName":"Daily Settlement Summary"
+    "reportName":"Daily Settlement summary"
   },
   {
     "reportId":12,
@@ -299,11 +299,11 @@ async function getCampaignReports(token) {
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
 | ClientUUID | String |  | ✓ | <p>Your client UUID</p> |
 | CampaignUUID | String |  | ✓ | <p>The campaignUUID for which you want to obtain a list of report types.</p> |
-| ReportId | String |  | ✓ | <p>The numeric ID identifying the report type</p> |
+| ReportId | String |  | ✓ | <p>The numeric id identifying the report type</p> |
 
 ```null
 async function getAccessToken() {
@@ -315,7 +315,7 @@ async function getAccessToken() {
     'path': '/oauth/token',
     'headers': {
       'Authorization': `Basic ${buffer.toString('base64')}`,
-      'Content-Type': 'text/html'
+      'Content-type': 'text/html'
     }
   };
 
@@ -336,7 +336,7 @@ async function getCampaignReports(token) {
     'protocol': 'https:',  
     'headers': {
       'Authorization': 'Bearer ' + token,
-      'Content-Type': 'application/json'
+      'Content-type': 'application/json'
     }
   };
   let GetCampaignReportsResp = await httpCall(options, "");
@@ -357,7 +357,7 @@ async function getCampaignReports(token) {
   },
   {
     "reportId":5,
-    "reportName":"Daily Settlement Summary"
+    "reportName":"Daily Settlement summary"
   },
   {
     "reportId":12,
@@ -397,11 +397,11 @@ async function getCampaignReports(token) {
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
 | ClientUUID | String |  | ✓ | <p>Your client UUID</p> |
 | CampaignUUID | String |  | ✓ | <p>The campaignUUID for which you want to obtain a list of report types.</p> |
-| ReportId | String |  | ✓ | <p>The numeric ID identifying the report type</p> |
+| ReportId | String |  | ✓ | <p>The numeric id identifying the report type</p> |
 | Date | String |  | ✓ | <p>The date for which a download url should be generated. Format: YYYYMMDD</p> |
 
 ```null
@@ -414,7 +414,7 @@ async function getAccessToken() {
     'path': '/oauth/token',
     'headers': {
       'Authorization': `Basic ${buffer.toString('base64')}`,
-      'Content-Type': 'text/html'
+      'Content-type': 'text/html'
     }
   };
 
@@ -435,7 +435,7 @@ async function getCampaignReports(token) {
     'protocol': 'https:',  
     'headers': {
       'Authorization': 'Bearer ' + token,
-      'Content-Type': 'application/json'
+      'Content-type': 'application/json'
     }
   };
   let GetCampaignReportsResp = await httpCall(options, "");
@@ -456,7 +456,7 @@ async function getCampaignReports(token) {
   },
   {
     "reportId":5,
-    "reportName":"Daily Settlement Summary"
+    "reportName":"Daily Settlement summary"
   },
   {
     "reportId":12,

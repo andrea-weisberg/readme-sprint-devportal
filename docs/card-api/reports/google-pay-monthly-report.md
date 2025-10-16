@@ -28,6 +28,6 @@ metadata:
 <h2>Report sample</h2>
 <p>**CampaignName_googlepay_monthlyreport_MMM-YYYY-.png IMAGE GOES HERE.**</p>
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNamegooglepaymonthlyreportMMM-YYYY.csv">CampaignNamegooglepaymonthlyreportMMM YYYY.csv</a></p>
+<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNamegooglepaymonthlyreportMMM-YYYY.csv">CampaignNamegooglepaymonthlyreportMMM YYYY.csv</a></p>
 
 </a></p></p></h2></h2></h2></p></strong></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></ul></p></p>

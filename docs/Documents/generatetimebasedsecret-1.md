@@ -6,15 +6,15 @@ metadata:
   robots: index
 ---
 <p>Generates a “secret token” to enable communication with our tokenisation APIs.</p>
-<p><strong>IMPORTANT:</strong> As push provisioning needs to be completed in one minute or less, the recommended setting for the Request Parameter: <span style="text-decoration: underline;">timeStep</span> is 60.</p>
+<p><strong>IMPORTANT:</strong> As push provisioning needs to be completed in one minute or less, the recommended setting for the Request Parameter: <span style={{textDecoration: "underline"}}>timeStep</span> is 60.</p>
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal ID of the terminal requesting the transaction</p> |
-| customerReference | String | 1-255 characters | ✓ | <div class="param-single d-flex"> <div class="info"> <p>Customer reference linked with this card</p> </div> </div> <div class="param-single d-flex"></div> |
-| trackingNumber | String | 1-20 characters | ✓ | <div class="param-single d-flex"> <div class="info"> <p>Tracking number that identifies the card to be returned</p> </div> </div> <div class="param-single d-flex"></div> |
+| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal id of the terminal requesting the transaction</p> |
+| customerReference | String | 1-255 characters | ✓ | <div className="param-single d-flex"> <div className="info"> <p>Customer reference linked with this card</p> </div> </div> <div className="param-single d-flex"></div> |
+| trackingNumber | String | 1-20 characters | ✓ | <div className="param-single d-flex"> <div className="info"> <p>Tracking number that identifies the card to be returned</p> </div> </div> <div className="param-single d-flex"></div> |
 | timeStep | Integer |  | ✓ | <p>Default: <strong>60</strong> – Window during which TOTP is valid in seconds.</p> <p><strong>IMPORTANT:</strong> This is the default and recommended setting as push provisioning needs to be completed in one minute or less.</p> |
 | cardSecretLength | Integer |  | ✓ | <p>Default: <strong>8</strong> – Length of card secret 1-8</p> |
 | algorithm | String |  | ✓ | <p>Default: <strong>HmacSHA512</strong> – Hashing algorithm used for TOTP generation</p> <p>Possible Values:</p> <p>HmacSHA1, HmacSHA256, HmacSHA512</p> |
@@ -25,48 +25,48 @@ metadata:
 ```xml
 <methodCall>
     <methodName>GenerateTimeBasedSecret</methodName>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <string>0085666442</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>4523652122</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>711415700000248</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <numeric>60</numeric>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <numeric>8</numeric>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>HmacSHA512</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>123654789654</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <dateTime.iso8601>20230215T12:43:46</dateTime.iso8601>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>6A401CCE9F40C338FE0AF63DD247A2BC13246CFCF1A04F6828C70F9262A3D24D</string>
             </value>
@@ -76,8 +76,8 @@ metadata:
 
 ```,```null
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -104,7 +104,7 @@ metadata:
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 | secret | String | <p>generated TOTP</p> |
@@ -112,48 +112,48 @@ metadata:
 ```xml
 <methodCall>
     <methodName>GenerateTimeBasedSecret</methodName>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <string>0085666442</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>4523652122</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>711415700000248</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <numeric>60</numeric>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <numeric>8</numeric>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>HmacSHA512</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>123654789654</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <dateTime.iso8601>20230215T12:43:46</dateTime.iso8601>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>6A401CCE9F40C338FE0AF63DD247A2BC13246CFCF1A04F6828C70F9262A3D24D</string>
             </value>
@@ -163,8 +163,8 @@ metadata:
 
 ```,```null
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -189,5 +189,5 @@ metadata:
 
 <p> </p>
 
-<p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
+<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
 </a></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></numeric></value></numeric></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></pre></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></numeric></value></numeric></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></strong></p></strong></p></strong></p></strong></p></div></p></div></div></div></p></div></div></p></span></strong></p></p>

@@ -1,12 +1,12 @@
 ---
-title: Summary settlement report
+title: summary settlement report
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-<div class="block translation current highlight" data-element="para" data-attr-xinfo-text="10752">This gives a daily summary of all the transactions settled by the card association. Paymentology gathers the information from the card association file and packages it into a summary report.It is a report where you can find a summary of transaction types, the number of transactions that have been settled for the day, fees and interchanges earned.</p>
-<p>The Summary Settlement Report includes a separate tab for each currency you decide to settle in.</p>
+<div className="block translation current highlight" data-element="para" data-attr-xinfo-text="10752">This gives a daily summary of all the transactions settled by the card association. Paymentology gathers the information from the card association file and packages it into a summary report.It is a report where you can find a summary of transaction types, the number of transactions that have been settled for the day, fees and interchanges earned.</p>
+<p>The summary Settlement Report includes a separate tab for each currency you decide to settle in.</p>
 <p><b>Note:</b> If the client chooses to settle in one currency, then both domestic and international settlements will fall under one tab.</p>
 <p>The report includes a combination of debits and credits that the network processes daily.</p>
 <ul>
@@ -14,7 +14,7 @@ metadata:
 <li><strong>Debits</strong> – include POS and ATM settlements, fees and unique transactions.</li>
 </ul>
 <p>The network NETTs off the credits from the debits. So, only a single transfer will need to be made when settling with the network daily.</p>
-<p>You can generate the Summary Settlement Report by sending an HTTP GET request and download it in Excel format. The report is available daily from 2.00 a.m. (UTC+7).</p>
+<p>You can generate the summary Settlement Report by sending an HTTP GET request and download it in Excel format. The report is available daily from 2.00 a.m. (UTC+7).</p>
 <p>Here is a description of the transactions you can find in the report:</p>
 <ul>
 <li><b>Unique Transactions </b>– consist of transactions from merchants, such as casinos, gambling sites and pharmacies.</li>
@@ -31,7 +31,7 @@ metadata:
 
 <h2>Report Sample</h2>
 <p> </p>
-<p>**Summary-Settlement-report-final1.png IMAGE GOES HERE.**</p>
+<p>**summary-Settlement-report-final1.png IMAGE GOES HERE.**</p>
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/Daily_Settlement_Report_ICA_YYYY_MM_DD.xls">Daily_Settlement_Report_ICA_(YYYY_MM_DD).xls</a></p>
+<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/Daily_Settlement_Report_ICA_YYYY_MM_DD.xls">Daily_Settlement_Report_ICA_(YYYY_MM_DD).xls</a></p>
 </a></p></p></p></h2></h2></h2></p></p></b></li></b></li></b></li></ul></p></p></p></strong></li></strong></li></ul></p></b></p></p></div>

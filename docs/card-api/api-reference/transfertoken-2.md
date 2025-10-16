@@ -9,9 +9,9 @@ metadata:
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal ID of the terminal requesting the transaction</p> |
+| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal id of the terminal requesting the transaction</p> |
 | customerReference | String | 1-255 characters | ✓ | <p>Customer reference linked with this card</p> |
 | tokenUniqueReference | String | 48 characters | ✓ | <p>The unique reference of the token</p> |
 | oldCardIdentifier  | String | 1-10 characters | ✓ | <p>Card number or Tracking number of the card to transfer the token from</p> |
@@ -23,43 +23,43 @@ metadata:
 ```xml
 <methodCall>
             <methodName>TransferToken</methodName>
-            <params>
-                <param>
+            <params >
+                <param >
                     <value>
                         <string>0020787431</string>
                     </value>
                 </param>
-                <param>
+                <param >
                     <value>
                         <string>Cyp001</string>
                     </value>
                 </param>
-                <param>
+                <param >
                     <value>
            <string>DWSPMC00000000010906a349d9ca4eb1a4d53e3c90a11d9c</string>
                     </value>
                 </param>
-                <param>
+                <param >
                     <value>
                         <string>156554700000004</string>
                     </value>
                 </param>
-                <param>
+                <param >
                     <value>
                         <string>156554700000005</string>
                     </value>
                 </param>
-                <param>
+                <param >
                     <value>
                         <string>fb8344c9-2fc9-467b-87e4-55eaf88d06f1</string>
                     </value>
                 </param>
-                <param>
+                <param >
                     <value>
                         <dateTime.iso8601>20200101T09:00:00</dateTime.iso8601>
                     </value>
                 </param>
-                <param>
+                <param >
                     <value>
                         <string>FC600F94C3C800377B5E93D518DDA1D1B56E88D0</string>
                     </value>
@@ -69,8 +69,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-            <params>
-                <param>
+            <params >
+                <param >
                     <value>
                         <struct>
                             <member>
@@ -97,7 +97,7 @@ metadata:
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 | resultText | String | <p>Status text indicating transaction result</p> |
@@ -105,43 +105,43 @@ metadata:
 ```xml
 <methodCall>
             <methodName>TransferToken</methodName>
-            <params>
-                <param>
+            <params >
+                <param >
                     <value>
                         <string>0020787431</string>
                     </value>
                 </param>
-                <param>
+                <param >
                     <value>
                         <string>Cyp001</string>
                     </value>
                 </param>
-                <param>
+                <param >
                     <value>
            <string>DWSPMC00000000010906a349d9ca4eb1a4d53e3c90a11d9c</string>
                     </value>
                 </param>
-                <param>
+                <param >
                     <value>
                         <string>156554700000004</string>
                     </value>
                 </param>
-                <param>
+                <param >
                     <value>
                         <string>156554700000005</string>
                     </value>
                 </param>
-                <param>
+                <param >
                     <value>
                         <string>fb8344c9-2fc9-467b-87e4-55eaf88d06f1</string>
                     </value>
                 </param>
-                <param>
+                <param >
                     <value>
                         <dateTime.iso8601>20200101T09:00:00</dateTime.iso8601>
                     </value>
                 </param>
-                <param>
+                <param >
                     <value>
                         <string>FC600F94C3C800377B5E93D518DDA1D1B56E88D0</string>
                     </value>
@@ -151,8 +151,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-            <params>
-                <param>
+            <params >
+                <param >
                     <value>
                         <struct>
                             <member>
@@ -177,5 +177,5 @@ metadata:
 
 <p> </p>
 
-<p><span style="background-color: #bfe6ff;"><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></span></p>
+<p><span style={{backgroundColor: "#bfe6ff"}}><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></span></p>
 </a></span></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p>

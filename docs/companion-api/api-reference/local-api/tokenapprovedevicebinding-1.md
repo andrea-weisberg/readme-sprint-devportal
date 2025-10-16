@@ -9,9 +9,9 @@ metadata:
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal ID of the terminal requesting the transaction</p> |
+| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal id of the terminal requesting the transaction</p> |
 | customerReference | String | 1-255 characters | ✓ | <p>Customer reference linked with this card</p> |
 | cardIdentifier | String | 1-20 characters | ✓ | <p>The card number, sequence number or tracking number of the specified card</p> |
 | tokenUniqueReference | String | 48 characters | ✓ | <p>The unique reference of the token or an empty string to stop all the tokens for the card</p> |
@@ -25,53 +25,53 @@ metadata:
 ```xml
 <methodCall>
    <methodName>TokenApproveDeviceBinding</methodName>
-     <params>
-         <param>
+     <params >
+         <param >
              <value>
                  <string>004396XXXX</string>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <string></string>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <string>455287003375XXXX</string>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <string>uniquealiXX</string>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <string>123</string>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <string>1</string>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <string>comment</string>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <string>txId3</string>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <dateTime.iso8601>19201102T12:01:01</dateTime.iso8601>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <string>671944ff82aeea3e205b8dd4b33aea33c4fa9941XXXce6562bab74f2fa8d3f5e517</string>
              </value>
@@ -82,8 +82,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -110,7 +110,7 @@ metadata:
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 | resultText | String | <p>Text indicating transaction result</p> |
@@ -118,53 +118,53 @@ metadata:
 ```xml
 <methodCall>
    <methodName>TokenApproveDeviceBinding</methodName>
-     <params>
-         <param>
+     <params >
+         <param >
              <value>
                  <string>004396XXXX</string>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <string></string>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <string>455287003375XXXX</string>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <string>uniquealiXX</string>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <string>123</string>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <string>1</string>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <string>comment</string>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <string>txId3</string>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <dateTime.iso8601>19201102T12:01:01</dateTime.iso8601>
              </value>
          </param>
-         <param>
+         <param >
              <value>
                  <string>671944ff82aeea3e205b8dd4b33aea33c4fa9941XXXce6562bab74f2fa8d3f5e517</string>
              </value>
@@ -175,8 +175,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -201,5 +201,5 @@ metadata:
 
 <p> </p>
 
-<p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>
+<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>
 </a></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p>

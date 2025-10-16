@@ -16,7 +16,7 @@ metadata:
 <h2>Authorization reports</h2>
 <p>The report linked below assists client’s with authorization reconciliation.</p>
 <ul>
-<li><a href="https://developer.sprint.paymentology.com/card-api/reports/mark-off-file/">Mark-off file</a></li>
+<li><a href="https:developer.sprint.paymentology.com/card-api/reports/mark-off-file/">Mark-off file</a></li>
 </ul>
 
 <h1><a id="Settlements"></a>Settlements</h1>
@@ -26,18 +26,18 @@ metadata:
 <p>**Settlement-processing-v2.png IMAGE GOES HERE.**</p>
 
 <h2>Settlement process:</h2>
-<p><strong>Step 1:</strong> 1 – 7 days after the successful authorization, merchants will request payments from the card association</p>
-<p><strong>Step 2:</strong> The card association debits the Issuing bank (the pool account that the card belongs to) and moves the funds to the Acquiring bank of the Merchant. The Acquiring bank then moves the funds to the merchants account.</p>
-<p><strong>Step 3:</strong> The card scheme sends Paymentology clearing files, containing each individual settled transaction. New forex conversion rates will be calculated for all international transactions and interchange is calculated and applied.</p>
+<p><strong>step 1:</strong> 1 – 7 days after the successful authorization, merchants will request payments from the card association</p>
+<p><strong>step 2:</strong> The card association debits the Issuing bank (the pool account that the card belongs to) and moves the funds to the Acquiring bank of the Merchant. The Acquiring bank then moves the funds to the merchants account.</p>
+<p><strong>step 3:</strong> The card scheme sends Paymentology clearing files, containing each individual settled transaction. New forex conversion rates will be calculated for all international transactions and interchange is calculated and applied.</p>
 <p>Different card schemes have different clearing cycles depending on the region/country and there can be up to 8 clearing cycles per day. All clearing cycles are included in our settlement reports.</p>
-<p><strong>Step 4:</strong> Paymentology will compare all settled transactions to previously authorized transactions and match these together. Paymentology creates a summary settlement report and calculates the net settlement amount that will be debited by the card association. Forex currency gains are calculated based on settlement amounts.</p>
-<p><strong>Step 5:</strong> The client will compare Paymentology’s settlement amounts to the amount debited by the card scheme and the amount that is debited from their bank accounts.</p>
+<p><strong>step 4:</strong> Paymentology will compare all settled transactions to previously authorized transactions and match these together. Paymentology creates a summary settlement report and calculates the net settlement amount that will be debited by the card association. Forex currency gains are calculated based on settlement amounts.</p>
+<p><strong>step 5:</strong> The client will compare Paymentology’s settlement amounts to the amount debited by the card scheme and the amount that is debited from their bank accounts.</p>
 
 <h2><b>Settlement reports</b></h2>
 <p>The reports linked below assist client’s with settlement reconciliation.</p>
 <ul>
-<li><a href="https://developer.sprint.paymentology.com/card-api/reports/summary-settlement-report-2/">Summary settlement report</a></li>
-<li><a href="https://developer.sprint.paymentology.com/card-api/reports/detailed-settlement-report/">Detailed settlement report</a></li>
+<li><a href="https:developer.sprint.paymentology.com/card-api/reports/summary-settlement-report-2/">summary settlement report</a></li>
+<li><a href="https:developer.sprint.paymentology.com/card-api/reports/detailed-settlement-report/">Detailed settlement report</a></li>
 </ul>
 
 <h1><a id="Revenue"></a>Revenue</h1>
@@ -49,7 +49,7 @@ metadata:
 <h2><b>Revenue reports</b></h2>
 <p>The report linked below assists client’s with revenue reconciliation and reporting:</p>
 <ul>
-<li><a href="https://developer.sprint.paymentology.com/card-api/reports/forex-gains-report-2/">Forex gains report</a></li>
+<li><a href="https:developer.sprint.paymentology.com/card-api/reports/forex-gains-report-2/">Forex gains report</a></li>
 </ul>
 <p> </p>
 
@@ -76,7 +76,7 @@ metadata:
 <li>Notifications – Paymentology lets you configure real-time notifications that keep customers informed about the state of their cards.</li>
 <li>Checks and controls – Paymentology allows you to implement a variety of Issuance checks, Spend controls and Authorization checks</li>
 </ul>
-<p>Read more about Fraud and Risk <a href="https://developer.sprint.paymentology.com/get-started/fraud/">here</a></p>
+<p>Read more about Fraud and Risk <a href="https:developer.sprint.paymentology.com/get-started/fraud/">here</a></p>
 
 <h2>Dispute Handling</h2>
 <p><strong>What is a Dispute?</strong></p>
@@ -87,5 +87,5 @@ metadata:
 <li><strong>Refund</strong>A refund is when funds are credited back to the customer’s card from a previously debited transaction. A refund is processed when the merchant refunds the customer for returned goods and the funds which were settled to the merchant’s account need to move back to the cardholder’s account.</li>
 <li><strong>Chargeback </strong>A chargeback is the return of funds for a deduct transaction that was previously processed from a cardholder’s card balance, due to a successful dispute by the consumer regarding the transaction</li>
 </ol>
-<p>Read about Chargeback related Dispute handling <a href="https://developer.sprint.paymentology.com/companion-api/disputes/">here</a></p>
+<p>Read about Chargeback related Dispute handling <a href="https:developer.sprint.paymentology.com/companion-api/disputes/">here</a></p>
 </a></p></strong></li></strong></li></strong></li></ol></h3></p></strong></p></h2></a></p></li></li></li></li></li></ul></p></strong></p></a></h1></li></li></ul></h2></p></li></li></ul></h2></h1></p></a></li></ul></p></b></h2></p></p></strong></p></a></h1></a></li></a></li></ul></p></b></h2></strong></p></strong></p></p></strong></p></strong></p></strong></p></h2></p></p></strong></p></a></h1></a></li></ul></p></h2></p></b></p></a></h1></strong></p></strong></p>

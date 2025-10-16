@@ -17,11 +17,11 @@ metadata:
 <li><strong>WalletReference</strong> – The unique wallet identifier associated with the card.</li>
 <li><strong>CardStatus</strong> – Current status of the card (e.g. Active, Inactive).</li>
 <li><strong>VoucherBalanceAmount</strong> – The balance of the card.</li>
-<li><strong>CampaignName</strong> – Name of the campaign to which the card belongs.</li>
-<li><strong>AuthorisationID</strong> – The unique authorization ID for the transaction that led to the balance.</li>
+<li><strong>CampaignName</strong> – name of the campaign to which the card belongs.</li>
+<li><strong>AuthorisationID</strong> – The unique authorization id for the transaction that led to the balance.</li>
 <li><strong>AuthorisationAmount</strong> – The authorized amount for the transaction.</li>
 <li><strong>AuthorisationDate</strong> – The date when the authorization was made.</li>
-<li><strong>TransactionType</strong> – Type of transaction. 0 = POS transaction, 1 = ATM transaction, 2 = Adjustment.</li>
+<li><strong>TransactionType</strong> – type of transaction. 0 = POS transaction, 1 = ATM transaction, 2 = Adjustment.</li>
 <li><strong>CampaignCurrencySymbol</strong> – The currency of the campaign to which the card belongs in ISO4217 alpha (e.g. USD).</li>
 <li><strong>MerchantName</strong> – The name and address of the merchant where the transaction occurred.</li>
 </ul>
@@ -32,7 +32,7 @@ metadata:
 
 <h2>Report sample</h2>
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2024/10/DailyNegativeBalanceReportOnChargebackQueue_CampaignName_YYYYMMDD.csv">DailyNegativeBalanceReportOnChargebackQueue_CampaignName_YYYYMMDD.csv</a></p>
+<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2024/10/DailyNegativeBalanceReportOnChargebackQueue_CampaignName_YYYYMMDD.csv">DailyNegativeBalanceReportOnChargebackQueue_CampaignName_YYYYMMDD.csv</a></p>
 
-<p><a class="btn btn--primary" href="#https://developer.sprint.paymentology.com/companion-api/reports/">Back to Companion API Reports</a></p>
+<p><a className="btn btn--primary" href="#https:developer.sprint.paymentology.com/companion-api/reports/">Back to Companion API Reports</a></p>
 </a></p></a></p></h2></h2></h2></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></ul></p></li></li></ul></p>

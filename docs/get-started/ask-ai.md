@@ -10,7 +10,7 @@ metadata:
 <h2>What can Ask AI do?</h2>
 <ul>
 <li>Ask AI <em><strong>can</strong></em> help provide context of certain processes.</li>
-<li>Ask AI <em><strong>can</strong></em> give insight on <span class="GlossaryItem-trigger">API</span> specifications.</li>
+<li>Ask AI <em><strong>can</strong></em> give insight on <span className="GlossaryItem-trigger">API</span> specifications.</li>
 <li>Ask AI <em><strong>cannot</strong></em> provide any input specific to a client, i.e. it <em><strong>cannot</strong></em> understand what configuration a client is using.</li>
 <li>Ask AI <em><strong>cannot</strong></em> provide login credentials to any environment.</li>
 <li>Ask AI <em><strong>cannot</strong></em> investigate an actual transaction or API call, not even on the developer or UAT environment.</li>
@@ -25,7 +25,7 @@ metadata:
 <h3><a id="AAIC"></a>Ask AI chat</h3>
 <ol>
 <li>Click on the Ask AI button on the bottom right corner.</li>
-<li>Type your question in the input bar and click on the submit icon or press enter.</li>
+<li>type your question in the input bar and click on the submit icon or press enter.</li>
 <li>Ask AI will begin to populate a response to your query, along with the material it has referenced.</li>
 <li>Once the response has populated, you can choose to ask further questions, navigate to any material referenced, copy to clipboard and provide feedback.
 <ol>
@@ -44,7 +44,7 @@ metadata:
 <ol>
 <li>Click on the Ask AI button on the bottom right corner.</li>
 <li>Navigate to the search tab.</li>
-<li>Start typing your keywords, question or phrase into the search bar.</li>
+<li>start typing your keywords, question or phrase into the search bar.</li>
 <li>Ask AI will populate links to relevant material.</li>
 </ol>
 

@@ -14,7 +14,7 @@ metadata:
 <li><strong>TrackingNumber</strong> – this is the public card number that we share with clients (15 character string).</li>
 <li><strong>MerchantName</strong> – this is the name of the merchant (string).</li>
 <li><strong>Date</strong> – this is the date of the transaction (YYYY/MM/DD HH:MM:SS).</li>
-<li><strong>Type</strong> – this is the transaction type, which include (string):
+<li><strong>type</strong> – this is the transaction type, which include (string):
 <ul>
 <li><strong>Issued</strong> – a card allocated to a cardholder and loaded.</li>
 <li><strong>Redeemed</strong> – spend.</li>
@@ -22,7 +22,7 @@ metadata:
 <li><strong>Authorised</strong> – an authorisation, the first level of a transaction.</li>
 </ul>
 </li>
-<li><strong>Method</strong> – this is how the transaction was initiated or processed, which include (string):
+<li><strong>method</strong> – this is how the transaction was initiated or processed, which include (string):
 <ul>
 <li><strong>Web</strong></li>
 <li><strong>SMS</strong></li>
@@ -33,7 +33,7 @@ metadata:
 <li><strong>n/a</strong></li>
 </ul>
 </li>
-<li><strong>Value</strong> – this is the amount of the transaction (decimal).</li>
+<li><strong>value</strong> – this is the amount of the transaction (decimal).</li>
 <li><strong>Description</strong> – this describes the transaction (string).</li>
 <li><strong>SequenceNumber</strong> – A sequence number is essentially another card identifier which tells you the actual sequence number of the card/voucher (string).</li>
 </ul>
@@ -44,5 +44,5 @@ metadata:
 
 <h2>Report sample</h2>
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2024/02/CampaignName_DailySalesRedmeptionStatement-YYYY-MM-DD.csv">CampaignName_DailySalesRedmeptionStatement YYYY-MM-DD.csv</a></p>
+<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2024/02/CampaignName_DailySalesRedmeptionStatement-YYYY-MM-DD.csv">CampaignName_DailySalesRedmeptionStatement YYYY-MM-DD.csv</a></p>
 </a></p></h2></h2></h2></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></ul></strong></li></strong></li></strong></li></strong></li></strong></li></ul></strong></li></strong></li></strong></li></strong></li></strong></strong></li></strong></li></strong></li></ul></p></p>

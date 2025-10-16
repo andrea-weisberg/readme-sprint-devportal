@@ -5,8 +5,8 @@ hidden: false
 metadata:
   robots: index
 ---
-<div class="block translation current highlight" data-element="para" data-attr-xinfo-text="10760">
-<p>Paymentology also provides a detailed version of the Summary Settlement Report.The Detailed Settlement Report shows each settled transaction, which allows you to use the Transaction ID to mark off settled transactions from authorized transactions. This also assists in confirming the values of the amounts in the Summary Settlement Report. The network provides the Transaction ID field during authorization. The same Transaction ID for authorizations is included in the Detailed Settlement Report.</p>
+<div className="block translation current highlight" data-element="para" data-attr-xinfo-text="10760">
+<p>Paymentology also provides a detailed version of the summary Settlement Report.The Detailed Settlement Report shows each settled transaction, which allows you to use the Transaction id to mark off settled transactions from authorized transactions. This also assists in confirming the values of the amounts in the summary Settlement Report. The network provides the Transaction id field during authorization. The same Transaction id for authorizations is included in the Detailed Settlement Report.</p>
 <p>You can generate the Detailed Settlement Report by sending an HTTP GET request and download it as a CSV file.</p>
 <p>There are two versions of this report available:</p>
 <p><a href="#DSRV1">Version 1.0</a></p>
@@ -28,11 +28,11 @@ metadata:
 <li>2nd presentment reversal – shows a 2nd presentment that has been reversed at the time of settlement.</li>
 </ul>
 </li>
-<li><b>Transaction ID</b> – it’s a reference for the transaction.
+<li><b>Transaction id</b> – it’s a reference for the transaction.
 <ul>
-<li>In most cases, the provided Transaction ID will be the same Transaction ID as the original authorization. It’s usually 7 to 10 digits.</li>
-<li>In case of refunds, there will be a unique Transaction ID for each of them. The ID does not relate to the original authorization. It’s also longer, up to 23 characters.</li>
-<li>In case of chargebacks, there will be a unique Transaction ID for each of them. The ID does not relate to the original authorization. It’s also longer, up to 23 characters.</li>
+<li>In most cases, the provided Transaction id will be the same Transaction id as the original authorization. It’s usually 7 to 10 digits.</li>
+<li>In case of refunds, there will be a unique Transaction id for each of them. The id does not relate to the original authorization. It’s also longer, up to 23 characters.</li>
+<li>In case of chargebacks, there will be a unique Transaction id for each of them. The id does not relate to the original authorization. It’s also longer, up to 23 characters.</li>
 </ul>
 </li>
 <li><b>Currency code</b> – this is the currency code for the settlement currency.</li>
@@ -43,10 +43,10 @@ metadata:
 <li><b>Tracking number</b> – this is a unique 15-digit tracking identifier for the card.</li>
 <li><b>Settlement currency</b> – this is the currency code for the settlement currency.</li>
 <li><b>Interchange amount</b> – this is the individual amounts earned per transaction.</li>
-<li><strong>Network transaction ID</strong> – (Mastercard only) this is the Networks TraceID, it assists clients with matching pre-authorizations and incremental pre-authorizations to the settlements for those transactions.</li>
+<li><strong>Network transaction id</strong> – (Mastercard only) this is the Networks TraceID, it assists clients with matching pre-authorizations and incremental pre-authorizations to the settlements for those transactions.</li>
 </ul>
 </div>
-<div class="block translation" data-element="para" data-attr-xinfo-text="10763"></div>
+<div className="block translation" data-element="para" data-attr-xinfo-text="10763"></div>
 
 <h3><a id="DSRV2"></a>Version 2.4</h3>
 <p>Version 2.4 includes the following details:</p>
@@ -67,9 +67,9 @@ metadata:
 </li>
 <li><b>TransactionID</b> – it’s a reference for the transaction.
 <ul>
-<li>In most cases, the provided Transaction ID will be the same Transaction ID as the original authorization. It’s usually 7 to 10 digits.</li>
-<li>In case of refunds, there will be a unique Transaction ID for each of them. The ID does not relate to the original authorization. It’s also longer, up to 23 characters.</li>
-<li>In case of chargebacks, there will be a unique Transaction ID for each of them. The ID does not relate to the original authorization. It’s also longer, up to 23 characters.</li>
+<li>In most cases, the provided Transaction id will be the same Transaction id as the original authorization. It’s usually 7 to 10 digits.</li>
+<li>In case of refunds, there will be a unique Transaction id for each of them. The id does not relate to the original authorization. It’s also longer, up to 23 characters.</li>
+<li>In case of chargebacks, there will be a unique Transaction id for each of them. The id does not relate to the original authorization. It’s also longer, up to 23 characters.</li>
 </ul>
 </li>
 <li><b>TransactionType</b> – they can be marked as 00 (for POS transactions), 01 (for ATM transactions), or 02 (for adjustment transactions).</li>
@@ -84,7 +84,7 @@ metadata:
 <li><strong>LocalCurrency</strong> – this is the local currency of the transaction (DE49) and refers to <b>LocalAmount</b></li>
 <li><strong>NetworkTransactionID</strong> – (Mastercard only) this is the Networks TraceID, it assists clients with matching pre-authorizations and incremental pre-authorizations to the settlements for those transactions.</li>
 <li><strong>AcquirerReferenceNumber</strong> – this is the Acquirer Reference Data (DE31)</li>
-<li><strong>TransactionAuthorisationNumber</strong> – this is the Approval Code (DE38) (Authorisation ID Response) provided by the network.</li>
+<li><strong>TransactionAuthorisationNumber</strong> – this is the Approval Code (DE38) (Authorisation id Response) provided by the network.</li>
 <li><strong>OriginatingMessageFormat</strong> – identifies whether the acquirer was domestic or international (MEXICO ONLY).</li>
 </ul>
 
@@ -96,5 +96,5 @@ metadata:
 <p> </p>
 <p>**Detailed-Settlement-report1.png IMAGE GOES HERE.**</p>
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2024/02/CampaignNameDailySettlementsYYYYMMDD.csv">CampaignNameDailySettlementsYYYYMMDD.csv</a></p>
+<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2024/02/CampaignNameDailySettlementsYYYYMMDD.csv">CampaignNameDailySettlementsYYYYMMDD.csv</a></p>
 </a></p></p></p></h2></h2></h2></strong></li></strong></li></strong></li></strong></li></b></strong></li></strong></li></strong></li></strong></strong></li></strong></b></li></b></li></b></li></b></li></b></li></b></li></li></li></li></ul></b></li></li></li></li></li></li></li></ul></strong></li></b></li></b></li></b></li></b></li></ul></p></a></h3></div></strong></li></b></li></b></li></b></li></b></li></b></li></b></li></b></li></b></li></li></li></li></ul></b></li></li></li></li></li></li></li></ul></strong></li></b></li></b></li></b></li></b></li></ul></p></a></h3></a></p></a></p></p></p></p></div>

@@ -27,7 +27,7 @@ metadata:
 <li data-renderer-start-pos="942"><strong data-renderer-mark="true">TransactionFeeDescription</strong> – describes the transaction fee.</li>
 <li data-renderer-start-pos="1004"><strong data-renderer-mark="true">TransactionFeeDate</strong> – the date in which the transaction fee was applied.</li>
 <li data-renderer-start-pos="1079"><strong data-renderer-mark="true">DeclineReason</strong> – describes why the transaction was declined. If the transaction was successful then this filed is left blank.</li>
-<li data-renderer-start-pos="1207"><strong data-renderer-mark="true">CaptureType</strong><em data-renderer-mark="true"> – </em>Capture type must be one of the below:
+<li data-renderer-start-pos="1207"><strong data-renderer-mark="true">CaptureType</strong><em data-renderer-mark="true"> – </em>capture type must be one of the below:
 <ul>
 <li data-renderer-start-pos="1256">ECOM – Transaction captured online</li>
 <li data-renderer-start-pos="1294">MAG – Magnetic Stripe captured transaction</li>
@@ -35,7 +35,7 @@ metadata:
 <li data-renderer-start-pos="1379">ECOF – Online Card On File transaction</li>
 </ul>
 </li>
-<li data-renderer-start-pos="1425"><strong data-renderer-mark="true">CaptureMode</strong> – this is the respective capture mode of the card’s transaction. Capture Mode must be one of the below:
+<li data-renderer-start-pos="1425"><strong data-renderer-mark="true">CaptureMode</strong> – this is the respective capture mode of the card’s transaction. capture Mode must be one of the below:
 <ul>
 <li data-renderer-start-pos="1537">MAG – Magnetic Stripe captured transaction</li>
 <li data-renderer-start-pos="1583">EMV – Electronic chip captured transaction</li>
@@ -55,6 +55,6 @@ metadata:
 <h2>Report sample</h2>
 <p>**EcommerceTransactions_CampaignName_YYYYMMDD-.png IMAGE GOES HERE.**</p>
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/EcommerceTransactions_CampaignName_YYYYMMDD.csv">EcommerceTransactions_CampaignName_YYYYMMDD.csv</a></p>
+<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/EcommerceTransactions_CampaignName_YYYYMMDD.csv">EcommerceTransactions_CampaignName_YYYYMMDD.csv</a></p>
 
 </a></p></p></h2></h2></h2></strong></li></li></li></li></li></li></li></ul></strong></li></li></li></li></li></ul></em></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></li></li></li></ul></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></ul></p></p>

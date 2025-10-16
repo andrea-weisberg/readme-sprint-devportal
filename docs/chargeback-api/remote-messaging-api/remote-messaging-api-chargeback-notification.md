@@ -9,15 +9,15 @@ metadata:
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| messageType | String |  | ✓ | <p>Method name: chargeback.notification</p> |
+| messageType | String |  | ✓ | <p>method name: chargeback.notification</p> |
 | detail | Object |  | ✓ | <p>The detail about chargeback status that should include chargeback status, claimId, chargeback details, lastModifiedDate, caseType</p> |
 
 ```md
 curl --location --request POST 'https://api.tutuka.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 
 ```,```json
 {
@@ -50,7 +50,7 @@ curl --location --request POST 'https://api.tutuka.com/remoteMessaging/v1_0/json
 ```md
 curl --location --request POST 'https://api.tutuka.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 
 ```,```json
 {
@@ -82,14 +82,14 @@ curl --location --request POST 'https://api.tutuka.com/remoteMessaging/v1_0/json
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | resultCode | String | <p>As described in response reference below.</p> |
 
 ```md
 curl --location --request POST 'https://api.tutuka.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 
 ```,```json
 {

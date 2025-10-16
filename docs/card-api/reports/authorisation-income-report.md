@@ -7,7 +7,7 @@ metadata:
 ---
 <p data-pm-slice="1 1 []">This daily report provides client’s with transaction markup data to support their internal reporting and P & L reconciliation. The report includes the following details:</p>
 <ul>
-<li><strong>CampaignID</strong> – ID number of client’s campaign.</li>
+<li><strong>CampaignID</strong> – id number of client’s campaign.</li>
 <li><strong>CampaignName </strong>– name of client’s campaign.</li>
 <li><strong>TransactionDate</strong> – this is the date the transaction was authorised.</li>
 <li><strong>AccumulatedTransactionOriginalAmount</strong> – this is the total value of all the original amounts of the transactions without any markup.</li>
@@ -39,6 +39,6 @@ metadata:
 <h2>Report sample</h2>
 <p>**CampaignName_authorisationincomereport_YYYY_MM_DD-.png IMAGE GOES HERE.**</p>
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_authorisationincomereport_YYYY_MM_DD.csv">CampaignName_authorisationincomereport_YYYY_MM_DD.csv</a></p>
+<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_authorisationincomereport_YYYY_MM_DD.csv">CampaignName_authorisationincomereport_YYYY_MM_DD.csv</a></p>
 
 </a></p></p></h2></h2></h2></p></strong></li></strong></li></strong></li></strong></li></li></li></li></ul></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></ul></p>

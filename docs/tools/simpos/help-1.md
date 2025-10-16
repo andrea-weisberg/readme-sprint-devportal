@@ -27,14 +27,14 @@ metadata:
 
 <h2>How to use SimPOS</h2>
 <ol>
-<li>Go to <a href="https://developer.sprint.paymentology.com/tools/simpos/">SimPOS</a> under <a href="https://developer.sprint.paymentology.com/tools/">Tools</a></li>
+<li>Go to <a href="https:developer.sprint.paymentology.com/tools/simpos/">SimPOS</a> under <a href="https:developer.sprint.paymentology.com/tools/">Tools</a></li>
 <li>Click on the “<strong>Web</strong>” tab</li>
-<li>Enter the card number, expiry date and CVV for the test card that was created using <span class="xml-highlight">CreateLinkedCard</span> method on the <strong>local API</strong></li>
+<li>Enter the card number, expiry date and CVV for the test card that was created using <span className="xml-highlight">CreateLinkedCard</span> method on the <strong>local API</strong></li>
 <li>Enter a random amount for the test transaction</li>
 <li>Enter a random merchant</li>
 <li>Click on “<strong>Swipe</strong>” button</li>
 <li>Wait for “<strong>Transaction result pop-up</strong>” which will show various response codes. Refer to the full list of response codes on the API documentation page.</li>
 </ol>
 
-<p>You can find a list if SimPOS Response codes <a href="https://developer.sprint.paymentology.com/tools/simpos/simpos-result-codes/">here</a>.</p>
+<p>You can find a list if SimPOS Response codes <a href="https:developer.sprint.paymentology.com/tools/simpos/simpos-result-codes/">here</a>.</p>
 </a></p></strong></li></strong></li></li></li></strong></span></li></strong></li></a></a></li></ol></h2></li></li></li></li></strong></li></ul></p></h2></li></strong></strong></strong></li></strong></li></strong></li></li></ul></p></h2>

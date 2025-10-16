@@ -11,15 +11,15 @@ metadata:
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
 | trackingNumber | String |  | ✓ | <p>Tracking number</p> |
-| transactionId | String |  | ✓ | <p>Transaction ID</p> |
+| transactionId | String |  | ✓ | <p>Transaction id</p> |
 | authNumber | String |  |  | <p>Auth number</p> |
 | systemDate | Date |  | ✓ | <p>System date</p> |
 | settlementAmount | String |  |  | <p>Settlement amount</p> |
 | chargebackAmount | String |  |  | <p>Amount to chargeback</p> |
-| reasonCode | String |  | ✓ | <p>Reason code. Chargeback reason code list available <a href="https://developer.sprint.paymentology.com/chargeback-api/chargeback-reason-codes/">here</a></p> |
+| reasonCode | String |  | ✓ | <p>Reason code. Chargeback reason code list available <a href="https:developer.sprint.paymentology.com/chargeback-api/chargeback-reason-codes/">here</a></p> |
 
 ```json
 {
@@ -44,10 +44,10 @@ metadata:
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
-| claimID | String | <p>Claim ID</p> |
-| chargebackID | String | <p>Chargeback ID</p> |
+| claimID | String | <p>Claim id</p> |
+| chargebackID | String | <p>Chargeback id</p> |
 
 ```json
 {

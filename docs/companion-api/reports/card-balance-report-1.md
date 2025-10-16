@@ -8,7 +8,7 @@ metadata:
 <p>This report provides clients with card details such as, current available balance, last load and lifetime expenditure. It is available for each Campaign.</p>
 <p>The report includes the following details:</p>
 <ul>
-<li><strong>Campaign Name</strong> – name of client’s card program.</li>
+<li><strong>Campaign name</strong> – name of client’s card program.</li>
 <li><strong>Voucher Number </strong>– the customer’s card number.</li>
 <li><strong>Sequence Number</strong> – this is a unique sequence card identifier showing a running number for the cards created.</li>
 <li><strong>Tracking Number</strong> – this is a unique 15-digit tracking identifier for the card.</li>
@@ -32,6 +32,6 @@ metadata:
 <h2>Report sample</h2>
 <p>**CampaignName_cardbalances_YYYY_MM_DD-.png IMAGE GOES HERE.**</p>
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_cardbalances_YYYY_MM_DD.csv">CampaignName_cardbalances_YYYY_MM_DD.csv</a></p>
+<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_cardbalances_YYYY_MM_DD.csv">CampaignName_cardbalances_YYYY_MM_DD.csv</a></p>
 
 </a></p></p></h2></h2></h2></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></ul></p></p>

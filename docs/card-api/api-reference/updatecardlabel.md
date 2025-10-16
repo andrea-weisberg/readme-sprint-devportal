@@ -9,9 +9,9 @@ metadata:
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| terminalID | String | 10 characters  | ✓ | <p>The Paymentology issued terminal ID of the terminal requesting the transaction</p> |
+| terminalID | String | 10 characters  | ✓ | <p>The Paymentology issued terminal id of the terminal requesting the transaction</p> |
 | customerReference | String | 1-255 characters | ✓ | <p>Customer reference linked with this card</p> |
 | trackingNumber | String | 1-20 characters | ✓ | <p>The tracking number of the card to update</p> |
 | cardLabel | String | 1-255 characters | ✓ | <p>The card label value to be updated.</p> |
@@ -22,38 +22,38 @@ metadata:
 ```xml
 <methodCall>
     <methodName type="xs:string">UpdateCardLabel</methodName>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <string>0008866376</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>TEST_CUSTOMER</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>787454700000007</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>my fancy card</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>d89d6df6-4e14-45a5-a32c-217c7175dfdb</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>0FAF461A7D814523C742EF578C0A717D024EF021</string>
             </value>
@@ -63,8 +63,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -119,7 +119,7 @@ metadata:
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | terminalID | String | <p>Echo</p> |
 | customerReference | String | <p>Echo</p> |
@@ -132,38 +132,38 @@ metadata:
 ```xml
 <methodCall>
     <methodName type="xs:string">UpdateCardLabel</methodName>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <string>0008866376</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>TEST_CUSTOMER</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>787454700000007</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>my fancy card</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>d89d6df6-4e14-45a5-a32c-217c7175dfdb</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>0FAF461A7D814523C742EF578C0A717D024EF021</string>
             </value>
@@ -173,8 +173,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -227,5 +227,5 @@ metadata:
 
 ```
 
-<p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>
+<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>
 </a></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p>

@@ -7,17 +7,17 @@ metadata:
 ---
 <p>Change the specified card’s PIN.</p>
 <p><strong>IMPORTANT:</strong></p>
-<p><span style="color: #ff0000;"><strong>This API method contains PCI sensitive information.</strong></span></p>
+<p><span style={{color: "#ff0000"}}><strong>This API method contains PCI sensitive information.</strong></span></p>
 <ul>
-<li>Session-Id=Encrypted AES Key e-g (AB521456236KHU52) is required for encryption of sensitive data.</li>
+<li>Session-Id="Encrypted" AES Key e-g (AB521456236KHU52) is required for encryption of sensitive data.</li>
 </ul>
-<p>You can read more on how our Secure API’s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a>.</p>
+<p>You can read more on how our Secure API’s work <a href="https:developer.sprint.paymentology.com/companion-api/secure-apis/">here</a>.</p>
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| terminalID | String | 10 characters  | ✓ | <p>The Paymentology issued terminal ID of the terminal requesting the transaction</p> |
+| terminalID | String | 10 characters  | ✓ | <p>The Paymentology issued terminal id of the terminal requesting the transaction</p> |
 | reference | String | 1-255 characters | ✓ | <p>The user defined reference to the card; for example a member id or wallet number</p> |
 | cardIdentifier | String | 1-20 characters | ✓ | <p>The card number, sequence number or tracking number of the specified card. Field is required if the customer has more than one card linked to their wallet</p> |
 | newPIN | String | special - see description | ✓ | <p>The new PIN number for the card, the length is defined by the PIN length set up in your campaign.</p> <p>(Encrypted).</p> |
@@ -29,43 +29,43 @@ metadata:
 ```xml
 <methodCall>
     <methodName>ChangePin</methodName>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <string>0014682067</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>TESTTTK</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>4987057272502351</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>GB65YU</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string> GHT67KMJ983UJGB678TGEW</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>123456</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <dateTime.iso8601>20200327T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>07B15A4A5D7E9DCB1F96094C2F011AD51CD6364A</string>
             </value>
@@ -75,8 +75,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -101,7 +101,7 @@ metadata:
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 | resultText | String | <p>Text indicating transaction result.</p> |
@@ -109,43 +109,43 @@ metadata:
 ```xml
 <methodCall>
     <methodName>ChangePin</methodName>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <string>0014682067</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>TESTTTK</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>4987057272502351</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>GB65YU</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string> GHT67KMJ983UJGB678TGEW</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>123456</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <dateTime.iso8601>20200327T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>07B15A4A5D7E9DCB1F96094C2F011AD51CD6364A</string>
             </value>
@@ -155,8 +155,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -179,5 +179,5 @@ metadata:
 
 ```
 
-<p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>
+<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>
 </a></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></a></p></li></ul></strong></span></p></strong></p></p>

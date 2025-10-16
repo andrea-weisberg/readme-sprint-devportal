@@ -11,33 +11,33 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>ListAllTokens</methodName>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <string>0093270589</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>FRJMEO06</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>5432161234249497</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>TR_LAT_001</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <dateTime.iso8601>20230519T10:02:59</dateTime.iso8601>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>381B25DE182481ECEB0BE4D2C0047FC8CFED6C050</string>
             </value>
@@ -48,8 +48,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -331,43 +331,43 @@ metadata:
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 | resultText | String | <p>Status text indicating result</p> |
-| tokens | Array | <p>The tokens linked to this card. Array includes:</p> <p>DeviceName<br /> ProvisioningStatusCode<br /> DigitizationRequestDateTime<br /> TokenType<br /> ExpirationDate<br /> ProvisioningStatusDescription<br /> TokenActivatedDateTime<br /> TokenRequestorName<br /> WalletID<br /> DeviceId<br /> TokenUniqueReference<br /> DeviceType<br /> CurrentStatusDescription</p> |
+| tokens | Array | <p>The tokens linked to this card. Array includes:</p> <p>DeviceName<br > ProvisioningStatusCode<br > DigitizationRequestDateTime<br > TokenType<br > ExpirationDate<br > ProvisioningStatusDescription<br > TokenActivatedDateTime<br > TokenRequestorName<br > WalletID<br > DeviceId<br > TokenUniqueReference<br > DeviceType<br > CurrentStatusDescription</p> |
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>ListAllTokens</methodName>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <string>0093270589</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>FRJMEO06</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>5432161234249497</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>TR_LAT_001</string>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <dateTime.iso8601>20230519T10:02:59</dateTime.iso8601>
             </value>
         </param>
-        <param>
+        <param >
             <value>
                 <string>381B25DE182481ECEB0BE4D2C0047FC8CFED6C050</string>
             </value>
@@ -378,8 +378,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -659,5 +659,5 @@ metadata:
 
 <p> </p>
 
-<p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
+<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
 </a></p></p></string></value></name></member></double></value></name></member></string></value></name></member></double></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></string></value></name></member></double></value></name></member></string></value></name></member></double></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></string></value></name></member></double></value></name></member></string></value></name></member></double></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></string></value></name></member></double></value></name></member></string></value></name></member></double></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></string></value></name></member></double></value></name></member></string></value></name></member></double></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></string></value></name></member></double></value></name></member></string></value></name></member></double></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p>

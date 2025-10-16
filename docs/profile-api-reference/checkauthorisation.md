@@ -9,13 +9,13 @@ metadata:
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal ID of the terminal requesting the transaction.</p> |
+| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal id of the terminal requesting the transaction.</p> |
 | profileNumber | String | 1-20 characters | ✓ | <p>Profile number linked with this card.</p> |
 | cardIdentifier | String | 1-20 characters | ✓ | <p>The card number, sequence number or tracking number of the specified card.</p> |
 | requestAmount | Integer |  | ✓ | <p>The requested amount to have been deducted from the card and loaded onto the profile, in cents.</p> |
-| referenceID | String | 1-255 characters | ✓ | <p>Transaction ID number refering to the Authorisation to check.</p> |
+| referenceID | String | 1-255 characters | ✓ | <p>Transaction id number refering to the Authorisation to check.</p> |
 | referenceDate | Date |  | ✓ | <p>Transaction date refering to the Authorisation to check.</p> |
 | checksum | String |  | ✓ | <p>HMAC-SHA1 hashed signature of the concatenated method name with all argument values using the terminal password as private key.</p> |
 
@@ -23,38 +23,38 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
    <methodName>CheckAuthorisation</methodName>
-   <params>
-       <param>
+   <params >
+       <param >
            <value>
                <string>0020123425</string>
            </value>
        </param>
-       <param>
+       <param >
            <value>
                <string>9012349072</string>
            </value>
        </param>
-       <param>
+       <param >
            <value>
                <string>401234567800001</string>
            </value>
        </param>
-       <param>
+       <param >
            <value>
                <int>20</int>
            </value>
        </param>
-        <param>
+        <param >
            <value>
                <string>txn123456</string>
            </value>
        </param>
-       <param>
+       <param >
            <value>
                <dateTime.iso8601>20240531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param>
+       <param >
            <value>
                <string>42801707830541bd6789abcfcd4bc18ae272611ca73d881f484d83a1d1f80bb3</string>
            </value>
@@ -65,8 +65,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>
@@ -117,7 +117,7 @@ metadata:
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | terminalID | String | <p>Echo of the incoming value.</p> |
 | profileNumber | String | <p>Echo of the incoming value.</p> |
@@ -130,38 +130,38 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
    <methodName>CheckAuthorisation</methodName>
-   <params>
-       <param>
+   <params >
+       <param >
            <value>
                <string>0020123425</string>
            </value>
        </param>
-       <param>
+       <param >
            <value>
                <string>9012349072</string>
            </value>
        </param>
-       <param>
+       <param >
            <value>
                <string>401234567800001</string>
            </value>
        </param>
-       <param>
+       <param >
            <value>
                <int>20</int>
            </value>
        </param>
-        <param>
+        <param >
            <value>
                <string>txn123456</string>
            </value>
        </param>
-       <param>
+       <param >
            <value>
                <dateTime.iso8601>20240531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param>
+       <param >
            <value>
                <string>42801707830541bd6789abcfcd4bc18ae272611ca73d881f484d83a1d1f80bb3</string>
            </value>
@@ -172,8 +172,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params>
-        <param>
+    <params >
+        <param >
             <value>
                 <struct>
                     <member>

@@ -5,23 +5,23 @@ hidden: false
 metadata:
   robots: index
 ---
-<p class="BodyA"><strong><span lang="EN-US">Remote messaging API allows Paymentology to call you to send administrative advice messages for Card API. These advice messages are sent using webhook-like schema. If you are integrating the service, you must create an endpoint accessible from the Paymentology network, which would be able to process the requests outlined below.</span></strong></p>
+<p className="BodyA"><strong><span lang="EN-US">Remote messaging API allows Paymentology to call you to send administrative advice messages for Card API. These advice messages are sent using webhook-like schema. If you are integrating the service, you must create an endpoint accessible from the Paymentology network, which would be able to process the requests outlined below.</span></strong></p>
 
 <h2>How it works</h2>
 <ul>
 <li>All messages are sent as <strong>HTTP POST</strong> requests.</li>
 <li>Message content is always a <strong>JSON</strong> document.</li>
 <li>Methods structure is defined below, and it corresponds to the schema of the JSON document sent.</li>
-<li>The message type (eg. <span class="xml-highlight">3DSecure.OTP</span>, <span class="xml-highlight">digitization.event</span>, etc.) is to be included in the JSON message as <span class="xml-highlight">messageType</span>. The message will be sent using the client-supplied URL eg. http://www.example.com/api/endpoint</li>
+<li>The message type (eg. <span className="xml-highlight">3DSecure.OTP</span>, <span className="xml-highlight">digitization.event</span>, etc.) is to be included in the JSON message as <span className="xml-highlight">messageType</span>. The message will be sent using the client-supplied URL eg. http://www.example.com/api/endpoint</li>
 <li>In the code samples provided, we use cURL to send requests</li>
-<li>In the code samples provided, we use a <strong>mock</strong> <strong>endpoint</strong> for testing<strong> – <a href="https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm">https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm</a></strong></li>
+<li>In the code samples provided, we use a <strong>mock</strong> <strong>endpoint</strong> for testing<strong> – <a href="https:api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm">https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm</a></strong></li>
 </ul>
 
 <h2>Expectations</h2>
 <p>Total round-trip time, including network overload, should be less than 4 seconds. Failing to meet this, the transaction is considered failed.</p>
 
 <h2>Security</h2>
-<p>For detailed security measures, please see the end of the Method summary – <a href="#payload">Payload Integrity Verification</a></p>
+<p>For detailed security measures, please see the end of the method summary – <a href="#payload">Payload Integrity Verification</a></p>
 <p>Client specific headers can be used, if previously agreed, in accordance to measures used for all methods simultaneously.</p>
 
 <h2>Response</h2>
@@ -38,26 +38,26 @@ metadata:
 <p><a href="#responsereference">Response Reference</a></p>
 
 <h1><a id="3DSecure"></a>3DSecure.OTP</h1>
-<p class="SubtitleA"><span class="Hyperlink1"><span lang="EN-US">Process 3DS OTP token for an end customer to be able to complete the challenge of a live transaction.</span></span></p>
+<p className="SubtitleA"><span className="Hyperlink1"><span lang="EN-US">Process 3DS OTP token for an end customer to be able to complete the challenge of a live transaction.</span></span></p>
 <p><strong>IMPORTANT:</strong> the “refCode” field is only applicable if the campaign option is enabled.</p>
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
 | challenge | String |  | ✓ | <p>OTP challenge code</p> |
 | customerReference | String |  | ✓ | <p>Customer reference this card is linked to</p> |
-| messageType | String |  | ✓ | <p>Method name: 3DSecure.OTP</p> |
+| messageType | String |  | ✓ | <p>method name: 3DSecure.OTP</p> |
 | trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which OTP token is being sent</p> |
-| merchantDescription | String |  | ✓ | <p>Name of or information related to the merchant</p> |
+| merchantDescription | String |  | ✓ | <p>name of or information related to the merchant</p> |
 | transactionAmount  | Integer |  | ✓ | <p>The monetary amount related the transaction</p> |
-| refCode | String |  |  | <p>Dynamic generated 4 letters code to be used along with OTP messages<br /> <strong data-renderer-mark="true">if Campaign is configured to.</strong></p> |
+| refCode | String |  |  | <p>Dynamic generated 4 letters code to be used along with OTP messages<br > <strong data-renderer-mark="true">if Campaign is configured to.</strong></p> |
 | currencyCode | Integer |  | ✓ | <p>The local currency code of the acquirer or source location of the transaction</p> |
 
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
     "challenge": "123456",
     "customerReference": "12b6405c-1120-123b-b55b-12b8f5a46ac1",
@@ -84,7 +84,7 @@ curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
 "messageType":"cardholder.maskedContactDetails",
 "trackingNumber":"212345678900321",
@@ -100,7 +100,7 @@ STATUS 200 OK
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw '{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}'
 
 ```,```json
@@ -117,7 +117,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
 
 ```,```json
@@ -126,7 +126,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{“messageType":"digitization.activationmethods","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","trackingNumber":"162961400000233","walletIdentifier":"217","tokenRequestorId":"50139059239","digitizationPath":"GREEN","digitizedDeviceType":"00","walletRecommendation":"approve",
 "tokenizationPanSource":"card_on_file"}'
 
@@ -134,7 +134,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 {"resultCode":"0000","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.activationmethods","walletIdentifier":"217","activationMethods":[{"value":"555123451","type":1}],"trackingNumber":"162961400000233","tokenRequestorId":"50139059239"}
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-Type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
 
 ```,```json
 {"resultCode":"0000"}
@@ -149,7 +149,7 @@ const httpHeader = 'Authorization: CS-HMAC-SHA-256 Terminal=' + authorizationTer
 console.log(httpHeader)
 
 ```,```js
-Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
+Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
 ```
 
@@ -157,12 +157,12 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | challenge | String | <p>Echo</p> |
 | resultCode | String | <p>As described in response reference</p> |
 | customerReference | String | <p>Echo</p> |
-| messageType | String | <p>Method name: 3DSecure.OTP</p> |
+| messageType | String | <p>method name: 3DSecure.OTP</p> |
 | merchantDescription | String | <p>Echo</p> |
 | transactionAmount | Integer | <p>Echo</p> |
 | trackingNumber | String | <p>Echo</p> |
@@ -171,7 +171,7 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
     "challenge": "123456",
     "customerReference": "12b6405c-1120-123b-b55b-12b8f5a46ac1",
@@ -198,7 +198,7 @@ curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
 "messageType":"cardholder.maskedContactDetails",
 "trackingNumber":"212345678900321",
@@ -214,7 +214,7 @@ STATUS 200 OK
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw '{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}'
 
 ```,```json
@@ -231,7 +231,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
 
 ```,```json
@@ -240,7 +240,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{“messageType":"digitization.activationmethods","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","trackingNumber":"162961400000233","walletIdentifier":"217","tokenRequestorId":"50139059239","digitizationPath":"GREEN","digitizedDeviceType":"00","walletRecommendation":"approve",
 "tokenizationPanSource":"card_on_file"}'
 
@@ -248,7 +248,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 {"resultCode":"0000","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.activationmethods","walletIdentifier":"217","activationMethods":[{"value":"555123451","type":1}],"trackingNumber":"162961400000233","tokenRequestorId":"50139059239"}
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-Type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
 
 ```,```json
 {"resultCode":"0000"}
@@ -263,18 +263,18 @@ const httpHeader = 'Authorization: CS-HMAC-SHA-256 Terminal=' + authorizationTer
 console.log(httpHeader)
 
 ```,```js
-Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
+Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
 ```
 
 <p> </p>
 
 <h1><a id="3DSecureCCD"></a>Administrative Message – 3D Secure Cardholder Contact Detail Collection</h1>
-<p class="SubtitleA"><span class="Hyperlink1"><span lang="EN-US">Collects the cardholder’s masked contact details to be used upon 3DS checkout.</span></span></p>
+<p className="SubtitleA"><span className="Hyperlink1"><span lang="EN-US">Collects the cardholder’s masked contact details to be used upon 3DS checkout.</span></span></p>
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
 | messageType | String |  | ✓ | <p>cardholder.maskedContactDetails</p> |
 | trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which OTP token is being sent</p> |
@@ -283,7 +283,7 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
     "challenge": "123456",
     "customerReference": "12b6405c-1120-123b-b55b-12b8f5a46ac1",
@@ -310,7 +310,7 @@ curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
 "messageType":"cardholder.maskedContactDetails",
 "trackingNumber":"212345678900321",
@@ -326,7 +326,7 @@ STATUS 200 OK
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw '{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}'
 
 ```,```json
@@ -343,7 +343,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
 
 ```,```json
@@ -352,7 +352,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{“messageType":"digitization.activationmethods","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","trackingNumber":"162961400000233","walletIdentifier":"217","tokenRequestorId":"50139059239","digitizationPath":"GREEN","digitizedDeviceType":"00","walletRecommendation":"approve",
 "tokenizationPanSource":"card_on_file"}'
 
@@ -360,7 +360,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 {"resultCode":"0000","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.activationmethods","walletIdentifier":"217","activationMethods":[{"value":"555123451","type":1}],"trackingNumber":"162961400000233","tokenRequestorId":"50139059239"}
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-Type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
 
 ```,```json
 {"resultCode":"0000"}
@@ -375,7 +375,7 @@ const httpHeader = 'Authorization: CS-HMAC-SHA-256 Terminal=' + authorizationTer
 console.log(httpHeader)
 
 ```,```js
-Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
+Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
 ```
 
@@ -383,7 +383,7 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | resultCode | String | <p>Status code indicating transaction result</p> |
 | maskedContactDetails | Array | <p>Masked contact details (phone number and email address) linked with the card</p> |
@@ -391,7 +391,7 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
     "challenge": "123456",
     "customerReference": "12b6405c-1120-123b-b55b-12b8f5a46ac1",
@@ -418,7 +418,7 @@ curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
 "messageType":"cardholder.maskedContactDetails",
 "trackingNumber":"212345678900321",
@@ -434,7 +434,7 @@ STATUS 200 OK
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw '{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}'
 
 ```,```json
@@ -451,7 +451,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
 
 ```,```json
@@ -460,7 +460,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{“messageType":"digitization.activationmethods","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","trackingNumber":"162961400000233","walletIdentifier":"217","tokenRequestorId":"50139059239","digitizationPath":"GREEN","digitizedDeviceType":"00","walletRecommendation":"approve",
 "tokenizationPanSource":"card_on_file"}'
 
@@ -468,7 +468,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 {"resultCode":"0000","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.activationmethods","walletIdentifier":"217","activationMethods":[{"value":"555123451","type":1}],"trackingNumber":"162961400000233","tokenRequestorId":"50139059239"}
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-Type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
 
 ```,```json
 {"resultCode":"0000"}
@@ -483,30 +483,30 @@ const httpHeader = 'Authorization: CS-HMAC-SHA-256 Terminal=' + authorizationTer
 console.log(httpHeader)
 
 ```,```js
-Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
+Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
 ```
 
 <p> </p>
 
 <h1><a id="activation"></a>digitization.activation</h1>
-<p><span class="Hyperlink1"><span lang="EN-US">Process MDES OTP token for an end customer to be able to complete the challenge and activate the wallet.</span></span></p>
+<p><span className="Hyperlink1"><span lang="EN-US">Process MDES OTP token for an end customer to be able to complete the challenge and activate the wallet.</span></span></p>
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| messageType | String |  | ✓ | <p>Method name: digitization.activation</p> |
+| messageType | String |  | ✓ | <p>method name: digitization.activation</p> |
 | trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which tokenization is being performed</p> |
 | customerReference | String |  | ✓ | <p>Customer reference this card is linked to</p> |
 | walletIdentifier | String |  | ✓ | <p>3-digit wallet identifier:</p> <ul> <li>103 – Apple Pay</li> <li>216 – Google Pay</li> <li>217 – Samsung Pay</li> <li>327 – Merchant tokenization program</li> </ul> |
 | challenge | String |  | ✓ | <p>OTP activation code</p> |
-| tokenRequestorID | String |  | ✓ | <p>The ID assigned by the Token Service Provider to the Token Requestor</p> |
+| tokenRequestorID | String |  | ✓ | <p>The id assigned by the Token Service Provider to the Token Requestor</p> |
 
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
     "challenge": "123456",
     "customerReference": "12b6405c-1120-123b-b55b-12b8f5a46ac1",
@@ -533,7 +533,7 @@ curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
 "messageType":"cardholder.maskedContactDetails",
 "trackingNumber":"212345678900321",
@@ -549,7 +549,7 @@ STATUS 200 OK
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw '{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}'
 
 ```,```json
@@ -566,7 +566,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
 
 ```,```json
@@ -575,7 +575,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{“messageType":"digitization.activationmethods","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","trackingNumber":"162961400000233","walletIdentifier":"217","tokenRequestorId":"50139059239","digitizationPath":"GREEN","digitizedDeviceType":"00","walletRecommendation":"approve",
 "tokenizationPanSource":"card_on_file"}'
 
@@ -583,7 +583,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 {"resultCode":"0000","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.activationmethods","walletIdentifier":"217","activationMethods":[{"value":"555123451","type":1}],"trackingNumber":"162961400000233","tokenRequestorId":"50139059239"}
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-Type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
 
 ```,```json
 {"resultCode":"0000"}
@@ -598,13 +598,13 @@ const httpHeader = 'Authorization: CS-HMAC-SHA-256 Terminal=' + authorizationTer
 console.log(httpHeader)
 
 ```,```js
-Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
+Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
 ```
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | challenge | String | <p>Echo</p> |
 | resultCode | Integer | <p>As described in response reference</p> |
@@ -617,7 +617,7 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
     "challenge": "123456",
     "customerReference": "12b6405c-1120-123b-b55b-12b8f5a46ac1",
@@ -644,7 +644,7 @@ curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
 "messageType":"cardholder.maskedContactDetails",
 "trackingNumber":"212345678900321",
@@ -660,7 +660,7 @@ STATUS 200 OK
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw '{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}'
 
 ```,```json
@@ -677,7 +677,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
 
 ```,```json
@@ -686,7 +686,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{“messageType":"digitization.activationmethods","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","trackingNumber":"162961400000233","walletIdentifier":"217","tokenRequestorId":"50139059239","digitizationPath":"GREEN","digitizedDeviceType":"00","walletRecommendation":"approve",
 "tokenizationPanSource":"card_on_file"}'
 
@@ -694,7 +694,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 {"resultCode":"0000","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.activationmethods","walletIdentifier":"217","activationMethods":[{"value":"555123451","type":1}],"trackingNumber":"162961400000233","tokenRequestorId":"50139059239"}
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-Type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
 
 ```,```json
 {"resultCode":"0000"}
@@ -709,20 +709,20 @@ const httpHeader = 'Authorization: CS-HMAC-SHA-256 Terminal=' + authorizationTer
 console.log(httpHeader)
 
 ```,```js
-Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
+Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
 ```
 
 <h1><a id="event"></a>digitization.event</h1>
-<section id="tutuka-block-1" class="tutuka-block tutuka-block--text-full-width">
-<p class="SubtitleA"><span class="Hyperlink1"><span lang="EN-US">Used to communicate tokenization events in MDES</span></span></p>
+<section id="tutuka-block-1" className="tutuka-block tutuka-block--text-full-width">
+<p className="SubtitleA"><span className="Hyperlink1"><span lang="EN-US">Used to communicate tokenization events in MDES</span></span></p>
 </section>
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| messageType | String |  | ✓ | <p>Method name: digitization.event</p> |
+| messageType | String |  | ✓ | <p>method name: digitization.event</p> |
 | eventType | String |  | ✓ | <p>MDES digitalization status:</p> <p>Digitized</p> <p>Stopped</p> <p>Deleted</p> <p>Digitization_exception</p> <p>Deleted_from_Device</p> <p>Replacement</p> <p>complete</p> |
 | trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which tokenization is being performed</p> |
 | customerReference | String |  | ✓ | <p>Customer reference the card is linked to</p> |
@@ -732,12 +732,12 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 | digitizedPanExpiry | String |  | ✓ | <p>Expiry date of the DPAN</p> |
 | digitizedFpanMasked | String |  | ✓ | <p>Masked Funding Account PAN</p> |
 | digitizedTokenReference | String |  | ✓ | <p>Token reference</p> |
-| tokenRequestorId | String |  | ✓ | <p>The ID assigned by the Token Service Provider to the Token Requestor</p> |
+| tokenRequestorId | String |  | ✓ | <p>The id assigned by the Token Service Provider to the Token Requestor</p> |
 
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
     "challenge": "123456",
     "customerReference": "12b6405c-1120-123b-b55b-12b8f5a46ac1",
@@ -764,7 +764,7 @@ curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
 "messageType":"cardholder.maskedContactDetails",
 "trackingNumber":"212345678900321",
@@ -780,7 +780,7 @@ STATUS 200 OK
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw '{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}'
 
 ```,```json
@@ -797,7 +797,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
 
 ```,```json
@@ -806,7 +806,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{“messageType":"digitization.activationmethods","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","trackingNumber":"162961400000233","walletIdentifier":"217","tokenRequestorId":"50139059239","digitizationPath":"GREEN","digitizedDeviceType":"00","walletRecommendation":"approve",
 "tokenizationPanSource":"card_on_file"}'
 
@@ -814,7 +814,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 {"resultCode":"0000","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.activationmethods","walletIdentifier":"217","activationMethods":[{"value":"555123451","type":1}],"trackingNumber":"162961400000233","tokenRequestorId":"50139059239"}
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-Type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
 
 ```,```json
 {"resultCode":"0000"}
@@ -829,20 +829,20 @@ const httpHeader = 'Authorization: CS-HMAC-SHA-256 Terminal=' + authorizationTer
 console.log(httpHeader)
 
 ```,```js
-Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
+Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
 ```
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | resultCode | String | <p>As described in response reference</p> |
 
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
     "challenge": "123456",
     "customerReference": "12b6405c-1120-123b-b55b-12b8f5a46ac1",
@@ -869,7 +869,7 @@ curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
 "messageType":"cardholder.maskedContactDetails",
 "trackingNumber":"212345678900321",
@@ -885,7 +885,7 @@ STATUS 200 OK
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw '{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}'
 
 ```,```json
@@ -902,7 +902,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
 
 ```,```json
@@ -911,7 +911,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{“messageType":"digitization.activationmethods","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","trackingNumber":"162961400000233","walletIdentifier":"217","tokenRequestorId":"50139059239","digitizationPath":"GREEN","digitizedDeviceType":"00","walletRecommendation":"approve",
 "tokenizationPanSource":"card_on_file"}'
 
@@ -919,7 +919,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 {"resultCode":"0000","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.activationmethods","walletIdentifier":"217","activationMethods":[{"value":"555123451","type":1}],"trackingNumber":"162961400000233","tokenRequestorId":"50139059239"}
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-Type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
 
 ```,```json
 {"resultCode":"0000"}
@@ -934,7 +934,7 @@ const httpHeader = 'Authorization: CS-HMAC-SHA-256 Terminal=' + authorizationTer
 console.log(httpHeader)
 
 ```,```js
-Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
+Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
 ```
 
@@ -944,13 +944,13 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| messageType | String |  | ✓ | <p>Method name: digitization.activationmethods</p> |
+| messageType | String |  | ✓ | <p>method name: digitization.activationmethods</p> |
 | trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which tokenization is being performed</p> |
 | customerReference | String |  | ✓ | <p>Customer reference the card is linked to</p> |
 | walletIdentifier | String |  | ✓ | <p>3-digit wallet identifier:</p> <ul> <li>103 – Apple Pay</li> <li>216 – Google Pay</li> <li>217 – Samsung Pay</li> <li>327 – Merchant tokenization program</li> </ul> |
-| tokenRequestorId | String |  | ✓ | <p>The ID assigned by the Token Service Provider to the Token Requestor</p> |
+| tokenRequestorId | String |  | ✓ | <p>The id assigned by the Token Service Provider to the Token Requestor</p> |
 | digitizationPath  | String |  | ✓ | <p>Specifies which path was chosen based on our logic and rules: green, yellow, orange or red</p> |
 | digitizedDeviceType | String |  | ✓ | <p>Indicates the type of device used at the terminal.</p> |
 | walletRecommendation | String |  | ✓ | <p>Tokenization decision suggested by the wallet provider. One of the following values: decline, approve or require_additional_authentication</p> |
@@ -959,7 +959,7 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
     "challenge": "123456",
     "customerReference": "12b6405c-1120-123b-b55b-12b8f5a46ac1",
@@ -986,7 +986,7 @@ curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
 "messageType":"cardholder.maskedContactDetails",
 "trackingNumber":"212345678900321",
@@ -1002,7 +1002,7 @@ STATUS 200 OK
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw '{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}'
 
 ```,```json
@@ -1019,7 +1019,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
 
 ```,```json
@@ -1028,7 +1028,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{“messageType":"digitization.activationmethods","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","trackingNumber":"162961400000233","walletIdentifier":"217","tokenRequestorId":"50139059239","digitizationPath":"GREEN","digitizedDeviceType":"00","walletRecommendation":"approve",
 "tokenizationPanSource":"card_on_file"}'
 
@@ -1036,7 +1036,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 {"resultCode":"0000","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.activationmethods","walletIdentifier":"217","activationMethods":[{"value":"555123451","type":1}],"trackingNumber":"162961400000233","tokenRequestorId":"50139059239"}
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-Type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
 
 ```,```json
 {"resultCode":"0000"}
@@ -1051,13 +1051,13 @@ const httpHeader = 'Authorization: CS-HMAC-SHA-256 Terminal=' + authorizationTer
 console.log(httpHeader)
 
 ```,```js
-Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
+Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
 ```
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | resultCode | String | <p>As described in response reference</p> |
 | activationMethods | Array | <p>JSON array of methods where each element has:</p> <ul> <li>type: 1 (phone number) or 2 (email).</li> <li>value: Cardholder’s phone number (type 1) or email (type 2).</li> </ul> |
@@ -1065,7 +1065,7 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
     "challenge": "123456",
     "customerReference": "12b6405c-1120-123b-b55b-12b8f5a46ac1",
@@ -1092,7 +1092,7 @@ curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
 "messageType":"cardholder.maskedContactDetails",
 "trackingNumber":"212345678900321",
@@ -1108,7 +1108,7 @@ STATUS 200 OK
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw '{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}'
 
 ```,```json
@@ -1125,7 +1125,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
 
 ```,```json
@@ -1134,7 +1134,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{“messageType":"digitization.activationmethods","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","trackingNumber":"162961400000233","walletIdentifier":"217","tokenRequestorId":"50139059239","digitizationPath":"GREEN","digitizedDeviceType":"00","walletRecommendation":"approve",
 "tokenizationPanSource":"card_on_file"}'
 
@@ -1142,7 +1142,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 {"resultCode":"0000","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.activationmethods","walletIdentifier":"217","activationMethods":[{"value":"555123451","type":1}],"trackingNumber":"162961400000233","tokenRequestorId":"50139059239"}
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-Type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
 
 ```,```json
 {"resultCode":"0000"}
@@ -1157,32 +1157,32 @@ const httpHeader = 'Authorization: CS-HMAC-SHA-256 Terminal=' + authorizationTer
 console.log(httpHeader)
 
 ```,```js
-Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
+Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
 ```
 
 <h2><a id="appauth"></a>3DSecure.AppAuthentication</h2>
-<p>This message is used to trigger the process of cardholder authentication. You only need to respond to this message to indicate you have received the message and will initiate the cardholder authentication. Once you have completed cardholder authentication you will send a message to our <a href="https://developer.sprint.paymentology.com/card-api/api-reference/threedsauthenticationoutcome/">ThreeDSAuthenticationOutcome</a> API.<br />
+<p>This message is used to trigger the process of cardholder authentication. You only need to respond to this message to indicate you have received the message and will initiate the cardholder authentication. Once you have completed cardholder authentication you will send a message to our <a href="https:developer.sprint.paymentology.com/card-api/api-reference/threedsauthenticationoutcome/">ThreeDSAuthenticationOutcome</a> API.<br >
 Messages should be as following:</p>
 <p> </p>
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| messageType  | String |  | ✓ | <p>Method name: 3DSecure.AppAuthentication</p> |
+| messageType  | String |  | ✓ | <p>method name: 3DSecure.AppAuthentication</p> |
 | trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which authorisation is being performed</p> |
 | customerReference | String |  | ✓ | <p>Customer reference this card is linked to</p> |
-| transactionID | String |  | ✓ | <p>Transaction ID to link all messages. The same transaction ID should be used for the following message send to Paymentology.</p> |
+| transactionID | String |  | ✓ | <p>Transaction id to link all messages. The same transaction id should be used for the following message send to Paymentology.</p> |
 | purchaseAmount | String |  | ✓ | <p>Amount of the transaction, formatted with currency included</p> |
-| merchant | String |  | ✓ | <p>Name of the merchant transaction is being done at</p> |
+| merchant | String |  | ✓ | <p>name of the merchant transaction is being done at</p> |
 | amount | Integer |  | ✓ | <p>Numeric value of the amount, unformatted, in minor units</p> |
 | currency | Integer |  | ✓ | <p>ISO code of the currency of the transaction</p> |
 
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
     "challenge": "123456",
     "customerReference": "12b6405c-1120-123b-b55b-12b8f5a46ac1",
@@ -1209,7 +1209,7 @@ curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
 "messageType":"cardholder.maskedContactDetails",
 "trackingNumber":"212345678900321",
@@ -1225,7 +1225,7 @@ STATUS 200 OK
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw '{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}'
 
 ```,```json
@@ -1242,7 +1242,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
 
 ```,```json
@@ -1251,7 +1251,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{“messageType":"digitization.activationmethods","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","trackingNumber":"162961400000233","walletIdentifier":"217","tokenRequestorId":"50139059239","digitizationPath":"GREEN","digitizedDeviceType":"00","walletRecommendation":"approve",
 "tokenizationPanSource":"card_on_file"}'
 
@@ -1259,7 +1259,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 {"resultCode":"0000","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.activationmethods","walletIdentifier":"217","activationMethods":[{"value":"555123451","type":1}],"trackingNumber":"162961400000233","tokenRequestorId":"50139059239"}
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-Type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
 
 ```,```json
 {"resultCode":"0000"}
@@ -1274,7 +1274,7 @@ const httpHeader = 'Authorization: CS-HMAC-SHA-256 Terminal=' + authorizationTer
 console.log(httpHeader)
 
 ```,```js
-Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
+Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
 ```
 
@@ -1282,14 +1282,14 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 
 #### Response schema
 
-| Field | Type | Description |
+| Field | type | Description |
 |---|---|---|
 | resultCode | String | <p>As described in response reference</p> |
 
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
     "challenge": "123456",
     "customerReference": "12b6405c-1120-123b-b55b-12b8f5a46ac1",
@@ -1316,7 +1316,7 @@ curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
 "messageType":"cardholder.maskedContactDetails",
 "trackingNumber":"212345678900321",
@@ -1332,7 +1332,7 @@ STATUS 200 OK
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw '{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}'
 
 ```,```json
@@ -1349,7 +1349,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
 
 ```,```json
@@ -1358,7 +1358,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{“messageType":"digitization.activationmethods","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","trackingNumber":"162961400000233","walletIdentifier":"217","tokenRequestorId":"50139059239","digitizationPath":"GREEN","digitizedDeviceType":"00","walletRecommendation":"approve",
 "tokenizationPanSource":"card_on_file"}'
 
@@ -1366,7 +1366,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 {"resultCode":"0000","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.activationmethods","walletIdentifier":"217","activationMethods":[{"value":"555123451","type":1}],"trackingNumber":"162961400000233","tokenRequestorId":"50139059239"}
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-Type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
 
 ```,```json
 {"resultCode":"0000"}
@@ -1381,28 +1381,28 @@ const httpHeader = 'Authorization: CS-HMAC-SHA-256 Terminal=' + authorizationTer
 console.log(httpHeader)
 
 ```,```js
-Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
+Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
 ```
 
 <p> </p>
 
 <h2><a id="appfinal"></a>3DSecure.AppFinalisation</h2>
-<p>This administrative message is used to inform the client of the final status of the 3DSecure authentication.<br />
+<p>This administrative message is used to inform the client of the final status of the 3DSecure authentication.<br >
 Messages include the following:</p>
 
 #### Path parameters
 
-| Parameter | Type | Limits | Required | Description |
+| Parameter | type | Limits | required | Description |
 |---|---|---|:--:|---|
-| messageType | String |  | ✓ | <p>Method name: 3DSecure.AppFinalisation</p> |
+| messageType | String |  | ✓ | <p>method name: 3DSecure.AppFinalisation</p> |
 | trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which authorisation is being performed</p> |
 | customerReference | String |  | ✓ | <p>Customer reference this card is linked to</p> |
-| transactionID | String |  | ✓ | <p>Unique ID provided by the ACS</p> |
-| status | String |  | ✓ | <p>Value indicating the status. Values include:<br /> 0 – Successfully received final status<br /> 1 – Timer on browser expired before response was received<br /> 2 – General error<br /> 3 – Transaction cancelled before response was received</p> |
+| transactionID | String |  | ✓ | <p>Unique id provided by the ACS</p> |
+| status | String |  | ✓ | <p>value indicating the status. Values include:<br > 0 – Successfully received final status<br > 1 – Timer on browser expired before response was received<br > 2 – General error<br > 3 – Transaction cancelled before response was received</p> |
 
 <h1><a id="responsereference"></a>Response Reference</h1>
-<p>Response should contain all the same fields as the original request. In addition, a <span class="xml-highlight">resultCode</span> will be always added and specific response information when that is required by the method. The <span class="xml-highlight">resultCode</span> will be a string field with values from the table below:</p>
+<p>Response should contain all the same fields as the original request. In addition, a <span className="xml-highlight">resultCode</span> will be always added and specific response information when that is required by the method. The <span className="xml-highlight">resultCode</span> will be a string field with values from the table below:</p>
 <p>**Result-codes.png IMAGE GOES HERE.**</p>
 
 <h2>Note:</h2>
@@ -1415,10 +1415,10 @@ Messages include the following:</p>
 <p>In order to ensure the integrity of data, all messages can optionally (enabled per client) have a HTTP header named Authorization with a key and a hash of the entire payload.</p>
 <p><strong>NOTE: Unless otherwise declared – this is applicable to all the methods of the API.</strong></p>
 <p>Example</p>
-<p>Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B</p>
+<p>Authorization: CS-HMAC-SHA-256 Terminal="0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B</p">
 <p>**Structure.png IMAGE GOES HERE.**</p>
 
-<h2>Method</h2>
+<h2>method</h2>
 <p>To calculate the checksum, the payload is treated as a single UTF-8 byte stream, excluding surrounding space characters, if any. The resulting value is passed into HMAC function: HMAC(secret, payload), which signifies the HMAC-keyed hash algorithm using octet string represented by “secret” as the key and the octet string “payload” as the input string. The size of the result is the hash result size for the hash function in use. In this case, it is 32 octets for SHA-256 as mandated. The “secret” is associated with the Terminal value and shared in a separate communication medium prior to enactment of the API.</p>
 <p><em>All the examples supplied in the documentation calculate the authorization header using the non existing terminal 0061218987 with the password: 1234567890</em></p>
 <p>Example (javascript)</p>
@@ -1426,7 +1426,7 @@ Messages include the following:</p>
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
     "challenge": "123456",
     "customerReference": "12b6405c-1120-123b-b55b-12b8f5a46ac1",
@@ -1453,7 +1453,7 @@ curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
 "messageType":"cardholder.maskedContactDetails",
 "trackingNumber":"212345678900321",
@@ -1469,7 +1469,7 @@ STATUS 200 OK
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw '{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}'
 
 ```,```json
@@ -1486,7 +1486,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
 
 ```,```json
@@ -1495,7 +1495,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{“messageType":"digitization.activationmethods","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","trackingNumber":"162961400000233","walletIdentifier":"217","tokenRequestorId":"50139059239","digitizationPath":"GREEN","digitizedDeviceType":"00","walletRecommendation":"approve",
 "tokenizationPanSource":"card_on_file"}'
 
@@ -1503,7 +1503,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 {"resultCode":"0000","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.activationmethods","walletIdentifier":"217","activationMethods":[{"value":"555123451","type":1}],"trackingNumber":"162961400000233","tokenRequestorId":"50139059239"}
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-Type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
 
 ```,```json
 {"resultCode":"0000"}
@@ -1518,7 +1518,7 @@ const httpHeader = 'Authorization: CS-HMAC-SHA-256 Terminal=' + authorizationTer
 console.log(httpHeader)
 
 ```,```js
-Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
+Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
 ```
 
@@ -1527,7 +1527,7 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
     "challenge": "123456",
     "customerReference": "12b6405c-1120-123b-b55b-12b8f5a46ac1",
@@ -1554,7 +1554,7 @@ curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{
 "messageType":"cardholder.maskedContactDetails",
 "trackingNumber":"212345678900321",
@@ -1570,7 +1570,7 @@ STATUS 200 OK
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw '{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}'
 
 ```,```json
@@ -1587,7 +1587,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
 
 ```,```json
@@ -1596,7 +1596,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 ```,```json
 curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B' \
---header 'Content-Type: application/json' \
+--header 'Content-type: application/json' \
 --data-raw ‘{“messageType":"digitization.activationmethods","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","trackingNumber":"162961400000233","walletIdentifier":"217","tokenRequestorId":"50139059239","digitizationPath":"GREEN","digitizedDeviceType":"00","walletRecommendation":"approve",
 "tokenizationPanSource":"card_on_file"}'
 
@@ -1604,7 +1604,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 {"resultCode":"0000","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.activationmethods","walletIdentifier":"217","activationMethods":[{"value":"555123451","type":1}],"trackingNumber":"162961400000233","tokenRequestorId":"50139059239"}
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-Type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \--header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \--header 'Content-type: application/json' \--data-raw ‘{"messageType":"3DSecure.AppAuthentication","customerReference":"12e1234d-1234-123b-b12b-12d8f9a12ac7","trackingNumber":"123456700000004","transactionID":"123456-123456","purchaseAmount":"R100.00","amount":"10000", "merchant": "Itunes", "currency": "840"}'
 
 ```,```json
 {"resultCode":"0000"}
@@ -1619,9 +1619,9 @@ const httpHeader = 'Authorization: CS-HMAC-SHA-256 Terminal=' + authorizationTer
 console.log(httpHeader)
 
 ```,```js
-Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
+Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
 ```
 
-<p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API menu</a></p>
+<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API menu</a></p>
 </a></p></p></p></em></p></p></h2></p></p></p></strong></p></p></a></h2></li></li></ul></h2></p></span></span></p></a></h1></p></p></p></p></p></p></a></h2></p></p></p></p></p></p></p></p></p></p></p></p></a></p></a></h2></li></li></ul></p></p></p></p></p></p></p></li></li></li></li></ul></p></p></p></p></p></p></a></h1></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></span></span></p></section></a></h1></p></p></p></p></p></p></p></p></p></li></li></li></li></ul></p></p></p></p></span></span></p></a></h1></p></p></p></p></p></p></p></span></span></p></a></h1></p></p></p></p></p></p></p></p></p></p></p></strong></p></p></p></p></p></p></p></strong></p></span></span></p></a></h1></a></p></a></p></a></p></a></p></a></p></a></p></a></p></a></p></h2></strong></p></h2></p></a></p></h2></p></h2></a></strong></strong></strong></li></li></span></span></span></li></li></strong></li></strong></li></ul></h2></span></strong></p>

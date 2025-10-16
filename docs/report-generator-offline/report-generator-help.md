@@ -11,7 +11,7 @@ metadata:
 
 <h2>How to use Report Generator</h2>
 <ol>
-<li>Go to <a href="https://developer.sprint.paymentology.com/tools/report-generator/">Report Generator</a> under <a href="https://developer.sprint.paymentology.com/tools/">Tools</a></li>
+<li>Go to <a href="https:developer.sprint.paymentology.com/tools/report-generator/">Report Generator</a> under <a href="https:developer.sprint.paymentology.com/tools/">Tools</a></li>
 <li>Choose the date that you want to run the report for</li>
 <li>Choose the report that you want to run</li>
 <li>Click on “Generate Report” <strong>once</strong> and wait for the “Download File” popup to appear</li>

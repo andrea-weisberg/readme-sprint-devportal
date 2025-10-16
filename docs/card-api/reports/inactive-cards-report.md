@@ -20,6 +20,6 @@ metadata:
 <h2>Report sample</h2>
 <p>**InactiveCards_CampaignName_YYYY-MM-DD-YYYY-MM-DD-.png IMAGE GOES HERE.**</p>
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/InactiveCards_CampaignName_YYYY-MM-DD-YYYY-MM-DD.csv">InactiveCards_CampaignName_YYYY-MM-DD-YYYY-MM-DD.csv</a></p>
+<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/InactiveCards_CampaignName_YYYY-MM-DD-YYYY-MM-DD.csv">InactiveCards_CampaignName_YYYY-MM-DD-YYYY-MM-DD.csv</a></p>
 
 </a></p></p></h2></h2></h2></strong></li></strong></li></strong></li></ul></p></p>

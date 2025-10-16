@@ -10,9 +10,9 @@ metadata:
 <p>The way the offline PIN transactions differ from online PIN transactions is with online PIN, the PIN is encrypted and sent to Paymentology in an ISO message however with offline PIN transactions, we use different cardholder verification methods and checks to validate the transaction.</p>
 
 <h3>How to update the Offline PIN</h3>
-<ol class="ak-ol" data-indent-level="1">
+<ol className="ak-ol" data-indent-level="1">
 <li>
-<p data-renderer-start-pos="4217">The Issuer calls the <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/changepin/">ChangePIN</a> API</p>
+<p data-renderer-start-pos="4217">The Issuer calls the <a href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/changepin/">ChangePIN</a> API</p>
 </li>
 <li>
 <p data-renderer-start-pos="4306">We instantly update the online PIN, and record that the offline PIN needs to be updated</p>
