@@ -24,3 +24,4 @@ metadata:
 <li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/stop/">Stop</a> – Notification that a card was stopped</li>
 <li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/validatepin/">ValidatePIN</a> – Validate the PIN</li>
 </ul>
+</a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></ul></h2></strong></p></p>

@@ -36,3 +36,4 @@ metadata:
 <h2>Report sample</h2>
 
 <p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/CampaignName_ApplePay-Declines-Report-MONTH-YYYY.xls">CampaignName_ApplePay Declines Report MONTH YYYY.xls</a></p>
+</a></p></h2></h2></h2></em></strong></em></em></strong></li></strong></li></strong></li></em></strong></em></em></strong></li></strong></li></strong></li></li></li></li></li></li></li></li></ul></strong></li></ul></p></p></p></p>

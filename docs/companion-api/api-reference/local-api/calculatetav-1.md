@@ -164,3 +164,4 @@ metadata:
 <p> </p>
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
+</a></p></p></string></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></string></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p>

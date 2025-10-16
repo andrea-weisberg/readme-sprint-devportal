@@ -18,3 +18,4 @@ metadata:
 <h2>Error response code 500</h2>
 <p>An error response code of 500 will contain an error response message with the “responseCode” and “responseMessage”. Below is the full list of responses that may be returned.</p>
 
+</p></h2></strong></li></strong></li></ul></p></h2></p></h2>

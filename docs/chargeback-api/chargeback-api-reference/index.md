@@ -18,3 +18,4 @@ metadata:
 <li><a href="https://developer.sprint.paymentology.com/chargeback-api/chargeback-api-reference/query-chargeback/">Query Chargeback</a> – Used to query chargeback data.</li>
 </ul>
 
+</a></li></a></li></a></li></a></li></a></li></a></li></a></li></ul></h1></p>

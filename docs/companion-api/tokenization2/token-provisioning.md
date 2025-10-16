@@ -104,3 +104,4 @@ metadata:
 <p>This occurs when Paymentology informs the XPay wallet that there is an error during the provisioning process.</p>
 <p>An exception can be thrown when the OTP activation code retries have been exceeded, an expired activation code was used, an invalid activation code was used, or an incorrect activation code was entered.</p>
 </section>
+</p></p></a></b></li></ol></p></b></p></p></a></b></li></ol></p></b></p></p></a></b></li></ol></p></b></p></b></p></p></b></p></p></p></a></b></li></ol></p></p></a></b></li></a></b></li></a></b></li></a></b></li></ul></b></p></b></p></p></li></li></ul></a></p></b></p></a></b></a></p></p></p></p></b></h2></section></li></li></li></li></li></ol></p></p></p></p></h3></p></p></b></p></p></p></h3></p></p></li></li></ul></p></p></p></b></h2></p></b></li></b></li></ul></p></b></h2></b></p></b></p></b></b></p></b></p></b></p></b></p></p></p></p>

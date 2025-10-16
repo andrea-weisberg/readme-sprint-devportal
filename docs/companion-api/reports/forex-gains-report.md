@@ -29,3 +29,4 @@ metadata:
 <p>**Forex-Gains1.png IMAGE GOES HERE.**</p>
 
 <p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/DailyForexReport_CAMID_YYYY_MM_DD.xls">DailyForexReport_CAMID_(YYYY_MM_DD).xls</a></p>
+</a></p></p></p></h2></h2></h2></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></ul></div></div></div></div>

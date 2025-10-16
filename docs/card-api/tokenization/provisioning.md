@@ -79,3 +79,4 @@ metadata:
 <p>Once the cardholder selects their preferred method of verification, the XPay wallet will send this information to the MDES, and the MDES will send it to Paymentology.</p>
 <p>Paymentology will then send an activation code via <b>Digitization.activation</b> to the client. The client will then pass an OTP to the cardholder, through their preferred contact method, to input it on their XPay wallet app.</p>
 <p> </p>
+</p></b></p></p></b></a></li></ol></p></b></p></b></p></p></b></p></p></p></b></a></li></ol></p></a></li></a></li></a></li></a></li></ul></p></b></p></a></b></a></p></p></b></h2></li></li></li></li></li></ol></p></p></p></p></h3></p></p></b></a></p></p></p></h3></p></p></li></li></ul></p></p></b></h2></p></b></li></b></li></ul></p></b></h2></b></p></b></p></a></b></b></b></b></section></b></section></p></p></p>

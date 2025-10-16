@@ -51,3 +51,4 @@ metadata:
 
 <h2>10. Retiring a card</h2>
 <p>To cancel (retire) your card permanently, you’ll need to make a call to the <span class="xml-highlight">RetireCard</span> method. You should ensure the funds are removed from the card before it is retired. Once retired, the card will not be able to be used again.</p>
+</span></p></h2></span></p></h2></span></p></h2></span></p></h2></span></p></h2></span></p></h2></span></p></h2></p></span></p></h2></span></p></h2></span></p></h2></p></li></li></li></li></li></li></li></li></li></li></ul></p></strong></p>

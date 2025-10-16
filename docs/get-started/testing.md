@@ -81,3 +81,4 @@ metadata:
 
 <h2>Need help?</h2>
 <p>In case you’re experiencing any integration issues, do not hesitate to <a href="https://developer.sprint.paymentology.com/contact-us/">get in touch</a></p>
+</a></p></h2></strong></p></li></p></li></p></li></p></li></ul></strong></h2></p></p></li></strong></strong></p></li></p></li></p></li></p></li></ul></strong></h2></p></strong></p></h1></a></strong></li></strong></li></strong></li></ul></p></h2></a></li></a></li></a></li></ul></h3></p></li></li></li></ul></h3></li></li></span></strong></span></span></span></li></ul></div></div></div></div></div></h2></strong></p>

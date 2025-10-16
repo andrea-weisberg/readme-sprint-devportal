@@ -35,3 +35,4 @@ metadata:
 
 <h2><a id="status"></a>6. Getting the status on a card</h2>
 <p>To retrieve the status of a card that is linked to a unique customer reference number, you’ll need to make a call to the <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/#Status"><span class="xml-highlight">Status</span></a> method​​.</p>
+</span></a></p></a></h2></em></span></a></p></a></h2></span></a></p></a></h2></span></a></span></p></a></h2></span></a></p></a></h2></span></a></p></a></h2></span></p></a></li></a></li></a></li></a></li></a></li></a></li></ul></span></p></strong></p>

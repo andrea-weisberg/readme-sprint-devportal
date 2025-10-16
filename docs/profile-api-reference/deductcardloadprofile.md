@@ -37,3 +37,4 @@ metadata:
 | resultText | String | <p>Text indicating transaction result</p> |
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Reference</a></p>
+</a></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>

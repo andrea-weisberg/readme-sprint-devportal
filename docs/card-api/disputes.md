@@ -79,3 +79,4 @@ metadata:
 <li>UPI – FRM</li>
 </ul>
 <p>If a transaction was processed with <a href="https://developer.sprint.paymentology.com/companion-api/manage-funds/3d-secure/">3D Secure</a>, we are not able to submit a Fraud chargeback therefore, the first step is to establish if there was a 3D Secure validation done.</p>
+</a></p></li></li></li></ul></p></p></h1></a></p></p></p></h1></a></p></a></p></p></p></h1></p></h1></li></li></li></li></li></li></ul></h2></li></li></li></li></li></ul></h2></li></li></ol></p></h1></p></h2></p></h2></p></p></h2></h1></strong></li></strong></li></strong></li></ol></h2></p></h1>

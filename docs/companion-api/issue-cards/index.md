@@ -47,3 +47,4 @@ metadata:
 
 <p><strong>Note: </strong>Since it would take a few days for the card manufacturer to fulfill the order, using step 2 should be done one day after step 1.</p>
 <p> </p>
+</p></strong></p></p></h3></p></strong></p></p></h3></p></a></h2></p></strong></strong></p></li></li></li></ul></p></p></p></span></p></span></h2></span></a></p></span></p></p></span></p></span></p></div></span></h2></h2>

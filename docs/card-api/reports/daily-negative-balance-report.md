@@ -35,3 +35,4 @@ metadata:
 <p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2024/10/DailyNegativeBalanceReportOnChargebackQueue_CampaignName_YYYYMMDD.csv">DailyNegativeBalanceReportOnChargebackQueue_CampaignName_YYYYMMDD.csv</a></p>
 
 <p><a class="btn btn--primary" href="#https://developer.sprint.paymentology.com/card-api/reports/">Back to Card API Reports</a></p>
+</a></p></a></p></h2></h2></h2></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></ul></p></li></li></ul></p>

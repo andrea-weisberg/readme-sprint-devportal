@@ -180,3 +180,4 @@ metadata:
 <p> </p>
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/">Back to Remote API menu</a></p>
+</a></p></p></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></int></value></string></value></string></value></params></methodname></methodcall></p></p></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></int></value></string></value></string></value></params></methodname></methodcall></p></p></em></p></p></a></p></p></p></p></p></p></p></p>

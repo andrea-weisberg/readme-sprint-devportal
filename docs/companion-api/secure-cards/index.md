@@ -25,3 +25,4 @@ metadata:
 <p><span style="font-weight: 400;">Your customers will require a PIN (personal identification number) for all ATM transactions. A secret PIN assists in verifying your users’ identity and allowing them to perform secure transactions.</span></p>
 <p><span style="font-weight: 400;">There are two options for managing your PIN: <strong>Paymentology manages the PIN</strong> or <strong>you manage the PIN</strong></span></p>
 
+</strong></strong></span></p></span></p></h2></p></span></p></strong></span></p></strong></span></p></h2></span></li></span></li></ul></span></p></strong></p></div>

@@ -174,3 +174,4 @@ metadata:
 ```
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to  Local API MENU</a></p>
+</a></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></boolean></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></boolean></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>

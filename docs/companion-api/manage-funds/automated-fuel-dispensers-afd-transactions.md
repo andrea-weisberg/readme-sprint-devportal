@@ -53,3 +53,4 @@ metadata:
 <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Paymentology processes the confirmation advice and checks if there is a pending balance from the original authorization</span></li>
 <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Paymentology sends a reversal to the wallet provider for the balance of the original pre-authorization amount. </span></li>
 </ol>
+</span></li></span></li></span></li></span></li></span></li></span></li></span></li></span></li></span></li></ol></p></h2></span></li></span></li></span></li></ul></b></h2></span></p></b></li></ul></span></p></b></li></ul></span></p></span></p></b></li></ul></span></p></b></li></ul></span></p></b></li></ul></b></h2></span></span></span></p></span></p></span></p>

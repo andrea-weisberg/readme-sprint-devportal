@@ -56,3 +56,4 @@ metadata:
 <p><strong>This is an example of a Digital First card powered by Paymentology Sprint for our client Grab in Asia</strong></p>
 <p>**Grab-numberless-card.jpeg IMAGE GOES HERE.**</p>
 <p><em>Image credit: Grab</em></p>
+</em></p></p></strong></p></span></span></a></b></li></span></span></a></strong></li></strong></span></span></a></strong></li></ul></b></li></ul></span></p></span></span></a></span></p></h2></span></li></span></li></span></li></ul></span></p></h3></p></span></p></a></span></p></a></span></p></h3></p></span></p></h3></p></span></p></h3></p></span></p></span></p></h2></span></p></span></p></span></p></span></p></span></p></h2></span></p></h2></strong></p>

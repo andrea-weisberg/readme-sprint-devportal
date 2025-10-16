@@ -37,3 +37,4 @@ metadata:
 </ol>
 
 <p>You can find a list if SimPOS Response codes <a href="https://developer.sprint.paymentology.com/tools/simpos/simpos-result-codes/">here</a>.</p>
+</a></p></strong></li></strong></li></li></li></strong></span></li></strong></li></a></a></li></ol></h2></li></li></li></li></strong></li></ul></p></h2></li></strong></strong></strong></li></strong></li></strong></li></li></ul></p></h2>

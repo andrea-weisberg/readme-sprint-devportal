@@ -44,3 +44,4 @@ metadata:
 <li>Click on “<strong>Submit</strong>“</li>
 <li>Wait for the “<strong>Transaction result pop-up</strong>” that will contain the XML response</li>
 </ol>
+</strong></li></strong></li></li></li></a></a></li></ol></h2></li></li></ul></p></h2></p></p></h2></strong></li></strong></li></strong></li></li></li></li></a></a></li></ol></h2></li></li></li></ul></h2></strong></p></p></h2>

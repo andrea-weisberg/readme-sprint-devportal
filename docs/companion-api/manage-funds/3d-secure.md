@@ -39,3 +39,4 @@ metadata:
 <li>The ACS provider sends a message to the card scheme’s AHS server to confirm that validation took place so that there is a history of the validation</li>
 </ol>
 <p>The merchant then sends the transaction (with he UCAF/CAVV information in the transaction message) to the card scheme for authorization like any other transaction. The card scheme then sends the information to Paymentology. Paymentology validates the UCAF/CAVV information and then perform all other relevant checks on the card for an authorization request.</p>
+</p></li></strong></strong></li></li></li></li></li></li></li></li></li></li></li></ol></p></p></a></span></strong></li></a></span></strong></li></ul></em></p></em></em></li></li></li></ul></p></strong></p>

@@ -63,3 +63,4 @@ metadata:
 <ul>
 <li style="font-weight: 400;"><a href="https://developer.sprint.paymentology.com/card-api/reports/daily-sales-and-redemption-report/"><span style="font-weight: 400;">Daily sales and redemption report</span></a></li>
 </ul>
+</span></a></li></ul></p></h3></span></a></li></span></a></li></span></a></li></ul></p></h3></span></a></li></span></a></li></span></a></li></ul></p></h3></span></a></li></ul></p></h3></a></li></a></li></a></li></a></li></a></li></a></li></ul></p></h3></h2></span></a></li></span></a></li></span></a></li></span></a></li></span></a></li></span></a></li></span></a></li></span></a></li></span></a></li></span></a></li></span></a></li></ul></p></strong></span></p></div>

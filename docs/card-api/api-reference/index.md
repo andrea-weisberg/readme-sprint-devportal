@@ -71,3 +71,4 @@ metadata:
 <li><a href="https://developer.sprint.paymentology.com/remotemessaging/#event">digitization.event</a></li>
 <li><a href="https://developer.sprint.paymentology.com/remotemessaging/#responsereference">Response Reference</a></li>
 </ul>
+</a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></ul></p></a></h1></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></em></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></a></li></ul></h1></strong></p></p>

@@ -24,3 +24,4 @@ metadata:
 <p data-renderer-start-pos="4575">In the following transaction, if it specifies that the previous attempt to update the issuer script fails, we will mark the update as needing reprocessing again</p>
 </li>
 </ol>
+</p></li></p></li></p></li></a></p></li></ol></h3></p></p>

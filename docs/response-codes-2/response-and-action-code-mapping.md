@@ -10,3 +10,4 @@ metadata:
 
 <h2>Response and action code mapping table</h2>
 
+</h2></a></a></p></p>

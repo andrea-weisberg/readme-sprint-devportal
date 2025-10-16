@@ -23,3 +23,4 @@ metadata:
 <p>**CampaignName_Linked_Cards_YYYYMMDD-.png IMAGE GOES HERE.**</p>
 
 <p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_Linked_Cards_YYYYMMDD.csv">CampaignName_Linked_Cards_YYYYMMDD.csv</a></p>
+</a></p></p></h2></h2></h2></p></strong></strong></li></strong></li></strong></strong></li></strong></li></ul></p></p>

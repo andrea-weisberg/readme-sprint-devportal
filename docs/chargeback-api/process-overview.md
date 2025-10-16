@@ -63,3 +63,4 @@ The pre-arbitration case must be for a lesser second presentment amount or the e
 
 <h3><a id="step 5"></a>Step 5: Arbitration case</h3>
 <p>The arbitration case filing step escalates the issue to Mastercard. Mastercard will then examine the evidence provided by both the issuer and the acquirer to determine the party that carries the day.</p>
+</p></a></h3></p></a></h3></p></a></h3></p></a></h3></h4></p></a></h3></h2></li></li></li></li></ul></p></p></h2></p></h2>

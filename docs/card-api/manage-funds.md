@@ -63,3 +63,4 @@ If you want to reverse the funds transferred to a pocket, for any reason, and th
 <h2>10. Reversing a devalue​​​</h2>
 <p>If you want to reverse the devaluing of funds from a card or pocket balance, for any reason, then you can initiate a reversal process. ​Once successful, the devalued amount will be credited to the card or pocket balance.</p>
 <p>You’ll need to make a call to the​ <span class="xml-highlight">DevalueReverse</span> method.</p>
+</span></p></p></h2></span></p></p></h2></span></span></p></p></span></h2></span></p></p></h2></span></p></p></h2></span></p></p></h2></span></p></p></h2></span></p></p></h2></span></p></p></h2></span></p></p></p></h2></p></li></li></li></li></li></li></li></li></li></li></ul></strong></p>

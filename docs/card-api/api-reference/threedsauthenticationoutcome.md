@@ -36,3 +36,4 @@ metadata:
 | resultCode | Integer | <p>Code indicating transaction result</p> |
 | resultText | String | <p>Text indicating transaction result</p> |
 
+</p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>

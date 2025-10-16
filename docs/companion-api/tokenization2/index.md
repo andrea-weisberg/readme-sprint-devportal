@@ -25,3 +25,4 @@ metadata:
 <h2><b>Terminology</b></h2>
 <p><span style="font-weight: 400;">Here is a table describing the common phrases used in the tokenization process. </span></p>
 
+</span></p></b></h2></span></li></span></li></span></li></span></li></ul></b></h2></strong></span></li></strong></span></li></ul></span></p></span></p></span></p></span></p>

@@ -49,3 +49,4 @@ metadata:
 <div data-element="para" data-attr-xinfo-text="10356"></div>
 <div class="placeholder">​</div>
 <div class="block translation" data-element="para" data-attr-xinfo-text="10356">To add multiple pockets to your card, you’ll need to make a call to the <span class="inline link linktool link-external" data-element="link" data-attr-xlink-href="https://developer.sprint.paymentology.com/card/documentation/card-api#addpocket"><em><span style="color: #0000ff;">​</span></em><span class="xml-highlight">AddPocket</span> method​.</span></div>
+</span></span></em></span></div></div></div></span></div></div></div></span></h2></span></span></div></div></div></div></span></h2></span></div></div></div></div></div></div></span></h2></span></span></div></div></div></span></span></div></div></div></div></div></div></span></h2></p></p></li></li></li></li></ul></p></strong></p>

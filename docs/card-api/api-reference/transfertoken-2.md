@@ -178,3 +178,4 @@ metadata:
 <p> </p>
 
 <p><span style="background-color: #bfe6ff;"><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></span></p>
+</a></span></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p>

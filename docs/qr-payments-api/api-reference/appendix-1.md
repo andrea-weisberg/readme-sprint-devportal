@@ -76,3 +76,4 @@ Any transaction amount is represented as its cent value; therefore an integer ra
 <pre><struct/></pre>
 <p>or:</p>
 <pre><struct><member><name>recipientPostalCode</name><value><string>10260</string></value></member></struct></pre>
+</pre></p></pre></p></pre></p></li></li></ul></p></p></p></p></pre></p></p></h2></a></p></pre></p></pre></p></p></li></li></ul></pre></p></pre></p></p></h2></a></p></pre></p></pre></li></li></li></ul></li></ul></p></a></li></ul></pre></li></ul></p></h2></a></p>

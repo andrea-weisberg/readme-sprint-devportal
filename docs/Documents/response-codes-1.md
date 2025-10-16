@@ -22,3 +22,4 @@ metadata:
 <li>R100.50 is therefore represented as 10050 rand cents.</li>
 <li>$10.50 is therefore represented as 1050 dollar cents.</li>
 </ul>
+</li></li></ul></p></span></p></p></span></p></p></span></span></span></span></p></p></span></p></h2>

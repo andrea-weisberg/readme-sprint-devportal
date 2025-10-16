@@ -17,3 +17,4 @@ metadata:
 <p><b>Step 6: </b>Paymentology sends the authorization response to the card network.</p>
 <p><b>Step 7: </b>The card network substitutes the PAN back to the token and sends the response to the acquirer and to the merchant.</p>
 <p><b>Step 8</b>: The merchant and the acquiring bank coordinate to finalize the transaction.</p>
+</b></p></b></p></b></p></b></p></b></p></b></p></b></p></b></p></p></p></p>

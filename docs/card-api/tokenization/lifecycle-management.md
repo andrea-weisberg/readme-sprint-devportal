@@ -57,3 +57,4 @@ metadata:
 <p>Note that a 3-digit numeric value represents the IDs.</p>
 <p>Notably, the digital wallets handle token provisioning differently. For example, Apple Pay and Google Pay work in the same way. So, for manual provisioning, an OTP will be issued, and they’ll be no OTP for push provisioning.</p>
 <p>However, Samsung Pay does not issue an OTP, either for manual provisioning or push provisioning. So, during manual provisioning, Paymentology will just notify the client via <b><a href="https://developer.sprint.paymentology.com/administrative-message-values/#complete">Digitization.complete</a> </b>of the successful tokenization of the cardholder’s card on Samsung Pay.</p>
+</a></b></p></p></p></p></p></h2></p></a></b></li></ol></p></p></b></a></li></ol></p></p></b></a></li></ol></p></p></b></a></li></ol></p></p></b></a></li></ol></p></p></a></li></a></li></a></li></a></li></a></li></ul></b></p></b></b></b></p></li></li></li></li></li></ul></p></p>

@@ -24,3 +24,4 @@ metadata:
 <li><a href="https://developer.sprint.paymentology.com/companion-api/tokenization2/">Make Tokenized payments</a></li>
 <li><a href="https://developer.sprint.paymentology.com/companion-api/reports/">Generate reports</a></li>
 </ul>
+</a></li></a></li></a></li></a></li></a></li></a></li></a></li></ul></h4></p></strong></strong></p></strong></p></p></strong></span></p></h2>

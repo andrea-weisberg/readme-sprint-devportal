@@ -53,3 +53,4 @@ metadata:
 <li><strong>Chargeback<br />
 </strong>A chargeback is the return of funds for a deduct transaction that was previously processed from a cardholder’s card balance, due to a successful dispute by the consumer regarding the transaction. Read about Chargeback related Dispute handling <a href="https://developer.sprint.paymentology.com/companion-api/disputes/">here</a></li>
 </ol>
+</a></strong></li></a></strong></li></a></strong></li></ol></a></h1></a></p></a></p></a></p></h2></a></p></p></p></p></h2></h1></p></li></li></li></li></li></a></a></li></li></li></li></ul></h2></strong></strong></a></a></strong></a></strong></strong></p></h2></p></h2></h2></p></b></p>

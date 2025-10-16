@@ -67,3 +67,4 @@ metadata:
 <li aria-level="1"><b>Single settings—</b><span style="font-weight: 400;">these are used to manage single card programs, such as one BIN, one VISA SRE, for small to medium clients. They are also billed individually per setting. </span></li>
 </ul>
 <p> </p>
+</p></span></b></li></span></b></li></ul></span></p></p></span></b></b></li></span></span></b></li></ul></span></p></p></p></p></p></span></p></p></span></p></b></li></span></span></span></a></span></b></b></li></ul></span></b></b></li></ul></span></b></b></li></ul></span></b></b></li></ul></span></b></b></li></ul></span></b></b></li></ul></span></b></b></li></ul></span></b></b></li></span></span></span></b></li></ul></span></p></span></p></span></p></span></p>

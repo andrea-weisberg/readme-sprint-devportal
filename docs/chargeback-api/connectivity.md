@@ -15,3 +15,4 @@ Connecting to the Chargeback API means you can automate submissions of your char
 
 <h4>Other response codes</h4>
 <p>Further response codes and details can be found <a href="https://developer.sprint.paymentology.com/chargeback-api/response-codes/">here</a>.</p>
+</a></p></h4></a></strong></em></p></h2></h2></p>

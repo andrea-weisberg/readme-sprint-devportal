@@ -21,3 +21,4 @@ metadata:
 <li>Click “Submit”</li>
 <li>Wait for the “Transaction Result Pop-up” that will display the calculated checksum together with the details behind the calculation</li>
 </ol>
+</li></li></li></li></a></a></li></ol></h2></code></p></p></span></p></p></h2></p></h2>

@@ -45,3 +45,4 @@ metadata:
 <h2>Report sample</h2>
 
 <p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2024/02/CampaignName_DailySalesRedmeptionStatement-YYYY-MM-DD.csv">CampaignName_DailySalesRedmeptionStatement YYYY-MM-DD.csv</a></p>
+</a></p></h2></h2></h2></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></ul></strong></li></strong></li></strong></li></strong></li></strong></li></ul></strong></li></strong></li></strong></li></strong></li></strong></strong></li></strong></li></strong></li></ul></p></p>

@@ -91,3 +91,4 @@ MessageType: <a href="https://developer.sprint.paymentology.com/card-api/api-ref
 
 <h3>In Summary:</h3>
 <p>This secure and advanced authentication method ensures a seamless and secure transaction process, reinforcing the security apparatus by involving distinct communication channels for verification, thereby fostering enhanced security in online transactions. It is recommended for Paymentology clients aiming for robust and secure 3DS transaction processing.</p>
+</p></h3></p></strong></a></p></li></a></strong></p></li></ul></p></li></p></li></ul></p></li></a></li></a></li></ul></strong></p></li></ul></p></h3></p></strong></p></li></strong></p></li></a></strong></li></a></strong></p></li></ul></p></li></ul></strong></p></h3></p></h2></strong></li></strong></li></ol></h3></strong></li></strong></li></strong></li></strong></li></ul></p></h3></p></p></p></h3></p></p></h2>
