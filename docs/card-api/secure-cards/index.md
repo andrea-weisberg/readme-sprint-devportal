@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api
 ---
 <p><strong>The Sprint Card API allows you to access a wide range of features to ensure the security of card transactions.</strong></p>
 <p>Here are the main features to use to ensure the security of your cards:</p>

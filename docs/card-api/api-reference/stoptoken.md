@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <p>Stops a token reference or all the ones linked to a card. The token or tokens can be unstopped using UnStopToken.</p>
 

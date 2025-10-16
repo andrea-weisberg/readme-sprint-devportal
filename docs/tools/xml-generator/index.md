@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: tools
 ---
 <div class="block translation highlight" data-element="para" data-attr-xinfo-text="10919"><span class="inline link linktool link-external current" title="" data-element="link" data-attr-xlink-href="https://developer.sprint.paymentology.com/tools/xmlrpcexamples/xmlrpcexampleshelp" data-original-title="" aria-describedby="popover382514">The <strong>XML Generator</strong>​</span>​ allows you to generate a valid XML request (including a checksum string) from your request parameters.</div>
 <div class="placeholder">​</div>

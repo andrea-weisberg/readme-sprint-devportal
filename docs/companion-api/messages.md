@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api
 ---
 <p><strong>These are two types of messages that Paymentology Sprint can send to a client:</strong></p>
 <p> </p>

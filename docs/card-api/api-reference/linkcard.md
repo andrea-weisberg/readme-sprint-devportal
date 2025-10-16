@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <p>Link an existing card to a given customer reference.</p>
 

@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <p>Order a card for a specific cardholder. A card can be printed with cardholder details by the card manufacturer. No commas, question marks or quotation marks are allowed in any of the fields.</p>
 

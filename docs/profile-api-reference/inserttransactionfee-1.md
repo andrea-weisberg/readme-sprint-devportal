@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p class="method">Deduct requested amount from card as a fee using one of the following (integer) fee type IDs:</p>
 <ol>

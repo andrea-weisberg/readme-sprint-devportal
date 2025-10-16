@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/local-api
 ---
 <p>Update the specified card’s bearer details.</p>
 <p><a href="#version2.4">Version 2.4</a></p>

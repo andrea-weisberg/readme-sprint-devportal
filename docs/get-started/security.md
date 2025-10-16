@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: get-started
 ---
 <p><b>Security is central to everything we do at Paymentology</b></p>
 <p><span style="font-weight: 400;">These are the measures Paymentology implements to ensure the <span style="color: #79dbbf;">security</span> of  Sprint’s API services:</span></p>

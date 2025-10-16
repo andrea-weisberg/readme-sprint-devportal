@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference
 ---
 <p>The Local API contains all the methods available for you to call Paymentology in order to perform the necessary actions on your cards. It includes methods that allow the SVA to create a virtual card, stop a card, or link a physical card. Local API calls are initiated by you.</p>
 <p>The Local API is used for administration purposes.</p>

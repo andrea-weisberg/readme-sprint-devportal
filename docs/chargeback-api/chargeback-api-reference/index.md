@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: chargeback-api
 ---
 <p>The Chargeback API contains the endpoints that you call in order to create chargebacks as well as maintain the chargeback lifecycle.</p>
 

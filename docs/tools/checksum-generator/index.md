@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: tools
 ---
 <div class="block translation highlight" data-element="para" data-attr-xinfo-text="10930"><span class="inline link linktool link-external current" title="" data-element="link" data-attr-xlink-href="https://developer.sprint.paymentology.com/tools/checksum/checksumhelp" data-original-title="" aria-describedby="popover668877">​The Checksum Generator​</span>​ allows you to calculate the checksum for a transaction based on a terminal password value and the request data.</div>
 <div class="placeholder">​</div>

@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/remote/administrativemessage
 ---
 <p>Values for the <span class="xml-highlight">messageName</span> field</p>
 <ul>

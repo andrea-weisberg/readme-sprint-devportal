@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: chargeback-api/chargeback-api-reference
 ---
 <p>This API method is used to upload a supporting document after a chargeback is successfully created.</p>
 

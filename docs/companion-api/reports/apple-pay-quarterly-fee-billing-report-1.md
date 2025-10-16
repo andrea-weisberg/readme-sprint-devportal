@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/reports
 ---
 <p data-pm-slice="1 1 []">For clients using Paymentology’s tokenization, Paymentology can issue a quarterly report to clients to utilize the report data to compile their Apple report through the Apple Partner Connect platform.</p>
 <p>The report includes the following details:</p>

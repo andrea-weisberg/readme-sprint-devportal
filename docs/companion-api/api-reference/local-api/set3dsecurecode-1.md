@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/local-api
 ---
 <p>Set 3D Secure Code of the specified card.</p>
 

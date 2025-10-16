@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <p>Return a list of all cards that are linked to the customer reference.</p>
 

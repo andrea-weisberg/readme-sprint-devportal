@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p>Update the cardholder details.</p>
 <p>This is an extended API to update additional details like address and employment details. Use <a href="https://developer.sprint.paymentology.com/profile-api-reference/updatebearer/">UpdateBearer</a> in case you only need to update details like name and contact details.</p>

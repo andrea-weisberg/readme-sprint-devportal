@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <p>Add a pocket for the type indicated by UUID to a card identified by tracking number</p>
 

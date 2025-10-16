@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p class="method">Load a card with the requested amount and deduct the amount off the profile.</p>
 

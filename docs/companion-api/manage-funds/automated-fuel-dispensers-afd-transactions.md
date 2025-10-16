@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/manage-funds
 ---
 <p><span style="font-weight: 400;">Automated Fuel Dispensers (AFD) are unattended terminals at fuel stations that allow cardholders to purchase fuel without requiring an attendant. The emergence of AFD transactions has revolutionized the fuel purchase industry and greatly benefitted both merchants and customers.</span></p>
 <p><span style="font-weight: 400;">In the past, fueling was a tedious process—an attendant had to manually pump the requested amount of fuel, usually resulting in lines and customer queues. However, AFDs has turned this around—no more direct engagements with staff and other time-consuming hassles.</span></p>

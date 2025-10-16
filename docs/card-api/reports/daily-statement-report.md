@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/reports
 ---
 <p>The daily statement report can be used by client’s to assist with their reconciliation and program activity reporting.</p>
 <p>The report includes the following details:</p>

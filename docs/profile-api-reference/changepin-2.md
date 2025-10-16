@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p>Change the pin on the card associated with the customer reference and tracking number</p>
 

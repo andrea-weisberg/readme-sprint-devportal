@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/remote
 ---
 <p><a href="#Tokenization">Administrative Message – Tokenization</a> – Sends tokenization related messages to the client.</p>
 <p><a href="#3DSecure">Administrative Message – 3D Secure OTP</a> – Sends message with 3D Secure OTP.</p>

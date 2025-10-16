@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/tokenization2
 ---
 <p><span style="font-weight: 400;">The Visa Token Service (VTS) is a Visa-powered security technology that substitutes sensitive account data, such as the 16-digit account number, with a unique token that safeguards the underlying card details from being compromised. This greatly improves the security of digital transactions and provides customers with a seamless purchasing experience.  </span></p>
 <p><span style="font-weight: 400;">Paymentology supports the Visa’s tokenization technology. We have leveraged VTS to offer our clients with simple, fast and secure token management services.</span></p>

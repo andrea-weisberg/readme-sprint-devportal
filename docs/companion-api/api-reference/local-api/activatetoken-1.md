@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/local-api
 ---
 <p>Used to activate a token for a digitization that has been approved and provisioned, but requires additional cardholder authentication prior to activation. It is expected that a cardholder will complete the authentication process using an issuer’s call center or using an issuer-supplied mobile application, and only then should the issuer use this API to activate the token.</p>
 

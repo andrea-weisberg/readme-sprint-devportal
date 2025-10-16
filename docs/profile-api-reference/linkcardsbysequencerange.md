@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p class="method">Link multiple cards to a profile using a range of sequence numbers.</p>
 

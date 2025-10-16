@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/local-api
 ---
 <p>Create a new, active virtual card and link it to a reference with the given bearer details.</p>
 <p><strong>IMPORTANT:</strong></p>

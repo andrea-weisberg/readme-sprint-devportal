@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p class="method">Reverse a fee that was charged via the API using <a href="https://developer.sprint.paymentology.com/profile-api-reference/inserttransactionfee/">InsertTransactionFee</a></p>
 <p> </p>

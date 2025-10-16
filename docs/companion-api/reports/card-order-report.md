@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/reports
 ---
 \{/* spacing: desktop=40, mobile=20 */\}
 

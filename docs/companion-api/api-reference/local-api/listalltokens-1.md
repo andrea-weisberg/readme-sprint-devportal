@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/local-api
 ---
 <p>Returns all the tokens (active and inactive) linked to a card</p>
 

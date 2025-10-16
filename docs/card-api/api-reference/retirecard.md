@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <p>Permanently disable a card so that it is no longer returned for the customer reference in the ListCards method.</p>
 

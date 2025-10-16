@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/remote
 ---
 <p>This method can only return the result codes of 1 (success) or -9 (an error occurred while queuing the Reversal).</p>
 <p><strong>KLV will not be sent for reversals. Only reference data will be included if there is any. If KLV data is needed please lookup <a href="https://developer.sprint.paymentology.com/companion-api/klv-lookup/">KLV</a> from the reference data included.</strong></p>

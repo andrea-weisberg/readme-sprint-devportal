@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: tools
 ---
 <p>SimPOS is a transaction simulator tool that allows you to simulate remote API transactions.</p>
 <p>For example: you can use SimPOS to test that the flow of virtual card transactions within the Companion Card API is working properly.</p>

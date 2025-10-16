@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api
 ---
 <div class="block translation current highlight" data-element="para" data-attr-xinfo-text="10605">
 <p><strong>The Paymentology Sprint Companion API allows you to secure your cards and ensure the safety of transactions.</strong></p>

@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <p>Transfer funds from one card to another identified by tracking numbers, using pockets if applicable of the same type.</p>
 

@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api
 ---
 <p>In the payment industry sensitive data has a real importance. Confidentiality of the sensitive data is important even while processing transactions and should be kept private (encrypted).</p>
 <p>To achieve this we offer Secure API methods to support end to end encryption of data.</p>

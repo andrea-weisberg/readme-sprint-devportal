@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/remote
 ---
 <section id="tutuka-block-33" class="tutuka-block tutuka-block--text-full-width">Reverse a load that was previously requested on a wallet.<strong>KLV will not be sent for reversals. Only reference data will be included if there is any. If KLV data is needed please lookup <a href="https://developer.sprint.paymentology.com/companion-api/klv-lookup/">KLV</a> from the reference data included.</strong></p>
 </section>

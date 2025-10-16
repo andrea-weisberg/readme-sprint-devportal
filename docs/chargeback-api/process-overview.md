@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: chargeback-api
 ---
 <h2>Breakdown of the chargebacks process with Chargeback API</h2>
 <p>The Paymentology dispute resolution cycle facilitates the whole process of reversing payments to cardholders. Card transaction disputes usually start when a cardholder or an issuer identifies suspicious, fraudulent, or erroneous charges on accounts.<br />

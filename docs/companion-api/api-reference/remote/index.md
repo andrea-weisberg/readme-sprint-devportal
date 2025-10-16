@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference
 ---
 <p>The Remote API is hosted on your platform and allows us to call you to perform actions on your store of value/wallet e.g. Deducting/loading funds, balance inquiries, etc.</p>
 <p id="intro"><strong>Note:</strong> you will need to implement the relevant method names corresponding to the different calls in order to perform the necessary actions on your system.</p>

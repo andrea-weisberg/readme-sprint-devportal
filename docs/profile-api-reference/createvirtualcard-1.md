@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p>Create a virtual card with specified amount loaded, linked to the specified profile and allocated to the profile owner.</p>
 

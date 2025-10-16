@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/manage-funds
 ---
 <p><strong>3D Secure (Three-Domain Secure) is an additional authentication step which provides an added layer of security for online card transactions by reducing the risk of unauthorized card use due to the card not being physically present.</strong></p>
 <p>The three domains involved in the 3D Secure protocol are:</p>

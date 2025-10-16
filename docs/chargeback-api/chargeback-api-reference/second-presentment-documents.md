@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: chargeback-api/chargeback-api-reference
 ---
 <p>Once in the 2nd Presentment phase, this API method is used to receive the supporting documents raised by the acquirer for a claim.</p>
 

@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <section id="tutuka-block-63" class="tutuka-block tutuka-block--text-full-width">Deducts the requested amount from a card, or pocket if specified, with a redemption type of “Devalue”.</section>
 

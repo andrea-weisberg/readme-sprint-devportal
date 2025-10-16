@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/tokenization2
 ---
 <p>Today, digital devices are an increasingly popular way of making payments. Mobile phones, smartwatches, tablets, and other smart devices rely on tokenization to ensure payments are fast, simple, and secure.</p>
 <p>Consumers usually set up digital wallets, such as Apple Pay or Google Pay, on these devices to enable them to make payments. The digital wallets usually contain the bank details associated with their debit cards and credit cards. So, instead of using physical cards for paying for things, they can conveniently complete transactions via their digital devices.</p>

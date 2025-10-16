@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/reports
 ---
 <p>A report which includes all Loads, Redemptions, Authorization, Fees that takes place on a voucher/card.</p>
 <p>The report includes the following details:</p>

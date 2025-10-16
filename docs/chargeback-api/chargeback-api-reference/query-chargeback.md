@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: chargeback-api/chargeback-api-reference
 ---
 <p>This method is used to query chargeback data from Paymentology.</p>
 

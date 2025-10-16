@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: tools/checksum-generator
 ---
 <h2 id="intro">About the Checksum Generator</h2>
 <p>The Checksum Generator is used to verify that the checksum calculation is correct and that it arrives at the same checksum result as our system.</p>

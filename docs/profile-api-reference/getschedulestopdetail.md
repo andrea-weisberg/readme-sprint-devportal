@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p>Returns the existing scheduled stops for a card. The response may return multiple records but only one of them can be in ‘SCHEDULED’ state.</p>
 

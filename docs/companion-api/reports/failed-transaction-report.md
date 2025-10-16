@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/reports
 ---
 <div class="block translation current highlight" data-element="para" data-attr-xinfo-text="10769"><span style="font-weight: 400;">This report gives details of the transactions that were declined daily. </span><span style="font-weight: 400;">It contains a list of transactions that Paymentology or the client declined, and sent a declined response code to the card association. </span><span style="font-weight: 400;">With the failed transaction report file, it becomes easier to find the reasons for failures in transactions and improve the process.</span></div>
 <div data-element="para" data-attr-xinfo-text="10769"></div>

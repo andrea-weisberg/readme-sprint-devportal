@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/reports
 ---
 <div class="block translation current highlight" data-element="para" data-attr-xinfo-text="10760">
 <p><span style="font-weight: 400;">Paymentology also provides a detailed version of the Summary Settlement Report. </span><span style="font-weight: 400;">The Detailed Settlement Report shows each settled transaction, which allows you to use the Transaction ID to mark off settled transactions from authorized transactions. This also assists in confirming the values of the amounts in the Summary Settlement Report. The network provides the Transaction ID field during authorization. The same Transaction ID for authorizations is included in the Detailed Settlement Report.</span></p>

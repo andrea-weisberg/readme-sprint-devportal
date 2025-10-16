@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: tools/xml-generator
 ---
 <h2 id="intro">When to use XML Generator</h2>
 <p>You will use XML Generator to confirm that XML requests generated through your code are generated with the same request parameters as Paymentology Sprint – including the checksum, to ensure compatibility.</p>

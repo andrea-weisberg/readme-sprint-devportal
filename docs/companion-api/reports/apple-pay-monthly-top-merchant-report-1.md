@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/reports
 ---
 <p data-renderer-start-pos="10987">For clients using Paymentology’s tokenization, Paymentology can issue monthly reports to clients to assist in compiling their Apple report through the Apple Partner Connect platform.</p>
 <p data-renderer-start-pos="10987">The purpose of this report is for Apple to understand the top 100 Merchants that accept Apple Pay. It’s important to note only approved/settled transactions are reported and Merchants are listed in descending order based on total spend.</p>

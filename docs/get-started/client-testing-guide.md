@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: get-started
 ---
 <h2>How to start testing</h2>
 <p><span style="font-weight: 400;">Testing with Paymentology’s Sprint platform is easy. By following the steps below you can safely try out our API functionality:</span></p>

@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/tokenization2
 ---
 <p>Provisioning is the process whereby a payment service provider (token requester) asks for a token to be created for a PAN.</p>
 <p>Provisioning basically follows these steps:</p>

@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/local-api
 ---
 <section id="tutuka-block-1" class="tutuka-block tutuka-block--text-full-width">
 <div class="tutuka-block--text-full-width__content">

@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: tools/3d-secure-customization
 ---
 <h2>When to use 3D Secure Screen Customization tool</h2>
 <p><span style="font-weight: 400;">You will use </span><span style="font-weight: 400;">the</span><span style="font-weight: 400;"> 3D Secure Screen Customization after agreeing to implement the 3D Secure functionality for your chosen API (Card or Companion). </span><span style="font-weight: 400;">We support different cardholder authentication methods to suit your needs, please choose the tool corresponding to the method you are implementing with Paymentology.</span></p>

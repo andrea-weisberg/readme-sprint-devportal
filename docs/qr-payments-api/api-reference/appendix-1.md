@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: qr-payments-api/api-reference
 ---
 <p><a id="RI"></p>
 <h2>Receiving Institution</h2>

@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: get-started
 ---
 <p><strong>To facilitate easier API integrations, Paymentology provides two integration environments: test environment and live environment.</strong></p>
 

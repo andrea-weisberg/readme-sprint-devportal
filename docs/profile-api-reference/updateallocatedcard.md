@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p>Updates the cellphone or ID number linked to an allocated card.</p>
 <p><strong>IMPORTANT:</strong> Validation is performed on the cellPhone parameter value of the request message.</p>

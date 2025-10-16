@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p>Provides a method to unlink a card from a specified profile.<br />
 This is only possible if the card was never loaded.</p>

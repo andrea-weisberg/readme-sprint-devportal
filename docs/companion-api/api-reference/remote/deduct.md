@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/remote
 ---
 <p>Deduct the requested amount from a wallet.</p>
 

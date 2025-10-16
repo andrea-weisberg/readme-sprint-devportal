@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/reports
 ---
 <p>The purpose of this report is to send to the client the transactions that are still being made to a certain card that was already sent to VISA via the VAU file.</p>
 <p data-renderer-start-pos="241">So for example if a card was sent to VISA in a VAU file on the date <span class="date-lozenger-container"><span class="date-node" data-node-type="date" data-timestamp="1694995200000">Sep 18, 2023</span></span> and transactions are still happening after the file was generated the card will be on the report.</p>

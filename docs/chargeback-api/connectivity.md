@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: chargeback-api
 ---
 <p>This page explains how to connect to our Chargeback API gateway.<br />
 Connecting to the Chargeback API means you can automate submissions of your chargebacks.</p>

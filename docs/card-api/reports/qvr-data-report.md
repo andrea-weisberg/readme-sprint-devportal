@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/reports
 ---
 <p>The QVR data report can be provided to clients using Visa. It contains data to assist clients with their Visa quarterly reporting requirements. The report includes the following:</p>
 <h3>Category definitions</h3>

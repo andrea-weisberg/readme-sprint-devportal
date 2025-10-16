@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/reports
 ---
 <p data-pm-slice="1 1 []">This daily report provides client’s with transaction markup data to support their internal reporting and P & L reconciliation. The report includes the following details:</p>
 <ul>

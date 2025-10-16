@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api
 ---
 <h2><span style="font-size: 20px;">With the Card API you can o</span><span style="font-size: 20px;">ffer your customers two types of cards</span><span style="font-size: 20px;">:</span></h2>
 

@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: get-started
 ---
 <p><span style="font-weight: 400;">On the Paymentology Sprint platform, we use an internal Client Management System to manage the various settings associated with clients’ card programs. This software allows Client Executives, who are responsible for clients’ accounts, to set up configurations that relate to the products we sell to our clients. </span></p>
 <p><span style="font-weight: 400;">It’s how we track the various settings pertaining to how the stated card program works so that we can provide a seamless client experience.</span></p>

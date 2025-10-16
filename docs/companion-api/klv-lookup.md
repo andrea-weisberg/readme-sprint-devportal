@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api
 ---
 <p>Key-Length-Value (KLV) is a data encoding standard where the <strong>Key</strong> identifies the data, <strong>Length</strong> specifies the data’s length and <strong>Value </strong>is the data itself. KLV is an instance of the TLV encoding scheme used for optional information element within communication protocols.</p>
 <p><strong>The length of each string is:</strong></p>

@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/reports
 ---
 <p>This report provides clients with card details such as, current available balance, last load and lifetime expenditure. It is available for each Campaign.</p>
 <p>The report includes the following details:</p>

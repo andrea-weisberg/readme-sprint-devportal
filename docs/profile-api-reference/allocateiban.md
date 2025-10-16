@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p>Allocate an IBAN [Account Number] for a card linked to the specified profile.</p>
 

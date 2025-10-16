@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/reports
 ---
 <p data-renderer-start-pos="25">A report that shows successful and failed Ecommerce transactions along with associated eCommerce fees.</p>
 <p data-renderer-start-pos="25">The report includes the following details:</p>

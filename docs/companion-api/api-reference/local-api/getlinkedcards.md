@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/local-api
 ---
 <p>Get an array of card details of all cards (active, stopped and retired) linked to the reference.</p>
 <p><strong>IMPORTANT:</strong></p>

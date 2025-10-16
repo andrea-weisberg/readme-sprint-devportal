@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <p>Create a virtual card in the campaign identified by its UUID and linked to the customer reference given and loads the card</p>
 

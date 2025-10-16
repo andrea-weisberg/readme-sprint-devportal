@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/reports
 ---
 <p>For clients using Paymentology’s tokenization, Paymentology can issue monthly reports to clients to assist in compiling their Apple report through the Apple Partner Connect platform.</p>
 <p>The monthly metric report provides clients with a breakdown of POS (Point of Sale), remote (in-App, Apple Pay on the web and eCommerce) and COF (Credential on File) Apple Pay spends for the specified month.</p>

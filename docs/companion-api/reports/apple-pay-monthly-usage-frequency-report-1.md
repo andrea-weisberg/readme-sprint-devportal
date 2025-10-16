@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/reports
 ---
 <p>For clients using Paymentology’s tokenization, Paymentology can issue monthly reports to clients to assist in compiling their Apple report through the Apple Partner Connect platform.</p>
 <p>This report refers to the number of times a specific account is used to make a transaction in a given month. This includes any type of Apple Pay transaction i.e. POS or eCommerce.</p>

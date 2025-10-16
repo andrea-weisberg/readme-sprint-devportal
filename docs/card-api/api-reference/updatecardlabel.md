@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <p>Update the card label of a card identified by tracking number. (This refers to the activation key of the card).</p>
 

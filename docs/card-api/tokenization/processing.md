@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/tokenization
 ---
 <p>Processing a transaction using a token basically follows these steps:</p>
 <p>(We’ll assume that the card’s data has already been provisioned)</p>

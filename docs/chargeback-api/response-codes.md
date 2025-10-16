@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: chargeback-api
 ---
 <h2>Error response code 400</h2>
 <p>An error response code of 400 indicates client authentication failure. The response message will contain a “responseCode” of 0 and the “responseMessage” will contain either of the below values:</p>

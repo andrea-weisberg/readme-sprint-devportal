@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/local-api
 ---
 <p>Generate a new CVV2 of the specified card.</p>
 <p><strong>IMPORTANT:</strong></p>

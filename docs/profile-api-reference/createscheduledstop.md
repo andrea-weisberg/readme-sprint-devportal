@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p>Schedules the stop of the card on the date of the parameter. There can only be one active scheduled stop for a card.<br />
 Will return an error if the schedule already exists.</p>

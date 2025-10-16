@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/local-api
 ---
 <p>Transfer a reference to a new card. The old card will be stopped and the bearer details transferred to the new card. The new card will be linked and activated.</p>
 

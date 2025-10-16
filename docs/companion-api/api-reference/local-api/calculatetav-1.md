@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/local-api
 ---
 <p>Return the TAV (Token Authentication Value) of the specified card. The Token Authentication Value will be returned in Base64 format.</p>
 

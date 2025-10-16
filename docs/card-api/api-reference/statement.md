@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <p>Retrieve the statement of a card (or pocket if applicable).</p>
 <p><a href="#statement1.3">Version 1.3</a></p>

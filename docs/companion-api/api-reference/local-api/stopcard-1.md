@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/local-api
 ---
 <p>Stop the specified card.</p>
 <p><em>NB. Error message <strong>“Operation not allowed”</strong> will appear if client tries to stop a card that is already stopped with a different reason code on our system.</em></p>

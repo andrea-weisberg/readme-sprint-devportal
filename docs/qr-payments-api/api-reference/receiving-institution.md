@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: qr-payments-api/api-reference
 ---
 <h2>Available Methods</h2>
 <ul>

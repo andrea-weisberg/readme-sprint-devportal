@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/reports
 ---
 <p>This report lists the cards that have been linked to a customer and when this occurred.</p>
 <p>The report includes the following details:</p>

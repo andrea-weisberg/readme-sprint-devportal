@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p>Retrieve the statement of a card.</p>
 <p><strong>NOTE:</strong> Do not use the Statement method when the Balance method will be sufficient, as the Statement method may take considerably longer to return a response.</p>

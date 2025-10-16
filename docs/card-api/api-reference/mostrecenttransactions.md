@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <p>MostRecentTransactions provides the latest transactions on the basis of following two criteria:</p>
 <ol>

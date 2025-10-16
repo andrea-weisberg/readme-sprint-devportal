@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: chargeback-api/remote-messaging-api
 ---
 <p>This message is to notify the client of Chargeback status updates.</p>
 

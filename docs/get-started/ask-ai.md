@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: get-started
 ---
 <p>Ask AI is an AI bot trained on our documentation and API specifications. Seamlessly embedded in our Developer Portal, Ask AI provides a single destination to get your questions answered and uncover documentation insights.</p>
 

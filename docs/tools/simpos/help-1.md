@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: tools/simpos
 ---
 <h2 id="intro">How SimPOS works</h2>
 <p>SimPOS is used to test the flow of a virtual card transaction over the Companion Card API, and to check that all components are working.</p>

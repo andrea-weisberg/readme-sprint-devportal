@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: chargeback-api
 ---
 <p>Paymentology will notify clients on 2nd Presentments. Remote messaging API allows Paymentology to call you to send administrative advice messages. These advice messages are sent using webhook-like schema. If you are integrating the service, you must create an endpoint accessible from the Paymentology network, which would be able to process the requests outlined below.</p>
 

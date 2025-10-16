@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <p>Add a Tag Name and Tag Value to a card identified by tracking number. This is for the client to mark the card with an identifier without having to move the card to a different program (for client’s with multiple card programs).</p>
 

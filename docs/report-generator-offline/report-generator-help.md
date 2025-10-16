@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: report-generator-offline
 ---
 <h2>About Report Generator</h2>
 <p>You can use Report Generator to automatically generate and download to your reports from the test environment with your own test data.</p>

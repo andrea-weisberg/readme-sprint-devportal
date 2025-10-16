@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/reports
 ---
 <p>Paymentology’s QMR (Quarterly Mastercard Report) data report contains transaction data and card/account data for the given quarter. The report can be provided to clients using Mastercard, to assist clients with their Mastercard quarterly reporting requirements.</p>
 <p>The report includes the following:</p>

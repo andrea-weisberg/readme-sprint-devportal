@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/reports
 ---
 <p>This report lists detailed information about filtered transactions for a specific set of campaigns, during a specified date range.<br />
 The report includes details about vouchers and reasons for transactions being filtered. This reports helps clients to identify if any whitelisted merchants (approved merchants) are blocked.</p>

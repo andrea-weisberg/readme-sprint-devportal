@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api
 ---
 <p><strong>Once a cardholder has been issued with a card, they can start to manage the funds associated with their card or pockets.</strong><br />
 ​<br />

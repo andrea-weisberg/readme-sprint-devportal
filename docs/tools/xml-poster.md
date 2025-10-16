@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: tools
 ---
 <div data-element="para" data-attr-xinfo-text="10920"><span class="inline link linktool link-external current" title="" data-element="link" data-attr-xlink-href="https://developer.sprint.paymentology.com/tools/runxmlrpcrequest/runxmlrpcrequesthelp" data-original-title="" aria-describedby="popover765621">The <strong>XML Poster​</strong></span><strong>​</strong> allows you to post XML requests directly to the Paymentology Sprint system.</div>
 <div data-element="para" data-attr-xinfo-text="10920">

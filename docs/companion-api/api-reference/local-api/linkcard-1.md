@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/local-api
 ---
 <p>Link a card to a reference with the given bearer details. Linking a card will not activate it. Inactive cards need to be activated using the <span class="xml-highlight">Activate</span> call before they will become functional.</p>
 

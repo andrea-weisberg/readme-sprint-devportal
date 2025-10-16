@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <p>Order a card for a specific cardholder. You can choose this method if you want the PIN of the card printed on its card carrier or if you have Offline PIN validation in your country.</p>
 <p><strong>IMPORTANT:</strong> No commas, question marks or quotation marks are allowed in any of the fields.</p>

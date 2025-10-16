@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p>Provides a method to reset the PIN of a card.</p>
 <p>The new PIN is sent to the cardholder by SMS using the cellphone we have on record.</p>

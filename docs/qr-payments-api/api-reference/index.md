@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: qr-payments-api
 ---
 <p>The QR documentation is split into:</p>
 <ul>

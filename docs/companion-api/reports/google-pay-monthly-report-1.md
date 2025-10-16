@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/reports
 ---
 <p>A report which provides detailed information about cards that were tokenised to a Google Pay wallet within a given month. Client’s can use the data from this report to fulfil their Google Pay reporting requirements.</p>
 <p>The report includes the following details:</p>

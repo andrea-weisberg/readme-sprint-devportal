@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: qr-payments-api
 ---
 <p><span style="font-weight: 400;">The QR payments API allows you to create a contactless merchant payment system where customers can make electronic payments by scanning a QR code from a smartphone application. It’s a simple and secure way for consumers to push payments to merchants using their mobile money wallets or bank account balances. </span></p>
 <p><span style="font-weight: 400;">Tutuka allows integration into </span><b>Mastercard QR</b><b> </b><span style="font-weight: 400;">for the issuing and acceptance of QR payments, offering a safe, innovative way for consumers to scan and pay. Since it works as a plug-in to virtual or physical cards, having an existing virtual or physical PAN number allows for quicker and easier implementation of QR payments.</span></p>

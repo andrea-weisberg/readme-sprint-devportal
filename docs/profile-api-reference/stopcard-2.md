@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p>Stop a card with one of the following allowed (integer) values for <span class="xml-highlight">stopReasonID</span>:</p>
 <ol>

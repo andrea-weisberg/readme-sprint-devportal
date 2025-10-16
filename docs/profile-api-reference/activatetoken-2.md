@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p>Used to activate a token for a digitization that has been approved and provisioned, but requires additional cardholder authentication prior to activation.</p>
 

@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/remote
 ---
 <p>Sends the request to preload in case of a refund request or a request to load a card.</p>
 

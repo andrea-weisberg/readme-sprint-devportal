@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/issue-cards
 ---
 <p><strong>Today’s consumers do everything on their mobile phones or online. The Paymentology Sprint Digital First card program allows you to design a simple, secure and flexible financial experience that emulates the digital lifestyle of today’s generation.</strong></p>
 

@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <p>Updates the card PAN information associated with a token i.e. VoucherID, Expiry Update and Account Deletion</p>
 

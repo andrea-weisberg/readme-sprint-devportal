@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/tokenization
 ---
 <p>Token lifecycle management refers to handling the different states of the token, from creation to expiry. All tokens have a lifecycle; that is, the series of events happening from the date of creation to the expiry date when they’re no longer valid. The expiry date is usually linked to the expiry date of the full PAN that was used for provisioning.</p>
 <p>Token lifecycle management involves passing messages between Paymentology and MDES that notify the client of the following token events:</p>

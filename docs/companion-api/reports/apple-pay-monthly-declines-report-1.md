@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/reports
 ---
 <p>For clients using Paymentology’s tokenization, Paymentology can issue monthly reports to clients to utilize the report data to compile their Apple report through the Apple Partner Connect platform.</p>
 <p>The purpose of the Apple Pay monthly declines report is to provide oversight on Apple Pay transactions that have been declined. It is important to note that failed transactions are NOT considered as declined and therefore not considered for this report.</p>

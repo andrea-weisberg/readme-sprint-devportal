@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/local-api
 ---
 <p>Reset the specified card’s PIN. The random pin will be sent to the card bearer’s cell via text message.</p>
 

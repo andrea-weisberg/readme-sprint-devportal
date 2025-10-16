@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p>Updates the firstName, lastName, cellphone and ID number linked to an allocated card.</p>
 

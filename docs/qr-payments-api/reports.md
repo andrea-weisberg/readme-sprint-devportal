@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: qr-payments-api
 ---
 <p><strong>Paymentology provides end-to-end reporting and reconciliation capabilities to allow you to track all the financial movements, revenues collected, failed transactions, and more.</strong></p>
 

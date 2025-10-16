@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/reports
 ---
 <p>This report provides client’s with a full list of unsettled transactions, it assists with overall reconciliation.</p>
 <p>There are two versions of this report available:</p>

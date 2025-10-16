@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p class="method">Deducts the requested amount from the Profile specified with a redemption type of “Devalue”. To deduct the remaining balance from the Profile automatically, specify the amount to be 0 (zero).</p>
 

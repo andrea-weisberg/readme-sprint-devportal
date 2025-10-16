@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: chargeback-api/chargeback-api-reference
 ---
 <p>Once a document is uploaded, use this method to verify the status of document.</p>
 

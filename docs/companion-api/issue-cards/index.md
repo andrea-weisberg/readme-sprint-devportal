@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api
 ---
 <h2>With the Paymentology Sprint Companion API, you can offer your customers different types of cards:</h2>
 

@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: chargeback-api/chargeback-api-reference
 ---
 <p>After successfully connecting to the API Proxy, you can send the <b><i>fields/parameters</i></b> for the API request (as specified below) and receive a <b><i>response</i></b>.</p>
 <p>A successfully submitted First Chargeback will remain in a “pending status” (no more than 72 hours) on issuers’ behalf to allow merchants to respond and resolve the inquiry.</p>

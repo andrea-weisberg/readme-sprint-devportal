@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/reports
 ---
 <div class="block translation current highlight" data-element="para" data-attr-xinfo-text="10765">If you’re marking up a transaction with a forex fee, you’ll receive a report each day showing the FX amount that you earned as revenue for the day.</div>
 <div data-element="para" data-attr-xinfo-text="10765"></div>

@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/reports
 ---
 <div class="block translation current highlight" data-element="para" data-attr-xinfo-text="10752">This gives a daily summary of all the transactions settled by the card association. Paymentology gathers the information from the card association file and packages it into a summary report.It is a report where you can find a summary of transaction types, the number of transactions that have been settled for the day, fees and interchanges earned.</p>
 <p>The Summary Settlement Report includes a separate tab for each currency you decide to settle in.</p>

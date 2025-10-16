@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/reports
 ---
 <p data-pm-slice="1 3 []">This report provides client’s with a list of inactive cards across their campaign. This allows client’s to better manage their campaign’s and internal reporting requirements.</p>
 <p>The report includes the following details:</p>

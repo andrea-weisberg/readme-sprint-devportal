@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <p>Reverse a TransferFunds transaction that was timed out using the details of the failed transaction.</p>
 

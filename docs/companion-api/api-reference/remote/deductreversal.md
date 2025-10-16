@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/remote
 ---
 <p>Reverse a deduct that was previously requested on a wallet.</p>
 <p><strong>KLV will not be sent for reversals. </strong></p>

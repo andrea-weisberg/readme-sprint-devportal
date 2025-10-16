@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/api-reference
 ---
 <p>Update the 3D Secure Code on the card associated with the customer reference and tracking number.</p>
 

@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: card-api/reports
 ---
 <p><span style="font-weight: 400;">If you choose the option of ordering cards via the </span><span class="xml-highlight">OrderCard</span> method, then a report will be available each day with information of the successful orders that were processed and sent to the card manufacturer.</p>
 <p>The report includes the following details:</p>

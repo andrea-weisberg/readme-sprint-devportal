@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: get-started
 ---
 <p><span style="font-weight: 400;">Paymentology provides a number of advanced fraud prevention and risk control mechanisms that ensure transactions are secure and trusted. These anti-fraud techniques allow you to build a robust and efficient payment system that protects your customers and ensures business success.  </span></p>
 <p><span style="font-weight: 400;">Let’s look at the fraud control measures.</span></p>

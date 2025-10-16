@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: profile-api-reference
 ---
 <p>Updates an existing scheduled stop.</p>
 <p>Will return an error if there is no scheduled stop for this card.</p>

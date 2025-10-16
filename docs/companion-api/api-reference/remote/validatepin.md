@@ -4,7 +4,6 @@ deprecated: false
 hidden: false
 metadata:
   robots: index
-original_path: companion-api/api-reference/remote
 ---
 <section id="tutuka-block-61" class="tutuka-block tutuka-block--text-full-width">Validate the PIN.</p>
 </section>
