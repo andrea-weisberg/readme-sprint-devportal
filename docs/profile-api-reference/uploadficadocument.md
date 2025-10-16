@@ -24,43 +24,43 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
    <methodName>UploadFICADocument</methodName>
-   <params >
-       <param >
+   <params  />
+       <param  />
            <value>
                <string>0876987925</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>9090987652</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>490909876540001</string>
            </value>
        </param>
-        <param >
+        <param  />
            <value>
                <string>txn123456</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <dateTime.iso8601>20240531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>\x89\x50\x4E\x47\x0D\x0A\x1A\x0A\x00\x00\x00\x0D\x49\x48\x44\x52\x00\x00\x00\x10\x00\x00\x00\x10\x08\x06\x00\x00\x00\x1F\xF3\xFF\x61\x00\x00\x00\x01\x73\x52\x47\x42\x00</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>mime</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>5f24ae342f67d03a4a1c295a3a038f1fbyuiojkl890cf69ddae578beee42bc1e</string>
            </value>
@@ -71,8 +71,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -148,43 +148,43 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
    <methodName>UploadFICADocument</methodName>
-   <params >
-       <param >
+   <params  />
+       <param  />
            <value>
                <string>0876987925</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>9090987652</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>490909876540001</string>
            </value>
        </param>
-        <param >
+        <param  />
            <value>
                <string>txn123456</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <dateTime.iso8601>20240531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>\x89\x50\x4E\x47\x0D\x0A\x1A\x0A\x00\x00\x00\x0D\x49\x48\x44\x52\x00\x00\x00\x10\x00\x00\x00\x10\x08\x06\x00\x00\x00\x1F\xF3\xFF\x61\x00\x00\x00\x01\x73\x52\x47\x42\x00</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>mime</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>5f24ae342f67d03a4a1c295a3a038f1fbyuiojkl890cf69ddae578beee42bc1e</string>
            </value>
@@ -195,8 +195,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -255,4 +255,3 @@ metadata:
 
 ```
 
-</string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></string></value></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></string></value></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p>

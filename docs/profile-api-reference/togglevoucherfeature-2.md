@@ -24,43 +24,43 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
   <methodName>ToggleVoucherFeature</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>123456789</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>12345</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>5165641045432078</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>NFC_ENABLED</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>1</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>4f012b3a3d456d2ba789b8dcadf2ccf9</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20240724T23:54:28</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>12345678930</string>
       </value>
@@ -71,8 +71,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -155,43 +155,43 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
   <methodName>ToggleVoucherFeature</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>123456789</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>12345</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>5165641045432078</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>NFC_ENABLED</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>1</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>4f012b3a3d456d2ba789b8dcadf2ccf9</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20240724T23:54:28</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>12345678930</string>
       </value>
@@ -202,8 +202,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -268,5 +268,4 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Reference</a></p>
-</a></p></boolean></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></int></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></div></div></p></div></div></p></p></div></div></p></div></div></p></p></div></div></boolean></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></int></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></span></p></span></p></span></p></p></p></p></p></p></p></p></p></p></p></p></span></p></p></span></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Reference</a></p>

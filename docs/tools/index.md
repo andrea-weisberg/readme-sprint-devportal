@@ -10,4 +10,3 @@ metadata:
 <div className="block translation" data-element="para" data-attr-xinfo-text="10909">Once you sign up, you’ll get access to various utilities and resources you can use to get up and running with the API quickly and without any obstacles.</div>
 <div data-element="para" data-attr-xinfo-text="10909"></div>
 <div data-element="para" data-attr-xinfo-text="10909"></div>
-</div></div></div></div></div>

@@ -16,12 +16,12 @@ metadata:
 <li><strong>Time Date Stamp</strong> – t<span style={{fontWeight: "400"}}>he merchant’s timestamp, in their time zone</span></li>
 <li><strong>Customer Reference </strong>– unique customer reference information</li>
 <li><strong>Pocket id</strong> – the UUID information for the client campaign</li>
-<li><strong>Transaction Description </strong>– this described the transaction, such as:<br >
-DeductFund – shows deductions/debits<br >
+<li><strong>Transaction Description </strong>– this described the transaction, such as:<br  />
+DeductFund – shows deductions/debits<br  />
 LoadFunds – shows loads/credits</li>
-<li><strong>Transaction type</strong> – the possible values for TransactionTypes are:<br >
-0 – POS transaction<br >
-1 – ATM transaction<br >
+<li><strong>Transaction type</strong> – the possible values for TransactionTypes are:<br  />
+0 – POS transaction<br  />
+1 – ATM transaction<br  />
 2 – Adjustment</li>
 <li><strong>Transaction id</strong> – <span style={{fontWeight: "400"}}>the Transaction id of the transaction, as created by the card network</span></li>
 <li><strong>Sequence Number</strong> – <span style={{fontWeight: "400"}}>Paymentology’s unique sequence identifier for the specific card used</span></li>
@@ -37,5 +37,4 @@ LoadFunds – shows loads/credits</li>
 <p> </p>
 <p>**MarkOff-report-final-Card-API.png IMAGE GOES HERE.**</p>
 
-<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_MarkOffFile_YYYYMMDD.csv">CampaignName_MarkOffFile_YYYYMMDD.csv</a></p>
-</a></p></p></p></h2></h2></h2></strong></li></strong></li></span></strong></li></span></strong></li></strong></li></strong></li></strong></li></strong></li></span></strong></li></span></strong></li></strong></li></ul></span></p></strong></strong></strong></p></span></span></p></div>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_MarkOffFile_YYYYMMDD.csv">CampaignName_MarkOffFile_YYYYMMDD.csv</a></p>

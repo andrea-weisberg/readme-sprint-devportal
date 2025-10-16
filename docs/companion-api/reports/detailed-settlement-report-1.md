@@ -96,5 +96,4 @@ metadata:
 <p> </p>
 <p>**Detailed-Settlement-report1.png IMAGE GOES HERE.**</p>
 
-<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2024/02/CampaignNameDailySettlementsYYYYMMDD.csv">CampaignNameDailySettlementsYYYYMMDD.csv</a></p>
-</a></p></p></p></h2></h2></h2></strong></li></strong></li></strong></li></strong></li></b></strong></li></strong></li></strong></li></strong></strong></li></strong></b></li></b></li></b></li></b></li></b></li></b></li></li></li></li></ul></b></li></li></li></li></li></li></li></ul></strong></li></b></li></b></li></b></li></b></li></ul></p></a></h3></div></strong></li></b></li></b></li></b></li></b></li></b></li></b></li></b></li></b></li></li></li></li></ul></b></li></li></li></li></li></li></li></ul></strong></li></b></li></b></li></b></li></b></li></ul></p></a></h3></a></p></a></p></p></p></p></div>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2024/02/CampaignNameDailySettlementsYYYYMMDD.csv">CampaignNameDailySettlementsYYYYMMDD.csv</a></p>

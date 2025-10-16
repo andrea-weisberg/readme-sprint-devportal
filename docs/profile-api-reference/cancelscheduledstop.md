@@ -22,33 +22,33 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
    <methodName>CancelScheduledStop</methodName>
-   <params >
-       <param >
+   <params  />
+       <param  />
            <value>
                <string>1230468925</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>9094444072</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>123408800000001</string>
            </value>
        </param>
-        <param >
+        <param  />
            <value>
                <string>T12341234561</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <dateTime.iso8601>20240531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>01f7444702dbeaa9abcedf7123456cf07c11eeda476918ade47d46797232249e</string>
            </value>
@@ -59,8 +59,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -129,33 +129,33 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
    <methodName>CancelScheduledStop</methodName>
-   <params >
-       <param >
+   <params  />
+       <param  />
            <value>
                <string>1230468925</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>9094444072</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>123408800000001</string>
            </value>
        </param>
-        <param >
+        <param  />
            <value>
                <string>T12341234561</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <dateTime.iso8601>20240531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>01f7444702dbeaa9abcedf7123456cf07c11eeda476918ade47d46797232249e</string>
            </value>
@@ -166,8 +166,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -220,4 +220,3 @@ metadata:
 
 ```
 
-</string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></div></div></div></div></div></section></p></div></div></p></div></div></p></div></div></p></div></div></p></p>

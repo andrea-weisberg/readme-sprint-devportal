@@ -12,7 +12,7 @@ metadata:
 <li style={{fontWeight: "400"}} aria-level="1"><span style={{fontWeight: "400"}}>Tracking payment declines and notifying customers to improve their awareness.</span></li>
 <li style={{fontWeight: "400"}} aria-level="1"><span style={{fontWeight: "400"}}>Monitoring fraudulent transactions to mitigate your liability.</span></li>
 <li style={{fontWeight: "400"}} aria-level="1"><span style={{fontWeight: "400"}}>Creating targeted promotional messages.</span></li>
-<li style={{fontWeight: "400"}} aria-level="1"><span style={{fontWeight: "400"}}>Quickly reviewing customer spending patterns by time period.<br >
+<li style={{fontWeight: "400"}} aria-level="1"><span style={{fontWeight: "400"}}>Quickly reviewing customer spending patterns by time period.<br  />
 </span></li>
 </ul>
 <p><span style={{fontWeight: "400"}}>It enables you to receive real-time transaction information for the following types of transactions:</span></p>
@@ -58,7 +58,7 @@ metadata:
 </ul>
 
 <h2>PubNub and the Transaction Stream Flow</h2>
-<p><span style={{fontWeight: "400"}}>Paymentology utilises PubNub (https://www.pubnub.com) for it’s real-time transaction streaming. PubNub is a third party, secure, real-time publish/subscribe messaging API. It allows one to send information from the Publisher (Paymentology) to Subscribers (Clients) in real time. In our case the information is a list of processed transactions. </span><span style={{fontWeight: "400"}}><br >
+<p><span style={{fontWeight: "400"}}>Paymentology utilises PubNub (https://www.pubnub.com) for it’s real-time transaction streaming. PubNub is a third party, secure, real-time publish/subscribe messaging API. It allows one to send information from the Publisher (Paymentology) to Subscribers (Clients) in real time. In our case the information is a list of processed transactions. </span><span style={{fontWeight: "400"}}><br  />
 </span></p>
 <p><span style={{fontWeight: "400"}}>Paymentology has used this service so that a client can simply subscribe to this service to receive information when a transaction is processed. This is a real-time service so clients will see transaction information as a transaction is completed. A client can then decide how to capture, store and use this information.</span></p>
 <h3>How does it work</h3>
@@ -69,10 +69,10 @@ metadata:
 <li>VoucherEngine is determining which Campaign the transaction belongs to, if that transaction needs to be published, and based on those – it submits it to the respective CHANNEL (which is the Campaign UUID) to PubNub</li>
 <li>The Client Implementation is using their credentials (Terminal id and password) to authenticate with VoucherEngine Events Authority API by making a request. See the <a href="#authentication"><span className="xml-highlight">Get Authentication data</span></a> section for an example of the request</li>
 <li>The Client Implementation receives the Paymentology response. See the <a href="#response"><span className="xml-highlight">Get Authentication data</span></a> section for an example of the response</li>
-<li>The Client Implementation uses the Paymentology response (specifically they have to use SUBKEY, CHANNEL, SUBSCRIBEURI and AUTH) so as to initiate a connection dictated by the SUBSCRIBEURI. The Client Implementation needs to keep that connection open listening to that CHANNELRespective documentation using the official PubNub Java SDK can be found <a href="https:www.pubnub.com/docs/sdks/java#publish-and-subscribe">here</a><br >
-– It is best if the Client sets up an asynchronous callback when there is a new transaction received so as to be properly processed on their end<br >
-– The PubNub SDK already covers the section of creating the callbacks but you can also have a look at the bottom with code samplesRespective documentation using the official PubNub REST API can be found <a href="https:www.pubnub.com/docs/rest-api#publish-subscribe-subscribe-get">here</a><br >
-– It is best if the Client sets up an asynchronous callback when there is a new transaction received so as to be properly processed on their end<br >
+<li>The Client Implementation uses the Paymentology response (specifically they have to use SUBKEY, CHANNEL, SUBSCRIBEURI and AUTH) so as to initiate a connection dictated by the SUBSCRIBEURI. The Client Implementation needs to keep that connection open listening to that CHANNELRespective documentation using the official PubNub Java SDK can be found <a href="https://www.pubnub.com/docs/sdks/java#publish-and-subscribe">here</a><br  />
+– It is best if the Client sets up an asynchronous callback when there is a new transaction received so as to be properly processed on their end<br  />
+– The PubNub SDK already covers the section of creating the callbacks but you can also have a look at the bottom with code samplesRespective documentation using the official PubNub REST API can be found <a href="https://www.pubnub.com/docs/rest-api#publish-subscribe-subscribe-get">here</a><br  />
+– It is best if the Client sets up an asynchronous callback when there is a new transaction received so as to be properly processed on their end<br  />
 – The PubNub REST API already covers the section of creating the callbacks but you can also have a look at the bottom with code samples</li>
 <li>The Client Implementation starts receiving transactions while that connection remains open from the Clients Implementations end. The Client Implementation is responsible for refreshing the call explained at step 3 within the TTL timespan which is also refreshing their AUTH tokenSteps 5 and 6 are strongly advised to be implemented by using the respective PubNub SDK based on the Client’s preferable implementation language/ framework. Even though the PubNub system offers a RESTful API section that uses the HTTP protocol, it completely changes the way the system should work. For example: if the client choose that, they would have to make regular calls to PubNub so as to receive the transactions as they are done at that exact time</li>
 </ol>
@@ -80,7 +80,7 @@ metadata:
 <h2><b>How to Integrate Transaction Stream</b></h2>
 <p><span style={{fontWeight: "400"}}>Paymentology provides the Paymentology Events Authority API to allow you to integrate the Transaction Stream service into your use case. </span></p>
 <p><span style={{fontWeight: "400"}}>The API lets you observe and ingest information about transactional events, as they happen and are processed by Paymentology. It is implemented as a REST HTTP API using a custom authentication mechanism. The API connection is secured using TLS. </span></p>
-<p><span style={{fontWeight: "400"}}>Paymentology also leverages the </span><a href="https:www.pubnub.com/"><span style={{fontWeight: "400"}}>PubNub</span></a><span style={{fontWeight: "400"}}> platform for powering the real-time transaction notification system. PubNub utilizes a Publishing/Subscribing model for accomplishing real-time communication.</span></p>
+<p><span style={{fontWeight: "400"}}>Paymentology also leverages the </span><a href="https://www.pubnub.com/"><span style={{fontWeight: "400"}}>PubNub</span></a><span style={{fontWeight: "400"}}> platform for powering the real-time transaction notification system. PubNub utilizes a Publishing/Subscribing model for accomplishing real-time communication.</span></p>
 <p><span style={{fontWeight: "400"}}>This model consists of two important components:</span></p>
 <ul>
 <li style={{fontWeight: "400"}} aria-level="1"><b>Channels</b><span style={{fontWeight: "400"}}>—these are the transient paths over which your data is transmitted.</span></li>
@@ -214,7 +214,7 @@ private static final String TERMINAL_PASSWORD = "";
 
 <h3><b>step 2: Subscribe users to channel</b></h3>
 <p><span style={{fontWeight: "400"}}>Next, you need to use the above response data to subscribe users to your channel so that they can receive notifications sent to that channel.</span></p>
-<p><span style={{fontWeight: "400"}}>This will involve making a GET request to the </span><a href="https:www.pubnub.com/docs/pubnub-rest-api-documentation#publish-subscribe-subscribe-get"><span style={{fontWeight: "400"}}>PubNub REST API</span></a><span style={{fontWeight: "400"}}>, via the </span><b>subscribe </b><span style={{fontWeight: "400"}}>endpoint:</span></p>
+<p><span style={{fontWeight: "400"}}>This will involve making a GET request to the </span><a href="https://www.pubnub.com/docs/pubnub-rest-api-documentation#publish-subscribe-subscribe-get"><span style={{fontWeight: "400"}}>PubNub REST API</span></a><span style={{fontWeight: "400"}}>, via the </span><b>subscribe </b><span style={{fontWeight: "400"}}>endpoint:</span></p>
 <p><b>https://pubsub.pubnub.com/v2/subscribe/</b></p>
 <p><span style={{fontWeight: "400"}}>Note that the endpoint corresponds to the </span><b>SUBSCRIBEURI</b><span style={{fontWeight: "400"}}> value from the previous response data.</span></p>
 <p><span style={{fontWeight: "400"}}>You need to specify the following path parameters:</span></p>
@@ -294,7 +294,7 @@ private static final String TERMINAL_PASSWORD = "";
 
 <p><span style={{fontWeight: "400"}}>Here are the response code listings:</span></p>
 
-<p>For more information on Transaction Stream/PubNub Response Codes and how they relate to Network and Card Scheme Response Codes, you can refer to the <a href="https:developer.sprint.paymentology.com/response-codes-2/response-and-action-code-mapping/">Response and action code mapping table</a>.</p>
+<p>For more information on Transaction Stream/PubNub Response Codes and how they relate to Network and Card Scheme Response Codes, you can refer to the <a href="https://developer.sprint.paymentology.com/response-codes-2/response-and-action-code-mapping/">Response and action code mapping table</a>.</p>
 
 <p><span style={{fontWeight: "400"}}>Here are the possible capture modes:</span></p>
 
@@ -351,7 +351,7 @@ private static final String TERMINAL_PASSWORD = "";
 <p> </p>
 
 <h2>Subscribing and Retrieval via PubNub SDK</h2>
-<p><span style={{fontWeight: "400"}}>A  client will implement the service using one of the</span><a href="https:www.pubnub.com/docs/platform/sdks#client-sdks"> <span style={{fontWeight: "400"}}>available SDKs</span></a> <span style={{fontWeight: "400"}}>combining it with our custom authentication mechanism described in step 1</span></p>
+<p><span style={{fontWeight: "400"}}>A  client will implement the service using one of the</span><a href="https://www.pubnub.com/docs/platform/sdks#client-sdks"> <span style={{fontWeight: "400"}}>available SDKs</span></a> <span style={{fontWeight: "400"}}>combining it with our custom authentication mechanism described in step 1</span></p>
 <p><span style={{fontWeight: "400"}}>However we are able to provide a sample Java application which the client can download, run and then expand upon to build their own integration:</span></p>
 <p> </p>
 <ul>
@@ -359,8 +359,8 @@ private static final String TERMINAL_PASSWORD = "";
 <ul>
 <li style={{fontWeight: "400"}} aria-level="3"><span style={{fontWeight: "400"}}>Example application source code:</span>
 <ul>
-<li style={{fontWeight: "400"}} aria-level="4"><span style={{fontWeight: "400"}}>We provide source code of a very simple JAVA application which will connect to Paymentology’s transaction publishing service, subscribe to a campaign, and then open a window on the screen which will flash up the merchant name whenever a transaction is made. This is not an actual running application that one can run on a PC but source code that can be used by the clients developers in their development software and make further use of it.</span><span style={{fontWeight: "400"}}><br >
-</span><span style={{fontWeight: "400"}}><br >
+<li style={{fontWeight: "400"}} aria-level="4"><span style={{fontWeight: "400"}}>We provide source code of a very simple JAVA application which will connect to Paymentology’s transaction publishing service, subscribe to a campaign, and then open a window on the screen which will flash up the merchant name whenever a transaction is made. This is not an actual running application that one can run on a PC but source code that can be used by the clients developers in their development software and make further use of it.</span><span style={{fontWeight: "400"}}><br  />
+</span><span style={{fontWeight: "400"}}><br  />
 </span><span style={{fontWeight: "400"}}>To start working with this sample application, following steps need to be taken:</span> </p>
 <ul>
 <li style={{fontWeight: "400"}} aria-level="5"><span style={{fontWeight: "400"}}>1. Ask your CE to enable PubNub feeds via your campaign settings..</span></li>
@@ -428,9 +428,9 @@ private static final String TERMINAL_PASSWORD = "";
 <li style={{fontWeight: "400"}} aria-level="6"><span style={{fontWeight: "400"}}>TERMINAL_ID is the Terminal id of your Default Issuing Merchant  </span></li>
 <li style={{fontWeight: "400"}} aria-level="6"><span style={{fontWeight: "400"}}>TERMINAL_PASSWORD is the Terminal Password of your Default Issuing Merchant</span></li>
 </ul>
-<p><span style={{fontWeight: "400"}}>Update the HTTP Builder in the src/main/java/com/tutuka/transactionscroller/authorization/AuthRequest.java with the correct environment:</span><span style={{fontWeight: "400"}}><br >
-</span><span style={{fontWeight: "400"}}><br >
-</span><span style={{fontWeight: "400"}}>Example for UAT:</span><span style={{fontWeight: "400"}}><br >
+<p><span style={{fontWeight: "400"}}>Update the HTTP Builder in the src/main/java/com/tutuka/transactionscroller/authorization/AuthRequest.java with the correct environment:</span><span style={{fontWeight: "400"}}><br  />
+</span><span style={{fontWeight: "400"}}><br  />
+</span><span style={{fontWeight: "400"}}>Example for UAT:</span><span style={{fontWeight: "400"}}><br  />
 </span></p>
 <p>**TTS-UAT-300x62.png IMAGE GOES HERE.**</p>
 <p> </p>
@@ -506,7 +506,6 @@ private static final String TERMINAL_PASSWORD = "";
 <li style={{fontWeight: "400"}} aria-level="1"><span style={{fontWeight: "400"}}>For Test the URL for authenticating is: https://stream.test.tutuka.cloud/json</span></li>
 <li style={{fontWeight: "400"}} aria-level="1"><span style={{fontWeight: "400"}}>For Vexdev the URL for authenticating is: https://apidev.tutuka.com/pubnub/json.cfm</span></li>
 <li style={{fontWeight: "400"}} aria-level="1"><span style={{fontWeight: "400"}}>For UAT the URL for authenticating is: https://stream.uat.tutuka.cloud/json</span></li>
-<li style={{fontWeight: "400"}} aria-level="1"><span style={{fontWeight: "400"}}>For Live/PROD the URL for authenticating is: </span><a href="https:api.voucherengine.com/pubnub/json.cfm"><span style={{fontWeight: "400"}}>https://api.voucherengine.com/pubnub/json.cfm</span></a></li>
+<li style={{fontWeight: "400"}} aria-level="1"><span style={{fontWeight: "400"}}>For Live/PROD the URL for authenticating is: </span><a href="https://api.voucherengine.com/pubnub/json.cfm"><span style={{fontWeight: "400"}}>https://api.voucherengine.com/pubnub/json.cfm</span></a></li>
 </ul>
 <p> </p>
-</p></span></a></span></li></span></li></span></li></span></li></ul></span></p></span></p></b></h2></p></span></li></ul></span></li></span></li></ul></span></li></span></li></ul></span></li></span></li></ul></span></li></span></li></ul></span></li></span></li></ul></span></li></span></li></ul></span></li></ul></span></p></a></h1></span></li></span></li></span></li></span></li></span></li></ul></span></li></span></li></ol></span></p></span></p></span></p></span></li></span></li></span></li></ul></span></p></span></p></b></h2></p></p></p></span></span></span></span></span></p></span></li></span></li></span></li></ul></p></span></li></span></li></ul></span></span></span></span></li></ul></span></li></ul></li></ul></p></span></p></span></span></a></span></p></h2></p></b></h3></span></p></a></p></span></p></p></span></b></span></p></p></span></p></span></li></span></b></span></b></span></li></ul></span></p></p></span></p></span></p></p></p></span></p></span></b></li></span></b></li></span></b></li></span></b></li></ul></span></p></span></b></span></p></b></p></span></b></span></span></a></span></p></span></p></b></h3></span></p></span></p></p></p></a></span></p></p></p></span></p></p></span></p></b></p></span></p></span></span></p></span></p></a></b></h3></span></p></span></li></span></li></span></li></ul></span></p></span></span></i></span></span></i></span></p></span></b></li></span></b></li></ul></span></p></span></span></a></span></p></span></p></span></p></b></h2></li></a></a></li></span></a></li></span></a></li></li></a></li></ol></p></h3></span></p></span></span></p></h2></li></li></ul></p></h2></li></li></ul></p></h2></li></li></li></li></li></ul></p></h2></p></span></li></span></li></span></li></span></li></span></li></span></li></ul></span></p></span></li></span></li></span></li></span></li></ul></span></p></span></li></span></li></span></li></span></li></span></li></ul></span></p></strong></p>

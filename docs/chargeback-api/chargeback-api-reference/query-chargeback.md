@@ -19,7 +19,7 @@ metadata:
 | systemDate | Date |  | ✓ | <p>System date</p> |
 | settlementAmount | String |  |  | <p>Settlement amount</p> |
 | chargebackAmount | String |  |  | <p>Amount to chargeback</p> |
-| reasonCode | String |  | ✓ | <p>Reason code. Chargeback reason code list available <a href="https:developer.sprint.paymentology.com/chargeback-api/chargeback-reason-codes/">here</a></p> |
+| reasonCode | String |  | ✓ | <p>Reason code. Chargeback reason code list available <a href="https://developer.sprint.paymentology.com/chargeback-api/chargeback-reason-codes/">here</a></p> |
 
 ```json
 {
@@ -69,4 +69,3 @@ metadata:
 ]
 
 ```
-</p></p></a></p></p></p></p></p></p></p></h2></p>

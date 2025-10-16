@@ -127,4 +127,3 @@ curl --location --request POST 'https://api.tutuka.com/remoteMessaging/v1_0/json
 <li>The range of response codes may be expanded in the future. Ither response codes, not in the table above, should not be used without explicit written confirmation. The behavior of the system is undefined when using codes not in the listing.</li>
 <li>Response codes should always be four-digit codes. For example, using “0” instead of “0000” (approval) can, and will, yield different than expected results.</li>
 </ul>
-</li></li></ul></strong></p></p></h2></p></p></p></p></p></p></p>

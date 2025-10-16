@@ -15,5 +15,4 @@ metadata:
 <li>Low cost to issue digital products.</li>
 <li>QR payments are instant, safe, and secure.</li>
 </ul>
-<p>Find out more about how our <a href="https:developer.sprint.paymentology.com/qr-payments-api/qr-payments/">QR Payments API</a> works.</p>
-</a></p></li></li></li></ul></strong></p></p></strong></p></strong></p></strong></p>
+<p>Find out more about how our <a href="https://developer.sprint.paymentology.com/qr-payments-api/qr-payments/">QR Payments API</a> works.</p>

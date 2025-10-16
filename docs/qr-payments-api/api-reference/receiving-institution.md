@@ -7,13 +7,13 @@ metadata:
 ---
 <h2>Available Methods</h2>
 <ul>
-<li><a href="https:developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution/#CreateQRData">CreateQRData</a> – The method returns a QR including the received information and a new card number linked to the input reference with every request.</li>
-<li><a href="https:developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution/#DeactivateQR">DeactiveateQR</a> – Deactivate a card.</li>
+<li><a href="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution/#CreateQRData">CreateQRData</a> – The method returns a QR including the received information and a new card number linked to the input reference with every request.</li>
+<li><a href="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution/#DeactivateQR">DeactiveateQR</a> – Deactivate a card.</li>
 </ul>
 
 <p><a id="CreateQRData"></p>
 <h2>CreateQRData</h2>
-<p></a><br >
+<p></a><br  />
 The method returns a QR including the received information and a new card number linked to the input reference with every request.</p>
 
 #### Path parameters
@@ -34,53 +34,53 @@ The method returns a QR including the received information and a new card number
 ```xml
 <methodCall>
     <methodName>CreateQRData</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0012546711</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>5111</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Main choc Supplies</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Bangkok</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>THA</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>tst-ref-01</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>tst-txid-01</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20180307T13:01:30+0000</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
-                <struct >
+                <struct  />
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>D11B110F10EF0328FAB11113EC1F94402415C991</string>
             </value>
@@ -90,8 +90,8 @@ The method returns a QR including the received information and a new card number
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -127,28 +127,28 @@ The method returns a QR including the received information and a new card number
 ```,```xml
 <methodCall>
     <methodName>DeactivateQR</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0011122411</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>AFAAFFK121</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>11111111</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20180328T12:02:09+0200</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>BCF11A9E1111FFC203301333C6008CE61BCD2E91</string>
             </value>
@@ -158,8 +158,8 @@ The method returns a QR including the received information and a new card number
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -195,53 +195,53 @@ The method returns a QR including the received information and a new card number
 ```xml
 <methodCall>
     <methodName>CreateQRData</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0012546711</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>5111</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Main choc Supplies</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Bangkok</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>THA</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>tst-ref-01</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>tst-txid-01</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20180307T13:01:30+0000</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
-                <struct >
+                <struct  />
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>D11B110F10EF0328FAB11113EC1F94402415C991</string>
             </value>
@@ -251,8 +251,8 @@ The method returns a QR including the received information and a new card number
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -288,28 +288,28 @@ The method returns a QR including the received information and a new card number
 ```,```xml
 <methodCall>
     <methodName>DeactivateQR</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0011122411</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>AFAAFFK121</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>11111111</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20180328T12:02:09+0200</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>BCF11A9E1111FFC203301333C6008CE61BCD2E91</string>
             </value>
@@ -319,8 +319,8 @@ The method returns a QR including the received information and a new card number
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -360,53 +360,53 @@ The method returns a QR including the received information and a new card number
 ```xml
 <methodCall>
     <methodName>CreateQRData</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0012546711</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>5111</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Main choc Supplies</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Bangkok</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>THA</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>tst-ref-01</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>tst-txid-01</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20180307T13:01:30+0000</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
-                <struct >
+                <struct  />
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>D11B110F10EF0328FAB11113EC1F94402415C991</string>
             </value>
@@ -416,8 +416,8 @@ The method returns a QR including the received information and a new card number
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -453,28 +453,28 @@ The method returns a QR including the received information and a new card number
 ```,```xml
 <methodCall>
     <methodName>DeactivateQR</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0011122411</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>AFAAFFK121</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>11111111</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20180328T12:02:09+0200</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>BCF11A9E1111FFC203301333C6008CE61BCD2E91</string>
             </value>
@@ -484,8 +484,8 @@ The method returns a QR including the received information and a new card number
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -518,53 +518,53 @@ The method returns a QR including the received information and a new card number
 ```xml
 <methodCall>
     <methodName>CreateQRData</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0012546711</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>5111</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Main choc Supplies</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Bangkok</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>THA</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>tst-ref-01</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>tst-txid-01</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20180307T13:01:30+0000</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
-                <struct >
+                <struct  />
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>D11B110F10EF0328FAB11113EC1F94402415C991</string>
             </value>
@@ -574,8 +574,8 @@ The method returns a QR including the received information and a new card number
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -611,28 +611,28 @@ The method returns a QR including the received information and a new card number
 ```,```xml
 <methodCall>
     <methodName>DeactivateQR</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0011122411</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>AFAAFFK121</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>11111111</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20180328T12:02:09+0200</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>BCF11A9E1111FFC203301333C6008CE61BCD2E91</string>
             </value>
@@ -642,8 +642,8 @@ The method returns a QR including the received information and a new card number
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -666,7 +666,6 @@ The method returns a QR including the received information and a new card number
 
 ```
 
-<p><a href="https:developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/#RI"></p>
+<p><a href="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/#RI"></p>
 <h3>Appendix</h3>
 <p></a></p>
-</p></h3></a></p></string></value></name></member></double></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></string></value></name></member></double></value></name></member></double></value></name></member></struct></value></params></methodresponse></string></value></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></string></value></name></member></double></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></string></value></name></member></double></value></name></member></double></value></name></member></struct></value></params></methodresponse></string></value></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></h2></p></string></value></name></member></double></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></string></value></name></member></double></value></name></member></double></value></name></member></struct></value></params></methodresponse></string></value></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></string></value></name></member></double></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></string></value></name></member></double></value></name></member></double></value></name></member></struct></value></params></methodresponse></string></value></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></h2></a></p></a></li></a></li></ul></h2>

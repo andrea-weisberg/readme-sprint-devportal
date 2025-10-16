@@ -22,31 +22,31 @@ metadata:
 ```xml
 <methodCall>
     <methodName>ChangePin</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>1234567890</value>
         </param>
-        <param >
+        <param  />
             <value>0987654321</value>
         </param>
-        <param >
+        <param  />
             <value>ABC123456789987000065</value>
         </param>
-        <param >
+        <param  />
             <value></value>
         </param>
-        <param >
+        <param  />
             <value>0000</value>
         </param>
-        <param >
+        <param  />
             <value>ABCD1235678910A00022</value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160429T14:03:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>d12345678a910c0128b1234b81e12345e6dde0e9</value>
         </param>
     </params>
@@ -54,8 +54,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -142,31 +142,31 @@ metadata:
 ```xml
 <methodCall>
     <methodName>ChangePin</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>1234567890</value>
         </param>
-        <param >
+        <param  />
             <value>0987654321</value>
         </param>
-        <param >
+        <param  />
             <value>ABC123456789987000065</value>
         </param>
-        <param >
+        <param  />
             <value></value>
         </param>
-        <param >
+        <param  />
             <value>0000</value>
         </param>
-        <param >
+        <param  />
             <value>ABCD1235678910A00022</value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160429T14:03:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>d12345678a910c0128b1234b81e12345e6dde0e9</value>
         </param>
     </params>
@@ -174,8 +174,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -246,5 +246,4 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API Menu</a></p>
-</a></p></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></value></value></value></value></value></value></value></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></value></value></value></value></value></value></value></value></params></methodname></methodcall></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API Menu</a></p>

@@ -7,14 +7,14 @@ metadata:
 ---
 <h2>Available Methods</h2>
 <ul>
-<li><a href="https:developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution-remote/#Load">Load</a> – Load to a wallet</li>
-<li><a href="https:developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution-remote/#LoadReversal">LoadReversal</a> – Reverse a load to a wallet</li>
+<li><a href="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution-remote/#Load">Load</a> – Load to a wallet</li>
+<li><a href="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution-remote/#LoadReversal">LoadReversal</a> – Reverse a load to a wallet</li>
 </ul>
 
-<p> <br >
+<p> <br  />
 <a id="Load"></p>
 <h2>Load</h2>
-<p></a><br >
+<p></a><br  />
 Load to a wallet.</p>
 
 #### Path parameters
@@ -33,43 +33,43 @@ Load to a wallet.</p>
 ```xml
 <methodCall>
   <methodName>load</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>123456789</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123456</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>20000</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123455</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>2</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123456</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20100102T12:34:56+0700</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>945526A6F4DD41C92DD0CCB1CAC0B4DDDE3C3089</string>
       </value>
@@ -79,8 +79,8 @@ Load to a wallet.</p>
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -105,54 +105,54 @@ Load to a wallet.</p>
 <?xml version="1.0"?>
 <methodCall>
   <methodName>LoadReversal</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0043889641</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>019919</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>180000</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Testing Load </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>
         </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>525337</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20201218T08:40:28</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>8968578568978</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20201218T13:52:52</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>A56B25A5145D0BBFFEC7107B4E95AF593728CC1E</string>
       </value>
@@ -162,8 +162,8 @@ Load to a wallet.</p>
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -196,43 +196,43 @@ Load to a wallet.</p>
 ```xml
 <methodCall>
   <methodName>load</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>123456789</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123456</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>20000</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123455</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>2</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123456</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20100102T12:34:56+0700</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>945526A6F4DD41C92DD0CCB1CAC0B4DDDE3C3089</string>
       </value>
@@ -242,8 +242,8 @@ Load to a wallet.</p>
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -268,54 +268,54 @@ Load to a wallet.</p>
 <?xml version="1.0"?>
 <methodCall>
   <methodName>LoadReversal</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0043889641</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>019919</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>180000</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Testing Load </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>
         </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>525337</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20201218T08:40:28</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>8968578568978</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20201218T13:52:52</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>A56B25A5145D0BBFFEC7107B4E95AF593728CC1E</string>
       </value>
@@ -325,8 +325,8 @@ Load to a wallet.</p>
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -349,10 +349,10 @@ Load to a wallet.</p>
 
 ```
 
-<p> <br >
+<p> <br  />
 <a id="LoadReversal"></p>
 <h2>LoadReversal</h2>
-<p></a><br >
+<p></a><br  />
 Reverse a Load to a wallet</p>
 
 #### Path parameters
@@ -373,43 +373,43 @@ Reverse a Load to a wallet</p>
 ```xml
 <methodCall>
   <methodName>load</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>123456789</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123456</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>20000</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123455</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>2</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123456</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20100102T12:34:56+0700</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>945526A6F4DD41C92DD0CCB1CAC0B4DDDE3C3089</string>
       </value>
@@ -419,8 +419,8 @@ Reverse a Load to a wallet</p>
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -445,54 +445,54 @@ Reverse a Load to a wallet</p>
 <?xml version="1.0"?>
 <methodCall>
   <methodName>LoadReversal</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0043889641</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>019919</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>180000</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Testing Load </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>
         </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>525337</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20201218T08:40:28</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>8968578568978</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20201218T13:52:52</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>A56B25A5145D0BBFFEC7107B4E95AF593728CC1E</string>
       </value>
@@ -502,8 +502,8 @@ Reverse a Load to a wallet</p>
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -538,43 +538,43 @@ Reverse a Load to a wallet</p>
 ```xml
 <methodCall>
   <methodName>load</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>123456789</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123456</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>20000</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123455</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>2</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123456</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20100102T12:34:56+0700</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>945526A6F4DD41C92DD0CCB1CAC0B4DDDE3C3089</string>
       </value>
@@ -584,8 +584,8 @@ Reverse a Load to a wallet</p>
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -610,54 +610,54 @@ Reverse a Load to a wallet</p>
 <?xml version="1.0"?>
 <methodCall>
   <methodName>LoadReversal</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0043889641</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>019919</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>180000</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Testing Load </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>
         </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>525337</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20201218T08:40:28</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>8968578568978</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20201218T13:52:52</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>A56B25A5145D0BBFFEC7107B4E95AF593728CC1E</string>
       </value>
@@ -667,8 +667,8 @@ Reverse a Load to a wallet</p>
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -691,8 +691,7 @@ Reverse a Load to a wallet</p>
 
 ```
 
-<p><a href="https:developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/#RIRemote"
+<p><a href="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/#RIRemote"
 
 <h2>Appendix</h2>
 <p></a></p>
-</p></a></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></string></value></string></value></string></value></int></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></int></value></string></value></string></value></params></methodname></methodcall></p></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></string></value></string></value></string></value></int></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></int></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></h2></a></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></string></value></string></value></string></value></int></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></int></value></string></value></string></value></params></methodname></methodcall></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></string></value></string></value></string></value></int></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></int></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></h2></a></p></a></li></a></li></ul></h2>

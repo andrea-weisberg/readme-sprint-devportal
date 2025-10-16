@@ -25,43 +25,43 @@ metadata:
 ```xml
 <methodCall>
     <methodName>Devalue</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0042128722</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Tutuka Test</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>687653400000962</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
-                <string >
+                <string  />
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>3000</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>246812</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20171212T12:52:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>58AC11B7B79F9D61797A0CD67A4822D197D5FF3C</string>
             </value>
@@ -71,8 +71,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -114,7 +114,7 @@ metadata:
                     <member>
                         <name>pocketUUID</name>
                         <value>
-                            <string >
+                            <string  />
                         </value>
                     </member>
                     <member>
@@ -192,43 +192,43 @@ metadata:
 ```xml
 <methodCall>
     <methodName>Devalue</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0042128722</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Tutuka Test</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>687653400000962</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
-                <string >
+                <string  />
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>3000</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>246812</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20171212T12:52:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>58AC11B7B79F9D61797A0CD67A4822D197D5FF3C</string>
             </value>
@@ -238,8 +238,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -281,7 +281,7 @@ metadata:
                     <member>
                         <name>pocketUUID</name>
                         <value>
-                            <string >
+                            <string  />
                         </value>
                     </member>
                     <member>
@@ -341,5 +341,4 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>
-</a></p></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></int></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></int></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

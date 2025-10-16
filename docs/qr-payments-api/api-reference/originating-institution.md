@@ -7,12 +7,12 @@ metadata:
 ---
 <h2>Available Methods</h2>
 <ul>
-<li><a href ="https:developer.sprint.paymentology.com/qr-payments-api/api-reference/originating-institution/#TransferPaymentToMerchant">TransferPaymentToMerchant</a> – Transfer payment to merchant</li>
+<li><a href ="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/originating-institution/#TransferPaymentToMerchant">TransferPaymentToMerchant</a> – Transfer payment to merchant</li>
 </ul>
 
 <p><a id="TransferPaymentToMerchant"></p>
 <h2>TransferPaymentToMerchant</h2>
-<p></a><br >
+<p></a><br  />
 Transfer payment to merchant.</p>
 
 #### Path parameters
@@ -43,103 +43,103 @@ Transfer payment to merchant.</p>
 ```xml
 <methodCall>
     <methodName>TransferPaymentToMerchant</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0039467951</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>AFF44112</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>John</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Doe</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Bangkok</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>THA</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>10261</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Jeremy</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Booster</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>137 Zoho Rade 12</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Bangkok</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>45687</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>THA</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>039200071850</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>100</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>THB</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>txn1234567</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20100102T12:34:56+0700</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
-                <struct >
+                <struct  />
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>FE0F831A3AEB4925B97F3037D9B4BDDF5C615C3B</string>
             </value>
@@ -149,8 +149,8 @@ Transfer payment to merchant.</p>
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -183,103 +183,103 @@ Transfer payment to merchant.</p>
 ```xml
 <methodCall>
     <methodName>TransferPaymentToMerchant</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0039467951</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>AFF44112</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>John</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Doe</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Bangkok</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>THA</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>10261</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Jeremy</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Booster</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>137 Zoho Rade 12</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Bangkok</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>45687</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>THA</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>039200071850</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>100</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>THB</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>txn1234567</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20100102T12:34:56+0700</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
-                <struct >
+                <struct  />
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>FE0F831A3AEB4925B97F3037D9B4BDDF5C615C3B</string>
             </value>
@@ -289,8 +289,8 @@ Transfer payment to merchant.</p>
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -313,7 +313,6 @@ Transfer payment to merchant.</p>
 
 ```
 
-<p><a href="https:developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/#OI"></p>
+<p><a href="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/#OI"></p>
 <h3>Appendix</h3>
 <p></a></p>
-</p></h3></a></p></string></value></name></member></double></value></name></member></struct></value></params></methodresponse></string></value></value></value></string></value></string></value></int></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></string></value></name></member></double></value></name></member></struct></value></params></methodresponse></string></value></value></value></string></value></string></value></int></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></h2></a></p></a></li></ul></h2>

@@ -488,4 +488,3 @@ async function getCampaignReports(token) {
 ```
 
 <p><em>The reportUrl is a pre-signed S3 URL which is valid for 5 minutes. Note that the URL in the response is escaped to unicode.</em></p>
-</em></p></p></p></p></p></h2></p></p></p></p></h2></p></p></h2></p></p></p></h1></p></code></code></p></strong></em></strong></em></p></p></h1></em></h3></section></strong></p></strong></p>

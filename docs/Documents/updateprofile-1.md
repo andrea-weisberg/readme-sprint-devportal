@@ -27,103 +27,103 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
   <methodName>UpdateProfile</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0068729077</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>5612169911</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>jayleneferrer@ymail.com</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>YntjJVddlY</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Jaylene</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Ferrer</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>6104250169087</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>27760976805</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>27760976805</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>1</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>4440228890</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Cut Price Jewellers CC</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>2011/075246/23</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>50 Bath Avenue</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Rosebank</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Gauteng</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>2196</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>6305382bd7b84</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>2022-08-23T22:27:23</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>186e30d3bf3a2bfeab2d25506c1c04dbdae55474</string>
       </value>
@@ -134,8 +134,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -298,103 +298,103 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
   <methodName>UpdateProfile</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0068729077</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>5612169911</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>jayleneferrer@ymail.com</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>YntjJVddlY</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Jaylene</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Ferrer</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>6104250169087</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>27760976805</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>27760976805</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>1</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>4440228890</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Cut Price Jewellers CC</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>2011/075246/23</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>50 Bath Avenue</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Rosebank</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Gauteng</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>2196</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>6305382bd7b84</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>2022-08-23T22:27:23</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>186e30d3bf3a2bfeab2d25506c1c04dbdae55474</string>
       </value>
@@ -405,8 +405,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -545,5 +545,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Reference</a></p>
-</a></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></int></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></int></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Reference</a></p>

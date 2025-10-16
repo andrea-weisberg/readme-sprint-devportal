@@ -6,7 +6,7 @@ metadata:
   robots: index
 ---
 <h2>Breakdown of the chargebacks process with Chargeback API</h2>
-<p>The Paymentology dispute resolution cycle facilitates the whole process of reversing payments to cardholders. Card transaction disputes usually start when a cardholder or an issuer identifies suspicious, fraudulent, or erroneous charges on accounts.<br >
+<p>The Paymentology dispute resolution cycle facilitates the whole process of reversing payments to cardholders. Card transaction disputes usually start when a cardholder or an issuer identifies suspicious, fraudulent, or erroneous charges on accounts.<br  />
 Issuers and acquirers then follow a process to attempt to resolve the dispute. In the case of Mastercard, the two parties use the Mastercom platform to create and manage disputes throughout their lifecycle, expedite the dispute resolution process, and ensure satisfactory handling of the claims.</p>
 
 <h2>Typical dispute resolution cycle steps:</h2>
@@ -24,9 +24,9 @@ Issuers and acquirers then follow a process to attempt to resolve the dispute. I
 <h2>Let’s take a look at the steps in more detail</h2>
 
 <h3><a id="step 1"></a>step 1: First chargeback</h3>
-<p>If we deem the claim to be valid, we can make the first chargeback, transferring the disputed funds from the acquirer to us.<br >
-We then communicate to the acquirer about the chargeback by giving a chargeback reason code as well as supportive data.<br >
-The chargeback must be for a lesser transaction amount or the entire transaction amount—it cannot be higher than the entire amount.<br >
+<p>If we deem the claim to be valid, we can make the first chargeback, transferring the disputed funds from the acquirer to us.<br  />
+We then communicate to the acquirer about the chargeback by giving a chargeback reason code as well as supportive data.<br  />
+The chargeback must be for a lesser transaction amount or the entire transaction amount—it cannot be higher than the entire amount.<br  />
 To successfully complete this step, we provide a Chargeback API that allows you to send us the following information:</p>
 
 <h4>Payload example</h4>
@@ -46,21 +46,20 @@ To successfully complete this step, we provide a Chargeback API that allows you 
 ```
 
 <h3><a id="step 2"></a>step 2: Collaboration phase</h3>
-<p>Issuer-initiated chargebacks remain in a pending status (no more than 72 hours) on issuers’ behalf to allow merchants to respond and resolve the inquiry.<br >
-In this phase, the acquirer can reject the first chargeback and refund the disputed amount. This closes the dispute and prevents them from going through the chargeback process.<br >
+<p>Issuer-initiated chargebacks remain in a pending status (no more than 72 hours) on issuers’ behalf to allow merchants to respond and resolve the inquiry.<br  />
+In this phase, the acquirer can reject the first chargeback and refund the disputed amount. This closes the dispute and prevents them from going through the chargeback process.<br  />
 If the acquirer rejects the first chargeback, we will get a notification of rejection and a refund should be processed by the acquirer. If they don’t reject it, the chargeback is then processed as normal to which the acquirer can then dispute if they disagree by making a second presentment.</p>
 
 <h3><a id="step 3"></a>step 3: Second presentment</h3>
-<p>If the acquirer is dissatisfied with the chargeback reason, they can create a second presentment that gives their side of the story.<br >
-This step transfers the money from the issuer to the acquirer. The second presentment must be for a lesser chargeback amount or the entire chargeback amount. It cannot be higher than the entire amount.<br >
-After receiving the second presentment, Paymentology will notify the client and present the documents for the case.<br >
+<p>If the acquirer is dissatisfied with the chargeback reason, they can create a second presentment that gives their side of the story.<br  />
+This step transfers the money from the issuer to the acquirer. The second presentment must be for a lesser chargeback amount or the entire chargeback amount. It cannot be higher than the entire amount.<br  />
+After receiving the second presentment, Paymentology will notify the client and present the documents for the case.<br  />
 The client will then decide the next course of action – either to accept the second presentment and close the dispute or continue with the dispute.</p>
 
 <h3><a id="step 4"></a>step 4: Pre-arbitration case</h3>
-<p>If we are dissatisfied with the second presentment reason, we can make a second chargeback, which is referred to as an pre-arbitration case.<br >
-Paymentology provides an API that allows clients to submit the required data for pre-arbitration case filings.<br >
+<p>If we are dissatisfied with the second presentment reason, we can make a second chargeback, which is referred to as an pre-arbitration case.<br  />
+Paymentology provides an API that allows clients to submit the required data for pre-arbitration case filings.<br  />
 The pre-arbitration case must be for a lesser second presentment amount or the entire amount—it cannot be higher than the entire amount.</p>
 
 <h3><a id="step 5"></a>step 5: Arbitration case</h3>
 <p>The arbitration case filing step escalates the issue to Mastercard. Mastercard will then examine the evidence provided by both the issuer and the acquirer to determine the party that carries the day.</p>
-</p></a></h3></p></a></h3></p></a></h3></p></a></h3></h4></p></a></h3></h2></li></li></li></li></ul></p></p></h2></p></h2>

@@ -16,7 +16,7 @@ metadata:
 
 </pre>
 <ul>
-<li>Any argument that has the type ‘date’ needs to follow the <a href="https:developer.sprint.paymentology.com/mpqr/documentation/http://xmlrpc.scripting.com/spec">XML-RPC specified</a> ISO 8601 dateTime format:</li>
+<li>Any argument that has the type ‘date’ needs to follow the <a href="https://developer.sprint.paymentology.com/mpqr/documentation/http://xmlrpc.scripting.com/spec">XML-RPC specified</a> ISO 8601 dateTime format:</li>
 </ul>
 <p style={{paddingLeft: "40px"}}><dateTime.iso8601>YYYYMMDDTHH:mm:ss±HH:mm<dateTime.iso8601></p>
 <ul>
@@ -76,4 +76,3 @@ Any transaction amount is represented as its cent value; therefore an integer ra
 <pre><struct ></pre>
 <p>or:</p>
 <pre><struct><member><name>recipientPostalCode</name><value><string>10260</string></value></member></struct></pre>
-</pre></p></pre></p></pre></p></li></li></ul></p></p></p></p></pre></p></p></h2></a></p></pre></p></pre></p></p></li></li></ul></pre></p></pre></p></p></h2></a></p></pre></p></pre></li></li></li></ul></li></ul></p></a></li></ul></pre></li></ul></p></h2></a></p>

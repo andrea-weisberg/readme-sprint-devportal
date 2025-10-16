@@ -19,7 +19,7 @@ metadata:
 | idOrPassportNumber | String |  | ✓ | <p>Profile owner official id document number (requires FICA in some cases)</p> |
 | contactNumber | String | 1-10 characters | ✓ | <p>Profile owner contact number</p> |
 | cellphoneNumber | String | 1-10 characters | ✓ | <p>Profile owner cellphone number</p> |
-| isCompany | Boolean |  | ✓ | <p>Profile owner is a registered company.<br > Possible values:<br > <strong>0</strong> (false)<br > <strong>1</strong> (true)</p> |
+| isCompany | Boolean |  | ✓ | <p>Profile owner is a registered company.<br  /> Possible values:<br  /> <strong>0</strong> (false)<br  /> <strong>1</strong> (true)</p> |
 | vatNumber | String | 1-20 characters | ✓ | <p>Profile company VAT number</p> |
 | companyName | String | 1-50 characters | ✓ | <p>Profile company name</p> |
 | companyCCNumber | String | 1-20 characters | ✓ | <p>Profile company CC number</p> |
@@ -35,93 +35,93 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>Register</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>ABC1234567</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>email.address@example.com</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>mySecretPassword</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Alex</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Albon</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456789</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>5555555555</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>1</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>1234567890</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Oopsies Ltd</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456789</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123 Main St</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Suite 200</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>San Francisco</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>94107</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>T987654321</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>2023-11-08T12:44:44</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>3b4c5555e1c1234d8e134a4c0c2c2d444e3d4444</string>
             </value>
@@ -131,8 +131,8 @@ metadata:
 
 ```,```null
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -301,93 +301,93 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>Register</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>ABC1234567</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>email.address@example.com</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>mySecretPassword</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Alex</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Albon</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456789</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>5555555555</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>1</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>1234567890</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Oopsies Ltd</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456789</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123 Main St</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Suite 200</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>San Francisco</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>94107</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>T987654321</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>2023-11-08T12:44:44</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>3b4c5555e1c1234d8e134a4c0c2c2d444e3d4444</string>
             </value>
@@ -397,8 +397,8 @@ metadata:
 
 ```,```null
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -537,5 +537,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Reference</a></p>
-</a></p></p></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></strong></strong></p></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Reference</a></p>

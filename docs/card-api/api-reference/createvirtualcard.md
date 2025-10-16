@@ -24,48 +24,48 @@ metadata:
 ```xml
 <methodCall>
     <methodName type="xs:string">CreateVirtualCard</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>1234567890</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>1234A5BC-567D-8910-9DEA0D87AD654DA0</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST_CUSTOMER</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TestCard</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>1122334455</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20161125T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>d12d3df4-5e14-45a5-a32c-678c1234dfdb</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123DC4F5BD12345678E9F0FBDF0DCE1234BEDF56</string>
             </value>
@@ -75,8 +75,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -186,48 +186,48 @@ metadata:
 ```xml
 <methodCall>
     <methodName type="xs:string">CreateVirtualCard</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>1234567890</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>1234A5BC-567D-8910-9DEA0D87AD654DA0</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST_CUSTOMER</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TestCard</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>1122334455</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20161125T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>d12d3df4-5e14-45a5-a32c-678c1234dfdb</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123DC4F5BD12345678E9F0FBDF0DCE1234BEDF56</string>
             </value>
@@ -237,8 +237,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -327,5 +327,4 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API Menu</a></p>
-</a></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API Menu</a></p>

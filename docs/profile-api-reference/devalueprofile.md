@@ -22,33 +22,33 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>DevalueProfile</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>2569555551</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>4567890745</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <double>47089</double>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>56fe12345abc4</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>2023-02-28T22:38:11</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>c354798a16f41a68394c15ce6eaa033e5050895f</string>
             </value>
@@ -59,8 +59,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -146,33 +146,33 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>DevalueProfile</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>2569555551</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>4567890745</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <double>47089</double>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>56fe12345abc4</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>2023-02-28T22:38:11</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>c354798a16f41a68394c15ce6eaa033e5050895f</string>
             </value>
@@ -183,8 +183,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -249,4 +249,3 @@ metadata:
 
 ```
 
-</int></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></double></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></int></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></double></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p>

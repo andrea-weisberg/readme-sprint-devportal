@@ -22,33 +22,33 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>CalculateTAV</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>{{terminalID}}</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>{{customerReference}}</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>{{trackingNumber}}</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>{{transactionID}}</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>{{transactionDate}}</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>{{checksum}}</string>
             </value>
@@ -59,8 +59,8 @@ metadata:
 ```,```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -97,39 +97,39 @@ metadata:
 |---|---|---|
 | resultCode | Integer | <p>Status code indicating transaction result. In the event of a successful result the code will be 1.</p> |
 | resultText | String | <p>Text indicating transaction result</p> |
-| tav | String | <p>JSON fields encoded in Base-64 format.<br > The returned JSON fields include:<br > • version<br > • signatureAlgorithm<br > • dataValidUntilTimestamp<br > • includedFieldsInOrder<br > • signature (RSA-SHA256 signature/<br > TAV)</p> |
+| tav | String | <p>JSON fields encoded in Base-64 format.<br  /> The returned JSON fields include:<br  /> • version<br  /> • signatureAlgorithm<br  /> • dataValidUntilTimestamp<br  /> • includedFieldsInOrder<br  /> • signature (RSA-SHA256 signature/<br  /> TAV)</p> |
 
 ```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>CalculateTAV</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>{{terminalID}}</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>{{customerReference}}</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>{{trackingNumber}}</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>{{transactionID}}</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>{{transactionDate}}</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>{{checksum}}</string>
             </value>
@@ -140,8 +140,8 @@ metadata:
 ```,```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -172,5 +172,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">Back To Card API Menu</a></p>
-</a></p></p></string></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></string></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">Back To Card API Menu</a></p>

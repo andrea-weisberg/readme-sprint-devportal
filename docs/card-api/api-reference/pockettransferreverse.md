@@ -26,58 +26,58 @@ metadata:
 ```xml
 <methodCall>
     <methodName>PocketTransferReverse</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0070499260</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>1233</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>01211631</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>5784B0EF-155D-0028-9DE2D22646AD35D0</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>5756DA04-155D-0028-9D1E345F63AD8680</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>10</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>006001007020700#31180000#PP0914799521</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20170828T12:56:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>006001007020700#31180000#PP0914799520</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20170828T12:56:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>39205E153EDC01C9605172E2D376889DBB8D94EF</string>
             </value>
@@ -87,8 +87,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -149,7 +149,7 @@ metadata:
                         <name>balance</name>
                         <value>
                             <array>
-                                <data >
+                                <data  />
                             </array>
                         </value>
                     </member>
@@ -178,58 +178,58 @@ metadata:
 ```xml
 <methodCall>
     <methodName>PocketTransferReverse</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0070499260</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>1233</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>01211631</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>5784B0EF-155D-0028-9DE2D22646AD35D0</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>5756DA04-155D-0028-9D1E345F63AD8680</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>10</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>006001007020700#31180000#PP0914799521</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20170828T12:56:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>006001007020700#31180000#PP0914799520</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20170828T12:56:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>39205E153EDC01C9605172E2D376889DBB8D94EF</string>
             </value>
@@ -239,8 +239,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -301,7 +301,7 @@ metadata:
                         <name>balance</name>
                         <value>
                             <array>
-                                <data >
+                                <data  />
                             </array>
                         </value>
                     </member>
@@ -313,5 +313,4 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>
-</a></p></array></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></string></value></int></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></array></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></string></value></int></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

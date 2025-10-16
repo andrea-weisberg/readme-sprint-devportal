@@ -15,10 +15,9 @@ metadata:
 
 <h2>How to use Checksum Generator</h2>
 <ol>
-<li>Go to <a href="https:developer.sprint.paymentology.com/tools/checksum-generator/">Checksum Generator</a> under <a href="https:developer.sprint.paymentology.com/tools/">Tools</a></li>
+<li>Go to <a href="https://developer.sprint.paymentology.com/tools/checksum-generator/">Checksum Generator</a> under <a href="https://developer.sprint.paymentology.com/tools/">Tools</a></li>
 <li>Enter your terminal password in the “Private Key” field</li>
 <li>Enter the request data in the “String to hash” field</li>
 <li>Click “Submit”</li>
 <li>Wait for the “Transaction Result Pop-up” that will display the calculated checksum together with the details behind the calculation</li>
 </ol>
-</li></li></li></li></a></a></li></ol></h2></code></p></p></span></p></p></h2></p></h2>

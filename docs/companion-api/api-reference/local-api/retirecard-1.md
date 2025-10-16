@@ -22,33 +22,33 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
    <methodName>RetireCard</methodName>
-   <params >
-      <param >
+   <params  />
+      <param  />
          <value>
             <string>0213111324</string>
          </value>
       </param>
-      <param >
+      <param  />
          <value>
             <string>NGUYETTEST1021</string>
          </value>
       </param>
-      <param >
+      <param  />
          <value>
             <string>404691400000004</string>
          </value>
       </param>
-      <param >
+      <param  />
          <value>
             <string>16552290797908</string>
          </value>
       </param>
-      <param >
+      <param  />
          <value>
             <dateTime.iso8601>20210310T10:41:11</dateTime.iso8601>
          </value>
       </param>
-      <param >
+      <param  />
          <value>
             <string>E8E3FCCCF26A40563573338D62F23284878B6B2D</string>
          </value>
@@ -59,8 +59,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-   <params >
-      <param >
+   <params  />
+      <param  />
          <value>
             <struct>
                <member>
@@ -95,33 +95,33 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
    <methodName>RetireCard</methodName>
-   <params >
-      <param >
+   <params  />
+      <param  />
          <value>
             <string>0213111324</string>
          </value>
       </param>
-      <param >
+      <param  />
          <value>
             <string>NGUYETTEST1021</string>
          </value>
       </param>
-      <param >
+      <param  />
          <value>
             <string>404691400000004</string>
          </value>
       </param>
-      <param >
+      <param  />
          <value>
             <string>16552290797908</string>
          </value>
       </param>
-      <param >
+      <param  />
          <value>
             <dateTime.iso8601>20210310T10:41:11</dateTime.iso8601>
          </value>
       </param>
-      <param >
+      <param  />
          <value>
             <string>E8E3FCCCF26A40563573338D62F23284878B6B2D</string>
          </value>
@@ -132,8 +132,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-   <params >
-      <param >
+   <params  />
+      <param  />
          <value>
             <struct>
                <member>
@@ -156,5 +156,4 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>
-</a></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

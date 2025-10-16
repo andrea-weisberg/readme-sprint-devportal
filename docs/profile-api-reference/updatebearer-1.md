@@ -26,53 +26,53 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
   <methodName>UpdateBearer</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>1876543896</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>8765452147</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>231456202589631</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>John</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Snow</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>2563021238965</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>4321 321 123</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>f41256s0aa21abcdef123456a25ffeba</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20230210T13:16:23</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>e694a6e09b15bc1d139428593d919e5081f36e8e</string>
       </value>
@@ -83,8 +83,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -181,53 +181,53 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
   <methodName>UpdateBearer</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>1876543896</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>8765452147</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>231456202589631</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>John</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Snow</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>2563021238965</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>4321 321 123</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>f41256s0aa21abcdef123456a25ffeba</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20230210T13:16:23</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>e694a6e09b15bc1d139428593d919e5081f36e8e</string>
       </value>
@@ -238,8 +238,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -316,4 +316,3 @@ metadata:
 
 ```
 
-</string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p>

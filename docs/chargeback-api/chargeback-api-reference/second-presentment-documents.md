@@ -15,7 +15,7 @@ metadata:
 |---|---|---|:--:|---|
 | chargebackId | String |  | ✓ | <p>Chargeback id</p> |
 | claimID | String |  | ✓ | <p>Claim id</p> |
-| format | String |  | ✓ | <p>File format. Possible values:<br > ORIGINAL,<br > MERGED_TIFF,<br > MERGED PDF</p> |
+| format | String |  | ✓ | <p>File format. Possible values:<br  /> ORIGINAL,<br  /> MERGED_TIFF,<br  /> MERGED PDF</p> |
 
 ```json
 {
@@ -60,8 +60,7 @@ metadata:
 ```
 
 <h4>Other response codes</h4>
-<p>Further response codes and details can be found <a href="https:developer.sprint.paymentology.com/chargeback-api/response-codes/">here</a>.</p>
+<p>Further response codes and details can be found <a href="https://developer.sprint.paymentology.com/chargeback-api/response-codes/">here</a>.</p>
 
 <h2>Additional info</h2>
 
-</h2></a></p></h4></p></p></p></p></p></p></h2></p>

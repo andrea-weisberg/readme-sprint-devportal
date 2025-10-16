@@ -22,33 +22,33 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
   <methodName>Status</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>2569874521</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>7654327412</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>24569874</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>15432332</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20230228T20:55:45</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>221FA0D339B067055EB4D4A25490775CE2D325BB</string>
       </value>
@@ -59,8 +59,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -192,33 +192,33 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
   <methodName>Status</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>2569874521</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>7654327412</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>24569874</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>15432332</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20230228T20:55:45</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>221FA0D339B067055EB4D4A25490775CE2D325BB</string>
       </value>
@@ -229,8 +229,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -339,4 +339,3 @@ metadata:
 
 <p> </p>
 
-</p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p>

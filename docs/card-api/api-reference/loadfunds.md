@@ -23,43 +23,43 @@ metadata:
 ```xml
 <methodCall>
     <methodName>LoadFunds</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0008866376</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>999000001</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>953860100000030</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>NOTUSED</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>11100</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>43-load</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20180731T12:50:11</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>E52A8FA98B8827CEBD1A552C9747B5D3C7867E4F</string>
             </value>
@@ -69,8 +69,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -184,43 +184,43 @@ metadata:
 ```xml
 <methodCall>
     <methodName>LoadFunds</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0008866376</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>999000001</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>953860100000030</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>NOTUSED</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>11100</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>43-load</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20180731T12:50:11</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>E52A8FA98B8827CEBD1A552C9747B5D3C7867E4F</string>
             </value>
@@ -230,8 +230,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -327,5 +327,4 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>
-</a></p></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></int></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></int></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

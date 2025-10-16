@@ -24,38 +24,38 @@ metadata:
 ```xml
 <methodCall>
     <methodName>StopCard</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0008866376</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST_CUSTOMER</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>638654700000008</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>2</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>d89d6df6-4e14-45a5-a32c-217c7175dfdb</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>E554FEB530A9C675817F3855819F7F0A34C76574</string>
             </value>
@@ -65,8 +65,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -141,38 +141,38 @@ metadata:
 ```xml
 <methodCall>
     <methodName>StopCard</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0008866376</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST_CUSTOMER</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>638654700000008</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>2</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>d89d6df6-4e14-45a5-a32c-217c7175dfdb</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>E554FEB530A9C675817F3855819F7F0A34C76574</string>
             </value>
@@ -182,8 +182,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -242,5 +242,4 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>
-</a></p></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></int></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></int></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

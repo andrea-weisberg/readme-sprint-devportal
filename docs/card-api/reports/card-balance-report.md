@@ -33,6 +33,5 @@ metadata:
 <h2>Report sample</h2>
 <p>**CampaignName_cardbalances_YYYY_MM_DD-.png IMAGE GOES HERE.**</p>
 
-<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_cardbalances_YYYY_MM_DD.csv">CampaignName_cardbalances_YYYY_MM_DD.csv</a></p>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_cardbalances_YYYY_MM_DD.csv">CampaignName_cardbalances_YYYY_MM_DD.csv</a></p>
 
-</a></p></p></h2></h2></h2></p></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></ul></p></p>

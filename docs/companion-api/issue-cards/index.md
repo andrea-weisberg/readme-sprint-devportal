@@ -16,7 +16,7 @@ metadata:
 
 <p><span style={{fontWeight: "400"}}>The VCN will be linked to your customer’s store of value. Customers can then start making transactions instantly on any e-commerce site or application that accepts the chosen card association. </span></p>
 
-<p>You’ll need to make a call to the <a href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/createlinkedcard/"><span className="xml-highlight">CreateLinkedCard</span></a> method to create a VCN.</p>
+<p>You’ll need to make a call to the <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/createlinkedcard/"><span className="xml-highlight">CreateLinkedCard</span></a> method to create a VCN.</p>
 
 <h2 className="block highlight" data-element="bridgehead" data-attr-renderas="sect3" data-attr-xml-id="bridgehead-idm4580796471563231694092126034"><span className="inline translation current" data-element="emphasis" data-attr-role="bold" data-attr-xinfo-text="10585">2. Issuing a physical card​</span>​</h2>
 <p><span style={{fontWeight: "400"}}>You can choose either of the following options for issuing a physical companion card: Issue on-site and link immediately or issue with courier and link later.</span></p>
@@ -34,7 +34,7 @@ metadata:
 
 <p>Once the card is activated and linked, it is now ready to be funded and used as per the predefined use cases, such as making ATM withdrawals, local and international online payments, point of sale transactions, or closed loop network transactions.</p>
 
-<h2>3. Issuing a <a href="https:developer.sprint.paymentology.com/companion-api/issue-cards/digital-first/">digital-first</a> card</h2>
+<h2>3. Issuing a <a href="https://developer.sprint.paymentology.com/companion-api/issue-cards/digital-first/">digital-first</a> card</h2>
 <p>Digital-first cards are available with Mastercard or Visa and currently available in select regions. The cards are issued similarly as a virtual card where you can use Companion API to create a Virtual Card Number (VCN) as described in the section Issuing a Virtual Card. To print it later, you can follow the steps below:</p>
 <h3>step 1: PrintLinkedCard</h3>
 <p>You can use this option if you want the existing digital first cards to be printed.</p>
@@ -47,4 +47,3 @@ metadata:
 
 <p><strong>Note: </strong>Since it would take a few days for the card manufacturer to fulfill the order, using step 2 should be done one day after step 1.</p>
 <p> </p>
-</p></strong></p></p></h3></p></strong></p></p></h3></p></a></h2></p></strong></strong></p></li></li></li></ul></p></p></p></span></p></span></h2></span></a></p></span></p></p></span></p></span></p></div></span></h2></h2>

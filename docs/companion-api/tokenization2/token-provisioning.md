@@ -58,9 +58,9 @@ metadata:
 <p>**Mdes-Manual-provisioning-v2.png IMAGE GOES HERE.**</p>
 <p> </p>
 <p>Manual provisioning is where the cardholder physically enters the card details, such as PAN, expiry date, and CVV, into the digitized wallet. It requires the cardholder to enter an OTP via the selected verification method, usually SMS or email, to verify that they indeed own the card.</p>
-<p>In manual provisioning, Paymentology will use the<a href="https:developer.sprint.paymentology.com/companion-api/api-reference/remote/#AdministrativeMessage"><b> AdministrativeMessage </b></a>method to handle various <a href="https:developer.sprint.paymentology.com/administrative-message-values/">digitization</a> tasks.</p>
+<p>In manual provisioning, Paymentology will use the<a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#AdministrativeMessage"><b> AdministrativeMessage </b></a>method to handle various <a href="https://developer.sprint.paymentology.com/administrative-message-values/">digitization</a> tasks.</p>
 <p><b>AdministrativeMessage method</b></p>
-<p>The <a href="https:developer.sprint.paymentology.com/companion-api/api-reference/remote/#AdministrativeMessage">AdministrativeMessage method</a>, which is part of the remote Companion API, is used for the following tasks:</p>
+<p>The <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#AdministrativeMessage">AdministrativeMessage method</a>, which is part of the remote Companion API, is used for the following tasks:</p>
 <ul>
 <li aria-level="1">Notifying the client when a cardholder requests to provision their card, using either the push method or the manual method.</li>
 <li aria-level="1">Notifying the client of any token lifecycle events coming from the MDES.</li>
@@ -69,15 +69,15 @@ metadata:
 <p>The <b>messageName </b>path parameter, required in the AdministrativeMessage method, specifies the name of the administrative messages sent to the client.</p>
 <p>These are the possible values for the <b>messageName </b>data field during manual provisioning:</p>
 <ul>
-<li aria-level="1"><b><a href="https:developer.sprint.paymentology.com/administrative-message-values/#activationmethods">Digitization.activationmethods</a></b>— sends a notification that a cardholder is requesting provisioning, and the cardholder’s contact method needs to be verified for sending the OTP.</li>
-<li aria-level="1"><b><a href="https:developer.sprint.paymentology.com/administrative-message-values/#activation">Digitization.activation</a></b>—sends an activation code that requires the OTP to be sent to the cardholder.</li>
-<li aria-level="1"><b><a href="https:developer.sprint.paymentology.com/administrative-message-values/#complete">Digitization.complete</a></b>—sends a notification when MDES has successfully activated the token for the card.</li>
-<li aria-level="1"><b><a href="https:developer.sprint.paymentology.com/administrative-message-values/#exception">Digitization.exception</a></b>—sends a notification when there is a problem with the provisioning process.</li>
+<li aria-level="1"><b><a href="https://developer.sprint.paymentology.com/administrative-message-values/#activationmethods">Digitization.activationmethods</a></b>— sends a notification that a cardholder is requesting provisioning, and the cardholder’s contact method needs to be verified for sending the OTP.</li>
+<li aria-level="1"><b><a href="https://developer.sprint.paymentology.com/administrative-message-values/#activation">Digitization.activation</a></b>—sends an activation code that requires the OTP to be sent to the cardholder.</li>
+<li aria-level="1"><b><a href="https://developer.sprint.paymentology.com/administrative-message-values/#complete">Digitization.complete</a></b>—sends a notification when MDES has successfully activated the token for the card.</li>
+<li aria-level="1"><b><a href="https://developer.sprint.paymentology.com/administrative-message-values/#exception">Digitization.exception</a></b>—sends a notification when there is a problem with the provisioning process.</li>
 </ul>
 <p>Let’s talk about each of the values in detail.</p>
 <p> </p>
 <ol>
-<li><b><a href="https:developer.sprint.paymentology.com/administrative-message-values/#activationmethods">Digitization.activationmethods</a></b></li>
+<li><b><a href="https://developer.sprint.paymentology.com/administrative-message-values/#activationmethods">Digitization.activationmethods</a></b></li>
 </ol>
 <p>This event happens at the beginning of the manual provisioning process. It signals that token provisioning is being requested, and the cardholder’s contact method needs to be verified for pushing the OTP. The OTP will confirm that the cardholder is the owner of the card.</p>
 <p>In this instance, the MDES will send a notification to Paymentology that a cardholder is trying to provision their card on the XPay app, and that Paymentology needs to provide the cardholder’s mobile number and/or email address back to MDES so that they may pass it to the XPay.</p>
@@ -87,21 +87,20 @@ metadata:
 <p>Also, no KLV fields are required to be passed. So, they’ll be no <b>MessageData</b> string included in the AdministrativeMessage request from Paymentology.</p>
 <p> </p>
 <ol start="2">
-<li><b><a href="https:developer.sprint.paymentology.com/administrative-message-values/#activation">Digitization.activation</a></b></li>
+<li><b><a href="https://developer.sprint.paymentology.com/administrative-message-values/#activation">Digitization.activation</a></b></li>
 </ol>
 <p>Once the cardholder selects their preferred method of verification, the XPay wallet will send this information to the MDES, and the MDES will send it to Paymentology.</p>
 <p>Paymentology will then send an activation code via <b>Digitization.activation</b> to the client. The client will then pass an OTP to the cardholder, through their preferred contact method, to input it on their XPay wallet app.</p>
 <p> </p>
 <ol start="3">
-<li><b><a href="https:developer.sprint.paymentology.com/administrative-message-values/#complete">Digitization.complete</a></b></li>
+<li><b><a href="https://developer.sprint.paymentology.com/administrative-message-values/#complete">Digitization.complete</a></b></li>
 </ol>
 <p>Once the cardholder enters the OTP, Paymentology will verify the OTP. And MDES will activate the PAN’s token. MDES will also map the token to the full PAN and store this information in its token vault. MDES will then send a notification to Paymentology confirming that the token creation process is complete.</p>
 <p>Paymentology will then notify the client via <b>Digitization.complete </b>of the successful provisioning of the cardholder’s card.</p>
 <p> </p>
 <ol start="4">
-<li><b><a href="https:developer.sprint.paymentology.com/administrative-message-values/#exception">Digitization.exception</a></b></li>
+<li><b><a href="https://developer.sprint.paymentology.com/administrative-message-values/#exception">Digitization.exception</a></b></li>
 </ol>
 <p>This occurs when Paymentology informs the XPay wallet that there is an error during the provisioning process.</p>
 <p>An exception can be thrown when the OTP activation code retries have been exceeded, an expired activation code was used, an invalid activation code was used, or an incorrect activation code was entered.</p>
 </section>
-</p></p></a></b></li></ol></p></b></p></p></a></b></li></ol></p></b></p></p></a></b></li></ol></p></b></p></b></p></p></b></p></p></p></a></b></li></ol></p></p></a></b></li></a></b></li></a></b></li></a></b></li></ul></b></p></b></p></p></li></li></ul></a></p></b></p></a></b></a></p></p></p></p></b></h2></section></li></li></li></li></li></ol></p></p></p></p></h3></p></p></b></p></p></p></h3></p></p></li></li></ul></p></p></p></b></h2></p></b></li></b></li></ul></p></b></h2></b></p></b></p></b></b></p></b></p></b></p></b></p></p></p></p>

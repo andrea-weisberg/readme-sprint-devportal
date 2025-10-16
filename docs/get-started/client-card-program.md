@@ -10,39 +10,39 @@ metadata:
 <p><span style={{fontWeight: "400"}}>The Client Executives use the information that clients provide on the Client Product Checklist form to select their appropriate card schemes, products and card program features. </span></p>
 <p><span style={{fontWeight: "400"}}>These are some possible card settings:</span></p>
 <ul>
-<li><b>The BIN</b><span style={{fontWeight: "400"}}><br >
+<li><b>The BIN</b><span style={{fontWeight: "400"}}><br  />
 </span><span style={{fontWeight: "400"}}><span style={{fontWeight: "400"}}>This is the Bank Identification Number, which is the initial four to six digits that appear on a card number. BIN is used to identify the institution issuing the card.</span></span></li>
-<li aria-level="1"><b>The currency</b><b><br >
+<li aria-level="1"><b>The currency</b><b><br  />
 </b><span style={{fontWeight: "400"}}>This is the currency that transactions will be processed in. </span></li>
 </ul>
 <ul>
-<li aria-level="1"><b>The product</b><b><br >
+<li aria-level="1"><b>The product</b><b><br  />
 </b><span style={{fontWeight: "400"}}>This is the Paymentology Sprint product that is being used, such as Companion API or Card API.</span></li>
 </ul>
 <ul>
-<li aria-level="1"><b>PIN configuration</b><b><br >
+<li aria-level="1"><b>PIN configuration</b><b><br  />
 </b><span style={{fontWeight: "400"}}>This configures cards to be created with a PIN and provides PIN management functions. </span></li>
 </ul>
 <ul>
-<li aria-level="1"><b>Countries where the card can be used</b><b><br >
+<li aria-level="1"><b>Countries where the card can be used</b><b><br  />
 </b><span style={{fontWeight: "400"}}>This is a list of countries where the card can be used to make transactions. </span></li>
 </ul>
 <ul>
-<li aria-level="1"><b>Expiry settings</b><b><br >
+<li aria-level="1"><b>Expiry settings</b><b><br  />
 </b><span style={{fontWeight: "400"}}>This is the card expiry date and other expiry configurations, such as re-issuing of an expired card. </span></li>
 </ul>
 <ul>
-<li aria-level="1"><b>Reports</b><b><br >
+<li aria-level="1"><b>Reports</b><b><br  />
 </b><span style={{fontWeight: "400"}}>This enables the Paymentology Sprint reports that a client can download. For example, a mark-off file can include all the settings under that client. </span></li>
 </ul>
 <ul>
-<li aria-level="1"><b>Limits</b><b><br >
+<li aria-level="1"><b>Limits</b><b><br  />
 </b><span style={{fontWeight: "400"}}>This defines the maximum load allowed on a card as well as other velocity checks. </span></li>
 </ul>
 <ul>
-<li aria-level="1"><b>KLV Fields</b><b><br >
-</b><span style={{fontWeight: "400"}}>This selects the KLV data that can be sent to the client. Read more about </span><a href="https:developer.sprint.paymentology.com/companion-api/klv-lookup/"><span style={{fontWeight: "400"}}>KLV data here</span></a><span style={{fontWeight: "400"}}><span style={{fontWeight: "400"}}>.</span></span></li>
-<li aria-level="1"><b>Security permissions<br >
+<li aria-level="1"><b>KLV Fields</b><b><br  />
+</b><span style={{fontWeight: "400"}}>This selects the KLV data that can be sent to the client. Read more about </span><a href="https://developer.sprint.paymentology.com/companion-api/klv-lookup/"><span style={{fontWeight: "400"}}>KLV data here</span></a><span style={{fontWeight: "400"}}><span style={{fontWeight: "400"}}>.</span></span></li>
+<li aria-level="1"><b>Security permissions<br  />
 </b>This allows for blacklisting and setting merchant group permissions.</li>
 </ul>
 
@@ -55,9 +55,9 @@ metadata:
 <p> </p>
 <p><span style={{fontWeight: "400"}}>Let’s explain how it works:</span></p>
 <ul>
-<li><b>Client</b><span style={{fontWeight: "400"}}><br >
+<li><b>Client</b><span style={{fontWeight: "400"}}><br  />
 </span><span style={{fontWeight: "400"}}>This is the entity that signs a contract with Paymentology to use its services and issue cards to customers. A Client Executive creates a client on the Client Management System. A client can have multiple settings linked to it. </span></li>
-<li aria-level="1"><b>Program</b><b><br >
+<li aria-level="1"><b>Program</b><b><br  />
 </b><span style={{fontWeight: "400"}}>These are records that define the parameters of the product that Paymentology has sold to the client. </span></li>
 </ul>
 <p> </p>
@@ -67,4 +67,3 @@ metadata:
 <li aria-level="1"><b>Single settings—</b><span style={{fontWeight: "400"}}>these are used to manage single card programs, such as one BIN, one VISA SRE, for small to medium clients. They are also billed individually per setting. </span></li>
 </ul>
 <p> </p>
-</p></span></b></li></span></b></li></ul></span></p></p></span></b></b></li></span></span></b></li></ul></span></p></p></p></p></p></span></p></p></span></p></b></li></span></span></span></a></span></b></b></li></ul></span></b></b></li></ul></span></b></b></li></ul></span></b></b></li></ul></span></b></b></li></ul></span></b></b></li></ul></span></b></b></li></ul></span></b></b></li></span></span></span></b></li></ul></span></p></span></p></span></p></span></p>

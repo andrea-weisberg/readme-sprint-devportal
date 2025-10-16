@@ -26,53 +26,53 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>AllocateCard</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>123456890</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>P55555</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>C44444</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Lando</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Norris</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456789</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>555-5555</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>T987654321</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>2023-11-08</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>f9a7ggg3d88e91ec1c9d1234a22e49f98a1c</string>
             </value>
@@ -83,8 +83,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -190,53 +190,53 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>AllocateCard</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>123456890</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>P55555</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>C44444</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Lando</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Norris</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456789</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>555-5555</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>T987654321</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>2023-11-08</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>f9a7ggg3d88e91ec1c9d1234a22e49f98a1c</string>
             </value>
@@ -247,8 +247,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -333,5 +333,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Menu</a></p>
-</a></p></p></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Menu</a></p>

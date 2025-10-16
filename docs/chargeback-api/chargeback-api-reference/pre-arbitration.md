@@ -18,10 +18,10 @@ metadata:
 | preArbitrationAmount | String |  | ✓ | <p>Pre-Arbitration case amount in cardholder currency.</p> |
 | memo | String |  | ✓ | <p>Memo for the case</p> |
 | messageText | String |  |  | <p>Message text. Use only when applicable, otherwise leave empty</p> |
-| newReasonCode | String |  |  | <p>New reason code. Use only when applicable i.e. changing reason code. Otherwise left empty.<br > Chargeback reason code list available <a href="https:developer.sprint.paymentology.com/chargeback-api/chargeback-reason-codes/">here</a></p> |
-| supportingDocument | String |  |  | <p>Document to support the case.<br > Use only when applicable, otherwise leave empty</p> |
-| clientReferenceNumber | String |  |  | <p>Client reference number.<br > Use only when applicable, otherwise leave empty</p> |
-| caseNotes | String |  |  | <p>Case notes.<br > Use only when applicable, otherwise leave empty</p> |
+| newReasonCode | String |  |  | <p>New reason code. Use only when applicable i.e. changing reason code. Otherwise left empty.<br  /> Chargeback reason code list available <a href="https://developer.sprint.paymentology.com/chargeback-api/chargeback-reason-codes/">here</a></p> |
+| supportingDocument | String |  |  | <p>Document to support the case.<br  /> Use only when applicable, otherwise leave empty</p> |
+| clientReferenceNumber | String |  |  | <p>Client reference number.<br  /> Use only when applicable, otherwise leave empty</p> |
+| caseNotes | String |  |  | <p>Case notes.<br  /> Use only when applicable, otherwise leave empty</p> |
 
 ```json
 {
@@ -70,8 +70,7 @@ metadata:
 ```
 
 <h4>Other response codes</h4>
-<p>Further response codes and details can be found <a href="https:developer.sprint.paymentology.com/chargeback-api/response-codes/">here</a>.</p>
+<p>Further response codes and details can be found <a href="https://developer.sprint.paymentology.com/chargeback-api/response-codes/">here</a>.</p>
 
 <h2>Additional info</h2>
 
-</h2></a></p></h4></p></p></p></p></a></p></p></p></p></p></p></h2></p>

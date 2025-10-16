@@ -46,5 +46,4 @@ metadata:
 
 <h2>Report sample</h2>
 
-<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/QVR_SRE-SRE_YYYYMMDD-YYYYMMDD.xls">QVR_SRE[SRE]_[YYYYMMDD]-[YYYYMMDD].xls</a></p>
-</a></p></h2></h2></h2></strong></li></strong></li></strong></li></em></strong></li></strong></li></strong></li></strong></li></em></strong></li></em></strong></li></em></strong></li></strong></li></ul></p></h3></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></ul></em></strong></strong></strong></strong></p></h3></strong></li></strong></li></strong></li></strong></li></ul></h3></p>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/QVR_SRE-SRE_YYYYMMDD-YYYYMMDD.xls">QVR_SRE[SRE]_[YYYYMMDD]-[YYYYMMDD].xls</a></p>

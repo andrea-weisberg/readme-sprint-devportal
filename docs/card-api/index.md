@@ -17,12 +17,11 @@ metadata:
 
 <h3><span style={{fontWeight: "400"}}>Find out how to use the Card API to:</span></h3>
 <ul>
-<li style={{fontWeight: "400"}}><a href="https:developer.sprint.paymentology.com/card-api/issue-card/"><span style={{fontWeight: "400"}}>Issue cards</span></a></li>
-<li style={{fontWeight: "400"}}><a href="https:developer.sprint.paymentology.com/card-api/manage-cards/"><span style={{fontWeight: "400"}}>Manage cards</span></a></li>
-<li style={{fontWeight: "400"}}><a href="https:developer.sprint.paymentology.com/card-api/secure-cards/"><span style={{fontWeight: "400"}}>Secure cards</span></a></li>
-<li style={{fontWeight: "400"}}><a href="https:developer.sprint.paymentology.com/card-api/manage-funds/"><span style={{fontWeight: "400"}}>Manage funds</span></a></li>
-<li style={{fontWeight: "400"}}><a href="https:developer.sprint.paymentology.com/card-api/tokenization/"><span style={{fontWeight: "400"}}>Make Tokenized payments</span></a></li>
-<li style={{fontWeight: "400"}}><a href="https:developer.sprint.paymentology.com/card-api/reports/"><span style={{fontWeight: "400"}}>Generate reports</span></a></li>
+<li style={{fontWeight: "400"}}><a href="https://developer.sprint.paymentology.com/card-api/issue-card/"><span style={{fontWeight: "400"}}>Issue cards</span></a></li>
+<li style={{fontWeight: "400"}}><a href="https://developer.sprint.paymentology.com/card-api/manage-cards/"><span style={{fontWeight: "400"}}>Manage cards</span></a></li>
+<li style={{fontWeight: "400"}}><a href="https://developer.sprint.paymentology.com/card-api/secure-cards/"><span style={{fontWeight: "400"}}>Secure cards</span></a></li>
+<li style={{fontWeight: "400"}}><a href="https://developer.sprint.paymentology.com/card-api/manage-funds/"><span style={{fontWeight: "400"}}>Manage funds</span></a></li>
+<li style={{fontWeight: "400"}}><a href="https://developer.sprint.paymentology.com/card-api/tokenization/"><span style={{fontWeight: "400"}}>Make Tokenized payments</span></a></li>
+<li style={{fontWeight: "400"}}><a href="https://developer.sprint.paymentology.com/card-api/reports/"><span style={{fontWeight: "400"}}>Generate reports</span></a></li>
 </ul>
 <p> </p>
-</p></span></a></li></span></a></li></span></a></li></span></a></li></span></a></li></span></a></li></ul></span></h3></h4></p></p></strong></p></span></p></strong></p></h2>

@@ -57,5 +57,4 @@ metadata:
 
 <h2>Report sample</h2>
 
-<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2025/01/QMR_BIN_ClientName_YYYYQQ.xls">QMR_BIN_ClientName_YYYYQQ</a></p>
-</a></p></h2></h2></h2></strong></li></strong></li></strong></li></strong></li></strong></li></ul></h3></p></h3></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></ul></h3></strong></strong></li></strong></strong></li></strong></li></strong></li></strong></li></ul></p></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></ul></h3></p></p>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2025/01/QMR_BIN_ClientName_YYYYQQ.xls">QMR_BIN_ClientName_YYYYQQ</a></p>

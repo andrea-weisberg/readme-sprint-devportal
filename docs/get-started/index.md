@@ -11,12 +11,12 @@ metadata:
 
 <p>The Card and Companion API each offer a unique customer journey, so you will need to clearly understand how the two are different and what they do, to choose the one that is right for you. Our QR Payments API can be used as a standalone API or as a plugin to either the Card or Companion API.</p>
 
-<p><a className="btn btn--secondary" href="https:developer.sprint.paymentology.com/get-started/our-apis/">EXPLORE OUR API’S</a></p>
+<p><a className="btn btn--secondary" href="https://developer.sprint.paymentology.com/get-started/our-apis/">EXPLORE OUR API’S</a></p>
 
 <h2>Testing environments</h2>
 <p><strong><span style={{fontSize: "22px"}}>You’ll get access to our two testing environments:</span></strong></p>
 
-<p><a className="btn btn--secondary" href="https:developer.sprint.paymentology.com/get-started/testing/">EXPLORE OUR TESTING ENVIROMENTS</a></p>
+<p><a className="btn btn--secondary" href="https://developer.sprint.paymentology.com/get-started/testing/">EXPLORE OUR TESTING ENVIROMENTS</a></p>
 
 <h2>Helpful tools</h2>
 <p><span style={{fontSize: "22px"}}><strong>We have a helpful set of tools to support your integration process:</strong></span></p>
@@ -28,4 +28,3 @@ metadata:
 </ul>
 <p> </p>
 
-</p></strong></li></strong></li></strong></li></strong></li></ul></strong></span></p></h2></a></p></span></strong></p></h2></a></p></p></strong></span></p></h2>

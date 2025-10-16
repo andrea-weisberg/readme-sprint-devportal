@@ -26,53 +26,53 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
   <methodName>ReverseVasTransferFunds</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>1234567890</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>PROF12345</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>4111111111111111</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>10000</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>TXN202505230001</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>VAS202505230001</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20250523T05:06:12</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>REVTXN202505260001</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20250526T08:15:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>0f8c2-sdd3e-kjsdd-a9d3f6</string>
       </value>
@@ -83,8 +83,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -168,53 +168,53 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
   <methodName>ReverseVasTransferFunds</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>1234567890</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>PROF12345</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>4111111111111111</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>10000</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>TXN202505230001</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>VAS202505230001</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20250523T05:06:12</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>REVTXN202505260001</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20250526T08:15:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>0f8c2-sdd3e-kjsdd-a9d3f6</string>
       </value>
@@ -225,8 +225,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -293,4 +293,3 @@ metadata:
 
 <p> </p>
 
-</p></string></value></name></member></int></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></string></value></string></value></int></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></string></value></name></member></int></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></string></value></string></value></int></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p>

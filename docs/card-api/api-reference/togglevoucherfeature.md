@@ -23,43 +23,43 @@ metadata:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><methodCall>
 <methodName>ToggleVoucherFeature</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>TID</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>b12b3a45-f678-4f98-b076-a54c1a32ccd1</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>443218987654321</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>PHYSICAL_CARD_DISABLED</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>0</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>4f012b3a3d456d2ba789b8dcadf2ccf9</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20230721T23:54:28</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>CHECKSUM</string>
       </value>
@@ -69,8 +69,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -98,43 +98,43 @@ metadata:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><methodCall>
 <methodName>ToggleVoucherFeature</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>TID</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>b12b3a45-f678-4f98-b076-a54c1a32ccd1</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>443218987654321</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>PHYSICAL_CARD_DISABLED</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>0</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>4f012b3a3d456d2ba789b8dcadf2ccf9</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20230721T23:54:28</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>CHECKSUM</string>
       </value>
@@ -144,8 +144,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -164,5 +164,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API Menu</a></p>
-</a></p></p></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></int></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></int></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API Menu</a></p>

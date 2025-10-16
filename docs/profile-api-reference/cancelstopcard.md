@@ -22,33 +22,33 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>CancelStopCard</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>1234567890</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>3344556677</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>3434343434343434</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>3a123af3-2a78-4d1b-87f8-65e123c123f6</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200308T15:54:14</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>80969333E781B1E444AC9DCCC1234AF7AC778A51</string>
             </value>
@@ -59,8 +59,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
  <methodResponse>
-     <params >
-         <param >
+     <params  />
+         <param  />
              <value>
                  <struct>
                      <member>
@@ -131,33 +131,33 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>CancelStopCard</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>1234567890</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>3344556677</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>3434343434343434</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>3a123af3-2a78-4d1b-87f8-65e123c123f6</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200308T15:54:14</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>80969333E781B1E444AC9DCCC1234AF7AC778A51</string>
             </value>
@@ -168,8 +168,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
  <methodResponse>
-     <params >
-         <param >
+     <params  />
+         <param  />
              <value>
                  <struct>
                      <member>
@@ -224,5 +224,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/profile-api-reference/">Back to Profile API Reference</a></p>
-</a></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></span></p></p></p></pre></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/profile-api-reference/">Back to Profile API Reference</a></p>

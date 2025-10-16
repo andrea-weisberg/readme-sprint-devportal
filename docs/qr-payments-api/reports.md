@@ -59,4 +59,3 @@ metadata:
 
 <h2>Report Sample</h2>
 <p>**summary-Settlement-report-final.png IMAGE GOES HERE.**</p>
-</p></h2></strong></li></b></li></b></li></b></li></ul></p></p></p></strong></li></strong></li></ul></p></b></p></p></p></p></a></h2></p></p></h2></b></li></b></li></b></li></b></li></b></li></b></b></li></b></li></b></li></b></li></b></li></ul></p></p></a></p></p></p></a></h2></p></a></li></a></li></ul></p></strong></p>

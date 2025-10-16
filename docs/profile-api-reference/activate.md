@@ -25,48 +25,48 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
   <methodName>Activate</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0007654321</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>8123456789</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>765432100051234</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20220823T08:08:37</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>activationKey</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>activationData</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>4123456</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20220823T08:08:37</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>1ab2ca3def456e789add876cc5b0d4f03c2f6cba</string>
       </value>
@@ -77,8 +77,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -142,48 +142,48 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
   <methodName>Activate</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0007654321</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>8123456789</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>765432100051234</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20220823T08:08:37</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>activationKey</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>activationData</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>4123456</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20220823T08:08:37</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>1ab2ca3def456e789add876cc5b0d4f03c2f6cba</string>
       </value>
@@ -194,8 +194,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -244,4 +244,3 @@ metadata:
 
 <p> </p>
 
-</p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p>

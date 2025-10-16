@@ -11,7 +11,7 @@ metadata:
 <ul>
 <li>Session-Id="Encrypted" AES Key e-g (AB521456236KHU52) is required for encryption of sensitive data.</li>
 </ul>
-<p>You can read more on how our Secure API’s work <a href="https:developer.sprint.paymentology.com/companion-api/secure-apis/">here</a>.</p>
+<p>You can read more on how our Secure API’s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a>.</p>
 
 #### Path parameters
 
@@ -29,43 +29,43 @@ metadata:
 ```xml
 <methodCall>
     <methodName>ChangePin</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0014682067</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TESTTTK</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>4987057272502351</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>GB65YU</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string> GHT67KMJ983UJGB678TGEW</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200327T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>07B15A4A5D7E9DCB1F96094C2F011AD51CD6364A</string>
             </value>
@@ -75,8 +75,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -109,43 +109,43 @@ metadata:
 ```xml
 <methodCall>
     <methodName>ChangePin</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0014682067</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TESTTTK</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>4987057272502351</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>GB65YU</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string> GHT67KMJ983UJGB678TGEW</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200327T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>07B15A4A5D7E9DCB1F96094C2F011AD51CD6364A</string>
             </value>
@@ -155,8 +155,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -179,5 +179,4 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>
-</a></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></a></p></li></ul></strong></span></p></strong></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

@@ -7,7 +7,7 @@ metadata:
 ---
 <p>In the payment industry sensitive data has a real importance. Confidentiality of the sensitive data is important even while processing transactions and should be kept private (encrypted).</p>
 <p>To achieve this we offer Secure API methods to support end to end encryption of data.</p>
-<p><span style={{color: "#ff0000"}}><strong>IMPORTANT:</strong></span> <span style={{color: "#000000"}}>Specific campaign settings are required for these Secure API’s. To have these enabled, please reach out to your Client Executive or lodge a request via our <a href="https:support.paymentology.com/">Customer Support Platform</a>.</span></p>
+<p><span style={{color: "#ff0000"}}><strong>IMPORTANT:</strong></span> <span style={{color: "#000000"}}>Specific campaign settings are required for these Secure API’s. To have these enabled, please reach out to your Client Executive or lodge a request via our <a href="https://support.paymentology.com/">Customer Support Platform</a>.</span></p>
 
 <h2>Encryption details</h2>
 <p>Information related to card data (PAN, CVV2, PIN etc.) are sensitive and our Secure API methods are able to hide that information through encryption.</p>
@@ -42,7 +42,7 @@ metadata:
 <h3>RSA KeyPair</h3>
 <p>This is RSA key of size 1024 each (rsa_public and rsa_private).</p>
 <p>It’s generated using java.security KeyPairGenerator in java.</p>
-<p>RSA Encryption will be used for asymmetric Encryption between Cardholder and Paymentology. This will prevent any intercept attacks and loss of sensitive data.<br >
+<p>RSA Encryption will be used for asymmetric Encryption between Cardholder and Paymentology. This will prevent any intercept attacks and loss of sensitive data.<br  />
 <em>(https://simple.wikipedia.org/wiki/RSA_alogrithm)</em></p>
 <h3>session_key</h3>
 <p>Client need to create 16 bytes session key using SECURERANDOM (as per standard) and encrypt it with RSA public key.</p>
@@ -94,16 +94,15 @@ new OAEPParameterSpec(
 <h3>API methods with encrypted data in the response</h3>
 <p>The following API methods return encrypted data in the API response. Along with the encrypted data, they will also return an extra element <code className="code cc-1o5d2cw" data-renderer-mark="true">iv</code> that is needed by the calling code in order to decrypt the data:</p>
 <ul>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/getactivelinkedcards/">GetActiveLinkedCards</a> – <code className="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code className="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code className="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response.</li>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/getcarddetails/">GetCardDetails</a> – <code className="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code className="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code className="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response.</li>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/getlinkedcards/">GetLinkedCards</a> –  <code className="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code className="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code className="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response.</li>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/updatecvv/">UpdateCVV</a> –  <code className="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code>  will be encrypted in the response.</li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getactivelinkedcards/">GetActiveLinkedCards</a> – <code className="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code className="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code className="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response.</li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getcarddetails/">GetCardDetails</a> – <code className="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code className="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code className="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response.</li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getlinkedcards/">GetLinkedCards</a> –  <code className="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code className="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code className="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response.</li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/updatecvv/">UpdateCVV</a> –  <code className="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code>  will be encrypted in the response.</li>
 </ul>
 <h3>API methods with encrypted data in the request</h3>
 <p>The following API methods will contain encrypted card data in the API request, the Companion API will decrypt the data using the provided Session-id header:</p>
 <ul>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/changepin/">ChangePin</a> – <code className="code cc-1o5d2cw" data-renderer-mark="true">newPin</code> will be encrypted in the request.</li>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/createlinkedcard/">CreateLinkedCard</a> – <code className="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code className="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code className="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response. Note: this is only applicable if the campaign setting “Companion API Return Masked PAN for Create Methods” is set to  false.</li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/changepin/">ChangePin</a> – <code className="code cc-1o5d2cw" data-renderer-mark="true">newPin</code> will be encrypted in the request.</li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/createlinkedcard/">CreateLinkedCard</a> – <code className="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code className="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code className="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response. Note: this is only applicable if the campaign setting “Companion API Return Masked PAN for Create Methods” is set to  false.</li>
 </ul>
 
-</code></code></code></a></li></code></a></li></ul></p></h3></code></a></li></code></code></code></a></li></code></code></code></a></li></code></code></code></a></li></ul></code></p></h3></span></strong></span></p></h2></p></li></li></ul></p></li></li></ul></li></li></ul></h3></p></h3></h3></p></h3></p></h3></li></li></ol></h3></em></p></p></h3></em></p></p></p></h3></h2></code></p></li></code></p></li></ul></p></li></p></li></p></li></p></li></li></ol></h3></p></p></h2></a></span></strong></span></p></p></p>

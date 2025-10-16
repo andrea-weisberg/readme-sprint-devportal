@@ -38,5 +38,4 @@ metadata:
 <p>Please refer to the lookup table for the available values.</p>
 
 <h2>Matching response codes</h2>
-<p>You can refer to the <a href="https:developer.sprint.paymentology.com/response-codes-2/response-and-action-code-mapping/">Response and action code mapping table</a> to understand how Remote API Response Codes map to different networks.</p>
-</a></p></h2></p></li></li></ol></b></p></li></li></li></span></li></span></li></li></ul></h3></li></li></li></ol></p></li></li></ul></p></span></p></h2>
+<p>You can refer to the <a href="https://developer.sprint.paymentology.com/response-codes-2/response-and-action-code-mapping/">Response and action code mapping table</a> to understand how Remote API Response Codes map to different networks.</p>

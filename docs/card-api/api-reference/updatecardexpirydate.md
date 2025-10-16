@@ -22,38 +22,38 @@ metadata:
 ```xml
 <methodCall>
   <methodName>UpdateCardExpiryDate</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0008866376</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>TEST_CUSTOMER</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>787454700000007</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20250101T09:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>169220210510T163500-sddd</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20210601T16:06:43</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>297B3FE27017477DAC324FF3097F0607BDF0542C</string>
       </value>
@@ -64,8 +64,8 @@ metadata:
 ```,```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -135,38 +135,38 @@ metadata:
 ```xml
 <methodCall>
   <methodName>UpdateCardExpiryDate</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0008866376</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>TEST_CUSTOMER</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>787454700000007</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20250101T09:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>169220210510T163500-sddd</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20210601T16:06:43</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>297B3FE27017477DAC324FF3097F0607BDF0542C</string>
       </value>
@@ -177,8 +177,8 @@ metadata:
 ```,```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -233,5 +233,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>
-</a></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

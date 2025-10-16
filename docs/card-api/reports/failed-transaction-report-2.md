@@ -36,8 +36,8 @@ metadata:
 <li><strong>Tracking Number</strong> – this is a unique 15-digit tracking identifier for the card.</li>
 <li><strong>MCC </strong>– the merchant category code.</li>
 <li><strong>POS Entry mode</strong> – indicates how the transaction was captured (capture Mode). Possible values include: ECOM (Ecommerce), NFC (Near Field Communication), MAG (Magnetic stripe), MAN (Manually), EMV (EMV chip).</li>
-<li><strong>Transaction Internal Code </strong>– this is a code that gives you the reason for transaction declines. List of codes can be downloaded <a href="https:developer.sprint.paymentology.com/wp-content/uploads/2021/04/Failed-transaction-report-code-descriptions.xlsx">here</a></li>
-<li><strong>Digitized Wallet id </strong>– the 3 digit numeric code that identifies the Xpay App. Find a list of the Wallet IDs <a href="https:developer.sprint.paymentology.com/companion-api/tokenization2/token-lifecycle-management/#WID">here</a><em>. </em></li>
+<li><strong>Transaction Internal Code </strong>– this is a code that gives you the reason for transaction declines. List of codes can be downloaded <a href="https://developer.sprint.paymentology.com/wp-content/uploads/2021/04/Failed-transaction-report-code-descriptions.xlsx">here</a></li>
+<li><strong>Digitized Wallet id </strong>– the 3 digit numeric code that identifies the Xpay App. Find a list of the Wallet IDs <a href="https://developer.sprint.paymentology.com/companion-api/tokenization2/token-lifecycle-management/#WID">here</a><em>. </em></li>
 </ul>
 
 <h3><a id="FTRV2"></a>Version 2</h3>
@@ -63,8 +63,8 @@ metadata:
 <li><strong>Tracking Number</strong> – this is a unique 15-digit tracking identifier for the card.</li>
 <li><strong>MCC </strong>– the merchant category code.</li>
 <li><strong>POS Entry mode</strong> – indicates how the transaction was captured (capture Mode). Possible values include: ECOM (Ecommerce), NFC (Near Field Communication), MAG (Magnetic stripe), MAN (Manually), EMV (EMV chip).</li>
-<li><strong>Transaction Internal Code </strong>– this is a code that gives you the reason for transaction declines. List of codes can be downloaded <a href="https:developer.sprint.paymentology.com/wp-content/uploads/2021/04/Failed-transaction-report-code-descriptions.xlsx">here</a></li>
-<li><strong>Digitized Wallet id </strong>– the 3 digit numeric code that identifies the Xpay App. Find a list of the Wallet IDs <a href="https:developer.sprint.paymentology.com/companion-api/tokenization2/token-lifecycle-management/#WID">here</a><em>. </em></li>
+<li><strong>Transaction Internal Code </strong>– this is a code that gives you the reason for transaction declines. List of codes can be downloaded <a href="https://developer.sprint.paymentology.com/wp-content/uploads/2021/04/Failed-transaction-report-code-descriptions.xlsx">here</a></li>
+<li><strong>Digitized Wallet id </strong>– the 3 digit numeric code that identifies the Xpay App. Find a list of the Wallet IDs <a href="https://developer.sprint.paymentology.com/companion-api/tokenization2/token-lifecycle-management/#WID">here</a><em>. </em></li>
 <li><strong>Payment Initiator</strong> – indicates whether a transaction was initiated by the Cardholder (CIT – Cardholder Initiated Transaction) or the Merchant (MIT – Merchant Initiated Transaction)</li>
 </ul>
 
@@ -75,6 +75,5 @@ metadata:
 <h2>Report sample</h2>
 <p>**Failed-transactions-report-Card-Final.png IMAGE GOES HERE.**</p>
 
-<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_DailyAuthFailure_YYYYMMDD.csv">CampaignName_DailyAuthFailure_YYYYMMDD.csv</a></p>
-<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2024/10/CampaignName_DailyAuthFailure_YYYYMMDD-.csv">CampaignName_DailyAuthFailure_YYYYMMDD.csv V2 sample</a></p>
-</a></p></a></p></p></h2></h2></h2></strong></li></em></a></strong></li></a></strong></li></strong></li></strong></li></strong></li></li></li></li></ul></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></strong></li></strong></li></ul></p></a></h3></em></a></strong></li></a></strong></li></strong></li></strong></li></strong></li></li></li></li></ul></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></ul></p></a></h3></a></p></a></p></p></div></div></div></span></span></span></div>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_DailyAuthFailure_YYYYMMDD.csv">CampaignName_DailyAuthFailure_YYYYMMDD.csv</a></p>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2024/10/CampaignName_DailyAuthFailure_YYYYMMDD-.csv">CampaignName_DailyAuthFailure_YYYYMMDD.csv V2 sample</a></p>

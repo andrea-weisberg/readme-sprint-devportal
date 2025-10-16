@@ -14,7 +14,7 @@ metadata:
 <li>Methods structure is defined below, and it corresponds to the schema of the JSON document sent.</li>
 <li>The message type (eg. <span className="xml-highlight">3DSecure.OTP</span>, <span className="xml-highlight">digitization.event</span>, etc.) is to be included in the JSON message as <span className="xml-highlight">messageType</span>. The message will be sent using the client-supplied URL eg. http://www.example.com/api/endpoint</li>
 <li>In the code samples provided, we use cURL to send requests</li>
-<li>In the code samples provided, we use a <strong>mock</strong> <strong>endpoint</strong> for testing<strong> – <a href="https:api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm">https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm</a></strong></li>
+<li>In the code samples provided, we use a <strong>mock</strong> <strong>endpoint</strong> for testing<strong> – <a href="https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm">https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm</a></strong></li>
 </ul>
 
 <h2>Expectations</h2>
@@ -51,7 +51,7 @@ metadata:
 | trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which OTP token is being sent</p> |
 | merchantDescription | String |  | ✓ | <p>name of or information related to the merchant</p> |
 | transactionAmount  | Integer |  | ✓ | <p>The monetary amount related the transaction</p> |
-| refCode | String |  |  | <p>Dynamic generated 4 letters code to be used along with OTP messages<br > <strong data-renderer-mark="true">if Campaign is configured to.</strong></p> |
+| refCode | String |  |  | <p>Dynamic generated 4 letters code to be used along with OTP messages<br  /> <strong data-renderer-mark="true">if Campaign is configured to.</strong></p> |
 | currencyCode | Integer |  | ✓ | <p>The local currency code of the acquirer or source location of the transaction</p> |
 
 ```json
@@ -1162,7 +1162,7 @@ Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f4
 ```
 
 <h2><a id="appauth"></a>3DSecure.AppAuthentication</h2>
-<p>This message is used to trigger the process of cardholder authentication. You only need to respond to this message to indicate you have received the message and will initiate the cardholder authentication. Once you have completed cardholder authentication you will send a message to our <a href="https:developer.sprint.paymentology.com/card-api/api-reference/threedsauthenticationoutcome/">ThreeDSAuthenticationOutcome</a> API.<br >
+<p>This message is used to trigger the process of cardholder authentication. You only need to respond to this message to indicate you have received the message and will initiate the cardholder authentication. Once you have completed cardholder authentication you will send a message to our <a href="https://developer.sprint.paymentology.com/card-api/api-reference/threedsauthenticationoutcome/">ThreeDSAuthenticationOutcome</a> API.<br  />
 Messages should be as following:</p>
 <p> </p>
 
@@ -1388,7 +1388,7 @@ Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f4
 <p> </p>
 
 <h2><a id="appfinal"></a>3DSecure.AppFinalisation</h2>
-<p>This administrative message is used to inform the client of the final status of the 3DSecure authentication.<br >
+<p>This administrative message is used to inform the client of the final status of the 3DSecure authentication.<br  />
 Messages include the following:</p>
 
 #### Path parameters
@@ -1399,7 +1399,7 @@ Messages include the following:</p>
 | trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which authorisation is being performed</p> |
 | customerReference | String |  | ✓ | <p>Customer reference this card is linked to</p> |
 | transactionID | String |  | ✓ | <p>Unique id provided by the ACS</p> |
-| status | String |  | ✓ | <p>value indicating the status. Values include:<br > 0 – Successfully received final status<br > 1 – Timer on browser expired before response was received<br > 2 – General error<br > 3 – Transaction cancelled before response was received</p> |
+| status | String |  | ✓ | <p>value indicating the status. Values include:<br  /> 0 – Successfully received final status<br  /> 1 – Timer on browser expired before response was received<br  /> 2 – General error<br  /> 3 – Transaction cancelled before response was received</p> |
 
 <h1><a id="responsereference"></a>Response Reference</h1>
 <p>Response should contain all the same fields as the original request. In addition, a <span className="xml-highlight">resultCode</span> will be always added and specific response information when that is required by the method. The <span className="xml-highlight">resultCode</span> will be a string field with values from the table below:</p>
@@ -1623,5 +1623,4 @@ Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f4
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API menu</a></p>
-</a></p></p></p></em></p></p></h2></p></p></p></strong></p></p></a></h2></li></li></ul></h2></p></span></span></p></a></h1></p></p></p></p></p></p></a></h2></p></p></p></p></p></p></p></p></p></p></p></p></a></p></a></h2></li></li></ul></p></p></p></p></p></p></p></li></li></li></li></ul></p></p></p></p></p></p></a></h1></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></span></span></p></section></a></h1></p></p></p></p></p></p></p></p></p></li></li></li></li></ul></p></p></p></p></span></span></p></a></h1></p></p></p></p></p></p></p></span></span></p></a></h1></p></p></p></p></p></p></p></p></p></p></p></strong></p></p></p></p></p></p></p></strong></p></span></span></p></a></h1></a></p></a></p></a></p></a></p></a></p></a></p></a></p></a></p></h2></strong></p></h2></p></a></p></h2></p></h2></a></strong></strong></strong></li></li></span></span></span></li></li></strong></li></strong></li></ul></h2></span></strong></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API menu</a></p>

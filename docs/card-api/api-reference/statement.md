@@ -30,43 +30,43 @@ metadata:
 ```xml
 <methodCall>
   <methodName>Statement</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0008866376</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>TEST_CUSTOMER</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>787454700000007</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20160101T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20160630T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>d89d6df6-4e14-45a5-a32c-217c7175dfdb</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>A30D6EE719BC95056878F9C2BF57A42BC77FFA51</string>
       </value>
@@ -77,8 +77,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -253,43 +253,43 @@ metadata:
 ```,```xml
 <methodCall>
     <methodName type="xs:string">Statement</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0008866376</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST_CUSTOMER</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>787454700000007</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160101T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160630T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>d89d6df6-4e14-45a5-a32c-217c7175dfdb</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>A30D6EE719BC95056878F9C2BF57A42BC77FFA51</string>
             </value>
@@ -300,8 +300,8 @@ metadata:
 ```,```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -466,43 +466,43 @@ metadata:
 ```xml
 <methodCall>
   <methodName>Statement</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0008866376</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>TEST_CUSTOMER</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>787454700000007</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20160101T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20160630T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>d89d6df6-4e14-45a5-a32c-217c7175dfdb</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>A30D6EE719BC95056878F9C2BF57A42BC77FFA51</string>
       </value>
@@ -513,8 +513,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -689,43 +689,43 @@ metadata:
 ```,```xml
 <methodCall>
     <methodName type="xs:string">Statement</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0008866376</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST_CUSTOMER</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>787454700000007</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160101T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160630T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>d89d6df6-4e14-45a5-a32c-217c7175dfdb</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>A30D6EE719BC95056878F9C2BF57A42BC77FFA51</string>
             </value>
@@ -736,8 +736,8 @@ metadata:
 ```,```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -890,43 +890,43 @@ metadata:
 ```xml
 <methodCall>
   <methodName>Statement</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0008866376</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>TEST_CUSTOMER</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>787454700000007</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20160101T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20160630T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>d89d6df6-4e14-45a5-a32c-217c7175dfdb</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>A30D6EE719BC95056878F9C2BF57A42BC77FFA51</string>
       </value>
@@ -937,8 +937,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -1113,43 +1113,43 @@ metadata:
 ```,```xml
 <methodCall>
     <methodName type="xs:string">Statement</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0008866376</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST_CUSTOMER</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>787454700000007</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160101T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160630T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>d89d6df6-4e14-45a5-a32c-217c7175dfdb</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>A30D6EE719BC95056878F9C2BF57A42BC77FFA51</string>
             </value>
@@ -1160,8 +1160,8 @@ metadata:
 ```,```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -1329,43 +1329,43 @@ metadata:
 ```xml
 <methodCall>
   <methodName>Statement</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0008866376</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>TEST_CUSTOMER</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>787454700000007</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20160101T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20160630T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>d89d6df6-4e14-45a5-a32c-217c7175dfdb</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>A30D6EE719BC95056878F9C2BF57A42BC77FFA51</string>
       </value>
@@ -1376,8 +1376,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -1552,43 +1552,43 @@ metadata:
 ```,```xml
 <methodCall>
     <methodName type="xs:string">Statement</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0008866376</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST_CUSTOMER</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>787454700000007</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160101T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160630T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>d89d6df6-4e14-45a5-a32c-217c7175dfdb</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>A30D6EE719BC95056878F9C2BF57A42BC77FFA51</string>
             </value>
@@ -1599,8 +1599,8 @@ metadata:
 ```,```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -1765,43 +1765,43 @@ metadata:
 ```xml
 <methodCall>
   <methodName>Statement</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0008866376</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>TEST_CUSTOMER</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>787454700000007</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20160101T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20160630T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>d89d6df6-4e14-45a5-a32c-217c7175dfdb</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>A30D6EE719BC95056878F9C2BF57A42BC77FFA51</string>
       </value>
@@ -1812,8 +1812,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -1988,43 +1988,43 @@ metadata:
 ```,```xml
 <methodCall>
     <methodName type="xs:string">Statement</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0008866376</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST_CUSTOMER</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>787454700000007</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160101T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160630T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>d89d6df6-4e14-45a5-a32c-217c7175dfdb</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>A30D6EE719BC95056878F9C2BF57A42BC77FFA51</string>
             </value>
@@ -2035,8 +2035,8 @@ metadata:
 ```,```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -2183,5 +2183,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>
-</a></p></p></string></value></name></member></double></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></member></value></name></member></string></value></name></member></string></value></name></member></double></value></name></member></value></name></member></string></value></name></member></int></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></value></string></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></int></value></name></member></struct></value></fault></methodresponse></string></value></name></member></double></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></member></value></name></member></string></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></int></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></string></value></name></member></double></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></member></value></name></member></string></value></name></member></string></value></name></member></double></value></name></member></value></name></member></string></value></name></member></int></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></value></string></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></int></value></name></member></struct></value></fault></methodresponse></string></value></name></member></double></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></member></value></name></member></string></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></int></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></h3></a></p></p></string></value></name></member></double></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></member></value></name></member></string></value></name></member></string></value></name></member></double></value></name></member></value></name></member></string></value></name></member></int></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></value></string></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></int></value></name></member></struct></value></fault></methodresponse></string></value></name></member></double></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></member></value></name></member></string></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></int></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></value></string></value></string></value></string></value></params></methodname></methodcall></em></p></h3></p></string></value></name></member></double></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></member></value></name></member></string></value></name></member></string></value></name></member></double></value></name></member></value></name></member></string></value></name></member></int></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></value></string></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></int></value></name></member></struct></value></fault></methodresponse></string></value></name></member></double></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></member></value></name></member></string></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></int></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></strong></p></p></li></p></li></p></li></p></li></p></li></ul></strong></em></p></p></li></p></li></p></li></p></li></p></li></ul></em></p></p></strong></p></p></strong></p></p></strong></p></p></strong></p></p></strong></p></p></p></p></p></strong></p></p></p></p></p></p></p></p></p></p></p></p></string></value></name></member></double></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></member></value></name></member></string></value></name></member></string></value></name></member></double></value></name></member></value></name></member></string></value></name></member></int></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></value></string></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></int></value></name></member></struct></value></fault></methodresponse></string></value></name></member></double></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></member></value></name></member></string></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></int></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></h3></a></p></a></p></a></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

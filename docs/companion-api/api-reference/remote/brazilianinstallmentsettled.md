@@ -30,85 +30,85 @@ metadata:
   <methodName>
     BrazilianInstallmentSettled
   </methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>
           0097852049
         </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>
           5a332769-264a-402c-851b-2d7a5ddb7bee
         </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>
           117363249782
         </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>
           20220223T03:48:27
         </dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>
           03
         </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>
           403
         </int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>
           000000015000
         </int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>
           03
         </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>
           000000005000
         </int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>
           000000000000
         </int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>
           000000000000
         </int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>
           346C246D7B79896C8507370CC449DEF4C23E447D
@@ -120,8 +120,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -156,85 +156,85 @@ metadata:
   <methodName>
     BrazilianInstallmentSettled
   </methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>
           0097852049
         </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>
           5a332769-264a-402c-851b-2d7a5ddb7bee
         </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>
           117363249782
         </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>
           20220223T03:48:27
         </dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>
           03
         </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>
           403
         </int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>
           000000015000
         </int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>
           03
         </string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>
           000000005000
         </int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>
           000000000000
         </int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>
           000000000000
         </int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>
           346C246D7B79896C8507370CC449DEF4C23E447D
@@ -246,8 +246,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -270,5 +270,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/remote/">back to remote api menu</a></p>
-</a></p></p></int></value></name></member></struct></value></params></methodresponse></string></value></int></value></int></value></int></value></string></value></int></value></int></value></string></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></int></value></name></member></struct></value></params></methodresponse></string></value></int></value></int></value></int></value></string></value></int></value></int></value></string></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/">back to remote api menu</a></p>

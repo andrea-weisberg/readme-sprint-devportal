@@ -22,33 +22,33 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>Balance</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>1234567890</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>P12345</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>C67890</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>T987654321</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>2023-11-08T12:34:44</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>f9a7abc3d33e91jk1c9d1234a58e49f22a1c</string>
             </value>
@@ -58,8 +58,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -172,33 +172,33 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>Balance</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>1234567890</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>P12345</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>C67890</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>T987654321</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>2023-11-08T12:34:44</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>f9a7abc3d33e91jk1c9d1234a58e49f22a1c</string>
             </value>
@@ -208,8 +208,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -300,5 +300,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Reference</a></p>
-</a></p></p></string></value></name></member></int></value></name></member></value></name></member></string></value></name></member></boolean></value></name></member></boolean></value></name></member></boolean></value></name></member></boolean></value></name></member></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></p></string></value></name></member></int></value></name></member></value></name></member></string></value></name></member></boolean></value></name></member></boolean></value></name></member></boolean></value></name></member></boolean></value></name></member></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Reference</a></p>

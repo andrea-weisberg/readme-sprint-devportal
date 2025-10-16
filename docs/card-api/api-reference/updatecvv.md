@@ -22,33 +22,33 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>UpdateCVV</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0014770292</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>558558400041720</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20211019T10:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>EA4CBE0812916006F30FFBD57DEFB4F1CC3F2A3319E89158816142741B3E57CE</string>
             </value>
@@ -59,8 +59,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -131,33 +131,33 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>UpdateCVV</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0014770292</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>558558400041720</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20211019T10:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>EA4CBE0812916006F30FFBD57DEFB4F1CC3F2A3319E89158816142741B3E57CE</string>
             </value>
@@ -168,8 +168,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -230,5 +230,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">back to card api menu</a></p>
-</a></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">back to card api menu</a></p>

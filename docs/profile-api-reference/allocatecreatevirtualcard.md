@@ -26,53 +26,53 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
   <methodName>AllocateCreateVirtualCard</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0010637531</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>9975224335</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>100</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Mili</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Thethe</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>20201802146184</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>071523456</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>12345</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20220908T07:19:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>DE6E77FDBE87B723B0E5193EDAFAF2D065DC76A7</string>
       </value>
@@ -83,8 +83,8 @@ metadata:
 ```,```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -180,53 +180,53 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
   <methodName>AllocateCreateVirtualCard</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0010637531</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>9975224335</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>100</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Mili</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Thethe</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>20201802146184</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>071523456</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>12345</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20220908T07:19:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>DE6E77FDBE87B723B0E5193EDAFAF2D065DC76A7</string>
       </value>
@@ -237,8 +237,8 @@ metadata:
 ```,```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -317,5 +317,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/profile-api-reference/">Back to Profile API Reference</a></p>
-</a></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></int></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></int></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/profile-api-reference/">Back to Profile API Reference</a></p>

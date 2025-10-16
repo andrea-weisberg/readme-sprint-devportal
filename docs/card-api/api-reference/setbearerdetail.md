@@ -37,113 +37,113 @@ metadata:
 ```xml
 <methodCall>
   <methodName>SetBearerDetail</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>terminal_equipo_id</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>customer_ref</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>998489300000075</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>SBD-0000001</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20221130T11:03:42</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string></string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Fulano</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string></string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>de Tal</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>12345678901</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>5514</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>981927788</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Brazil</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>1985-01-27</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>0</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string></string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>22 Walnut St #23</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>017404074</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Belo Horizonte</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>BRA</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>anonimous@mail.com</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>F7324F6C44762237F3221D08A8D2E86A8DEA302EFDF3D9F6EF071ECB82239B1E</string>
       </value>
@@ -153,8 +153,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -219,113 +219,113 @@ metadata:
 ```xml
 <methodCall>
   <methodName>SetBearerDetail</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>terminal_equipo_id</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>customer_ref</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>998489300000075</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>SBD-0000001</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20221130T11:03:42</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string></string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Fulano</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string></string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>de Tal</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>12345678901</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>5514</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>981927788</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Brazil</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>1985-01-27</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>0</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string></string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>22 Walnut St #23</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>017404074</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Belo Horizonte</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>BRA</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>anonimous@mail.com</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>F7324F6C44762237F3221D08A8D2E86A8DEA302EFDF3D9F6EF071ECB82239B1E</string>
       </value>
@@ -335,8 +335,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -389,5 +389,4 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>
-</a></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></string></value></string></value></string></value></string></value></string></value></string></value></int></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></string></value></string></value></string></value></string></value></string></value></string></value></int></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></div></div></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

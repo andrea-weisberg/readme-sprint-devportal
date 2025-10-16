@@ -14,7 +14,7 @@ metadata:
 <h2>Authorization reports</h2>
 <p>The report linked below assists client’s with authorization reconciliation.</p>
 <ul>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/reports/mark-off-file/">Mark-off file</a></li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/reports/mark-off-file/">Mark-off file</a></li>
 </ul>
 <p> </p>
 
@@ -35,8 +35,8 @@ metadata:
 <h2>Settlement reports</h2>
 <p>The reports linked below assist client’s with settlement reconciliation.</p>
 <ul>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/reports/summary-settlement-report/">summary settlement report</a></li>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/reports/detailed-settlement-report/">Detailed settlement report</a></li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/reports/summary-settlement-report/">summary settlement report</a></li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/reports/detailed-settlement-report/">Detailed settlement report</a></li>
 </ul>
 
 <h1><a id="revenue"></a>Revenue</h1>
@@ -48,7 +48,7 @@ metadata:
 <h2><b>Revenue reports</b></h2>
 <p>The report linked below assists client’s with revenue reconciliation and reporting:</p>
 <ul>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/reports/forex-gains-report/">Forex gains report</a></li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/reports/forex-gains-report/">Forex gains report</a></li>
 </ul>
 
 <h1>Adjustment Handling</h1>
@@ -73,7 +73,7 @@ metadata:
 <li>Notifications – Paymentology lets you configure real-time notifications that keep customers informed about the state of their cards.</li>
 <li>Checks and controls – Paymentology allows you to implement a variety of Issuance checks, Spend controls and Authorization checks</li>
 </ul>
-<p>Read more about Fraud and Risk <a href="https:developer.sprint.paymentology.com/get-started/fraud/">here</a></p>
+<p>Read more about Fraud and Risk <a href="https://developer.sprint.paymentology.com/get-started/fraud/">here</a></p>
 <h2>Dispute Handling</h2>
 <p><strong>What is a Dispute?</strong></p>
 <p>A dispute is a transaction that a cardholder/customer does not agree with and therefore requests that part of, or the entire transaction be reversed or refunded.</p>
@@ -83,5 +83,4 @@ metadata:
 <li><strong><strong>Refund</strong></strong>A refund is when funds are credited back to the customer’s card from a previously debited transaction. A refund is processed when the merchant refunds the customer for returned goods and the funds which were settled to the merchant’s account need to move back to the cardholder’s account.</li>
 <li><strong>Chargeback </strong>A chargeback is the return of funds for a deduct transaction that was previously processed from a cardholder’s card balance, due to a successful dispute by the consumer regarding the transaction</li>
 </ol>
-<p>Read about Chargeback related Dispute handling <a href="https:developer.sprint.paymentology.com/companion-api/disputes/">here</a></p>
-</a></p></strong></li></strong></strong></li></strong></li></ol></h3></p></strong></p></h2></a></p></li></li></li></li></li></ul></p></strong></p></a></h1></li></li></ul></h2></li></li></ul></h2></h1></a></li></ul></p></b></h2></p></h2></p></strong></p></a></h1></a></li></a></li></ul></p></h2></strong></p></strong></p></strong></p></strong></p></strong></p></strong></p></h2></p></section></section></strong></section></a></h1></p></a></li></ul></p></h2></p></b></p></a></h1></strong></p>
+<p>Read about Chargeback related Dispute handling <a href="https://developer.sprint.paymentology.com/companion-api/disputes/">here</a></p>

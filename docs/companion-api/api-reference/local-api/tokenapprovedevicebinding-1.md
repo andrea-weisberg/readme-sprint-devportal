@@ -25,53 +25,53 @@ metadata:
 ```xml
 <methodCall>
    <methodName>TokenApproveDeviceBinding</methodName>
-     <params >
-         <param >
+     <params  />
+         <param  />
              <value>
                  <string>004396XXXX</string>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <string></string>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <string>455287003375XXXX</string>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <string>uniquealiXX</string>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <string>123</string>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <string>1</string>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <string>comment</string>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <string>txId3</string>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <dateTime.iso8601>19201102T12:01:01</dateTime.iso8601>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <string>671944ff82aeea3e205b8dd4b33aea33c4fa9941XXXce6562bab74f2fa8d3f5e517</string>
              </value>
@@ -82,8 +82,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -118,53 +118,53 @@ metadata:
 ```xml
 <methodCall>
    <methodName>TokenApproveDeviceBinding</methodName>
-     <params >
-         <param >
+     <params  />
+         <param  />
              <value>
                  <string>004396XXXX</string>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <string></string>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <string>455287003375XXXX</string>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <string>uniquealiXX</string>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <string>123</string>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <string>1</string>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <string>comment</string>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <string>txId3</string>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <dateTime.iso8601>19201102T12:01:01</dateTime.iso8601>
              </value>
          </param>
-         <param >
+         <param  />
              <value>
                  <string>671944ff82aeea3e205b8dd4b33aea33c4fa9941XXXce6562bab74f2fa8d3f5e517</string>
              </value>
@@ -175,8 +175,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -201,5 +201,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>
-</a></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

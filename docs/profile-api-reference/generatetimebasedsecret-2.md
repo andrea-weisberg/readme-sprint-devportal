@@ -30,48 +30,48 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
   <methodName>GenerateTimeBasedSecret</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0079186700</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>9654314310</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>706213900576273</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>60</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>8</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>HmacSHA256</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20230906T22:09:40</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>3EEC2B46A9F4FFF4DAFC1E85DEC60CCD7B0E5A47</string>
       </value>
@@ -82,8 +82,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -125,48 +125,48 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
   <methodName>GenerateTimeBasedSecret</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0079186700</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>9654314310</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>706213900576273</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>60</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <int>8</int>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>HmacSHA256</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20230906T22:09:40</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>3EEC2B46A9F4FFF4DAFC1E85DEC60CCD7B0E5A47</string>
       </value>
@@ -177,8 +177,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -209,5 +209,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Reference</a></p>
-</a></p></p></string></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></int></value></int></value></string></value></string></value></string></value></params></methodname></methodcall></p></div></div></div></div></div></section></p></div></div></p></string></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></int></value></int></value></string></value></string></value></string></value></params></methodname></methodcall></p></div></div></div></div></div></section></div></p></div></div></p></div></div></p></p></strong></p></strong></p></div></div></strong></p></strong></p></div></div></p></div></div></p></div></div></p></div></div></span></strong></p></p></div></section>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Reference</a></p>

@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-<p>Schedules the stop of the card on the date of the parameter. There can only be one active scheduled stop for a card.<br >
+<p>Schedules the stop of the card on the date of the parameter. There can only be one active scheduled stop for a card.<br  />
 Will return an error if the schedule already exists.</p>
 
 #### Path parameters
@@ -26,48 +26,48 @@ Will return an error if the schedule already exists.</p>
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
    <methodName>CreateScheduledStop</methodName>
-   <params >
-       <param >
+   <params  />
+       <param  />
            <value>
                <string>0765458925</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>9765432072</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>405432100000001</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <dateTime.iso8601>20900531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <int>2</int>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>lost</string>
            </value>
        </param>
-        <param >
+        <param  />
            <value>
                <string>T11112345561</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <dateTime.iso8601>20240531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>f7d1e917fc3d5be3c5f3775hjklg67890e30e50227d675014881a59b5b03a616</string>
            </value>
@@ -78,8 +78,8 @@ Will return an error if the schedule already exists.</p>
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -169,48 +169,48 @@ Will return an error if the schedule already exists.</p>
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
    <methodName>CreateScheduledStop</methodName>
-   <params >
-       <param >
+   <params  />
+       <param  />
            <value>
                <string>0765458925</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>9765432072</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>405432100000001</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <dateTime.iso8601>20900531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <int>2</int>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>lost</string>
            </value>
        </param>
-        <param >
+        <param  />
            <value>
                <string>T11112345561</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <dateTime.iso8601>20240531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>f7d1e917fc3d5be3c5f3775hjklg67890e30e50227d675014881a59b5b03a616</string>
            </value>
@@ -221,8 +221,8 @@ Will return an error if the schedule already exists.</p>
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -293,4 +293,3 @@ Will return an error if the schedule already exists.</p>
 
 ```
 
-</int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></int></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></div></div></p></p></p></p></p></p></p></p></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></int></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p>

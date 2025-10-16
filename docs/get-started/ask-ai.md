@@ -62,4 +62,3 @@ metadata:
 <p>Make sure to use the feedback buttons, as this can help ensure the accuracy of answers provided. The feedback buttons are located on the bottom right corner of Ask AI’s response.</p>
 <p>**Sprint-feedback-buttons-1-e1743472145749.png IMAGE GOES HERE.**</p>
 
-</p></p></strong></li></strong></li></strong></li></ul></p></p></h2></p></h4></li></li></li></li></ol></a></h3></p></h4></strong></li></strong></li></strong></li></strong></li></ol></li></li></li></li></ol></a></h3></a></li></a></li></ol></p></h2></strong></em></li></strong></em></li></strong></em></strong></em></li></span></strong></em></li></strong></em></li></ul></h2></p>

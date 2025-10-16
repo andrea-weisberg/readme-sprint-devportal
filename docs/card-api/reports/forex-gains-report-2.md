@@ -29,5 +29,4 @@ metadata:
 <h2>Report sample</h2>
 <p>**Forex-gains-report-final-Card-API.png IMAGE GOES HERE.**</p>
 
-<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/DailyForexReport_CAMIDNNN_YYYY_MM_DD.xls">DailyForexReport_CAMID(NNN)_(YYYY_MM_DD).xls</a></p>
-</a></p></p></h2></h2></h2></p></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></strong></li></ul></div></div></div></div>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/DailyForexReport_CAMIDNNN_YYYY_MM_DD.xls">DailyForexReport_CAMID(NNN)_(YYYY_MM_DD).xls</a></p>

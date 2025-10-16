@@ -23,38 +23,38 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>TransferLink</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0028117378</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>customerref</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>528823600000002</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>903721101215894</string>
             </value>
         </param>
-                <param >
+                <param  />
             <value>
                 <string>4093920</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20110715T12:54:56</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>800792A6D9BFD31FC93135525AEEDA1D2837B56E</string>
             </value>
@@ -65,8 +65,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -150,38 +150,38 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>TransferLink</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0028117378</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>customerref</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>528823600000002</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>903721101215894</string>
             </value>
         </param>
-                <param >
+                <param  />
             <value>
                 <string>4093920</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20110715T12:54:56</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>800792A6D9BFD31FC93135525AEEDA1D2837B56E</string>
             </value>
@@ -192,8 +192,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -260,5 +260,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API Menu</a></p>
-</a></p></p></string></value></name></member></string></value></name></member></int></value></name></member></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></int></value></name></member></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API Menu</a></p>

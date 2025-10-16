@@ -22,38 +22,38 @@ metadata:
 ```xml
 <methodCall>
     <methodName>Set3dSecureCode</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0042128722</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Tutuka Test</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>687653400000962</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>26842</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>4857467</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20161024T16:09:03</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>D4A05BDD02C83BCE80AC32B11B83B98409A6C237</string>
             </value>
@@ -63,8 +63,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -139,38 +139,38 @@ metadata:
 ```xml
 <methodCall>
     <methodName>Set3dSecureCode</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0042128722</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Tutuka Test</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>687653400000962</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>26842</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>4857467</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20161024T16:09:03</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>D4A05BDD02C83BCE80AC32B11B83B98409A6C237</string>
             </value>
@@ -180,8 +180,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -240,5 +240,4 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>
-</a></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

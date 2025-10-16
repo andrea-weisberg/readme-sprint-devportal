@@ -29,5 +29,4 @@ metadata:
 <h2>Report sample</h2>
 <p>**summary-Settlement-report-final.png IMAGE GOES HERE.**</p>
 
-<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/Daily_Settlement_Report_ICA_YYYY_MM_DD-1.xls">Daily_Settlement_Report_ICA_(YYYY_MM_DD).xls</a></p>
-</a></p></p></h2></h2></h2></span></b></li></span></b></li></span></b></li></ul></span></p></span></p></strong></span></li></strong></span></li></ul></span></p></span></b></p></span></p></span></span></div>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/Daily_Settlement_Report_ICA_YYYY_MM_DD-1.xls">Daily_Settlement_Report_ICA_(YYYY_MM_DD).xls</a></p>

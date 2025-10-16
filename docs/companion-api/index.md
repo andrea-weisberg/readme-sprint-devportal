@@ -16,12 +16,11 @@ metadata:
 
 <h4>Find out how to use the Companion Card API to:</h4>
 <ul>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/issue-cards/">Issue cards</a></li>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/manage-cards/">Manage cards</a></li>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/secure-cards/">Secure cards</a></li>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/manage-funds/">Manage funds</a></li>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/messages/">Send messages</a></li>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/tokenization2/">Make Tokenized payments</a></li>
-<li><a href="https:developer.sprint.paymentology.com/companion-api/reports/">Generate reports</a></li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/issue-cards/">Issue cards</a></li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/manage-cards/">Manage cards</a></li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/secure-cards/">Secure cards</a></li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/manage-funds/">Manage funds</a></li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/messages/">Send messages</a></li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/tokenization2/">Make Tokenized payments</a></li>
+<li><a href="https://developer.sprint.paymentology.com/companion-api/reports/">Generate reports</a></li>
 </ul>
-</a></li></a></li></a></li></a></li></a></li></a></li></a></li></ul></h4></p></strong></strong></p></strong></p></p></strong></span></p></h2>

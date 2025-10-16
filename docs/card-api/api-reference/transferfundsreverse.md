@@ -26,58 +26,58 @@ metadata:
 ```xml
 <methodCall>
     <methodName>TransferFundsReverse</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0042128720</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Test99</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>190059689021001</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>546059505058201</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>E6FA7E37-155D-0028-9D2F13C986C114A1</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>2000</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>4857461</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20161121T13:23:05</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>448126551</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20161121T13:21:05</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>F4C2251496B61991A3C47A83BBDE1D11DFA202A1</string>
             </value>
@@ -87,8 +87,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -178,58 +178,58 @@ metadata:
 ```xml
 <methodCall>
     <methodName>TransferFundsReverse</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0042128720</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Test99</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>190059689021001</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>546059505058201</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>E6FA7E37-155D-0028-9D2F13C986C114A1</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>2000</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>4857461</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20161121T13:23:05</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>448126551</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20161121T13:21:05</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>F4C2251496B61991A3C47A83BBDE1D11DFA202A1</string>
             </value>
@@ -239,8 +239,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -311,5 +311,4 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>
-</a></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></string></value></int></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></value></string></value></int></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

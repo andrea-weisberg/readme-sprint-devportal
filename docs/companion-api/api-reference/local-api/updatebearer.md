@@ -37,78 +37,78 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>UpdateBearer</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0012345678</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>0123456789012345</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>105232700000441</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Jhon</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Foo</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>id12345688</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>14988885522</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Fourth Floor, 100 Victoria Embankment</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456789</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>London</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>United Kingdom</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>jhonfoo@mail.com</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>b7a2ee6c-2ce8-4fc0-a0c7-dc577f7b148e</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20241101T12:46:20</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>D79901B1D0B5857DC2A8BF20F2B517BCCB1F58DA</string>
             </value>
@@ -119,8 +119,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -145,53 +145,53 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>UpdateBearer</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0012345678</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>0123456789012345</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>105232700000441</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Jhon</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Foo</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>id12345688</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>14988885522</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>ca815042-278c-4787-b990-efa2c67cf5cf</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20241101T12:50:47</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>2E39F0D566FD561B4D33471965B907C55B069B4E</string>
             </value>
@@ -202,8 +202,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -239,78 +239,78 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>UpdateBearer</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0012345678</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>0123456789012345</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>105232700000441</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Jhon</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Foo</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>id12345688</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>14988885522</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Fourth Floor, 100 Victoria Embankment</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456789</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>London</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>United Kingdom</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>jhonfoo@mail.com</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>b7a2ee6c-2ce8-4fc0-a0c7-dc577f7b148e</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20241101T12:46:20</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>D79901B1D0B5857DC2A8BF20F2B517BCCB1F58DA</string>
             </value>
@@ -321,8 +321,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -347,53 +347,53 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>UpdateBearer</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0012345678</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>0123456789012345</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>105232700000441</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Jhon</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Foo</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>id12345688</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>14988885522</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>ca815042-278c-4787-b990-efa2c67cf5cf</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20241101T12:50:47</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>2E39F0D566FD561B4D33471965B907C55B069B4E</string>
             </value>
@@ -404,8 +404,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -453,78 +453,78 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>UpdateBearer</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0012345678</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>0123456789012345</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>105232700000441</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Jhon</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Foo</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>id12345688</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>14988885522</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Fourth Floor, 100 Victoria Embankment</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456789</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>London</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>United Kingdom</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>jhonfoo@mail.com</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>b7a2ee6c-2ce8-4fc0-a0c7-dc577f7b148e</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20241101T12:46:20</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>D79901B1D0B5857DC2A8BF20F2B517BCCB1F58DA</string>
             </value>
@@ -535,8 +535,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -561,53 +561,53 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>UpdateBearer</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0012345678</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>0123456789012345</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>105232700000441</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Jhon</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Foo</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>id12345688</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>14988885522</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>ca815042-278c-4787-b990-efa2c67cf5cf</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20241101T12:50:47</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>2E39F0D566FD561B4D33471965B907C55B069B4E</string>
             </value>
@@ -618,8 +618,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -655,78 +655,78 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>UpdateBearer</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0012345678</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>0123456789012345</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>105232700000441</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Jhon</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Foo</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>id12345688</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>14988885522</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Fourth Floor, 100 Victoria Embankment</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456789</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>London</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>United Kingdom</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>jhonfoo@mail.com</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>b7a2ee6c-2ce8-4fc0-a0c7-dc577f7b148e</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20241101T12:46:20</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>D79901B1D0B5857DC2A8BF20F2B517BCCB1F58DA</string>
             </value>
@@ -737,8 +737,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -763,53 +763,53 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>UpdateBearer</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0012345678</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>0123456789012345</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>105232700000441</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Jhon</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Foo</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>id12345688</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>14988885522</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>ca815042-278c-4787-b990-efa2c67cf5cf</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20241101T12:50:47</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>2E39F0D566FD561B4D33471965B907C55B069B4E</string>
             </value>
@@ -820,8 +820,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -846,5 +846,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>
-</a></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></h3></a></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></h3></a></p></a></p></a></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

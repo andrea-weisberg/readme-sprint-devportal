@@ -73,4 +73,3 @@ metadata:
 <h2>Authorization Checks</h2>
 <p><span style={{fontWeight: "400"}}>Paymentology Sprint allows you to implement the following authorization checks:</span></p>
 
-</span></p></h2></span></p></h2></span></p></h2></p></li></li></li></ul></span></p></span></p></h2></p></li></li></li></li></li></li></li></li></li></li></li></li></ul></span></p></h2></li></li></li></li></li></li></li></ul></p></h2></p></li></li></li></li></li></li></li></li></li></ul></span></p></span></p></h2></span></p></span></p>

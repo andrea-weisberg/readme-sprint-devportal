@@ -36,103 +36,103 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>UpdateProfile</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>2538765432</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>2365765432</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>test@mail.com</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>d25f123efd</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Jon</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Snow</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>PT 2635895</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>12354789652</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>12354789652</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>1</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>1230547896</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Company</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>2036/325696/12</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>city</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>add</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>cty</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>2563</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>2765431fd5862</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>2023-02-28T09:19:29</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>5530210554f81dea211593a953ac14b10cbdec58</string>
             </value>
@@ -143,8 +143,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -310,103 +310,103 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>UpdateProfile</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>2538765432</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>2365765432</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>test@mail.com</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>d25f123efd</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Jon</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Snow</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>PT 2635895</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>12354789652</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>12354789652</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>1</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>1230547896</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Company</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>2036/325696/12</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>city</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>add</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>cty</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>2563</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>2765431fd5862</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>2023-02-28T09:19:29</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>5530210554f81dea211593a953ac14b10cbdec58</string>
             </value>
@@ -417,8 +417,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -555,4 +555,3 @@ metadata:
 
 ```
 
-</string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></int></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></int></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>

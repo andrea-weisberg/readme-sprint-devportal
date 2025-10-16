@@ -27,9 +27,9 @@ metadata:
 <p> </p>
 <h3>URL’s to post test requests to:</h3>
 <ul>
-<li>Local Companion API calls: <a href="https:companion.uat.tutuka.cloud/v2_0/XmlRpc.cfm">https://companion.uat.tutuka.cloud/v2_0/XmlRpc.cfm</a></li>
-<li>Card API calls: <a href="https:apidev.tutuka.com/card/v1/XmlRpc.cfm">https://apidev.tutuka.com/card/v1/XmlRpc.cfm</a></li>
-<li>QR API calls: <a href="https:apidev.tutuka.com/mpqr/v1_0/consumer/xmlrpc.cfm">https://apidev.tutuka.com/mpqr/v1_0/consumer/xmlrpc.cfm</a></li>
+<li>Local Companion API calls: <a href="https://companion.uat.tutuka.cloud/v2_0/XmlRpc.cfm">https://companion.uat.tutuka.cloud/v2_0/XmlRpc.cfm</a></li>
+<li>Card API calls: <a href="https://apidev.tutuka.com/card/v1/XmlRpc.cfm">https://apidev.tutuka.com/card/v1/XmlRpc.cfm</a></li>
+<li>QR API calls: <a href="https://apidev.tutuka.com/mpqr/v1_0/consumer/xmlrpc.cfm">https://apidev.tutuka.com/mpqr/v1_0/consumer/xmlrpc.cfm</a></li>
 </ul>
 </div>
 
@@ -38,7 +38,7 @@ metadata:
 <ul>
 <li><strong>Integration method</strong>​​—the preferred method for integration with Paymentology’s live environment is over the Internet using SSL (as opposed to a VPN connection).</li>
 <li><strong>System support​</strong>—your system has to support TLS 1.2 as per requirements set by PCI. TLS 1.0 and TLS 1.1 cannot be supported.</li>
-<li><strong><a href="https:developer.sprint.paymentology.com/tools/simpos/">SimPOS</a>​</strong> —this is a transaction simulator tool that allows you to simulate remote API transactions. For example, you can use SimPOS to test that the flow of virtual card transactions over Paymentology’s Sprint Companion Card API is working properly.</li>
+<li><strong><a href="https://developer.sprint.paymentology.com/tools/simpos/">SimPOS</a>​</strong> —this is a transaction simulator tool that allows you to simulate remote API transactions. For example, you can use SimPOS to test that the flow of virtual card transactions over Paymentology’s Sprint Companion Card API is working properly.</li>
 </ul>
 
 <h1>VPN</h1>
@@ -80,5 +80,4 @@ metadata:
 </ul>
 
 <h2>Need help?</h2>
-<p>In case you’re experiencing any integration issues, do not hesitate to <a href="https:developer.sprint.paymentology.com/contact-us/">get in touch</a></p>
-</a></p></h2></strong></p></li></p></li></p></li></p></li></ul></strong></h2></p></p></li></strong></strong></p></li></p></li></p></li></p></li></ul></strong></h2></p></strong></p></h1></a></strong></li></strong></li></strong></li></ul></p></h2></a></li></a></li></a></li></ul></h3></p></li></li></li></ul></h3></li></li></span></strong></span></span></span></li></ul></div></div></div></div></div></h2></strong></p>
+<p>In case you’re experiencing any integration issues, do not hesitate to <a href="https://developer.sprint.paymentology.com/contact-us/">get in touch</a></p>

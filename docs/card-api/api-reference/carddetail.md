@@ -21,33 +21,33 @@ metadata:
 ```xml
 <methodCall>
     <methodName type="xs:string">CardDetail</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>1234567890</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST_CUSTOMER</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456789874561</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>d12d3df4-4e11-45a5-a11c-101c7175dfdb</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>1F008A133D69E482FEBEBB9A1120545DCFB4C4DD</string>
             </value>
@@ -57,8 +57,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -136,7 +136,7 @@ metadata:
                     <member>
                         <name>stopped</name>
                         <value>
-                            <string >
+                            <string  />
                         </value>
                     </member>
                     <member>
@@ -182,33 +182,33 @@ metadata:
 ```xml
 <methodCall>
     <methodName type="xs:string">CardDetail</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>1234567890</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST_CUSTOMER</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456789874561</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>d12d3df4-4e11-45a5-a11c-101c7175dfdb</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20160525T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>1F008A133D69E482FEBEBB9A1120545DCFB4C4DD</string>
             </value>
@@ -218,8 +218,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -297,7 +297,7 @@ metadata:
                     <member>
                         <name>stopped</name>
                         <value>
-                            <string >
+                            <string  />
                         </value>
                     </member>
                     <member>
@@ -320,5 +320,4 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API Menu</a></p>
-</a></p></string></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API Menu</a></p>

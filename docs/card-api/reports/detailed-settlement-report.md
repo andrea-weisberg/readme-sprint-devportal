@@ -7,7 +7,7 @@ metadata:
 ---
 <div className="block translation current highlight" data-element="para" data-attr-xinfo-text="10760">
 <p><span style={{fontWeight: "400"}}>Paymentology also provides a detailed version of the summary Settlement Report. </span><span style={{fontWeight: "400"}}>The Detailed Settlement Report shows each settled transaction, which allows you to use the Transaction id to mark off settled transactions from authorized transactions. This also assists in confirming the values of the amounts in the summary Settlement Report. The network provides the Transaction id field during authorization. The same Transaction id for authorizations is included in the Detailed Settlement Report.</span></p>
-<p>There are 3 versions of this report available:<br >
+<p>There are 3 versions of this report available:<br  />
 <a href="#DSRV1">Version 1.0</a></p>
 <p><a href="#DSRV2.0">Version 2.0</a></p>
 <p><a href="#DSRV2.1">Version 2.1</a></p>
@@ -112,6 +112,5 @@ metadata:
 <p> </p>
 <p>**Detailed-Settlement-report-1.png IMAGE GOES HERE.**</p>
 
-<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNameDailySettlementsYYYYMMDD-1.csv">CampaignNameDailySettlementsYYYYMMDD.csv</a></p>
-<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNameDailySettlementsYYYYMMDD-2.csv">CampaignNameDailySettlementsYYYYMMDDsample.csv</a></p>
-</a></p></a></p></p></p></h2></h2></h2></span></b></li></span></b></li></span></b></li></span></b></li></span></b></li></span></b></li></span></b></li></span></b></li></span></li></span></li></span></li></ul></span></b></li></li></li></ul></strong></li></span></b></li></span></b></li></span></b></li></span></b></li></ul></span></p></a></h3></span></b></li></span></b></li></span></b></li></span></b></li></span></b></li></span></b></li></span></b></li></span></b></li></span></li></span></li></span></li></ul></span></b></li></li></li></ul></strong></li></span></b></li></span></b></li></span></b></li></span></b></li></ul></p></a></h3></span></b></li></span></b></li></span></b></li></span></b></li></span></b></li></span></b></li></span></b></li></span></b></li></span></li></span></li></span></li></ul></span></b></li></li></li></li></ul></strong></li></span></b></li></span></b></li></span></b></li></span></b></li></ul></p></a></h3></span></p></a></p></a></p></a></p></span></span></p></div>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNameDailySettlementsYYYYMMDD-1.csv">CampaignNameDailySettlementsYYYYMMDD.csv</a></p>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNameDailySettlementsYYYYMMDD-2.csv">CampaignNameDailySettlementsYYYYMMDDsample.csv</a></p>

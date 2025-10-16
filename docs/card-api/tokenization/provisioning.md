@@ -10,7 +10,7 @@ metadata:
 <p>**Tokenization-Flow_02-v2-1.png IMAGE GOES HERE.**</p>
 
 <section id="tutuka-block-3" className="tutuka-block tutuka-block--text-full-width"><b>step 1: </b>The cardholder initiates the request process via push provisioning or manual provisioning.</section>
-<section className="tutuka-block tutuka-block--text-full-width"><b>step 2: </b>The payment service provider requests a payment token from the card network.<b>step 3: </b>The card network initiates the token approval process and transfers the requested information to Paymentology (the issuer processor) for verification checks.<b>step 4: </b>Paymentology makes the provisioning decision and relays the information to the card network. Paymentology will also notify the client via the <b><a href="https:developer.sprint.paymentology.com/remotemessaging/">RemoteMessaging</a> API</b> of the attempted provisioning.</p>
+<section className="tutuka-block tutuka-block--text-full-width"><b>step 2: </b>The payment service provider requests a payment token from the card network.<b>step 3: </b>The card network initiates the token approval process and transfers the requested information to Paymentology (the issuer processor) for verification checks.<b>step 4: </b>Paymentology makes the provisioning decision and relays the information to the card network. Paymentology will also notify the client via the <b><a href="https://developer.sprint.paymentology.com/remotemessaging/">RemoteMessaging</a> API</b> of the attempted provisioning.</p>
 <p><b>step 5: </b>If the token activation request is authorized, the card network generates a payment token. After tokenization, MDES will store that information in their secure token vault, while associating the card details to the created token.</p>
 <p><b>step 6: </b>The unique token is sent to the payment service provider for completing the current transaction. The provider may also store the token for future payments. If the provider stores tokenized payment card data on a file in a database, which is used for making repeat purchases, such payments are called card-on-file transactions.</p>
 </section>
@@ -35,7 +35,7 @@ metadata:
 <h3>a) TAV certification</h3>
 <p>TAV (Token Authentication value) is an encrypted digital signature that authenticates a push provisioning request from the token requester to the issuer/client. TAV certification is required to ensure the security and authenticity of the push provisioning process.</p>
 <p>When a card is pushed on an XPay wallet, the client app will notify Paymentology that a card is being provisioned, and Paymentology needs to calculate its TAV value—based on the card number, expiry date, and CVV. After calculating this value, Paymentology will then pass it to MDES for MDES to tokenize the card. After tokenization, MDES will store that information in their secure token vault, while associating the card details to the generated token.</p>
-<p>If a client app relies on Paymentology for TAV calculation, they’ll need to call the <a href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/calculatetav/"><b>CalculateTAV</b></a> API method, which is part of the Companion API. Paymentology will also need to get the necessary keys from Mastercard.</p>
+<p>If a client app relies on Paymentology for TAV calculation, they’ll need to call the <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/calculatetav/"><b>CalculateTAV</b></a> API method, which is part of the Companion API. Paymentology will also need to get the necessary keys from Mastercard.</p>
 <p>Note that even if Paymentology assists with TAV calculation, clients will still be responsible for other encryption tasks through the wallet to the MDES.</p>
 <p> </p>
 <h3>b) Card data encryption</h3>
@@ -53,18 +53,18 @@ metadata:
 
 <h2><b>How Manual Provisioning Works</b></h2>
 <p>Manual provisioning is where the cardholder physically enters the card details, such as PAN, expiry date, and CVV, into the digitized wallet. It requires the cardholder to enter an OTP via the selected verification method, usually SMS or email, to verify that they indeed own the card.</p>
-<p>In manual provisioning, Paymentology will use the <a href="https:developer.sprint.paymentology.com/remotemessaging/"><b>RemoteMessaging API</b></a> to handle various <a href="https:developer.sprint.paymentology.com/administrative-message-values/">digitization</a> tasks.</p>
+<p>In manual provisioning, Paymentology will use the <a href="https://developer.sprint.paymentology.com/remotemessaging/"><b>RemoteMessaging API</b></a> to handle various <a href="https://developer.sprint.paymentology.com/administrative-message-values/">digitization</a> tasks.</p>
 <p><b>RemoteMessaging API</b></p>
 <p>The Remote Messaging API for non-Companion clients is hosted on your platform and allows us to call you to send administrative advice messages:</p>
 <ul>
-<li aria-level="1"><a href="https:developer.sprint.paymentology.com/remotemessaging/#3DSecure">3DSecure.OTP</a> – process 3DS OTP token for an end customer to be able to complete the challenge of a live transaction</li>
-<li aria-level="1"><a href="https:developer.sprint.paymentology.com/remotemessaging/#activation">digitization.activation</a> – process MDES OTP token for an end customer to be able to complete the challenge and activate the wallet</li>
-<li aria-level="1"><a href="https:developer.sprint.paymentology.com/remotemessaging/#activationmethods">digitization.activationmethods</a> – this message signals that a token provision has been made and requires a verification method in order to push the OTP validation</li>
-<li aria-level="1"><a href="https:developer.sprint.paymentology.com/remotemessaging/#event">digitization.event</a> – used to communicate tokenization events in MDES</li>
+<li aria-level="1"><a href="https://developer.sprint.paymentology.com/remotemessaging/#3DSecure">3DSecure.OTP</a> – process 3DS OTP token for an end customer to be able to complete the challenge of a live transaction</li>
+<li aria-level="1"><a href="https://developer.sprint.paymentology.com/remotemessaging/#activation">digitization.activation</a> – process MDES OTP token for an end customer to be able to complete the challenge and activate the wallet</li>
+<li aria-level="1"><a href="https://developer.sprint.paymentology.com/remotemessaging/#activationmethods">digitization.activationmethods</a> – this message signals that a token provision has been made and requires a verification method in order to push the OTP validation</li>
+<li aria-level="1"><a href="https://developer.sprint.paymentology.com/remotemessaging/#event">digitization.event</a> – used to communicate tokenization events in MDES</li>
 </ul>
 <p>Let’s talk about the methods in detail.</p>
 <ol>
-<li><a href="https:developer.sprint.paymentology.com/remotemessaging/#activationmethods"><b>Digitization.activationmethods</b></a></li>
+<li><a href="https://developer.sprint.paymentology.com/remotemessaging/#activationmethods"><b>Digitization.activationmethods</b></a></li>
 </ol>
 <p>This event happens at the beginning of the manual provisioning process. It signals that token provisioning is being requested, and the cardholder’s contact method needs to be verified for pushing the OTP. The OTP will confirm that the cardholder is the owner of the card.</p>
 <p>In this instance, the MDES will send a notification to Paymentology that a cardholder is trying to provision their card on the XPay app, and that Paymentology needs to provide the cardholder’s mobile number and/or email address back to MDES so that they may pass it to the XPay.</p>
@@ -74,9 +74,8 @@ metadata:
 <p>Also, no KLV fields are required to be passed. So, they’ll be no <b>MessageData</b> string included in the AdministrativeMessage request from Paymentology.</p>
 <p> </p>
 <ol start="2">
-<li><a href="https:developer.sprint.paymentology.com/remotemessaging/#activation"><b>Digitization.activation</b></a></li>
+<li><a href="https://developer.sprint.paymentology.com/remotemessaging/#activation"><b>Digitization.activation</b></a></li>
 </ol>
 <p>Once the cardholder selects their preferred method of verification, the XPay wallet will send this information to the MDES, and the MDES will send it to Paymentology.</p>
 <p>Paymentology will then send an activation code via <b>Digitization.activation</b> to the client. The client will then pass an OTP to the cardholder, through their preferred contact method, to input it on their XPay wallet app.</p>
 <p> </p>
-</p></b></p></p></b></a></li></ol></p></b></p></b></p></p></b></p></p></p></b></a></li></ol></p></a></li></a></li></a></li></a></li></ul></p></b></p></a></b></a></p></p></b></h2></li></li></li></li></li></ol></p></p></p></p></h3></p></p></b></a></p></p></p></h3></p></p></li></li></ul></p></p></b></h2></p></b></li></b></li></ul></p></b></h2></b></p></b></p></a></b></b></b></b></section></b></section></p></p></p>

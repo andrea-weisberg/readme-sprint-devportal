@@ -23,38 +23,38 @@ metadata:
 <?xml version=""1.0""?>
 <methodCall>
   <methodName>UnstopCard</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0014682067</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>TTKTEST</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>5267264108771089</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Testing UnstopCard</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123456</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20200327T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>97DD1ADD9BB6CBF025149C9069DFBD20884F0A62</string>
       </value>
@@ -65,8 +65,8 @@ metadata:
 ```,```xml
 <?xml version=""1.0"" encoding=""UTF-8""?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -101,38 +101,38 @@ metadata:
 <?xml version=""1.0""?>
 <methodCall>
   <methodName>UnstopCard</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0014682067</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>TTKTEST</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>5267264108771089</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>Testing UnstopCard</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123456</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20200327T00:00:00</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>97DD1ADD9BB6CBF025149C9069DFBD20884F0A62</string>
       </value>
@@ -143,8 +143,8 @@ metadata:
 ```,```xml
 <?xml version=""1.0"" encoding=""UTF-8""?>
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -169,5 +169,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>
-</a></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

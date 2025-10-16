@@ -22,33 +22,33 @@ metadata:
 <?xml version="1.0"?>
   <methodCall>
     <methodName>ListTokens</methodName>
-    <params >
-      <param >
+    <params  />
+      <param  />
         <value>
           <string>0053897254</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>66816921087</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>755348400000058</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>fb8344c9-2fc9-467b-87e4-55eaf88d06f2</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <dateTime.iso8601>20201102T12:01:01</dateTime.iso8601>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>6868417A5B171A2E113DAF6F232AD0C30D915AFD</string>
         </value>
@@ -59,8 +59,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -526,33 +526,33 @@ metadata:
 <?xml version="1.0"?>
   <methodCall>
     <methodName>ListTokens</methodName>
-    <params >
-      <param >
+    <params  />
+      <param  />
         <value>
           <string>0053897254</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>66816921087</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>755348400000058</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>fb8344c9-2fc9-467b-87e4-55eaf88d06f2</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <dateTime.iso8601>20201102T12:01:01</dateTime.iso8601>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>6868417A5B171A2E113DAF6F232AD0C30D915AFD</string>
         </value>
@@ -563,8 +563,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -1018,5 +1018,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>
-</a></p></p></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></em></p></em></p></span></p></p></em></p></em></p></span></p></p></em></p></em></p></span></p></p></em></p></em></p></em></p></em></p></em></p></span></p></p></em></p></span></p></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></em></p></p></em></p></span></p></p></em></p></span></p></p></em></p></span></p></p></em></p></em></p></em></p></em></span></p></p></em></p></span></p></p></em></p></span></p></p></p></p></p></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></double></value></name></member></double></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

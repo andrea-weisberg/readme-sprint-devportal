@@ -12,7 +12,7 @@ metadata:
 <h3>How to update the Offline PIN</h3>
 <ol className="ak-ol" data-indent-level="1">
 <li>
-<p data-renderer-start-pos="4217">The Issuer calls the <a href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/changepin/">ChangePIN</a> API</p>
+<p data-renderer-start-pos="4217">The Issuer calls the <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/changepin/">ChangePIN</a> API</p>
 </li>
 <li>
 <p data-renderer-start-pos="4306">We instantly update the online PIN, and record that the offline PIN needs to be updated</p>
@@ -24,4 +24,3 @@ metadata:
 <p data-renderer-start-pos="4575">In the following transaction, if it specifies that the previous attempt to update the issuer script fails, we will mark the update as needing reprocessing again</p>
 </li>
 </ol>
-</p></li></p></li></p></li></a></p></li></ol></h3></p></p>

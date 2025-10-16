@@ -20,5 +20,4 @@ metadata:
 <h2>Report sample</h2>
 <p>**Card-Order-report-final-Card-API.png IMAGE GOES HERE.**</p>
 
-<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_PanDetails_YYYYMMDD-card.csv">CampaignName_PanDetails_YYYYMMDD.csv</a></p>
-</a></p></p></h2></h2></h2></strong></li></span></strong></li></strong></li></ul></p></span></span></p>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_PanDetails_YYYYMMDD-card.csv">CampaignName_PanDetails_YYYYMMDD.csv</a></p>

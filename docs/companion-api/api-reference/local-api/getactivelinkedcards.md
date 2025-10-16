@@ -12,7 +12,7 @@ metadata:
 <li>Session-Id="Encrypted" AES Key e-g (AB521456236KHU52) is required if encryption is needed and the campaign is configured for encryption of sensitive data.</li>
 <li>This is optional if encryption is not needed and the campaign is not configured for encryption of sensitive data.</li>
 </ul>
-<p>You can read more on how our Secure API’s work <a href="https:developer.sprint.paymentology.com/companion-api/secure-apis/">here</a>.</p>
+<p>You can read more on how our Secure API’s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a>.</p>
 
 #### Path parameters
 
@@ -27,28 +27,28 @@ metadata:
 ```xml
 <methodcall>
     <methodname>GetActiveLinkedCards</methodname>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0014682067</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TTKTEST</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200327T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>B6942BA5F98449F067A3C7EC17E7B20545EF2B44</string>
             </value>
@@ -58,8 +58,8 @@ metadata:
 
 ```,```xml
 <methodresponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -143,28 +143,28 @@ metadata:
 ```xml
 <methodcall>
     <methodname>GetActiveLinkedCards</methodname>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0014682067</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TTKTEST</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200327T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>B6942BA5F98449F067A3C7EC17E7B20545EF2B44</string>
             </value>
@@ -174,8 +174,8 @@ metadata:
 
 ```,```xml
 <methodresponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -248,5 +248,4 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>
-</a></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></struct></value></data></array></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></a></p></li></li></ul></strong></span></p></strong></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

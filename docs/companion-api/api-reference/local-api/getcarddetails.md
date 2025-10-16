@@ -12,7 +12,7 @@ metadata:
 <li>Session-Id="Encrypted" AES Key e-g (AB521456236KHU52) is required if encryption is needed and the campaign is configured for encryption of sensitive data.</li>
 <li>This is optional if encryption is not needed and the campaign is not configured for encryption of sensitive data.</li>
 </ul>
-<p>You can read more on how our Secure API’s work <a href="https:developer.sprint.paymentology.com/companion-api/secure-apis/">here</a> .</p>
+<p>You can read more on how our Secure API’s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a> .</p>
 
 #### Path parameters
 
@@ -28,33 +28,33 @@ metadata:
 ```xml
 <methodCall>
   <methodName>GetCardDetails</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0084711380</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>PPDEC07201</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>4987057272502351</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>1234567</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20201207T09:06:40</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>7a6ab8939b9585f49e397fd143de38bd454472e1</string>
       </value>
@@ -64,8 +64,8 @@ metadata:
 
 ```,```xml
 <methodresponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -168,33 +168,33 @@ metadata:
 ```xml
 <methodCall>
   <methodName>GetCardDetails</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>0084711380</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>PPDEC07201</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>4987057272502351</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>1234567</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20201207T09:06:40</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>7a6ab8939b9585f49e397fd143de38bd454472e1</string>
       </value>
@@ -204,8 +204,8 @@ metadata:
 
 ```,```xml
 <methodresponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -288,6 +288,5 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
 
-</a></p></string></value></name></member></boolean></value></name></member></boolean></value></name></member></boolean></value></name></member></member></boolean></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></div></div></div></div></div></section></p></div></div></div></div></div></section></p></p></p></p></p></p></p></p></p></div></div></p></div></div></p></p></p></p></string></value></name></member></boolean></value></name></member></boolean></value></name></member></boolean></value></name></member></member></boolean></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></div></div></div></div></div></section></p></div></div></p></div></div></p></div></div></p></div></div></p></div></div></a></p></li></li></ul></strong></span></p></strong></p></p>

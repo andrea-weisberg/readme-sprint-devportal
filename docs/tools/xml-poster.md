@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-<div data-element="para" data-attr-xinfo-text="10920"><span className="inline link linktool link-external current" title="" data-element="link" data-attr-xlink-href="https:developer.sprint.paymentology.com/tools/runxmlrpcrequest/runxmlrpcrequesthelp" data-original-title="" aria-describedby="popover765621">The <strong>XML Poster​</strong></span><strong>​</strong> allows you to post XML requests directly to the Paymentology Sprint system.</div>
+<div data-element="para" data-attr-xinfo-text="10920"><span className="inline link linktool link-external current" title="" data-element="link" data-attr-xlink-href="https://developer.sprint.paymentology.com/tools/runxmlrpcrequest/runxmlrpcrequesthelp" data-original-title="" aria-describedby="popover765621">The <strong>XML Poster​</strong></span><strong>​</strong> allows you to post XML requests directly to the Paymentology Sprint system.</div>
 <div data-element="para" data-attr-xinfo-text="10920">
 <div className="placeholder">In the event that there is no alternative route, you can use the XML Poster to post requests created with the XML Generator to Paymentology.</div>
 <div className="placeholder">​</div>
@@ -15,4 +15,3 @@ metadata:
 </div>
 <div data-element="para" data-attr-xinfo-text="10926"></div>
 <div data-element="para" data-attr-xinfo-text="10926"><strong>NB.</strong> <strong>During testing, avoid entering any personally identifiable information (PII), such as, user IDs, card numbers or email addresses.</strong></div>
-</strong></strong></div></div></div></div></div></div></div></div></strong></strong></span></div>

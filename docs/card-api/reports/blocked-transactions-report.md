@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-<p>This report lists detailed information about filtered transactions for a specific set of campaigns, during a specified date range.<br >
+<p>This report lists detailed information about filtered transactions for a specific set of campaigns, during a specified date range.<br  />
 The report includes details about vouchers and reasons for transactions being filtered. This reports helps clients to identify if any whitelisted merchants (approved merchants) are blocked.</p>
 <p>The report includes the following details:</p>
 <ul>
@@ -29,5 +29,4 @@ The report includes details about vouchers and reasons for transactions being fi
 
 <h2>Report sample</h2>
 
-<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2024/02/CampaignName-Blocked-Transactions-231015-231022.xls">CampaignName Blocked Transactions – 231015-231022.xls</a></p>
-</a></p></h2></h2></h2></strong></li></strong></li></li></li></ul></strong></li></strong></li></strong></li></strong></li></strong></li></ul></p></p>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2024/02/CampaignName-Blocked-Transactions-231015-231022.xls">CampaignName Blocked Transactions – 231015-231022.xls</a></p>

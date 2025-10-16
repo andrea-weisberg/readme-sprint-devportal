@@ -10,15 +10,15 @@ metadata:
 <ul>
 <li>The Acquirer domain (the Merchant)</li>
 <li>The Issuer domain (Paymentology)</li>
-<li>The Interoperability domain (the Card scheme)<br >
-<em>Verified by Visa</em><br >
+<li>The Interoperability domain (the Card scheme)<br  />
+<em>Verified by Visa</em><br  />
 <em>MasterCard SecureCode</em></li>
 </ul>
 
 <p>The primary benefit of using 3D Secure is <em>to reduce the risk of fraud. </em>3D Secure allows the Issuer to verify the cardholder’s identity by requesting supplementary information before completing an online transaction. The cardholder can choose between the following options when using 3D Secure:</p>
 <ul>
-<li><strong>Static 3D Secure –</strong> when enabling the 3D Secure functionality, the cardholder sets a password which remains unchanged. This password will be requested as the cardholder authentication when the card is used in an online transaction. For Static 3D Secure code, use the <span className="xml-highlight"><a href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/set3dsecurecode/">Set3dSecureCode</a></span> call.</li>
-<li><strong>Dynamic 3D Secure – </strong>this uses an OTP (one-time password) that is generated before a payment is processed after a cardholder has entered their card details online. The OTP is sent to the cardholder via text or email and is valid for a limited time. For Dynamic 3D Secure code, use the <span className="xml-highlight"><a href="https:developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/#3DSecure">AdministrativeMessage3DSecureOTP</a></span> call.</li>
+<li><strong>Static 3D Secure –</strong> when enabling the 3D Secure functionality, the cardholder sets a password which remains unchanged. This password will be requested as the cardholder authentication when the card is used in an online transaction. For Static 3D Secure code, use the <span className="xml-highlight"><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/set3dsecurecode/">Set3dSecureCode</a></span> call.</li>
+<li><strong>Dynamic 3D Secure – </strong>this uses an OTP (one-time password) that is generated before a payment is processed after a cardholder has entered their card details online. The OTP is sent to the cardholder via text or email and is valid for a limited time. For Dynamic 3D Secure code, use the <span className="xml-highlight"><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/#3DSecure">AdministrativeMessage3DSecureOTP</a></span> call.</li>
 </ul>
 
 <p>**image-35-v2.png IMAGE GOES HERE.**</p>
@@ -39,4 +39,3 @@ metadata:
 <li>The ACS provider sends a message to the card scheme’s AHS server to confirm that validation took place so that there is a history of the validation</li>
 </ol>
 <p>The merchant then sends the transaction (with he UCAF/CAVV information in the transaction message) to the card scheme for authorization like any other transaction. The card scheme then sends the information to Paymentology. Paymentology validates the UCAF/CAVV information and then perform all other relevant checks on the card for an authorization request.</p>
-</p></li></strong></strong></li></li></li></li></li></li></li></li></li></li></li></ol></p></p></a></span></strong></li></a></span></strong></li></ul></em></p></em></em></li></li></li></ul></p></strong></p>

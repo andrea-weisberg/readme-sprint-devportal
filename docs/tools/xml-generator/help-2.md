@@ -17,7 +17,7 @@ metadata:
 
 <h2>How to use XML Generator</h2>
 <ol>
-<li>Go to <a href="https:developer.sprint.paymentology.com/tools/xml-poster-generator/">XML Poster & Generator</a> under <a href="https:developer.sprint.paymentology.com/tools/">Tools</a></li>
+<li>Go to <a href="https://developer.sprint.paymentology.com/tools/xml-poster-generator/">XML Poster & Generator</a> under <a href="https://developer.sprint.paymentology.com/tools/">Tools</a></li>
 <li>Select the API you want to create an XMLRPC request for Companion Local API or Remote API)</li>
 <li>Select the method you want to create an XMLRPC request for</li>
 <li>Fill out the method arguments with your own data</li>
@@ -38,10 +38,9 @@ metadata:
 
 <h2>How to use XML Poster</h2>
 <ol>
-<li>Go to <a href="https:developer.sprint.paymentology.com/tools/xml-poster-generator/">XML Poster & Generator</a> under <a href="https:developer.sprint.paymentology.com/tools/">Tools</a></li>
+<li>Go to <a href="https://developer.sprint.paymentology.com/tools/xml-poster-generator/">XML Poster & Generator</a> under <a href="https://developer.sprint.paymentology.com/tools/">Tools</a></li>
 <li>Choose the target API</li>
 <li>Paste your XML request</li>
 <li>Click on “<strong>Submit</strong>“</li>
 <li>Wait for the “<strong>Transaction result pop-up</strong>” that will contain the XML response</li>
 </ol>
-</strong></li></strong></li></li></li></a></a></li></ol></h2></li></li></ul></p></h2></p></p></h2></strong></li></strong></li></strong></li></li></li></li></a></a></li></ol></h2></li></li></li></ul></h2></strong></p></p></h2>

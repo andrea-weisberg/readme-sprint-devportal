@@ -26,53 +26,53 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName> CreateLinkedCardMaskedResponse</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0014682067</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123TEST</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TTK</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>id123</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>0924769387</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>20221031T00:00:00</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200327T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>B112B8EAD306AB279C775EDB21990504FD87B0BA</string>
             </value>
@@ -82,8 +82,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -152,53 +152,53 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName> CreateLinkedCardMaskedResponse</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0014682067</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123TEST</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TTK</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>id123</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>0924769387</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>20221031T00:00:00</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123456</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200327T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>B112B8EAD306AB279C775EDB21990504FD87B0BA</string>
             </value>
@@ -208,8 +208,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -262,6 +262,5 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
 
-</a></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></div></div></div></div></div></section></p></p></div></div></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></div></div></div></div></div></section></p></div></div></p></div></div></p></p></p></div></div></p></div></div></p></div></div></p></div></div></p></div></div></p></div></div></p>

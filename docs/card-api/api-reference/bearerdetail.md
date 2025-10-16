@@ -21,33 +21,33 @@ metadata:
 ```xml
 <methodCall>
   <methodName type="xs:string">BearerDetail</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>1234567890</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>aL3dF5</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123456789874561</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>8211da11-1a22-42d5-b3c9-1fbd1c56f787</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20180730T11:59:20</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>01d123f5a220b73d4cf7845656b1cb4fb22c85f3</string>
       </value>
@@ -57,8 +57,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -136,7 +136,7 @@ metadata:
           <member>
             <name>middleName</name>
             <value>
-              <string >
+              <string  />
             </value>
           </member>
           <member>
@@ -148,13 +148,13 @@ metadata:
           <member>
             <name>image</name>
             <value>
-              <string >
+              <string  />
             </value>
           </member>
           <member>
             <name>prefix</name>
             <value>
-              <string >
+              <string  />
             </value>
           </member>
           <member>
@@ -201,33 +201,33 @@ metadata:
 ```xml
 <methodCall>
   <methodName type="xs:string">BearerDetail</methodName>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <string>1234567890</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>aL3dF5</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>123456789874561</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>8211da11-1a22-42d5-b3c9-1fbd1c56f787</string>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <dateTime.iso8601>20180730T11:59:20</dateTime.iso8601>
       </value>
     </param>
-    <param >
+    <param  />
       <value>
         <string>01d123f5a220b73d4cf7845656b1cb4fb22c85f3</string>
       </value>
@@ -237,8 +237,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-  <params >
-    <param >
+  <params  />
+    <param  />
       <value>
         <struct>
           <member>
@@ -316,7 +316,7 @@ metadata:
           <member>
             <name>middleName</name>
             <value>
-              <string >
+              <string  />
             </value>
           </member>
           <member>
@@ -328,13 +328,13 @@ metadata:
           <member>
             <name>image</name>
             <value>
-              <string >
+              <string  />
             </value>
           </member>
           <member>
             <name>prefix</name>
             <value>
-              <string >
+              <string  />
             </value>
           </member>
           <member>
@@ -357,5 +357,4 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>
-</a></p></string></value></name></member></string></value></name></member></value></name></member></value></name></member></string></value></name></member></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></value></name></member></value></name></member></string></value></name></member></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

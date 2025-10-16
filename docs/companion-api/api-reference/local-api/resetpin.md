@@ -21,34 +21,34 @@ metadata:
 ```xml
 <methodCall>
     <methodName>ResetPin</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>4024236470</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>15178247</string>
             </value>
         </param>        
-        <param >
+        <param  />
             <value>
                 <string>5267237340995161</string>
             </value>
         </param>
 
-        <param >
+        <param  />
             <value>
                 <string>7311521</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20170314T11:25:36</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>3B2B7F427DEA7CD481872DD3D221DA8989ABCA25</string>
             </value>
@@ -59,8 +59,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -95,34 +95,34 @@ metadata:
 ```xml
 <methodCall>
     <methodName>ResetPin</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>4024236470</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>15178247</string>
             </value>
         </param>        
-        <param >
+        <param  />
             <value>
                 <string>5267237340995161</string>
             </value>
         </param>
 
-        <param >
+        <param  />
             <value>
                 <string>7311521</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20170314T11:25:36</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>3B2B7F427DEA7CD481872DD3D221DA8989ABCA25</string>
             </value>
@@ -133,8 +133,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -159,5 +159,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>
-</a></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

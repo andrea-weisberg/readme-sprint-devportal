@@ -29,19 +29,19 @@ metadata:
 ```null
 <methodCall>
     <methodName>GenerateTimeBasedSecret</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0087654321</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>4523652122</string>
             </value>
         </param>
-        <param >
-        <param >
+        <param  />
+        <param  />
           <value>
             <string>5432000000001234</string> 
           </value>
@@ -50,32 +50,32 @@ metadata:
                 <string>711432100000123</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <numeric>60</numeric>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <numeric>8</numeric>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>HmacSHA512</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123654789654</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20230215T12:43:46</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>6A401CCE9F40C338FE0AF63DD247A2BC13246CFCF1A04F6828C70F9262A3D24D</string>
             </value>
@@ -85,8 +85,8 @@ metadata:
 
 ```,```null
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -128,19 +128,19 @@ metadata:
 ```null
 <methodCall>
     <methodName>GenerateTimeBasedSecret</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0087654321</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>4523652122</string>
             </value>
         </param>
-        <param >
-        <param >
+        <param  />
+        <param  />
           <value>
             <string>5432000000001234</string> 
           </value>
@@ -149,32 +149,32 @@ metadata:
                 <string>711432100000123</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <numeric>60</numeric>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <numeric>8</numeric>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>HmacSHA512</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>123654789654</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20230215T12:43:46</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>6A401CCE9F40C338FE0AF63DD247A2BC13246CFCF1A04F6828C70F9262A3D24D</string>
             </value>
@@ -184,8 +184,8 @@ metadata:
 
 ```,```null
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -216,5 +216,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
-</a></p></p></string></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></numeric></value></numeric></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></string></value></name></member></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></numeric></value></numeric></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></strong></p></strong></p></strong></p></p></p></p></p></span></strong></p></p></div></section>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>

@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-<p>Provides a method to unlink a card from a specified profile.<br >
+<p>Provides a method to unlink a card from a specified profile.<br  />
 This is only possible if the card was never loaded.</p>
 
 #### Path parameters
@@ -23,33 +23,33 @@ This is only possible if the card was never loaded.</p>
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
    <methodName>DelinkCard</methodName>
-   <params >
-       <param >
+   <params  />
+       <param  />
            <value>
                <string>0987654925</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>9987654072</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>407654323000001</string>
            </value>
        </param>
-        <param >
+        <param  />
            <value>
                <string>txn123456</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <dateTime.iso8601>20240531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>97060e7f95dad75b43ba67865ghfty9478aa9ee77b0709f6f5ce3c93a4aaf3e1</string>
            </value>
@@ -60,8 +60,8 @@ This is only possible if the card was never loaded.</p>
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -137,33 +137,33 @@ This is only possible if the card was never loaded.</p>
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
    <methodName>DelinkCard</methodName>
-   <params >
-       <param >
+   <params  />
+       <param  />
            <value>
                <string>0987654925</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>9987654072</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>407654323000001</string>
            </value>
        </param>
-        <param >
+        <param  />
            <value>
                <string>txn123456</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <dateTime.iso8601>20240531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>97060e7f95dad75b43ba67865ghfty9478aa9ee77b0709f6f5ce3c93a4aaf3e1</string>
            </value>
@@ -174,8 +174,8 @@ This is only possible if the card was never loaded.</p>
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -234,4 +234,3 @@ This is only possible if the card was never loaded.</p>
 
 ```
 
-</string></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></double></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p>

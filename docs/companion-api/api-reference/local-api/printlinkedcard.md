@@ -14,8 +14,8 @@ metadata:
 | terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal id of the terminal requesting the transaction</p> |
 | title | String | special - see description  | ✓ | <p>This field can be used to enter the person’s title (e.g. Mr / Ms / Mrs / Dr / etc). Field is required but can accept empty string.</p> <p>(The combined value of title, initials and surname delimited with spaces should be maximum 20 characters.)</p> |
 | initials | String | special - see description  | ✓ | <p>This field can only contain alphabetic characters in UPPER CASE – no full stops are allowed between initials. Field is required but can accept empty string.</p> <p>(The combined value of title, initials and surname delimited with spaces should be maximum 20 characters.)</p> |
-| lastName | String | special - see description  | ✓ | <p>This field can only be alphabetic characters in UPPER CASE – no full stops and/or special characters are allowed. In the case of -double barrel- surnames, such as FABER-SMITH we may have a hyphen between the two parts of the surname but without any spaces.</p> <p>(The combined value of title, initials and surname delimited with spaces should be maximum 20 characters.)<br > Field is required but can accept empty string.</p> |
-| address1 | String | special - see description  | ✓ | <p>This is the first line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 50 characters (Manufacturer dependent).</p> <p>The field may not start (first character) with a space or a full stop.<br > Field is required but can accept empty string.</p> |
+| lastName | String | special - see description  | ✓ | <p>This field can only be alphabetic characters in UPPER CASE – no full stops and/or special characters are allowed. In the case of -double barrel- surnames, such as FABER-SMITH we may have a hyphen between the two parts of the surname but without any spaces.</p> <p>(The combined value of title, initials and surname delimited with spaces should be maximum 20 characters.)<br  /> Field is required but can accept empty string.</p> |
+| address1 | String | special - see description  | ✓ | <p>This is the first line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 50 characters (Manufacturer dependent).</p> <p>The field may not start (first character) with a space or a full stop.<br  /> Field is required but can accept empty string.</p> |
 | address2 | String | special - see description  | ✓ | <p>This is the second line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 50 characters (Manufacturer dependent).</p> <p>The field may not start (first character) with a space or a full stop. Field is required but can accept empty string.</p> |
 | address3 | String | special - see description  | ✓ | <p>This is the third line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 50 characters (Manufacturer dependent).</p> <p>The field may not start (first character) with a space or a full stop. Field is required but can accept empty string.</p> |
 | address4 | String | special - see description  | ✓ | <p>This is the fourth line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 50 characters (Manufacturer dependent).</p> <p>The field may not start (first character) with a space or a full stop. Field is required but can accept empty string.</p> |
@@ -31,78 +31,78 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>PrintLinkedCard</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0086762020</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Mr</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST1</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Name2</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>ADDRESS1</string>
                     </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>ADDRESS2</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>ADDRESS3</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>ADDRESS4</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>ADDRESS5</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>additionaldata</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>011-12345678</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>387692800000061</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>transactionid</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200916T17:18:07</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>DD061EEAE753447EEF198714B18DE32A67D4145E</string>
             </value>
@@ -113,8 +113,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-<params >
-    <param >
+<params  />
+    <param  />
         <value>
             <struct>
                 <member>
@@ -149,78 +149,78 @@ metadata:
 <?xml version="1.0"?>
 <methodCall>
     <methodName>PrintLinkedCard</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0086762020</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Mr</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST1</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Name2</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>ADDRESS1</string>
                     </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>ADDRESS2</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>ADDRESS3</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>ADDRESS4</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>ADDRESS5</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>additionaldata</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>011-12345678</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>387692800000061</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>transactionid</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200916T17:18:07</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>DD061EEAE753447EEF198714B18DE32A67D4145E</string>
             </value>
@@ -231,8 +231,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-<params >
-    <param >
+<params  />
+    <param  />
         <value>
             <struct>
                 <member>
@@ -257,5 +257,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>
-</a></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

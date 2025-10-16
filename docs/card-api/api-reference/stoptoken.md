@@ -25,48 +25,48 @@ metadata:
 <?xml version="1.0"?>
   <methodCall>
     <methodName>StopToken</methodName>
-    <params >
-      <param >
+    <params  />
+      <param  />
         <value>
           <string>0053897254</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>66809871700</string>
         </value>
       </param>      
-      <param >
+      <param  />
         <value>
           <string>676248400000001</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>DWSPMC00000000010906a349d9ca4eb1a4d53e3c90a11d9c</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>1</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>Card no longer in use</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>fb8344c9-2fc9-467b-87e4-55eaf88d06f2</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <dateTime.iso8601>20200101T09:00:00</dateTime.iso8601>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>23DE36A0C33B90FCAE4B1251CA7E3F65AF1ACCAB</string>
         </value>
@@ -77,12 +77,12 @@ metadata:
           <string>fb8344c9-2fc9-467b-87e4-55eaf88d06f2</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <dateTime.iso8601>20200101T09:00:00</dateTime.iso8601>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>77AEED17218150745D56F2DBD73C4B1CB7CD78A5</string>
         </value>
@@ -93,8 +93,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -172,48 +172,48 @@ metadata:
 <?xml version="1.0"?>
   <methodCall>
     <methodName>StopToken</methodName>
-    <params >
-      <param >
+    <params  />
+      <param  />
         <value>
           <string>0053897254</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>66809871700</string>
         </value>
       </param>      
-      <param >
+      <param  />
         <value>
           <string>676248400000001</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>DWSPMC00000000010906a349d9ca4eb1a4d53e3c90a11d9c</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>1</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>Card no longer in use</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>fb8344c9-2fc9-467b-87e4-55eaf88d06f2</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <dateTime.iso8601>20200101T09:00:00</dateTime.iso8601>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>23DE36A0C33B90FCAE4B1251CA7E3F65AF1ACCAB</string>
         </value>
@@ -224,12 +224,12 @@ metadata:
           <string>fb8344c9-2fc9-467b-87e4-55eaf88d06f2</string>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <dateTime.iso8601>20200101T09:00:00</dateTime.iso8601>
         </value>
       </param>
-      <param >
+      <param  />
         <value>
           <string>77AEED17218150745D56F2DBD73C4B1CB7CD78A5</string>
         </value>
@@ -240,8 +240,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -301,4 +301,3 @@ metadata:
 ```
 
 <p> </p>
-</p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></value></string></value></string></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p>

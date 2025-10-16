@@ -35,8 +35,8 @@ metadata:
 <p> </p>
 <h2>1. Individual chargeback submission</h2>
 <ul>
-<li>Paymentology will provide the client with one of two chargeback dispute forms:<br >
-– General dispute form<br >
+<li>Paymentology will provide the client with one of two chargeback dispute forms:<br  />
+– General dispute form<br  />
 – Fraud dispute form</li>
 <li>The client’s merchant/customer will complete the form and select the appropriate reason</li>
 <li>The client will send this dispute to Paymentology’s Global support team via email – support@paymentology.com</li>
@@ -61,8 +61,8 @@ metadata:
 <p>When the transaction was completed with electronically recorded card information (whether card-read or key-entered), the acquirer has a maximum of seven calendar days after the transaction date to present the transaction to the issuer. A pending authorization should not be reversed before the seven calendar days. However, An issuer must accept a transaction submitted beyond the applicable time frame when the account is in good standing or the transaction can be honored.</p>
 <p>There are four categories for chargeback processing:</p>
 
-<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/12/Dispute-Resolution-Form-Fraud.docx">Dispute Resolution Form – Fraud</a></p>
-<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2021/06/Dispute-Resolution-Form.docx">Dispute Resolution Form</a></p>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/Dispute-Resolution-Form-Fraud.docx">Dispute Resolution Form – Fraud</a></p>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Dispute-Resolution-Form.docx">Dispute Resolution Form</a></p>
 <p> </p>
 <p> </p>
 
@@ -70,7 +70,7 @@ metadata:
 <p>Most disputes have 120 days time frame but for some such as, Authorization related are only 75 days.</p>
 <p>There are four categories for chargeback processing:</p>
 
-<p><a href="https:developer.sprint.paymentology.com/wp-content/uploads/2023/06/Visa-Generic-Dispute-Form.docx">Visa Generic Dispute Form</a></p>
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/06/Visa-Generic-Dispute-Form.docx">Visa Generic Dispute Form</a></p>
 
 <h1>What is a Fraud Dispute?</h1>
 <p>When a cardholder says that they do not recognize transactions and have no knowledge of the transactions and were not in the vicinity where the said transactions were performed – and their card was in their possession at the time of the the transaction i.e. they did not attempt the transaction at all.</p>
@@ -80,5 +80,4 @@ metadata:
 <li>Visa – VROL</li>
 <li>UPI – FRM</li>
 </ul>
-<p>If a transaction was processed with <a href="https:developer.sprint.paymentology.com/companion-api/manage-funds/3d-secure/">3D Secure</a>, we are not able to submit a Fraud chargeback therefore, the first step is to establish if there was a 3D Secure validation done.</p>
-</a></p></li></li></li></ul></p></p></h1></a></p></p></p></h1></p></p></a></p></a></p></p></p></h1></p></h1></li></li></li></li></li></li></ul></h2></p></li></li></li></li></li></ul></h2></p></li></li></ol></p></h1></p></h2></p></p></h2></p></p></p></h2></h1></strong></li></strong></li></strong></li></ol></h2></p></h1>
+<p>If a transaction was processed with <a href="https://developer.sprint.paymentology.com/companion-api/manage-funds/3d-secure/">3D Secure</a>, we are not able to submit a Fraud chargeback therefore, the first step is to establish if there was a 3D Secure validation done.</p>

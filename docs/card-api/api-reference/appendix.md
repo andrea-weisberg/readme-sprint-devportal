@@ -18,4 +18,3 @@ metadata:
 
 <h1><a id="feeTypes"> Fee Types</a></h1>
 
-</a></h1></li></li></ul></p></p></span></p></p></h2>

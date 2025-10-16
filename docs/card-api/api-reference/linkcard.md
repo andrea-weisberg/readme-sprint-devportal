@@ -21,33 +21,33 @@ metadata:
 ```xml
 <methodCall>
     <methodName>LinkCard</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0008866376</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST_Tutuka</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>156554700000004</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>4857467</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20161017T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>4252E91C4890A9BDB7ED04C2673A89ED53F4C6D5</string>
             </value>
@@ -57,8 +57,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -133,33 +133,33 @@ metadata:
 ```xml
 <methodCall>
     <methodName>LinkCard</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0008866376</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>TEST_Tutuka</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>156554700000004</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>4857467</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20161017T00:00:00</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>4252E91C4890A9BDB7ED04C2673A89ED53F4C6D5</string>
             </value>
@@ -169,8 +169,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -229,5 +229,4 @@ metadata:
 
 ```
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>
-</a></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

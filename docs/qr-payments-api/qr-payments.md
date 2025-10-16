@@ -42,7 +42,7 @@ metadata:
 <p>**QR-Payments-receive-bank-v2.png IMAGE GOES HERE.**</p>
 
 <h2>Using the SimPOS tool</h2>
-<p>The <a href="https:developer.sprint.paymentology.com/tools/simpos/">SimPOS tool</a> can be used to facilitate a load to a merchant or a card, as well as an OI load.</p>
+<p>The <a href="https://developer.sprint.paymentology.com/tools/simpos/">SimPOS tool</a> can be used to facilitate a load to a merchant or a card, as well as an OI load.</p>
 
 <h2>Onboarding merchants</h2>
 <p><span style={{fontWeight: "400"}}>Before a merchant can accept QR payments, you’ll need to onboard them first and create their QR data in the required format, as stipulated by the card scheme.</span></p>
@@ -74,7 +74,7 @@ metadata:
 <p><span style={{fontWeight: "400"}}>The </span><span className="xml-highlight">terminalID</span> <span style={{fontWeight: "400"}}>is</span> <span style={{fontWeight: "400"}}>specific to you, and you only. Only Tutuka will know the password associated with that </span><span className="xml-highlight">terminalID</span><span style={{fontWeight: "400"}}>.</span><b> </b></p>
 <p><span style={{fontWeight: "400"}}>The </span><span className="xml-highlight">checksum</span> <span style={{fontWeight: "400"}}>is more than just a simple password—it is a string generated from the actual method name and the text content of every field in the transaction encrypted against your private key (or actual password). It guarantees the authentication as well as the integrity of every piece of data within the transaction.</span></p>
 <p><b>Note:</b><span style={{fontWeight: "400"}}> You will be required to generate your own checksum and send it to Tutuka. We will then recalculate the checksum to ensure that no field has been tampered with. Only if both checksums are the same will the transaction be authenticated and verified.</span></p>
-<p><span style={{fontWeight: "400"}}>You can use </span>Tutuka’s <a href="https:developer.sprint.paymentology.com/tools/checksum-generator/">Checksum Generator tool</a><span style={{fontWeight: "400"}}> to test the checksum generation and implementation process manually.</span></p>
+<p><span style={{fontWeight: "400"}}>You can use </span>Tutuka’s <a href="https://developer.sprint.paymentology.com/tools/checksum-generator/">Checksum Generator tool</a><span style={{fontWeight: "400"}}> to test the checksum generation and implementation process manually.</span></p>
 
 <h3>b) Merchant QR data</h3>
 <p><span style={{fontWeight: "400"}}>The </span><span className="xml-highlight">merchantCategoryCode</span><span style={{fontWeight: "400"}}>, </span><span className="xml-highlight">merchantName</span><span style={{fontWeight: "400"}}>, </span><span className="xml-highlight">merchantCity</span><span style={{fontWeight: "400"}}> and </span><span className="xml-highlight">countryCode</span><span style={{fontWeight: "400"}}> fields provide more details about the merchant.</span></p>
@@ -87,4 +87,3 @@ metadata:
 <li style={{fontWeight: "400"}}><span style={{fontWeight: "400"}}><span className="xml-highlight">qrCodeImage</span></span></li>
 <li style={{fontWeight: "400"}}><span style={{fontWeight: "400"}}><span className="xml-highlight">qrCodeString</span></span></li>
 </ul>
-</span></span></li></span></span></li></span></span></li></span></span></li></span></span></li></ul></span></span></p></span></span></span></p></span></span></span></span></span></span></span></span></span></p></h3></span></a></span></p></span></b></p></span></span></span></p></b></span></span></span></span></span></span></p></span></span></span></span></span></span></span></span></span></p></h3></span></b></span></b></span></p></p></span></span></li></span></span></li></span></span></li></span></span></li></span></span></li></span></span></li></span></span></li></span></span></li></span></span></li></span></span></li></ul></span></p></span></p></p></p></h3></span></p></h2></a></p></h2></p></span></li></span></li></ul></span></p></span></p></h2></span></p></h2></p></span></span></p></h2></p></span></li></span></li></span></li></span></li></span></li></ol></span></p></span></p></h2></h2></span></b></b></span></p></span></p>

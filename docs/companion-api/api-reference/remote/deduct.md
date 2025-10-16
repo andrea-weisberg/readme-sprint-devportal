@@ -26,48 +26,48 @@ Deduct (ATM)
 <?xml version="1.0"?>
 <methodCall>
     <methodName>Deduct</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0068766621</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>43172792905</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>1439</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>CUR ESPERAMOS SUPERMAR CURACAO       CUW</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>01</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>002156270281000000210041200000000250002604601104903532085024225003EMV25110MasterCard2530451122540025500</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>411152</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200817T18:43:42</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>62A815034E89D8B3E9A6E04807719F3A2CF127E4</string>
             </value>
@@ -79,48 +79,48 @@ Deduct (POS)
 <?xml version="1.0"?>
 <methodCall>
     <methodName>Deduct</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0068766621</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>43172792905</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>200</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>KARINA FURNITURE       CURACAO       CUW</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>00</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>0021562702810000002100412000000000200026045712049038400850025003EMV25110MasterCard2530451122540025500</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>401897</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200817T17:58:57</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>3139CDCE0C0457ADFA560295376C150D55C934E7</string>
             </value>
@@ -131,8 +131,8 @@ Deduct (POS)
 ```,```xml
 "<?xml version=""1.0"" encoding=""UTF-8""?>
 <methodResponse>
-   <params >
-      <param >
+   <params  />
+      <param  />
          <value>
             <struct>
                <member>
@@ -166,48 +166,48 @@ Deduct (ATM)
 <?xml version="1.0"?>
 <methodCall>
     <methodName>Deduct</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0068766621</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>43172792905</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>1439</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>CUR ESPERAMOS SUPERMAR CURACAO       CUW</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>01</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>002156270281000000210041200000000250002604601104903532085024225003EMV25110MasterCard2530451122540025500</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>411152</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200817T18:43:42</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>62A815034E89D8B3E9A6E04807719F3A2CF127E4</string>
             </value>
@@ -219,48 +219,48 @@ Deduct (POS)
 <?xml version="1.0"?>
 <methodCall>
     <methodName>Deduct</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0068766621</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>43172792905</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <int>200</int>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>KARINA FURNITURE       CURACAO       CUW</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>00</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>0021562702810000002100412000000000200026045712049038400850025003EMV25110MasterCard2530451122540025500</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>401897</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200817T17:58:57</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>3139CDCE0C0457ADFA560295376C150D55C934E7</string>
             </value>
@@ -271,8 +271,8 @@ Deduct (POS)
 ```,```xml
 "<?xml version=""1.0"" encoding=""UTF-8""?>
 <methodResponse>
-   <params >
-      <param >
+   <params  />
+      <param  />
          <value>
             <struct>
                <member>
@@ -291,5 +291,4 @@ Deduct (POS)
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/remote/">Back to Remote API menu</a></p>
-</a></p></p></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></int></value></string></value></string></value></params></methodname></methodcall></string></value></value></string></value></string></value></string></value></string></value></int></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></int></value></string></value></string></value></params></methodname></methodcall></string></value></value></string></value></string></value></string></value></string></value></int></value></string></value></string></value></params></methodname></methodcall></p></p></em></p></p></p></p></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/">Back to Remote API menu</a></p>

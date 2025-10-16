@@ -23,33 +23,33 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
    <methodName>ResetPin</methodName>
-   <params >
-       <param >
+   <params  />
+       <param  />
            <value>
                <string>0123458925</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>9765439072</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>865276543000005</string>
            </value>
        </param>
-        <param >
+        <param  />
            <value>
                <string>txn123456</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <dateTime.iso8601>20240531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>8333e08bbc18aae38d1669ghjkli0b9c7787654382202903bd8a4bad94a7fac9</string>
            </value>
@@ -60,8 +60,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -130,33 +130,33 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
    <methodName>ResetPin</methodName>
-   <params >
-       <param >
+   <params  />
+       <param  />
            <value>
                <string>0123458925</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>9765439072</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>865276543000005</string>
            </value>
        </param>
-        <param >
+        <param  />
            <value>
                <string>txn123456</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <dateTime.iso8601>20240531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>8333e08bbc18aae38d1669ghjkli0b9c7787654382202903bd8a4bad94a7fac9</string>
            </value>
@@ -167,8 +167,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -221,4 +221,3 @@ metadata:
 
 ```
 
-</string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p>

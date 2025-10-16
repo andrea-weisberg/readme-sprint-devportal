@@ -12,7 +12,7 @@ metadata:
 <li style={{fontWeight: "400"}} aria-level="1"><span style={{fontWeight: "400"}}>Tracking payment declines and notifying customers to improve their awareness.</span></li>
 <li style={{fontWeight: "400"}} aria-level="1"><span style={{fontWeight: "400"}}>Monitoring fraudulent transactions to mitigate your liability.</span></li>
 <li style={{fontWeight: "400"}} aria-level="1"><span style={{fontWeight: "400"}}>Creating targeted promotional messages.</span></li>
-<li style={{fontWeight: "400"}} aria-level="1"><span style={{fontWeight: "400"}}>Quickly reviewing customer spending patterns by time period.<br >
+<li style={{fontWeight: "400"}} aria-level="1"><span style={{fontWeight: "400"}}>Quickly reviewing customer spending patterns by time period.<br  />
 </span></li>
 </ul>
 <p><span style={{fontWeight: "400"}}>It enables you to receive real-time transaction information for the following types of transactions:</span></p>
@@ -35,7 +35,7 @@ metadata:
 <h2><b>How to Integrate Transaction Stream</b></h2>
 <p><span style={{fontWeight: "400"}}>Paymentology provides the Events Authority API to allow you to integrate the Transaction Stream service into your use case. </span></p>
 <p><span style={{fontWeight: "400"}}>The API lets you observe and ingest information about transactional events, as they happen and are processed. It is implemented as a REST HTTP API using a custom authentication mechanism. The API connection is secured using TLS. </span></p>
-<p><span style={{fontWeight: "400"}}>The </span><a href="https:www.pubnub.com/"><span style={{fontWeight: "400"}}>PubNub</span></a><span style={{fontWeight: "400"}}> platform is levergaed for powering the real-time transaction notification system. PubNub utilizes a Publishing/Subscribing model for accomplishing real-time communication.</span></p>
+<p><span style={{fontWeight: "400"}}>The </span><a href="https://www.pubnub.com/"><span style={{fontWeight: "400"}}>PubNub</span></a><span style={{fontWeight: "400"}}> platform is levergaed for powering the real-time transaction notification system. PubNub utilizes a Publishing/Subscribing model for accomplishing real-time communication.</span></p>
 <p><span style={{fontWeight: "400"}}>This model consists of two important components:</span></p>
 <ul>
 <li style={{fontWeight: "400"}} aria-level="1"><b>Channels</b><span style={{fontWeight: "400"}}>—these are the transient paths over which your data is transmitted.</span></li>
@@ -57,7 +57,7 @@ metadata:
 <p><b>https://api.tutuka.com/pubnub/json.cfm</b></p>
 <p> </p>
 <p><span style={{fontWeight: "400"}}>Here is an example of a GET request to the REST API:</span></p>
-<p><a href="https:api.tutuka.com/pubnub/json.cfm?method=Authenticate&deviceID=DUNNE_PC&transactionID=49716b6b-1cfa-4355-bef3-1e71281c1862&transactionDate=2017-02-01T12%3A37%3A20.108%2B02%3A00&terminalID=0090424741&checksum=54CDCAD914E6E97E648F3DF1BA64F41C2C441862"><b>https://api.tutuka.com/pubnub/json.cfm?method="Authenticate&deviceID=DUNNE_PC&transactionID=49716b6b-1cfa-4355-bef3-1e71281c1862&transactionDate=2017-02-01T12%3A37%3A20.108%2B02%3A00&terminalID=0090424741&checksum=54CDCAD914E6E97E648F3DF1BA64F41C2C441862</b"></a></p>
+<p><a href="https://api.tutuka.com/pubnub/json.cfm?method=Authenticate&deviceID=DUNNE_PC&transactionID=49716b6b-1cfa-4355-bef3-1e71281c1862&transactionDate=2017-02-01T12%3A37%3A20.108%2B02%3A00&terminalID=0090424741&checksum=54CDCAD914E6E97E648F3DF1BA64F41C2C441862"><b>https://api.tutuka.com/pubnub/json.cfm?method="Authenticate&deviceID=DUNNE_PC&transactionID=49716b6b-1cfa-4355-bef3-1e71281c1862&transactionDate=2017-02-01T12%3A37%3A20.108%2B02%3A00&terminalID=0090424741&checksum=54CDCAD914E6E97E648F3DF1BA64F41C2C441862</b"></a></p>
 <p> </p>
 <p><span style={{fontWeight: "400"}}>The above request will give the following response:</span></p>
 
@@ -79,7 +79,7 @@ metadata:
 
 <h3><b>step 2: Subscribe users to channel</b></h3>
 <p><span style={{fontWeight: "400"}}>Next, you need to use the above response data to subscribe users to your channel so that they can receive notifications sent to that channel.</span></p>
-<p><span style={{fontWeight: "400"}}>This will involve making a GET request to the </span><a href="https:www.pubnub.com/docs/pubnub-rest-api-documentation#publish-subscribe-subscribe-get"><span style={{fontWeight: "400"}}>PubNub REST API</span></a><span style={{fontWeight: "400"}}>, via the </span><b>subscribe </b><span style={{fontWeight: "400"}}>endpoint:</span></p>
+<p><span style={{fontWeight: "400"}}>This will involve making a GET request to the </span><a href="https://www.pubnub.com/docs/pubnub-rest-api-documentation#publish-subscribe-subscribe-get"><span style={{fontWeight: "400"}}>PubNub REST API</span></a><span style={{fontWeight: "400"}}>, via the </span><b>subscribe </b><span style={{fontWeight: "400"}}>endpoint:</span></p>
 <p><b>https://pubsub.pubnub.com/v2/subscribe/</b></p>
 <p><span style={{fontWeight: "400"}}>Note that the endpoint corresponds to the </span><b>SUBSCRIBEURI</b><span style={{fontWeight: "400"}}> value from the previous response data.</span></p>
 <p> </p>
@@ -123,4 +123,3 @@ metadata:
 <li style={{fontWeight: "400"}} aria-level="2"><span style={{fontWeight: "400"}}>If there is an error at any point, the receiver must restart the process at step 1.</span></li>
 <li style={{fontWeight: "400"}} aria-level="2"><span style={{fontWeight: "400"}}>The receiver may choose to store messages locally, in a way feasible to them. As mentioned previously, PubNub does not retain any messages, and they will be unavailable for retrieval after 16 minutes.</span></li>
 </ul>
-</span></li></span></li></span></li></span></li></span></li></ul></span></li></span></li></ol></span></p></span></p></span></p></span></li></span></li></span></li></ul></span></p></span></p></b></h2></p></span></li></span></b></span></b></span></li></ul></span></p></p></span></p></span></p></p></span></b></li></span></b></li></span></b></li></span></b></li></ul></span></p></p></span></b></span></p></b></p></span></b></span></span></a></span></p></span></p></b></h3></p></span></p></p></b></a></p></span></p></p></b></p></span></p></span></span></p></span></p></b></h3></span></p></span></li></span></li></span></li></ul></span></p></span></span></i></span></span></i></span></p></span></b></li></span></b></li></ul></span></p></span></span></a></span></p></span></p></span></p></b></h2></span></li></span></li></span></li></span></li></span></li></span></li></ul></span></p></span></li></span></li></span></li></span></li></ul></span></p></span></li></span></li></span></li></span></li></span></li></ul></span></p></strong></p>

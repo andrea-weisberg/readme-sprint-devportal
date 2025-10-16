@@ -5,8 +5,8 @@ hidden: false
 metadata:
   robots: index
 ---
-<p><strong>Once a cardholder has been issued with a card, they can start to manage the funds associated with their card or pockets.</strong><br >
-​<br >
+<p><strong>Once a cardholder has been issued with a card, they can start to manage the funds associated with their card or pockets.</strong><br  />
+​<br  />
 These are the supported options for managing funds:​</p>
 <ul>
 <li>Loading funds onto the card</li>
@@ -44,7 +44,7 @@ These are the supported options for managing funds:​</p>
 <p>You’ll need to make a call to the​ <span className="xml-highlight">PocketTransfer</span> method.</p>
 
 <h2>6. Reversing the pocket transfer​​</h2>
-<p>​<br >
+<p>​<br  />
 If you want to reverse the funds transferred to a pocket, for any reason, and the funds have not been used, then you can initiate a reversal process.</p>
 <p>You’ll need to make a call to the​ <span className="xml-highlight">PocketTransferReverse</span> method.</p>
 
@@ -54,7 +54,7 @@ If you want to reverse the funds transferred to a pocket, for any reason, and th
 
 <h2 className="block highlight" data-element="bridgehead" data-attr-renderas="sect3" data-attr-xml-id="bridgehead-idm4646117335828831693994440263"><span className="inline translation current" data-element="emphasis" data-attr-role="bold" data-attr-xinfo-text="10463">8. Reversing the card deduction​</span>​</h2>
 <p className="placeholder">​If you want to reverse the funds deducted, for any reason, then you can initiate a reversal process. ​Once successful, the balance will change based on the reversed amount.</p>
-<p className="placeholder"><span className="inline link linktool link-external" data-element="link" data-attr-xlink-href="https:developer.sprint.paymentology.com/card/documentation/card-api#deductfundsreverse">You’ll need to make a call to the ​<span className="xml-highlight">DeductFundsReverse</span> method.</span></p>
+<p className="placeholder"><span className="inline link linktool link-external" data-element="link" data-attr-xlink-href="https://developer.sprint.paymentology.com/card/documentation/card-api#deductfundsreverse">You’ll need to make a call to the ​<span className="xml-highlight">DeductFundsReverse</span> method.</span></p>
 
 <h2>​9. Devaluing a card or pocket​​</h2>
 <p>​You can perform a deduction of the full amount available on the card or pocket. No partial amount will be removed from the card or pocket balances, but only all the funds.</p>
@@ -63,4 +63,3 @@ If you want to reverse the funds transferred to a pocket, for any reason, and th
 <h2>10. Reversing a devalue​​​</h2>
 <p>If you want to reverse the devaluing of funds from a card or pocket balance, for any reason, then you can initiate a reversal process. ​Once successful, the devalued amount will be credited to the card or pocket balance.</p>
 <p>You’ll need to make a call to the​ <span className="xml-highlight">DevalueReverse</span> method.</p>
-</span></p></p></h2></span></p></p></h2></span></span></p></p></span></h2></span></p></p></h2></span></p></p></h2></span></p></p></h2></span></p></p></h2></span></p></p></h2></span></p></p></h2></span></p></p></p></h2></p></li></li></li></li></li></li></li></li></li></li></ul></strong></p>

@@ -26,48 +26,48 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
    <methodName>UpdateScheduledStop</methodName>
-   <params >
-       <param >
+   <params  />
+       <param  />
            <value>
                <string>0020468925</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>9094765432</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>402987654345601</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <dateTime.iso8601>20800531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <int>2</int>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>lost</string>
            </value>
        </param>
-        <param >
+        <param  />
            <value>
                <string>T18765435561</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <dateTime.iso8601>20240531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>dde97b387d48d9c2e8e911bf1bdb0866e997ed6e08hjfgdhy678d297b272eb9f</string>
            </value>
@@ -78,8 +78,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -169,48 +169,48 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
    <methodName>UpdateScheduledStop</methodName>
-   <params >
-       <param >
+   <params  />
+       <param  />
            <value>
                <string>0020468925</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>9094765432</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>402987654345601</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <dateTime.iso8601>20800531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <int>2</int>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>lost</string>
            </value>
        </param>
-        <param >
+        <param  />
            <value>
                <string>T18765435561</string>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <dateTime.iso8601>20240531T12:00:00</dateTime.iso8601>
            </value>
        </param>
-       <param >
+       <param  />
            <value>
                <string>dde97b387d48d9c2e8e911bf1bdb0866e997ed6e08hjfgdhy678d297b272eb9f</string>
            </value>
@@ -221,8 +221,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -293,4 +293,3 @@ metadata:
 
 ```
 
-</int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></int></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></int></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></int></value></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p>

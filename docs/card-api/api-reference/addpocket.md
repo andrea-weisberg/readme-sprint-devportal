@@ -22,38 +22,38 @@ metadata:
 ```xml
 <methodCall>
     <methodName>AddPocket</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0042128722</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Tutuka Test</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>867959900000070</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>E6FA7E37-155D-0028-9D2F13C986C114A6</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>4857467</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20161024T17:47:10</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>49E1663629BE79DE6ECD8AF1DA5E69B4508342AC</string>
             </value>
@@ -63,8 +63,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -139,38 +139,38 @@ metadata:
 ```xml
 <methodCall>
     <methodName>AddPocket</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0042128722</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>Tutuka Test</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>867959900000070</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>E6FA7E37-155D-0028-9D2F13C986C114A6</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>4857467</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20161024T17:47:10</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>49E1663629BE79DE6ECD8AF1DA5E69B4508342AC</string>
             </value>
@@ -180,8 +180,8 @@ metadata:
 
 ```,```xml
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -242,5 +242,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>
-</a></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

@@ -23,38 +23,38 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
    <methodCall>
      <methodName>ChangePin</methodName>
-     <params >
-       <param >
+     <params  />
+       <param  />
          <value>
            <string>0053897254</string>
          </value>
        </param>
-       <param >
+       <param  />
          <value>
            <string>5983347526</string>
          </value>
        </param>
-       <param >
+       <param  />
          <value>
            <string>5270690975827726</string>
          </value>
        </param>
-       <param >
+       <param  />
          <value>
            <string>5402</string>
          </value>
        </param>
-       <param >
+       <param  />
          <value>
            <string>1234567894125413655</string>
          </value>
        </param>
-       <param >
+       <param  />
          <value>
            <dateTime.iso8601>20200206T18:43:51</dateTime.iso8601>
          </value>
        </param>
-       <param >
+       <param  />
          <value>
            <string>37873bb0600779ae6d45da7ad31262e49fb77f6f</string>
          </value>
@@ -65,8 +65,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
  <methodResponse>
-   <params >
-     <param >
+   <params  />
+     <param  />
        <value>
          <struct>
            <member>
@@ -145,38 +145,38 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
    <methodCall>
      <methodName>ChangePin</methodName>
-     <params >
-       <param >
+     <params  />
+       <param  />
          <value>
            <string>0053897254</string>
          </value>
        </param>
-       <param >
+       <param  />
          <value>
            <string>5983347526</string>
          </value>
        </param>
-       <param >
+       <param  />
          <value>
            <string>5270690975827726</string>
          </value>
        </param>
-       <param >
+       <param  />
          <value>
            <string>5402</string>
          </value>
        </param>
-       <param >
+       <param  />
          <value>
            <string>1234567894125413655</string>
          </value>
        </param>
-       <param >
+       <param  />
          <value>
            <dateTime.iso8601>20200206T18:43:51</dateTime.iso8601>
          </value>
        </param>
-       <param >
+       <param  />
          <value>
            <string>37873bb0600779ae6d45da7ad31262e49fb77f6f</string>
          </value>
@@ -187,8 +187,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
  <methodResponse>
-   <params >
-     <param >
+   <params  />
+     <param  />
        <value>
          <struct>
            <member>
@@ -249,5 +249,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Reference</a></p>
-</a></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></string></value></name></member></int></value></name></member></string></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Reference</a></p>

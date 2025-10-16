@@ -28,8 +28,8 @@ metadata:
 <p><span style={{fontWeight: "400"}}>The Digital First card provides a simple and easy way for cardholders to manage their payment credentials digitally. Cardholders can complete various card management tasks directly on the UI. For example, they can quickly access card details, update PIN, check balances, set alerts, report an urgent issue, review transaction history and more.</span></p>
 <p> </p>
 <h3>3. Tokenization</h3>
-<p><span style={{fontWeight: "400"}}><a href="https:developer.sprint.paymentology.com/companion-api/tokenization2/">Tokenization</a> is the process of substituting the card’s sensitive data, such as an account number, with non-sensitive, surrogate data, called a token. The PAN is usually replaced with a unique string of numbers that acts as a secure reference to the card.</span></p>
-<p><span style={{fontWeight: "400"}}>Paymentology Sprint’s existing integration with MDES (Mastercard Digital Enablement Service) and <a href="https:developer.sprint.paymentology.com/companion-api/tokenization2/visa-token-provisioning/">VTS</a> (Visa Token Service), both of which offer the infrastructure for generating and managing tokens, allows for instant tokenization of the Digital First cards once enrolment is complete.</span></p>
+<p><span style={{fontWeight: "400"}}><a href="https://developer.sprint.paymentology.com/companion-api/tokenization2/">Tokenization</a> is the process of substituting the card’s sensitive data, such as an account number, with non-sensitive, surrogate data, called a token. The PAN is usually replaced with a unique string of numbers that acts as a secure reference to the card.</span></p>
+<p><span style={{fontWeight: "400"}}>Paymentology Sprint’s existing integration with MDES (Mastercard Digital Enablement Service) and <a href="https://developer.sprint.paymentology.com/companion-api/tokenization2/visa-token-provisioning/">VTS</a> (Visa Token Service), both of which offer the infrastructure for generating and managing tokens, allows for instant tokenization of the Digital First cards once enrolment is complete.</span></p>
 <p><span style={{fontWeight: "400"}}>Paymentology has also partnered with Upaid Systems Ltd, a provider of centralized mobile payment processing platforms, to provide an MCBP (Mastercard Cloud-Based Payments) SDK for markets with no XPay presence. This allows customers to make the most of Paymentology Sprint’s tokenization technology. Customers can also manage tokens using Paymentology Sprint’s flexible APIs.</span></p>
 <p> </p>
 <h3>4. Speed and flexibility</h3>
@@ -41,19 +41,18 @@ metadata:
 </ul>
 
 <h2>How to Issue a Digital First Card</h2>
-<p><span style={{fontWeight: "400"}}>Digital First cards are issued just like virtual cards. You can use the Companion API to create a Virtual Card Number (VCN), which you can link to the unique customer reference number, as described </span><a href="https:developer.sprint.paymentology.com/companion-api/issue-cards/"><span style={{fontWeight: "400"}}>here</span></a><span style={{fontWeight: "400"}}>. </span></p>
+<p><span style={{fontWeight: "400"}}>Digital First cards are issued just like virtual cards. You can use the Companion API to create a Virtual Card Number (VCN), which you can link to the unique customer reference number, as described </span><a href="https://developer.sprint.paymentology.com/companion-api/issue-cards/"><span style={{fontWeight: "400"}}>here</span></a><span style={{fontWeight: "400"}}>. </span></p>
 <p><span style={{fontWeight: "400"}}>To print it later, you can follow the steps below:</span></p>
 <ul>
 <li style={{fontWeight: "400"}} aria-level="1"><b>step 1:</b>
 <ul>
-<li style={{fontWeight: "400"}} aria-level="1"><strong>Option 1:</strong> <a href="https:developer.sprint.paymentology.com/printlinkedcard/"><span style={{fontWeight: "400"}}>PrintLinkedCard</span></a><span style={{fontWeight: "400"}}>— Use this option if you want the existing Digital First cards to be printed.</span> <strong>OR</strong></li>
-<li style={{fontWeight: "400"}} aria-level="1"><strong>Option 2:</strong> <a href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/printlinkedcardwithpinblock/"><span style={{fontWeight: "400"}}>PrintLinkedCardWithPINBlock</span></a><span style={{fontWeight: "400"}}>—Use this option if you want the existing Digital First cards to be printed with PIN block.</span></li>
+<li style={{fontWeight: "400"}} aria-level="1"><strong>Option 1:</strong> <a href="https://developer.sprint.paymentology.com/printlinkedcard/"><span style={{fontWeight: "400"}}>PrintLinkedCard</span></a><span style={{fontWeight: "400"}}>— Use this option if you want the existing Digital First cards to be printed.</span> <strong>OR</strong></li>
+<li style={{fontWeight: "400"}} aria-level="1"><strong>Option 2:</strong> <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/printlinkedcardwithpinblock/"><span style={{fontWeight: "400"}}>PrintLinkedCardWithPINBlock</span></a><span style={{fontWeight: "400"}}>—Use this option if you want the existing Digital First cards to be printed with PIN block.</span></li>
 </ul>
 </li>
-<li style={{fontWeight: "400"}} aria-level="1"><b>step 2:</b> <a href="https:developer.sprint.paymentology.com/togglevoucherfeature/"><span style={{fontWeight: "400"}}>ToggleVoucherFeature</span></a><span style={{fontWeight: "400"}}>— Use this when you want the printed Digital First cards to be used at POS terminals.</span></li>
+<li style={{fontWeight: "400"}} aria-level="1"><b>step 2:</b> <a href="https://developer.sprint.paymentology.com/togglevoucherfeature/"><span style={{fontWeight: "400"}}>ToggleVoucherFeature</span></a><span style={{fontWeight: "400"}}>— Use this when you want the printed Digital First cards to be used at POS terminals.</span></li>
 </ul>
 
 <p><strong>This is an example of a Digital First card powered by Paymentology Sprint for our client Grab in Asia</strong></p>
 <p>**Grab-numberless-card.jpeg IMAGE GOES HERE.**</p>
 <p><em>Image credit: Grab</em></p>
-</em></p></p></strong></p></span></span></a></b></li></span></span></a></strong></li></strong></span></span></a></strong></li></ul></b></li></ul></span></p></span></span></a></span></p></h2></span></li></span></li></span></li></ul></span></p></h3></p></span></p></a></span></p></a></span></p></h3></p></span></p></h3></p></span></p></h3></p></span></p></span></p></h2></span></p></span></p></span></p></span></p></span></p></h2></span></p></h2></strong></p>

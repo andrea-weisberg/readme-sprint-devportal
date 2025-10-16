@@ -25,48 +25,48 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>UpdateTokenAccount</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0019281816</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>66816921087</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>5338929641845427</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>5338921954278213</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200206</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>ACCOUNT_UPDATE</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>12345678945</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200206T18:43:51</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>E4045FD7F44C3EA80BDF3EFB415D6D9CCA20F3A4</string>
             </value>
@@ -77,8 +77,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -114,48 +114,48 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
     <methodName>UpdateTokenAccount</methodName>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <string>0019281816</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>66816921087</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>5338929641845427</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>5338921954278213</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200206</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>ACCOUNT_UPDATE</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>12345678945</string>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <dateTime.iso8601>20200206T18:43:51</dateTime.iso8601>
             </value>
         </param>
-        <param >
+        <param  />
             <value>
                 <string>E4045FD7F44C3EA80BDF3EFB415D6D9CCA20F3A4</string>
             </value>
@@ -166,8 +166,8 @@ metadata:
 ```,```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
-    <params >
-        <param >
+    <params  />
+        <param  />
             <value>
                 <struct>
                     <member>
@@ -192,5 +192,4 @@ metadata:
 
 <p> </p>
 
-<p><a className="btn btn--primary" href="https:developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
-</a></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></string></value></name></member></int></value></name></member></struct></value></params></methodresponse></string></value></value></string></value></string></value></value></string></value></string></value></string></value></string></value></params></methodname></methodcall></p></p></p></p></p></p></p></p></p></p></p></p></p>
+<p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
