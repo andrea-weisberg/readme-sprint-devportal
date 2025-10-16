@@ -1,0 +1,36 @@
+- Activatecard
+- Activatetoken 1
+- Calculatetav 1
+- Changepin 1
+- Createlinkedcard
+- Createlinkedcardmaskedresponse
+- Deletetoken
+- Generatetimebasedsecret
+- Getactivelinkedcards
+- Getcarddetails
+- Getlinkedcards
+- Index
+- Linkcard 1
+- Listalltokens 1
+- Listtokens 1
+- Ordercard 1
+- Ordercardwithpinblock 1
+- Printlinkedcard
+- Printlinkedcardwithpinblock
+- Resetpin
+- Retirecard 1
+- Set3dsecurecode 1
+- Status
+- Stopcard 1
+- Stoptoken 1
+- Threedsauthenticationoutcome 1
+- Togglevoucherfeature 1
+- Tokenapprovedevicebinding 1
+- Tokenremovedevicebinding 1
+- Transferlink 1
+- Transfertoken
+- Unstopcard 1
+- Unstoptoken 1
+- Updatebearer
+- Updatecvv 1
+- Updatetokenaccount 1

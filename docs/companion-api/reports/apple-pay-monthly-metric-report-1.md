@@ -1,0 +1,62 @@
+---
+title: Apple Pay monthly metric report
+deprecated: false
+hidden: false
+metadata:
+  robots: index
+original_path: companion-api/reports
+---
+<p>For clients using Paymentology’s tokenization, Paymentology can issue monthly reports to clients to assist in compiling their Apple report through the Apple Partner Connect platform.</p>
+<p>The monthly metric report provides clients with a breakdown of POS (Point of Sale), remote (in-App, Apple Pay on the web and eCommerce) and COF (Credential on File) Apple Pay spends for the specified month.</p>
+<p>The report includes the following details:</p>
+<ul>
+<li><strong>Reporting Month </strong>&#8211; the month the report data is based on.</li>
+<li><strong>Monthly DPAN transaction count </strong>&#8211; total number of settled DPAN transactions made using Apple Pay for the given month.</li>
+<li><strong>Monthly DPAN spend</strong> &#8211; total value of settled DPAN transactions made using Apple Pay for the given month.</li>
+<li><strong>% of POS DPAN transactions out of the monthly processed DPAN transactions</strong> &#8211; percentage split of <strong>Monthly DPAN transaction count</strong> that were POS (Point of Sale) type spends.</li>
+<li><strong>% of Remote DPAN transactions out of the monthly processed DPAN transactions </strong>&#8211; percentage split of <strong>Monthly DPAN transaction count</strong> that were remote type spends i.e. in-App, Apple Pay on the web and eCommerce.</li>
+<li><strong>% of COF DPAN transactions out of the monthly processed DPAN transactions </strong>&#8211; percentage split of <strong>Monthly DPAN transaction count</strong> that were COF (Credential on File) type spends.</li>
+<li><strong>% of POS DPAN spend amount out of the monthly processed DPAN transactions</strong> &#8211; percentage split of <strong>Monthly DPAN spend</strong> value that were POS (Point of Sale) type spends.</li>
+<li><strong>% of Remote DPAN spend amount out of the monthly processed DPAN transactions </strong>&#8211; percentage split of <strong>Monthly DPAN spend</strong> value that were remote type spends i.e. in-App, Apple Pay on the web and eCommerce.</li>
+<li><strong>% of COF DPAN spend amount out of the monthly processed DPAN transactions </strong>&#8211; percentage split of <strong>Monthly DPAN spend</strong> value that were COF (Credential on File) type spends.</li>
+<li><strong>Total Available DPANs </strong>&#8211; these are the tokens that are available for use on Apple Pay as of the end of the reporting month. Total Available DPANs are defined as successfully provisioned since launch onto Apple Pay, excluding all inactive, pending, suspended, and deleted tokens.</li>
+<li><strong>Monthly Active DPANs</strong> &#8211; this is the count of DPANs that have transacted at least once in the given month.</li>
+</ul>
+
+
+
+<!-- unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":{"ID":213,"id":213,"title":"icon-secure-card3","filename":"icon-secure-card3.png","filesize":303,"url":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","link":"https://developer.sprint.paymentology.com/card-api/issue-card/icon-secure-card3/","alt":"","author":"1","description":"","caption":"","name":"icon-secure-card3","status":"inherit","uploaded_to":204,"date":"2020-04-02 16:39:05","modified":"2020-04-02 16:39:05","menu_order":0,"mime_type":"image/png","type":"image","subtype":"png","icon":"https://developer.sprint.paymentology.com/wp-includes/images/media/default.png","width":21,"height":21,"sizes":{"thumbnail":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","thumbnail-width":21,"thumbnail-height":21,"medium":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium-width":21,"medium-height":21,"medium_large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium_large-width":21,"medium_large-height":21,"large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","large-width":21,"large-height":21,"1536x1536":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","1536x1536-width":21,"1536x1536-height":21,"2048x2048":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","2048x2048-width":21,"2048x2048-height":21}},"text":"<p>DPAN (Device Primary Account Number) &#8211; A token that acts as a surrogate for the customer’s card number and is used to make contactless and e-commerce transactions using an Apple device.</p>\n"},{"tag_text":"","icon":{"ID":213,"id":213,"title":"icon-secure-card3","filename":"icon-secure-card3.png","filesize":303,"url":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","link":"https://developer.sprint.paymentology.com/card-api/issue-card/icon-secure-card3/","alt":"","author":"1","description":"","caption":"","name":"icon-secure-card3","status":"inherit","uploaded_to":204,"date":"2020-04-02 16:39:05","modified":"2020-04-02 16:39:05","menu_order":0,"mime_type":"image/png","type":"image","subtype":"png","icon":"https://developer.sprint.paymentology.com/wp-includes/images/media/default.png","width":21,"height":21,"sizes":{"thumbnail":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","thumbnail-width":21,"thumbnail-height":21,"medium":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium-width":21,"medium-height":21,"medium_large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium_large-width":21,"medium_large-height":21,"large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","large-width":21,"large-height":21,"1536x1536":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","1536x1536-width":21,"1536x1536-height":21,"2048x2048":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","2048x2048-width":21,"2048x2048-height":21}},"text":"<p>Only settled transactions are included and all values specified are in the cardholder billing currency.</p>\n"}]} -->
+
+
+<!-- spacing: desktop=20, mobile=10 -->
+
+
+<h2>Report format</h2>
+
+
+
+<!-- unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":"FORMAT"},{"c":"FILE NAME"},{"c":"FREQUENCY"},{"c":"ACCESSIBILITY"}],"caption":false,"body":[[{"c":"XLS"},{"c":"[CampaignName]_ApplePay Monthly Metric Report [Month] YYYY.xls"},{"c":"Monthly"},{"c":"Via email"}]]}} -->
+
+
+<!-- spacing: desktop=20, mobile=10 -->
+
+
+<h2>Report time frame</h2>
+
+
+
+<!-- unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":"UTC +2"},{"c":"UTC +7"},{"c":"REMARKS"}],"caption":false,"body":[[{"c":"02:00"},{"c":"07:00"},{"c":"Monthly Apple Pay reports are produced on day 2 of the following month."}]]}} -->
+
+
+<!-- spacing: desktop=20, mobile=10 -->
+
+
+<h2>Report sample</h2>
+<p><img loading="lazy" decoding="async" src="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Monthly-Metric-Report-Month-YYYY-_-002.png" alt="" width="1280" height="720" class="alignleft size-full wp-image-3965" srcset="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Monthly-Metric-Report-Month-YYYY-_-002.png 1280w, https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Monthly-Metric-Report-Month-YYYY-_-002-300x169.png 300w, https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Monthly-Metric-Report-Month-YYYY-_-002-1024x576.png 1024w, https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Monthly-Metric-Report-Month-YYYY-_-002-768x432.png 768w" sizes="auto, (max-width: 1280px) 100vw, 1280px" /></p>
+
+
+
+<!-- unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":{"ID":213,"id":213,"title":"icon-secure-card3","filename":"icon-secure-card3.png","filesize":303,"url":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","link":"https://developer.sprint.paymentology.com/card-api/issue-card/icon-secure-card3/","alt":"","author":"1","description":"","caption":"","name":"icon-secure-card3","status":"inherit","uploaded_to":204,"date":"2020-04-02 16:39:05","modified":"2020-04-02 16:39:05","menu_order":0,"mime_type":"image/png","type":"image","subtype":"png","icon":"https://developer.sprint.paymentology.com/wp-includes/images/media/default.png","width":21,"height":21,"sizes":{"thumbnail":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","thumbnail-width":21,"thumbnail-height":21,"medium":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium-width":21,"medium-height":21,"medium_large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium_large-width":21,"medium_large-height":21,"large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","large-width":21,"large-height":21,"1536x1536":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","1536x1536-width":21,"1536x1536-height":21,"2048x2048":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","2048x2048-width":21,"2048x2048-height":21}},"text":"<p><strong>Note: file will automatically download upon clicking link</strong></p>\n"}]} -->
+
+
+<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Monthly-Metric-Report-Month-YYYY.xls">CampaignName_ApplePay Monthly Metric Report Month YYYY.xls</a></p>

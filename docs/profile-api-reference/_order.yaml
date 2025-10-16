@@ -1,0 +1,54 @@
+- Activate
+- Activatetoken 2
+- Allocatecard
+- Allocatecreatevirtualcard
+- Allocateiban
+- Balance 1
+- Calculatetav 2
+- Cancelscheduledstop
+- Cancelstopcard
+- Carddetail 1
+- Changepin 2
+- Checkauthorisation
+- Checkload
+- Createscheduledstop
+- Createvirtualcard 1
+- Deductcardloadprofile
+- Deletetoken 1
+- Delinkcard
+- Devalueprofile
+- Generatetimebasedsecret 2
+- Getschedulestopdetail
+- Index
+- Inserttransactionfee 1
+- Linkcard 2
+- Linkcardsbysequencerange
+- Listalltokens 2
+- Listtokens 2
+- Loadcarddeductprofile
+- Ordercard 2
+- Register
+- Resetpin 1
+- Reversedeductcardloadprofile
+- Reversedevalueprofile
+- Reversetransactionfee
+- Reversevastransferfunds
+- Statement 1
+- Statementbydaterange
+- Status 1
+- Stopcard 2
+- Stoptoken 2
+- Togglevoucherfeature 2
+- Transferfunds 1
+- Transferfundsbetweenprofiles
+- Transferlink 2
+- Transfertoken 1
+- Unstoptoken 2
+- Updateallocatedcard
+- Updatebearer 1
+- Updatebearerextended
+- Updateprofile
+- Updatescheduledstop
+- Updatetokenaccount 2
+- Uploadficadocument
+- Vastransferfunds

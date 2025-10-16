@@ -1,0 +1,104 @@
+---
+title: Manage cards
+deprecated: false
+hidden: false
+metadata:
+  robots: index
+original_path: card-api
+---
+<p><strong>You can manage the issued Paymentology cards and make updates to them whenever necessary. You can also use the API methods below to develop a UI that comes with self-help options that allow the cardholders to manage their cards by themselves.</strong></p>
+<p>These are the supported card management options:</p>
+<ul>
+<li>Getting card balances and other details</li>
+<li>Getting a card&#8217;s transactions statement</li>
+<li>Adding cardholder details to a card</li>
+<li>Retrieving cardholder details</li>
+<li>Getting a list of cards linked to a customer</li>
+<li>Enabling and disabling a card&#8217;s features</li>
+<li>Updating a card label</li>
+<li>Stopping a card</li>
+<li>Unstopping a card</li>
+<li>Retiring a card</li>
+</ul>
+<p>Let&#8217;s look at each of them.</p>
+
+
+
+<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+
+
+<h2>1. Getting card balances and other details</h2>
+<p>To get the balance on a card, get the card details, or get the status of a card, you&#8217;ll need to make a call to the <span class="xml-highlight">CardDetail</span> method.</p>
+
+
+
+<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+
+
+<h2>2. Getting a card&#8217;s transaction statement</h2>
+<p>To get a statement of the list of transactions on a card, you&#8217;ll need to make a call to the <span class="xml-highlight">Statement</span> method.</p>
+
+
+
+<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+
+
+<h2>3. Adding cardholder details to a card</h2>
+<p>To add the cardholder&#8217;s details to a card, store KYC (Know Your Customer) information, or perform the sanctions screening, you&#8217;ll need to make a call to the <span class="xml-highlight">SetBearerDetail</span> method.</p>
+<p>You can also choose to opt-out of some parameter options. For example, if you only want to set the cardholder&#8217;s details, then this is the only information you can send, and the rest of the parameter options will remain as null.</p>
+
+
+
+<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+
+
+<h2>4. Retrieving cardholder details</h2>
+<p>To retrieve the set details of the cardholder, you&#8217;ll need to make a call to the <span class="xml-highlight">BearerDetail</span> method.</p>
+
+
+
+<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+
+
+<h2>5. Getting a list of cards linked to a customer</h2>
+<p>To get a list of all cards linked to a customer reference number, you&#8217;ll need to make a call to the <span class="xml-highlight">ListCards</span> method.</p>
+
+
+
+<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+
+
+<h2>6. Enabling and disabling a card&#8217;s features</h2>
+<p>To enable and disable features on specific cards, such as the ability to make international transactions or magstripe transactions, you&#8217;ll need to make a call to the<span class="xml-highlight"> ToggleVoucherFeature </span>method.</p>
+
+
+
+<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+
+
+<h2>7. Updating a card label</h2>
+<p>To update a label for a card that has already been issued, you&#8217;ll need to make a call to the <span class="xml-highlight">UpdateCardLabel</span> method.</p>
+
+
+
+<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+
+
+<h2>8. Stopping a card</h2>
+<p>To stop a card temporarily, you&#8217;ll need to make a call to the <span class="xml-highlight">StopCard</span> method.</p>
+
+
+
+<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+
+
+<h2>9. Unstopping a card</h2>
+<p>To unstop a card that was stopped previously, you&#8217;ll need to make a call to the <span class="xml-highlight">UnstopCard</span> method.</p>
+
+
+
+<!-- unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} -->
+
+
+<h2>10. Retiring a card</h2>
+<p>To cancel (retire) your card permanently, you&#8217;ll need to make a call to the <span class="xml-highlight">RetireCard</span> method. You should ensure the funds are removed from the card before it is retired. Once retired, the card will not be able to be used again.</p>

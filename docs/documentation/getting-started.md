@@ -1,9 +1,12 @@
 ---
 title: Getting Started with Sprint (Public)
+deprecated: false
+hidden: false
+metadata:
+  robots: index
 excerpt: >-
   This page will help you get started with Sprint (Public). You'll be up and
   running in a jiffy!
-hidden: false
 ---
 
 # Welcome to ReadMe
