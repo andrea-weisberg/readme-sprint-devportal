@@ -1,14 +1,44 @@
 File Path,Error Message,Error Type,Line Number,Code Context
-/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/3d-secure-out-of-band.md,Expected a closing tag for `<strong>` (60:14-60:48) before the end of `paragraph`,mdx-parse-error,6,"original_id: 3550
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/Documents/3d-secure-out-of-band.md,Expected a closing tag for `<strong>` (60:14-60:48) before the end of `paragraph`,mdx-parse-error,6,"original_id: 3550
 ---
 <h2>Overview of Out-of-Band (OOB) Authentication</h2>
 <p>Out-of-Band (OOB) authentication is an advanced type of two-factor authentication (2FA) that necessitates an additional verification method via a distinct communication channel. It is an optional yet highly advised Challenge flow authentication method for conducting 3DS transactions for Paymentology clients.</p>
 <p data-renderer-start-pos=""179"">This applies to both Mastercard and Visa transactions.</p>"
-/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/api-reference-sample.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 313
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/Documents/api-reference-sample.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 313
 ---
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas, ligula et tristique vestibulum, tellus mauris eleifend nibh, eget rutrum arcu libero commodo eros. Morbi est metus, scelerisque id consequat a, malesuada feugiat nisi.</p>
 
 "
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/Documents/how_payments_work.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 2288
+---
+<p><b>There are different stages of a transaction when a card is used to pay for goods and services. </b></p>
+<p>Let’s look at each of them.</p>
+"
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/Documents/notifications.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 1573
+---
+<p><strong>Paymentology’s Sprint Transaction Stream service allows API consumers to receive real-time notifications of the undertaken transactions. By subscribing to the notification service, consumers can know the status of transactions in real-time. </strong></p>
+<p><span style=""font-weight: 400;"">You can use the service for various purposes, including:</span></p>
+<ul>"
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/Documents/reporting-api-2.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 2253
+---
+<p><strong>The Reporting API is a local API which can be called to obtain files produced by Tutuka, foe example, reports.</strong></p>
+<p><strong>In order to call this API, a token must be obtained from the Tutuka Token Service. This token is validated by the API and allows access to resources based on certain values contained within the token.</strong></p>
+"
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/Documents/reporting-api.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 2251
+---
+<p><strong>The Reporting API is a local API which can be called to obtain files produced by Tutuka, foe example, reports.</strong></p>
+<p><strong>In order to call this API, a token must be obtained from the Tutuka Token Service. This token is validated by the API and allows access to resources based on certain values contained within the token.</strong></p>
+"
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/Documents/response-codes-1.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 1116
+---
+\{/* unsupported_acf_block: table_block {""acf_fc_layout"":""table_block"",""table_caption"":""Result Codes"",""table"":{""use_header"":true,""header"":[{""c"":""Code""\},\{""c"":""Description""\}],""caption"":false,""body"":[[\{""c"":""\""0\""""\},\{""c"":""Approved no Action. Note; code is 0 and does not include \""\""""\}],[\{""c"":""1""\},\{""c"":""Approved""\}],[\{""c"":""-3""\},\{""c"":""Duplicate Transaction ID""\}],[\{""c"":""-4""\},\{""c"":""Validation error. Please verify the values you provided are correct""\}],[\{""c"":""-5""\},\{""c"":""Operation not Allowed""\}],[\{""c"":""-6""\},\{""c"":""Operation not Supported""\}],[\{""c"":""-7""\},\{""c"":""Transaction Timeout""\}],[\{""c"":""-8""\},\{""c"":""Authentication Failed""\}],[\{""c"":""-9""\},\{""c"":""Do not honor (general decline, no specific reason given)""\}],[\{""c"":""-29""\},{""c"":""There are invalid characters in either the pin block or one of these fields:<br>\ntitle, initials, surname, address1,  address2, address3, address4, address5, additionalData""}],[\{""c"":""-34""\},\{""c"":""Card already active""\}],[\{""c"":""-35""\},\{""c"":""Card not active""\}],[\{""c"":""-36""\},\{""c"":""Expired card""\}],[\{""c"":""-38""\},\{""c"":""Lost card""\}],[\{""c"":""-39""\},\{""c"":""Stolen card""\}],[\{""c"":""-244""\},\{""c"":""Invalid last name""\}],[\{""c"":""-246""\},\{""c"":""Invalid first name""\}],[\{""c"":""-247""\},\{""c"":""Invalid ID number""\}],[\{""c"":""-248""\},\{""c"":""Invalid MSISDN""\}],[\{""c"":""-250""\},\{""c"":""Invalid initials""\}],[\{""c"":""-251""\},\{""c"":""Invalid Address 1 OR Invalid Contact Number""\}],[\{""c"":""-252""\},\{""c"":""Invalid Address 2""\}],[\{""c"":""-253""\},\{""c"":""Invalid Address 3""\}],[\{""c"":""-254""\},\{""c"":""Invalid Address 4""\}],[\{""c"":""-255""\},\{""c"":""Invalid Address 5 OR Invalid PinBlock""\}],[\{""c"":""-295""\},\{""c"":""Invalid expiry date""\}],[\{""c"":""-333""\},\{""c"":""sessionKey not present in header and \""Companion API Require Session Key\"" is enabled""\}],[\{""c"":""-334""\},\{""c"":""sessionKey present and not decryptable/parsable""\}],[\{""c"":""-778""\},\{""c"":""Reference has no linked cards""\}],[\{""c"":""-779""\},\{""c"":""Card already linked to a different reference""\}],[\{""c"":""-780""\},\{""c"":""Invalid card reference""\}],[\{""c"":""-781""\},\{""c"":""Invalid card - Not a physical card""\}],[\{""c"":""-782""\},\{""c"":""Cannot disable physical card OR Print card request already requested""\}]]}} */}
+
+"
+/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/Documents/tutuka-transaction-stream-2.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 1610
+---
+<p><strong>Paymentology’s Transaction Stream service allows API consumers to receive real-time notifications of the undertaken transactions. By subscribing to the notification service, consumers can know the status of transactions in real-time. </strong></p>
+<p><span style=""font-weight: 400;"">You can use the service for various purposes, including:</span></p>
+<ul>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/card-api/api-reference/appendix.md,Could not parse expression with acorn,mdx-parse-error,13,"
 
 <h2>Important</h2>
@@ -579,16 +609,6 @@ The report includes details about vouchers and reasons for transactions being fi
 <p><strong>To facilitate easier API integrations, Paymentology provides two integration environments: test environment and live environment.</strong></p>
 
 "
-/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/how_payments_work.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 2288
----
-<p><b>There are different stages of a transaction when a card is used to pay for goods and services. </b></p>
-<p>Let’s look at each of them.</p>
-"
-/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/notifications.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 1573
----
-<p><strong>Paymentology’s Sprint Transaction Stream service allows API consumers to receive real-time notifications of the undertaken transactions. By subscribing to the notification service, consumers can know the status of transactions in real-time. </strong></p>
-<p><span style=""font-weight: 400;"">You can use the service for various purposes, including:</span></p>
-<ul>"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/profile-api-reference/activatetoken-2.md,Could not parse expression with acorn,mdx-parse-error,7,"original_path: ""profile-api-reference""
 ---
 <p>Used to activate a token for a digitization that has been approved and provisioned, but requires additional cardholder authentication prior to activation.</p>
@@ -669,21 +689,6 @@ The report includes details about vouchers and reasons for transactions being fi
 <p><strong>Paymentology provides end-to-end reporting and reconciliation capabilities to allow you to track all the financial movements, revenues collected, failed transactions, and more.</strong></p>
 
 "
-/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/reporting-api-2.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 2253
----
-<p><strong>The Reporting API is a local API which can be called to obtain files produced by Tutuka, foe example, reports.</strong></p>
-<p><strong>In order to call this API, a token must be obtained from the Tutuka Token Service. This token is validated by the API and allows access to resources based on certain values contained within the token.</strong></p>
-"
-/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/reporting-api.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 2251
----
-<p><strong>The Reporting API is a local API which can be called to obtain files produced by Tutuka, foe example, reports.</strong></p>
-<p><strong>In order to call this API, a token must be obtained from the Tutuka Token Service. This token is validated by the API and allows access to resources based on certain values contained within the token.</strong></p>
-"
-/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/response-codes-1.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 1116
----
-\{/* unsupported_acf_block: table_block {""acf_fc_layout"":""table_block"",""table_caption"":""Result Codes"",""table"":{""use_header"":true,""header"":[{""c"":""Code""\},\{""c"":""Description""\}],""caption"":false,""body"":[[\{""c"":""\""0\""""\},\{""c"":""Approved no Action. Note; code is 0 and does not include \""\""""\}],[\{""c"":""1""\},\{""c"":""Approved""\}],[\{""c"":""-3""\},\{""c"":""Duplicate Transaction ID""\}],[\{""c"":""-4""\},\{""c"":""Validation error. Please verify the values you provided are correct""\}],[\{""c"":""-5""\},\{""c"":""Operation not Allowed""\}],[\{""c"":""-6""\},\{""c"":""Operation not Supported""\}],[\{""c"":""-7""\},\{""c"":""Transaction Timeout""\}],[\{""c"":""-8""\},\{""c"":""Authentication Failed""\}],[\{""c"":""-9""\},\{""c"":""Do not honor (general decline, no specific reason given)""\}],[\{""c"":""-29""\},{""c"":""There are invalid characters in either the pin block or one of these fields:<br>\ntitle, initials, surname, address1,  address2, address3, address4, address5, additionalData""}],[\{""c"":""-34""\},\{""c"":""Card already active""\}],[\{""c"":""-35""\},\{""c"":""Card not active""\}],[\{""c"":""-36""\},\{""c"":""Expired card""\}],[\{""c"":""-38""\},\{""c"":""Lost card""\}],[\{""c"":""-39""\},\{""c"":""Stolen card""\}],[\{""c"":""-244""\},\{""c"":""Invalid last name""\}],[\{""c"":""-246""\},\{""c"":""Invalid first name""\}],[\{""c"":""-247""\},\{""c"":""Invalid ID number""\}],[\{""c"":""-248""\},\{""c"":""Invalid MSISDN""\}],[\{""c"":""-250""\},\{""c"":""Invalid initials""\}],[\{""c"":""-251""\},\{""c"":""Invalid Address 1 OR Invalid Contact Number""\}],[\{""c"":""-252""\},\{""c"":""Invalid Address 2""\}],[\{""c"":""-253""\},\{""c"":""Invalid Address 3""\}],[\{""c"":""-254""\},\{""c"":""Invalid Address 4""\}],[\{""c"":""-255""\},\{""c"":""Invalid Address 5 OR Invalid PinBlock""\}],[\{""c"":""-295""\},\{""c"":""Invalid expiry date""\}],[\{""c"":""-333""\},\{""c"":""sessionKey not present in header and \""Companion API Require Session Key\"" is enabled""\}],[\{""c"":""-334""\},\{""c"":""sessionKey present and not decryptable/parsable""\}],[\{""c"":""-778""\},\{""c"":""Reference has no linked cards""\}],[\{""c"":""-779""\},\{""c"":""Card already linked to a different reference""\}],[\{""c"":""-780""\},\{""c"":""Invalid card reference""\}],[\{""c"":""-781""\},\{""c"":""Invalid card - Not a physical card""\}],[\{""c"":""-782""\},\{""c"":""Cannot disable physical card OR Print card request already requested""\}]]}} */}
-
-"
 /Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/response-codes-2/index.md,Could not parse expression with acorn,mdx-parse-error,12,"
 
 <h2>Important</h2>
@@ -709,8 +714,3 @@ The report includes details about vouchers and reasons for transactions being fi
 <h2 id=""intro"">When to use XML Generator</h2>
 <p>You will use XML Generator to confirm that XML requests generated through your code are generated with the same request parameters as Paymentology Sprint – including the checksum, to ensure compatibility.</p>
 <p>If the XML is identical but the checksums do not match, you can use the <strong>Checksum Generator</strong> tool to work solely on the checksum and debug further.</p>"
-/Users/jim/Customer Projects/Paymentology/Migrated/production-sprint-public-d7dfce0ae80328e8af51/docs/tutuka-transaction-stream-2.md,Could not parse expression with acorn,mdx-parse-error,6,"original_id: 1610
----
-<p><strong>Paymentology’s Transaction Stream service allows API consumers to receive real-time notifications of the undertaken transactions. By subscribing to the notification service, consumers can know the status of transactions in real-time. </strong></p>
-<p><span style=""font-weight: 400;"">You can use the service for various purposes, including:</span></p>
-<ul>"
