@@ -16,11 +16,6 @@ metadata:
 <p> </p>
 <p>Let’s look at each of them.</p>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h2 class="block highlight" data-element="bridgehead" data-attr-renderas="sect3" data-attr-xml-id="bridgehead-idm4580796441427231693872562228"><span class="inline translation current" data-element="emphasis" data-attr-role="bold" data-attr-xinfo-text="10337">1. Using a dynamic secure code on virtual cards​</span>​</h2>
 <div class="placeholder">​A dynamic secure code allows you to increase the security of your virtual cards. If you add a dynamic secure code, it will be required at the time of making any transaction, enhancing payments security and safeguarding against fraud.</div>
 <div class="placeholder">​</div>
@@ -33,11 +28,6 @@ metadata:
 <div class="block translation current highlight" data-element="para" data-attr-xinfo-text="10341">Then, a One Time PIN (OTP), which is triggered by the <span class="inline link linktool link-external" data-element="link" data-attr-xlink-href="https://developer.sprint.paymentology.com/remote-messaging/documentation#otprequest"><span class="xml-highlight">OTPRequest</span> method, will be delivered to the cardholder to enable them to complete the secure code process and finalize the transaction.</span></div>
 </div>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h2 class="block highlight" data-element="bridgehead" data-attr-renderas="sect3" data-attr-xml-id="bridgehead-idm4646117344587231693882666982"><span class="inline translation current" data-element="emphasis" data-attr-role="bold" data-attr-xinfo-text="10343">2. Using a dynamic CVV on virtual cards​</span>​</h2>
 <div class="placeholder">​The Card Verification Value (CVV), which comes with every virtual card, is an essential feature for improving security. This static number helps in validating the identity of the cardholder, ensuring the card cannot be used for making fraudulent transactions.</div>
 <div class="placeholder">​</div>
@@ -46,21 +36,11 @@ metadata:
 <div class="placeholder">​</div>
 <div class="block translation" data-element="para" data-attr-xinfo-text="10346">To update the CVV, you’ll need to make a call to the <span class="xml-highlight">UpdateCVV</span> method. Paymentology will then create a new CVV that you can send to your cardholder.</div>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h2 class="block highlight" data-element="bridgehead" data-attr-renderas="sect3" data-attr-xml-id="bridgehead-idm4575661939452831693886418008"><span class="inline translation current" data-element="emphasis" data-attr-role="bold" data-attr-xinfo-text="10348">3. Using a PIN on physical cards​</span>​</h2>
 <div class="placeholder">​A PIN (personal identification number) is required to perform all ATM transactions. A secret PIN verifies a user’s identity and allows them to perform secure transactions. Apart from managing the transactions on the card, Paymentology will also manage its PIN. The PIN can either be pre-printed in a tamper-proof package containing the card or it can be set when the card is linked/issued.</div>
 <div></div>
 <div class="placeholder">​</div>
 <div class="placeholder">If the card PIN needs to be set for the first time or changed at a later time, or if the customer forgets it or requests it to be changed, you’ll need to make a call to the <span class="inline link linktool link-external" data-element="link" data-attr-xlink-href="https://developer.sprint.paymentology.com/card/documentation/card-api#changepin">​<span class="xml-highlight">ChangePIN</span> method. After the API request has been completed, Paymentology will issue a new PIN.</span></div>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h2 class="block highlight" data-element="bridgehead" data-attr-renderas="sect3" data-attr-xml-id="bridgehead-idm4511158928099231693890860727"><span class="inline translation current" data-element="emphasis" data-attr-role="bold" data-attr-xinfo-text="10353">4. Adding pockets to your card​</span>​</h2>
 <div class="placeholder">​Although the ability to add multiple pockets may not be suitable for everyone, this feature allows you to enhance the versatility and security of your card. You will have your main Permanent Account Number (PAN) as your “control” card and multiple pockets that sit under this with different balances.</div>

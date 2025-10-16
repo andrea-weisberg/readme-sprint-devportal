@@ -7,11 +7,6 @@ metadata:
 ---
 <p>Create a new, active virtual card and link it to a reference with the given bearer details.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
@@ -27,12 +22,6 @@ metadata:
 | transactionDate | Date |  | ✓ | <div class="param-single d-flex"> <div class="info"> <p>Client generated / local Transaction Date to assist in identifying transactions on the client side.</p> </div> </div> |
 | checksum | String |  | ✓ | <section class="tutuka-block tutuka-block--api-request"> <div class="api-reference"> <div class="api-reference__single"> <div class="params-wrapper"> <div class="param-single d-flex"> <div class="info"> <p>HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key.</p> </div> </div> </div> </div> </div> </section> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -146,12 +135,6 @@ metadata:
 </methodResponse>
 
 ```
-
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -165,12 +148,6 @@ metadata:
 | expiryDate | String | <p>Masked expiry date of the created card.</p> |
 | trackingNumber | String | <p>Generated tracking number for the created card.</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -285,14 +262,5 @@ metadata:
 
 ```
 
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}

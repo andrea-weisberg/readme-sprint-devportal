@@ -7,11 +7,6 @@ metadata:
 ---
 <p class="BodyA"><strong><span lang="EN-US">Remote messaging API allows Paymentology to call you to send administrative advice messages for Card API. These advice messages are sent using webhook-like schema. If you are integrating the service, you must create an endpoint accessible from the Paymentology network, which would be able to process the requests outlined below.</span></strong></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>How it works</h2>
 <ul>
 <li>All messages are sent as <strong>HTTP POST</strong> requests.</li>
@@ -22,35 +17,15 @@ metadata:
 <li>In the code samples provided, we use a <strong>mock</strong> <strong>endpoint</strong> for testing<strong> – <a href="https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm">https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm</a></strong></li>
 </ul>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>Expectations</h2>
 <p>Total round-trip time, including network overload, should be less than 4 seconds. Failing to meet this, the transaction is considered failed.</p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h2>Security</h2>
 <p>For detailed security measures, please see the end of the Method summary – <a href="#payload">Payload Integrity Verification</a></p>
 <p>Client specific headers can be used, if previously agreed, in accordance to measures used for all methods simultaneously.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>Response</h2>
 <p>HTTP response code <strong>200 (OK)</strong> is expected to confirm that the message was accepted.</p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h2>Methods:</h2>
 <p><a href="#3DSecure">3DSecure.OTP</a></p>
@@ -62,19 +37,9 @@ metadata:
 <p><a href="#appfinal">3DSecure.AppFinalisation</a></p>
 <p><a href="#responsereference">Response Reference</a></p>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h1><a id="3DSecure"></a>3DSecure.OTP</h1>
 <p class="SubtitleA"><span class="Hyperlink1"><span lang="EN-US">Process 3DS OTP token for an end customer to be able to complete the challenge of a live transaction.</span></span></p>
 <p><strong>IMPORTANT:</strong> the “refCode” field is only applicable if the campaign option is enabled.</p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 #### Path parameters
 
@@ -89,12 +54,6 @@ metadata:
 | refCode | String |  |  | <p>Dynamic generated 4 letters code to be used along with OTP messages<br /> <strong data-renderer-mark="true">if Campaign is configured to.</strong></p> |
 | currencyCode | Integer |  | ✓ | <p>The local currency code of the acquirer or source location of the transaction</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
@@ -195,11 +154,6 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 ```
 
 <p> </p>
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -214,12 +168,6 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 | trackingNumber | String | <p>Echo</p> |
 | currencyCode | Integer | <p>Echo</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
@@ -321,18 +269,8 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 
 <p> </p>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h1><a id="3DSecureCCD"></a>Administrative Message – 3D Secure Cardholder Contact Detail Collection</h1>
 <p class="SubtitleA"><span class="Hyperlink1"><span lang="EN-US">Collects the cardholder’s masked contact details to be used upon 3DS checkout.</span></span></p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 #### Path parameters
 
@@ -342,12 +280,6 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 | trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which OTP token is being sent</p> |
 | customerReference | String |  | ✓ | <p>Customer reference this card is linked to</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
@@ -448,11 +380,6 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 ```
 
 <p> </p>
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -461,12 +388,6 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 | resultCode | String | <p>Status code indicating transaction result</p> |
 | maskedContactDetails | Array | <p>Masked contact details (phone number and email address) linked with the card</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
@@ -568,18 +489,8 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 
 <p> </p>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h1><a id="activation"></a>digitization.activation</h1>
 <p><span class="Hyperlink1"><span lang="EN-US">Process MDES OTP token for an end customer to be able to complete the challenge and activate the wallet.</span></span></p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 #### Path parameters
 
@@ -592,12 +503,6 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 | challenge | String |  | ✓ | <p>OTP activation code</p> |
 | tokenRequestorID | String |  | ✓ | <p>The ID assigned by the Token Service Provider to the Token Requestor</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
@@ -696,12 +601,6 @@ console.log(httpHeader)
 Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
 
 ```
-
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -715,12 +614,6 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 | trackingNumber | String | <p>Echo</p> |
 | tokenRequesterId | String | <p>Echo</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
@@ -820,21 +713,10 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 
 ```
 
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h1><a id="event"></a>digitization.event</h1>
 <section id="tutuka-block-1" class="tutuka-block tutuka-block--text-full-width">
 <p class="SubtitleA"><span class="Hyperlink1"><span lang="EN-US">Used to communicate tokenization events in MDES</span></span></p>
 </section>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 #### Path parameters
 
@@ -852,12 +734,6 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 | digitizedTokenReference | String |  | ✓ | <p>Token reference</p> |
 | tokenRequestorId | String |  | ✓ | <p>The ID assigned by the Token Service Provider to the Token Requestor</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
@@ -956,12 +832,6 @@ console.log(httpHeader)
 Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
 
 ```
-
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -969,12 +839,6 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 |---|---|---|
 | resultCode | String | <p>As described in response reference</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
@@ -1074,20 +938,9 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 
 ```
 
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h1><a id="activationmethods"></a>digitization.activationmethods</h1>
 <p>This message signals that a token provision has been made and requires a verification method in order to push the OTP validation. The type of method will need to be returned as well as the data for the method. At the moment only activation types 1 (mobile phone number) and 2 (cardholder’s email address) are supported.</p>
 <p>The response will follow the same conventions described in response reference but in this case it will contain additional information (the activation methods). For simplicity the input parameters are omitted although they are expected in the response.</p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 #### Path parameters
 
@@ -1103,12 +956,6 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 | walletRecommendation | String |  | ✓ | <p>Tokenization decision suggested by the wallet provider. One of the following values: decline, approve or require_additional_authentication</p> |
 | tokenizationPanSource  | String |  | ✓ | <p>Identifies the method which the cardholder is attempting to tokenize a primary account number. One of the following values: card_on_file, card_added_manually, card_added_via_application, existing_token_credential or card_added_via_browser</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
@@ -1207,12 +1054,6 @@ console.log(httpHeader)
 Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
 
 ```
-
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -1221,12 +1062,6 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 | resultCode | String | <p>As described in response reference</p> |
 | activationMethods | Array | <p>JSON array of methods where each element has:</p> <ul> <li>type: 1 (phone number) or 2 (email).</li> <li>value: Cardholder’s phone number (type 1) or email (type 2).</li> </ul> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
@@ -1326,24 +1161,10 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 
 ```
 
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2><a id="appauth"></a>3DSecure.AppAuthentication</h2>
 <p>This message is used to trigger the process of cardholder authentication. You only need to respond to this message to indicate you have received the message and will initiate the cardholder authentication. Once you have completed cardholder authentication you will send a message to our <a href="https://developer.sprint.paymentology.com/card-api/api-reference/threedsauthenticationoutcome/">ThreeDSAuthenticationOutcome</a> API.<br />
 Messages should be as following:</p>
 <p> </p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 #### Path parameters
 
@@ -1358,12 +1179,6 @@ Messages should be as following:</p>
 | amount | Integer |  | ✓ | <p>Numeric value of the amount, unformatted, in minor units</p> |
 | currency | Integer |  | ✓ | <p>ISO code of the currency of the transaction</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
@@ -1464,11 +1279,6 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 ```
 
 <p> </p>
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -1476,12 +1286,6 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 |---|---|---|
 | resultCode | String | <p>As described in response reference</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
@@ -1583,19 +1387,9 @@ Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45
 
 <p> </p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2><a id="appfinal"></a>3DSecure.AppFinalisation</h2>
 <p>This administrative message is used to inform the client of the final status of the 3DSecure authentication.<br />
 Messages include the following:</p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 #### Path parameters
 
@@ -1607,22 +1401,9 @@ Messages include the following:</p>
 | transactionID | String |  | ✓ | <p>Unique ID provided by the ACS</p> |
 | status | String |  | ✓ | <p>Value indicating the status. Values include:<br /> 0 – Successfully received final status<br /> 1 – Timer on browser expired before response was received<br /> 2 – General error<br /> 3 – Transaction cancelled before response was received</p> |
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h1><a id="responsereference"></a>Response Reference</h1>
 <p>Response should contain all the same fields as the original request. In addition, a <span class="xml-highlight">resultCode</span> will be always added and specific response information when that is required by the method. The <span class="xml-highlight">resultCode</span> will be a string field with values from the table below:</p>
-<p><img loading="lazy" decoding="async" class="aligncenter wp-image-2161" src="https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Result-codes.png" alt="" width="1223" height="519" srcset="https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Result-codes.png 885w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Result-codes-300x127.png 300w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Result-codes-768x326.png 768w" sizes="auto, (max-width: 1223px) 100vw, 1223px" /></p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
+<p>**Result-codes.png IMAGE GOES HERE.**</p>
 
 <h2>Note:</h2>
 <ul>
@@ -1630,22 +1411,12 @@ Messages include the following:</p>
 <li>Response codes should always be four-digit codes. For example, using “0” instead of “0000” (approval) can, and will, yield different than expected results.</li>
 </ul>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2><a id="payload"></a>Optional Payload Integrity Verification</h2>
 <p>In order to ensure the integrity of data, all messages can optionally (enabled per client) have a HTTP header named Authorization with a key and a hash of the entire payload.</p>
 <p><strong>NOTE: Unless otherwise declared – this is applicable to all the methods of the API.</strong></p>
 <p>Example</p>
 <p>Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B</p>
-<p><img loading="lazy" decoding="async" class="aligncenter wp-image-2165" src="https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Structure.png" alt="" width="1088" height="478" srcset="https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Structure.png 877w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Structure-300x132.png 300w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Structure-768x337.png 768w" sizes="auto, (max-width: 1088px) 100vw, 1088px" /></p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
+<p>**Structure.png IMAGE GOES HERE.**</p>
 
 <h2>Method</h2>
 <p>To calculate the checksum, the payload is treated as a single UTF-8 byte stream, excluding surrounding space characters, if any. The resulting value is passed into HMAC function: HMAC(secret, payload), which signifies the HMAC-keyed hash algorithm using octet string represented by “secret” as the key and the octet string “payload” as the input string. The size of the result is the hash result size for the hash function in use. In this case, it is 32 octets for SHA-256 as mandated. The “secret” is associated with the Terminal value and shared in a separate communication medium prior to enactment of the API.</p>
@@ -1851,14 +1622,5 @@ console.log(httpHeader)
 Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
 
 ```
-
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API menu</a></p>

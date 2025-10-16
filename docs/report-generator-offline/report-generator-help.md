@@ -9,11 +9,6 @@ metadata:
 <p>You can use Report Generator to automatically generate and download to your reports from the test environment with your own test data.</p>
 <p>Reports are generated on demand, which can take a few seconds, please be patient. Only click “Generate Report” once and wait for the download window to appear.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>How to use Report Generator</h2>
 <ol>
 <li>Go to <a href="https://developer.sprint.paymentology.com/tools/report-generator/">Report Generator</a> under <a href="https://developer.sprint.paymentology.com/tools/">Tools</a></li>

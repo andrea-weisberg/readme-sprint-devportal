@@ -8,11 +8,6 @@ metadata:
 <p>The Remote API is hosted on your platform and allows us to call you to perform actions on your store of value/wallet e.g. Deducting/loading funds, balance inquiries, etc.</p>
 <p id="intro"><strong>Note:</strong> you will need to implement the relevant method names corresponding to the different calls in order to perform the necessary actions on your system.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>Available Methods</h2>
 <ul>
 <li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/">AdministrativeMessage</a> – Sends a message to a client for MDES digitization activation code OR sends message with 3D Secure OTP</li>

@@ -8,14 +8,6 @@ metadata:
 <p>The Card API contains the API and API methods that we use to call you to send transactions on to the store of value for authorizations. Transactions originate from the merchant and are sent to Paymentology via the financial networks and then are forwarded to the store of value for authorization.</p>
 <p id="intro"><strong>Note:</strong> You will need to implement the relevant method names corresponding to the different calls in order to perform the necessary actions on your system.</p>
 
-
-
-\{/* unsupported_acf_block: api_endpoint_example {"acf_fc_layout":"api_endpoint_example","endpoint":"https://apidev.voucherengine.com/card/v1/xmlrpc.cfm"\} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h1>Available methods</h1>
 <ul>
 <li><a href="https://developer.sprint.paymentology.com/card-api/api-reference/activatetoken/">ActivateToken</a> – Used to activate a token that has been approved and provisioned</li>
@@ -66,11 +58,6 @@ metadata:
 <li><a href="https://developer.sprint.paymentology.com/card-api/api-reference/updatecvv/">UpdateCVV</a> – Generate a new CVV2 of the specified card</li>
 <li><a href="https://developer.sprint.paymentology.com/card-api/api-reference/updatetokenaccount/">UpdateTokenAccount</a> – Updates the card PAN information associated with a token</li>
 </ul>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h1><a href="https://developer.sprint.paymentology.com/remotemessaging/">Remote Messaging API</a> for Non-Companion clients</h1>
 <p>The Remote Messaging API is hosted on your platform and allows us to call you to send administrative advice messages.</p>

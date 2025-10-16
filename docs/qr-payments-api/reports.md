@@ -7,22 +7,12 @@ metadata:
 ---
 <p><strong>Paymentology provides end-to-end reporting and reconciliation capabilities to allow you to track all the financial movements, revenues collected, failed transactions, and more.</strong></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <p>These are some of the reports you can generate:</p>
 <ul>
 <li><a href="#Markoff">Mark-off file</a></li>
 <li><a href="#summary">Summary settlement report</a></li>
 </ul>
 <p>Let’s look at each of them.</p>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h2>1. <a id="Markoff"></a>Mark-off file</h2>
 <p>This file contains a record of all successful transactions that Paymentology processes on behalf of a store of value like a wallet or a bank account. It includes the financial transactions between a store of value and Paymentology.</p>
@@ -43,25 +33,9 @@ metadata:
 <li><b>Tracking number</b> – Paymentology’s unique tracking identifier for the specific card used.</li>
 </ul>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Report Time Frames","table":{"use_header":true,"header":[{"c":"UTC+2"\},\{"c":"UTC+7"\},\{"c":"REMARKS"\}],"caption":false,"body":[[\{"c":"19:00"\},\{"c":"00:00"\},{"c":"When the report is generated at 19:00 UTC+2 2020-09-10 / 00:00: UTC+7 2020-09-11, the timeframe of all the authorized transactions captured in this report is from: <br>\n• 2020-09-09 00:00:00 UTC+2(system time) to 2020-09-09 11:59:59 UTC+2(system time)<br>\n• 2020-09-10 00:00:00 UTC+7(Asia client time) to 2020-09-10 11:59:59 UTC+7(Asia client time)"}]]}} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>Report Sample</h2>
 <p> </p>
-<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1547" src="https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Mark-Off-report-Companion-final.png" alt="" width="1272" height="324" srcset="https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Mark-Off-report-Companion-final.png 1272w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Mark-Off-report-Companion-final-300x76.png 300w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Mark-Off-report-Companion-final-1024x261.png 1024w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Mark-Off-report-Companion-final-768x196.png 768w" sizes="auto, (max-width: 1272px) 100vw, 1272px" /></p>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
+<p>**Mark-Off-report-Companion-final.png IMAGE GOES HERE.**</p>
 
 <h2>2. <a id="summary"></a>Summary settlement report</h2>
 <p>This gives a daily summary of all the transactions settled by the card association. Paymentology gathers the information from the card association file and packages it into a summary report.</p>
@@ -83,16 +57,5 @@ metadata:
 <li><strong>Payment transaction</strong> – shows the settlements for MoneySend transactions</li>
 </ul>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Report Time Frames","table":{"use_header":true,"header":[{"c":"UTC+2"\},\{"c":"UTC+7"\},\{"c":"REMARKS"\}],"caption":false,"body":[[\{"c":"08:00"\},\{"c":"13:00"\},{"c":"When the report is generated at 08:00 UTC+2 / 13:00 UTC+7 2020-09-10, the timeframe of all settled transactions captured in this report is from 2020-09-09 00:00:00 to 2020-09-09 11:59:59 in:<br>\n• System time zone UTC+2 <br>\n• Asia client time zone UTC+7 <br>\n• Merchant time zone"}]]}} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>Report Sample</h2>
-<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1541" src="https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Summary-Settlement-report-final.png" alt="" width="932" height="718" srcset="https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Summary-Settlement-report-final.png 932w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Summary-Settlement-report-final-300x231.png 300w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Summary-Settlement-report-final-768x592.png 768w" sizes="auto, (max-width: 932px) 100vw, 932px" /></p>
+<p>**Summary-Settlement-report-final.png IMAGE GOES HERE.**</p>

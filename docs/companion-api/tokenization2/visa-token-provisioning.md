@@ -11,11 +11,6 @@ metadata:
 <p><span style="font-weight: 400;">The process of enabling payments through tokens involves a number of steps. </span></p>
 <p><span style="font-weight: 400;">Let’s talk about them. </span></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <p><b>Step 1</b><span style="font-weight: 400;">: The cardholder initiates the request for a token via push provisioning or manual provisioning. You can learn more about the two provisioning methods <a href="https://developer.sprint.paymentology.com/companion-api/tokenization2/token-provisioning/">here</a>.</span></p>
 <p><b>Step 2: </b><span style="font-weight: 400;">The payment service provider (such as a digital wallet or an online retailer) requests a token from the card network. </span></p>
 <p><b>Step 3: </b><span style="font-weight: 400;">The card network initiates the token approval process and transfers the requested information to Paymentology for verification checks.</span></p>

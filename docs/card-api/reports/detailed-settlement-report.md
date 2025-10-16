@@ -44,11 +44,6 @@ metadata:
 </ul>
 </div>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h3><a id="DSRV2.0"></a>Version 2.0</h3>
 <p>Does not contain the Chargeback record (see Transaction Description column).</p>
 <ul>
@@ -78,11 +73,6 @@ metadata:
 <li style="font-weight: 400;"><b>Settlement currency</b> – <span style="font-weight: 400;">this is the currency code for the settlement currency.</span></li>
 <li style="font-weight: 400;"><b>Interchange amount</b> – <span style="font-weight: 400;">this is the individual amounts earned per transaction.</span></li>
 </ul>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h3><a id="DSRV2.1"></a>Version 2.1</h3>
 <p>Builds off of V2.0 and does not contain the Chargeback record. Changes include additional information to <span style="text-decoration: underline;">TransactionNarrative</span> column delimited by pipes eg. TransactionNarrative|AdditionalTraceRef|CustomIdentifier</p>
@@ -114,39 +104,13 @@ metadata:
 <li style="font-weight: 400;"><b>Interchange amount</b> – <span style="font-weight: 400;">this is the individual amounts earned per transaction.</span></li>
 </ul>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>Report format</h2>
-
-
-
-\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":"FORMAT"\},\{"c":"FILE NAME"\},\{"c":"FREQUENCY"\},\{"c":"ACCESSIBILITY"\}],"caption":false,"body":[[\{"c":"CSV"\},\{"c":"[CampaignUUID]/[CampaignName]DailySettlements[YYYYMMDD].csv"\},\{"c":"Daily"\},\{"c":"HTTP get request or client SFTP folder"\}]]}} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h2>Report time frame</h2>
 
-
-
-\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":"UTC +2"\},\{"c":"UTC +7"\},\{"c":"REMARKS"\}],"caption":false,"body":[[\{"c":"04:00"\},\{"c":"09:00"\},{"c":"When the report is generated at 04:00 UTC+2 / 09:00 UTC+7 2020-09-10, the timeframe of all the settled transactions captured in this report is from 2020-09-09 00:00:00 to 2020-09-09 11:59:59 in: <br>\n• System time zone UTC+2 <br>\n• Asia client time zone UTC+7 <br>\n• Merchant time zone"}]]}} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>Report sample</h2>
 <p> </p>
-<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2129" src="https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Detailed-Settlement-report-1.png" alt="" width="1280" height="720" srcset="https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Detailed-Settlement-report-1.png 1280w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Detailed-Settlement-report-1-300x169.png 300w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Detailed-Settlement-report-1-1024x576.png 1024w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Detailed-Settlement-report-1-768x432.png 768w" sizes="auto, (max-width: 1280px) 100vw, 1280px" /></p>
-
-
-
-\{/* unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":{"ID":213,"id":213,"title":"icon-secure-card3","filename":"icon-secure-card3.png","filesize":303,"url":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","link":"https://developer.sprint.paymentology.com/card-api/issue-card/icon-secure-card3/","alt":"","author":"1","description":"","caption":"","name":"icon-secure-card3","status":"inherit","uploaded_to":204,"date":"2020-04-02 16:39:05","modified":"2020-04-02 16:39:05","menu_order":0,"mime_type":"image/png","type":"image","subtype":"png","icon":"https://developer.sprint.paymentology.com/wp-includes/images/media/default.png","width":21,"height":21,"sizes":{"thumbnail":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","thumbnail-width":21,"thumbnail-height":21,"medium":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium-width":21,"medium-height":21,"medium_large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium_large-width":21,"medium_large-height":21,"large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","large-width":21,"large-height":21,"1536x1536":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","1536x1536-width":21,"1536x1536-height":21,"2048x2048":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","2048x2048-width":21,"2048x2048-height":21\}},"text":"<section class=\"tutuka-block tutuka-block--info\">\n<div class=\"block-info-single icon\">\n<div class=\"info-content\">\n<p><strong>Note: file will automatically download upon clicking link</strong></p>\n</div>\n</div>\n</section>\n"}]} */}
-
+<p>**Detailed-Settlement-report-1.png IMAGE GOES HERE.**</p>
 
 <p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNameDailySettlementsYYYYMMDD-1.csv">CampaignNameDailySettlementsYYYYMMDD.csv</a></p>
 <p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNameDailySettlementsYYYYMMDD-2.csv">CampaignNameDailySettlementsYYYYMMDDsample.csv</a></p>

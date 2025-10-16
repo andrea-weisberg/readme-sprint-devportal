@@ -7,11 +7,6 @@ metadata:
 ---
 <p><strong>To facilitate easier API integrations, Paymentology provides two integration environments: test environment and live environment.</strong></p>
 
-
-
-\{/* spacing: desktop=40, mobile=20 */\}
-
-
 <h2>​i) Test integration environment</h2>
 <div class="block translation current highlight" data-element="para" data-attr-xinfo-text="10944">The test environment is publicly accessible. You must send a request to a “named” URL, such as vexdev.tutuka.com or apidev.tutuka.com. If you send a request to an IP address, it will not work.</div>
 <div class="placeholder">​</div>
@@ -38,11 +33,6 @@ metadata:
 </ul>
 </div>
 
-
-
-\{/* unsupported_acf_block: sign_up_block {"acf_fc_layout":"sign_up_block","main_text":"Only registered developers can use testing environment","button_text":"Create an account"\} */}
-
-
 <h2>ii) Live integration environment</h2>
 <p>In addition to the test environment requirements above – which are also applicable to the live environment – there are a few additional requirements that apply to the live environment:</p>
 <ul>
@@ -50,11 +40,6 @@ metadata:
 <li><strong>System support​</strong>—your system has to support TLS 1.2 as per requirements set by PCI. TLS 1.0 and TLS 1.1 cannot be supported.</li>
 <li><strong><a href="https://developer.sprint.paymentology.com/tools/simpos/">SimPOS</a>​</strong> —this is a transaction simulator tool that allows you to simulate remote API transactions. For example, you can use SimPOS to test that the flow of virtual card transactions over Paymentology’s Sprint Companion Card API is working properly.</li>
 </ul>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h1>VPN</h1>
 <p>A VPN is a <strong>Virtual Private Network</strong> that allows a user to establish a private and protected network connection when using public networks to send and receive data. Paymentology Sprint platform does not offer VPNs to clients because messages are secured at an application and network level.</p>
@@ -93,11 +78,6 @@ metadata:
 <p data-renderer-start-pos="1387">This ensures <strong data-renderer-mark="true">complete end-to-end protection</strong> of every message from the point of origin to its destination</p>
 </li>
 </ul>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h2>Need help?</h2>
 <p>In case you’re experiencing any integration issues, do not hesitate to <a href="https://developer.sprint.paymentology.com/contact-us/">get in touch</a></p>

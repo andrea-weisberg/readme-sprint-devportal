@@ -13,11 +13,6 @@ metadata:
 <p>The token will then be transmitted back to Apple to be programmed into your device. So, you can use the token, instead of your real credit card information, for making payments.</p>
 <p>We’ll talk more about the tokenization process later.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2><b>Tokenization Participants</b></h2>
 <p>These are the main participants in the card tokenization process:</p>
 <ul>

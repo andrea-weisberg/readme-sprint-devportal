@@ -7,23 +7,13 @@ metadata:
 ---
 <p>Provisioning is the process whereby a payment service provider (token requester) asks for a token to be created for a PAN.</p>
 <p>Provisioning basically follows these steps:</p>
-<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1556" src="https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Tokenization-Flow_02-v2-1.png" alt="Provisioning flow" width="4114" height="3200" /></p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
+<p>**Tokenization-Flow_02-v2-1.png IMAGE GOES HERE.**</p>
 
 <section id="tutuka-block-3" class="tutuka-block tutuka-block--text-full-width"><b>Step 1: </b>The cardholder initiates the request process via push provisioning or manual provisioning.</section>
 <section class="tutuka-block tutuka-block--text-full-width"><b>Step 2: </b>The payment service provider requests a payment token from the card network.<b>Step 3: </b>The card network initiates the token approval process and transfers the requested information to Paymentology (the issuer processor) for verification checks.<b>Step 4: </b>Paymentology makes the provisioning decision and relays the information to the card network. Paymentology will also notify the client via the <b><a href="https://developer.sprint.paymentology.com/remotemessaging/">RemoteMessaging</a> API</b> of the attempted provisioning.</p>
 <p><b>Step 5: </b>If the token activation request is authorized, the card network generates a payment token. After tokenization, MDES will store that information in their secure token vault, while associating the card details to the created token.</p>
 <p><b>Step 6: </b>The unique token is sent to the payment service provider for completing the current transaction. The provider may also store the token for future payments. If the provider stores tokenized payment card data on a file in a database, which is used for making repeat purchases, such payments are called card-on-file transactions.</p>
 </section>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h2><b>Types of Provisioning Methods</b></h2>
 <p>Paymentology’s Sprint platform supports the following two main methods for provisioning a token to incorporate a payment card into a digitized wallet:</p>
@@ -32,17 +22,6 @@ metadata:
 <li aria-level="1"><b>Manual provisioning</b>—this is where a cardholder physically enters the card details into the digitized wallet.</li>
 </ul>
 <p>Here is a table that compares the differences between push provisioning and manual provisioning:</p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Push Provisioning vs Manual Provisioning","table":{"use_header":true,"header":[{"c":"PUSH PROVISIONING "\},\{"c":"MANUAL PROVISIONING"\}],"caption":false,"body":[[\{"c":"OTP verification not required"\},\{"c":"OTP verification required. However, some wallets, such as Samsung Pay do not require OTP verification."\}],[\{"c":"TAV certification required"\},\{"c":"TAV certification not required"\}]]}} */}
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h2><b>How Push Provisioning Works</b></h2>
 <p>Push provisioning is a generic capability that enables cardholders to “push” a token from the issuer experience into a destination wallet or merchant.</p>
@@ -71,11 +50,6 @@ metadata:
 <li aria-level="1">The Wallet Provider server calls the MDES API to initiate the digitization request.</li>
 <li aria-level="1">MDES identifies the key that was used to encrypt the data from the issuer and decrypts the card details.</li>
 </ol>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h2><b>How Manual Provisioning Works</b></h2>
 <p>Manual provisioning is where the cardholder physically enters the card details, such as PAN, expiry date, and CVV, into the digitized wallet. It requires the cardholder to enter an OTP via the selected verification method, usually SMS or email, to verify that they indeed own the card.</p>

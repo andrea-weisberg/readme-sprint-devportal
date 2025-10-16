@@ -7,12 +7,7 @@ metadata:
 ---
 <p>Processing a transaction using a token basically follows these steps:</p>
 <p>(We’ll assume that the card’s data has already been provisioned)</p>
-<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1555" src="https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Tokenization-Flow_01.png" alt="Authprization Request flow" width="4113" height="3200" srcset="https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Tokenization-Flow_01.png 4113w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Tokenization-Flow_01-300x233.png 300w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Tokenization-Flow_01-1024x797.png 1024w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Tokenization-Flow_01-768x598.png 768w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Tokenization-Flow_01-1536x1195.png 1536w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Tokenization-Flow_01-2048x1593.png 2048w" sizes="auto, (max-width: 4113px) 100vw, 4113px" /></p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
+<p>**Tokenization-Flow_01.png IMAGE GOES HERE.**</p>
 
 <p><b>Step 1: </b>The cardholder initiates the transaction and provides their sensitive credit card details. The transaction can be initiated via a mobile app, at an NFC store, or on an e-commerce site.</p>
 <p><b>Step 2: </b>The merchant initiates the payment authorization request by submitting a token, in place of a PAN, to their acquiring bank.</p>

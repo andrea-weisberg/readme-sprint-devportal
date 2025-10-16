@@ -9,11 +9,6 @@ metadata:
 <p><span style="font-weight: 400;">In the past, fueling was a tedious process—an attendant had to manually pump the requested amount of fuel, usually resulting in lines and customer queues. However, AFDs has turned this around—no more direct engagements with staff and other time-consuming hassles.</span></p>
 <p><span style="font-weight: 400;">With Paymentology Sprint’s support for AFD transactions, you can make payments</span><span style="font-weight: 400;"> for your cardholders </span><span style="font-weight: 400;">at the pump painless, fast, and secure.</span></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2><b>Benefits of AFD Transactions</b></h2>
 <ul>
 <li aria-level="1"><b>Speeds up fueling for customers</b></li>
@@ -37,11 +32,6 @@ metadata:
 </ul>
 <p><span style="font-weight: 400;">The traditional way of using cash at fuel outlets is prone to employee theft, robbery, or unintentional miscounting. By eliminating cash, this risk is drastically reduced.</span></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2><b>Best Practices For AFD Transactions</b></h2>
 <ul>
 <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Ensure all purchase transactions are properly authorized. Remember that the available authorization methods vary based on the merchant type and region.</span></li>
@@ -49,15 +39,8 @@ metadata:
 <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Ensure estimated transactions are handled appropriately. If the final amount surpasses the estimated amount, you should obtain additional authorization. Remember that the confirmation advice or the settlement should never be higher than the initial authorization amount sent from the AFD POS.</span></li>
 </ul>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>AFD Transactions Flow</h2>
-<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2047" src="https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/AFD-Transaction-processing-v2.png" alt="AFD Transaction processing" width="1280" height="720" /></p>
-
-
+<p>**AFD-Transaction-processing-v2.png IMAGE GOES HERE.**</p>
 
 <ol>
 <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Cardholder makes a transaction at an AFD POS</span></li>

@@ -8,11 +8,6 @@ metadata:
 <p>Reverse a deduct that was previously requested on a wallet.</p>
 <p><strong>KLV will not be sent for reversals. </strong></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
@@ -28,12 +23,6 @@ metadata:
 | transactionDate | Date |  | ✓ | <p>Transaction date (in UTC) to identify the reversal message</p> |
 | checksum | String |  | ✓ | <p>HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -115,11 +104,6 @@ metadata:
 ```
 
 <p> </p>
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -127,12 +111,6 @@ metadata:
 |---|---|---|
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -214,10 +192,5 @@ metadata:
 ```
 
 <p> </p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/">Back to Remote API menu</a></p>

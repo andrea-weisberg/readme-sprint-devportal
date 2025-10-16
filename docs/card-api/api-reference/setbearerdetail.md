@@ -7,11 +7,6 @@ metadata:
 ---
 <p>Set the details of the bearer that is identified by the given tracking number</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
@@ -38,12 +33,6 @@ metadata:
 | countryAddress | String | 3 characters | ✓ | <div class="param-single d-flex"> <div class="info"> <p>ISO Alpha code indicating the country. eg. GBR.</p> </div> </div> |
 | emailAddress | String |  | ✓ | <p>Email address of the card bearer.</p> |
 | checksum | String | 1-255 characters | ✓ | <p>HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key</p> |
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```xml
 <methodCall>
@@ -220,23 +209,12 @@ metadata:
 
 <p> </p>
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
 #### Response schema
 
 | Field | Type | Description |
 |---|---|---|
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 | resultText | String | <p>Text indicating transaction result</p> |
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
 
 ```xml
 <methodCall>
@@ -410,11 +388,5 @@ metadata:
 </methodResponse>
 
 ```
-
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

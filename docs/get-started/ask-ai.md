@@ -7,11 +7,6 @@ metadata:
 ---
 <p>Ask AI is an AI bot trained on our documentation and API specifications. Seamlessly embedded in our Developer Portal, Ask AI provides a single destination to get your questions answered and uncover documentation insights.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>What can Ask AI do?</h2>
 <ul>
 <li>Ask AI <em><strong>can</strong></em> help provide context of certain processes.</li>
@@ -20,11 +15,6 @@ metadata:
 <li>Ask AI <em><strong>cannot</strong></em> provide login credentials to any environment.</li>
 <li>Ask AI <em><strong>cannot</strong></em> investigate an actual transaction or API call, not even on the developer or UAT environment.</li>
 </ul>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h2>How can I use Ask AI?</h2>
 <p>Ask AI can be used in two ways:</p>
@@ -47,15 +37,8 @@ metadata:
 </li>
 </ol>
 
-
-
 <h4>Ask AI chat response example</h4>
-<p><img loading="lazy" decoding="async" class="alignleft wp-image-5119 size-full" src="https://developer.sprint.paymentology.com/wp-content/uploads/2025/04/Sprint-chat-example-e1743472176526.png" alt="" width="500" height="567" /></p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
+<p>**Sprint-chat-example-e1743472176526.png IMAGE GOES HERE.**</p>
 
 <h3><a id="AAIS"></a>Ask AI Search</h3>
 <ol>
@@ -65,15 +48,8 @@ metadata:
 <li>Ask AI will populate links to relevant material.</li>
 </ol>
 
-
-
 <h4>Ask AI search response example</h4>
-<p><img loading="lazy" decoding="async" class="alignleft wp-image-5120 size-full" src="https://developer.sprint.paymentology.com/wp-content/uploads/2025/04/Sprint-search-example-e1743472098983.png" alt="" width="500" height="434" /></p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
+<p>**Sprint-search-example-e1743472098983.png IMAGE GOES HERE.**</p>
 
 <h2>Ask AI tips</h2>
 <p>Ask AI prioritizes accuracy and relevance in responses. It’s important to acknowledge that there may be situations where you need to try different prompts to achieve the desired outcome.</p>
@@ -84,8 +60,5 @@ metadata:
 <li><strong>Experimenting with different prompts:</strong> sometimes, a different approach to your question can provide better results.</li>
 </ul>
 <p>Make sure to use the feedback buttons, as this can help ensure the accuracy of answers provided. The feedback buttons are located on the bottom right corner of Ask AI’s response.</p>
-<p><img loading="lazy" decoding="async" class="alignleft wp-image-5123 size-full" src="https://developer.sprint.paymentology.com/wp-content/uploads/2025/04/Sprint-feedback-buttons-1-e1743472145749.png" alt="" width="500" height="248" /></p>
+<p>**Sprint-feedback-buttons-1-e1743472145749.png IMAGE GOES HERE.**</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}

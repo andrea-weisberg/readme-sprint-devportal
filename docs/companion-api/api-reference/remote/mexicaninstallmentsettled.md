@@ -7,11 +7,6 @@ metadata:
 ---
 <p>Notifies that a Mexican installment transaction is settled.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
@@ -26,12 +21,6 @@ metadata:
 | transactionCurrencyCode | Integer |  | ✓ | <p>The local currency code of the acquirer or source location of the transaction (eg. 484 = Mexican Peso)</p> |
 | checksum | String |  | ✓ | <p>HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key.</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -110,11 +99,6 @@ metadata:
 ```
 
 <p> </p>
-
-
-
-{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} */}
-
 
 #### Response schema
 
@@ -122,12 +106,6 @@ metadata:
 |---|---|---|
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -206,10 +184,5 @@ metadata:
 ```
 
 <p> </p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/">BACK TO REMOTE API MENU</a></p>

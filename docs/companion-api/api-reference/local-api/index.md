@@ -8,11 +8,6 @@ metadata:
 <p>The Local API contains all the methods available for you to call Paymentology in order to perform the necessary actions on your cards. It includes methods that allow the SVA to create a virtual card, stop a card, or link a physical card. Local API calls are initiated by you.</p>
 <p>The Local API is used for administration purposes.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>Available Methods</h2>
 <ul>
 <li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/activatecard/">ActivateCard</a> – Activate the specified card if the card was initially created as inactive</li>
@@ -50,11 +45,6 @@ metadata:
 <li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/updatecvv/">UpdateCVV</a> – Generate a new CVV2 of the specified card</li>
 <li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/updatetokenaccount/">UpdateTokenAccount</a> – Updates the card PAN information associated with a token</li>
 </ul>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h2>Response Codes</h2>
 <p>To access the Response Codes for the Local API, please click <a href="https://developer.sprint.paymentology.com/response-codes/">here</a>.</p>

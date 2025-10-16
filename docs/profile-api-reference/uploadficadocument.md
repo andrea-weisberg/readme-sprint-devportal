@@ -7,11 +7,6 @@ metadata:
 ---
 <p>Uploads identification to be FICA compliant.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
@@ -24,12 +19,6 @@ metadata:
 | image | String |  | ✓ | <p>Identification image in binary.</p> |
 | mime | String |  | ✓ | <p>Description to the uploaded ID.</p> |
 | checksum | String |  | ✓ | <p>HMAC-SHA1 hashed signature of the concatenated method name with all argument values using the terminal password as private key.</p> |
-
-
-
-\{/* spacing: desktop=20, mobile=14 */\}
-
-
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -141,12 +130,6 @@ metadata:
 </methodResponse>
 
 ```
-
-
-
-
-{/* spacing: desktop=20, mobile=14 */}
-
 
 #### Response schema
 
@@ -161,12 +144,6 @@ metadata:
 | resultCode | Integer | <p>Status code indicating the transaction result.</p> |
 | resultText | String | <p>Text indicating transaction result.</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
@@ -278,7 +255,3 @@ metadata:
 
 ```
 
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}

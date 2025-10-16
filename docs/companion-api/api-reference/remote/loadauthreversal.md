@@ -8,11 +8,6 @@ metadata:
 <p>This method can only return the result codes of 1 (success) or -9 (an error occurred while queuing the Reversal).</p>
 <p><strong>KLV will not be sent for reversals. Only reference data will be included if there is any. If KLV data is needed please lookup <a href="https://developer.sprint.paymentology.com/companion-api/klv-lookup/">KLV</a> from the reference data included.</strong></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
@@ -28,12 +23,6 @@ metadata:
 | transactionDate | Date |  | ✓ | <p>Transaction date to identify the reversal message</p> |
 | checksum | String |  | ✓ | <p>HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -114,11 +103,6 @@ metadata:
 ```
 
 <p> </p>
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -126,12 +110,6 @@ metadata:
 |---|---|---|
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -212,10 +190,5 @@ metadata:
 ```
 
 <p> </p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/">Back to Remote API menu</a></p>

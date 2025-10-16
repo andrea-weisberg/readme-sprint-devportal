@@ -14,11 +14,6 @@ metadata:
 </ul>
 <p>You can read more on how our Secure API’s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a>.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
@@ -29,12 +24,6 @@ metadata:
 | transactionDate | Date |  | ✓ | <p>Client generated / local Transaction Date to assist in identifying transactions on the client side</p> |
 | checksum | String |  | ✓ | <p>HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```xml
 <methodcall>
     <methodname>GetActiveLinkedCards</methodname>
@@ -142,12 +131,6 @@ metadata:
 </methodresponse>
 
 ```
-
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -157,12 +140,6 @@ metadata:
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 | resultText | String | <p>Text indicating transaction result.</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <methodcall>
     <methodname>GetActiveLinkedCards</methodname>
@@ -270,11 +247,5 @@ metadata:
 </methodresponse>
 
 ```
-
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

@@ -7,11 +7,6 @@ metadata:
 ---
 <p>Provides a method to check if the specified amount was loaded on a card.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
@@ -24,12 +19,6 @@ metadata:
 | referenceDate | Date |  | ✓ | <p>Transaction date refering to the load to check.</p> |
 | checksum | String |  | ✓ | <p>HMAC-SHA1 hashed signature of the concatenated method name with all argument values using the terminal password as private key</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
@@ -125,11 +114,6 @@ metadata:
 ```
 
 <p> </p>
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -142,12 +126,6 @@ metadata:
 | resultCode | Integer | <p>Status code indicating transaction result.</p> |
 | resultText | String | <p>Text indicating transaction result.</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
@@ -244,6 +222,3 @@ metadata:
 
 <p> </p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}

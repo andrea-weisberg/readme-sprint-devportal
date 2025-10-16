@@ -7,11 +7,6 @@ metadata:
 ---
 <p>Reverse a deduct that was previously requested but had potentially failed.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
@@ -26,12 +21,6 @@ metadata:
 | referenceID | String | 1-255 characters, | ✓ | <p>The value of transactionID that was used with original DeductFunds call</p> |
 | referenceDate | Date |  | ✓ | <p>The value of transactionDate that was used with the original DeductFunds call</p> |
 | checksum | String |  | ✓ | <p>HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key</p> |
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```xml
 <methodCall>
@@ -157,12 +146,6 @@ metadata:
 </methodResponse>
 
 ```
-
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -179,12 +162,6 @@ metadata:
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 | resultText | String | <p>Status text indicating transaction result</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <methodCall>
     <methodName>DeductFundsReverse</methodName>
@@ -309,11 +286,5 @@ metadata:
 </methodResponse>
 
 ```
-
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

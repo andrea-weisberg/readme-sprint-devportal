@@ -20,10 +20,5 @@ metadata:
 <p> </p>
 <p> </p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>2. Stop Messages</h2>
 <p>These messages are <strong style="font-size: 16px;">sent to notify you if Paymentology stopped the companion card.</strong><span style="font-size: 16px;"> For example, if a validation process has failed to pass, Paymentology would stop the card for security reasons and send a notification to that effect. This requires making a call to the </span><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/stopcard/"><span class="xml-highlight">StopCard</span></a><span style="font-size: 16px;"> method.</span></p>

@@ -9,14 +9,6 @@ metadata:
 <p><strong>Paymentology provides end-to-end reporting and reconciliation capabilities to allow you to track all the financial movements, revenues collected, failed transactions, and more.</strong></p>
 </div>
 
-
-
-\{/* unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":{"ID":213,"id":213,"title":"icon-secure-card3","filename":"icon-secure-card3.png","filesize":303,"url":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","link":"https://developer.sprint.paymentology.com/card-api/issue-card/icon-secure-card3/","alt":"","author":"1","description":"","caption":"","name":"icon-secure-card3","status":"inherit","uploaded_to":204,"date":"2020-04-02 16:39:05","modified":"2020-04-02 16:39:05","menu_order":0,"mime_type":"image/png","type":"image","subtype":"png","icon":"https://developer.sprint.paymentology.com/wp-includes/images/media/default.png","width":21,"height":21,"sizes":{"thumbnail":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","thumbnail-width":21,"thumbnail-height":21,"medium":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium-width":21,"medium-height":21,"medium_large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium_large-width":21,"medium_large-height":21,"large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","large-width":21,"large-height":21,"1536x1536":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","1536x1536-width":21,"1536x1536-height":21,"2048x2048":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","2048x2048-width":21,"2048x2048-height":21\}},"text":"<p>You can generate all reports below by sending a HTTP GET Request and downloading the report as a CSV file. These downloadable reports are<strong> only available for 60 days.</strong></p>\n"}]} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <p><span style="font-weight: 400;">You can generate the following reports:</span></p>
 <ul>
 <li style="font-weight: 400;"><a href="https://developer.sprint.paymentology.com/companion-api/reports/mark-off-file"><span style="font-weight: 400;">Mark-off file</span></a></li>
@@ -33,11 +25,6 @@ metadata:
 <li style="font-weight: 400;"><a href="https://developer.sprint.paymentology.com/companion-api/reports/daily-statement-report/"><span style="font-weight: 400;">Daily statement report</span></a></li>
 </ul>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>Other reports</h2>
 <h3>Apple Pay</h3>
 <p>For clients using Paymentology’s tokenization services, Paymentology can issue the below reports to clients to assist with their Apple Pay reporting requirements:</p>
@@ -50,18 +37,11 @@ metadata:
 <li style="font-weight: 400;"><a href="https://developer.sprint.paymentology.com/companion-api/reports/apple-pay-monthly-declines-report/"><span style="font-weight: 400;">Apple Pay monthly declines report</span></a></li>
 </ul>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h3>Google Pay</h3>
 <p>For clients using Paymentology’s tokenization services, Paymentology can issue the below report to clients to assist with their Google Pay reporting requirements:</p>
 <ul>
 <li style="font-weight: 400;"><a href="https://developer.sprint.paymentology.com/companion-api/reports/google-pay-monthly-report/"><span style="font-weight: 400;">Google Pay monthly report</span></a></li>
 </ul>
-
-
 
 <h3>Emailed reports</h3>
 <p>The below reports can be sent to clients who require them via email:</p>
@@ -71,8 +51,6 @@ metadata:
 <li style="font-weight: 400;"><a href="https://developer.sprint.paymentology.com/companion-api/reports/daily-negative-balance-report/"><span style="font-weight: 400;">Daily negative balance report</span></a></li>
 </ul>
 
-
-
 <h3>Card scheme</h3>
 <p>For clients using Mastercard or Visa, Paymentology can issue the below reports to clients to assist with quarterly card scheme reporting requirements. These reports are sent via email and must first be requested through your Paymentology Client Executive.</p>
 <ul>
@@ -80,8 +58,6 @@ metadata:
 <li style="font-weight: 400;"><a href="https://developer.sprint.paymentology.com/companion-api/reports/qmr-data-report/"><span style="font-weight: 400;">QMR (Mastercard) data report</span></a></li>
 <li style="font-weight: 400;"><a href="https://developer.sprint.paymentology.com/companion-api/reports/vau-transaction-report/"><span style="font-weight: 400;">VAU (Visa) transaction report</span></a></li>
 </ul>
-
-
 
 <h3>Reports accessible via URL</h3>
 <p>The below are reports that can be downloaded via a URL.</p>

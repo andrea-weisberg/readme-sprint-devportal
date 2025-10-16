@@ -15,7 +15,7 @@ metadata:
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/cancelstopcard/">CancelStopCard</a> – Un-stop a card</li>
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/carddetail/">CardDetail</a> – Returns details regarding the created virtual card</li>
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/changepin/">ChangePin</a> – Change the pin on the card associated with the customer reference and tracking number</li>
-<li><a href="https://developer.sprint.paymentology.com/profile-api-reference/checkload/">CheckAuthorisation</a> – Provides a method to check if the specified amount was deducted from a card.</li>
+<li><a href="https://developer.sprint.paymentology.com/profile-api-reference/checkauthorisation/">CheckAuthorisation</a> – Provides a method to check if the specified amount was deducted from a card.</li>
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/checkload/">CheckLoad</a> – Provides a method to check if the specified amount was loaded on a card.</li>
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/createscheduledstop/">CreateScheduledStop</a> – Schedules the stop of the card on the date of the parameter</li>
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/createvirtualcard/">CreateVirtualCard</a> – Create a virtual card with specified amount loaded, linked to the specified profile and allocated to the profile owner</li>
@@ -37,7 +37,7 @@ metadata:
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/statementbydaterange/">StatementByDateRange</a> – Returns the statement between two dates</li>
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/status/">Status</a> – Retrieve the current status of a card</li>
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/stopcard/">StopCard</a> – Stop a card with one of the allowed (integer) values for <span class="xml-highlight">stopReasonID</span></li>
-<li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/togglevoucherfeature/">ToggleVoucherFeature</a> – Toggles a voucher feature on or off</li>
+<li><a href="https://developer.sprint.paymentology.com/profile-api-reference/togglevoucherfeature/">ToggleVoucherFeature</a> – Toggles a voucher feature on or off</li>
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/transferfunds/">TransferFunds</a> – Transfer funds from one card to another</li>
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/transferfundsbetweenprofiles/">TransferFundsBetweenProfiles</a> – Transfer funds from one profile to another</li>
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/updateallocatedcard/">UpdateAllocatedCard</a> – Updates the cellphone or ID number linked to an allocated card</li>
@@ -45,11 +45,6 @@ metadata:
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/updateprofile/">UpdateProfile</a> – Updates a profile owner’s details</li>
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/updatescheduledstop/">UpdateScheduledStop</a> – Updates an existing scheduled stop</li>
 </ul>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h2>Additional Card Management API’s</h2>
 <p><strong>NOTE:</strong> The Additional Card Management API’s listed below are available to specific clients. Please confirm with your Account Manager.</p>
@@ -61,11 +56,6 @@ metadata:
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/uploadficadocument/">UploadFicaDocument</a> – Uploads identification to be FICA compliant.</li>
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/vastransferfunds/">VasTransferFunds</a> – Transfer funds from a card for a VAS transaction.</li>
 </ul>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h2>Tokenisation Life Cycle Management API’s</h2>
 <p><strong>NOTE:</strong> The Tokenisation Life Cycle Management API’s listed below are available to Tokenisation enabled clients. Please contact your Account Manager if you require further information.</p>
@@ -82,6 +72,3 @@ metadata:
 <li><a href="https://developer.sprint.paymentology.com/profile-api-reference/unstoptoken/">UnStopToken</a> – Unstops a token reference or all the ones linked to a card</li>
 </ul>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}

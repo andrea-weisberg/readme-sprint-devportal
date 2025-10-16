@@ -15,12 +15,7 @@ metadata:
 <li aria-level="1">Token re-digitized (re-digitized or updated)</li>
 </ul>
 <p>The token lifecycle events are managed through the <b>AdministrativeMessage</b> method. The <b>messageName </b>path parameter, required in the <b>AdministrativeMessage</b> method, specifies the name of the administrative messages sent to the client.</p>
-<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2270" src="https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Token-life-cycle-management-v2.png" alt="Token lofecycle management flow" width="6300" height="3600" /></p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
+<p>**Token-life-cycle-management-v2.png IMAGE GOES HERE.**</p>
 
 <p>These are the possible values for the <b>messageName </b>data field when managing tokens:</p>
 <ul>
@@ -57,25 +52,9 @@ metadata:
 </ol>
 <p>This is when Paymentology informs the wallet that a token has been re-digitized or replaced. For example, a token expiry date can be updated based on the new replaced card.</p>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h2><a id="WID"></a>Tokenization with Digital Wallets</h2>
 <p>To allow for tokenization, issuers have historically needed to contract and integrate with each service or wallet separately. Every digital wallet has different capabilities for enabling tokenization.</p>
 <p>On Paymentology’s Sprint platform, these are the IDs associated with the various digital wallet programs:</p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Digital Wallet IDs","table":{"use_header":true,"header":[{"c":"WALLET NAME"\},\{"c":"WID (WALLET ID)"\}],"caption":false,"body":[[\{"c":"Apple Pay"\},\{"c":"103"\}],[\{"c":"Samsung Pay"\},\{"c":"217"\}],[\{"c":"Google Pay"\},\{"c":"216"\}],[\{"c":"M4M"\},\{"c":"327"\}]]}} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p>Note that a 3-digit numeric value represents the IDs.</p>
 <p>Notably, the digital wallets handle token provisioning differently. For example, Apple Pay and Google Pay work in the same way. So, for manual provisioning, an OTP will be issued, and they’ll be no OTP for push provisioning.</p>

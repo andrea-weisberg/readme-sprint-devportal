@@ -15,28 +15,13 @@ metadata:
 <em>MasterCard SecureCode</em></li>
 </ul>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <p>The primary benefit of using 3D Secure is <em>to reduce the risk of fraud. </em>3D Secure allows the Issuer to verify the cardholder’s identity by requesting supplementary information before completing an online transaction. The cardholder can choose between the following options when using 3D Secure:</p>
 <ul>
 <li><strong>Static 3D Secure –</strong> when enabling the 3D Secure functionality, the cardholder sets a password which remains unchanged. This password will be requested as the cardholder authentication when the card is used in an online transaction. For Static 3D Secure code, use the <span class="xml-highlight"><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/set3dsecurecode/">Set3dSecureCode</a></span> call.</li>
 <li><strong>Dynamic 3D Secure – </strong>this uses an OTP (one-time password) that is generated before a payment is processed after a cardholder has entered their card details online. The OTP is sent to the cardholder via text or email and is valid for a limited time. For Dynamic 3D Secure code, use the <span class="xml-highlight"><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/#3DSecure">AdministrativeMessage3DSecureOTP</a></span> call.</li>
 </ul>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2020" src="https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/image-35-v2.png" alt="Tutuka Dynamic 3DS flow" width="1704" height="1200" /></p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
+<p>**image-35-v2.png IMAGE GOES HERE.**</p>
 
 <p>These are the steps involved in the Dynamic 3D Secure validation and transaction authorization:</p>
 <ol>

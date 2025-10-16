@@ -15,17 +15,6 @@ metadata:
 <li>Once the card platform receives the response, a response is then sent to SimPOS to either approve or decline the transaction.</li>
 </ul>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-{/* unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":false,"text":"<p><strong>NB.</strong> <strong>During testing, avoid entering any personally identifiable information (PII), such as, user IDs, card numbers or email addresses.</strong></p>\n"}]} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2 id="intro">Testing with SimPOS</h2>
 <p>Things to check:</p>
 <ul>
@@ -35,11 +24,6 @@ metadata:
 <li>What was the response on SimPOS for the transaction?</li>
 <li>Does the response received on SimPOS match the response sent to Paymentology’s Sprint platform or not?</li>
 </ul>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h2>How to use SimPOS</h2>
 <ol>
@@ -51,10 +35,5 @@ metadata:
 <li>Click on “<strong>Swipe</strong>” button</li>
 <li>Wait for “<strong>Transaction result pop-up</strong>” which will show various response codes. Refer to the full list of response codes on the API documentation page.</li>
 </ol>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p>You can find a list if SimPOS Response codes <a href="https://developer.sprint.paymentology.com/tools/simpos/simpos-result-codes/">here</a>.</p>

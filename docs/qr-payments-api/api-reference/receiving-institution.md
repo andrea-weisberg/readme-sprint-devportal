@@ -11,20 +11,10 @@ metadata:
 <li><a href="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution/#DeactivateQR">DeactiveateQR</a> – Deactivate a card.</li>
 </ul>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <p><a id="CreateQRData"></p>
 <h2>CreateQRData</h2>
 <p></a><br />
 The method returns a QR including the received information and a new card number linked to the input reference with every request.</p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 #### Path parameters
 
@@ -41,12 +31,6 @@ The method returns a QR including the received information and a new card number
 | optionalData | String |  |  | <p>Struct with optional fields, right now only “postalCode” field is accepted. See above for details. The maximum length of the postalCode is 10.</p> |
 | checksum | String |  | ✓ | <p>HMAC-SHA1 hashed signature of the concatenated method name with all argument values using the terminal password as private key</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```xml
 <methodCall>
     <methodName>CreateQRData</methodName>
@@ -197,12 +181,6 @@ The method returns a QR including the received information and a new card number
 </methodResponse>
 
 ```
-
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -214,12 +192,6 @@ The method returns a QR including the received information and a new card number
 | qrCodeImage | String | <p>Base64 string of QR code image generated for the merchant</p> |
 | cardNumber | String | <p>The first 15 digits of the card number</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <methodCall>
     <methodName>CreateQRData</methodName>
@@ -371,20 +343,9 @@ The method returns a QR including the received information and a new card number
 
 ```
 
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <p> </p>
 <h2>DeactivateQR</h2>
 <p>Deactivate a card.</p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 #### Path parameters
 
@@ -396,12 +357,6 @@ The method returns a QR including the received information and a new card number
 | transactionDate | Date |  |  | <p>Client generated / local transaction date to assist in identifying transactions on the client side</p> |
 | checksum | String |  | ✓ | <p>HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```xml
 <methodCall>
     <methodName>CreateQRData</methodName>
@@ -552,12 +507,6 @@ The method returns a QR including the received information and a new card number
 </methodResponse>
 
 ```
-
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -566,12 +515,6 @@ The method returns a QR including the received information and a new card number
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 | resultText | String | <p>Text indicating transaction result</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <methodCall>
     <methodName>CreateQRData</methodName>
@@ -722,12 +665,6 @@ The method returns a QR including the received information and a new card number
 </methodResponse>
 
 ```
-
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <p><a href="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/#RI"></p>
 <h3>Appendix</h3>

@@ -10,20 +10,10 @@ metadata:
 <li><a href ="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/originating-institution/#TransferPaymentToMerchant">TransferPaymentToMerchant</a> – Transfer payment to merchant</li>
 </ul>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <p><a id="TransferPaymentToMerchant"></p>
 <h2>TransferPaymentToMerchant</h2>
 <p></a><br />
 Transfer payment to merchant.</p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 #### Path parameters
 
@@ -50,12 +40,6 @@ Transfer payment to merchant.</p>
 | optionalData | String |  | ✓ | <p>Struct with optional fields, right now only “recipientPostalCode” field is accepted. See above for details. The maximum length of the recipientPostalCode is 10.</p> |
 | checksum | String |  | ✓ | <p>The calculated HMAC-SHA1 signature of the call as specified in the rules of thumb</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```xml
 <methodCall>
     <methodName>TransferPaymentToMerchant</methodName>
@@ -188,12 +172,6 @@ Transfer payment to merchant.</p>
 </methodResponse>
 
 ```
-
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -202,12 +180,6 @@ Transfer payment to merchant.</p>
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 | resultText | String | <p>Text indicating transaction result</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <methodCall>
     <methodName>TransferPaymentToMerchant</methodName>
@@ -340,12 +312,6 @@ Transfer payment to merchant.</p>
 </methodResponse>
 
 ```
-
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <p><a href="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/#OI"></p>
 <h3>Appendix</h3>

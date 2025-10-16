@@ -7,12 +7,7 @@ metadata:
 ---
 <p>Processing a transaction using a token basically follows these steps:</p>
 <p>(We’ll assume that the card’s data has already been provisioned)</p>
-<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1555" src="https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Tokenization-Flow_01-v2.png" alt="Authorization Request flow" width="4113" height="3200" /></p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
+<p>**Tokenization-Flow_01-v2.png IMAGE GOES HERE.**</p>
 
 <p><b>Step 1: </b>The cardholder initiates the transaction and provides their sensitive credit card details. The transaction can be initiated via a mobile app, at an NFC store, or on an e-commerce site.</p>
 <p><b>Step 2: </b>The merchant initiates the payment authorization request by submitting a token, in place of a PAN, to their acquiring bank.</p>

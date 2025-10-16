@@ -7,17 +7,6 @@ metadata:
 ---
 <p>The Chargeback API contains the endpoints that you call in order to create chargebacks as well as maintain the chargeback lifecycle.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-\{/* unsupported_acf_block: api_endpoint_example {"acf_fc_layout":"api_endpoint_example","endpoint":"https://chargebacks.test.tutuka.cloud"\} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h1>Available methods</h1>
 <ul>
 <li><a href="https://developer.sprint.paymentology.com/chargeback-api/connectivity/">API Gateway Token & Connectivity</a> – Generate an authentication token in order to call the rest of the Chargeback API endpoints</li>
@@ -29,6 +18,3 @@ metadata:
 <li><a href="https://developer.sprint.paymentology.com/chargeback-api/chargeback-api-reference/query-chargeback/">Query Chargeback</a> – Used to query chargeback data.</li>
 </ul>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}

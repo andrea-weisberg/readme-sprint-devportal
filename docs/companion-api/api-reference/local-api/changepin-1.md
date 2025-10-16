@@ -13,11 +13,6 @@ metadata:
 </ul>
 <p>You can read more on how our Secure API’s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a>.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
@@ -31,12 +26,6 @@ metadata:
 | transactionDate | Date |  | ✓ | <p>Client generated / local Transaction Date to assist in identifying transactions on the client side</p> |
 | checksum | String |  | ✓ | <p>The calculated HMAC-SHA256 signature of the call as specified in the IMPORTANT section at the top</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```xml
 <methodCall>
     <methodName>ChangePin</methodName>
@@ -109,12 +98,6 @@ metadata:
 </methodResponse>
 
 ```
-
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -123,12 +106,6 @@ metadata:
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 | resultText | String | <p>Text indicating transaction result.</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <methodCall>
     <methodName>ChangePin</methodName>
@@ -201,11 +178,5 @@ metadata:
 </methodResponse>
 
 ```
-
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

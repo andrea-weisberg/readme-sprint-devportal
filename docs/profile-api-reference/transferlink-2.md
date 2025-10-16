@@ -8,11 +8,6 @@ metadata:
 <p>Transfer a reference to a new card. The old card will be stopped and the bearer details transferred to the new card. The new card will be linked and activated.</p>
 <p><strong>NOTE:</strong> Applicable to our Visa product.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
@@ -25,12 +20,6 @@ metadata:
 | transactionDate | Date |  | ✓ | <p>Client generated / local Transaction Date to assist in identifying transactions on the client side.</p> |
 | checksum | String |  | ✓ | <p>HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key.</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```xml
 <?xml version=""1.0""?>
 <methodCall>
@@ -100,12 +89,6 @@ metadata:
 </methodResponse>
 
 ```
-
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -113,12 +96,6 @@ metadata:
 |---|---|---|
 | resultCode | String | <p>Status code indicating transaction result.</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version=""1.0""?>
 <methodCall>
@@ -189,7 +166,3 @@ metadata:
 
 ```
 
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}

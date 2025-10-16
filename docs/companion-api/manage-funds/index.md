@@ -7,11 +7,6 @@ metadata:
 ---
 <p><strong>When the cardholder has either a virtual or a physical companion card (or both), they can start transacting against their store of value. These transactions originate from the merchant and are then sent to Paymentology via the card schemes, before being forwarded to the store of value for validation and authorization.</strong></p>
 
-
-
-{/* unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":false,"text":"<p><span style=\"font-weight: 400;\">To enable and manage this process, Paymentology Sprint uses what is called the </span><a href=\"https://developer.sprint.paymentology.com/companion-api/api-reference/remote/\"><b>Remote API</b></a><span style=\"font-weight: 400;\">. </span></p>\n"}]} */}
-
-
 <p><span style="font-weight: 400;">These are the supported transaction management options:</span></p>
 <ul>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Getting a balance on a card</span></li>
@@ -20,32 +15,17 @@ metadata:
 <li style="font-weight: 400;"><span style="font-weight: 400;">Adjustments on a card</span></li>
 </ul>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h2>1. Getting a balance on a card</h2>
 <div class="block translation current highlight" data-element="para" data-attr-xinfo-text="10671">
 <p><span style="font-weight: 400;">If a card is enabled for ATM transactions, then the cardholder can make balance inquiries at an ATM machine. </span><span style="font-weight: 400;">The balance that is sent back is the amount remaining in the stored value.</span></p>
 <p>You’ll need to make a call to the <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/balance/"><span class="xml-highlight">Balance</span></a> method.</p>
 </div>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h2>2. Doing a deduct transaction on a card​</h2>
 <p><span style="font-weight: 400;">When a cardholder makes an ATM, point of sale (POS), or e-commerce transaction, Paymentology will send a Deduct request for the funds to be deducted from the store of value. </span></p>
 <p>You’ll need to respond with Approved for the transaction to be concluded successfully.</p>
 <p> </p>
-<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1638" src="https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Companion-transaction-processing-3-v2.png" alt="Companion API transaction processing" width="1800" height="1200" /></p>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
+<p>**Companion-transaction-processing-3-v2.png IMAGE GOES HERE.**</p>
 
 <h2>3. A <a id="reversal"></a>reversal for a deduct transaction</h2>
 <div class="block translation current highlight" data-element="para" data-attr-xinfo-text="10678">
@@ -74,17 +54,7 @@ metadata:
 <p><span style="font-weight: 400;">Here is a table that shows the only acceptable response codes that can be sent to Paymentology:</span></p>
 </div>
 
-
-
-\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Table: Response codes for the Reversals method","table":{"use_header":true,"header":[{"c":"Code"\},\{"c":"Description"\}],"caption":false,"body":[[\{"c":"1"\},\{"c":"Success (or approved)"\}],[\{"c":"-9"\},\{"c":"Crashed (or disapproved)"\}]]}} */}
-
-
-<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2036" src="https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Reversal-v2.png" alt="Reversal flow" width="1280" height="720" /></p>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
+<p>**Reversal-v2.png IMAGE GOES HERE.**</p>
 
 <h2>4. Adjustments on a card</h2>
 <div class="block translation current highlight" data-element="para" data-attr-xinfo-text="10694">
@@ -98,11 +68,6 @@ metadata:
 </ul>
 <p><span style="font-weight: 400;">Let’s look at each of them.</span></p>
 </div>
-
-
-
-\{/* spacing: desktop=15, mobile=10 */\}
-
 
 <h3><b>i) <a id="Loadadjustment"></a>Load adjustment transactions</b></h3>
 <p><span style="font-weight: 400;">If there is a need to load money back into a store of value, Paymentology will send a load adjustment request so that the store of value makes the adjustment. </span></p>
@@ -119,20 +84,7 @@ metadata:
 <p><span style="font-weight: 400;">However, if the request is not accepted by the store of value, Paymentology will continue sending it ten times at regular intervals. If unsuccessful, the adjustment request will be retired as not processed.</span></p>
 <p><span style="font-weight: 400;">Here is a table that shows the only acceptable response codes that can be sent to Paymentology: </span></p>
 
-
-
-\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":"Code"\},\{"c":"Description"\}],"caption":false,"body":[[\{"c":"1"\},\{"c":"Success (or approved)"\}],[\{"c":"-9"\},\{"c":"Crashed (or disapproved)"\}]]}} */}
-
-
 <p>You’ll need to respond to the <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/loadadjustment/"><span class="xml-highlight">LoadAdjustment</span> </a>method.</p>
-
-
-
-\{/* unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":{"ID":213,"id":213,"title":"icon-secure-card3","filename":"icon-secure-card3.png","filesize":303,"url":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","link":"https://developer.sprint.paymentology.com/card-api/issue-card/icon-secure-card3/","alt":"","author":"1","description":"","caption":"","name":"icon-secure-card3","status":"inherit","uploaded_to":204,"date":"2020-04-02 16:39:05","modified":"2020-04-02 16:39:05","menu_order":0,"mime_type":"image/png","type":"image","subtype":"png","icon":"https://developer.sprint.paymentology.com/wp-includes/images/media/default.png","width":21,"height":21,"sizes":{"thumbnail":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","thumbnail-width":21,"thumbnail-height":21,"medium":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium-width":21,"medium-height":21,"medium_large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium_large-width":21,"medium_large-height":21,"large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","large-width":21,"large-height":21,"1536x1536":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","1536x1536-width":21,"1536x1536-height":21,"2048x2048":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","2048x2048-width":21,"2048x2048-height":21\}},"text":"<p>A Refund is a movement of funds from a merchant to a cardholder and may or may not relate to a previous deduct of funds. This uses the <span class=\"xml-highlight\"><a href=\"https://developer.sprint.paymentology.com/companion-api/api-reference/remote/loadauth/\">LoadAuth</a></span> method. Refunds are a new movement of funds.</p>\n"},\{"tag_text":"","icon":{"ID":213,"id":213,"title":"icon-secure-card3","filename":"icon-secure-card3.png","filesize":303,"url":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","link":"https://developer.sprint.paymentology.com/card-api/issue-card/icon-secure-card3/","alt":"","author":"1","description":"","caption":"","name":"icon-secure-card3","status":"inherit","uploaded_to":204,"date":"2020-04-02 16:39:05","modified":"2020-04-02 16:39:05","menu_order":0,"mime_type":"image/png","type":"image","subtype":"png","icon":"https://developer.sprint.paymentology.com/wp-includes/images/media/default.png","width":21,"height":21,"sizes":{"thumbnail":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","thumbnail-width":21,"thumbnail-height":21,"medium":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium-width":21,"medium-height":21,"medium_large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium_large-width":21,"medium_large-height":21,"large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","large-width":21,"large-height":21,"1536x1536":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","1536x1536-width":21,"1536x1536-height":21,"2048x2048":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","2048x2048-width":21,"2048x2048-height":21\}},"text":"<p>A Load Adjustment is an adjustment being made that gives money to the cardholder that has to be accepted by the wallet. It relates to a previous transaction. This uses the <span class=\"xml-highlight\"><a href=\"https://developer.sprint.paymentology.com/companion-api/api-reference/remote/loadadjustment/\">LoadAdjustment</a></span> method. Load Adjustments happen when the cardholder has more money than anticipated, such as when a settlement is cancelled or a settlement happens for less than the authorization amount.</p>\n<p> </p>\n"}]} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h3>LoadAdjustment</h3>
 <p>As for a <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/loadauth/"><span class="xml-highlight">LoadAuth</span></a>, this is the result of a refund or a money transfer request that loads funds to a cardholder but this is an advice message confirming that the funds have moved.</p>
@@ -149,11 +101,6 @@ metadata:
 <li>You are still responding correctly to the API calls</li>
 <li>You still have control of the funds and when and where to load them without having caused a failure by rejecting the API call</li>
 </ul>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h3>​ii) <a id="Reversal"></a>Load reversal transactions</h3>
 <div class="block translation current highlight" data-element="para" data-attr-xinfo-text="10714">
@@ -173,26 +120,10 @@ metadata:
 <p>You’ll need to make a call to the <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/loadreversal/"><span class="xml-highlight">LoadReversal</span> </a>method.</p>
 </div>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-\{/* unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":{"ID":213,"id":213,"title":"icon-secure-card3","filename":"icon-secure-card3.png","filesize":303,"url":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","link":"https://developer.sprint.paymentology.com/card-api/issue-card/icon-secure-card3/","alt":"","author":"1","description":"","caption":"","name":"icon-secure-card3","status":"inherit","uploaded_to":204,"date":"2020-04-02 16:39:05","modified":"2020-04-02 16:39:05","menu_order":0,"mime_type":"image/png","type":"image","subtype":"png","icon":"https://developer.sprint.paymentology.com/wp-includes/images/media/default.png","width":21,"height":21,"sizes":{"thumbnail":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","thumbnail-width":21,"thumbnail-height":21,"medium":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium-width":21,"medium-height":21,"medium_large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium_large-width":21,"medium_large-height":21,"large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","large-width":21,"large-height":21,"1536x1536":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","1536x1536-width":21,"1536x1536-height":21,"2048x2048":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","2048x2048-width":21,"2048x2048-height":21\}},"text":"<p>NB. You are putting the system back to how it was before the transaction that is being reversed but you should never delete anything, only post contra-transactions. However, be careful of repeats – you don’t want to accidentally keep deducting or loading additional funds every time a reversal is repeated</p>\n"}]} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <p>Remember, the transaction and reversal failures may be the result of a network interruption that is happening <em>after</em> you have responded each time. You may receive multiple reversals for a reversal which you have already processed so you must be able to identify that you have already processed the reversal to prevent “duplication”.</p>
 <p> </p>
 <p>What you do on your system for a <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/loadauthreversal/"><span class="xml-highlight">LoadAuthReversal</span> </a>will depend on what you do for a <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/loadauth/"><span class="xml-highlight">LoadAuth</span> </a>. If you approve and did nothing else (see <a href="#LoadAuth">LoadAuth</a> above for more information), then there isn’t anything for you to do when reversing. If your system records and reflects the “pending” load, you’d need to remove this pending load.</p>
 <p> </p>
-
-
-
-\{/* unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":{"ID":213,"id":213,"title":"icon-secure-card3","filename":"icon-secure-card3.png","filesize":303,"url":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","link":"https://developer.sprint.paymentology.com/card-api/issue-card/icon-secure-card3/","alt":"","author":"1","description":"","caption":"","name":"icon-secure-card3","status":"inherit","uploaded_to":204,"date":"2020-04-02 16:39:05","modified":"2020-04-02 16:39:05","menu_order":0,"mime_type":"image/png","type":"image","subtype":"png","icon":"https://developer.sprint.paymentology.com/wp-includes/images/media/default.png","width":21,"height":21,"sizes":{"thumbnail":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","thumbnail-width":21,"thumbnail-height":21,"medium":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium-width":21,"medium-height":21,"medium_large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium_large-width":21,"medium_large-height":21,"large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","large-width":21,"large-height":21,"1536x1536":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","1536x1536-width":21,"1536x1536-height":21,"2048x2048":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","2048x2048-width":21,"2048x2048-height":21\}},"text":"<p>A Reversal is a cancellation (in whole or in part) of a fund movement from the cardholder to the merchant. This uses the <span class=\"xml-highlight\"><a href=\"https://developer.sprint.paymentology.com/companion-api/api-reference/remote/loadauthreversal/\">LoadAuthReversal</a></span> method.</p>\n"},\{"tag_text":"","icon":{"ID":213,"id":213,"title":"icon-secure-card3","filename":"icon-secure-card3.png","filesize":303,"url":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","link":"https://developer.sprint.paymentology.com/card-api/issue-card/icon-secure-card3/","alt":"","author":"1","description":"","caption":"","name":"icon-secure-card3","status":"inherit","uploaded_to":204,"date":"2020-04-02 16:39:05","modified":"2020-04-02 16:39:05","menu_order":0,"mime_type":"image/png","type":"image","subtype":"png","icon":"https://developer.sprint.paymentology.com/wp-includes/images/media/default.png","width":21,"height":21,"sizes":{"thumbnail":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","thumbnail-width":21,"thumbnail-height":21,"medium":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium-width":21,"medium-height":21,"medium_large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium_large-width":21,"medium_large-height":21,"large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","large-width":21,"large-height":21,"1536x1536":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","1536x1536-width":21,"1536x1536-height":21,"2048x2048":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","2048x2048-width":21,"2048x2048-height":21\}},"text":"<p>Partial settlements/adjustments occur when:</p>\n<ul>\n<li>There are significant changes in currency exchange rates</li>\n<li data-stringify-indent=\"1\">Authorizing payments before the final amount is known (i.e online groceries when items may be substituted)</li>\n</ul>\n"}]} */}
-
 
 <h3>LoadReversal</h3>
 <p>This is sent if we do not receive any response to the <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/loadadjustment/"><span class="xml-highlight">LoadAdjustment</span></a>. All the other rules mentioned in <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/loadauthreversal/"><span class="xml-highlight">LoadAuthReversal</span> </a>still apply.</p>
@@ -215,11 +146,6 @@ In both cases, you would effectively <em>do nothing</em>, because there is noth
 <li>You do not need to tell us (since it is not relevant) whether you found the original transaction to reverse or not</li>
 </ul>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h3>iii) Deduct adjustment transactions</h3>
 <div class="block translation current highlight" data-element="para" data-attr-xinfo-text="10718">
 <p><span style="font-weight: 400;">In some cases, there may be a discrepancy between the funds that were authorized on a transaction and what was actually settled. </span><span style="font-weight: 400;">When a user makes a purchase at a point of sale, it takes a two-step process for the transaction to be completed. </span></p>
@@ -230,6 +156,3 @@ In both cases, you would effectively <em>do nothing</em>, because there is noth
 <p>You’ll need to make a call to the <a href="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/deductadjustment/"><span class="xml-highlight">DeductAdjustment</span> </a>method.</p>
 </div>
 
-
-
-\{/* unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":{"ID":213,"id":213,"title":"icon-secure-card3","filename":"icon-secure-card3.png","filesize":303,"url":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","link":"https://developer.sprint.paymentology.com/card-api/issue-card/icon-secure-card3/","alt":"","author":"1","description":"","caption":"","name":"icon-secure-card3","status":"inherit","uploaded_to":204,"date":"2020-04-02 16:39:05","modified":"2020-04-02 16:39:05","menu_order":0,"mime_type":"image/png","type":"image","subtype":"png","icon":"https://developer.sprint.paymentology.com/wp-includes/images/media/default.png","width":21,"height":21,"sizes":{"thumbnail":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","thumbnail-width":21,"thumbnail-height":21,"medium":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium-width":21,"medium-height":21,"medium_large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium_large-width":21,"medium_large-height":21,"large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","large-width":21,"large-height":21,"1536x1536":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","1536x1536-width":21,"1536x1536-height":21,"2048x2048":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","2048x2048-width":21,"2048x2048-height":21\}},"text":"<section id=\"tutuka-block-22\" class=\"tutuka-block tutuka-block--text-full-width\">A Deduct Adjustment is an adjustment being made that takes money from the cardholder, that has to be accepted by the wallet. This uses the <span class=\"xml-highlight\"><a href=\"https://developer.sprint.paymentology.com/companion-api/api-reference/remote/deductadjustment/\">DeductAdjustment</a></span> method. Deduct Adjustments happens because a settlement wasn’t authorized, or was authorized for less.</section>\n"},\{"tag_text":"","icon":{"ID":213,"id":213,"title":"icon-secure-card3","filename":"icon-secure-card3.png","filesize":303,"url":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","link":"https://developer.sprint.paymentology.com/card-api/issue-card/icon-secure-card3/","alt":"","author":"1","description":"","caption":"","name":"icon-secure-card3","status":"inherit","uploaded_to":204,"date":"2020-04-02 16:39:05","modified":"2020-04-02 16:39:05","menu_order":0,"mime_type":"image/png","type":"image","subtype":"png","icon":"https://developer.sprint.paymentology.com/wp-includes/images/media/default.png","width":21,"height":21,"sizes":{"thumbnail":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","thumbnail-width":21,"thumbnail-height":21,"medium":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium-width":21,"medium-height":21,"medium_large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium_large-width":21,"medium_large-height":21,"large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","large-width":21,"large-height":21,"1536x1536":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","1536x1536-width":21,"1536x1536-height":21,"2048x2048":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","2048x2048-width":21,"2048x2048-height":21\}},"text":"<p>Adjustments must be accepted, even if there are not sufficient funds on the wallet. You have to accept the adjustment and record the fact that you have this negative balance with the wallet, regardless of whether or not you would actually ever show the wallet as having negative funds</p>\n"}]} */}

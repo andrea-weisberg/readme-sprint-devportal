@@ -9,11 +9,6 @@ metadata:
 <p><span style="font-weight: 400;">You will use </span><span style="font-weight: 400;">the</span><span style="font-weight: 400;"> 3D Secure Screen Customization after agreeing to implement the 3D Secure functionality for your chosen API (Card or Companion). </span><span style="font-weight: 400;">We support different cardholder authentication methods to suit your needs, please choose the tool corresponding to the method you are implementing with Paymentology.</span></p>
 <p><b>This tool is for clients who have already signed up with Paymentology and are using the Sprint platform.</b></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>How to use the 3D Secure Screen Customization tool</h2>
 <p><span style="font-weight: 400;">First, you must select the type of 3DS Authentication you wish to use. Paymentology currently supports One-time Password (OTP) and Out-of-Band (OOB) authentication methods. </span></p>
 <p><span style="font-size: 20px;"><b>One-Time Password Authentication:</b></span></p>
@@ -47,11 +42,6 @@ metadata:
 <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Enter the text for the message in the “Main text” box.</span></li>
 <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Enter the text to direct the cardholder towards your support channels and provide contact details.</span></li>
 </ol>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h2>How to submit your file</h2>
 <p><span style="font-weight: 400;">As you enter all the information, the screen on the right updates so that you have a real-time view of what the screen will look like. Once you are happy with the screens:</span></p>

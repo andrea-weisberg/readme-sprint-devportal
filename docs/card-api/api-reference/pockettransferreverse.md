@@ -7,11 +7,6 @@ metadata:
 ---
 <p>Reverse an PocketTransfer transaction that was timed out using the details of the failed transaction.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
@@ -28,12 +23,6 @@ metadata:
 | referenceDate | Date |  | ✓ | <p>Value of transactionDate that was used for original PocketTransfer call</p> |
 | checksum | String | 1-255 characters | ✓ | <p>HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```xml
 <methodCall>
     <methodName>PocketTransferReverse</methodName>
@@ -171,12 +160,6 @@ metadata:
 </methodResponse>
 
 ```
-
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -192,12 +175,6 @@ metadata:
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 | resultText | String | <p>Status text indicating transaction result</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <methodCall>
     <methodName>PocketTransferReverse</methodName>
@@ -335,11 +312,5 @@ metadata:
 </methodResponse>
 
 ```
-
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

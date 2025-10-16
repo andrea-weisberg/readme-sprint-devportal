@@ -46,16 +46,11 @@ metadata:
 </b>This allows for blacklisting and setting merchant group permissions.</li>
 </ul>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <p><span style="font-weight: 400;">Whenever a transaction is undertaken for a card, all its associated settings are run through the Client Management System to determine their efficacy. For example, the system establishes whether it’s a Card or Companion model, if it’s 3DS or tokenization enabled, or its fees setup. </span></p>
 <p> </p>
 <p><span style="font-weight: 400;">Here is an illustration that shows how Paymentology manages clients’ cards programs on the Sprint platform:</span></p>
 <p> </p>
-<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-2346" src="https://developer.sprint.paymentology.com/wp-content/uploads/2021/09/Campaigns.png" alt="Card program management" width="1280" height="720" srcset="https://developer.sprint.paymentology.com/wp-content/uploads/2021/09/Campaigns.png 1280w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/09/Campaigns-300x169.png 300w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/09/Campaigns-1024x576.png 1024w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/09/Campaigns-768x432.png 768w" sizes="auto, (max-width: 1280px) 100vw, 1280px" /></p>
+<p>**Campaigns.png IMAGE GOES HERE.**</p>
 <p> </p>
 <p> </p>
 <p><span style="font-weight: 400;">Let’s explain how it works:</span></p>

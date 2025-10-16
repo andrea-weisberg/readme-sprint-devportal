@@ -7,11 +7,6 @@ metadata:
 ---
 <p>Generate a new CVV2 of the specified card.</p>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
@@ -23,12 +18,6 @@ metadata:
 | transactionDate | Date |  | ✓ | <p>Client generated / local Transaction Date to assist in identifying transactions on the client side</p> |
 | checksum | String |  | ✓ | <p>HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
@@ -131,11 +120,6 @@ metadata:
 ```
 
 <p> </p>
-
-
-
-{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} */}
-
 
 #### Response schema
 
@@ -143,12 +127,6 @@ metadata:
 |---|---|---|
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
@@ -251,10 +229,5 @@ metadata:
 ```
 
 <p> </p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">back to card api menu</a></p>

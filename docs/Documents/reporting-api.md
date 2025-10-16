@@ -8,28 +8,13 @@ metadata:
 <p><strong>The Reporting API is a local API which can be called to obtain files produced by Tutuka, foe example, reports.</strong></p>
 <p><strong>In order to call this API, a token must be obtained from the Tutuka Token Service. This token is validated by the API and allows access to resources based on certain values contained within the token.</strong></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <section id="tutuka-block-3" class="tutuka-block tutuka-block--text-full-width">
 <h3><em>The Reporting API is only available to clients on our AWS UAT environment and will become available to all clients in September 2021</em></h3>
 </section>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h1 id="Authentication-(Obtaining-a-token)" data-renderer-start-pos="430">Authentication (Obtaining a token)</h1>
 <p data-renderer-start-pos="469">The token will remain valid for 24 hours, after which a fresh token should be obtained.</p>
 <p data-renderer-start-pos="558">To obtain a token from the Token service, you will require a<em data-renderer-mark="true"><strong data-renderer-mark="true"> ClientID</strong></em> and <em data-renderer-mark="true"><strong data-renderer-mark="true">Client secret </strong></em>which can be obtained from your Client Executive. These values are highly sensitive and should be treated as such. Storing these values in browsers, local disk and source control is not recommended. Should these values be compromised, contact your Client executive urgently.</p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p>In order to obtain a token, an http request to : <code class="code css-9z42f9" data-renderer-mark="true">https://auth.uat.tutuka.cloud/oauth/token</code> using Basic Authentication and providing the BASE64 encoded ClientID and Secret in the Authorization Header specifying the <code class="code css-9z42f9" data-renderer-mark="true">client_credentials</code> grant type in the body. e.g.</p>
 
@@ -119,12 +104,6 @@ async function getCampaignReports(token) {
 
 ```
 
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
 <p>The token obtained can then be used as a Bearer token in calls to the Reporting API, for example:</p>
 
 ```null
@@ -213,28 +192,12 @@ async function getCampaignReports(token) {
 
 ```
 
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h1>Reports</h1>
 <p data-renderer-start-pos="2795">During the onboarding process, clients are issued with a Client UUID, which will include one or more campaigns which are identified by the campaign UUIDs.</p>
 <p data-renderer-start-pos="2951">Reports are produced for campaigns based on product type and opt in / out configuration values.</p>
 <p data-renderer-start-pos="3048">The API itself is RESTFUL and is as follows:</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>Report Types for Campaign</h2>
-
-
-
-\{/* unsupported_acf_block: api_endpoint_example {"acf_fc_layout":"api_endpoint_example","endpoint":"GET/v1/clients/{clientuuid\}/campaigns/\{campaignuuid\}/reports"} */}
-
 
 #### Path parameters
 
@@ -242,12 +205,6 @@ async function getCampaignReports(token) {
 |---|---|---|:--:|---|
 | ClientUUID | String |  | ✓ | <p>Your client UUID</p> |
 | CampaignUUID | String |  | ✓ | <p>The campaignUUID for which you want to obtain a list of report types.</p> |
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```null
 async function getAccessToken() {
@@ -335,18 +292,7 @@ async function getCampaignReports(token) {
 
 ```
 
-
-
-
-{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} */}
-
-
 <h2>Get List of Reports of a particular type</h2>
-
-
-
-{/* unsupported_acf_block: api_endpoint_example {"acf_fc_layout":"api_endpoint_example","endpoint":"GET/v1/clients/{clientuuid}/campaigns/{campaignuuid}/reports/{reportId}"} */}
-
 
 #### Path parameters
 
@@ -355,12 +301,6 @@ async function getCampaignReports(token) {
 | ClientUUID | String |  | ✓ | <p>Your client UUID</p> |
 | CampaignUUID | String |  | ✓ | <p>The campaignUUID for which you want to obtain a list of report types.</p> |
 | ReportId | String |  | ✓ | <p>The numeric ID identifying the report type</p> |
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
 
 ```null
 async function getAccessToken() {
@@ -450,20 +390,7 @@ async function getCampaignReports(token) {
 
 <p> </p>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h2 id="Get-Download-link-for-report-for-a-specific-date" data-renderer-start-pos="4198">Get Download link for report for a specific date</h2>
-
-
-
-\{/* unsupported_acf_block: api_endpoint_example {"acf_fc_layout":"api_endpoint_example","endpoint":"GET/v1/clients/{clientuuid\}/campaigns/\{campaignuuid\}/reports/\{reportId\}/{Date}"} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 #### Path parameters
 
@@ -473,12 +400,6 @@ async function getCampaignReports(token) {
 | CampaignUUID | String |  | ✓ | <p>The campaignUUID for which you want to obtain a list of report types.</p> |
 | ReportId | String |  | ✓ | <p>The numeric ID identifying the report type</p> |
 | Date | String |  | ✓ | <p>The date for which a download url should be generated. Format: YYYYMMDD</p> |
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```null
 async function getAccessToken() {

@@ -7,11 +7,6 @@ metadata:
 ---
 <p>Reset the specified card’s PIN. The random pin will be sent to the card bearer’s cell via text message.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
@@ -23,12 +18,6 @@ metadata:
 | transactionDate | String |  | ✓ | <p>Client generated / local Transaction Date to assist in identifying transactions on the client side</p> |
 | checksum | String |  | ✓ | <p>HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```xml
 <methodCall>
     <methodName>ResetPin</methodName>
@@ -95,11 +84,6 @@ metadata:
 ```
 
 <p> </p>
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -108,12 +92,6 @@ metadata:
 | resultCode | Integer | <p>Status code indicating transaction result</p> |
 | resultText | String | <p>Text indicating transaction result</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <methodCall>
     <methodName>ResetPin</methodName>
@@ -180,10 +158,5 @@ metadata:
 ```
 
 <p> </p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>

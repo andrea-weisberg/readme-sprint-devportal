@@ -40,14 +40,6 @@ metadata:
 <li><strong>Digitized Wallet ID </strong>– the 3 digit numeric code that identifies the Xpay App. Find a list of the Wallet IDs <a href="https://developer.sprint.paymentology.com/companion-api/tokenization2/token-lifecycle-management/#WID">here</a><em>. </em></li>
 </ul>
 
-
-
-\{/* unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":{"ID":213,"id":213,"title":"icon-secure-card3","filename":"icon-secure-card3.png","filesize":303,"url":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","link":"https://developer.sprint.paymentology.com/card-api/issue-card/icon-secure-card3/","alt":"","author":"1","description":"","caption":"","name":"icon-secure-card3","status":"inherit","uploaded_to":204,"date":"2020-04-02 16:39:05","modified":"2020-04-02 16:39:05","menu_order":0,"mime_type":"image/png","type":"image","subtype":"png","icon":"https://developer.sprint.paymentology.com/wp-includes/images/media/default.png","width":21,"height":21,"sizes":{"thumbnail":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","thumbnail-width":21,"thumbnail-height":21,"medium":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium-width":21,"medium-height":21,"medium_large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium_large-width":21,"medium_large-height":21,"large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","large-width":21,"large-height":21,"1536x1536":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","1536x1536-width":21,"1536x1536-height":21,"2048x2048":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","2048x2048-width":21,"2048x2048-height":21\}},"text":"<p><span style=\"font-weight: 400;\"> If the transaction did not reach Paymentology and was declined, this would not appear on the report.</span></p>\n"}]} */}
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h3><a id="FTRV2"></a>Version 2</h3>
 <p>Version 2 includes the following details:</p>
 <ul>
@@ -76,41 +68,12 @@ metadata:
 <li><strong>Payment Initiator</strong> – indicates whether a transaction was initiated by the Cardholder (CIT – Cardholder Initiated Transaction) or the Merchant (MIT – Merchant Initiated Transaction)</li>
 </ul>
 
-
-
-\{/* unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":{"ID":213,"id":213,"title":"icon-secure-card3","filename":"icon-secure-card3.png","filesize":303,"url":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","link":"https://developer.sprint.paymentology.com/card-api/issue-card/icon-secure-card3/","alt":"","author":"1","description":"","caption":"","name":"icon-secure-card3","status":"inherit","uploaded_to":204,"date":"2020-04-02 16:39:05","modified":"2020-04-02 16:39:05","menu_order":0,"mime_type":"image/png","type":"image","subtype":"png","icon":"https://developer.sprint.paymentology.com/wp-includes/images/media/default.png","width":21,"height":21,"sizes":{"thumbnail":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","thumbnail-width":21,"thumbnail-height":21,"medium":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium-width":21,"medium-height":21,"medium_large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium_large-width":21,"medium_large-height":21,"large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","large-width":21,"large-height":21,"1536x1536":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","1536x1536-width":21,"1536x1536-height":21,"2048x2048":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","2048x2048-width":21,"2048x2048-height":21\}},"text":"<p><span style=\"font-weight: 400;\"> If the transaction did not reach Paymentology and was declined, this would not appear on the report.</span></p>\n"}]} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>Report format</h2>
-
-
-
-\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":"FORMAT"\},\{"c":"FILE NAME"\},\{"c":"FREQUENCY"\},\{"c":"ACCESSIBILITY"\}],"caption":false,"body":[[\{"c":"CSV"\},\{"c":"DAILY REPORT: [CampaignUUID]/[CampaignName]_DailyAuthFailure_[YYYYMMDD].csv\nMONTHLY REPORT: [CampaignUUID]/failedtransactions_[CampaignName]_[YYYY-MM-DD-YYYY-MM-DD].csv"\},\{"c":"Daily & Monthly"\},\{"c":"HTTP get request or client SFTP folder"\}]]}} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h2>Report time frame</h2>
 
-
-
-\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":"UTC +2"\},\{"c":"UTC +7"\},\{"c":"REMARKS"\}],"caption":false,"body":[[\{"c":"06:30"\},\{"c":"11:30"\},{"c":"When the report is generated at 06:30 UTC+2 / 11:30 UTC+7 2020-09-10, the timeframe of all failed transactions captured in this report is from 2020-09-09 00:00:00 to 2020-09-09 11:59:59 in: <br>\n• System time zone UTC+2 <br>\n• Asia client time zone UTC+7 <br>\n• Merchant time zone"}]]}} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>Report sample</h2>
-<p><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-1538" src="https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Failed-transactions-report-Card-Final.png" alt="" width="1280" height="329" srcset="https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Failed-transactions-report-Card-Final.png 1280w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Failed-transactions-report-Card-Final-300x77.png 300w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Failed-transactions-report-Card-Final-1024x263.png 1024w, https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Failed-transactions-report-Card-Final-768x197.png 768w" sizes="auto, (max-width: 1280px) 100vw, 1280px" /></p>
-
-
-
-\{/* unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":{"ID":213,"id":213,"title":"icon-secure-card3","filename":"icon-secure-card3.png","filesize":303,"url":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","link":"https://developer.sprint.paymentology.com/card-api/issue-card/icon-secure-card3/","alt":"","author":"1","description":"","caption":"","name":"icon-secure-card3","status":"inherit","uploaded_to":204,"date":"2020-04-02 16:39:05","modified":"2020-04-02 16:39:05","menu_order":0,"mime_type":"image/png","type":"image","subtype":"png","icon":"https://developer.sprint.paymentology.com/wp-includes/images/media/default.png","width":21,"height":21,"sizes":{"thumbnail":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","thumbnail-width":21,"thumbnail-height":21,"medium":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium-width":21,"medium-height":21,"medium_large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","medium_large-width":21,"medium_large-height":21,"large":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","large-width":21,"large-height":21,"1536x1536":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","1536x1536-width":21,"1536x1536-height":21,"2048x2048":"https://developer.sprint.paymentology.com/wp-content/uploads/2020/04/icon-secure-card3.png","2048x2048-width":21,"2048x2048-height":21\}},"text":"<p><strong>Note: file will automatically download upon clicking link</strong></p>\n"}]} */}
-
+<p>**Failed-transactions-report-Card-Final.png IMAGE GOES HERE.**</p>
 
 <p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_DailyAuthFailure_YYYYMMDD.csv">CampaignName_DailyAuthFailure_YYYYMMDD.csv</a></p>
 <p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2024/10/CampaignName_DailyAuthFailure_YYYYMMDD-.csv">CampaignName_DailyAuthFailure_YYYYMMDD.csv V2 sample</a></p>

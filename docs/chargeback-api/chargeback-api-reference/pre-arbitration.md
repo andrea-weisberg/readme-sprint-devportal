@@ -7,14 +7,7 @@ metadata:
 ---
 <p>This method is used to submit a Pre-Arbitration case.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>Request/response fields and samples</h2>
-
-
 
 #### Path parameters
 
@@ -30,12 +23,6 @@ metadata:
 | clientReferenceNumber | String |  |  | <p>Client reference number.<br /> Use only when applicable, otherwise leave empty</p> |
 | caseNotes | String |  |  | <p>Case notes.<br /> Use only when applicable, otherwise leave empty</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```json
 {
     "claimId": "CLAIM_ID",
@@ -55,12 +42,6 @@ metadata:
 }
 
 ```
-
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -68,12 +49,6 @@ metadata:
 |---|---|---|
 | caseId | String | <p>Pre-arbitration case ID</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```json
 {
     "claimId": "CLAIM_ID",
@@ -94,19 +69,8 @@ metadata:
 
 ```
 
-
-
-
 <h4>Other response codes</h4>
 <p>Further response codes and details can be found <a href="https://developer.sprint.paymentology.com/chargeback-api/response-codes/">here</a>.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>Additional info</h2>
 
-
-
-\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":""\},\{"c":""\}],"caption":false,"body":[[\{"c":"HTTP Method"\},\{"c":"POST"\}],[\{"c":"URL_URI (SIT/UAT)"\},\{"c":"https://chargebacks.test.tutuka.cloud/client/prearbitration"\}],[\{"c":"HTTP Headers"\},\{"c":"Content-Type text/plain"\}],[\{"c":"Query String Parameters"\},\{"c":"-"\}],[\{"c":"Format"\},\{"c":"JSON"\}],[\{"c":"Authentication"\},\{"c":"Bearer BEARER_TOKEN"\}],[\{"c":"Successful Response Code"\},\{"c":"200"\}],[\{"c":"Error Response Code"\},\{"c":"500"\}],[\{"c":"Validation Error Response Code"\},\{"c":"422"\}]]}} */}

@@ -15,17 +15,6 @@ metadata:
 <li>When in doubt, type the data manually.</li>
 </ul>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-{/* unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":false,"text":"<p><strong>NB.</strong> <strong>During testing, avoid entering any personally identifiable information (PII), such as, user IDs, card numbers or email addresses.</strong></p>\n"}]} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>How to use XML Generator</h2>
 <ol>
 <li>Go to <a href="https://developer.sprint.paymentology.com/tools/xml-poster-generator/">XML Poster & Generator</a> under <a href="https://developer.sprint.paymentology.com/tools/">Tools</a></li>
@@ -37,11 +26,6 @@ metadata:
 <li>Wait for the “<strong>Transaction result pop-up</strong>” that will contain the generated XML – both unformatted (for transaction purposes) and formatted (for readability purposes)</li>
 </ol>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h2 id="intro">When to use XML Poster</h2>
 <p>You will use XML Poster to post requests created with the XML Generator tool to Paymentology only in cases where there is no other route to take.</p>
 <p>For example: When you start testing, you will not have a system in place to call the Companion Local API, so you can use this tool to post requests to the API directly – like when you test your first card.</p>
@@ -51,11 +35,6 @@ metadata:
 <li>The XML and checksum needs to be correct.</li>
 <li>It is advisable to use the XML Generator tool to create the XML in the first place, although you can also use the tool to check the validity of the XML created by your own system when you’re ready.</li>
 </ul>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h2>How to use XML Poster</h2>
 <ol>

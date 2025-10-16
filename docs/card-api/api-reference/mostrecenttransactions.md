@@ -11,11 +11,6 @@ metadata:
 <li>Transaction Count (The number of transaction that needs to be returned in the api call)</li>
 </ol>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
@@ -28,12 +23,6 @@ metadata:
 | transactionDate | Date |  | ✓ | <div class="param-single d-flex"> <div class="info"> <p>Starting date of the date range you wish to pull the transactions for. End date will be today’s date.</p> </div> </div> |
 | numTransactions | Integer |  | ✓ | <p>The number of transaction(s) that need to be returned</p> |
 | checksum | String |  | ✓ | <section class="tutuka-block tutuka-block--api-request"> <div class="api-reference"> <div class="api-reference__single"> <div class="params-wrapper"> <div class="param-single d-flex"> <div class="info"> <p>HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key</p> </div> </div> </div> </div> </div> </section> |
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -219,12 +208,6 @@ metadata:
 </methodResponse>
 
 ```
-
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -241,12 +224,6 @@ metadata:
 | trackingNumber | String | <p>Echo</p> |
 | balance | Array | <p>Array includes:</p> <p><strong>currency<br /> </strong><strong>amount<br /> </strong><strong>pocketUUID</strong></p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
@@ -431,11 +408,5 @@ metadata:
 </methodResponse>
 
 ```
-
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">BACK TO CARD API MENU</a></p>

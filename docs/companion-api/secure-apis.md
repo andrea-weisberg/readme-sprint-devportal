@@ -9,19 +9,9 @@ metadata:
 <p>To achieve this we offer Secure API methods to support end to end encryption of data.</p>
 <p><span style="color: #ff0000;"><strong>IMPORTANT:</strong></span> <span style="color: #000000;">Specific campaign settings are required for these Secure API’s. To have these enabled, please reach out to your Client Executive or lodge a request via our <a href="https://support.paymentology.com/">Customer Support Platform</a>.</span></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>Encryption details</h2>
 <p>Information related to card data (PAN, CVV2, PIN etc.) are sensitive and our Secure API methods are able to hide that information through encryption.</p>
 <p>This encryption uses RSA and AES algorithm. RSA is an asymmetric key crytography system that is used in this context to encrypt the AES key with the RSA public key, and to decrypt the AES key using the RSA private key.</p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <h3>Encryption steps</h3>
 <ol>
@@ -48,11 +38,6 @@ metadata:
 </li>
 </ol>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>Keys</h2>
 <h3>RSA KeyPair</h3>
 <p>This is RSA key of size 1024 each (rsa_public and rsa_private).</p>
@@ -72,22 +57,10 @@ metadata:
 <h3>IV</h3>
 <p>The length of IV key will be dependent on the mode of encryption used.</p>
 
-
-
 <h3>Algorithm used for protecting sensitive data</h3>
-
-
-
-\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":""\},\{"c":""\}],"caption":false,"body":[[\{"c":"Algorithm"\},\{"c":"AES"\}],[\{"c":"Key size options"\},\{"c":"256 bits (32 bytes)"\}],[\{"c":"Preferred key size"\},\{"c":"256 bits (32 bytes)"\}],[\{"c":"Transformation"\},\{"c":"AES/GCM/NoPadding (or AES/CBC/PKCS5Padding if considered)"\}],[\{"c":"Additional parameters"\},\{"c":"Initialization vector (IV)"\}],[\{"c":"Initialization vector sizes (AES/GCM/NoPadding)"\},\{"c":"The length of IV key will be dependent on the mode of encryption used."\}],[\{"c":"Initialization vector sizes (AES/CBC/PKCS5Padding)"\},\{"c":"The length of IV key will be dependent on the mode of encryption used."\}],[\{"c":"AES key generation"\},\{"c":"Preferred method is to use Java KeyGenerator class, doing it with only a random generator may result in weak keys."\}],[\{"c":"IV generation"\},\{"c":"Preferred method is to use Java SecureRandom() implementation."\}]]}} */}
-
 
 <h3>Algorithm used for protecting keys</h3>
 <p>When we talk about encrypting/decrypting keys the correct terminology is the wrapping or unwrapping of a key. There are algorithms that are specifically created for wrapping/unwrapping keys.</p>
-
-
-
-\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":""\},\{"c":""\}],"caption":false,"body":[[\{"c":"Algorithm"\},\{"c":"RSA"\}],[\{"c":"Key size options"\},\{"c":"1024, 2048, 3072, 4096 bits."\}],[\{"c":"Preferred key size"\},\{"c":"2048 bits"\}],[\{"c":"Transformations"\},\{"c":"RSA/ECB/OAEPWithSHA-256AndMGF1Padding or RSA/ECB/OAEPWithSHA-512AndMGF1Padding."\}],[\{"c":"Additional parameters for the algorithm"\},\{"c":"OAEP configuration. Specified during wrapping/unwrapping."\}],[\{"c":"RSA keypair generation"\},\{"c":"Use Java KeyPairGenerator."\}]]}} */}
-
 
 <h3>Important notes</h3>
 <ul>
@@ -116,11 +89,6 @@ new OAEPParameterSpec(
 </ul>
 <p>If possible and necessary, code samples can be provided.</p>
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
 <h2>API methods using card data encryption</h2>
 <p><span style="color: #ff0000;"><strong>REMINDER:</strong></span> <span style="color: #000000;">These API methods contain PCI sensitive information.</span></p>
 <h3>API methods with encrypted data in the response</h3>
@@ -138,6 +106,3 @@ new OAEPParameterSpec(
 <li><a href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/createlinkedcard/">CreateLinkedCard</a> – <code class="code cc-1o5d2cw" data-renderer-mark="true">cardNumber</code>, <code class="code cc-1o5d2cw" data-renderer-mark="true">cvv2</code> and  <code class="code cc-1o5d2cw" data-renderer-mark="true">expiryDate</code> will be encrypted in the response. Note: this is only applicable if the campaign setting “Companion API Return Masked PAN for Create Methods” is set to  false.</li>
 </ul>
 
-
-
-{/* spacing: desktop=20, mobile=10 */}

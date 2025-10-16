@@ -7,11 +7,6 @@ metadata:
 ---
 <p>Provides a method to check if the specified amount was deducted from a card.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 #### Path parameters
 
 | Parameter | Type | Limits | Required | Description |
@@ -23,12 +18,6 @@ metadata:
 | referenceID | String | 1-255 characters | ✓ | <p>Transaction ID number refering to the Authorisation to check.</p> |
 | referenceDate | Date |  | ✓ | <p>Transaction date refering to the Authorisation to check.</p> |
 | checksum | String |  | ✓ | <p>HMAC-SHA1 hashed signature of the concatenated method name with all argument values using the terminal password as private key.</p> |
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -126,11 +115,6 @@ metadata:
 
 <p> </p>
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
 #### Response schema
 
 | Field | Type | Description |
@@ -141,12 +125,6 @@ metadata:
 | clientTransactionID | String | <p>Echo of the incoming value.</p> |
 | resultCode | Integer | <p>Status code indicating the transaction result.</p> |
 | resultText | String | <p>Text indicating the transaction result.</p> |
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -242,7 +220,3 @@ metadata:
 
 ```
 
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}

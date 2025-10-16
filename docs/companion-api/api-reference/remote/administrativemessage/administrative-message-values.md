@@ -18,34 +18,12 @@ metadata:
 <li><a href="#replacement">digitization.event.Replacement</a></li>
 </ul>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h2><strong><a id="activationmethods"></a>digitization.activationmethods</strong></h2>
 <p>This event occurs at the beginning of the token provisioning process. This message signals that a token provision has been made and requires verification method in order to push the OTP. The type of method will need to be passed as well as the data for the method.<br />
 KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’ = 915′, digitization path’ = 929, ‘wallet recommendation’ = 930,’tokenization pan source’ = 931.</p>
 <p><strong>For more information on KLV data, click <a href="https://developer.sprint.paymentology.com/companion-api/klv-lookup/">here</a></strong></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Activation methods","table":{"use_header":true,"header":[{"c":"Value"\},\{"c":"Method"\}],"caption":false,"body":[[\{"c":"1"\},\{"c":"Masked mobile phone number"\}],[\{"c":"2"\},\{"c":"Masked email address"\}],[\{"c":"3"\},\{"c":"Call to automated call center initiated by cardholder"\}],[\{"c":"4"\},\{"c":"Call to staffed call center initiated by cardholder"\}],[\{"c":"5"\},\{"c":"Website"\}],[\{"c":"6"\},\{"c":"Mobile application"\}],[\{"c":"7"\},\{"c":"Issuer voice call to cardholder phone"\}]]}} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h4>Request</h4>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```xml
 <?xml version="1.0"?>
@@ -636,17 +614,9 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
 
 <h4>Response</h4>
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -1236,29 +1206,13 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h2><strong><a id="activation"></a>digitization.activation</strong></h2>
 <p>The activation code that Paymentology will receive from MDES. Paymentology will send this code in the AdministrativeMessage to the client so that the client can pass on the activation code to the cardholder to input in app.</p>
 <p>KLV data – ‘digitization activation’ (activation code) = 901, ‘digitization activation method type’ = 902, ‘digitization activation method value’ = 903, ‘digitization activation expiry’ = 904, ‘digitized token requestor id’ = 915. </p>
 <p><strong>For more information on KLV data, click <a href="https://developer.sprint.paymentology.com/companion-api/klv-lookup/">here</a></strong></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h4>Request</h4>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```xml
 <?xml version="1.0"?>
@@ -1849,17 +1803,9 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
 
 <h4>Response</h4>
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -2449,29 +2395,13 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h2><strong><a id="complete"></a>digitization.complete</strong></h2>
 <p><span style="font-weight: 400;"> MDES sends a notification to the Issuer confirming that the token creation is completed.</span></p>
 <p>KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digitized device id’ = 910, ‘digitized pan expiry’ = 911, ‘digitized fpan masked’ = 912, ‘Token Unique Reference’ = 913, ‘Digitized Token Requestor ID’ = 915, ‘Digitization event type’ = 923 , ‘Digitization event reason code’ = 924.</p>
 <p><strong>For more information on KLV data, click <a href="https://developer.sprint.paymentology.com/companion-api/klv-lookup/">here</a></strong></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h4>Request</h4>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```xml
 <?xml version="1.0"?>
@@ -3062,17 +2992,9 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
 
 <h4>Response</h4>
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -3662,11 +3584,6 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h2><strong><a id="eventdeleted"></a>digitization.event.Deleted</strong></h2>
 <p><span style="font-weight: 400;">Informs the wallet about the removal of a token.</span></p>
@@ -3674,18 +3591,7 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 <p><strong>For more information on KLV data, click <a href="https://developer.sprint.paymentology.com/companion-api/klv-lookup/">here</a></strong></p>
 <p><em><span style="font-weight: 400;">NB. Token deactivation for any other wallet program will result in the deactivation message being sent to the client and the token being deactivated, preventing further transactions being processed.</span></em></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h4>Request</h4>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```xml
 <?xml version="1.0"?>
@@ -4276,17 +4182,9 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
 
 <h4>Response</h4>
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -4876,29 +4774,13 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h2><strong><a id="deletedfromdevice"></a>digitization.event.Deleted_from_device</strong></h2>
 <p><span style="font-weight: 400;">The account holder deletes their token from the wallet program on their device.</span></p>
 <p>KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digitized device id’ = 910, ‘digitized pan expiry’ = 911, ‘digitized fpan masked’ = 912, ‘Token Unique Reference’ = 913, ‘Digitized Token Requestor ID’ = 915, ‘Digitization event type’ = 923 , ‘Digitization event reason code’ = 924.</p>
 <p><strong>For more information on KLV data, click <a href="https://developer.sprint.paymentology.com/companion-api/klv-lookup/">here</a></strong></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h4>Request</h4>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```xml
 <?xml version="1.0"?>
@@ -5489,17 +5371,9 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
 
 <h4>Response</h4>
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -6089,11 +5963,6 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h2><strong><a id="stopped"></a>digitization.event.Stopped</strong></h2>
 <p><span style="font-weight: 400;">When a token has been stopped.</span><span style="font-weight: 400;"><br />
@@ -6101,18 +5970,7 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 <p>KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digitized device id’ = 910, ‘digitized pan expiry’ = 911, ‘digitized fpan masked’ = 912, ‘Token Unique Reference’ = 913, ‘Digitized Token Requestor ID’ = 915, ‘Digitization event type’ = 923 , ‘Digitization event reason code’ = 924.</p>
 <p><strong>For more information on KLV data, click <a href="https://developer.sprint.paymentology.com/companion-api/klv-lookup/">here</a></strong></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h4>Request</h4>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```xml
 <?xml version="1.0"?>
@@ -6703,17 +6561,9 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
 
 <h4>Response</h4>
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -7303,29 +7153,13 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h2><strong><a id="digitized"></a>digitization.event.Digitized</strong></h2>
 <p>When a stopped token is reactivated.</p>
 <p>KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digitized device id’ = 910, ‘digitized pan expiry’ = 911, ‘digitized fpan masked’ = 912, ‘Token Unique Reference’ = 913, ‘Digitized Token Requestor ID’ = 915, ‘Digitization event type’ = 923 , ‘Digitization event reason code’ = 924.</p>
 <p><strong>For more information on KLV data, click <a href="https://developer.sprint.paymentology.com/companion-api/klv-lookup/">here</a></strong></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h4>Request</h4>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```xml
 <?xml version="1.0"?>
@@ -7916,17 +7750,9 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
 
 <h4>Response</h4>
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -8516,29 +8342,13 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h2><strong><a id="exception"></a>digitization.event.Digitization_Exception</strong></h2>
 <p><span style="font-weight: 400;">When the activation code retries have been exceeded, an expired activation code was used, an invalid activation code was used, or an incorrect activation code has been entered</span></p>
 <p>KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digitized device id’ = 910, ‘digitized pan expiry’ = 911, ‘digitized fpan masked’ = 912, ‘Token Unique Reference’ = 913, ‘Digitized Token Requestor ID’ = 915, ‘Digitization event type’ = 923 , ‘Digitization event reason code’ = 924.</p>
 <p><strong>For more information on KLV data, click <a href="https://developer.sprint.paymentology.com/companion-api/klv-lookup/">here</a></strong></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h4>Request</h4>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```xml
 <?xml version="1.0"?>
@@ -9129,17 +8939,9 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
 
 <h4>Response</h4>
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -9729,29 +9531,13 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h2><strong><a id="replacement"></a>digitization.event.Replacement</strong></h2>
 <p><span style="font-weight: 400;">Token is re-digitized or replaced (e.g. token expiry date update) and can only be done via the device.</span></p>
 <p>KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digitized device id’ = 910, ‘digitized pan expiry’ = 911, ‘digitized fpan masked’ = 912, ‘Token Unique Reference’ = 913, ‘Digitized Token Requestor ID’ = 915, ‘Digitization event type’ = 923 , ‘Digitization event reason code’ = 924.</p>
 <p><strong>For more information on KLV data, click <a href="https://developer.sprint.paymentology.com/companion-api/klv-lookup/">here</a></strong></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h4>Request</h4>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```xml
 <?xml version="1.0"?>
@@ -10342,17 +10128,9 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
 
 <h4>Response</h4>
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -10942,19 +10720,8 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 ```
 
 <p> </p>
-
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
 
 <h1>How to Test</h1>
 <p>The Wallet side is expected to respond to the messages above with approval, meaning response code 1.</p>
 <p><em><strong>Note:</strong></em> During the testing session, the tester from Paymentology will manually post mock messages to your wallet and expect approval response in return.</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"","table":{"use_header":true,"header":[{"c":"Test Case"\},\{"c":"Description"\},\{"c":"Expected Result"\}],"caption":false,"body":[[\{"c":"Digitization activation methods"\},\{"c":"Paymentology informs wallet there is provisioning activity"\},\{"c":"Approval - Code 1"\}],[\{"c":"Digitization activation "\},\{"c":"Paymentology sends OTP to wallet"\},\{"c":"Approval - Code 1"\}],[\{"c":"Digitization complete"\},\{"c":"Paymentology informs wallet about the completion of provisioning process"\},\{"c":"Approval - Code 1"\}],[\{"c":"Digitization event (Deleted from device)"\},\{"c":"Paymentology informs wallet a card has been removed from a device"\},\{"c":"Approval - Code 1"\}],[\{"c":"Digitization event (Stopped)"\},\{"c":"Paymentology informs wallet that a token has been suspended"\},\{"c":"Approval - Code 1"\}],[\{"c":"Digitization event (Digitized)"\},\{"c":"Paymentology informs wallet that a suspended token has been resumed"\},\{"c":"Approval - Code 1"\}],[\{"c":"Digitization event (Digitization Exception)"\},\{"c":"Paymentology informs the wallet that there is an error during the provisioning process"\},\{"c":"Approval - Code 1"\}],[\{"c":"Digitization event (Deleted)"\},\{"c":"Paymentology informs the wallet that a token has been removed"\},\{"c":"Approval - Code 1"\}]]}} */}

@@ -32,11 +32,6 @@ metadata:
 <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">MCC (Merchant Category Code)</span></li>
 </ul>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2><b>How to Integrate Transaction Stream</b></h2>
 <p><span style="font-weight: 400;">Paymentology provides the Events Authority API to allow you to integrate the Transaction Stream service into your use case. </span></p>
 <p><span style="font-weight: 400;">The API lets you observe and ingest information about transactional events, as they happen and are processed. It is implemented as a REST HTTP API using a custom authentication mechanism. The API connection is secured using TLS. </span></p>
@@ -55,11 +50,6 @@ metadata:
 </ul>
 <p><span style="font-weight: 400;">Let’s talk about the steps in more detail.</span></p>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h3><b>Step 1: Get authentication data </b></h3>
 <p><span style="font-weight: 400;">First, you need to authenticate against the events system and get session and listening endpoint information before consuming the PubNub API.</span></p>
 <p><span style="font-weight: 400;">So, you need to make a GET request to Paymentology’s</span><span style="font-weight: 400;"> PubNub Authenticate REST API.</span></p>
@@ -70,12 +60,6 @@ metadata:
 <p><a href="https://api.tutuka.com/pubnub/json.cfm?method=Authenticate&deviceID=DUNNE_PC&transactionID=49716b6b-1cfa-4355-bef3-1e71281c1862&transactionDate=2017-02-01T12%3A37%3A20.108%2B02%3A00&terminalID=0090424741&checksum=54CDCAD914E6E97E648F3DF1BA64F41C2C441862"><b>https://api.tutuka.com/pubnub/json.cfm?method=Authenticate&deviceID=DUNNE_PC&transactionID=49716b6b-1cfa-4355-bef3-1e71281c1862&transactionDate=2017-02-01T12%3A37%3A20.108%2B02%3A00&terminalID=0090424741&checksum=54CDCAD914E6E97E648F3DF1BA64F41C2C441862</b></a></p>
 <p> </p>
 <p><span style="font-weight: 400;">The above request will give the following response:</span></p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```null
 {
@@ -92,11 +76,6 @@ metadata:
 ```
 
 <p> </p>
-
-
-
-{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} */}
-
 
 <h3><b>Step 2: Subscribe users to channel</b></h3>
 <p><span style="font-weight: 400;">Next, you need to use the above response data to subscribe users to your channel so that they can receive notifications sent to that channel.</span></p>
@@ -121,11 +100,6 @@ metadata:
 <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">The second element is an array of messages delivered from the subscribed channel.</span></li>
 </ul>
 <p> </p>
-
-
-
-{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"} */}
-
 
 <h2><b>Troubleshooting Transaction Stream</b></h2>
 <p><span style="font-weight: 400;">Importantly, you should use the Transaction Stream service for informational purposes only. The messages are not preserved anywhere, and in case of connectivity issues or other technical hiccups, they may be lost permanently.</span></p>

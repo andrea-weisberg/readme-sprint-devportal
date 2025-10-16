@@ -50,25 +50,9 @@ metadata:
 </ol>
 <p>This is when Paymentology informs the wallet that a token has been re-digitized or replaced. For example, a token expiry date can be updated based on the new replaced card.</p>
 
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h2>Tokenization with Digital Wallets</h2>
 <p>To allow for tokenization, issuers have historically needed to contract and integrate with each service or wallet separately. Every digital wallet has different capabilities for enabling tokenization.</p>
 <p>On the Sprint platform, these are the IDs associated with the various digital wallet programs:</p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-\{/* unsupported_acf_block: table_block {"acf_fc_layout":"table_block","table_caption":"Digital Wallet IDs","table":{"use_header":true,"header":[{"c":"WALLET NAME"\},\{"c":"WID (WALLET ID)"\}],"caption":false,"body":[[\{"c":"Apple Pay"\},\{"c":"103"\}],[\{"c":"Samsung Pay"\},\{"c":"217"\}],[\{"c":"Google Pay"\},\{"c":"216"\}],[\{"c":"M4M"\},\{"c":"327"\}]]}} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p>Note that a 3-digit numeric value represents the IDs.</p>
 <p>Notably, the digital wallets handle token provisioning differently. For example, Apple Pay and Google Pay work in the same way. So, for manual provisioning, an OTP will be issued, and they’ll be no OTP for push provisioning.</p>

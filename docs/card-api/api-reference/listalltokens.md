@@ -7,16 +7,6 @@ metadata:
 ---
 <p>Returns all the tokens (active and inactive) linked to a card</p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
@@ -338,11 +328,6 @@ metadata:
 ```
 
 <p> </p>
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 #### Response schema
 
@@ -352,12 +337,6 @@ metadata:
 | resultText | String | <p>Status text indicating result</p> |
 | tokens | Array | <p>The tokens linked to this card. Array includes:</p> <p>DeviceName<br /> ProvisioningStatusCode<br /> DigitizationRequestDateTime<br /> TokenType<br /> ExpirationDate<br /> ProvisioningStatusDescription<br /> TokenActivatedDateTime<br /> TokenRequestorName<br /> WalletID<br /> DeviceId<br /> TokenUniqueReference<br /> DeviceType<br /> CurrentStatusDescription</p> |
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodCall>
@@ -679,10 +658,5 @@ metadata:
 ```
 
 <p> </p>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API Menu</a></p>

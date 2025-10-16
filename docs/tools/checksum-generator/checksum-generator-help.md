@@ -13,17 +13,6 @@ metadata:
 <p>The above would have a request data string (minus the checksum itself which of course isn’t an input to the calculation) of:</p>
 <p><code>Status100123ref4555612320170223T12:00:00</code></p>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-{/* unsupported_acf_block: info_block {"acf_fc_layout":"info_block","layout":"Icon","info_repeater":[{"tag_text":"","icon":false,"text":"<p><strong>NB.</strong> <strong>During testing, avoid entering any personally identifiable information (PII), such as, user IDs, card numbers or email addresses.</strong></p>\n"}]} */}
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h2>How to use Checksum Generator</h2>
 <ol>
 <li>Go to <a href="https://developer.sprint.paymentology.com/tools/checksum-generator/">Checksum Generator</a> under <a href="https://developer.sprint.paymentology.com/tools/">Tools</a></li>

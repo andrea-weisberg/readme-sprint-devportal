@@ -17,14 +17,7 @@ metadata:
 <li>The Card Manufacturer then decrypts the PIN block as Format 0.</li>
 </ol>
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h3>Request details</h3>
-
-
 
 #### Path parameters
 
@@ -45,15 +38,7 @@ metadata:
 | transactionDate | Date |  | ✓ | <p>Client generated / local Transaction Date to assist in identifying transactions on the client side</p> |
 | checksum | String |  | ✓ | <p>HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key</p> |
 
-
-
 <h4>Code sample</h4>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```xml
 <?xml version="1.0"?>
@@ -211,13 +196,11 @@ public class PINEncryptExample {
         return getPinFromPinBlock(Hex.encodeHexString(decrypted).toUpperCase());
     }
 
-
     public static void main(String args[]) throws Exception {
         String plainKey = "";
         String pin = "";
         String algorithm = "DESede";
         String transformation = "DESede/ECB/Nopadding";
-
 
         if(plainKey.length() != 32 && plainKey.length() != 48) throw new InvalidParameterException("the key argument needs to be either 32 or 48 characters");
 
@@ -269,14 +252,7 @@ public class PINEncryptExample {
 
 <p> </p>
 
-
-
 <h4><a id="encryption"></a>pinBlock PIN encryption</h4>
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 <p>The Java example snippet below is to be used to help perform the PIN encryption for the PIN that is to be inserted into the CardOrderWithPinBlock API request call.</p>
 <ul>
@@ -293,12 +269,6 @@ public class PINEncryptExample {
 </li>
 </ol>
 
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
-
-
 ```xml
 <?xml version="1.0"?>
 <methodCall>
@@ -455,13 +425,11 @@ public class PINEncryptExample {
         return getPinFromPinBlock(Hex.encodeHexString(decrypted).toUpperCase());
     }
 
-
     public static void main(String args[]) throws Exception {
         String plainKey = "";
         String pin = "";
         String algorithm = "DESede";
         String transformation = "DESede/ECB/Nopadding";
-
 
         if(plainKey.length() != 32 && plainKey.length() != 48) throw new InvalidParameterException("the key argument needs to be either 32 or 48 characters");
 
@@ -511,21 +479,7 @@ public class PINEncryptExample {
 
 ```
 
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
-\{/* unsupported_acf_block: line_separator {"acf_fc_layout":"line_separator"\} */}
-
-
 <h3>Response details</h3>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
 
 #### Response schema
 
@@ -534,18 +488,7 @@ public class PINEncryptExample {
 | resultCode | Integer |  |
 | resultText | String | <p>Text used to accompany the resultCode and provide further detail of the transaction result.</p> |
 
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 <h4>Code sample</h4>
-
-
-
-\{/* spacing: desktop=20, mobile=10 */\}
-
-
 
 ```xml
 <?xml version="1.0"?>
@@ -703,13 +646,11 @@ public class PINEncryptExample {
         return getPinFromPinBlock(Hex.encodeHexString(decrypted).toUpperCase());
     }
 
-
     public static void main(String args[]) throws Exception {
         String plainKey = "";
         String pin = "";
         String algorithm = "DESede";
         String transformation = "DESede/ECB/Nopadding";
-
 
         if(plainKey.length() != 32 && plainKey.length() != 48) throw new InvalidParameterException("the key argument needs to be either 32 or 48 characters");
 
@@ -760,10 +701,5 @@ public class PINEncryptExample {
 ```
 
 <p> </p>
-
-
-
-{/* spacing: desktop=20, mobile=10 */}
-
 
 <p><a class="btn btn--primary" href="https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/">Back to Local API menu</a></p>
