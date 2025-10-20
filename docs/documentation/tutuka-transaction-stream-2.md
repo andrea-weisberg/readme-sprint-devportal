@@ -82,7 +82,7 @@ These are the steps to follow to implement the Transaction Stream feature into y
 
 Let’s talk about the steps in more detail.
 
-### **step 1: Get authentication data**
+### step 1: Get authentication data
 
 First, you need to authenticate against the events system and get session and listening endpoint information before consuming the PubNub API.
 
@@ -111,7 +111,7 @@ The above request will give the following response:
 }
 ```
 
-### **step 2: Subscribe users to channel**
+### step 2: Subscribe users to channel
 
 Next, you need to use the above response data to subscribe users to your channel so that they can receive notifications sent to that channel.
 
@@ -137,7 +137,7 @@ As you can see above, the response is an object that contains two elements:
 - The first element is an object consisting of two values: **t**—timetoken and **r**—region.
 - The second element is an array of messages delivered from the subscribed channel.
 
-## **Troubleshooting Transaction Stream**
+## Troubleshooting Transaction Stream
 
 Importantly, you should use the Transaction Stream service for informational purposes only. The messages are not preserved anywhere, and in case of connectivity issues or other technical hiccups, they may be lost permanently.
 
