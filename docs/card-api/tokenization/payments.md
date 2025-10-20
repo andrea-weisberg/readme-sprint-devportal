@@ -1,0 +1,23 @@
+---
+title: Payments
+deprecated: false
+hidden: false
+metadata:
+  robots: index
+---
+<p>Today, digital devices are an increasingly popular way of making payments. Mobile phones, smartwatches, tablets, and other smart devices rely on tokenization to ensure payments are fast, simple, and secure.</p>
+<p>Consumers usually set up digital wallets, such as Apple Pay or Google Pay, on these devices to enable them to make payments. The digital wallets usually contain the bank details associated with their debit cards and credit cards. So, instead of using physical cards for paying for things, they can conveniently complete transactions via their digital devices.</p>
+<p>Digital wallet payments are supported by something called Near-Field Communication (NFC) technology. NFC, also known as contactless, is a set of communication protocols that allow two electronic devices to exchange data over a distance of 4 centimeters (about 2 inches) or less. One of the electronic devices is usually a portable device, such as a smartphone; the other is an NFC-enabled point of sale device.</p>
+<p>The portable devices are usually fitted with Secure Element (SE) (or NFC Secure Element) microprocessor chips for securely storing the cardholder’s data and undertaking cryptographic processing. When making a purchase, the SE emulates a contactless card using industry standard protocols to assist in authorizing the transaction.</p>
+<p>Tokenization adds a layer of security to digital devices payments. For example, if you want to use Apple Pay, you’ll need to start by loading your credit card details on your iPhone. Apple will then send the information to Paymentology, which is the card issuer. Paymentology, while coordinating with a card network, such as Mastercard, will replace your credit card details with a token.</p>
+<p>The token will then be transmitted back to Apple to be programmed into your device. So, you can use the token, instead of your real credit card information, for making payments.</p>
+<p>We’ll talk more about the tokenization process later.</p>
+
+<h2><b>Tokenization Participants</b></h2>
+<p>These are the main participants in the card tokenization process:</p>
+<ul>
+<li aria-level="1"><b>Cardholder</b> – owns the payment card to be tokenized. Cardholders give their card details to a payment service provider, which then requests the card network to issue a token for the card.</li>
+<li aria-level="1"><b>Payment service provider</b> – (such as an online retailer or a digital wallet) requests and stores tokens for the payment cards. Payment service providers, also called token requesters, undergo integration and certification with the card networks to use their tokenization services. This enables them to request and make purchases using tokens.</li>
+<li aria-level="1"><b>Card scheme</b> – (such as Mastercard and Visa) offers the infrastructure for generating, storing, and managing the tokens. Paymentology’s Sprint tokenization solution currently leverages the MDES (Mastercard Digital Enablement Service) and, coming soon, VTS (Visa Token Service) tokenization management services. MDES enables online retailers and payment service providers to offer tokenization services for simple, fast, and secure payments worldwide. Mastercard MDES serves as the Token Service Provider, or TSP, in the provisioning and authorization process.</li>
+<li aria-level="1"><b>Issuer processor</b> – (Paymentology) issues the payment cards from which the tokens are derived. Paymentology must authorize every request to provision tokens for the payment cards. This authorization process requires integrating and certifying Paymentology’s Sprint solution with the tokenization management services at the card network. Paymentology is currently integrated to Mastercard’s MDES for notifying clients of card provisioning as well as authorizations on cards that have been provisioned.</li>
+</ul>
