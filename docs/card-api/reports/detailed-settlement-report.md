@@ -5,112 +5,98 @@ hidden: false
 metadata:
   robots: index
 ---
-<div className="block translation current highlight" data-element="para" data-attr-xinfo-text="10760">
-<p><span style={{fontWeight: "400"}}>Paymentology also provides a detailed version of the summary Settlement Report. </span><span style={{fontWeight: "400"}}>The Detailed Settlement Report shows each settled transaction, which allows you to use the Transaction id to mark off settled transactions from authorized transactions. This also assists in confirming the values of the amounts in the summary Settlement Report. The network provides the Transaction id field during authorization. The same Transaction id for authorizations is included in the Detailed Settlement Report.</span></p>
-<p>There are 3 versions of this report available:<br  />
-<a href="#DSRV1">Version 1.0</a></p>
-<p><a href="#DSRV2.0">Version 2.0</a></p>
-<p><a href="#DSRV2.1">Version 2.1</a></p>
-<p><span style={{fontWeight: "400"}}>The report includes the following details:</span></p>
-<h3><a id="DSRV1"></a>Version 1</h3>
-<p>Contains the Chargeback report</p>
-<ul>
-<li style={{fontWeight: "400"}}><b>Transactions date</b> – <span style={{fontWeight: "400"}}>this is the settlement date of the transaction.</span></li>
-<li style={{fontWeight: "400"}}><b>The amount in the issuing currency (cardholder currency)</b> – <span style={{fontWeight: "400"}}>the actual amount is a decimal number.</span></li>
-<li style={{fontWeight: "400"}}><b>The amount in the settlement currency</b> – <span style={{fontWeight: "400"}}>it’s the amount passed over by the network. It should be multiplied by 100 to include cents. If the settlement currency does not have decimals, you’ll take the value as-is. </span></li>
-<li style={{fontWeight: "400"}}><b>Transaction narrative</b> – <span style={{fontWeight: "400"}}>it’s the merchant’s description.</span></li>
-<li><strong data-renderer-mark="true">Transaction description </strong>– this describes the transaction type, such as:
-<ul>
-<li>Deduct – shows all deductions at the time of settlement.</li>
-<li>Load – shows refunds.</li>
-<li>Chargeback – gives positive or negative amounts for chargebacks.</li>
-</ul>
-</li>
-<li style={{fontWeight: "400"}}><b>Transaction id</b> – <span style={{fontWeight: "400"}}>it’s a reference for the transaction. </span>
-<ul>
-<li style={{fontWeight: "400"}}><span style={{fontWeight: "400"}}>In most cases, the provided Transaction id will be the same Transaction id as the original authorization. It’s usually 7 to 10 digits. </span></li>
-<li style={{fontWeight: "400"}}><span style={{fontWeight: "400"}}>In case of refunds, there will be a unique Transaction id for each of them. The id does not relate to the original authorization. It’s also longer, up to 23 characters.</span></li>
-<li style={{fontWeight: "400"}}><span style={{fontWeight: "400"}}>In case of chargebacks, there will be a unique Transaction id for each of them. The id does not relate to the original authorization. It’s also longer, up to 23 characters.</span></li>
-</ul>
-</li>
-<li style={{fontWeight: "400"}}><b>Currency code</b> – <span style={{fontWeight: "400"}}>this is the currency code for the settlement currency.</span></li>
-<li style={{fontWeight: "400"}}><b>Transaction types</b> – <span style={{fontWeight: "400"}}>they can be marked as 00 (for POS transactions), 01 (for ATM transactions), or 02 (for adjustment transactions).</span></li>
-<li style={{fontWeight: "400"}}><b>Wallet reference</b> – <span style={{fontWeight: "400"}}>this column will be empty for Card API reporting.</span></li>
-<li style={{fontWeight: "400"}}><b>System date</b> – <span style={{fontWeight: "400"}}>this is Paymentology’s system date in UTC +2 time zone. </span></li>
-<li style={{fontWeight: "400"}}><b>Sequence number</b> – <span style={{fontWeight: "400"}}>this is a unique sequence card identifier showing a running number for the cards created.</span></li>
-<li style={{fontWeight: "400"}}><b>Tracking number</b> – <span style={{fontWeight: "400"}}>this is a unique 15-digit tracking identifier for the card. </span></li>
-<li style={{fontWeight: "400"}}><b>Settlement currency</b> – <span style={{fontWeight: "400"}}>this is the currency code for the settlement currency.</span></li>
-<li style={{fontWeight: "400"}}><b>Interchange amount</b> – <span style={{fontWeight: "400"}}>this is the individual amounts earned per transaction.</span></li>
-</ul>
-</div>
 
-<h3><a id="DSRV2.0"></a>Version 2.0</h3>
-<p>Does not contain the Chargeback record (see Transaction Description column).</p>
-<ul>
-<li style={{fontWeight: "400"}}><b>Transactions date</b> – <span style={{fontWeight: "400"}}>this is the settlement date of the transaction.</span></li>
-<li style={{fontWeight: "400"}}><b>The amount in the issuing currency (cardholder currency)</b> – <span style={{fontWeight: "400"}}>the actual amount is a decimal number.</span></li>
-<li style={{fontWeight: "400"}}><b>The amount in the settlement currency</b> – <span style={{fontWeight: "400"}}>it’s the amount passed over by the network. It should be multiplied by 100 to include cents. If the settlement currency does not have decimals, you’ll take the value as-is. </span></li>
-<li style={{fontWeight: "400"}}><b>Transaction narrative</b> – <span style={{fontWeight: "400"}}>it’s the merchant’s description.</span></li>
-<li><strong data-renderer-mark="true">Transaction description </strong>– this describes the transaction type, such as:
-<ul>
-<li>Deduct – shows all deductions at the time of settlement.</li>
-<li>Load – shows refunds.</li>
-</ul>
-</li>
-<li style={{fontWeight: "400"}}><b>Transaction id</b> – <span style={{fontWeight: "400"}}>it’s a reference for the transaction. </span>
-<ul>
-<li style={{fontWeight: "400"}}><span style={{fontWeight: "400"}}>In most cases, the provided Transaction id will be the same Transaction id as the original authorization. It’s usually 7 to 10 digits. </span></li>
-<li style={{fontWeight: "400"}}><span style={{fontWeight: "400"}}>In case of refunds, there will be a unique Transaction id for each of them. The id does not relate to the original authorization. It’s also longer, up to 23 characters.</span></li>
-<li style={{fontWeight: "400"}}><span style={{fontWeight: "400"}}>In case of chargebacks, there will be a unique Transaction id for each of them. The id does not relate to the original authorization. It’s also longer, up to 23 characters.</span></li>
-</ul>
-</li>
-<li style={{fontWeight: "400"}}><b>Currency code</b> – <span style={{fontWeight: "400"}}>this is the currency code for the settlement currency.</span></li>
-<li style={{fontWeight: "400"}}><b>Transaction types</b> – <span style={{fontWeight: "400"}}>they can be marked as 00 (for POS transactions), 01 (for ATM transactions), or 02 (for adjustment transactions).</span></li>
-<li style={{fontWeight: "400"}}><b>Wallet reference</b> – <span style={{fontWeight: "400"}}>this column will be empty for Card API reporting.</span></li>
-<li style={{fontWeight: "400"}}><b>System date</b> – <span style={{fontWeight: "400"}}>this is Paymentology’s system date in UTC +2 time zone. </span></li>
-<li style={{fontWeight: "400"}}><b>Sequence number</b> – <span style={{fontWeight: "400"}}>this is a unique sequence card identifier showing a running number for the cards created.</span></li>
-<li style={{fontWeight: "400"}}><b>Tracking number</b> – <span style={{fontWeight: "400"}}>this is a unique 15-digit tracking identifier for the card. </span></li>
-<li style={{fontWeight: "400"}}><b>Settlement currency</b> – <span style={{fontWeight: "400"}}>this is the currency code for the settlement currency.</span></li>
-<li style={{fontWeight: "400"}}><b>Interchange amount</b> – <span style={{fontWeight: "400"}}>this is the individual amounts earned per transaction.</span></li>
-</ul>
+Paymentology also provides a detailed version of the summary Settlement Report.  
+The Detailed Settlement Report shows each settled transaction, which allows you to use the Transaction ID to mark off settled transactions from authorized transactions. This also assists in confirming the values of the amounts in the summary Settlement Report. The network provides the Transaction ID field during authorization. The same Transaction ID for authorizations is included in the Detailed Settlement Report.
 
-<h3><a id="DSRV2.1"></a>Version 2.1</h3>
-<p>Builds off of V2.0 and does not contain the Chargeback record. Changes include additional information to <span style={{textDecoration: "underline"}}>TransactionNarrative</span> column delimited by pipes eg. TransactionNarrative|AdditionalTraceRef|CustomIdentifier</p>
-<ul>
-<li style={{fontWeight: "400"}}><b>Transactions date</b> – <span style={{fontWeight: "400"}}>this is the settlement date of the transaction.</span></li>
-<li style={{fontWeight: "400"}}><b>The amount in the issuing currency (cardholder currency)</b> – <span style={{fontWeight: "400"}}>the actual amount is a decimal number.</span></li>
-<li style={{fontWeight: "400"}}><b>The amount in the settlement currency</b> – <span style={{fontWeight: "400"}}>it’s the amount passed over by the network. It should be multiplied by 100 to include cents. If the settlement currency does not have decimals, you’ll take the value as-is. </span></li>
-<li style={{fontWeight: "400"}}><b>Transaction narrative|AdditionalTraceRef|CustomIdentifier</b> – <span style={{fontWeight: "400"}}>it’s the merchant’s description.</span></li>
-<li><strong data-renderer-mark="true">Transaction description </strong>– this describes the transaction type, such as:
-<ul>
-<li>Deduct – shows all deductions at the time of settlement.</li>
-<li>Load – shows refunds.</li>
-</ul>
-</li>
-<li style={{fontWeight: "400"}}><b>Transaction id</b> – <span style={{fontWeight: "400"}}>it’s a reference for the transaction. </span>
-<ul>
-<li style={{fontWeight: "400"}}><span style={{fontWeight: "400"}}>In most cases, the provided Transaction id will be the same Transaction id as the original authorization. It’s usually 7 to 10 digits. </span></li>
-<li style={{fontWeight: "400"}}><span style={{fontWeight: "400"}}>In case of refunds, there will be a unique Transaction id for each of them. The id does not relate to the original authorization. It’s also longer, up to 23 characters.</span></li>
-<li style={{fontWeight: "400"}}><span style={{fontWeight: "400"}}>In case of chargebacks, there will be a unique Transaction id for each of them. The id does not relate to the original authorization. It’s also longer, up to 23 characters.</span></li>
-</ul>
-</li>
-<li style={{fontWeight: "400"}}><b>Currency code</b> – <span style={{fontWeight: "400"}}>this is the currency code for the settlement currency.</span></li>
-<li style={{fontWeight: "400"}}><b>Transaction types</b> – <span style={{fontWeight: "400"}}>they can be marked as 00 (for POS transactions), 01 (for ATM transactions), or 02 (for adjustment transactions).</span></li>
-<li style={{fontWeight: "400"}}><b>Wallet reference</b> – <span style={{fontWeight: "400"}}>this column will be empty for Card API reporting.</span></li>
-<li style={{fontWeight: "400"}}><b>System date</b> – <span style={{fontWeight: "400"}}>this is Paymentology’s system date in UTC +2 time zone. </span></li>
-<li style={{fontWeight: "400"}}><b>Sequence number</b> – <span style={{fontWeight: "400"}}>this is a unique sequence card identifier showing a running number for the cards created.</span></li>
-<li style={{fontWeight: "400"}}><b>Tracking number</b> – <span style={{fontWeight: "400"}}>this is a unique 15-digit tracking identifier for the card. </span></li>
-<li style={{fontWeight: "400"}}><b>Settlement currency</b> – <span style={{fontWeight: "400"}}>this is the currency code for the settlement currency.</span></li>
-<li style={{fontWeight: "400"}}><b>Interchange amount</b> – <span style={{fontWeight: "400"}}>this is the individual amounts earned per transaction.</span></li>
-</ul>
+There are 3 versions of this report available:  
+[Version 1.0](#DSRV1)  
+[Version 2.0](#DSRV2.0)  
+[Version 2.1](#DSRV2.1)
 
-<h2>Report format</h2>
+The report includes the following details:
 
-<h2>Report time frame</h2>
+### Version 1.0 {#DSRV1}
 
-<h2>Report sample</h2>
-<p> </p>
-<p>**Detailed-Settlement-report-1.png IMAGE GOES HERE.**</p>
+Contains the Chargeback report.
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNameDailySettlementsYYYYMMDD-1.csv">CampaignNameDailySettlementsYYYYMMDD.csv</a></p>
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNameDailySettlementsYYYYMMDD-2.csv">CampaignNameDailySettlementsYYYYMMDDsample.csv</a></p>
+- **Transactions date** – this is the settlement date of the transaction.
+- **The amount in the issuing currency (cardholder currency)** – the actual amount is a decimal number.
+- **The amount in the settlement currency** – the amount passed over by the network. Multiply by 100 to include cents. If the settlement currency does not have decimals, take the value as-is.
+- **Transaction narrative** – the merchant’s description.
+- **Transaction description** – describes the transaction type:
+  - Deduct – shows all deductions at the time of settlement.
+  - Load – shows refunds.
+  - Chargeback – gives positive or negative amounts for chargebacks.
+- **Transaction ID** – reference for the transaction:
+  - Usually 7–10 digits, same as the original authorization.
+  - Refunds: unique ID, not related to the original authorization, up to 23 characters.
+  - Chargebacks: unique ID, not related to the original authorization, up to 23 characters.
+- **Currency code** – settlement currency code.
+- **Transaction types** – 00 (POS), 01 (ATM), 02 (adjustment).
+- **Wallet reference** – empty for Card API reporting.
+- **System date** – Paymentology’s system date in UTC +2.
+- **Sequence number** – unique sequence card identifier for created cards.
+- **Tracking number** – unique 15-digit tracking identifier for the card.
+- **Settlement currency** – currency code for the settlement currency.
+- **Interchange amount** – individual amounts earned per transaction.
+
+### Version 2.0 {#DSRV2.0}
+
+Does not contain the Chargeback record (see Transaction Description column).
+
+- **Transactions date** – settlement date of the transaction.
+- **The amount in the issuing currency (cardholder currency)** – decimal number.
+- **The amount in the settlement currency** – amount from the network, multiply by 100 for cents if needed.
+- **Transaction narrative** – merchant’s description.
+- **Transaction description** – describes the transaction type:
+  - Deduct – shows all deductions at the time of settlement.
+  - Load – shows refunds.
+- **Transaction ID** – reference for the transaction:
+  - Usually 7–10 digits, same as the original authorization.
+  - Refunds: unique ID, up to 23 characters.
+  - Chargebacks: unique ID, up to 23 characters.
+- **Currency code** – settlement currency code.
+- **Transaction types** – 00 (POS), 01 (ATM), 02 (adjustment).
+- **Wallet reference** – empty for Card API reporting.
+- **System date** – Paymentology’s system date in UTC +2.
+- **Sequence number** – unique sequence card identifier.
+- **Tracking number** – unique 15-digit tracking identifier for the card.
+- **Settlement currency** – currency code for settlement currency.
+- **Interchange amount** – amounts earned per transaction.
+
+### Version 2.1 {#DSRV2.1}
+
+Builds off V2.0 and does not contain the Chargeback record.  
+Changes include additional information in the **TransactionNarrative** column delimited by pipes, e.g. `TransactionNarrative|AdditionalTraceRef|CustomIdentifier`.
+
+- **Transactions date** – settlement date of the transaction.
+- **The amount in the issuing currency (cardholder currency)** – decimal number.
+- **The amount in the settlement currency** – amount from the network, multiply by 100 for cents if needed.
+- **Transaction narrative|AdditionalTraceRef|CustomIdentifier** – merchant’s description with appended identifiers.
+- **Transaction description** – describes the transaction type:
+  - Deduct – shows all deductions at the time of settlement.
+  - Load – shows refunds.
+- **Transaction ID** – reference for the transaction:
+  - Usually 7–10 digits, same as the original authorization.
+  - Refunds: unique ID, up to 23 characters.
+  - Chargebacks: unique ID, up to 23 characters.
+- **Currency code** – settlement currency code.
+- **Transaction types** – 00 (POS), 01 (ATM), 02 (adjustment).
+- **Wallet reference** – empty for Card API reporting.
+- **System date** – Paymentology’s system date in UTC +2.
+- **Sequence number** – unique sequence card identifier.
+- **Tracking number** – unique 15-digit tracking identifier.
+- **Settlement currency** – settlement currency code.
+- **Interchange amount** – amounts earned per transaction.
+
+## Report format
+
+## Report time frame
+
+## Report sample
+
+**Detailed-Settlement-report-1.png IMAGE GOES HERE.**
+
+[CampaignNameDailySettlementsYYYYMMDD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNameDailySettlementsYYYYMMDD-1.csv)  
+[CampaignNameDailySettlementsYYYYMMDDsample.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNameDailySettlementsYYYYMMDD-2.csv)

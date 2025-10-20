@@ -5,33 +5,31 @@ hidden: false
 metadata:
   robots: index
 ---
-<p>The daily statement report can be used by client’s to assist with their reconciliation and program activity reporting.</p>
-<p>The report includes the following details:</p>
-<ul>
-<li><strong>TransactionID</strong> – it’s a unique reference for the transaction.</li>
-<li><strong>TransactionDate</strong> – this is the date and time of the transaction.</li>
-<li><strong>TerminalTransactionDate</strong> – this is the data and time of the initial transaction if the transaction has settled.</li>
-<li><strong>VoucherNumber</strong> – the customer’s card number.</li>
-<li><strong>VoucherSequenceNumber</strong> -this is a unique sequence card identifier showing a running number for the cards created.</li>
-<li><strong>VoucherTrackingNumber</strong> – this is a unique 15-digit tracking identifier for the card.</li>
-<li><strong>TransactionAmount</strong> – the transaction value in cents. For example, a value of 4215 will mean 42.15. Amount is in the card campaign’s billing currency.</li>
-<li><strong>TransactionType</strong> – it can be marked as any of the following:
-<ul>
-<li>0 – POS transaction</li>
-<li>1 – ATM transaction</li>
-<li>2 – Adjustment</li>
-</ul>
-</li>
-<li><strong>MerchantCode</strong> – this is the identifier code of the merchant.</li>
-<li><strong>MerchantName</strong> – it’s the merchant’s name.</li>
-<li><strong>TransactionInfo</strong> – it’s the merchant’s or adjustment description.</li>
-<li><strong>TransactionOperator</strong> – it’s the identifier of the operator if manually processed and provided.</li>
-</ul>
 
-<h2>Report format</h2>
+The daily statement report can be used by clients to assist with reconciliation and program activity reporting.
 
-<h2>Report time frame</h2>
+The report includes the following details:
 
-<h2>Report sample</h2>
+- **TransactionID** – a unique reference for the transaction.
+- **TransactionDate** – the date and time of the transaction.
+- **TerminalTransactionDate** – the date and time of the initial transaction if the transaction has settled.
+- **VoucherNumber** – the customer’s card number.
+- **VoucherSequenceNumber** – a unique sequence card identifier showing a running number for the cards created.
+- **VoucherTrackingNumber** – a unique 15-digit tracking identifier for the card.
+- **TransactionAmount** – the transaction value in cents. For example, a value of 4215 means 42.15. Amount is in the card campaign’s billing currency.
+- **TransactionType** – can be marked as any of the following:
+  - 0 – POS transaction
+  - 1 – ATM transaction
+  - 2 – Adjustment
+- **MerchantCode** – the identifier code of the merchant.
+- **MerchantName** – the merchant’s name.
+- **TransactionInfo** – the merchant’s or adjustment description.
+- **TransactionOperator** – the identifier of the operator if manually processed and provided.
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_Statement_YYYYMMDD.csv">CampaignName_Statement_YYYYMMDD.csv</a></p>
+## Report format
+
+## Report time frame
+
+## Report sample
+
+[CampaignName_Statement_YYYYMMDD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_Statement_YYYYMMDD.csv)
