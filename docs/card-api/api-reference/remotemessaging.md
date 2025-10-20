@@ -5,6 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
+
 <p className="BodyA"><strong><span lang="EN-US">Remote messaging API allows Paymentology to call you to send administrative advice messages for Card API. These advice messages are sent using webhook-like schema. If you are integrating the service, you must create an endpoint accessible from the Paymentology network, which would be able to process the requests outlined below.</span></strong></p>
 
 <h2>How it works</h2>
@@ -43,18 +44,18 @@ metadata:
 
 #### Path parameters
 
-| Parameter | type | Limits | required | Description |
-|---|---|---|:--:|---|
-| challenge | String |  | ✓ | <p>OTP challenge code</p> |
-| customerReference | String |  | ✓ | <p>Customer reference this card is linked to</p> |
-| messageType | String |  | ✓ | <p>method name: 3DSecure.OTP</p> |
-| trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which OTP token is being sent</p> |
-| merchantDescription | String |  | ✓ | <p>name of or information related to the merchant</p> |
-| transactionAmount  | Integer |  | ✓ | <p>The monetary amount related the transaction</p> |
-| refCode | String |  |  | <p>Dynamic generated 4 letters code to be used along with OTP messages<br  /> <strong data-renderer-mark="true">if Campaign is configured to.</strong></p> |
-| currencyCode | Integer |  | ✓ | <p>The local currency code of the acquirer or source location of the transaction</p> |
+| Parameter           | type    | Limits | required | Description                                                                                                                                                |
+| ------------------- | ------- | ------ | :------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| challenge           | String  |        |    ✓     | <p>OTP challenge code</p>                                                                                                                                  |
+| customerReference   | String  |        |    ✓     | <p>Customer reference this card is linked to</p>                                                                                                           |
+| messageType         | String  |        |    ✓     | <p>method name: 3DSecure.OTP</p>                                                                                                                           |
+| trackingNumber      | String  |        |    ✓     | <p>Tracking number of the card, for which OTP token is being sent</p>                                                                                      |
+| merchantDescription | String  |        |    ✓     | <p>name of or information related to the merchant</p>                                                                                                      |
+| transactionAmount   | Integer |        |    ✓     | <p>The monetary amount related the transaction</p>                                                                                                         |
+| refCode             | String  |        |          | <p>Dynamic generated 4 letters code to be used along with OTP messages<br  /> <strong data-renderer-mark="true">if Campaign is configured to.</strong></p> |
+| currencyCode        | Integer |        |    ✓     | <p>The local currency code of the acquirer or source location of the transaction</p>                                                                       |
 
-```json
+````json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
 --header 'Content-type: application/json' \
@@ -115,7 +116,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 }
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
 --header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
@@ -151,24 +152,24 @@ console.log(httpHeader)
 ```,```js
 Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
-```
+````
 
 <p> </p>
 
 #### Response schema
 
-| Field | type | Description |
-|---|---|---|
-| challenge | String | <p>Echo</p> |
-| resultCode | String | <p>As described in response reference</p> |
-| customerReference | String | <p>Echo</p> |
-| messageType | String | <p>method name: 3DSecure.OTP</p> |
-| merchantDescription | String | <p>Echo</p> |
-| transactionAmount | Integer | <p>Echo</p> |
-| trackingNumber | String | <p>Echo</p> |
-| currencyCode | Integer | <p>Echo</p> |
+| Field               | type    | Description                               |
+| ------------------- | ------- | ----------------------------------------- |
+| challenge           | String  | <p>Echo</p>                               |
+| resultCode          | String  | <p>As described in response reference</p> |
+| customerReference   | String  | <p>Echo</p>                               |
+| messageType         | String  | <p>method name: 3DSecure.OTP</p>          |
+| merchantDescription | String  | <p>Echo</p>                               |
+| transactionAmount   | Integer | <p>Echo</p>                               |
+| trackingNumber      | String  | <p>Echo</p>                               |
+| currencyCode        | Integer | <p>Echo</p>                               |
 
-```json
+````json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
 --header 'Content-type: application/json' \
@@ -229,7 +230,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 }
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
 --header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
@@ -265,7 +266,7 @@ console.log(httpHeader)
 ```,```js
 Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
-```
+````
 
 <p> </p>
 
@@ -274,13 +275,13 @@ Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f4
 
 #### Path parameters
 
-| Parameter | type | Limits | required | Description |
-|---|---|---|:--:|---|
-| messageType | String |  | ✓ | <p>cardholder.maskedContactDetails</p> |
-| trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which OTP token is being sent</p> |
-| customerReference | String |  | ✓ | <p>Customer reference this card is linked to</p> |
+| Parameter         | type   | Limits | required | Description                                                           |
+| ----------------- | ------ | ------ | :------: | --------------------------------------------------------------------- |
+| messageType       | String |        |    ✓     | <p>cardholder.maskedContactDetails</p>                                |
+| trackingNumber    | String |        |    ✓     | <p>Tracking number of the card, for which OTP token is being sent</p> |
+| customerReference | String |        |    ✓     | <p>Customer reference this card is linked to</p>                      |
 
-```json
+````json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
 --header 'Content-type: application/json' \
@@ -341,7 +342,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 }
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
 --header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
@@ -377,18 +378,18 @@ console.log(httpHeader)
 ```,```js
 Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
-```
+````
 
 <p> </p>
 
 #### Response schema
 
-| Field | type | Description |
-|---|---|---|
-| resultCode | String | <p>Status code indicating transaction result</p> |
-| maskedContactDetails | Array | <p>Masked contact details (phone number and email address) linked with the card</p> |
+| Field                | type   | Description                                                                         |
+| -------------------- | ------ | ----------------------------------------------------------------------------------- |
+| resultCode           | String | <p>Status code indicating transaction result</p>                                    |
+| maskedContactDetails | Array  | <p>Masked contact details (phone number and email address) linked with the card</p> |
 
-```json
+````json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
 --header 'Content-type: application/json' \
@@ -449,7 +450,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 }
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
 --header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
@@ -485,7 +486,7 @@ console.log(httpHeader)
 ```,```js
 Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
-```
+````
 
 <p> </p>
 
@@ -494,16 +495,16 @@ Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f4
 
 #### Path parameters
 
-| Parameter | type | Limits | required | Description |
-|---|---|---|:--:|---|
-| messageType | String |  | ✓ | <p>method name: digitization.activation</p> |
-| trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which tokenization is being performed</p> |
-| customerReference | String |  | ✓ | <p>Customer reference this card is linked to</p> |
-| walletIdentifier | String |  | ✓ | <p>3-digit wallet identifier:</p> <ul> <li>103 – Apple Pay</li> <li>216 – Google Pay</li> <li>217 – Samsung Pay</li> <li>327 – Merchant tokenization program</li> </ul> |
-| challenge | String |  | ✓ | <p>OTP activation code</p> |
-| tokenRequestorID | String |  | ✓ | <p>The id assigned by the Token Service Provider to the Token Requestor</p> |
+| Parameter         | type   | Limits | required | Description                                                                                                                                                             |
+| ----------------- | ------ | ------ | :------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| messageType       | String |        |    ✓     | <p>method name: digitization.activation</p>                                                                                                                             |
+| trackingNumber    | String |        |    ✓     | <p>Tracking number of the card, for which tokenization is being performed</p>                                                                                           |
+| customerReference | String |        |    ✓     | <p>Customer reference this card is linked to</p>                                                                                                                        |
+| walletIdentifier  | String |        |    ✓     | <p>3-digit wallet identifier:</p> <ul> <li>103 – Apple Pay</li> <li>216 – Google Pay</li> <li>217 – Samsung Pay</li> <li>327 – Merchant tokenization program</li> </ul> |
+| challenge         | String |        |    ✓     | <p>OTP activation code</p>                                                                                                                                              |
+| tokenRequestorID  | String |        |    ✓     | <p>The id assigned by the Token Service Provider to the Token Requestor</p>                                                                                             |
 
-```json
+````json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
 --header 'Content-type: application/json' \
@@ -564,7 +565,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 }
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
 --header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
@@ -600,21 +601,21 @@ console.log(httpHeader)
 ```,```js
 Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
-```
+````
 
 #### Response schema
 
-| Field | type | Description |
-|---|---|---|
-| challenge | String | <p>Echo</p> |
-| resultCode | Integer | <p>As described in response reference</p> |
-| customerReference | String | <p>Echo</p> |
-| messageType | String | <p>Echo</p> |
-| walletIdentifier | String | <p>Echo</p> |
-| trackingNumber | String | <p>Echo</p> |
-| tokenRequesterId | String | <p>Echo</p> |
+| Field             | type    | Description                               |
+| ----------------- | ------- | ----------------------------------------- |
+| challenge         | String  | <p>Echo</p>                               |
+| resultCode        | Integer | <p>As described in response reference</p> |
+| customerReference | String  | <p>Echo</p>                               |
+| messageType       | String  | <p>Echo</p>                               |
+| walletIdentifier  | String  | <p>Echo</p>                               |
+| trackingNumber    | String  | <p>Echo</p>                               |
+| tokenRequesterId  | String  | <p>Echo</p>                               |
 
-```json
+````json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
 --header 'Content-type: application/json' \
@@ -675,7 +676,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 }
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
 --header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
@@ -711,7 +712,7 @@ console.log(httpHeader)
 ```,```js
 Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
-```
+````
 
 <h1><a id="event"></a>digitization.event</h1>
 <section id="tutuka-block-1" className="tutuka-block tutuka-block--text-full-width">
@@ -720,21 +721,21 @@ Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f4
 
 #### Path parameters
 
-| Parameter | type | Limits | required | Description |
-|---|---|---|:--:|---|
-| messageType | String |  | ✓ | <p>method name: digitization.event</p> |
-| eventType | String |  | ✓ | <p>MDES digitalization status:</p> <p>Digitized</p> <p>Stopped</p> <p>Deleted</p> <p>Digitization_exception</p> <p>Deleted_from_Device</p> <p>Replacement</p> <p>complete</p> |
-| trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which tokenization is being performed</p> |
-| customerReference | String |  | ✓ | <p>Customer reference the card is linked to</p> |
-| walletIdentifier | String |  | ✓ | <p>3-digit wallet identifier:</p> <p>103 – Apple Pay</p> <p>216 – Google Pay</p> <p>217 – Samsung Pay</p> <p>327 – Merchant tokenization program</p> |
-| digitizedDeviceIdentifier | String |  | ✓ | <p>Single digit device type identifier:</p> <p>1 – Mobile phone</p> <p>2 – Tablet</p> <p>3 – Watch</p> |
-| digitizedPan | String |  | ✓ | <p>The DPAN (Token)</p> |
-| digitizedPanExpiry | String |  | ✓ | <p>Expiry date of the DPAN</p> |
-| digitizedFpanMasked | String |  | ✓ | <p>Masked Funding Account PAN</p> |
-| digitizedTokenReference | String |  | ✓ | <p>Token reference</p> |
-| tokenRequestorId | String |  | ✓ | <p>The id assigned by the Token Service Provider to the Token Requestor</p> |
+| Parameter                 | type   | Limits | required | Description                                                                                                                                                                   |
+| ------------------------- | ------ | ------ | :------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| messageType               | String |        |    ✓     | <p>method name: digitization.event</p>                                                                                                                                        |
+| eventType                 | String |        |    ✓     | <p>MDES digitalization status:</p> <p>Digitized</p> <p>Stopped</p> <p>Deleted</p> <p>Digitization_exception</p> <p>Deleted_from_Device</p> <p>Replacement</p> <p>complete</p> |
+| trackingNumber            | String |        |    ✓     | <p>Tracking number of the card, for which tokenization is being performed</p>                                                                                                 |
+| customerReference         | String |        |    ✓     | <p>Customer reference the card is linked to</p>                                                                                                                               |
+| walletIdentifier          | String |        |    ✓     | <p>3-digit wallet identifier:</p> <p>103 – Apple Pay</p> <p>216 – Google Pay</p> <p>217 – Samsung Pay</p> <p>327 – Merchant tokenization program</p>                          |
+| digitizedDeviceIdentifier | String |        |    ✓     | <p>Single digit device type identifier:</p> <p>1 – Mobile phone</p> <p>2 – Tablet</p> <p>3 – Watch</p>                                                                        |
+| digitizedPan              | String |        |    ✓     | <p>The DPAN (Token)</p>                                                                                                                                                       |
+| digitizedPanExpiry        | String |        |    ✓     | <p>Expiry date of the DPAN</p>                                                                                                                                                |
+| digitizedFpanMasked       | String |        |    ✓     | <p>Masked Funding Account PAN</p>                                                                                                                                             |
+| digitizedTokenReference   | String |        |    ✓     | <p>Token reference</p>                                                                                                                                                        |
+| tokenRequestorId          | String |        |    ✓     | <p>The id assigned by the Token Service Provider to the Token Requestor</p>                                                                                                   |
 
-```json
+````json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
 --header 'Content-type: application/json' \
@@ -795,7 +796,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 }
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
 --header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
@@ -831,15 +832,15 @@ console.log(httpHeader)
 ```,```js
 Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
-```
+````
 
 #### Response schema
 
-| Field | type | Description |
-|---|---|---|
+| Field      | type   | Description                               |
+| ---------- | ------ | ----------------------------------------- |
 | resultCode | String | <p>As described in response reference</p> |
 
-```json
+````json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
 --header 'Content-type: application/json' \
@@ -900,7 +901,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 }
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
 --header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
@@ -936,7 +937,7 @@ console.log(httpHeader)
 ```,```js
 Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
-```
+````
 
 <h1><a id="activationmethods"></a>digitization.activationmethods</h1>
 <p>This message signals that a token provision has been made and requires a verification method in order to push the OTP validation. The type of method will need to be returned as well as the data for the method. At the moment only activation types 1 (mobile phone number) and 2 (cardholder’s email address) are supported.</p>
@@ -944,19 +945,19 @@ Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f4
 
 #### Path parameters
 
-| Parameter | type | Limits | required | Description |
-|---|---|---|:--:|---|
-| messageType | String |  | ✓ | <p>method name: digitization.activationmethods</p> |
-| trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which tokenization is being performed</p> |
-| customerReference | String |  | ✓ | <p>Customer reference the card is linked to</p> |
-| walletIdentifier | String |  | ✓ | <p>3-digit wallet identifier:</p> <ul> <li>103 – Apple Pay</li> <li>216 – Google Pay</li> <li>217 – Samsung Pay</li> <li>327 – Merchant tokenization program</li> </ul> |
-| tokenRequestorId | String |  | ✓ | <p>The id assigned by the Token Service Provider to the Token Requestor</p> |
-| digitizationPath  | String |  | ✓ | <p>Specifies which path was chosen based on our logic and rules: green, yellow, orange or red</p> |
-| digitizedDeviceType | String |  | ✓ | <p>Indicates the type of device used at the terminal.</p> |
-| walletRecommendation | String |  | ✓ | <p>Tokenization decision suggested by the wallet provider. One of the following values: decline, approve or require_additional_authentication</p> |
-| tokenizationPanSource  | String |  | ✓ | <p>Identifies the method which the cardholder is attempting to tokenize a primary account number. One of the following values: card_on_file, card_added_manually, card_added_via_application, existing_token_credential or card_added_via_browser</p> |
+| Parameter             | type   | Limits | required | Description                                                                                                                                                                                                                                           |
+| --------------------- | ------ | ------ | :------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| messageType           | String |        |    ✓     | <p>method name: digitization.activationmethods</p>                                                                                                                                                                                                    |
+| trackingNumber        | String |        |    ✓     | <p>Tracking number of the card, for which tokenization is being performed</p>                                                                                                                                                                         |
+| customerReference     | String |        |    ✓     | <p>Customer reference the card is linked to</p>                                                                                                                                                                                                       |
+| walletIdentifier      | String |        |    ✓     | <p>3-digit wallet identifier:</p> <ul> <li>103 – Apple Pay</li> <li>216 – Google Pay</li> <li>217 – Samsung Pay</li> <li>327 – Merchant tokenization program</li> </ul>                                                                               |
+| tokenRequestorId      | String |        |    ✓     | <p>The id assigned by the Token Service Provider to the Token Requestor</p>                                                                                                                                                                           |
+| digitizationPath      | String |        |    ✓     | <p>Specifies which path was chosen based on our logic and rules: green, yellow, orange or red</p>                                                                                                                                                     |
+| digitizedDeviceType   | String |        |    ✓     | <p>Indicates the type of device used at the terminal.</p>                                                                                                                                                                                             |
+| walletRecommendation  | String |        |    ✓     | <p>Tokenization decision suggested by the wallet provider. One of the following values: decline, approve or require_additional_authentication</p>                                                                                                     |
+| tokenizationPanSource | String |        |    ✓     | <p>Identifies the method which the cardholder is attempting to tokenize a primary account number. One of the following values: card_on_file, card_added_manually, card_added_via_application, existing_token_credential or card_added_via_browser</p> |
 
-```json
+````json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
 --header 'Content-type: application/json' \
@@ -1017,7 +1018,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 }
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
 --header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
@@ -1053,16 +1054,16 @@ console.log(httpHeader)
 ```,```js
 Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
-```
+````
 
 #### Response schema
 
-| Field | type | Description |
-|---|---|---|
-| resultCode | String | <p>As described in response reference</p> |
-| activationMethods | Array | <p>JSON array of methods where each element has:</p> <ul> <li>type: 1 (phone number) or 2 (email).</li> <li>value: Cardholder’s phone number (type 1) or email (type 2).</li> </ul> |
+| Field             | type   | Description                                                                                                                                                                         |
+| ----------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| resultCode        | String | <p>As described in response reference</p>                                                                                                                                           |
+| activationMethods | Array  | <p>JSON array of methods where each element has:</p> <ul> <li>type: 1 (phone number) or 2 (email).</li> <li>value: Cardholder’s phone number (type 1) or email (type 2).</li> </ul> |
 
-```json
+````json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
 --header 'Content-type: application/json' \
@@ -1123,7 +1124,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 }
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
 --header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
@@ -1159,7 +1160,7 @@ console.log(httpHeader)
 ```,```js
 Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
-```
+````
 
 <h2><a id="appauth"></a>3DSecure.AppAuthentication</h2>
 <p>This message is used to trigger the process of cardholder authentication. You only need to respond to this message to indicate you have received the message and will initiate the cardholder authentication. Once you have completed cardholder authentication you will send a message to our <a href="https://developer.sprint.paymentology.com/card-api/api-reference/threedsauthenticationoutcome/">ThreeDSAuthenticationOutcome</a> API.<br  />
@@ -1168,18 +1169,18 @@ Messages should be as following:</p>
 
 #### Path parameters
 
-| Parameter | type | Limits | required | Description |
-|---|---|---|:--:|---|
-| messageType  | String |  | ✓ | <p>method name: 3DSecure.AppAuthentication</p> |
-| trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which authorisation is being performed</p> |
-| customerReference | String |  | ✓ | <p>Customer reference this card is linked to</p> |
-| transactionID | String |  | ✓ | <p>Transaction id to link all messages. The same transaction id should be used for the following message send to Paymentology.</p> |
-| purchaseAmount | String |  | ✓ | <p>Amount of the transaction, formatted with currency included</p> |
-| merchant | String |  | ✓ | <p>name of the merchant transaction is being done at</p> |
-| amount | Integer |  | ✓ | <p>Numeric value of the amount, unformatted, in minor units</p> |
-| currency | Integer |  | ✓ | <p>ISO code of the currency of the transaction</p> |
+| Parameter         | type    | Limits | required | Description                                                                                                                        |
+| ----------------- | ------- | ------ | :------: | ---------------------------------------------------------------------------------------------------------------------------------- |
+| messageType       | String  |        |    ✓     | <p>method name: 3DSecure.AppAuthentication</p>                                                                                     |
+| trackingNumber    | String  |        |    ✓     | <p>Tracking number of the card, for which authorisation is being performed</p>                                                     |
+| customerReference | String  |        |    ✓     | <p>Customer reference this card is linked to</p>                                                                                   |
+| transactionID     | String  |        |    ✓     | <p>Transaction id to link all messages. The same transaction id should be used for the following message send to Paymentology.</p> |
+| purchaseAmount    | String  |        |    ✓     | <p>Amount of the transaction, formatted with currency included</p>                                                                 |
+| merchant          | String  |        |    ✓     | <p>name of the merchant transaction is being done at</p>                                                                           |
+| amount            | Integer |        |    ✓     | <p>Numeric value of the amount, unformatted, in minor units</p>                                                                    |
+| currency          | Integer |        |    ✓     | <p>ISO code of the currency of the transaction</p>                                                                                 |
 
-```json
+````json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
 --header 'Content-type: application/json' \
@@ -1240,7 +1241,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 }
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
 --header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
@@ -1276,17 +1277,17 @@ console.log(httpHeader)
 ```,```js
 Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
-```
+````
 
 <p> </p>
 
 #### Response schema
 
-| Field | type | Description |
-|---|---|---|
+| Field      | type   | Description                               |
+| ---------- | ------ | ----------------------------------------- |
 | resultCode | String | <p>As described in response reference</p> |
 
-```json
+````json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
 --header 'Content-type: application/json' \
@@ -1347,7 +1348,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 }
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
 --header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
@@ -1383,7 +1384,7 @@ console.log(httpHeader)
 ```,```js
 Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
-```
+````
 
 <p> </p>
 
@@ -1393,13 +1394,13 @@ Messages include the following:</p>
 
 #### Path parameters
 
-| Parameter | type | Limits | required | Description |
-|---|---|---|:--:|---|
-| messageType | String |  | ✓ | <p>method name: 3DSecure.AppFinalisation</p> |
-| trackingNumber | String |  | ✓ | <p>Tracking number of the card, for which authorisation is being performed</p> |
-| customerReference | String |  | ✓ | <p>Customer reference this card is linked to</p> |
-| transactionID | String |  | ✓ | <p>Unique id provided by the ACS</p> |
-| status | String |  | ✓ | <p>value indicating the status. Values include:<br  /> 0 – Successfully received final status<br  /> 1 – Timer on browser expired before response was received<br  /> 2 – General error<br  /> 3 – Transaction cancelled before response was received</p> |
+| Parameter         | type   | Limits | required | Description                                                                                                                                                                                                                                               |
+| ----------------- | ------ | ------ | :------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| messageType       | String |        |    ✓     | <p>method name: 3DSecure.AppFinalisation</p>                                                                                                                                                                                                              |
+| trackingNumber    | String |        |    ✓     | <p>Tracking number of the card, for which authorisation is being performed</p>                                                                                                                                                                            |
+| customerReference | String |        |    ✓     | <p>Customer reference this card is linked to</p>                                                                                                                                                                                                          |
+| transactionID     | String |        |    ✓     | <p>Unique id provided by the ACS</p>                                                                                                                                                                                                                      |
+| status            | String |        |    ✓     | <p>value indicating the status. Values include:<br  /> 0 – Successfully received final status<br  /> 1 – Timer on browser expired before response was received<br  /> 2 – General error<br  /> 3 – Transaction cancelled before response was received</p> |
 
 <h1><a id="responsereference"></a>Response Reference</h1>
 <p>Response should contain all the same fields as the original request. In addition, a <span className="xml-highlight">resultCode</span> will be always added and specific response information when that is required by the method. The <span className="xml-highlight">resultCode</span> will be a string field with values from the table below:</p>
@@ -1423,7 +1424,7 @@ Messages include the following:</p>
 <p><em>All the examples supplied in the documentation calculate the authorization header using the non existing terminal 0061218987 with the password: 1234567890</em></p>
 <p>Example (javascript)</p>
 
-```json
+````json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
 --header 'Content-type: application/json' \
@@ -1484,7 +1485,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 }
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
 --header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
@@ -1520,11 +1521,11 @@ console.log(httpHeader)
 ```,```js
 Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
-```
+````
 
 <p>Will produce the following output:</p>
 
-```json
+````json
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
 --header 'Content-type: application/json' \
@@ -1585,7 +1586,7 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 }
 
 ```,```json
-curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \ 
+curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=1282C9FFD2586A2DAD5A74B003A34531310007521E65DA17F55D1B744A28B409' \
 --header 'Content-type: application/json' \
 --data-raw ‘{"eventType":"complete","digitizedDeviceIdentifier":"21","digitizedPan":"5412345678908888","digitizedTokenReference":"DSACBA000012290985be8cd35f7e46f38b569829de110852","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.event","walletIdentifier":"217","digitizedFpanMasked":"5473XXXXXXXX1234","digitizedPanExpiry":"2402","trackingNumber":"533223100000004","tokenRequestorId":"54239059112"}'
@@ -1621,6 +1622,6 @@ console.log(httpHeader)
 ```,```js
 Authorization: CS-HMAC-SHA-256 Termi-nal="0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794"
 
-```
+````
 
 <p><a className="btn btn--primary" href="https://developer.sprint.paymentology.com/card-api/api-reference/">Back to Card API menu</a></p>
