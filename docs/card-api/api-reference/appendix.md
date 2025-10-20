@@ -5,14 +5,6 @@ hidden: false
 metadata:
   robots: index
 ---
----
-title: Response Codes
-deprecated: false
-hidden: false
-metadata:
-  robots: index
----
-
 ## Important
 
 Any argument that has the type 'date' needs to follow the XML-RPC specified ISO 8601 date-time format:
