@@ -5,6 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
+
 ## Transaction Stream
 
 The Transaction Stream is a powerful feature that allows you to monitor and analyze transactions in real-time. It provides detailed insights into each transaction, including metadata, status, and execution details.
@@ -51,18 +52,18 @@ It enables you to receive real-time transaction information for the following ty
 
 You can get the following information for each undertaken transaction:
 
-- Customer reference account number  
+- Customer reference account number
 - Transaction time and date
-- Merchant name  
+- Merchant name
 - Decline reason code
-- Transaction amount  
+- Transaction amount
 - MCC (Merchant Category Code)
 
-## **How to Integrate Transaction Stream**
+## How to Integrate Transaction Stream
 
-Paymentology provides the Events Authority API to allow you to integrate the Transaction Stream service into your use case. 
+Paymentology provides the Events Authority API to allow you to integrate the Transaction Stream service into your use case.
 
-The API lets you observe and ingest information about transactional events, as they happen and are processed. It is implemented as a REST HTTP API using a custom authentication mechanism. The API connection is secured using TLS. 
+The API lets you observe and ingest information about transactional events, as they happen and are processed. It is implemented as a REST HTTP API using a custom authentication mechanism. The API connection is secured using TLS.
 
 The [PubNub](https://www.pubnub.com/) platform is levergaed for powering the real-time transaction notification system. PubNub utilizes a Publishing/Subscribing model for accomplishing real-time communication.
 
@@ -71,11 +72,11 @@ This model consists of two important components:
 - **Channels**—these are the transient paths over which your data is transmitted.
 - **Messages**—these are the data you want to send to recipients.
 
-Essentially, to enable users to receive the notifications sent to a particular channel, they need to *subscribe* to it. If you *publish* a message to a channel, the notification will be delivered to every user subscribed to that channel. 
+Essentially, to enable users to receive the notifications sent to a particular channel, they need to _subscribe_ to it. If you _publish_ a message to a channel, the notification will be delivered to every user subscribed to that channel.
 
 These are the steps to follow to implement the Transaction Stream feature into your application:
 
-- Get authentication data 
+- Get authentication data
 - Subscribe users to channel
 - Get the notification feed
 
@@ -85,7 +86,7 @@ Let’s talk about the steps in more detail.
 
 First, you need to authenticate against the events system and get session and listening endpoint information before consuming the PubNub API.
 
-So, you need to make a GET request to Paymentology’s  PubNub Authenticate REST API.
+So, you need to make a GET request to Paymentology’s PubNub Authenticate REST API.
 
 To consume the API, you need to call the following endpoint:
 
