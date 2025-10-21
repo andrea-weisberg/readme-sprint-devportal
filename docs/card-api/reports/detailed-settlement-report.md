@@ -17,7 +17,9 @@ There are 3 versions of this report available:
 
 The report includes the following details:
 
-### Version 1 {#dsrv1}
+<a id="dsrv1"></a>
+
+### Version 1
 
 Contains the Chargeback report.
 
@@ -44,7 +46,9 @@ Contains the Chargeback report.
 
 ---
 
-### Version 2.0 {#dsrv20}
+<a id="dsrv20"></a>
+
+### Version 2.0
 
 Does not contain the Chargeback record (see Transaction Description column).
 
@@ -70,7 +74,9 @@ Does not contain the Chargeback record (see Transaction Description column).
 
 ---
 
-### Version 2.1 {#dsrv21}
+<a id="dsrv21"></a>
+
+### Version 2.1
 
 Builds off Version 2.0 and does not contain the Chargeback record.  
 Changes include additional information to the **Transaction Narrative** column, delimited by pipes, e.g. `TransactionNarrative|AdditionalTraceRef|CustomIdentifier`.
