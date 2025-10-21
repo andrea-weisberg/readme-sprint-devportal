@@ -14,10 +14,12 @@ The report is also generated monthly and contains the same report details as the
 
 There are two versions of this report available:
 
-[Version 1.0](#FTRV1)  
-[Version 2.0](#FTRV2)
+[Version 1.0](#ftrv1)  
+[Version 2.0](#ftrv2)
 
-### Version 1 {#FTRV1}
+<a id="ftrv1"></a>
+
+### Version 1
 
 Version 1 includes the following details:
 
@@ -49,7 +51,9 @@ Version 1 includes the following details:
 - **Digitized Wallet id** – the 3 digit numeric code that identifies the Xpay App.  
   Find a list of the Wallet IDs [here](https://developer.sprint.paymentology.com/companion-api/tokenization2/token-lifecycle-management/#WID).
 
-### Version 2 {#FTRV2}
+<a id="ftrv2"></a>
+
+### Version 2
 
 Version 2 includes the following details:
 
