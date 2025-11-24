@@ -396,41 +396,42 @@ Nickname of the device provisioned with the token. Conditional field, not presen
 **DeviceType**, string
 type of the device provisioned with the token. Valid values: NOTE – Some values from 00–19 may indicate not only the physical form factor but also other attributes such as device technology and payment app specifications.
 
-’00’ – Card.
-’01’ – Mobile Network Operator (MNO) controlled removable secure element (SIM or UICC) personalized for use with a mobile phone or smartphone.
-’02’ – Key Fob.
-’03’ – Watch using a contactless chip or a fixed (non-removable) secure element not controlled by the MNO.
-’04’ – Mobile Tag.
-’05’ – Wristband.
-’06’ – Mobile Phone Case or Sleeve.
-’07’ – Mobile phone or smartphone with a fixed (non-removable) secure element controlled by the MNO, for example, code division multiple access (CDMA).
-’08’ – Removable secure element not controlled by the MNO, for example, memory card personalized for used with a mobile phone or smartphone.
-’09’ – Mobile Phone or smartphone with a fixed (non-removable) secure element not controlled by the MNO.
-’10’ – MNO controlled removable secure element (SIM or UICC) personalized for use with a tablet or e-book.
-’11’ – Tablet or e-book with a fixed (non-removable) secure element controlled by the MNO.
-’12’ – Removable secure element not controlled by the MNO, for example, memory card personalized for use with a tablet or e-book.
-’13’ – Tablet or e-book with fixed (non-removable) secure element not controlled by the MNO.
-’14’ – Mobile phone or smartphone with a payment application running in a host processor.
-’15’ – Tablet or e-book with a payment application running in a host processor.
-’16’ – Mobile phone or smartphone with a payment application running in the Trusted Execution Environment (TEE) of a host processor.
-’17’ – Tablet or e-book with a payment application running in the TEE of a host processor.
-’18’ – Watch with a payment application running in the TEE of a host processor.
-’19’ – Watch with a payment application running in a host processor. NOTE – Values from 20–99 exclusively indicate the form factor only without also indicating the storage technology.
-’20’ – Card.
-’21’ – Phone Mobile phone.
-’22’ – Tablet/e-reader Tablet computer or e-reader.
-’23’ – Watch/Wristband Watch or wristband, including a fitness band, smart strap, disposable band, watch add-on, and security/id band.
-’24’ – Sticker.
-’25’ – PC or laptop.
-’26’ – Device Peripheral Mobile phone case or sleeve.
-’27’ – Tag Key fob or mobile tag.
-’28’ – Jewelry Ring, bracelet, necklace, and cuff links.
-’29’ – Fashion Accessory Handbag, bag charm, and glasses.
-’30’ – Garment Dress.
-’31’ – Domestic Appliance Refrigerator, washing machine.
-’32’ – Vehicle Vehicle, including vehicle attached devices.
-’33’ – media/Gaming Device media or gaming device, including a set top box, media player, and television.
-’34’ to ’99’ – Reserved for future form factors. Any value in this range may occur within form factor and transaction data without prior notice. Conditional field, not present for CoF tokens, and only present when supplied by the Payment App Provider.
+* ’00’ – Card.
+* ’01’ – Mobile Network Operator (MNO) controlled removable secure element (SIM or UICC) personalized for use with a mobile phone or smartphone.
+* ’02’ – Key Fob.
+* ’03’ – Watch using a contactless chip or a fixed (non-removable) secure element not controlled by the MNO.
+* ’04’ – Mobile Tag.
+* ’05’ – Wristband.
+* ’06’ – Mobile Phone Case or Sleeve.
+* ’07’ – Mobile phone or smartphone with a fixed (non-removable) secure element controlled by the MNO, for example, code division multiple access (CDMA).
+* ’08’ – Removable secure element not controlled by the MNO, for example, memory card personalized for used with a mobile phone or smartphone.
+* ’09’ – Mobile Phone or smartphone with a fixed (non-removable) secure element not controlled by the MNO.
+* ’10’ – MNO controlled removable secure element (SIM or UICC) personalized for use with a tablet or e-book.
+* ’11’ – Tablet or e-book with a fixed (non-removable) secure element controlled by the MNO.
+* ’12’ – Removable secure element not controlled by the MNO, for example, memory card personalized for use with a tablet or e-book.
+* ’13’ – Tablet or e-book with fixed (non-removable) secure element not controlled by the MNO.
+* ’14’ – Mobile phone or smartphone with a payment application running in a host processor.
+* ’15’ – Tablet or e-book with a payment application running in a host processor.
+* ’16’ – Mobile phone or smartphone with a payment application running in the Trusted Execution Environment (TEE) of a host processor.
+* ’17’ – Tablet or e-book with a payment application running in the TEE of a host processor.
+* ’18’ – Watch with a payment application running in the TEE of a host processor.
+* ’19’ – Watch with a payment application running in a host processor.
+* NOTE – Values from 20–99 exclusively indicate the form factor only without also indicating the storage technology.
+* ’20’ – Card.
+* ’21’ – Phone Mobile phone.
+* ’22’ – Tablet/e-reader Tablet computer or e-reader.
+* ’23’ – Watch/Wristband Watch or wristband, including a fitness band, smart strap, disposable band, watch add-on, and security/id band.
+* ’24’ – Sticker.
+* ’25’ – PC or laptop.
+* ’26’ – Device Peripheral Mobile phone case or sleeve.
+* ’27’ – Tag Key fob or mobile tag.
+* ’28’ – Jewelry Ring, bracelet, necklace, and cuff links.
+* ’29’ – Fashion Accessory Handbag, bag charm, and glasses.
+* ’30’ – Garment Dress.
+* ’31’ – Domestic Appliance Refrigerator, washing machine.
+* ’32’ – Vehicle Vehicle, including vehicle attached devices.
+* ’33’ – media/Gaming Device media or gaming device, including a set top box, media player, and television.
+* ’34’ to ’99’ – Reserved for future form factors. Any value in this range may occur within form factor and transaction data without prior notice. Conditional field, not present for CoF tokens, and only present when supplied by the Payment App Provider.
 
 **ExpirationDate**, date
 Expiration date of token. Conditional field, present once the token has been designated for the digitization. Four digit string. Format “mmyy”.
