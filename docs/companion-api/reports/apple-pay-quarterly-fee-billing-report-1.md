@@ -5,10 +5,6 @@ hidden: false
 metadata:
   robots: index
 ---
-Here is the **exact same copy**, fully converted for ReadMe.io-safe Markdown/MDX — **nothing changed, nothing removed, nothing added**.
-
----
-
 For clients using Paymentology’s tokenization, Paymentology can issue a quarterly report to clients to utilize the report data to compile their Apple report through the Apple Partner Connect platform.
 
 The report includes the following details:
