@@ -5,20 +5,21 @@ hidden: false
 metadata:
   robots: index
 ---
-<p>This report lists the cards that have been linked to a customer and when this occurred.</p>
-<p>The report includes the following details:</p>
-<ul>
-<li><strong>Campaign </strong>– name of client’s card program.</li>
-<li><strong>Voucher</strong> <strong>number </strong>– the customer’s card number.</li>
-<li><strong>Reference</strong> – this is a unique customer reference for the card.</li>
-<li><strong>Date linked</strong> – specifies the date and time in which the card was linked to the <strong>Reference</strong>.</li>
-</ul>
+This report lists the cards that have been linked to a customer and when this occurred.
 
-<h2>Report format</h2>
+The report includes the following details:
 
-<h2>Report time frame</h2>
+* **Campaign** – name of client’s card program.
+* **Voucher number** – the customer’s card number.
+* **Reference** – this is a unique customer reference for the card.
+* **Date linked** – specifies the date and time in which the card was linked to the **Reference**.
 
-<h2>Report sample</h2>
-<p>**CampaignName_Linked_Cards_YYYYMMDD-.png IMAGE GOES HERE.**</p>
+## Report format
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_Linked_Cards_YYYYMMDD.csv">CampaignName_Linked_Cards_YYYYMMDD.csv</a></p>
+## Report time frame
+
+## Report sample
+
+**CampaignName_Linked_Cards_YYYYMMDD-.png IMAGE GOES HERE.**
+
+[CampaignName_Linked_Cards_YYYYMMDD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_Linked_Cards_YYYYMMDD.csv)
