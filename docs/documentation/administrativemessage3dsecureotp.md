@@ -5,10 +5,6 @@ hidden: false
 metadata:
   robots: index
 ---
-Here is the **exact same copy**, fully converted for ReadMe.io-safe Markdown — **no wording changed, nothing added or removed**.
-
----
-
 Sends message with 3D Secure OTP
 
 #### Path parameters
