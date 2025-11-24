@@ -795,4 +795,4 @@ Error Fault for invalid checksum authentication returns the following message:
 </methodResponse>
 ```
 
-<a className="btn btn--primary" href="#https://developer.sprint.paymentology.com/profile-api-reference/">Back to Profile API Reference</a>
+<br />
