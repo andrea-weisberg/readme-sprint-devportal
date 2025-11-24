@@ -1,5 +1,5 @@
 ---
-title: Reports
+title: Reports QR
 deprecated: false
 hidden: false
 metadata:
