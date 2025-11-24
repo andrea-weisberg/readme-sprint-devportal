@@ -83,7 +83,7 @@ Validate the PIN.
 | resultCode | Integer | Status code indicating transaction result |
 
 ```xml
-"<methodCall>
+<methodCall>
     <methodName>ValidatePIN</methodName>
     <params  />
         <param  />
@@ -117,7 +117,7 @@ Validate the PIN.
             </value>
         </param>
     </params>
-</methodCall>"
+</methodCall>
 ```
 
 ```xml
