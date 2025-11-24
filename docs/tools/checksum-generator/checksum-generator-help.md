@@ -42,6 +42,3 @@ Status100123ref4555612320170223T12:00:00
 3. Enter the request data in the “String to hash” field
 4. Click “Submit”
 5. Wait for the “Transaction Result Pop-up” that will display the calculated checksum together with the details behind the calculation
-
-```
-```
