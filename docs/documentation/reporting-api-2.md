@@ -19,7 +19,7 @@ To obtain a token from the Token service, you will require a *ClientID* and *Cli
 
 In order to obtain a token, an http request to: `https://auth.uat.tutuka.cloud/oauth/token` using Basic Authentication and providing the BASE64 encoded ClientID and Secret in the Authorization Header specifying the `client_credentials` grant type in the body. e.g.
 
-```null
+```JSON
 async function getAccessToken() {
   const authToken = `${process.env.CLIENT_ID}:${process.env.SECRET}`;
   const buffer = Buffer.from(authToken);
@@ -42,7 +42,7 @@ async function getAccessToken() {
 }
 ```
 
-```null
+```JSON
 async function getCampaignReports(token) {
   const options = {
     'method': 'GET',
@@ -65,7 +65,7 @@ async function getCampaignReports(token) {
 })();
 ```
 
-```null
+```JSON
 [
   {
     "reportId":4,
@@ -86,7 +86,7 @@ async function getCampaignReports(token) {
 ]
 ```
 
-```null
+```JSON
 {
   "campaignUUID": "72021503-C427-1A07-XXXXXXXXXXXXXXX",
   "reportId": 4,
@@ -99,7 +99,7 @@ async function getCampaignReports(token) {
 }
 ```
 
-```null
+```JSON
 {
   "campaignUUID": "72021503-C427-1A07-ED8968880BC391FC",
   "reportId": 4,
@@ -109,7 +109,7 @@ async function getCampaignReports(token) {
 ```
 
 The token obtained can then be used as a Bearer token in calls to the Reporting API, for example:
-```null
+```JSON
 async function getAccessToken() {
   const authToken = `${process.env.CLIENT_ID}:${process.env.SECRET}`;
   const buffer = Buffer.from(authToken);
@@ -132,7 +132,7 @@ async function getAccessToken() {
 }
 ```
 
-```null
+```JSON
 async function getCampaignReports(token) {
   const options = {
     'method': 'GET',
@@ -155,7 +155,7 @@ async function getCampaignReports(token) {
 })();
 ```
 
-```null
+```JSON
 [
   {
     "reportId":4,
@@ -176,7 +176,7 @@ async function getCampaignReports(token) {
 ]
 ```
 
-```null
+```JSON
 {
   "campaignUUID": "72021503-C427-1A07-XXXXXXXXXXXXXXX",
   "reportId": 4,
@@ -189,7 +189,7 @@ async function getCampaignReports(token) {
 }
 ```
 
-```null
+```JSON
 {
   "campaignUUID": "72021503-C427-1A07-ED8968880BC391FC",
   "reportId": 4,
@@ -216,7 +216,7 @@ Reports are produced for campaigns based on product type and opt in / out config
 | ClientUUID   | String |        |     ✓    | Your client UUID                                                       |
 | CampaignUUID | String |        |     ✓    | The campaignUUID for which you want to obtain a list of report types.  |
 
-```null
+```JSON
 async function getAccessToken() {
   const authToken = `${process.env.CLIENT_ID}:${process.env.SECRET}`;
   const buffer = Buffer.from(authToken);
@@ -249,7 +249,7 @@ async function getAccessToken() {
 | CampaignUUID | String |        |     ✓    | The campaignUUID for which you want to obtain a list of report types. |
 | ReportId     | String |        |     ✓    | The numeric id identifying the report type                             |
 
-```null
+```JSON
 async function getAccessToken() {
   const authToken = `${process.env.CLIENT_ID}:${process.env.SECRET}`;
   const buffer = Buffer.from(authToken);
@@ -272,7 +272,7 @@ async function getAccessToken() {
 }
 ````
 
-```null
+```JSON
 async function getCampaignReports(token) {
   const options = {
     'method': 'GET',
@@ -295,7 +295,7 @@ async function getCampaignReports(token) {
 })();
 ```
 
-```null
+```JSON
 [
   {
     "reportId":4,
@@ -316,7 +316,7 @@ async function getCampaignReports(token) {
 ]
 ```
 
-```null
+```JSON
 {
   "campaignUUID": "72021503-C427-1A07-XXXXXXXXXXXXXXX",
   "reportId": 4,
@@ -330,7 +330,7 @@ async function getCampaignReports(token) {
 ```
 
 
-```null
+```JSON
 {
   "campaignUUID": "72021503-C427-1A07-ED8968880BC391FC",
   "reportId": 4,
