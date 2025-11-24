@@ -5,7 +5,6 @@ hidden: false
 metadata:
   robots: index
 ---
-
 ## About the Checksum Generator
 
 The Checksum Generator is used to verify that the checksum calculation is correct and that it arrives at the same checksum result as our system.
