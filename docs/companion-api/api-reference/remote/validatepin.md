@@ -19,7 +19,7 @@ Validate the PIN.
 | checksum | String |  | ✓ | HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key |
 
 ```xml
-"<methodCall>
+<methodCall>
     <methodName>ValidatePIN</methodName>
     <params  />
         <param  />
@@ -53,7 +53,7 @@ Validate the PIN.
             </value>
         </param>
     </params>
-</methodCall>"
+</methodCall>
 ```
 
 ```xml
