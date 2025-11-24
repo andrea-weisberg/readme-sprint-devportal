@@ -49,3 +49,4 @@ In addition to the above, the following card/account data is provided:
 ## Report sample
 
 [QVR_SRE[SRE]_[YYYYMMDD]-[YYYYMMDD].xls](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/QVR_SRE-SRE_YYYYMMDD-YYYYMMDD.xls)
+ 
