@@ -11,6 +11,7 @@ Our website address is: [https://developer.sprint.paymentology.com](https://deve
 
 ## What personal data we collect and why we collect it
 
+
 ### Comments
 
 When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor’s IP address and browser user agent string to help spam detection.
