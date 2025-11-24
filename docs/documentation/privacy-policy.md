@@ -5,13 +5,11 @@ hidden: false
 metadata:
   robots: index
 ---
-Who we are
-----------
+## Who we are
 
 Our website address is: \[https://developer.sprint.paymentology.com\](https://developer.sprint.paymentology.com).
 
-What personal data we collect and why we collect it
----------------------------------------------------
+## What personal data we collect and why we collect it
 
 ### Comments
 
@@ -43,31 +41,25 @@ These websites may collect data about you, use cookies, embed additional third-p
 
 ### Analytics
 
-Who we share your data with
----------------------------
+## Who we share your data with
 
-How long we retain your data
-----------------------------
+## How long we retain your data
 
 If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.
 
 For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.
 
-What rights you have over your data
------------------------------------
+## What rights you have over your data
 
 If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.
 
-Where we send your data
------------------------
+## Where we send your data
 
 Visitor comments may be checked through an automated spam detection service.
 
-Your contact information
-------------------------
+## Your contact information
 
-Additional information
-----------------------
+## Additional information
 
 ### How we protect your data
 
