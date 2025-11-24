@@ -5,27 +5,27 @@ hidden: false
 metadata:
   robots: index
 ---
-<p>A report which provides detailed information about cards that were tokenised to a Google Pay wallet within a given month. Client’s can use the data from this report to fulfil their Google Pay reporting requirements.</p>
-<p>The report includes the following details:</p>
-<ul>
-<li><strong>FirstLastName </strong>– Customer’s first and last name</li>
-<li><strong>BillingPostalCode </strong>– Customer’s postal code</li>
-<li><strong>BillingStreetAddress </strong>– Customer’s postal street address</li>
-<li><strong>BillingCountryCode</strong> – Customer’s postal country</li>
-<li><strong>BillingCity</strong> – Customer’s postal city</li>
-<li><strong>BillingAdministrativeArea</strong> – Customer’s postal region or state</li>
-<li><strong>FullPhoneNumber </strong>– Customer’s contact number</li>
-<li><strong>OpaquePaymentCard</strong> – Google Pay tokenised card number</li>
-<li><strong>FundingPrimaryAccountNumber </strong>– Voucher number/Customer’s card number</li>
-<li><strong>ExpirationDate </strong>– Expiry date of <strong>OpaquePaymentCard</strong></li>
-</ul>
+A report which provides detailed information about cards that were tokenised to a Google Pay wallet within a given month. Client’s can use the data from this report to fulfil their Google Pay reporting requirements.
 
-<h2>Report format</h2>
+The report includes the following details:
 
-<h2>Report time frame</h2>
+* **FirstLastName** – Customer’s first and last name
+* **BillingPostalCode** – Customer’s postal code
+* **BillingStreetAddress** – Customer’s postal street address
+* **BillingCountryCode** – Customer’s postal country
+* **BillingCity** – Customer’s postal city
+* **BillingAdministrativeArea** – Customer’s postal region or state
+* **FullPhoneNumber** – Customer’s contact number
+* **OpaquePaymentCard** – Google Pay tokenised card number
+* **FundingPrimaryAccountNumber** – Voucher number/Customer’s card number
+* **ExpirationDate** – Expiry date of **OpaquePaymentCard**
 
-<h2>Report sample</h2>
-<p>**CampaignName_googlepay_monthlyreport_MMM-YYYY-.png IMAGE GOES HERE.**</p>
+## Report format
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNamegooglepaymonthlyreportMMM-YYYY.csv">CampaignNamegooglepaymonthlyreportMMM YYYY.csv</a></p>
+## Report time frame
 
+## Report sample
+
+**CampaignName_googlepay_monthlyreport_MMM-YYYY-.png IMAGE GOES HERE.**
+
+[CampaignNamegooglepaymonthlyreportMMM YYYY.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNamegooglepaymonthlyreportMMM-YYYY.csv)
