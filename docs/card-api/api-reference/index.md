@@ -5,6 +5,8 @@ hidden: false
 metadata:
   robots: index
 ---
+
+
 The Card API contains the API and API methods that we use to call you to send transactions on to the store of value for authorizations. Transactions originate from the merchant and are sent to Paymentology via the financial networks and then are forwarded to the store of value for authorization.
 
 **Note:** You will need to implement the relevant method names corresponding to the different calls in order to perform the necessary actions on your system.
