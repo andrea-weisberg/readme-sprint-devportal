@@ -5,40 +5,40 @@ hidden: false
 metadata:
   robots: index
 ---
-<h2>Available Methods</h2>
-<ul>
-<li><a href ="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/originating-institution/#TransferPaymentToMerchant">TransferPaymentToMerchant</a> – Transfer payment to merchant</li>
-</ul>
+## Available Methods
 
-<p><a id="TransferPaymentToMerchant"></p>
-<h2>TransferPaymentToMerchant</h2>
-<p></a><br  />
-Transfer payment to merchant.</p>
+* [TransferPaymentToMerchant](https://developer.sprint.paymentology.com/qr-payments-api/api-reference/originating-institution/#TransferPaymentToMerchant) – Transfer payment to merchant
+
+---
+
+## TransferPaymentToMerchant
+
+Transfer payment to merchant.
 
 #### Path parameters
 
-| Parameter | type | Limits | required | Description |
-|---|---|---|:--:|---|
-| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal id of the terminal requesting the transaction</p> |
-| recipientAccountNumber | String | 11-19 characters | ✓ | <p>Card Number of the recipient/merchant</p> |
-| recipientFirstName | String | 1-40 characters | ✓ | <p>First name of the recipient/merchant</p> |
-| recipientLastName | String | 1-40 characters | ✓ | <p>Last name of the recipient/merchant</p> |
-| recipientCity | String | 1-25 characters | ✓ | <p>City of the recipient/merchant</p> |
-| recipientCountry | String | 3 characters | ✓ | <p>ISO alpha country code of the recipient/merchant Ex. ZAF</p> |
-| recipientCategoryCode | String | 1-4 characters | ✓ | <p>Mastercard defined merchant category code</p> |
-| senderFirstName | String | 1-40 characters | ✓ | <p>First name of the sender</p> |
-| senderLastName | String | 1-40 characters | ✓ | <p>Last name of the sender</p> |
-| senderAddress | String | 1-100 characters | ✓ | <p>Address of the sender</p> |
-| senderCity | String | 1-25 characters | ✓ | <p>City of the sender</p> |
-| senderPostalCode | String | 4-5 characters | ✓ | <p>Postal code of the sender</p> |
-| senderCountry | String | 3 characters | ✓ | <p>ISO alpha country code of the sender Ex. ZAF</p> |
-| reference | String | 1-100 characters | ✓ | <p>The user defined reference to the card; for example a member id or wallet number</p> |
-| requestAmount | Integer |  | ✓ | <p>The amount to be sent to the receiving subscriber</p> |
-| transactionCurrency | String | 3 characters | ✓ | <p>Currency of the requestAmount Ex. ZAR</p> |
-| transactionID | String | 1-40 characters | ✓ | <p>Client generated transaction id to assist in identify transactions on the client side</p> |
-| transactionDate | Date |  |  | <p>Client generated / local transaction date to assist in identifying transactions on the client side</p> |
-| optionalData | String |  | ✓ | <p>Struct with optional fields, right now only “recipientPostalCode” field is accepted. See above for details. The maximum length of the recipientPostalCode is 10.</p> |
-| checksum | String |  | ✓ | <p>The calculated HMAC-SHA1 signature of the call as specified in the rules of thumb</p> |
+| Parameter              | type    |           Limits | required | Description                                                                                                                                                      |
+| ---------------------- | ------- | ---------------: | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| terminalID             | String  |    10 characters | ✓        | The Paymentology issued terminal id of the terminal requesting the transaction                                                                                   |
+| recipientAccountNumber | String  | 11-19 characters | ✓        | Card Number of the recipient/merchant                                                                                                                            |
+| recipientFirstName     | String  |  1-40 characters | ✓        | First name of the recipient/merchant                                                                                                                             |
+| recipientLastName      | String  |  1-40 characters | ✓        | Last name of the recipient/merchant                                                                                                                              |
+| recipientCity          | String  |  1-25 characters | ✓        | City of the recipient/merchant                                                                                                                                   |
+| recipientCountry       | String  |     3 characters | ✓        | ISO alpha country code of the recipient/merchant Ex. ZAF                                                                                                         |
+| recipientCategoryCode  | String  |   1-4 characters | ✓        | Mastercard defined merchant category code                                                                                                                        |
+| senderFirstName        | String  |  1-40 characters | ✓        | First name of the sender                                                                                                                                         |
+| senderLastName         | String  |  1-40 characters | ✓        | Last name of the sender                                                                                                                                          |
+| senderAddress          | String  | 1-100 characters | ✓        | Address of the sender                                                                                                                                            |
+| senderCity             | String  |  1-25 characters | ✓        | City of the sender                                                                                                                                               |
+| senderPostalCode       | String  |   4-5 characters | ✓        | Postal code of the sender                                                                                                                                        |
+| senderCountry          | String  |     3 characters | ✓        | ISO alpha country code of the sender Ex. ZAF                                                                                                                     |
+| reference              | String  | 1-100 characters | ✓        | The user defined reference to the card; for example a member id or wallet number                                                                                 |
+| requestAmount          | Integer |                  | ✓        | The amount to be sent to the receiving subscriber                                                                                                                |
+| transactionCurrency    | String  |     3 characters | ✓        | Currency of the requestAmount Ex. ZAR                                                                                                                            |
+| transactionID          | String  |  1-40 characters | ✓        | Client generated transaction id to assist in identify transactions on the client side                                                                            |
+| transactionDate        | Date    |                  |          | Client generated / local transaction date to assist in identifying transactions on the client side                                                               |
+| optionalData           | String  |                  | ✓        | Struct with optional fields, right now only “recipientPostalCode” field is accepted. See above for details. The maximum length of the recipientPostalCode is 10. |
+| checksum               | String  |                  | ✓        | The calculated HMAC-SHA1 signature of the call as specified in the rules of thumb                                                                                |
 
 ```xml
 <methodCall>
@@ -146,8 +146,9 @@ Transfer payment to merchant.</p>
         </param>
     </params>
 </methodCall>
+```
 
-```,```xml
+```xml
 <methodResponse>
     <params  />
         <param  />
@@ -170,15 +171,14 @@ Transfer payment to merchant.</p>
         </param>
     </params>
 </methodResponse>
-
 ```
 
 #### Response schema
 
-| Field | type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| resultText | String | <p>Text indicating transaction result</p> |
+| Field      | type    | Description                               |
+| ---------- | ------- | ----------------------------------------- |
+| resultCode | Integer | Status code indicating transaction result |
+| resultText | String  | Text indicating transaction result        |
 
 ```xml
 <methodCall>
@@ -286,8 +286,9 @@ Transfer payment to merchant.</p>
         </param>
     </params>
 </methodCall>
+```
 
-```,```xml
+```xml
 <methodResponse>
     <params  />
         <param  />
@@ -310,9 +311,10 @@ Transfer payment to merchant.</p>
         </param>
     </params>
 </methodResponse>
-
 ```
 
-<p><a href="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/#OI"></p>
-<h3>Appendix</h3>
-<p></a></p>
+---
+
+### Appendix
+
+[https://developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/#OI](https://developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/#OI)
