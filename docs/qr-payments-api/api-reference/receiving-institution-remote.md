@@ -5,30 +5,28 @@ hidden: false
 metadata:
   robots: index
 ---
-<h2>Available Methods</h2>
-<ul>
-<li><a href="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution-remote/#Load">Load</a> – Load to a wallet</li>
-<li><a href="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution-remote/#LoadReversal">LoadReversal</a> – Reverse a load to a wallet</li>
-</ul>
+## Available Methods
 
-<p> <br  />
-<a id="Load"></p>
-<h2>Load</h2>
-<p></a><br  />
-Load to a wallet.</p>
+* [Load](https://developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution-remote/#Load) – Load to a wallet
+
+* [LoadReversal](https://developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution-remote/#LoadReversal) – Reverse a load to a wallet
+
+## Load
+
+Load to a wallet.
 
 #### Path parameters
 
-| Parameter | type | Limits | required | Description |
-|---|---|---|:--:|---|
-| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal id of the terminal requesting the transaction</p> |
-| Reference | String | 11-19 characters | ✓ | <p>The reference of the wallet to retrieve the balance for</p> |
-| requestAmount | Integer |  | ✓ | <p>The amount to be loaded</p> |
-| narrative | String | 1-255 characters | ✓ | <p>A description of the terminal where the card was used</p> |
-| transactionType | String | 2 characters | ✓ | <p>2 character string identifying the type of transaction: 28 => Payment</p> |
-| transactionID | String | 1-40 characters | ✓ | <p>Client generated transaction id to assist in identify transactions on the client side</p> |
-| transactionDate | Date |  |  | <p>Client generated / local transaction date to assist in identifying transactions on the client side</p> |
-| checksum | String |  | ✓ | <p>HMAC-SHA1 hashed signature of the concatenated method name with all argument values using the terminal password as private key</p> |
+| Parameter       | type    | Limits           | required | Description                                                                                                                    |
+| --------------- | ------- | ---------------- | :------: | ------------------------------------------------------------------------------------------------------------------------------ |
+| terminalID      | String  | 10 characters    |     ✓    | The Paymentology issued terminal id of the terminal requesting the transaction                                                 |
+| Reference       | String  | 11-19 characters |     ✓    | The reference of the wallet to retrieve the balance for                                                                        |
+| requestAmount   | Integer |                  |     ✓    | The amount to be loaded                                                                                                        |
+| narrative       | String  | 1-255 characters |     ✓    | A description of the terminal where the card was used                                                                          |
+| transactionType | String  | 2 characters     |     ✓    | 2 character string identifying the type of transaction: 28 => Payment                                                          |
+| transactionID   | String  | 1-40 characters  |     ✓    | Client generated transaction id to assist in identify transactions on the client side                                          |
+| transactionDate | Date    |                  |          | Client generated / local transaction date to assist in identifying transactions on the client side                             |
+| checksum        | String  |                  |     ✓    | HMAC-SHA1 hashed signature of the concatenated method name with all argument values using the terminal password as private key |
 
 ```xml
 <methodCall>
@@ -76,8 +74,9 @@ Load to a wallet.</p>
     </param>
   </params>
 </methodCall>
+```
 
-```,```xml
+```xml
 <methodResponse>
     <params  />
         <param  />
@@ -100,8 +99,9 @@ Load to a wallet.</p>
         </param>
     </params>
 </methodResponse>
+```
 
-```,```xml
+```xml
 <?xml version="1.0"?>
 <methodCall>
   <methodName>LoadReversal</methodName>
@@ -159,8 +159,9 @@ Load to a wallet.</p>
     </param>
   </params>
 </methodCall>
+```
 
-```,```xml
+```xml
 <methodResponse>
     <params  />
         <param  />
@@ -183,15 +184,14 @@ Load to a wallet.</p>
         </param>
     </params>
 </methodResponse>
-
 ```
 
 #### Response schema
 
-| Field | type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| resultText | String | <p>Text indicating transaction result</p> |
+| Field      | type    | Description                               |
+| ---------- | ------- | ----------------------------------------- |
+| resultCode | Integer | Status code indicating transaction result |
+| resultText | String  | Text indicating transaction result        |
 
 ```xml
 <methodCall>
@@ -239,8 +239,9 @@ Load to a wallet.</p>
     </param>
   </params>
 </methodCall>
+```
 
-```,```xml
+```xml
 <methodResponse>
     <params  />
         <param  />
@@ -263,8 +264,9 @@ Load to a wallet.</p>
         </param>
     </params>
 </methodResponse>
+```
 
-```,```xml
+```xml
 <?xml version="1.0"?>
 <methodCall>
   <methodName>LoadReversal</methodName>
@@ -322,8 +324,9 @@ Load to a wallet.</p>
     </param>
   </params>
 </methodCall>
+```
 
-```,```xml
+```xml
 <methodResponse>
     <params  />
         <param  />
@@ -346,29 +349,26 @@ Load to a wallet.</p>
         </param>
     </params>
 </methodResponse>
-
 ```
 
-<p> <br  />
-<a id="LoadReversal"></p>
-<h2>LoadReversal</h2>
-<p></a><br  />
-Reverse a Load to a wallet</p>
+## LoadReversal
+
+Reverse a Load to a wallet
 
 #### Path parameters
 
-| Parameter | type | Limits | required | Description |
-|---|---|---|:--:|---|
-| terminalID | String | 10 characters | ✓ | <p>The Paymentology issued terminal id of the terminal requesting the transaction</p> |
-| reference | String | 11-19 characters | ✓ | <p>The reference of the wallet to retrieve the balance for</p> |
-| requestAmount | Integer |  | ✓ | <p>The amount to be loaded</p> |
-| referenceID | String |  | ✓ | <p>Transaction id of the original transaction to be adjusted</p> |
-| referenceDate | String |  | ✓ | <p>Transaction date of the original transaction or a repeat of the original deduct to be adjusted</p> |
-| narrative | String | 1-255 characters | ✓ | <p>A description of the terminal where the card was used</p> |
-| transactionID | String | 1-40 characters | ✓ | <p>Transaction id number generated by the calling client</p> |
-| transactionData | String |  | ✓ | <p>Extra information about the transaction in a KLV format</p> |
-| transactionDate | Date |  |  | <p>Transaction date generated by the calling client</p> |
-| checksum | String |  | ✓ | <p>HMAC-SHA1 hashed signature of the concatenated method name with all argument values using the terminal password as private key</p> |
+| Parameter       | type    | Limits           | required | Description                                                                                                                    |
+| --------------- | ------- | ---------------- | :------: | ------------------------------------------------------------------------------------------------------------------------------ |
+| terminalID      | String  | 10 characters    |     ✓    | The Paymentology issued terminal id of the terminal requesting the transaction                                                 |
+| reference       | String  | 11-19 characters |     ✓    | The reference of the wallet to retrieve the balance for                                                                        |
+| requestAmount   | Integer |                  |     ✓    | The amount to be loaded                                                                                                        |
+| referenceID     | String  |                  |     ✓    | Transaction id of the original transaction to be adjusted                                                                      |
+| referenceDate   | String  |                  |     ✓    | Transaction date of the original transaction or a repeat of the original deduct to be adjusted                                 |
+| narrative       | String  | 1-255 characters |     ✓    | A description of the terminal where the card was used                                                                          |
+| transactionID   | String  | 1-40 characters  |     ✓    | Transaction id number generated by the calling client                                                                          |
+| transactionData | String  |                  |     ✓    | Extra information about the transaction in a KLV format                                                                        |
+| transactionDate | Date    |                  |          | Transaction date generated by the calling client                                                                               |
+| checksum        | String  |                  |     ✓    | HMAC-SHA1 hashed signature of the concatenated method name with all argument values using the terminal password as private key |
 
 ```xml
 <methodCall>
@@ -416,8 +416,9 @@ Reverse a Load to a wallet</p>
     </param>
   </params>
 </methodCall>
+```
 
-```,```xml
+```xml
 <methodResponse>
     <params  />
         <param  />
@@ -440,8 +441,9 @@ Reverse a Load to a wallet</p>
         </param>
     </params>
 </methodResponse>
+```
 
-```,```xml
+```xml
 <?xml version="1.0"?>
 <methodCall>
   <methodName>LoadReversal</methodName>
@@ -499,8 +501,9 @@ Reverse a Load to a wallet</p>
     </param>
   </params>
 </methodCall>
+```
 
-```,```xml
+```xml
 <methodResponse>
     <params  />
         <param  />
@@ -523,17 +526,14 @@ Reverse a Load to a wallet</p>
         </param>
     </params>
 </methodResponse>
-
 ```
-
-<p> </p>
 
 #### Response schema
 
-| Field | type | Description |
-|---|---|---|
-| resultCode | Integer | <p>Status code indicating transaction result</p> |
-| resultText | String | <p>Text indicating transaction result</p> |
+| Field      | type    | Description                               |
+| ---------- | ------- | ----------------------------------------- |
+| resultCode | Integer | Status code indicating transaction result |
+| resultText | String  | Text indicating transaction result        |
 
 ```xml
 <methodCall>
@@ -581,8 +581,9 @@ Reverse a Load to a wallet</p>
     </param>
   </params>
 </methodCall>
+```
 
-```,```xml
+```xml
 <methodResponse>
     <params  />
         <param  />
@@ -605,8 +606,9 @@ Reverse a Load to a wallet</p>
         </param>
     </params>
 </methodResponse>
+```
 
-```,```xml
+```xml
 <?xml version="1.0"?>
 <methodCall>
   <methodName>LoadReversal</methodName>
@@ -664,8 +666,9 @@ Reverse a Load to a wallet</p>
     </param>
   </params>
 </methodCall>
+```
 
-```,```xml
+```xml
 <methodResponse>
     <params  />
         <param  />
@@ -688,10 +691,8 @@ Reverse a Load to a wallet</p>
         </param>
     </params>
 </methodResponse>
-
 ```
 
-<p><a href="https://developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/#RIRemote"
+## Appendix
 
-<h2>Appendix</h2>
-<p></a></p>
+[https://developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/#RIRemote](https://developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/#RIRemote)
