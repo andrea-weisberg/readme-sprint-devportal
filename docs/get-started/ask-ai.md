@@ -32,7 +32,7 @@ Ask AI can be used in two ways:
 
 <Tabs>
   <Tab title="Ask AI Chat">
-    1. click on the Ask AI button on the bottom right corner.
+    1. Click on the Ask AI button on the bottom right corner.
     2. Type your question in the input bar and click on the submit icon or press enter.
     3. Ask AI will begin to populate a response to your query, along with the material it has referenced.
     4. Once the response has populated, you can choose to:
