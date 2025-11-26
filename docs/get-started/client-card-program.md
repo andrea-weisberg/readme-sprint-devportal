@@ -58,5 +58,5 @@ Let’s explain how it works:
 
 A client can have more than 1 program linked to them and these will be managed accordingly:
 
-* **multiple settings—** these are used for tracking different product types, such as virtual cards, physical cards and Digital First cards. They can be set up with different merchants (or partners), multiple VISA SREs’ and multiple BINs (one BIN per setting). The settings can also vary from one card to another, such as different spend limits, different MCCs and multiple reports per setting. They are applied for medium to large clients. These settings are billed individually per setting.
+* **Multiple settings—** these are used for tracking different product types, such as virtual cards, physical cards and Digital First cards. They can be set up with different merchants (or partners), multiple VISA SREs’ and multiple BINs (one BIN per setting). The settings can also vary from one card to another, such as different spend limits, different MCCs and multiple reports per setting. They are applied for medium to large clients. These settings are billed individually per setting.
 * **Single settings—** these are used to manage single card programs, such as one BIN, one VISA SRE, for small to medium clients. They are also billed individually per setting.
