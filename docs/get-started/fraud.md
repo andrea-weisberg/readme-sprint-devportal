@@ -9,6 +9,26 @@ Paymentology provides a number of advanced fraud prevention and risk control mec
 
 Let’s look at the fraud control measures.
 
+## Usage
+
+Paymentology Sprint allows you to specify the payment methods that the card can be used with. If there is an attempted use of the card for an unspecified payment method, the transaction will fail.
+
+Here are some of the common methods:
+
+POS
+
+ATM
+
+Tokenization
+
+Moneysend
+
+Contactless
+
+EMV
+
+E-commerce
+
 ## Transaction Limits
 
 Paymentology Sprint allows you to implement transaction limits per card or program. If the ceiling is reached, no further transactions are permitted.
