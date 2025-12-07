@@ -35,9 +35,9 @@ Paymentology Sprint allows you to implement transaction limits per card or progr
 
 These are the transaction limits:
 
-* Daily transaction limit
-* Daily POS limit
-* Daily ATM limit
+* Daily transaction limit - Limits on single-day and multiple-day transaction velocity (number of transactions) & monetary spending (value of transactions).
+* Daily POS limit/Daily transaction count POS - Limits on single-day velocity (number of transactions) & monetary spending (value of transactions) for POS transactions.
+* Daily ATM limit/Daily transaction count ATM- Limits on single-day velocity (number of transactions) & monetary spending (value of transactions) for ATM transactions.
 * Daily transaction count POS
 * Daily transaction count ATM
 * Monthly POS limit
