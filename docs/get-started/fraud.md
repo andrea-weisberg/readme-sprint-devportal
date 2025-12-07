@@ -73,3 +73,11 @@ Paymentology Sprint allows you to implement the following spend control measures
 ## Authorization Checks
 
 Paymentology Sprint allows you to implement the following authorization checks:
+
+Checks on CVC1 and CVC2- card is stopped if incorrect CVV (3-digit code printed on the back of card) is entered incorrectly three times
+
+Checks on magstripe data present
+
+Checks on blacklisted merchants /out of country usage)/high risk merchants
+
+Checks for limits setup on the campaign.
