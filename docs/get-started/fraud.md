@@ -59,8 +59,9 @@ Paymentology Sprint lets you configure real-time notifications that keep custome
 You can configure the following notifications:
 
 * Notifications for declined transactions
-* Notifications for transactions
-* Notifications for 3D Secure
+* Notifications for successful transactions and reversals
+
+These notifications are sent via the transaction stream: https://developer.sprint.paymentology.com/notifications/
 
 ## Issuance checks
 
