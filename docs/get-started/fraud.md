@@ -9,26 +9,6 @@ Paymentology provides a number of advanced fraud prevention and risk control mec
 
 Let’s look at the fraud control measures.
 
-## Usage
-
-Paymentology Sprint allows you to specify the payment methods that the card can be used with. If there is an attempted use of the card for an unspecified payment method, the transaction will fail.
-
-Here are some of the common methods:
-
-POS
-
-ATM
-
-Tokenization
-
-Moneysend
-
-Contactless
-
-EMV
-
-E-commerce
-
 ## Transaction Limits
 
 Paymentology Sprint allows you to implement transaction limits per card or program. If the ceiling is reached, no further transactions are permitted.
@@ -36,14 +16,15 @@ Paymentology Sprint allows you to implement transaction limits per card or progr
 These are the transaction limits:
 
 * Daily transaction limit - Limits on single-day and multiple-day transaction velocity (number of transactions) & monetary spending (value of transactions).
-* Daily POS limit/Daily transaction count POS - Limits on single-day velocity (number of transactions) & monetary spending (value of transactions) for POS transactions.
-* Daily ATM limit/Daily transaction count ATM- Limits on single-day velocity (number of transactions) & monetary spending (value of transactions) for ATM transactions.
+* Daily POS limit / Daily transaction count POS - Limits on single-day velocity (number of transactions) & monetary spending (value of transactions) for POS transactions.
+* Daily ATM limit / Daily transaction count ATM- Limits on single-day velocity (number of transactions) & monetary spending (value of transactions) for ATM transactions.
 * Daily transaction count POS
 * Daily transaction count ATM
-* Monthly POS limit
-* Monthly ATM limit
+* Monthly POS limit / Monthly transaction count POS - Limits on monthly velocity (number of transactions) & monetary spending (value of transactions) for POS transactions.
+* Monthly ATM limit / Monthly transaction count ATM - Limits on monthly velocity (number of transactions) & monetary spending (value of transactions) for ATM transactions.
 * Monthly transaction count POS
-* Monthly transaction count ATM
+
+<br />
 
 ## Usage
 
