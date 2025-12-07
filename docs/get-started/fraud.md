@@ -21,11 +21,11 @@ These are the transaction limits:
 * Monthly POS limit / Monthly transaction count POS : Limits on monthly velocity (number of transactions) & monetary spending (value of transactions) for POS transactions.
 * Monthly ATM limit / Monthly transaction count ATM : Limits on monthly velocity (number of transactions) & monetary spending (value of transactions) for ATM transactions.
 
-<br />
-
 ## Usage
 
 Paymentology Sprint allows you to specify the payment methods that the card can be used with. If there is an attempted use of the card for an unspecified payment method, the transaction will fail and send a fraud alert.
+
+Here are some of the common methods:
 
 * POS
 * ATM
