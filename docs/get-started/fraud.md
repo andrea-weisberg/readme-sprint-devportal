@@ -39,18 +39,11 @@ Here are some of the common methods:
 
 Paymentology Sprint allows you to implement additional settings to reinforce the security of cards and help with fraud prevention. These are the additional card settings:
 
-* Enable multiple currencies linked cards
 * Allow releasing of authorisations
 * Max threshold to release funds for unsettled authorisations
 * Time period to release authorisations
 * Expiry time period
 * PIN length
-* BIN range splitting
-* Filtering rules
-* Cards created active or inactive
-* Is the card readable
-* Allow batch top ups from administrator portal
-* Allow card orders from administrator portal
 
 ## Notifications
 
@@ -61,7 +54,7 @@ You can configure the following notifications:
 * Notifications for declined transactions
 * Notifications for successful transactions and reversals
 
-These notifications are sent via the transaction stream: https://developer.sprint.paymentology.com/notifications/
+These notifications are sent via the transaction stream: [https://developer.sprint.paymentology.com/notifications/](https://developer.sprint.paymentology.com/notifications/)
 
 ## Issuance checks
 
@@ -111,3 +104,8 @@ Terminal Entry Mode blocks
 Blocking non-3DS transactions
 
 Blocking Merchant Categories
+
+## Settlement
+
+A Report can be sent to notify the client of any settlement transactions processed without corresponding authorizations that have resulted in a negative balance on a card.
+This report enables the client to  review and investigate such occurrences, ensuring resolution and maintaining the accuracy of card balances and settlement records.
