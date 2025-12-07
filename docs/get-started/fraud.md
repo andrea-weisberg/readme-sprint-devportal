@@ -21,8 +21,7 @@ These are the transaction limits:
 * Daily transaction count POS
 * Daily transaction count ATM
 * Monthly POS limit / Monthly transaction count POS - Limits on monthly velocity (number of transactions) & monetary spending (value of transactions) for POS transactions.
-* Monthly ATM limit / Monthly transaction count ATM - Limits on monthly velocity (number of transactions) & monetary spending (value of transactions) for ATM transactions.
-* Monthly transaction count POS
+* Monthly ATM limit / Monthly transaction count ATM : Limits on monthly velocity (number of transactions) & monetary spending (value of transactions) for ATM transactions.
 
 <br />
 
