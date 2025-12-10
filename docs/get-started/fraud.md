@@ -60,42 +60,33 @@ These notifications are sent via the transaction stream: [https://developer.spri
 
 Paymentology Sprint allows you to implement the following authorization checks:
 
-Checks on CVC1 and CVC2- card is stopped if incorrect CVV (3-digit code printed on the back of card) is entered incorrectly three times
-
-Checks on magstripe data present
-
-Checks on blacklisted merchants /out of country usage)/high risk merchants
-
-Checks for limits setup on the campaign.
+* Checks on CVC1 and CVC2- card is stopped if incorrect CVV (**3-digit code** printed on the back of card) is entered incorrectly three times
+* Checks on magstripe data present
+* Checks on blacklisted merchants /out of country usage)/high risk merchants
+* Checks for limits setup on the campaign.
 
 ## Alerts
 
 Paymentology has some alerts in place to monitor suspicious/ fraudulent activity
 
-Alert when a merchant has more than 50 transactions that failed with a an error code of 1001 (Expired Crad), 1018 (No card Record/card doesn’t exist) or 1022(security violation eg. incorrect CVV) in the last 15 minutes
-
-Alert for Number of successful transactions from countries of BRA,MEX,RUS,CAN for the BIN compared to total number of successful transactions in the last 30 minutes.
+* Alert when a merchant has more than 50 transactions that failed with a an error code of 1001 (Expired Crad), 1018 (No card Record/card doesn’t exist) or 1022(security violation eg. incorrect CVV) in the last 15 minutes
+* Alert for Number of successful transactions from countries of BRA,MEX,RUS,CAN for the BIN compared to total number of successful transactions in the last 30 minutes.
 
 ## Merchant Blocking
 
 Paymentology supports various fraud block rule types including :
 
-​BIN equal to and Acceptor Name​/Merchant ID - This refers to blocking a merchant at BIN level using the MID/Merchant name
+* BIN equal to and Acceptor Name​/Merchant ID - This refers to blocking a merchant at BIN level using the MID/Merchant name
 
 Paymentology also has rules that can be setup at campaign level and can be validated with the client.
 Here are some of the rules
 
-AcquirerCountry, ​TerminalID​, and ​MerchantID​ combinations for more precise merchant blocking
-
-Country-level blocks  - Reject transactions from Specific Countries
-
-Restricting Card Use to Specific Countries in a Region
-
-Terminal Entry Mode blocks
-
-Blocking non-3DS transactions
-
-Blocking Merchant Categories
+* AcquirerCountry, ​TerminalID​, and ​MerchantID​ combinations for more precise merchant blocking
+* Country-level blocks  - Reject transactions from Specific Countries
+* Restricting Card Use to Specific Countries in a Region
+* Terminal Entry Mode blocks
+* Blocking non-3DS transactions
+* Blocking Merchant Categories
 
 ## Settlement
 
