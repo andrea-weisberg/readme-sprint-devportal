@@ -56,14 +56,6 @@ You can configure the following notifications:
 
 These notifications are sent via the transaction stream: [https://developer.sprint.paymentology.com/notifications/](https://developer.sprint.paymentology.com/notifications/)
 
-## Issuance checks
-
-Paymentology Sprint allows you to implement the following issuance checks:
-
-## Spend Controls
-
-Paymentology Sprint allows you to implement the following spend control measures:
-
 ## Authorization Checks
 
 Paymentology Sprint allows you to implement the following authorization checks:
