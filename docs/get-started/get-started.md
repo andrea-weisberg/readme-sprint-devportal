@@ -13,6 +13,35 @@ metadata:
 <h2>Our API’s</h2>
 <p><span style={{fontSize: "22px"}}><strong>We offer three simple and distinct APIs:</strong></span></p>
 
+## Our APIs
+
+**We offer three simple and distinct APIs:**
+
+### Companion API
+
+Use this API if you would like to store your customers’ card balances on your platform.
+
+***
+
+### Card API
+
+Use this API if you want us to store your customers’ card balances for you.
+
+***
+
+### QR Payments API
+
+Use this API to enable contactless QR Payments.
+
+***
+
+The Card and Companion API each offer a unique customer journey, so you will need to clearly understand how the two are different and what they do, to choose the one that is right for you.  
+Our QR Payments API can be used as a standalone API or as a plugin to either the Card or Companion API.
+
+***
+
+**[EXPLORE OUR API'S](#)**
+
 <p>The Card and Companion API each offer a unique customer journey, so you will need to clearly understand how the two are different and what they do, to choose the one that is right for you. Our QR Payments API can be used as a standalone API or as a plugin to either the Card or Companion API.</p>
 
 <p><a className="btn btn--secondary" href="https://developer.sprint.paymentology.com/get-started/our-apis/">EXPLORE OUR API’S</a></p>
