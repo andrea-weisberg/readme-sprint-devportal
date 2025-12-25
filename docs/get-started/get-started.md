@@ -13,9 +13,7 @@ metadata:
 <h2>Our API’s</h2>
 <p><span style={{fontSize: "22px"}}><strong>We offer three simple and distinct APIs:</strong></span></p>
 
-## Our APIs
-
-**We offer three simple and distinct APIs:**
+<br />
 
 ### Companion API
 
