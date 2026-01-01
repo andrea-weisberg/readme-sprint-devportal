@@ -38,7 +38,7 @@ Our QR Payments API can be used as a standalone API or as a plugin to either the
 
 ***
 
-**[EXPLORE OUR API'S](#)**
+**[EXPLORE OUR API'S](Our-APIs.md) **
 
 <p>The Card and Companion API each offer a unique customer journey, so you will need to clearly understand how the two are different and what they do, to choose the one that is right for you. Our QR Payments API can be used as a standalone API or as a plugin to either the Card or Companion API.</p>
 
