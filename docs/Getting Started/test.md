@@ -2,7 +2,14 @@
 title: Get Started
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
+  description: |2-
+      Welcome to Paymentology’s Sprint Developer Portal, where you will find
+      everything you need to start integrating with our platform. Use our APIs to
+      start issuing physical and virtual cards quickly and easily with just a few
+      lines of code.
   robots: index
 ---
 
