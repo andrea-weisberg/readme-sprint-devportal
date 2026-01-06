@@ -7,9 +7,149 @@ metadata:
 ---
 **Paymentology’s Sprint product provides simple, seamless, and scalable API integration solutions that enable quick and easy implementation and management of your card programs. We act as a payment enabler between card schemes like Mastercard, Visa, and Union Pay and your closed-loop wallet platform. Through our APIs, we are able to connect you with the card scheme of your choice, shielding you from all the complexities necessary for direct integration, so that you can focus on your business.**
 
-We offer four main APIs:
+{/* Section intro */}
 
-Discover which one is right for you.
+<p
+  style={{
+    margin: '8px 0 24px 0',
+    fontSize: '16px',
+    fontWeight: 500,
+    color: '#4A5A6A',
+  }}
+>
+  We offer four main APIs, discover which one is right for you:
+</p>
+
+{/* 2x2 API tiles (HTML/JSX version) */}
+
+<div
+  style={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    gap: '24px',
+    margin: '0 0 32px 0',
+  }}
+>
+  {/* Companion API */}
+
+  <a
+    href="https://developer.sprint.paymentology.com/companion-api/"
+    style={{
+      background: '#F3FBF8',
+      borderRadius: '16px',
+      padding: '32px',
+      textDecoration: 'none',
+      color: 'inherit',
+      display: 'block',
+      minHeight: '220px',
+    }}
+  >
+    <div
+      style={{
+        width: '64px',
+        height: '64px',
+        background: '#9ADBC0',
+        borderRadius: '16px',
+        marginBottom: '56px',
+      }}
+    />
+
+    <h3 style={{ margin: 0, fontSize: '32px', lineHeight: '36px' }}>
+      Companion<br />API
+    </h3>
+  </a>
+
+  {/* Card API */}
+
+  <a
+    href="https://developer.sprint.paymentology.com/card-api/"
+    style={{
+      background: '#EDF9F5',
+      borderRadius: '16px',
+      padding: '32px',
+      textDecoration: 'none',
+      color: 'inherit',
+      display: 'block',
+      minHeight: '220px',
+    }}
+  >
+    <div
+      style={{
+        width: '64px',
+        height: '64px',
+        background: '#9ADBC0',
+        borderRadius: '16px',
+        marginBottom: '56px',
+      }}
+    />
+
+    <h3 style={{ margin: 0, fontSize: '32px', lineHeight: '36px' }}>
+      Card<br />API
+    </h3>
+  </a>
+
+  {/* QR Payments API */}
+
+  <a
+    href="https://developer.sprint.paymentology.com/qr-payments-api/"
+    style={{
+      background: '#F3FBF8',
+      borderRadius: '16px',
+      padding: '32px',
+      textDecoration: 'none',
+      color: 'inherit',
+      display: 'block',
+      minHeight: '220px',
+    }}
+  >
+    <div
+      style={{
+        width: '64px',
+        height: '64px',
+        background: '#9ADBC0',
+        borderRadius: '16px',
+        marginBottom: '56px',
+      }}
+    />
+
+    <h3 style={{ margin: 0, fontSize: '32px', lineHeight: '36px' }}>
+      QR Payments<br />API
+    </h3>
+  </a>
+
+  {/* Transaction Stream */}
+
+  <a
+    href="https://developer.sprint.paymentology.com/notifications/"
+    style={{
+      background: '#EDF9F5',
+      borderRadius: '16px',
+      padding: '32px',
+      textDecoration: 'none',
+      color: 'inherit',
+      display: 'block',
+      minHeight: '220px',
+    }}
+  >
+    <div
+      style={{
+        width: '64px',
+        height: '64px',
+        background: '#9ADBC0',
+        borderRadius: '16px',
+        marginBottom: '56px',
+      }}
+    />
+
+    <h3 style={{ margin: 0, fontSize: '32px', lineHeight: '36px' }}>
+      Transaction<br />Stream
+    </h3>
+  </a>
+</div>
+
+***
+
+<br />
 
 ## 1. [Companion API](https://developer.sprint.paymentology.com/companion-api/)
 
