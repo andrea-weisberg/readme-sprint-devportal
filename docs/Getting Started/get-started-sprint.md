@@ -17,10 +17,11 @@ metadata:
       lines of code.
   robots: index
 ---
-## Our API’s
+<br />
 
-**We offer three simple and distinct APIs:**
-
+<h2>Our API’s</h2>
+<p><span style={{fontSize: '22px'}}><strong>We offer three simple and distinct APIs:</strong></span></p>
+  
 <div style={{display:'flex',gap:'24px',flexWrap:'wrap',margin:'32px 0'}}>
   {/* Companion API */}
 
@@ -61,7 +62,7 @@ metadata:
   </div>
 </div>
 
-The Card and Companion API each offer a unique customer journey, so you will need to clearly understand how the two are different and what they do, to choose the one that is right for you. Our QR Payments API can be used as a standalone API or as a plugin to either the Card or Companion API.
+<p>The Card and Companion API each offer a unique customer journey, so you will need to clearly understand how the two are different and what they do, to choose the one that is right for you. Our QR Payments API can be used as a standalone API or as a plugin to either the Card or Companion API.</p>
 
 <a href="our-apis.md" style={{display:'inline-block',padding:'12px 24px',background:'#0B1B33',color:'#fff',textDecoration:'none',borderRadius:'10px',fontWeight:'600',letterSpacing:'0.5px'}}>
   EXPLORE OUR API'S
