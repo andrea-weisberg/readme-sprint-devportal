@@ -1,5 +1,10 @@
 ---
 title: Get Started
+excerpt: >-
+  Welcome to Paymentology’s Sprint Developer Portal, where you will find
+  everything you need to start integrating with our platform. Use our APIs to
+  start issuing physical and virtual cards quickly and easily with just a few
+  lines of code.
 deprecated: false
 hidden: false
 link:
@@ -12,7 +17,6 @@ metadata:
       lines of code.
   robots: index
 ---
-
 <h2>Our API’s</h2>
 <p><span style={{fontSize: "22px"}}><strong>We offer three simple and distinct APIs:</strong></span></p>
 
@@ -36,12 +40,11 @@ Use this API to enable contactless QR Payments.
 
 ***
 
-The Card and Companion API each offer a unique customer journey, so you will need to clearly understand how the two are different and what they do, to choose the one that is right for you.  
-Our QR Payments API can be used as a standalone API or as a plugin to either the Card or Companion API.
+The Card and Companion API each offer a unique customer journey, so you will need to clearly understand how the two are different and what they do, to choose the one that is right for you.  Our QR Payments API can be used as a standalone API or as a plugin to either the Card or Companion API.
 
 ***
 
-[EXPLORE OUR API'S](Our-APIs.md) 
+[EXPLORE OUR API'S](Our-APIs.md)
 
 <p>The Card and Companion API each offer a unique customer journey, so you will need to clearly understand how the two are different and what they do, to choose the one that is right for you. Our QR Payments API can be used as a standalone API or as a plugin to either the Card or Companion API.</p>
 
