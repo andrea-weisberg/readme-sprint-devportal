@@ -67,18 +67,41 @@ The Card and Companion API each offer a unique customer journey, so you will nee
   EXPLORE OUR API'S
 </a>
 
-<br />
-
 <h2>Testing environments</h2>
 <p><strong><span style={{fontSize: '22px'}}>You’ll get access to our two testing environments:</span></strong></p>
+<div style={{display:'flex',gap:'24px',flexWrap:'wrap',margin:'32px 0'}}>
+  {/* Test Environment */}
+
+  <div style={{flex:1,minWidth:'260px',background:'#F3FBF8',padding:'32px',borderRadius:'16px'}}>
+    <div style={{width:'64px',height:'64px',background:'#9ADBC0',borderRadius:'16px',marginBottom:'24px'}} />
+
+    <h3 style={{marginBottom:'12px'}}>Test Environment</h3>
+
+    <p>
+      Simulate transactions in a test environment
+    </p>
+  </div>
+
+  {/* Live Environment */}
+
+  <div style={{flex:1,minWidth:'260px',background:'#EDF9F5',padding:'32px',borderRadius:'16px'}}>
+    <div style={{width:'64px',height:'64px',background:'#9ADBC0',borderRadius:'16px',marginBottom:'24px'}} />
+
+    <h3 style={{marginBottom:'12px'}}>Live Environment</h3>
+
+    <p>
+      Simulate transactions in a live environment
+    </p>
+  </div>
+</div>
 
 <a href="testing.md" style={{display:'inline-block',padding:'18px 28px',background:'#0B1B33',color:'#fff',textDecoration:'none',borderRadius:'10px',fontWeight:'700',letterSpacing:'0.5px'}}>
   EXPLORE OUR TESTING ENVIRONMENTS
-</a> 
+</a>
 
-<h2>Helpful tools</h2> 
+<h2>Helpful tools</h2>
 
-<p><span style={{fontSize: '22px'}}><strong>We have a helpful set of tools to support your integration process:</strong></span></p> 
+<p><span style={{fontSize: '22px'}}><strong>We have a helpful set of tools to support your integration process:</strong></span></p>
 
 <ul>
   <li><strong>XML Generator</strong>: allows you to generate a valid XML request (including a checksum string) from your request parameters</li>
@@ -87,6 +110,6 @@ The Card and Companion API each offer a unique customer journey, so you will nee
   <li><strong>API references</strong>: we have included API references under each of our three API sections</li>
 </ul>
 
-<p> </p>
+<p />
 
 <br />
