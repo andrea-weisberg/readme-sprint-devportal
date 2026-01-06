@@ -33,7 +33,7 @@ metadata:
   {/* Companion API */}
 
   <a
-    href="https://developer.sprint.paymentology.com/companion-api/"
+    href="companian-api.md"
     style={{
       background: '#F3FBF8',
       borderRadius: '16px',
@@ -62,7 +62,7 @@ metadata:
   {/* Card API */}
 
   <a
-    href="https://developer.sprint.paymentology.com/card-api/"
+    href="card-api.md"
     style={{
       background: '#EDF9F5',
       borderRadius: '16px',
@@ -91,7 +91,7 @@ metadata:
   {/* QR Payments API */}
 
   <a
-    href="https://developer.sprint.paymentology.com/qr-payments-api/"
+    href="qr-payments-api.md"
     style={{
       background: '#F3FBF8',
       borderRadius: '16px',
@@ -120,7 +120,7 @@ metadata:
   {/* Transaction Stream */}
 
   <a
-    href="https://developer.sprint.paymentology.com/notifications/"
+    href="transaction-stream.md"
     style={{
       background: '#EDF9F5',
       borderRadius: '16px',
