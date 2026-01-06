@@ -20,8 +20,17 @@ metadata:
 <br />
 
 <h2>Our API’s</h2>
-<p><span style={{fontSize: '22px'}}><strong>We offer three simple and distinct APIs:</strong></span></p>
-  
+<p
+  style={{
+    margin: '8px 0 24px 0',
+    fontSize: '16px',
+    fontWeight: 500,
+    color: '#4A5A6A',
+  }}
+>
+  We offer three simple and distinct APIs:
+</p>
+
 <div style={{display:'flex',gap:'24px',flexWrap:'wrap',margin:'32px 0'}}>
   {/* Companion API */}
 
@@ -69,7 +78,16 @@ metadata:
 </a>
 
 <h2>Testing environments</h2>
-<p><strong><span style={{fontSize: '22px'}}>You’ll get access to our two testing environments:</span></strong></p>
+<p
+  style={{
+    margin: '8px 0 24px 0',
+    fontSize: '16px',
+    fontWeight: 500,
+    color: '#4A5A6A',
+  }}
+>
+  You’ll get access to our two testing environments:
+</p>
 
 <div style={{display:'flex',gap:'24px',flexWrap:'wrap',margin:'32px 0'}}>
   {/* Test Environment */}
