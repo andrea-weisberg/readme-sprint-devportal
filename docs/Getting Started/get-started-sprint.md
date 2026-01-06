@@ -63,12 +63,13 @@ metadata:
 
 The Card and Companion API each offer a unique customer journey, so you will need to clearly understand how the two are different and what they do, to choose the one that is right for you. Our QR Payments API can be used as a standalone API or as a plugin to either the Card or Companion API.
 
-<a href="our-apis.md" style={{display:'inline-block',padding:'18px 28px',background:'#0B1B33',color:'#fff',textDecoration:'none',borderRadius:'10px',fontWeight:'700',letterSpacing:'0.5px'}}>
+<a href="our-apis.md" style={{display:'inline-block',padding:'12px 24px',background:'#0B1B33',color:'#fff',textDecoration:'none',borderRadius:'10px',fontWeight:'600',letterSpacing:'0.5px'}}>
   EXPLORE OUR API'S
 </a>
 
 <h2>Testing environments</h2>
 <p><strong><span style={{fontSize: '22px'}}>You’ll get access to our two testing environments:</span></strong></p>
+
 <div style={{display:'flex',gap:'24px',flexWrap:'wrap',margin:'32px 0'}}>
   {/* Test Environment */}
 
@@ -95,7 +96,7 @@ The Card and Companion API each offer a unique customer journey, so you will nee
   </div>
 </div>
 
-<a href="testing.md" style={{display:'inline-block',padding:'18px 28px',background:'#0B1B33',color:'#fff',textDecoration:'none',borderRadius:'10px',fontWeight:'700',letterSpacing:'0.5px'}}>
+<a href="testing.md" style={{display:'inline-block',padding:'12px 24px',background:'#0B1B33',color:'#fff',textDecoration:'none',borderRadius:'10px',fontWeight:'600',letterSpacing:'0.5px'}}>
   EXPLORE OUR TESTING ENVIRONMENTS
 </a>
 
