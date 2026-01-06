@@ -79,4 +79,3 @@ The Card and Companion API each offer a unique customer journey, so you will nee
 - **XML Poster**: allows you to post XML requests directly to the Paymentology system
 - **Checksum Generator**: allows you to calculate the checksum for a transaction based on a terminal password value and the request data
 - **API references**: we have included API references under each of our three API sections
-
