@@ -63,19 +63,30 @@ metadata:
 
 The Card and Companion API each offer a unique customer journey, so you will need to clearly understand how the two are different and what they do, to choose the one that is right for you. Our QR Payments API can be used as a standalone API or as a plugin to either the Card or Companion API.
 
-[Explore Our API’s](our-apis.md)
+<a href="our-apis.md" style={{display:'inline-block',padding:'18px 28px',background:'#0B1B33',color:'#fff',textDecoration:'none',borderRadius:'10px',fontWeight:'700',letterSpacing:'0.5px'}}>
+  EXPLORE OUR API'S
+</a>
 
-## Testing environments
+<br />
 
-**You’ll get access to our two testing environments:**
+<h2>Testing environments</h2>
+<p><strong><span style={{fontSize: '22px'}}>You’ll get access to our two testing environments:</span></strong></p>
 
-[Explore Our Testing Environments](testing.md)
+<a href="testing.md" style={{display:'inline-block',padding:'18px 28px',background:'#0B1B33',color:'#fff',textDecoration:'none',borderRadius:'10px',fontWeight:'700',letterSpacing:'0.5px'}}>
+  EXPLORE OUR TESTING ENVIRONMENTS
+</a> 
 
-## Helpful tools
+<h2>Helpful tools</h2> 
 
-**We have a helpful set of tools to support your integration process:**
+<p><span style={{fontSize: '22px'}}><strong>We have a helpful set of tools to support your integration process:</strong></span></p> 
 
-- **XML Generator**: allows you to generate a valid XML request (including a checksum string) from your request parameters
-- **XML Poster**: allows you to post XML requests directly to the Paymentology system
-- **Checksum Generator**: allows you to calculate the checksum for a transaction based on a terminal password value and the request data
-- **API references**: we have included API references under each of our three API sections
+<ul>
+  <li><strong>XML Generator</strong>: allows you to generate a valid XML request (including a checksum string) from your request parameters</li>
+  <li><strong>XML Poster</strong>: allows you to post XML requests directly to the Paymentology system</li>
+  <li><strong>Checksum Generator</strong>: allows you to calculate the checksum for a transaction based on a terminal password value and the request data</li>
+  <li><strong>API references</strong>: we have included API references under each of our three API sections</li>
+</ul>
+
+<p> </p>
+
+<br />
