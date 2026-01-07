@@ -188,20 +188,20 @@ All **Remote API** calls are mandatory and your system needs to be able to proce
 <br />
 
 <div align="center">
-  | PHYSICAL AND VIRTUAL APIs                    |
-  |:------:|
-  | Deduct                                       |
-  | DeductAdjustment                             |
-  | DeductReversal                               |
-  | LoadAdjustment                               |
-  | LoadReversal                                 |
-  | AdministartiveMessage3DSecureOTP             |
+  |           PHYSICAL AND VIRTUAL APIs          |
+  | :------------------------------------------: |
+  |                    Deduct                    |
+  |               DeductAdjustment               |
+  |                DeductReversal                |
+  |                LoadAdjustment                |
+  |                 LoadReversal                 |
+  |       AdministartiveMessage3DSecureOTP       |
   | AdministrativeMessagedigitization.activation |
-  | Stop                                         |
-  | ValidatePIN                                  |
-  | Balance                                      |
-  | LoadAuth                                     |
-  | LoadAuthReversal                             |
+  |                     Stop                     |
+  |                  ValidatePIN                 |
+  |                    Balance                   |
+  |                   LoadAuth                   |
+  |               LoadAuthReversal               |
 </div>
 
 ### [Remote API Testing – Documentation](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/)
@@ -209,6 +209,39 @@ All **Remote API** calls are mandatory and your system needs to be able to proce
 ## Card API
 
 For Card API, most of the API calls are applicable to both the Physical and Virtual Card API. Below we have listed the calls applicable for each.
+
+<br />
+
+| PHYSICAL CARD API ONLY | VIRTUAL CARD API ONLY |
+| :--------------------: | :-------------------: |
+|        LinkCard        |   CreateVirtualCard   |
+|        ChangePin       |       AddPocket       |
+
+<br />
+
+| PHYSICAL AND/OR VIRTUAL CARD APIS (These apply to both) |
+| :-----------------------------------------------------: |
+|                       BearerDetail                      |
+|                        CardDetail                       |
+|                       DeductFunds                       |
+|                    DeductFundsReverse                   |
+|                         Devalue                         |
+|                      DevalueReverse                     |
+|                      PocketTransfer                     |
+|                  PocketTransferReverse                  |
+|                   InsertTransactionFee                  |
+|                        ListCards                        |
+|                        LoadFunds                        |
+|                     LoadFundsReverse                    |
+|                        RetireCard                       |
+|                        Statement                        |
+|                         StopCard                        |
+|                        UnStopCard                       |
+|                              UpdateCardLabel            |
+|                   Set3DSecureCode (Static 3DS)          |
+|                               SetBearerDetail           |
+|                          ToggleVoucherFeature           |
+|                                    AddCardTag           |
 
 Follow for full [Card API Documentation](https://developer.sprint.paymentology.com/card-api/)
 
