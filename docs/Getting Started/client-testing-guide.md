@@ -67,124 +67,116 @@ Companion API is composed of Local and Remote methods. Local methods – you sen
 So let's create and manage your first Card. Below are a list of important Local API calls you need to implement depending on whether you choose Physical Companion API or Virtual Companion API.
 
 <div align="center">
+  <Table align={["center","center"]}>
+    <thead>
+      <tr>
+        <th style={{ textAlign: "center" }}>
+          PHYSICAL COMPANION API
+        </th>
 
-<Table align={["center","center"]}>
-  <thead>
-    <tr>
-      <th>
-        PHYSICAL COMPANION API
-      </th>
+        <th style={{ textAlign: "center" }}>
+          VIRTUAL COMPANION API
+        </th>
+      </tr>
+    </thead>
 
-      <th>
-        VIRTUAL COMPANION API
-      </th>
-    </tr>
-  </thead>
+    <tbody>
+      <tr>
+        <td style={{ textAlign: "center" }}>
+          OrderCard or OrderCardWithPinBlock
+        </td>
 
-  <tbody>
-    <tr>
-      <td>
-        OrderCard or OrderCardWithPinBlock
-      </td>
+        <td style={{ textAlign: "center" }}>
+          CreateLinkedCards
+          (Please note: Virtual Cards are created active and linked so you don't need to use the Activate and Link API calls.)
+        </td>
+      </tr>
 
-      <td>
-        CreateLinkedCards
-        (Please note: Virtual Cards are created active and linked so you don't need to use the Activate and Link API calls.)
-      </td>
-    </tr>
+      <tr>
+        <td style={{ textAlign: "center" }}>
+          LinkCard
+        </td>
 
-    <tr>
-      <td>
-        LinkCard
-      </td>
+        <td style={{ textAlign: "center" }}>
+          GetActiveLinkedCards
+        </td>
+      </tr>
 
-      <td>
-        GetActiveLinkedCards
-      </td>
-    </tr>
+      <tr>
+        <td style={{ textAlign: "center" }}>
+          ActivateCard
+        </td>
 
-    <tr>
-      <td>
-        ActivateCard
-      </td>
+        <td style={{ textAlign: "center" }}>
+          StopCard
+        </td>
+      </tr>
 
-      <td>
-        StopCard
-      </td>
-    </tr>
+      <tr>
+        <td style={{ textAlign: "center" }}>
+          ChangePin
+        </td>
 
-    <tr>
-      <td>
-        ChangePin
-      </td>
+        <td style={{ textAlign: "center" }}>
+          UnstopCard
+        </td>
+      </tr>
 
-      <td>
-        UnstopCard
-      </td>
-    </tr>
+      <tr>
+        <td style={{ textAlign: "center" }}>
+          GetActiveLinkedCards
+        </td>
 
-    <tr>
-      <td>
-        GetActiveLinkedCards
-      </td>
+        <td style={{ textAlign: "center" }}>
+          UpdateCVV
+        </td>
+      </tr>
 
-      <td>
-        UpdateCVV
-      </td>
-    </tr>
+      <tr>
+        <td style={{ textAlign: "center" }}>
+          TransferLink
+        </td>
 
-    <tr>
-      <td>
-        TransferLink
-      </td>
+        <td style={{ textAlign: "center" }}>
+          RetireCard
+        </td>
+      </tr>
 
-      <td>
-        RetireCard
-      </td>
-    </tr>
+      <tr>
+        <td style={{ textAlign: "center" }}>
+          StopCard
+        </td>
 
-    <tr>
-      <td>
-        StopCard
-      </td>
+        <td style={{ textAlign: "center" }}>
+          Status
+        </td>
+      </tr>
 
-      <td>
-        Status
-      </td>
-    </tr>
+      <tr>
+        <td style={{ textAlign: "center" }}>
+          UnstopCard
+        </td>
 
-    <tr>
-      <td>
-        UnstopCard
-      </td>
+        <td style={{ textAlign: "center" }} />
+      </tr>
 
-      <td>
+      <tr>
+        <td style={{ textAlign: "center" }}>
+          RetireCard
+        </td>
 
-      </td>
-    </tr>
+        <td style={{ textAlign: "center" }} />
+      </tr>
 
-    <tr>
-      <td>
-        RetireCard
-      </td>
+      <tr>
+        <td style={{ textAlign: "center" }}>
+          Status
+        </td>
 
-      <td>
-
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        Status
-      </td>
-
-      <td>
-
-      </td>
-    </tr>
-  </tbody>
-</Table>
-
+        <td style={{ textAlign: "center" }} />
+      </tr>
+    </tbody>
+  </Table>
 </div>
 
 Please note that these need to be successfully passed before we can implement Remote API calls.
@@ -192,6 +184,17 @@ Please note that these need to be successfully passed before we can implement Re
 ### Remote API Testing
 
 All **Remote API** calls are mandatory and your system needs to be able to process these requests. Remote API calls are applicable to both Virtual and Physical APIs.
+
+<br />
+
+<div align="center">
+  | PHYSICAL AND VIRTUAL APIs |
+  | -------- |
+  | Deduct   |
+	| DeductAdjustment   |
+  | DeductReversal   |
+	| LoadAdjustment   || Cell 3   || Cell 3   || Cell 3   || Cell 3   |
+</div>
 
 |           PHYSICAL AND VIRTUAL APIs          |
 | :------------------------------------------: |
