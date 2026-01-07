@@ -15,20 +15,20 @@ These are the measures Paymentology implements to ensure the security of Sprintâ
 
 To ensure that transactions are secure, Paymentology uses a checksum-based authentication method (
 
-<span title="ADD TOOLTIP TEXT HERE" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>SHA256</span>
+<span title="SHA-256 stands for Secure Hash Algorithm 256-bit and is used for crptographic security" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>SHA256</span>
 ) to ensure the validity of processes. The checksum is generated mostly from the data in the
-<span title="ADD TOOLTIP TEXT HERE" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>TERMINAL ID</span>
+<span title="The Paymentology issued terminal ID of the terminal requesting the transaction" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>TERMINAL ID</span>
 and
-<span title="ADD TOOLTIP TEXT HERE" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>CHECKSUM</span>
+<span title="HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>CHECKSUM</span>
 field, which is included in every single API call.
 
 <br />
 
 You can think of the
 
-<span title="ADD TOOLTIP TEXT HERE" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>TERMINAL ID</span>
+<span title="The Paymentology issued terminal ID of the terminal requesting the transaction" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>TERMINAL ID</span>
 and
-<span title="ADD TOOLTIP TEXT HERE" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>CHECKSUM</span>
+<span title="HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>CHECKSUM</span>
 fields as the
 <span title="ADD TOOLTIP TEXT HERE" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>USERNAME</span>
 and
@@ -39,14 +39,14 @@ respectively.
 
 This guarantees **authentication** as well as the **integrity** of every piece of data within the transaction. The
 
-<span title="ADD TOOLTIP TEXT HERE" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>TERMINAL ID</span>
+<span title="The Paymentology issued terminal ID of the terminal requesting the transaction" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>TERMINAL ID</span>
 is specific to you and you only, and only Paymentology will know the
 <span title="ADD TOOLTIP TEXT HERE" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>PASSWORD</span>
 associated with that terminalID.
 
 <br />
 
-For this process to be fully secure, the recipient of the message will have to **recalculate** the checksum using all the individual details of the message and then **compare** it to the Paymentology supplied checksum. If both are the same, the transaction gets authenticated and verified.
+For this process to be fully secure, the recipient of the message will have to **recalculate** the <span title="HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>CHECKSUM</span> using all the individual details of the message and then **compare** it to the Paymentology supplied <span title="HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>CHECKSUM</span>. If both are the same, the transaction gets authenticated and verified.
 
 During implementation, you can use our **[Checksum Generator tool](https://developer.sprint.paymentology.com/tools/checksum-generator/)** to compare the results of your checksum calculation to Paymentologyâ€™s checksum calculations.
 
