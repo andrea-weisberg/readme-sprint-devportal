@@ -24,7 +24,6 @@ These are the transaction limits:
 * **Monthly ATM limit**
 * **Monthly transaction count POS**
 * **Monthly transaction count ATM**
-* <br />
 
 ## Usage
 
@@ -63,7 +62,7 @@ Paymentology Sprint lets you configure real-time notifications that keep custome
 You can configure the following notifications:
 
 * Notifications for declined transactions
-* Notifications for transactions 
+* Notifications for transactions
 * Notifications for 3D Secure
 
 # Issuance checks
