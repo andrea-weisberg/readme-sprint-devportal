@@ -22,7 +22,7 @@ Testing with Paymentology's Sprint platform is easy. By following the steps belo
 6. Return the signed testing document to us for verification
 7. Book an implementation review meeting with us
 
-Read on to find out exactly how to complete these steps to get your API testing started. If you would like assistance along the way, email implementations@paymentology.com to book a short call with our Implementations Team.
+Read on to find out exactly how to complete these steps to get your API testing started. If you would like assistance along the way, email [implementations@paymentology.com](mailto:implementations@paymentology.com) to book a short call with our Implementations Team.
 
 ### 1. Sign up for a testing account
 
@@ -39,13 +39,13 @@ Select [the type](https://developer.sprint.paymentology.com/get-started/our-apis
 ## Testing Credentials
 
 1. **Companion and QR API**
-   - Terminal id
-   - Password/Private Key
+   * Terminal id
+   * Password/Private Key
 
 2. **Card API**
-   - Terminal id
-   - Password/Private Key
-   - Campaign UUID
+   * Terminal id
+   * Password/Private Key
+   * Campaign UUID
 
 If you have not yet received any of these details, please [reach out](https://developer.sprint.paymentology.com/contact-us/) to us before proceeding.
 
@@ -55,8 +55,8 @@ Next, please implement the methods for your chosen API.
 
 **To create and manage your first card, implement the applicable methods.**
 
-- [Companion API](https://developer.sprint.paymentology.com/companion-api/api-reference/)
-- [Card API](https://developer.sprint.paymentology.com/card-api/api-reference/)
+* [Companion API](https://developer.sprint.paymentology.com/companion-api/api-reference/)
+* [Card API](https://developer.sprint.paymentology.com/card-api/api-reference/)
 
 ## Companion API (V2)
 
@@ -66,11 +66,145 @@ Companion API is composed of Local and Remote methods. Local methods – you sen
 
 So let's create and manage your first Card. Below are a list of important Local API calls you need to implement depending on whether you choose Physical Companion API or Virtual Companion API.
 
+<Table align={["center","center"]}>
+  <thead>
+    <tr>
+      <th>
+        PHYSICAL COMPANION API
+      </th>
+
+      <th>
+        VIRTUAL COMPANION API
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        OrderCard or OrderCardWithPinBlock
+      </td>
+
+      <td>
+        CreateLinkedCards
+        (Please note: Virtual Cards are created active and linked so you don't need to use the Activate and Link API calls.)
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        LinkCard
+      </td>
+
+      <td>
+        GetActiveLinkedCards
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        ActivateCard
+      </td>
+
+      <td>
+        StopCard
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        ChangePin
+      </td>
+
+      <td>
+        UnstopCard
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        GetActiveLinkedCards
+      </td>
+
+      <td>
+        UpdateCVV
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        TransferLink
+      </td>
+
+      <td>
+        RetireCard
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        StopCard
+      </td>
+
+      <td>
+        Status
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        UnstopCard
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        RetireCard
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Status
+      </td>
+
+      <td>
+
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
 Please note that these need to be successfully passed before we can implement Remote API calls.
 
 ### Remote API Testing
 
 All **Remote API** calls are mandatory and your system needs to be able to process these requests. Remote API calls are applicable to both Virtual and Physical APIs.
+
+|                                      PHYSICAL AND VIRTUAL APIs                                     |
+| :------------------------------------------------------------------------------------------------: |
+|                                               Deduct                                               |
+|                                          DeductAdjustment                                          |
+|                                           DeductReversal                                           |
+|                                           LoadAdjustment                                           |
+|                                            LoadReversal                                            |
+|                                  AdministrativeMessage3DSecureOTP                                  |
+|                            AdministrativeMessagedigitization.activation                            |
+|                                                Stop                                                |
+|                                             ValidatePin                                            |
+|                                               Balance                                              |
+|                                                                                           LoadAuth |
+|                                                                                   LoadAuthReversal |
+
+<br />
 
 ### [Remote API Testing – Documentation](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/)
 
@@ -82,13 +216,13 @@ Follow for full [Card API Documentation](https://developer.sprint.paymentology.c
 
 Next, use the following tools to help you with the integration. These will ensure that you have built your Local API requests correctly. [Learn more about our tools.](https://developer.sprint.paymentology.com/tools/)
 
-- The [Checksum Generator](https://developer.sprint.paymentology.com/tools/checksum-generator/) allows you to calculate the checksum for a transaction based on a terminal password value and the request data. It replicates the same process that happens during authentication. You can use the tool to validate that your own calculated checksum is the same as the one the Paymentology Sprint system generates. The hash algorithm is SHA256 and is configured by Paymentology – please let us know which one you will be using.
+* The [Checksum Generator](https://developer.sprint.paymentology.com/tools/checksum-generator/) allows you to calculate the checksum for a transaction based on a terminal password value and the request data. It replicates the same process that happens during authentication. You can use the tool to validate that your own calculated checksum is the same as the one the Paymentology Sprint system generates. The hash algorithm is SHA256 and is configured by Paymentology – please let us know which one you will be using.
 
-- The [XML Generator](https://developer.sprint.paymentology.com/tools/xml-generator/) allows you to generate a valid XML request (including a checksum string) from your request parameters. To ensure compatibility, you can use the tool to confirm if your own generated XML requests, including the checksum, are the same with those that Paymentology generates.
+* The [XML Generator](https://developer.sprint.paymentology.com/tools/xml-generator/) allows you to generate a valid XML request (including a checksum string) from your request parameters. To ensure compatibility, you can use the tool to confirm if your own generated XML requests, including the checksum, are the same with those that Paymentology generates.
 
-- The [XML Poster](https://developer.sprint.paymentology.com/tools/xml-poster/) allows you to post XML requests directly to the Paymentology Sprint system. In case there is no other route, you can use the XML Poster to post requests created with the XML Generator to the Paymentology Sprint systems. For example, at the start of your testing, you'll not have a system in place for calling the Companion Card Local API; therefore, you can use this tool to post requests to the API directly—such as when creating your first test card.
+* The [XML Poster](https://developer.sprint.paymentology.com/tools/xml-poster/) allows you to post XML requests directly to the Paymentology Sprint system. In case there is no other route, you can use the XML Poster to post requests created with the XML Generator to the Paymentology Sprint systems. For example, at the start of your testing, you'll not have a system in place for calling the Companion Card Local API; therefore, you can use this tool to post requests to the API directly—such as when creating your first test card.
 
-- [SimPOS](https://developer.sprint.paymentology.com/tools/simpos/) is a transaction simulator tool that allows you to simulate remote API transactions. For example: you can use SimPOS to test that the flow of virtual card transactions within the Companion Card API is working properly.
+* [SimPOS](https://developer.sprint.paymentology.com/tools/simpos/) is a transaction simulator tool that allows you to simulate remote API transactions. For example: you can use SimPOS to test that the flow of virtual card transactions within the Companion Card API is working properly.
 
 ## 5. Download the test scenarios for your API
 
@@ -96,13 +230,13 @@ After you've implemented all the methods and you think you're ready, download th
 
 ## **Companion API Scenarios**
 
-- [Companion API Physical Card test script](https://developer.sprint.paymentology.com/wp-content/uploads/2022/11/Companion-API-Physical-Card-test-script.xlsx)
-- [Companion API Virtual Card test script](https://developer.sprint.paymentology.com/wp-content/uploads/2022/11/Companion-API-Virtual-Card-test-script.xlsx)
+* [Companion API Physical Card test script](https://developer.sprint.paymentology.com/wp-content/uploads/2022/11/Companion-API-Physical-Card-test-script.xlsx)
+* [Companion API Virtual Card test script](https://developer.sprint.paymentology.com/wp-content/uploads/2022/11/Companion-API-Virtual-Card-test-script.xlsx)
 
 ## **Card API Scenarios**
 
-- [Card API Physical Card test script](https://developer.sprint.paymentology.com/wp-content/uploads/2022/11/Card-API-Physical-Card-test-script.xlsx)
-- [Card API Virtual Card test script](https://developer.sprint.paymentology.com/wp-content/uploads/2022/11/Card-API-Virtual-Card-test-script.xlsx)
+* [Card API Physical Card test script](https://developer.sprint.paymentology.com/wp-content/uploads/2022/11/Card-API-Physical-Card-test-script.xlsx)
+* [Card API Virtual Card test script](https://developer.sprint.paymentology.com/wp-content/uploads/2022/11/Card-API-Virtual-Card-test-script.xlsx)
 
 ## 6. Return the signed testing document to us for verification
 
