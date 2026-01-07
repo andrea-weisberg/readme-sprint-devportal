@@ -15,11 +15,16 @@ Paymentology Sprint allows you to implement transaction limits per card or progr
 
 These are the transaction limits:
 
-* **Daily transaction limit** : Limits on single-day and multiple-day transaction velocity (number of transactions) & monetary spending (value of transactions).
-* **Daily POS limit / Daily transaction count POS** : Limits on single-day velocity (number of transactions) & monetary spending (value of transactions) for POS transactions.
-* **Daily ATM limit / Daily transaction count ATM** : Limits on single-day velocity (number of transactions) & monetary spending (value of transactions) for ATM transactions.
-* **Monthly POS limit / Monthly transaction count POS** : Limits on monthly velocity (number of transactions) & monetary spending (value of transactions) for POS transactions.
-* **Monthly ATM limit / Monthly transaction count ATM** : Limits on monthly velocity (number of transactions) & monetary spending (value of transactions) for ATM transactions.
+* **Daily transaction limit**
+* **Daily POS limit**
+* **Daily ATM limit**
+* **Daily transaction count POS**
+* **Daily transaction count ATM**
+* **Monthly POS limit**
+* **Monthly ATM limit**
+* **Monthly transaction count POS**
+* **Monthly transaction count ATM**
+* <br />
 
 ## Usage
 
@@ -44,6 +49,12 @@ Paymentology Sprint allows you to implement additional settings to reinforce the
 * Time period to release authorisations
 * Expiry time period
 * PIN length
+* BIN range splitting
+* Filtering rules
+* Cards created active or inactive
+* Is the card readable
+* Allow batch top us from the administrator portal
+* Allow card orders from administrator portal
 
 ## Notifications
 
@@ -52,18 +63,63 @@ Paymentology Sprint lets you configure real-time notifications that keep custome
 You can configure the following notifications:
 
 * Notifications for declined transactions
-* Notifications for successful transactions and reversals
+* Notifications for transactions 
+* Notifications for 3D Secure
 
-These notifications are sent via the transaction stream: [https://developer.sprint.paymentology.com/notifications/](https://developer.sprint.paymentology.com/notifications/)
+# Issuance checks
+
+Paymentology Sprint allows you to implement the following issuance checks:
+
+**Issuance checks**
+
+|                                                                                                                                                                                                          |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                              Checks on excessive voucher balances queries, large loads, multiple transactions and other suspicious activity                                              |
+|                                                                    Checks on authorizations of cards that are not activated or linked                                                                    |
+| Checks on ASI Messages (Account Status Inquiry messages) for new and existing BINs added to production to monitor if party is cycling through card numbers to get valid card numbers with expiry and CVV |
+|             If a card is EMV enabled, we can turn off magstripe fallback and only validate transactions if they come with EMV data as the Paymentology Sprint host system does EMV validation            |
+
+## Spend Controls
+
+Paymentology Sprint allows you to implement the following spend control measures:
+
+**Spend Controls**
+
+|                                                                                                               |
+| :-----------------------------------------------------------------------------------------------------------: |
+|              Limits on single-day and multiple-day transaction velocity (number of transactions)              |
+|                Limits on single-day and multiple-day monetary spending (value of transactions)                |
+| Limits for particular POS entry modes (magnetic stripe-read, PAN key-entry, chip-read, card not present etc.) |
+|                                      Limits for particular country codes                                      |
+|                            Limits on single transaction exceeding a certain amount                            |
+|                                Multiple transactions exceeding a certain amount                               |
+|                    Limits on number of transactions allowed per card based on program rules                   |
 
 ## Authorization Checks
 
 Paymentology Sprint allows you to implement the following authorization checks:
 
-* Checks on CVC1 and CVC2- card is stopped if incorrect CVV (**3-digit code** printed on the back of card) is entered incorrectly three times
-* Checks on magstripe data present
-* Checks on blacklisted merchants /out of country usage)/high risk merchants
-* Checks for limits setup on the campaign.
+**Authorization Checks**
+
+* <br />
+
+  |                                                                                                                                                                                                              |
+  | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+  |                                                         Checks on CVC1 and CVC2- card is stopped if incorrect CVV is entered incorrectly three times                                                         |
+  |                                                                                        Checks on out of country usage                                                                                        |
+  |                                                                                       Checks on magstripe data present                                                                                       |
+  |                                                                                Checks on refunds versus original transactions                                                                                |
+  |                                                                                        Checks on blacklisted merchants                                                                                       |
+  |                                                                                      Checks on spend at single merchants                                                                                     |
+  |                                                                             Checks on card spend spread across multiple merchants                                                                            |
+  |                                                                   Checks on card spend on an individual card at multiple merchants in 1 day                                                                  |
+  |                                                        Checks on card spend at certain merchants identified by merchant category code (high risk MCC)                                                        |
+  | Checks on trends on settlements received that have no authorization. Determine if there are multiple/settlement items received for a card that had no authorization, or across cards for a specific merchant |
+  |                                                Check for a high volume of ATM transactions in rapid sequence on a single card number or multiple card numbers                                                |
+  |                                       Alert when a merchant has more than 50 transactions that failed with a an error code of 1001, 1018 or 1022 in the last 15 minutes                                      |
+  |                                                           Alert when the number of ASI transactions is more than 5% of total number of transactions                                                          |
+  |                                        Alert when the total number of successful and unsuccessful ATM transactions in the last 5 minutes exceeds the transaction limit                                       |
+  |                                                       Alert when the total value of international transactions in the last 5 minutes exceeds the limit                                                       |
 
 ## Alerts
 
