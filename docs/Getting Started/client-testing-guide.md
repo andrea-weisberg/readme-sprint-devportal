@@ -66,6 +66,8 @@ Companion API is composed of Local and Remote methods. Local methods – you sen
 
 So let's create and manage your first Card. Below are a list of important Local API calls you need to implement depending on whether you choose Physical Companion API or Virtual Companion API.
 
+<div align="center">
+
 <Table align={["center","center"]}>
   <thead>
     <tr>
@@ -183,26 +185,28 @@ So let's create and manage your first Card. Below are a list of important Local 
   </tbody>
 </Table>
 
+</div>
+
 Please note that these need to be successfully passed before we can implement Remote API calls.
 
 ### Remote API Testing
 
 All **Remote API** calls are mandatory and your system needs to be able to process these requests. Remote API calls are applicable to both Virtual and Physical APIs.
 
-|                                      PHYSICAL AND VIRTUAL APIs                                     |
-| :------------------------------------------------------------------------------------------------: |
-|                                               Deduct                                               |
-|                                          DeductAdjustment                                          |
-|                                           DeductReversal                                           |
-|                                           LoadAdjustment                                           |
-|                                            LoadReversal                                            |
-|                                  AdministrativeMessage3DSecureOTP                                  |
-|                            AdministrativeMessagedigitization.activation                            |
-|                                                Stop                                                |
-|                                             ValidatePin                                            |
-|                                               Balance                                              |
-|                                                                                           LoadAuth |
-|                                                                                   LoadAuthReversal |
+|           PHYSICAL AND VIRTUAL APIs          |
+| :------------------------------------------: |
+|                    Deduct                    |
+|               DeductAdjustment               |
+|                DeductReversal                |
+|                LoadAdjustment                |
+|                 LoadReversal                 |
+|       AdministrativeMessage3DSecureOTP       |
+| AdministrativeMessagedigitization.activation |
+|                     Stop                     |
+|                  ValidatePin                 |
+|                    Balance                   |
+|                   LoadAuth                   |
+|               LoadAuthReversal               |
 
 <br />
 
