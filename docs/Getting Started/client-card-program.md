@@ -38,7 +38,7 @@ These are some possible card settings:
   This defines the maximum load allowed on a card as well as other velocity checks.
 
 * **KLV Fields**
-  This selects the KLV data that can be sent to the client. Read more about [KLV data here](https://developer.sprint.paymentology.com/companion-api/klv-lookup/).
+  This selects the KLV data that can be sent to the client. Read more about [KLV data here](klv-lookup.md).
 
 * **Security permissions**
   This allows for blacklisting and setting merchant group permissions.
@@ -47,7 +47,7 @@ Whenever a transaction is undertaken for a card, all its associated settings are
 
 Here is an illustration that shows how Paymentology manages clients’ cards programs on the Sprint platform:
 
-**Campaigns.png IMAGE GOES HERE.**
+**![Client Card Programs] (documents/sprint-developer-portal/client-card-program.png)**
 
 Let’s explain how it works:
 
