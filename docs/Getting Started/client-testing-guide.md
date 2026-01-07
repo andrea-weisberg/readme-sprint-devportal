@@ -188,39 +188,21 @@ All **Remote API** calls are mandatory and your system needs to be able to proce
 <br />
 
 <div align="center">
-  | PHYSICAL AND VIRTUAL APIs        |
-  | -------------------------------- |
-  | Deduct                           |
-  | DeductAdjustment                 |
-  | DeductReversal                   |
-  | LoadAdjustment                   |
-  | LoadReversal                     |
-  | AdministartiveMessage3DSecureOTP |
+  | PHYSICAL AND VIRTUAL APIs                    |
+  | -------------------------------------------- |
+  | Deduct                                       |
+  | DeductAdjustment                             |
+  | DeductReversal                               |
+  | LoadAdjustment                               |
+  | LoadReversal                                 |
+  | AdministartiveMessage3DSecureOTP             |
   | AdministrativeMessagedigitization.activation |
-  | Stop |
-  | ValidatePIN |
-  | Balance |
-  | LoadAuth |
-  | LoadAuthReversal |
-
+  | Stop                                         |
+  | ValidatePIN                                  |
+  | Balance                                      |
+  | LoadAuth                                     |
+  | LoadAuthReversal                             |
 </div>
-
-|           PHYSICAL AND VIRTUAL APIs          |
-| :------------------------------------------: |
-|                    Deduct                    |
-|               DeductAdjustment               |
-|                DeductReversal                |
-|                LoadAdjustment                |
-|                 LoadReversal                 |
-|       AdministrativeMessage3DSecureOTP       |
-| AdministrativeMessagedigitization.activation |
-|                     Stop                     |
-|                  ValidatePin                 |
-|                    Balance                   |
-|                   LoadAuth                   |
-|               LoadAuthReversal               |
-
-<br />
 
 ### [Remote API Testing – Documentation](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/)
 
