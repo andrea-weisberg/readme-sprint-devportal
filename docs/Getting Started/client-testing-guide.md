@@ -189,7 +189,7 @@ All **Remote API** calls are mandatory and your system needs to be able to proce
 
 <div align="center">
   | PHYSICAL AND VIRTUAL APIs                    |
-  | -------------------------------------------- |
+  |:------:|
   | Deduct                                       |
   | DeductAdjustment                             |
   | DeductReversal                               |
