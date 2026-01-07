@@ -47,7 +47,7 @@ Whenever a transaction is undertaken for a card, all its associated settings are
 
 Here is an illustration that shows how Paymentology manages clients’ cards programs on the Sprint platform:
 
-**![Client Card Programs] (documents/sprint-developer-portal/client-card-program.png)**
+**![Client Card Programs] (documents/Sprint dev portal/Client card programs.png)**
 
 Let’s explain how it works:
 
