@@ -188,14 +188,21 @@ All **Remote API** calls are mandatory and your system needs to be able to proce
 <br />
 
 <div align="center">
-  | PHYSICAL AND VIRTUAL APIs |
-  | ------------------------- | 
-  | Deduct                    | 
-  | DeductAdjustment          |   
-  | DeductReversal            |
-  | LoadAdjustment						|
-  | LoadReversal	            |   
-	| AdministartiveMessage3DSecureOTP |
+  | PHYSICAL AND VIRTUAL APIs        |
+  | -------------------------------- |
+  | Deduct                           |
+  | DeductAdjustment                 |
+  | DeductReversal                   |
+  | LoadAdjustment                   |
+  | LoadReversal                     |
+  | AdministartiveMessage3DSecureOTP |
+  | AdministrativeMessagedigitization.activation |
+  | Stop |
+  | ValidatePIN |
+  | Balance |
+  | LoadAuth |
+  | LoadAuthReversal |
+
 </div>
 
 |           PHYSICAL AND VIRTUAL APIs          |
