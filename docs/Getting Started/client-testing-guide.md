@@ -237,11 +237,11 @@ For Card API, most of the API calls are applicable to both the Physical and Virt
 |                        Statement                        |
 |                         StopCard                        |
 |                        UnStopCard                       |
-|                              UpdateCardLabel            |
-|                   Set3DSecureCode (Static 3DS)          |
-|                               SetBearerDetail           |
-|                          ToggleVoucherFeature           |
-|                                    AddCardTag           |
+|                     UpdateCardLabel                     |
+|               Set3DSecureCode (Static 3DS)              |
+|                     SetBearerDetail                     |
+|                   ToggleVoucherFeature                  |
+|                        AddCardTag                       |
 
 Follow for full [Card API Documentation](https://developer.sprint.paymentology.com/card-api/)
 
@@ -268,6 +268,8 @@ After you've implemented all the methods and you think you're ready, download th
 
 * [Card API Physical Card test script](https://developer.sprint.paymentology.com/wp-content/uploads/2022/11/Card-API-Physical-Card-test-script.xlsx)
 * [Card API Virtual Card test script](https://developer.sprint.paymentology.com/wp-content/uploads/2022/11/Card-API-Virtual-Card-test-script.xlsx)
+
+**Please remember: you will need to call each method specified in the script – and log it with a timestamp.**
 
 ## 6. Return the signed testing document to us for verification
 
