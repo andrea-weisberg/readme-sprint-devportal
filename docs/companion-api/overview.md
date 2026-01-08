@@ -128,6 +128,10 @@ metadata:
 
 The Companion API is split into two separate APIs based on whether we are calling you (we call it **Remote API**), or you’re calling us (**Local API**):
 
-|:--------:|:--------:|
-| **Local API - you call us**   |    **Remote API - we call you**       |
-| This API allows you to call us to perform necessary actions on your cards It contains all the API methods you will need e.g. linking a card to the SVA or updating cardholder details It is hosted by Paymentology |  This API allows us to call you to perform actions on your SVA/wallet e.g. Deducting/loading funds, balance inquiries, etc. It is hosted by you         |
+|                                                                                               Local API - you call us                                                                                              |                                                            Remote API - we call you                                                            |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------: |
+| This API allows you to call us to perform necessary actions on your cards It contains all the API methods you will need e.g. linking a card to the SVA or updating cardholder details It is hosted by Paymentology | This API allows us to call you to perform actions on your SVA/wallet e.g. Deducting/loading funds, balance inquiries, etc. It is hosted by you |
+
+**Companion Card transaction process flow:**
+
+image.
