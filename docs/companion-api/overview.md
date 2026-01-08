@@ -17,8 +17,6 @@ metadata:
   **Note**: You’ll be responsible for authorising transactions with this API.
 </p>
 
-<br />
-
 <div
   style={{
     background: '#0B1B33',
@@ -61,10 +59,7 @@ metadata:
       lineHeight: 1.6,
     }}
   >
-    If you want Paymentology to hold your customer’s{' '}
-    <strong>balance</strong> for you, use the{' '}
-    <strong>Card API</strong> instead. If you’re not sure which API to choose,
-    read about{' '}
+    If you want Paymentology to hold your customer’s balancefor you, use the **Card API** instead. If you’re not sure which API to choose, read about{' '}
 
     <a
       href="https://developer.sprint.paymentology.com/get-started/our-apis/"
