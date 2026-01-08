@@ -5,55 +5,91 @@ hidden: false
 metadata:
   robots: index
 ---
+How to manage funds
 
-**Once a cardholder has been issued with a card, they can start to manage the funds associated with their card or pockets.**
 
 
-These are the supported options for managing funds:
+**When the cardholder has either a virtual or a physical companion card (or both), they can start transacting against their store of value. These transactions originate from the merchant and are then sent to Paymentology via the card schemes, before being forwarded to the store of value for validation and authorization.**
 
-* Loading funds onto the card
-* Reversing the load
-* Transferring funds between cards
-* Reversing funds transferred between cards
-* Transferring funds between pockets
-* Reversing the pocket transfer
-* Deducting funds from card or pocket
-* Reversing the card deduction
-* Devaluing a card or pocket
-* Reversing the card’s devalue
+To enable and manage this process, Paymentology Sprint uses what is called the [Remote API]() .
 
-Let’s look at each of them.
+These are the supported transaction management options:
 
----
+* Getting a balance on a card
+* Doing a deduct transaction on a card
+* A reversal for a deduct transaction
+* Adjustments on a card
 
-## 1. Loading funds onto the card
+***
 
-You can load funds onto a card balance or a pocket (if you’ve opted for pockets). If you do not have pockets, then the funds will be loaded directly onto the card.
-If you’re loading the funds onto a pocket, then you’ll need to specify the target pocket’s UUID (universally unique identifier) number, which Paymentology provides.
+## 1. Getting a balance on a card
 
-To carry out the loading of funds, the client manages a separate process that makes a debit from the store of value account and credits it to the card.
-It’s also possible to set limits that predefine the amount that can be loaded on the card.
+If a card is enabled for ATM transactions, then the cardholder can make balance inquiries at an ATM machine. The balance that is sent back is the amount remaining in the stored value.
 
-You’ll need to make a call to the `LoadFunds` method.
+You’ll need to make a call to the `Balance` method.
 
----
+***
 
-## 2. Reversing the load
+## 2. Doing a deduct transaction on a card​
 
-If you want to reverse the loaded funds on the card, for any reason, and the funds have not been used, then you can initiate a reversal process.
+When a cardholder makes an ATM, point of sale (POS), or e-commerce transaction, Paymentology will send a Deduct request for the funds to be deducted from the store of value.
 
-You’ll need to make a call to the `LoadFundsReverse` method.
+You’ll need to respond with Approved for the transaction to be concluded successfully.
 
----
+<Image border={false} src="https://files.readme.io/ae4453cdf9910f36c1cadc40d6c43593c79d1eb05195a6efceb0c47d8f9dbbd4-image.png" />
 
-## 3. Transferring funds between cards
+***
 
-If there are cards issued within the same program, funds can be transferred between them easily.
-For example, if two people have cards from the same program, they can send each other funds easily.
+## 3. A reversal for a deduct transaction
 
-You’ll need to make a call to the `TransferFunds` method.
+A reversal is essentially a request for a transaction that was not completed and could have failed at a particular step of the transaction process. It is an advisement message to all parties of the transaction and ensures that the card and store of value are put back into their original state if a failed to deduct transaction had been initiated.
 
----
+If you sent a transaction and did not receive a confirmation that the transaction was successful, it could imply that the transaction did not reach the intended destination.
+
+Reversals are triggered by merchants for three reasons:
+
+1. **The merchant did not receive any response back from the card scheme for the authorization request. In this case, the merchant would timeout the transaction**
+
+Scenario: In this scenario, a `Deduct` request was sent to the store of value system but there was no response received. This will cause a time out, as no response will be sent back to the merchant.
+
+_A full cycle of an authorization must be concluded within 5 seconds meaning a response from the store of value system needs to be received with 2 seconds maximum._
+
+Due to no response, a `DeductReversal` will be triggered and the store of value system will match the **TransactionID** of the initial `Deduct` and match it with the **ReferenceID** in the `DeductReversal` and **Approves** the `DeductReversal` by responding with **1 – Success** and reverse the funds the funds back.
+
+The store of value system does not have the option to respond with a -9 Crashed or disapproved response.
+
+2. **The merchant receives a timeout request from the card scheme due to connectivity issues**
+
+Scenario: In the scenario, due to connectivity issues the `Deduct` request is not sent to the store of value system. This results in a timeout in the transaction. The merchant will timeout the transaction and trigger a `DeductReversal` which will be sent to the store of value system. At this point, the store of value system has no record of the initial `Deduct`.
+
+The store of value system will attempt to match the **ReferenceID** in the `DeductReversal`, which they will not find as the initial `Deduct` did not reach the store of value system. The store of value system will send an acknowledgement = 1 – Success but no funds will be moved on the store of value system
+
+The store of value system may not respond with a -9 Crashed or disapproved response.
+
+3. **The merchant voided the transaction**
+
+Scenario: In this scenario, the authorization is cancelled/ voided immediately after a successful transaction has been concluded. The store of value system will have received the initial `Deduct` request.
+
+The store of value system will match the **ReferenceID** of the `DeductReversal` to the **Transaction ID** of the initial `Deduct` request. They will reverse the funds and respond with **1 – Success**.
+
+The store of value system may not respond with a -9 Crashed or disapproved response.
+
+Also, the transaction could have reached the destination and was processed correctly, but the confirmation response was “lost” along the way.
+
+Paymentology will link the deduct reversal to the original authorization, we do this by including a `ReferenceID` in the `DeductReversal` API request. The `ReferenceID` field is the transaction ID of the original authorization (Deduct).
+
+Here is a table that shows the only acceptable response codes that can be sent to Paymentology:
+
+Table: Response codes for the Reversals method
+
+| Code | Description              |
+| ---- | ------------------------ |
+| 1    | Success (or approved)    |
+| -9   | Crashed (or disapproved) |
+
+<Image border={false} src="https://files.readme.io/bb12aa3330d56a949be2d13c202e18a3f19083b76737a8f5a4415c152a0cfe39-image.png" />
+
+***
 
 ## 4. Reversing funds transferred between cards
 
@@ -61,7 +97,7 @@ If you want to reverse the transferred funds, for any reason, and the funds have
 
 You’ll need to make a call to the `TransferFundsReverse` method.
 
----
+***
 
 ## 5. Transferring funds between pockets
 
@@ -70,7 +106,7 @@ For example, you may want to transfer some funds from your expenditure pocket to
 
 You’ll need to make a call to the `PocketTransfer` method.
 
----
+***
 
 ## 6. Reversing the pocket transfer
 
@@ -78,7 +114,7 @@ If you want to reverse the funds transferred to a pocket, for any reason, and th
 
 You’ll need to make a call to the `PocketTransferReverse` method.
 
----
+***
 
 ## 7. Deducting funds from card or pocket
 
@@ -88,7 +124,7 @@ After the deduction has been completed successfully, the client then credits the
 
 You’ll need to make a call to the `DeductFunds` method.
 
----
+***
 
 ## 8. Reversing the card deduction
 
@@ -97,7 +133,7 @@ Once successful, the balance will change based on the reversed amount.
 
 [You’ll need to make a call to the `DeductFundsReverse` method.](https://developer.sprint.paymentology.com/card/documentation/card-api#deductfundsreverse)
 
----
+***
 
 ## 9. Devaluing a card or pocket
 
@@ -106,7 +142,7 @@ No partial amount will be removed from the card or pocket balances, but only all
 
 You’ll need to make a call to the `Devalue` method.
 
----
+***
 
 ## 10. Reversing a devalue
 
