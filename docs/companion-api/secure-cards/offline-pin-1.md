@@ -7,6 +7,8 @@ metadata:
 ---
 Offline PIN is a card verification method used for EMV chip cards as the PIN is stored on the chip. This means that cardholder verification can occur even if a POS terminal is not connected to a network.
 
+As with any PIN, the offline PIN will be blocked after too many unsuccessful attempts.
+
 The way the offline PIN transactions differ from online PIN transactions is with online PIN, the PIN is encrypted and sent to Paymentology in an ISO message however with offline PIN transactions, we use different cardholder verification methods and checks to validate the transaction.
 
 ### How to update the Offline PIN
