@@ -5,29 +5,22 @@ hidden: false
 metadata:
   robots: index
 ---
+**The Paymentology Sprint Companion API allows you to secure your cards and ensure the safety of transactions.**
 
+You can use the following three main ways to secure your companion cards:
 
-**The Sprint Card API allows you to access a wide range of features to ensure the security of card transactions.**
-
-Here are the main features available to secure your cards:
-
-* Dynamic secure code on virtual cards
 * Dynamic CVV on virtual cards
 * PIN on physical cards
-* Adding pockets to your card
 
-Let’s look at each of them.
+## Securing a virtual card with a dynamic secure code
 
-## 1. Using a dynamic secure code on virtual cards
+You can add an extra layer of security to your virtual card using a dynamic secure code. **The secure code is what Mastercard refers to as 3D Secure, and Visa refers to it as Visa Secure (formerly Verified by Visa (VbV)).** Mastercard and Visa created the technical standard to secure Cardholder Not Present (CNP) transactions.
 
-A dynamic secure code allows you to increase the security of your virtual cards. If enabled, the secure code is required at the time of making any transaction, enhancing payment security and safeguarding against fraud.
+**This method provides additional authentication to secure a customer’s virtual card during an online transaction.** It protects consumers against unauthorized use of cards and businesses from potential fraud liabilities.
 
-The secure code is what Mastercard refers to as **3D Secure**, and Visa refers to as **Visa Secure** (formerly Verified by Visa / VbV).
+3D Secure enables consumers to verify transactions using a One Time Pin (OTP), which is sent to their mobile device.
 
-To secure your virtual card with a dynamic secure code:
-
-* Call the [`AdministrativeMessage`](https://developer.sprint.paymentology.com/companion/documentation/remote#administrativemessage) method.
-* An OTP will be delivered to the cardholder via the [`OTPRequest`](https://developer.sprint.paymentology.com/remote-messaging/documentation#otprequest) method to complete the secure code process and finalize the transaction.
+If your card program is enabled for Dynamic 3D Secure, the cardholder will be sent an OTP to conclude an online transaction. Through the Remote AdminMessage, Paymentology will send the OTP to your platform, which you can then send on to the cardholder.
 
 ## 2. Using a dynamic CVV on virtual cards
 
