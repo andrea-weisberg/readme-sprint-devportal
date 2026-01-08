@@ -65,6 +65,7 @@ metadata:
 
 <div style={{ width: '100%', margin: '20px 0 8px 0' }}>
   {/* Row 1: 3 tiles */}
+
   <div
     style={{
       display: 'grid',
@@ -75,6 +76,7 @@ metadata:
   >
     <div style={{ background: '#F3FBF8', borderRadius: '16px', padding: '22px', minHeight: '190px' }}>
       <img src="ICON_URL_1" alt="" style={{ width: '56px', height: '56px', marginBottom: '40px' }} />
+
       <p style={{ margin: 0, fontSize: '16px', lineHeight: 1.55, fontWeight: 700, color: '#0F2233' }}>
         Store your customers’ account balances on your platform and be responsible for authorising transactions
       </p>
@@ -82,6 +84,7 @@ metadata:
 
     <div style={{ background: '#F3FBF8', borderRadius: '16px', padding: '22px', minHeight: '190px' }}>
       <img src="ICON_URL_2" alt="" style={{ width: '56px', height: '56px', marginBottom: '40px' }} />
+
       <p style={{ margin: 0, fontSize: '16px', lineHeight: 1.55, fontWeight: 700, color: '#0F2233' }}>
         Issue your own virtual and physical cards instantly
       </p>
@@ -89,6 +92,7 @@ metadata:
 
     <div style={{ background: '#F3FBF8', borderRadius: '16px', padding: '22px', minHeight: '190px' }}>
       <img src="ICON_URL_3" alt="" style={{ width: '56px', height: '56px', marginBottom: '40px' }} />
+
       <p style={{ margin: 0, fontSize: '16px', lineHeight: 1.55, fontWeight: 700, color: '#0F2233' }}>
         Connect your customers to an open-loop environment with just one integration
       </p>
@@ -96,6 +100,7 @@ metadata:
   </div>
 
   {/* Row 2: 2 tiles */}
+
   <div
     style={{
       display: 'grid',
@@ -105,6 +110,7 @@ metadata:
   >
     <div style={{ background: '#F3FBF8', borderRadius: '16px', padding: '22px', minHeight: '190px' }}>
       <img src="ICON_URL_4" alt="" style={{ width: '56px', height: '56px', marginBottom: '40px' }} />
+
       <p style={{ margin: 0, fontSize: '16px', lineHeight: 1.55, fontWeight: 700, color: '#0F2233' }}>
         Give your cardholders access to the global open-loop world of payments so that they can transact securely anywhere 24/7
       </p>
@@ -112,9 +118,16 @@ metadata:
 
     <div style={{ background: '#F3FBF8', borderRadius: '16px', padding: '22px', minHeight: '190px' }}>
       <img src="ICON_URL_5" alt="" style={{ width: '56px', height: '56px', marginBottom: '40px' }} />
+
       <p style={{ margin: 0, fontSize: '16px', lineHeight: 1.55, fontWeight: 700, color: '#0F2233' }}>
         Empower customers who don’t qualify for a credit card or bank account with a virtual or physical card that they can use to shop online
       </p>
     </div>
   </div>
 </div>
+
+The Companion API is split into two separate APIs based on whether we are calling you (we call it **Remote API**), or you’re calling us (**Local API**):
+
+|:--------:|:--------:|
+| **Local API - you call us**   |    **Remote API - we call you**       |
+| This API allows you to call us to perform necessary actions on your cards It contains all the API methods you will need e.g. linking a card to the SVA or updating cardholder details It is hosted by Paymentology |  This API allows us to call you to perform actions on your SVA/wallet e.g. Deducting/loading funds, balance inquiries, etc. It is hosted by you         |
