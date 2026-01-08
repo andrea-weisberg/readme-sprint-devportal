@@ -59,104 +59,60 @@ metadata:
       lineHeight: 1.6,
     }}
   >
-    If you want Paymentology to hold your customer’s balancefor you, use the **Card API** instead. If you’re not sure which API to choose, read about{' '} <a href="https://developer.sprint.paymentology.com/get-started/our-apis/" style={{color: '#FFFFFF',textDecoration: 'underline',fontWeight: 600,}}> our APIs</a> {' '} first or{' '} <a href="#" style={{color: '#FFFFFF',textDecoration: 'underline',fontWeight: 600,}}> get in touch </a>.
+    If you want Paymentology to hold your customer’s balance for you, use the **Card API** instead. If you’re not sure which API to choose, read about{' '} <a href="https://developer.sprint.paymentology.com/get-started/our-apis/" style={{color: '#FFFFFF',textDecoration: 'underline',fontWeight: 600,}}> our APIs</a> {' '} first or{' '} <a href="#" style={{color: '#FFFFFF',textDecoration: 'underline',fontWeight: 600,}}> get in touch </a>.
   </p>
 </div>
 
-<br />
-
-<div style={{ width: '100%', margin: '24px 0 8px 0' }}>
+<div style={{ width: '100%', margin: '20px 0 8px 0' }}>
   {/* Row 1: 3 tiles */}
-
   <div
     style={{
       display: 'grid',
       gridTemplateColumns: 'repeat(3, 1fr)',
-      gap: '24px',
-      marginBottom: '24px',
+      gap: '20px',
+      marginBottom: '20px',
     }}
   >
-    <div
-      style={{
-        background: '#F3FBF8',
-        borderRadius: '16px',
-        padding: '28px',
-        minHeight: '220px',
-      }}
-    >
-      <img src="ICON_URL_1" alt="" style={{ width: '72px', height: '72px', marginBottom: '64px' }} />
-
-      <p style={{ margin: 0, fontSize: '18px', lineHeight: 1.6, fontWeight: 700, color: '#0F2233' }}>
+    <div style={{ background: '#F3FBF8', borderRadius: '16px', padding: '22px', minHeight: '190px' }}>
+      <img src="ICON_URL_1" alt="" style={{ width: '56px', height: '56px', marginBottom: '40px' }} />
+      <p style={{ margin: 0, fontSize: '16px', lineHeight: 1.55, fontWeight: 700, color: '#0F2233' }}>
         Store your customers’ account balances on your platform and be responsible for authorising transactions
       </p>
     </div>
 
-    <div
-      style={{
-        background: '#F3FBF8',
-        borderRadius: '16px',
-        padding: '28px',
-        minHeight: '220px',
-      }}
-    >
-      <img src="ICON_URL_2" alt="" style={{ width: '72px', height: '72px', marginBottom: '64px' }} />
-
-      <p style={{ margin: 0, fontSize: '18px', lineHeight: 1.6, fontWeight: 700, color: '#0F2233' }}>
+    <div style={{ background: '#F3FBF8', borderRadius: '16px', padding: '22px', minHeight: '190px' }}>
+      <img src="ICON_URL_2" alt="" style={{ width: '56px', height: '56px', marginBottom: '40px' }} />
+      <p style={{ margin: 0, fontSize: '16px', lineHeight: 1.55, fontWeight: 700, color: '#0F2233' }}>
         Issue your own virtual and physical cards instantly
       </p>
     </div>
 
-    <div
-      style={{
-        background: '#F3FBF8',
-        borderRadius: '16px',
-        padding: '28px',
-        minHeight: '220px',
-      }}
-    >
-      <img src="ICON_URL_3" alt="" style={{ width: '72px', height: '72px', marginBottom: '64px' }} />
-
-      <p style={{ margin: 0, fontSize: '18px', lineHeight: 1.6, fontWeight: 700, color: '#0F2233' }}>
+    <div style={{ background: '#F3FBF8', borderRadius: '16px', padding: '22px', minHeight: '190px' }}>
+      <img src="ICON_URL_3" alt="" style={{ width: '56px', height: '56px', marginBottom: '40px' }} />
+      <p style={{ margin: 0, fontSize: '16px', lineHeight: 1.55, fontWeight: 700, color: '#0F2233' }}>
         Connect your customers to an open-loop environment with just one integration
       </p>
     </div>
   </div>
 
   {/* Row 2: 2 tiles */}
-
   <div
     style={{
       display: 'grid',
       gridTemplateColumns: 'repeat(2, 1fr)',
-      gap: '24px',
+      gap: '20px',
     }}
   >
-    <div
-      style={{
-        background: '#F3FBF8',
-        borderRadius: '16px',
-        padding: '28px',
-        minHeight: '220px',
-      }}
-    >
-      <img src="ICON_URL_4" alt="" style={{ width: '72px', height: '72px', marginBottom: '64px' }} />
-
-      <p style={{ margin: 0, fontSize: '18px', lineHeight: 1.6, fontWeight: 700, color: '#0F2233' }}>
+    <div style={{ background: '#F3FBF8', borderRadius: '16px', padding: '22px', minHeight: '190px' }}>
+      <img src="ICON_URL_4" alt="" style={{ width: '56px', height: '56px', marginBottom: '40px' }} />
+      <p style={{ margin: 0, fontSize: '16px', lineHeight: 1.55, fontWeight: 700, color: '#0F2233' }}>
         Give your cardholders access to the global open-loop world of payments so that they can transact securely anywhere 24/7
       </p>
     </div>
 
-    <div
-      style={{
-        background: '#F3FBF8',
-        borderRadius: '16px',
-        padding: '28px',
-        minHeight: '220px',
-      }}
-    >
-      <img src="ICON_URL_5" alt="" style={{ width: '72px', height: '72px', marginBottom: '64px' }} />
-
-      <p style={{ margin: 0, fontSize: '18px', lineHeight: 1.6, fontWeight: 700, color: '#0F2233' }}>
+    <div style={{ background: '#F3FBF8', borderRadius: '16px', padding: '22px', minHeight: '190px' }}>
+      <img src="ICON_URL_5" alt="" style={{ width: '56px', height: '56px', marginBottom: '40px' }} />
+      <p style={{ margin: 0, fontSize: '16px', lineHeight: 1.55, fontWeight: 700, color: '#0F2233' }}>
         Empower customers who don’t qualify for a credit card or bank account with a virtual or physical card that they can use to shop online
       </p>
     </div>
