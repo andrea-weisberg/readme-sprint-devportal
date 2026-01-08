@@ -59,23 +59,6 @@ metadata:
       lineHeight: 1.6,
     }}
   >
-    If you want Paymentology to hold your customer’s balancefor you, use the **Card API** instead. If you’re not sure which API to choose, read about{' '} <a href="https://developer.sprint.paymentology.com/get-started/our-apis/" style={{color: '#FFFFFF',textDecoration: 'underline',fontWeight: 600,}} > our APIs</a>
-
-    {' '}
-
-    first or{' '}
-
-    <a
-      href="#"
-      style={{
-        color: '#FFFFFF',
-        textDecoration: 'underline',
-        fontWeight: 600,
-      }}
-    >
-      get in touch
-    </a>
-
-    .
+    If you want Paymentology to hold your customer’s balancefor you, use the **Card API** instead. If you’re not sure which API to choose, read about{' '} <a href="https://developer.sprint.paymentology.com/get-started/our-apis/" style={{color: '#FFFFFF',textDecoration: 'underline',fontWeight: 600,}}> our APIs</a> {' '} first or{' '} <a href="#" style={{color: '#FFFFFF',textDecoration: 'underline',fontWeight: 600,}}> get in touch </a>.
   </p>
 </div>
