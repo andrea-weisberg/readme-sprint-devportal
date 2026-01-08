@@ -12,7 +12,7 @@ You can use the following three main ways to secure your companion cards:
 * Dynamic CVV on virtual cards
 * PIN on physical cards
 
-## Securing a virtual card with a dynamic secure code
+## 1. Securing a virtual card with a dynamic secure code
 
 You can add an extra layer of security to your virtual card using a dynamic secure code. **The secure code is what Mastercard refers to as 3D Secure, and Visa refers to it as Visa Secure (formerly Verified by Visa (VbV)).** Mastercard and Visa created the technical standard to secure Cardholder Not Present (CNP) transactions.
 
@@ -22,42 +22,24 @@ You can add an extra layer of security to your virtual card using a dynamic secu
 
 If your card program is enabled for Dynamic 3D Secure, the cardholder will be sent an OTP to conclude an online transaction. Through the Remote AdminMessage, Paymentology will send the OTP to your platform, which you can then send on to the cardholder.
 
-## 2. Using a dynamic CVV on virtual cards
+## 2. Securing a physical card with a PIN
 
-The CVV (Card Verification Value) that comes with every virtual card is a static number used to validate the cardholder's identity.
+Your customers will require a PIN (personal identification number) for all ATM transactions. A secret PIN assists in verifying your users’ identity and allowing them to perform secure transactions.
 
-To strengthen security or replace a compromised CVV:
+There are two options for managing your PIN: **Paymentology manages the PIN** or **you manage the PIN**.
 
-* Call the `UpdateCVV` method.
-  Paymentology will generate a new CVV, which you can then send to the cardholder.
+**OPTION 1** – Paymentology manages the PIN
 
-## 3. Using a PIN on physical cards
+If you choose this option, Paymentology will manage the PIN on your behalf. This implies that **Paymentology will validate the PIN before sending it to a store of value for authorizing the transaction**.
 
-A **PIN** (Personal Identification Number) is required for all ATM transactions and helps verify the cardholder’s identity.
+When Paymentology manages the PIN, you can choose between these options:
 
-Paymentology manages the card PIN:
+**a)** The PIN is pre-printed in a tamper-proof package containing the card. This would be the PIN the cardholder would use for making transactions.
 
-* It can be pre-printed with the card in a tamper-proof package
-* Or it can be set when the card is linked or issued
+**b)** The PIN is not printed on the package. This implies it would be set when the card is linked or issued.
 
-If the card PIN needs to be set or changed (e.g. forgotten or reset requested):
+**N.B.** In case the card PIN needs to be set for the first time or changed at a later time, or if the customer forgets it or requests it to be changed, you’ll need to make a call to the ChangePIN method to do this. Once the API request has been completed, Paymentology will issue a new PIN, which the cardholder can use for making transactions.
 
-* Call the [`ChangePIN`](https://developer.sprint.paymentology.com/card/documentation/card-api#changepin) method
-  Paymentology will issue a new PIN once the request is completed.
+**OPTION 2** – You manage the PIN
 
-## 4. Adding pockets to your card
-
-Multiple pockets allow additional versatility and security. You can maintain a main control card (PAN) and link additional pockets, each with its own balance.
-
-Examples include:
-
-* Multiple currency pockets
-* Savings pockets
-* Expenditure pockets
-* Lifestyle pockets
-
-Each pocket supports its own balance management and improves overall security.
-
-To add pockets:
-
-* Call the [`AddPocket`](https://developer.sprint.paymentology.com/card/documentation/card-api#addpocket) method
+This second option allows the store of value organization to manage the PIN and perform PIN validation based on a PINblock that Paymentology sends. Paymentology will then send a PINblock in the KLV (Key-Length-Value) transaction data based on pre-shared keys, which allow for encryption and decryption to pass the PIN for secure validation.
