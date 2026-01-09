@@ -5,9 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-How to manage funds
-
-
+# How to manage funds
 
 **When the cardholder has either a virtual or a physical companion card (or both), they can start transacting against their store of value. These transactions originate from the merchant and are then sent to Paymentology via the card schemes, before being forwarded to the store of value for validation and authorization.**
 
@@ -80,7 +78,7 @@ Paymentology will link the deduct reversal to the original authorization, we do 
 
 Here is a table that shows the only acceptable response codes that can be sent to Paymentology:
 
-Table: Response codes for the Reversals method
+*Table: Response codes for the Reversals method*
 
 | Code | Description              |
 | ---- | ------------------------ |
@@ -91,62 +89,140 @@ Table: Response codes for the Reversals method
 
 ***
 
-## 4. Reversing funds transferred between cards
+## 4. Adjustments on a card
 
-If you want to reverse the transferred funds, for any reason, and the funds have not been used, then you can initiate a reversal process.
+Just like in any other account, there may be times when your funds need to be adjusted to reflect some changes that have occurred.
 
-You’ll need to make a call to the `TransferFundsReverse` method.
+For example, a refund could have been issued to your card, and it needs to be adjusted on the store of value as this is where the balance will be managed eventually.
 
-***
+These are the common types of adjustment transactions on companion cards:
 
-## 5. Transferring funds between pockets
+* Load adjustment transactions
+* Load reversal transactions
+* Deduct adjustment transactions
 
-You can transfer funds between pockets for the easy management of money.
-For example, you may want to transfer some funds from your expenditure pocket to your savings pocket.
+Let’s look at each of them.
 
-You’ll need to make a call to the `PocketTransfer` method.
+### i) Load adjustment transactions
 
-***
+If there is a need to load money back into a store of value, Paymentology will send a load adjustment request so that the store of value makes the adjustment.
 
-## 6. Reversing the pocket transfer
+**LoadAuth**
 
-If you want to reverse the funds transferred to a pocket, for any reason, and the funds have not been used, then you can initiate a reversal process.
+LoadAuth is an authorisation, but for a load, rather than a deduct. This would most commonly be the result of a **refund** from a merchant. But it could also be a load from a “money send” type transaction, where cardholders can transfer funds over the MC network, if your program allows this. This method is most similar to the `Deduct` method, which is an authorisation for a redemption.
 
-You’ll need to make a call to the `PocketTransferReverse` method.
+You can decline this transaction i.e. _choose not to approve it_. If you decline, the refund will not be completed at the merchant. There are 3 important things to note:
 
-***
+* If you approve this transaction, _**do not**_ immediately load the card
+* Unlike `Deduct `, the card should **_only_** be loaded when the funds are cleared because then you know you have received them (for most systems, after evaluating and approving this transaction, there would be nothing further for you to do). You may choose to reflect a _pending_ amount on cardholder statements but this should not be included in their available balance
+* If you decline this transaction, you should expect cardholder frustration because cardholders are not familiar with refunds being declined because it does not depend on their available balance. Therefore, it is recommended that you approve these transactions unless there are strong reasons not to. _NB. If a refund is fraudulent for some reason, the liability sits with the Merchant._
 
-## 7. Deducting funds from card or pocket
+Mastercard has mandated that refunds should be authorised but merchants do not follow this. Therefore, you will find very few `LoadAuth` requests as most as just sent immediately as settlement (which you will receive as `LoadAdjustments`)
 
-If a cardholder wants to deduct funds from their card or pocket balances, then they can specify the value that needs to be deducted.
-The amount requested to be deducted must be equal or less than the balance; otherwise, the process will not be successful.
-After the deduction has been completed successfully, the client then credits the customer’s store of value account.
+Once the request has been approved, the amounts on both the card and the store of value will be balanced.
 
-You’ll need to make a call to the `DeductFunds` method.
+However, if the request is not accepted by the store of value, Paymentology will continue sending it ten times at regular intervals. If unsuccessful, the adjustment request will be retired as not processed.
 
-***
+Here is a table that shows the only acceptable response codes that can be sent to Paymentology:
 
-## 8. Reversing the card deduction
+|Code|	Description|
+|1|	Success (or approved)|
+|-9|	Crashed (or disapproved)|
 
-If you want to reverse the funds deducted, for any reason, then you can initiate a reversal process.
-Once successful, the balance will change based on the reversed amount.
+You’ll need to respond to the `LoadAdjustment` method.
 
-[You’ll need to make a call to the `DeductFundsReverse` method.](https://developer.sprint.paymentology.com/card/documentation/card-api#deductfundsreverse)
+**A Refund is a movement of funds from a merchant to a cardholder and may or may not relate to a previous deduct of funds. This uses the `LoadAuth` method. Refunds are a new movement of funds.**
 
-***
+**A Load Adjustment is an adjustment being made that gives money to the cardholder that has to be accepted by the wallet. It relates to a previous transaction. This uses the `LoadAdjustment` method. Load Adjustments happen when the cardholder has more money than anticipated, such as when a settlement is cancelled or a settlement happens for less than the authorization amount.**
 
-## 9. Devaluing a card or pocket
+### LoadAdjustment
 
-You can perform a deduction of the full amount available on the card or pocket.
-No partial amount will be removed from the card or pocket balances, but only all the funds.
+As for a `LoadAuth`, this is the result of a refund or a money transfer request that loads funds to a cardholder but this is an advice message confirming that the funds have moved.
 
-You’ll need to make a call to the `Devalue` method.
+When a `LoadAuth` is settled, it will result in a `LoadAdjustment` (this assumes no `LoadAuthReversal` occurred). As with all advice messages, it is **required** that the message is approved. There is no other option except for a system failure/crash. Your response of “1” is not “approving” the adjustment, it is confirming that you have been notified of the adjustment. All adjustments have already occurred and declining such a message will not change that. If you respond with anything besides approval, it results in a process of manual intervention to investigate why the failure occurred and to work with you to take steps to correct it.
 
-***
+Many clients wish to link any refunds back to the original transaction. MasterCard has implemented some fields to allow this, but merchants  do not use these fields. From their perspective, they do not see any reason necessary to complete the development necessary for this to work. This is similar to merchants being mandated to obtain authorisation for refunds, which they also tend not to do. To a significant degree, you would want to be cautious about how much energy you invest in trying to do this. As an Issuer, if you receive a refund settlement, you must process and if there is fraud taking place at the Merchant, it is at the Merchant’s cost – not yours.
 
-## 10. Reversing a devalue
+If you really don’t want to refund a wallet unless you can reconcile the refund, our recommended course of action is:
 
-If you want to reverse the devaluing of funds from a card or pocket balance, for any reason, then you can initiate a reversal process.
-Once successful, the devalued amount will be credited to the card or pocket balance.
+* Acknowledgement of the adjustment API (you have to do this)
+* But then, do not load the wallet
 
-You’ll need to make a call to the `DevalueReverse` method.
+In other words, once you have acknowledged the API call with a valid APO response, Paymentology does not concern itself with how you handle those funds. so, you could choose to reflect the funds in some holding account and the you work through some administrative process to approve the refund and then you transfer to the wallet when you are satisfied it is legitimate. This way:
+
+* You are still responding correctly to the API calls
+* You still have control of the funds and when and where to load them without having caused a failure by rejecting the API call
+
+<br />
+
+### ​ii) Load reversal transactions
+
+
+If there is a need to load money back into a store of value, and the client is not accepting the adjustment request, Paymentology will send a load reversal request to ensure that no action is undertaken.
+
+**LoadAuthReversal**
+
+This is a reversal message for `LoadAuth` . It is the equivalent of `DeductReversal `. This will be sent if we do not receive any response to the `LoadAuth`. As with all adjustments and reversals, they are “advice” messages, they are “telling” you to do something. They are not asking you to approve something. Your response should therefore be an acknowledgement that you have received the message not that you “approve” the message. For all reversals, we will keep resending if we do not receive positive acknowledgement. Failure to respond repeatedly results in manual intervention which should only happen if your system is down.
+
+Our recommendation for reversals is:
+
+* You should add the reversal to an internal queue (a low intensity operation)
+* You should then immediately respond positively to our API call
+* And only then, attempt to process the reversal (a high intensity operation)
+* This is because very often, reversals only happen during problems so you don’t want to exacerbate the problem, by performing complex tasks as you receive the reversal
+* It’s therefore best to queue the complex tasks for processing only after you have responded
+* This way we stop messaging you with repeats of reversals, which will only add to your load
+
+After that, Paymentology will resend a `LoadAdjustment `request so that an OK response can be returned. This pattern will continue ten times until the adjustment is processed adequately against the stored value.
+
+You’ll need to make a call to the `LoadReversal` method.
+
+**N.B. You are putting the system back to how it was before the transaction that is being reversed but you should never delete anything, only post contra-transactions. However, be careful of repeats – you don’t want to accidentally keep deducting or loading additional funds every time a reversal is repeated**
+
+Remember, the transaction and reversal failures may be the result of a network interruption that is happening after you have responded each time. You may receive multiple reversals for a reversal which you have already processed so you must be able to identify that you have already processed the reversal to prevent “duplication”.
+
+What you do on your system for a `LoadAuthReversal` will depend on what you do for a `LoadAuth` . If you approve and did nothing else (see `[LoadAuth]()` above for more information), then there isn’t anything for you to do when reversing. If your system records and reflects the “pending” load, you’d need to remove this pending load.
+
+**A Reversal is a cancellation (in whole or in part) of a fund movement from the cardholder to the merchant. This uses the LoadAuthReversal_` method.**
+
+**Partial settlements/adjustments occur when:** There are significant changes in currency exchange rates Authorizing payments before the final amount is known (i.e online groceries when items may be substituted)
+
+### LoadReversal
+
+
+This is sent if we do not receive any response to the `LoadAdjustment`. All the other rules mentioned in `LoadAuthReversal` still apply.
+
+* It is an advice message which you must “approve” (i.e. send a response acknowledging the advice message)
+* It will be repeated if you not respond to it
+* After 10 repeats, it will be logged for manual intervention
+* You should add to an internal queue and respond immediately and then process from your queue
+
+One big difference is that, almost without exception, a `LoadAdjustment` will result in actual funds having been loaded to a cardholder balance, and so reversing this means you will need to “undo” that load. Again, undoing a load might practically be done through a deduct but you are  not deducting, you are putting the wallet back to it’s previous state. The difference becomes important when ensuring that  you are able to handle repeats. Do not keep deducting every reversal you receive as you may already have done the deduction. Remember that the connection failure we are experiencing with you, might only be for messages after you have processed them.
+
+Some important points to note about reversals:
+
+* It **is** possible to receive a reversal for which you cannot find the original reference.
+  * You might not find it because you never received the original transaction (this is normal, and part of the design of reversals)
+  * You might not find it because, even though you received it, you already reversed it
+    In both cases, you would effectively _do nothing_, because there is nothing to reverse.
+* Do **not** debit/credit (whichever is applicable) just because you received a reversal. You have to find the original transaction, confirm it has not been reversed, and reverse it. If you cannot find it, or it has already been reversed, there is nothing further to do. You must also still respond positively to the Reversal API call confirming you received it
+* You do not need to tell us (since it is not relevant) whether you found the original transaction to reverse or not
+
+### iii) Deduct adjustment transactions
+
+
+In some cases, there may be a discrepancy between the funds that were authorized on a transaction and what was actually settled. When a user makes a purchase at a point of sale, it takes a two-step process for the transaction to be completed.
+
+First, an authorization request is made and the funds for the transaction are taken from the card and kept in reserve.
+
+Then, the second half of the transaction takes place when the bank that processes the merchant’s payments generates a clearing request to the given card association for this authorization to be settled. Just like the authorization request, the card associations also forward this settlement request to Paymentology.
+
+So, whenever the clearing request amount is higher than the authorization request amount for any reason, such as due to rising exchange rates, the store of value will be debited for this differing amount.  The store of value must acknowledge this request for it to be handled appropriately. Although the cardholder has the right to dispute this transaction, the debit should happen first before the dispute can be filed.
+
+If the store of value does not send an OK response to Paymentology, then the card will remain in a state of having a pending adjustment, and no transaction would be processed until the adjustment has been rectified.
+
+You’ll need to make a call to the DeductAdjustment method.
+
+A Deduct Adjustment is an adjustment being made that takes money from the cardholder, that has to be accepted by the wallet. This uses the DeductAdjustment method. Deduct Adjustments happens because a settlement wasn’t authorized, or was authorized for less.
+
+Adjustments must be accepted, even if there are not sufficient funds on the wallet. You have to accept the adjustment and record the fact that you have this negative balance with the wallet, regardless of whether or not you would actually ever show the wallet as having negative funds
