@@ -78,7 +78,7 @@ Paymentology will link the deduct reversal to the original authorization, we do 
 
 Here is a table that shows the only acceptable response codes that can be sent to Paymentology:
 
-*Table: Response codes for the Reversals method*
+_Table: Response codes for the Reversals method_
 
 | Code | Description              |
 | ---- | ------------------------ |
@@ -125,9 +125,12 @@ However, if the request is not accepted by the store of value, Paymentology will
 
 Here is a table that shows the only acceptable response codes that can be sent to Paymentology:
 
-|Code|	Description|
-|1|	Success (or approved)|
-|-9|	Crashed (or disapproved)|
+<br />
+
+| Code |        Description       |
+| :--: | :----------------------: |
+|   1  |   Success (or approved)  |
+|  -9  | Crashed (or disapproved) |
 
 You’ll need to respond to the `LoadAdjustment` method.
 
@@ -156,7 +159,6 @@ In other words, once you have acknowledged the API call with a valid APO respons
 <br />
 
 ### ​ii) Load reversal transactions
-
 
 If there is a need to load money back into a store of value, and the client is not accepting the adjustment request, Paymentology will send a load reversal request to ensure that no action is undertaken.
 
@@ -189,7 +191,6 @@ What you do on your system for a `LoadAuthReversal` will depend on what you do f
 
 ### LoadReversal
 
-
 This is sent if we do not receive any response to the `LoadAdjustment`. All the other rules mentioned in `LoadAuthReversal` still apply.
 
 * It is an advice message which you must “approve” (i.e. send a response acknowledging the advice message)
@@ -210,7 +211,6 @@ Some important points to note about reversals:
 
 ### iii) Deduct adjustment transactions
 
-
 In some cases, there may be a discrepancy between the funds that were authorized on a transaction and what was actually settled. When a user makes a purchase at a point of sale, it takes a two-step process for the transaction to be completed.
 
 First, an authorization request is made and the funds for the transaction are taken from the card and kept in reserve.
@@ -221,8 +221,8 @@ So, whenever the clearing request amount is higher than the authorization reques
 
 If the store of value does not send an OK response to Paymentology, then the card will remain in a state of having a pending adjustment, and no transaction would be processed until the adjustment has been rectified.
 
-You’ll need to make a call to the DeductAdjustment method.
+You’ll need to make a call to the `DeductAdjustment` method.
 
-A Deduct Adjustment is an adjustment being made that takes money from the cardholder, that has to be accepted by the wallet. This uses the DeductAdjustment method. Deduct Adjustments happens because a settlement wasn’t authorized, or was authorized for less.
+**A Deduct Adjustment is an adjustment being made that takes money from the cardholder, that has to be accepted by the wallet. This uses the `DeductAdjustment` method. Deduct Adjustments happens because a settlement wasn’t authorized, or was authorized for less.**
 
 Adjustments must be accepted, even if there are not sufficient funds on the wallet. You have to accept the adjustment and record the fact that you have this negative balance with the wallet, regardless of whether or not you would actually ever show the wallet as having negative funds
