@@ -5,6 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
+### Automated Fuel Dispensers (AFD) Transactions
 
 Automated Fuel Dispensers (AFD) are unattended terminals at fuel stations that allow cardholders to purchase fuel without requiring an attendant. The emergence of AFD transactions has revolutionized the fuel purchase industry and greatly benefitted both merchants and customers.
 
@@ -38,7 +39,9 @@ With Paymentology Sprint’s support for AFD transactions, you can make payments
 
 ## AFD Transactions Flow
 
-**AFD-Transaction-processing-v2.png IMAGE GOES HERE.**
+<Image border={false} src="https://files.readme.io/94cd04e735f73bec61eee9c5e6242295ce09fa7209ca5790ecc34c4f51a83190-image.png" />
+
+<br />
 
 1. Cardholder makes a transaction at an AFD POS
 2. POS sends an authorization request to a card scheme
