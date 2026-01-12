@@ -5,38 +5,56 @@ hidden: false
 metadata:
   robots: index
 ---
+# How Token Provisioning Works
+
 **Provisioning is the process whereby a payment service provider (token requester) asks for a token to be created for a PAN.**
 
 Provisioning basically follows these steps:
 
 **Tokenization-Flow_02-v2.png IMAGE GOES HERE.**
 
-**step 1:** The cardholder initiates the request process via push provisioning or manual provisioning.  
-**step 2:** The payment service provider requests a payment token from the card network.  
-**step 3:** The card network initiates the token approval process and transfers the requested information to Paymentology (the issuer processor) for verification checks.  
-**step 4:** Paymentology makes the provisioning decision and relays the information to the card network. Paymentology will also notify the client via the **AdministrativeMessage** method of the attempted provisioning.  
-**step 5:** If the token activation request is authorized, the card network generates a payment token. After tokenization, MDES will store that information in their secure token vault, while associating the card details to the created token.  
-**step 6:** The unique token is sent to the payment service provider for completing the current transaction. The provider may also store the token for future payments. If the provider stores tokenized payment card data on a file in a database, which is used for making repeat purchases, such payments are called card-on-file transactions.
+<Image border={false} src="https://files.readme.io/d2ef8ca66479feeed18d378c86e1132596438d568633b26923f5e4e5e6a6820c-image.png" />
 
-## **Types of Provisioning Methods**
+**Step 1:** The cardholder initiates the request process via push provisioning or manual provisioning.
+
+**Step 2:** The payment service provider requests a payment token from the card network.
+
+**Step 3:** The card network initiates the token approval process and transfers the requested information to Paymentology(the issuer processor) for verification checks.
+
+**Step 4:** Paymentology makes the provisioning decision and relays the information to the card network. Paymentology will also notify the client via the **AdministrativeMessage** method of the attempted provisioning.
+
+**Step 5:** If the token activation request is authorized, the card network generates a payment token. After tokenization, MDES will store that information in their secure token vault, while associating the card details to the created token.
+
+**Step 6:** The unique token is sent to the payment service provider for completing the current transaction. The provider may also store the token for future payments. If the provider stores tokenized payment card data on a file in a database, which is used for making repeat purchases, such payments are called card-on-file transactions.
+
+***
+
+# **Types of Provisioning Methods**
 
 Paymentology supports the following two main methods for provisioning a token to incorporate a payment card into a digitized wallet:
 
-- **Push provisioning** — this is in-app provisioning where a cardholder pushes the card from their card app directly into a digitized wallet with a click of the button.
-- **Manual provisioning** — this is where a cardholder physically enters the card details into the digitized wallet.
+* **Push provisioning** — this is in-app provisioning where a cardholder pushes the card from their card app directly into a digitized wallet with a click of the button.
+* **Manual provisioning** — this is where a cardholder physically enters the card details into the digitized wallet.
 
 Here is a table that compares the differences between push provisioning and manual provisioning:
 
+Push Provisioning vs Manual Provisioning
+
+|       PUSH PROVISIONING       |                                         MANUAL PROVISIONING                                         |
+| :---------------------------: | :-------------------------------------------------------------------------------------------------: |
+| OTP verification not required | OTP verification required. However, some wallets (e.g. Samsung Pay) do not require OTP verification |
+|   TAV certification required  |                                    TAV certification not required                                   |
+
 ## **How Push Provisioning Works**
 
-**MDES-Push-provisioning1-v2.png IMAGE GOES HERE.**
+<Image border={false} src="https://files.readme.io/d588062610237167ce70614043608a2eb729ae18fa5dd0ca4820acdca9036d1c-image.png" />
 
 Push provisioning is a generic capability that enables cardholders to “push” a token from the issuer experience into a destination wallet or merchant.
 
 There are two main authentication measures implemented during push provisioning:
 
-- TAV certification  
-- Card data encryption
+* TAV certification
+* Card data encryption
 
 Let’s talk about them in detail.
 
@@ -66,9 +84,11 @@ The following steps are an example of a client app communicating with a Wallet P
 4. The Wallet Provider server calls the MDES API to initiate the digitization request.
 5. MDES identifies the key that was used to encrypt the data from the issuer and decrypts the card details.
 
+***
+
 ## **How Manual Provisioning Works**
 
-**Mdes-Manual-provisioning-v2.png IMAGE GOES HERE.**
+<Image border={false} src="https://files.readme.io/0ad92668607b06b41a5bb20e7c1d597cbef9dac0782ac025a14885956ae12c3b-image.png" />
 
 Manual provisioning is where the cardholder physically enters the card details, such as PAN, expiry date, and CVV, into the digitized wallet. It requires the cardholder to enter an OTP via the selected verification method, usually SMS or email, to verify that they indeed own the card.
 
@@ -78,17 +98,17 @@ In manual provisioning, Paymentology will use the [**AdministrativeMessage**](ht
 
 The [AdministrativeMessage method](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#AdministrativeMessage), which is part of the remote Companion API, is used for the following tasks:
 
-- Notifying the client when a cardholder requests to provision their card, using either the push method or the manual method.
-- Notifying the client of any token lifecycle events coming from the MDES.
+* Notifying the client when a cardholder requests to provision their card, using either the push method or the manual method.
+* Notifying the client of any token lifecycle events coming from the MDES.
 
 The **messageName** path parameter, required in the AdministrativeMessage method, specifies the name of the administrative messages sent to the client.
 
 These are the possible values for the **messageName** data field during manual provisioning:
 
-- [**Digitization.activationmethods**](https://developer.sprint.paymentology.com/administrative-message-values/#activationmethods) — sends a notification that a cardholder is requesting provisioning, and the cardholder’s contact method needs to be verified for sending the OTP.
-- [**Digitization.activation**](https://developer.sprint.paymentology.com/administrative-message-values/#activation) — sends an activation code that requires the OTP to be sent to the cardholder.
-- [**Digitization.complete**](https://developer.sprint.paymentology.com/administrative-message-values/#complete) — sends a notification when MDES has successfully activated the token for the card.
-- [**Digitization.exception**](https://developer.sprint.paymentology.com/administrative-message-values/#exception) — sends a notification when there is a problem with the provisioning process.
+* [**Digitization.activationmethods**](https://developer.sprint.paymentology.com/administrative-message-values/#activationmethods) — sends a notification that a cardholder is requesting provisioning, and the cardholder’s contact method needs to be verified for sending the OTP.
+* [**Digitization.activation**](https://developer.sprint.paymentology.com/administrative-message-values/#activation) — sends an activation code that requires the OTP to be sent to the cardholder.
+* [**Digitization.complete**](https://developer.sprint.paymentology.com/administrative-message-values/#complete) — sends a notification when MDES has successfully activated the token for the card.
+* [**Digitization.exception**](https://developer.sprint.paymentology.com/administrative-message-values/#exception) — sends a notification when there is a problem with the provisioning process.
 
 Let’s talk about each of the values in detail.
 
