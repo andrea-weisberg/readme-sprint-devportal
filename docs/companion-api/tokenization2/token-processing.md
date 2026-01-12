@@ -5,6 +5,8 @@ hidden: false
 metadata:
   robots: index
 ---
+# How Token Processing Works
+
 **Processing a transaction using a token basically follows these steps:**
 
 (We’ll assume that the card’s data has already been provisioned)
