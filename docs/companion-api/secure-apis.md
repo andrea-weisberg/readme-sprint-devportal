@@ -35,14 +35,14 @@ This encryption uses RSA and AES algorithms. RSA is an asymmetric key cryptograp
 This is an RSA key of size 1024 (both `rsa_public` and `rsa_private`), generated using `java.security.KeyPairGenerator`.
 
 RSA encryption is used for asymmetric encryption between the cardholder and Paymentology. This prevents intercept attacks and loss of sensitive data.
-*([RSA algorithm reference](https://simple.wikipedia.org/wiki/RSA_alogrithm))*
+_([RSA algorithm reference](https://simple.wikipedia.org/wiki/RSA_alogrithm))_
 
 ### session_key
 
 Clients must create a 16-byte session key using `SecureRandom` (per standards) and encrypt it with the RSA public key.
 
 AES-256 encryption (AES/CBC/PKCS5PADDING) is used to encrypt sensitive data (e.g. PIN, PAN, CVV2). This session key is generated per call and wrapped under the RSA KeyPair. This method is stronger than traditional Triple DES.
-*([AES reference](https://simple.wikipedia.org/wiki/Advanced_Encryption_Standard))*
+_([AES reference](https://simple.wikipedia.org/wiki/Advanced_Encryption_Standard))_
 
 ### Session-id Generation
 
@@ -57,20 +57,39 @@ PIN Block Format ISO format 2 will be used to communicate the encrypted PIN bloc
 
 The IV (Initialization Vector) length depends on the encryption mode being used.
 
-## Algorithm usage
+## Algorithm used for protecting sensitive data
 
-### Protecting sensitive data
+|                      Parameter                     |                                                      Value                                                      |
+| :------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: |
+|                      Algorithm                     |                                                       AES                                                       |
+|                  Key size options                  |                                               256 bits (32 bytes)                                               |
+|                 Preferred key size                 |                                               256 bits (32 bytes)                                               |
+|                   Transformation                   |                            AES/GCM/NoPadding (or AES/CBC/PKCS5Padding if considered)                            |
+|                Additional parameters               |                                            Initialization vector (IV)                                           |
+|   Initialization vector sizes (AES/GCM/NoPadding)  |                           The length of the IV key depends on the encryption mode used                          |
+| Initialization vector sizes (AES/CBC/PKCS5Padding) |                           The length of the IV key depends on the encryption mode used                          |
+|                 AES key generation                 | Preferred method is to use the Java `KeyGenerator` class; using only a random generator may result in weak keys |
+|                    IV generation                   |                         Preferred method is to use Java `SecureRandom()` implementation                         |
 
-Details are protected using AES encryption as described above.
+<br />
 
-### Protecting keys (key wrapping)
+## Algorithm used for protecting keys
 
-When encrypting or decrypting keys, the proper terminology is *wrapping* and *unwrapping*. Specialized algorithms are used for this purpose.
+When we talk about encrypting/decrypting keys the correct terminology is the wrapping or unwrapping of a key. There are algorithms that are specifically created for wrapping/unwrapping keys.
+
+|                Parameter                |                                      Value                                     |
+| :-------------------------------------: | :----------------------------------------------------------------------------: |
+|                Algorithm                |                                       RSA                                      |
+|             Key size options            |                           1024, 2048, 3072, 4096 bits                          |
+|            Preferred key size           |                                    2048 bits                                   |
+|             Transformations             | RSA/ECB/OAEPWithSHA-256AndMGF1Padding or RSA/ECB/OAEPWithSHA-512AndMGF1Padding |
+| Additional parameters for the algorithm |            OAEP configuration, specified during wrapping/unwrapping            |
+|          RSA keypair generation         |                         Use the Java `KeyPairGenerator`                        |
 
 #### Important notes
 
-* If OAEP padding configuration is not explicitly set, it defaults to MGF1 with SHA-1 (which is insufficient).
-* The hashing algorithm used in MGF1 should match the one used elsewhere. For Java JCE, you can use:
+* When not explicitly specified in the OAEP configuration the MGF1 padding will default to using SHA-1 which is not sufficient.
+* It is important to specify the same hashing algorithm as is used by the rest of the algorithm when configuring OAEP. The following is an example of configuring OAEP (when using Java JCE):
 
 ```java
 new OAEPParameterSpec(
@@ -81,32 +100,33 @@ new OAEPParameterSpec(
 );
 ```
 
-* Use the **public key** to wrap (encrypt) a key.
-* Use the **private key** to unwrap (decrypt) a key.
-* Always specify `Cipher.SECRET_KEY` and the algorithm as `AES`.
-* Public key format for transport: Base64 encoding of **X509** encoded data.
-* Private key format: Base64 encoding of **PKCS8** encoded data.
+* When wrapping (encrypting) a key, it is important to use the public key.
+* When unwrapping (decrypting) a key, it is important to use the private key.
 
-*Code samples can be provided if needed.*
+In both cases the key type must be specified as Cipher.SECRET_KEY and the algorithm of the secret key as AES
+
+* Format of public key for transport:  Base64 encoding of X509 encoded data.  The latter is important when parsing the key.
+* Format of public key:  Base64 encoding of PKCS8 encoded data.  The latter is important for parsing the key.
+  If possible and necessary, code samples can be provided.
 
 ## API methods using card data encryption
 
 > **REMINDER:** These API methods contain PCI sensitive information.
 
-### Encrypted data in the **response**
+### API methods with encrypted data in the response
 
-The following methods return encrypted data and also return an `iv` element required for decryption:
+The following API methods return encrypted data in the API response. Along with the encrypted data, they will also return an extra element `iv` that is needed by the calling code in order to decrypt the data:
 
-* [GetActiveLinkedCards](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getactivelinkedcards/) — `cardNumber`, `cvv2`, `expiryDate`
-* [GetCardDetails](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getcarddetails/) — `cardNumber`, `cvv2`, `expiryDate`
-* [GetLinkedCards](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getlinkedcards/) — `cardNumber`, `cvv2`, `expiryDate`
-* [UpdateCVV](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/updatecvv/) — `cvv2`
+* [GetActiveLinkedCards](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getactivelinkedcards/) — `cardNumber`, `cvv2`, and `expiryDate` will be encrypted in the response.
+* [GetCardDetails](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getcarddetails/) — `cardNumber`, `cvv2`, and `expiryDate`will be encrypted in the response.
+* [GetLinkedCards](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getlinkedcards/) — `cardNumber`, `cvv2`, and `expiryDate` will be encrypted in the response.
+* [UpdateCVV](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/updatecvv/) — `cvv2` will be encrypted in the response.
 
-### Encrypted data in the **request**
+### API methods with encrypted data in the request
 
-The following methods include encrypted data in the request, decrypted by the API using the provided `Session-id`:
+The following API methods will contain encrypted card data in the API request, the Companion API will decrypt the data using the provided Session-Id header:
 
-* [ChangePin](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/changepin/) — `newPin`
-* [CreateLinkedCard](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/createlinkedcard/) — `cardNumber`, `cvv2`, `expiryDate`
-  *(Only if the campaign setting “Companion API Return Masked PAN for Create Methods” is set to false.)*
+* [ChangePin](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/changepin/) — `newPin` will be encrypted in the request.
+* [CreateLinkedCard](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/createlinkedcard/) — `cardNumber`, `cvv2`, and `expiryDate` will be encrypted in the response. Note: this is only applicable if the campaign setting “Companion API Return Masked PAN for Create Methods” is set to  false.
 
+<br />
