@@ -9,79 +9,104 @@ metadata:
 
 <br />
 
-<div
-  style={{
-    background: "#E9F6F1",
-    padding: "56px",
-    position: "relative",
-    minHeight: "420px",
-  }}
->
-  {/* Icon */}
+<div style={{ display: "grid", gap: "32px" }}>
+  {[
+      {
+        title: "Authorizations",
+        lines: [
+          "Paymentology provides a daily mark-off file",
+          "The mark-off file shows successful transactions that Paymentology has processed on behalf of the Issuer",
+          "The Issuer/client will compare Paymentology's transactions to the wallet platform",
+        ],
+      },
+      {
+        title: "Clearing",
+        lines: [
+          "Paymentology processes clearing files from the network",
+          "Clearing data includes final transaction amounts and fees",
+          "The Issuer reconciles clearing against internal ledger records",
+        ],
+      },
+      {
+        title: "Settlement",
+        lines: [
+          "Settlement files are generated per network timelines",
+          "Net settlement positions are calculated per currency",
+          "Funds movement is handled by the Issuer's settlement bank",
+        ],
+      },
+      {
+        title: "Reconciliation",
+        lines: [
+          "Daily reports are provided for reconciliation",
+          "Differences are investigated jointly by Issuer and Paymentology",
+          "Final balances must align across all platforms",
+        ],
+      },
+    ].map((item, idx) => (
+      <div
+        key={idx}
+        style={{
+          background: "#E9F6F1",
+          padding: "28px 32px",
+          position: "relative",
+        }}
+      >
+        {/* Icon */}
+        <div style={{ position: "absolute", top: "20px", left: "32px" }} aria-hidden="true">
+          <div
+            style={{
+              width: "72px",
+              height: "72px",
+              background: "#97E0CD",
+              borderRadius: "14px 14px 14px 32px",
+              display: "grid",
+              placeItems: "center",
+            }}
+          >
+            <svg
+              width="44"
+              height="44"
+              viewBox="0 0 86 86"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="54" y="10" width="22" height="22" rx="6" fill="#58C7AE" />
+              <path
+                d="M59.5 21.5l4.2 4.3 8.8-9.3"
+                stroke="#FFFFFF"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <rect x="18" y="36" width="28" height="20" rx="4" fill="#7FE3CC" />
+              <path d="M42 60 L56 46" stroke="#0B1320" strokeWidth="3" strokeLinecap="round" />
+            </svg>
+          </div>
+        </div>
 
-  <div style={{ position: "absolute", top: "48px", left: "56px" }} aria-hidden="true">
-    <div
-      style={{
-        width: "120px",
-        height: "120px",
-        background: "#97E0CD",
-        borderTopLeftRadius: "18px",
-        borderTopRightRadius: "18px",
-        borderBottomLeftRadius: "18px",
-        borderBottomRightRadius: "48px",
-        display: "grid",
-        placeItems: "center",
-      }}
-    >
-      <svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ display: "block" }}>
-        {/* check badge */}
+        {/* Content */}
+        <div style={{ paddingLeft: "120px" }}>
+          <h3 style={{ margin: "0 0 12px 0", fontSize: "22px", fontWeight: 700 }}>
+            {item.title}
+          </h3>
 
-        <rect x="54" y="10" width="22" height="22" rx="6" fill="#58C7AE" />
-
-        <path d="M59.5 21.5l4.2 4.3 8.8-9.3" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-
-        {/* small card */}
-
-        <rect x="18" y="36" width="28" height="20" rx="4" fill="#7FE3CC" opacity="0.7" />
-
-        <rect x="21" y="39" width="12" height="4" rx="2" fill="#E6FFFA" opacity="0.9" />
-
-        {/* arrow */}
-
-        <path d="M42 60 L56 46" stroke="#0B1320" strokeWidth="3" strokeLinecap="round" />
-
-        <path d="M56 46 L56 54" stroke="#0B1320" strokeWidth="3" strokeLinecap="round" />
-
-        <path d="M56 46 L48 46" stroke="#0B1320" strokeWidth="3" strokeLinecap="round" />
-
-        {/* simplified hand */}
-
-        <path d="M20 70c2-6 6-10 12-12 3-1 6 0 7 2 1 2-1 4-4 5l-5 2" stroke="#0B1320" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-
-        <path d="M20 70c3 2 8 4 14 4" stroke="#0B1320" strokeWidth="3" strokeLinecap="round" />
-      </svg>
-    </div>
-  </div>
-
-  {/* Text */}
-
-  <div style={{ paddingTop: "180px" }}>
-    <h2 style={{ margin: "0 0 12px 0", fontSize: "44px", lineHeight: 1.1, fontWeight: 800 }}>
-      Authorizations
-    </h2>
-
-    <p style={{ margin: "0 0 38px 0", fontSize: "28px", lineHeight: 1.25, fontWeight: 800 }}>
-      Paymentology provides a daily mark-off file
-    </p>
-
-    <p style={{ margin: "0 0 22px 0", fontSize: "28px", lineHeight: 1.25, fontWeight: 800 }}>
-      The mark-off file shows successful transactions that Paymentology has processed on behalf of the Issuer
-    </p>
-
-    <p style={{ margin: 0, fontSize: "28px", lineHeight: 1.25, fontWeight: 800 }}>
-      The Issuer/client will compare Paymentology's transactions to the wallet platform
-    </p>
-  </div>
+          {item.lines.map((line, i) => (
+            <p
+              key={i}
+              style={{
+                margin: "0 0 8px 0",
+                fontSize: "16px",
+                lineHeight: 1.4,
+                fontWeight: 500,
+              }}
+            >
+              {line}
+            </p>
+          ))}
+        </div>
+      </div>
+    ))}
 </div>
 
 # Authorization reconciliation process
