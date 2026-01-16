@@ -11,101 +11,101 @@ metadata:
 
 <div style={{ display: "grid", gap: "32px" }}>
   {[
-              {
-                title: "Authorizations",
-                lines: [
-                  "Paymentology provides a daily mark-off file",
-                  "The mark-off file shows successful transactions that Paymentology has processed on behalf of the Issuer",
-                  "The Issuer/client will compare Paymentology's transactions to the wallet platform",
-                ],
-              },
-              {
-                title: "Settlements",
-                lines: [
-                  "Paymentology provides a daily summary settlement report as well as a daily detailed settlement report.",
-      						"The Issuer/client will compare the net settlement amount with the amount that the card scheme has debited from the Issuer/client pool account",
-                ],
-              },
-              {
-                title: "Revenue",
-                lines: [
-                  "Paymentology provides a daily forex gains report showing all revenue earned by the Issuer/client",
-                  "The Issuer/client also has sight of the daily interchange earned from the summary settlement report",
-                ],
-              },
-              {
-                title: "Fraud",
-                lines: [
-                  "Paymentology will report on all fraud cases via the card scheme’s online portal",
-                ],
-              },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                style={{
-                  background: "#E9F6F1",
-                  padding: "28px 32px",
-                  position: "relative",
-                    minHeight: "200px",
-                      display: "flex",
-  								alignItems: "center", 
-                }}
-              >
-                {/* Icon */}
-                <div style={{ position: "absolute", top: "20px", left: "32px" }} aria-hidden="true">
-                  <div
-                    style={{
-                      width: "72px",
-                      height: "72px",
-                      background: "#97E0CD",
-                      borderRadius: "14px 14px 14px 32px",
-                      display: "grid",
-                      placeItems: "center",
-                    }}
-                  >
-                    <svg
-                      width="44"
-                      height="44"
-                      viewBox="0 0 86 86"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect x="54" y="10" width="22" height="22" rx="6" fill="#58C7AE" />
-                      <path
-                        d="M59.5 21.5l4.2 4.3 8.8-9.3"
-                        stroke="#FFFFFF"
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <rect x="18" y="36" width="28" height="20" rx="4" fill="#7FE3CC" />
-                      <path d="M42 60 L56 46" stroke="#0B1320" strokeWidth="3" strokeLinecap="round" />
-                    </svg>
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div style={{ paddingLeft: "120px" }}>
-                  <h3 style={{ margin: "0 0 12px 0", fontSize: "22px", fontWeight: 700 }}>
-                    {item.title}
-                  </h3>
-
-                  {item.lines.map((line, i) => (
-                    <p
-                      key={i}
+                {
+                  title: "Authorizations",
+                  lines: [
+                    "Paymentology provides a daily mark-off file",
+                    "The mark-off file shows successful transactions that Paymentology has processed on behalf of the Issuer",
+                    "The Issuer/client will compare Paymentology's transactions to the wallet platform",
+                  ],
+                },
+                {
+                  title: "Settlements",
+                  lines: [
+                    "Paymentology provides a daily summary settlement report as well as a daily detailed settlement report.",
+        						"The Issuer/client will compare the net settlement amount with the amount that the card scheme has debited from the Issuer/client pool account",
+                  ],
+                },
+                {
+                  title: "Revenue",
+                  lines: [
+                    "Paymentology provides a daily forex gains report showing all revenue earned by the Issuer/client",
+                    "The Issuer/client also has sight of the daily interchange earned from the summary settlement report",
+                  ],
+                },
+                {
+                  title: "Fraud",
+                  lines: [
+                    "Paymentology will report on all fraud cases via the card scheme’s online portal",
+                  ],
+                },
+              ].map((item, idx) => (
+                <div
+                  key={idx}
+                  style={{
+                    background: "#E9F6F1",
+                    padding: "28px 32px",
+                    position: "relative",
+                      minHeight: "200px",
+                        display: "flex",
+    								alignItems: "center", 
+                  }}
+                >
+                  {/* Icon */}
+                  <div style={{ position: "absolute", top: "20px", left: "32px" }} aria-hidden="true">
+                    <div
                       style={{
-                        margin: "0 0 8px 0",
-                        fontSize: "16px",
-                        lineHeight: 1.4,
-                        fontWeight: 500,
+                        width: "72px",
+                        height: "72px",
+                        background: "#97E0CD",
+                        borderRadius: "14px 14px 14px 32px",
+                        display: "grid",
+                        placeItems: "center",
                       }}
                     >
-                      {line}
-                    </p>
-                  ))}
+                      <svg
+                        width="44"
+                        height="44"
+                        viewBox="0 0 86 86"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect x="54" y="10" width="22" height="22" rx="6" fill="#58C7AE" />
+                        <path
+                          d="M59.5 21.5l4.2 4.3 8.8-9.3"
+                          stroke="#FFFFFF"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <rect x="18" y="36" width="28" height="20" rx="4" fill="#7FE3CC" />
+                        <path d="M42 60 L56 46" stroke="#0B1320" strokeWidth="3" strokeLinecap="round" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div style={{ paddingLeft: "120px" }}>
+                    <h3 style={{ margin: "0 0 12px 0", fontSize: "22px", fontWeight: 700 }}>
+                      {item.title}
+                    </h3>
+
+                    {item.lines.map((line, i) => (
+                      <p
+                        key={i}
+                        style={{
+                          margin: "0 0 8px 0",
+                          fontSize: "16px",
+                          lineHeight: 1.4,
+                          fontWeight: 500,
+                        }}
+                      >
+                        {line}
+                      </p>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
 </div>
 
 ***
@@ -121,68 +121,37 @@ Authorization is the process of checking the available funds on a card in order 
   style={{
     display: "grid",
     gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-    gap: "28px",
+    gap: "24px",
   }}
 >
   {[
       {
         title: "Paymentology",
-        icon: (
-          // Chat bubble icon (simple)
-          <svg width="56" height="56" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M14 14h36v26H26l-12 10V14z"
-              fill="#0B1320"
-            />
-            <rect x="25" y="24" width="16" height="10" rx="2" fill="#97E0CD" />
-          </svg>
-        ),
         body: (
           <>
-            <strong>Paymentology will</strong> daily generate a mark-off file showing all transactions successfully processed on behalf of the Issuer/client
+            <strong>Paymentology will</strong> daily generate a mark-off file showing all
+            transactions successfully processed on behalf of the Issuer/client.
           </>
         ),
       },
       {
         title: "Issuer/Client",
-        icon: (
-          // Laptop + user icon (simple)
-          <svg width="56" height="56" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="46" cy="18" r="7" fill="#97E0CD" opacity="0.9" />
-            <path d="M18 22h28v18H18V22z" stroke="#0B1320" strokeWidth="3" />
-            <path d="M14 42h36" stroke="#0B1320" strokeWidth="3" strokeLinecap="round" />
-            <circle cx="32" cy="31" r="4" stroke="#0B1320" strokeWidth="3" />
-          </svg>
-        ),
         body: (
           <>
-            <strong>The Issuer/client will</strong> daily generate a similar mark-off file
+            <strong>The Issuer/client will</strong> daily generate a similar mark-off file.
             <br /><br />
-            The Issuer/client will compare Paymentology&apos;s transaction list to their list
+            The Issuer/client will compare Paymentology&apos;s transaction list to their list.
           </>
         ),
       },
       {
         title: "Support",
-        icon: (
-          // Headset icon (simple)
-          <svg width="56" height="56" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M20 30c0-8 5-14 12-14s12 6 12 14"
-              stroke="#0B1320"
-              strokeWidth="3"
-              strokeLinecap="round"
-            />
-            <path d="M18 30v10c0 3 2 5 5 5" stroke="#0B1320" strokeWidth="3" strokeLinecap="round" />
-            <path d="M46 30v10c0 3-2 5-5 5" stroke="#0B1320" strokeWidth="3" strokeLinecap="round" />
-            <path d="M26 48h12" stroke="#0B1320" strokeWidth="3" strokeLinecap="round" />
-            <circle cx="18" cy="36" r="4" fill="#97E0CD" />
-            <circle cx="46" cy="36" r="4" fill="#97E0CD" />
-          </svg>
-        ),
         body: (
           <>
-            <strong>If there are any discrepancies</strong>, the Issuer/client will raise these with the Paymentology support team to investigate by logging a ticket via your Zendesk Portal, selecting the <strong>*Report a Service Incident*</strong> form, and then choosing <strong>*Reporting*</strong> and <strong>*Discrepancy*</strong> under the Request Type.
+            <strong>If there are any discrepancies</strong>, the Issuer/client will raise these
+            with the Paymentology support team by logging a ticket via your Zendesk Portal,
+            selecting the <strong>Report a Service Incident</strong> form, then choosing
+            <strong> Reporting</strong> and <strong> Discrepancy</strong>.
           </>
         ),
       },
@@ -191,55 +160,67 @@ Authorization is the process of checking the available funds on a card in order 
         key={idx}
         style={{
           background: "#E9F6F1",
-          padding: "44px 44px 52px",
-          minHeight: "520px",              // equal height
+          padding: "32px",
+          minHeight: "440px",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "flex-start",
         }}
       >
-        {/* Icon badge */}
+        {/* Icon placeholder */}
         <div
           style={{
-            width: "128px",
-            height: "128px",
+            width: "104px",
+            height: "104px",
             background: "#97E0CD",
-            borderRadius: "22px 22px 22px 56px",
-            display: "grid",
-            placeItems: "center",
-            marginBottom: "120px",          // creates that big airy top spacing
+            borderRadius: "20px 20px 20px 52px",
+            marginBottom: "88px",
           }}
           aria-hidden="true"
-        >
-          {card.icon}
-        </div>
+        />
 
         {/* Title */}
-        <div style={{ fontSize: "28px", fontWeight: 500, marginBottom: "14px", color: "#0B1320" }}>
+        <div
+          style={{
+            fontSize: "18px",
+            fontWeight: 600,
+            marginBottom: "10px",
+            color: "#0B1320",
+          }}
+        >
           {card.title}
         </div>
 
         {/* Body */}
-        <div style={{ fontSize: "22px", lineHeight: 1.55, fontWeight: 600, color: "#0B1320" }}>
+        <div
+          style={{
+            fontSize: "14px",
+            lineHeight: 1.55,
+            fontWeight: 500,
+            color: "#0B1320",
+          }}
+        >
           {card.body}
         </div>
       </div>
     ))}
 </div>
 
-{/* Simple responsive tweak for narrow screens (ReadMe usually honors inline <style>) */}
-
 <style>
   {`
     @media (max-width: 1100px) {
-      div[style*="grid-template-columns: repeat(3"] { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+      div[style*="grid-template-columns: repeat(3"] {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
     }
     @media (max-width: 700px) {
-      div[style*="grid-template-columns: repeat(3"], 
-      div[style*="grid-template-columns: repeat(2"] { grid-template-columns: 1fr !important; }
+      div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+      }
     }
   `}
 </style>
+
+<br />
 
 ***
 
