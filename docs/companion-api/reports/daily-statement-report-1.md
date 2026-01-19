@@ -28,8 +28,52 @@ The report includes the following details:
 
 ## Report format
 
+<br />
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">FORMAT</th>
+      <th align="center">FILE NAME</th>
+      <th align="center">FREQUENCY</th>
+      <th align="center">ACCESSIBILITY</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">CSV</td>
+      <td align="center">\[CampaignName]*Statement*\[YYYYMMDD].csv</td>
+      <td align="center">Daily</td>
+      <td align="center">HTTP GET request</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Report time frame
 
+<br />
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">UTC +2</th>
+      <th align="center">UTC +7</th>
+      <th align="center">REMARKS</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">08:05</td>
+      <td align="center">08:05</td>
+      <td align="center">Generated daily in the client's campaign timezone.</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Report sample
+
+<NavyBlock />
 
 [CampaignName_Statement_YYYYMMDD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_Statement_YYYYMMDD.csv)
