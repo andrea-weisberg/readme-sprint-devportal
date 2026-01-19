@@ -16,25 +16,6 @@ name: NavyBlock
       fontWeight: 400,
     }}
   >
-    Mastercard chargeback collaboration period is between 24–72 hours.
-    Chargebacks can take up to 72 hours to reflect as processed by Mastercard.
-    This means that the chargeback is actually paused for that period and the
-    <strong> 45 days waiting for second presentment</strong> only starts from
-    the date the chargeback is actually processed. If no second presentment is
-    received within 45 days, we automatically load the funds thereafter.
-  </p>
-
-  <p
-    style={{
-      margin: 0,
-      fontSize: "14px",
-      lineHeight: 1.55,
-      fontWeight: 500,
-    }}
-  >
-    Please be informed that all Mastercard chargebacks will have to wait for
-    <strong> 48 days</strong> to see if a chargeback is successful (no second
-    presentment) and then the funds will be loaded. Our Dispute Team will notify
-    due date on each chargeback case accordingly.
+    You can generate all reports below by sending a HTTP GET Request and downloading the report as a CSV file. These downloadable reports are only available for 60 days.
   </p>
 </div>
