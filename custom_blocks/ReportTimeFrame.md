@@ -12,12 +12,11 @@ name: ReportTimeFrame
 
   <tbody>
     <tr>
-      <td align="center">10:00</td>
-      <td align="center">15:00</td>
+      <td align="center">09:45</td>
+      <td align="center">14:45</td>
 
       <td align="center">
-        The report is generated at the provided times on the 1st of every month
-        and issued to Visa clients via email.
+       When the report is generated, the timeframe of all data captured in this report is from 00:00:00 to 11:59:59 the previous day in: • System time zone UTC+2 • Asia client time zone UTC+7
       </td>
     </tr>
   </tbody>
