@@ -30,9 +30,25 @@ This daily report provides client’s with transaction markup data to support th
 
 ## Report format
 
-<ReportFormat />
+<table>
+  <thead>
+    <tr>
+      <th align="center">FORMAT</th>
+      <th align="center">FILE NAME</th>
+      <th align="center">FREQUENCY</th>
+      <th align="center">ACCESSIBILITY</th>
+    </tr>
+  </thead>
 
-<br />
+  <tbody>
+    <tr>
+      <td align="center">CSV</td>
+      <td align="center">\[CampaignName]*authorisationincomereport*\[YYYY\_MM\_DD].csv</td>
+      <td align="center">Daily</td>
+      <td align="center">HTTP GET request</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Report time frame
 
