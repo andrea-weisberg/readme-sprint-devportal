@@ -30,10 +30,24 @@ This daily report provides client’s with transaction markup data to support th
 
 ## Report format
 
+<ReportFormat />
+
+<br />
+
 ## Report time frame
+
+<ReportTimeFrame />
+
+<br />
 
 ## Report sample
 
-**CampaignName_authorisationincomereport_YYYY_MM_DD-.png IMAGE GOES HERE.**
+<Image border={false} src="https://files.readme.io/fbe5b25b5d8f37d66d91b12cea17279fc07059cc08001afb306e4c94cfce84dc-image.png" />
+
+<br />
+
+<NavyBlock />
+
+<br />
 
 [CampaignName_authorisationincomereport_YYYY_MM_DD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_authorisationincomereport_YYYY_MM_DD.csv)
