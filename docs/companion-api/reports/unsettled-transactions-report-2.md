@@ -36,6 +36,10 @@ This report includes the following details:
 * **SequenceNumber** – this is a unique sequence card identifier showing a running number for the cards created.
 * **TrackingNumber** – this is a unique 15-digit tracking identifier for the card.
 
+***
+
+<br />
+
 ### Version 2
 
 This report includes the following details:
@@ -63,11 +67,51 @@ This report includes the following details:
 
 ## Report format
 
+<table>
+  <thead>
+    <tr>
+      <th align="center">FORMAT</th>
+      <th align="center">FILE NAME</th>
+      <th align="center">FREQUENCY</th>
+      <th align="center">ACCESSIBILITY</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">CSV</td>
+      <td align="center">\[CampaignName]*UnsettledTransactionReport*\[YYMMDD].csv</td>
+      <td align="center">Hourly</td>
+      <td align="center">HTTP GET request</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Report time frame
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">REMARKS</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">
+        The report is generated once per hour for every campaign.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Report sample
 
-**CampaignName_UnsettledTransactionReport_YYYYMMDD-.png IMAGE GOES HERE.**
+<Image border={false} src="https://files.readme.io/6d38d57300edd4c4bdef5c0bbaa590ead1353ff6cfc67dcee2ede7a1a0191b84-image.png" />
+
+<NavyBlock />
+
+<br />
 
 [CampaignName_UnsettledTransactionReport_YYYYMMDD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_UnsettledTransactionReport_YYYYMMDD.csv)
 [CampaignName_UnsettledTransactionReport_YYYYMMDD.csv V2 sample](https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/CampaignName_UnsettledTransactionReport_YYYYMMDD-V2sample.csv)
