@@ -136,15 +136,15 @@ Dispute Resolution Form
 <div
   style={{
     background: "#0F1F3A",
-    padding: "36px 40px",
+    padding: "20px 24px",
     color: "#FFFFFF",
   }}
 >
   <p
     style={{
-      margin: "0 0 24px 0",
-      fontSize: "16px",
-      lineHeight: 1.6,
+      margin: "0 0 14px 0",
+      fontSize: "14px",
+      lineHeight: 1.55,
       fontWeight: 400,
     }}
   >
@@ -159,9 +159,9 @@ Dispute Resolution Form
   <p
     style={{
       margin: 0,
-      fontSize: "16px",
-      lineHeight: 1.6,
-      fontWeight: 600,
+      fontSize: "14px",
+      lineHeight: 1.55,
+      fontWeight: 500,
     }}
   >
     Please be informed that all Mastercard chargebacks will have to wait for
