@@ -3,14 +3,16 @@ name: NavyBlock
 ---
 <div
   style={{
+    background: "#0F1F3A",
+    color: "#FFFFFF",
+    padding: "0 16px",
+    minHeight: "56px",              // ensures vertical centering in the box
     display: "flex",
     alignItems: "center",
     gap: "12px",
-    background: "#0F1F3A",
-    color: "#FFFFFF",
-    padding: "12px 16px",
     fontSize: "14px",
     fontWeight: 500,
+    lineHeight: "20px",             // keep icon + text aligned
   }}
 >
   {/* Info icon */}
@@ -29,18 +31,20 @@ name: NavyBlock
     <span
       style={{
         display: "block",
-        lineHeight: "1",
         fontSize: "12px",
-        fontWeight: 700,
-        transform: "translateY(-0.5px)", // micro-adjust for ReadMe fonts
+        fontWeight: 800,
+        lineHeight: "12px",
+        transform: "translateY(-0.5px)",
       }}
     >
       i
     </span>
   </div>
 
-  <span>
-    <strong>Note:</strong> sample file will automatically download upon clicking link
+  {/* Text */}
+  <span style={{ display: "inline-flex", alignItems: "center" }}>
+    <span style={{ fontWeight: 800, marginRight: "6px" }}>Note:</span>
+    <span>sample file will automatically download upon clicking link</span>
   </span>
 </div>
 
