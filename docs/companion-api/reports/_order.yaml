@@ -5,6 +5,7 @@
 - vau-transaction-report-1
 - authorisation-income-report-1
 - daily-negative-balance-report-1
+- inactive-cards-report-1
 - secure-cards
 - apple-pay-monthly-declines-report-1
 - apple-pay-monthly-fee-billing-report-1
@@ -19,7 +20,6 @@
 - failed-transaction-report
 - forex-gains-report
 - google-pay-monthly-report-1
-- inactive-cards-report-1
 - index
 - linked-cards-report-1
 - qmr-data-report-1
