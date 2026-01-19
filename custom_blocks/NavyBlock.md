@@ -3,21 +3,39 @@ name: NavyBlock
 ---
 <div
   style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "12px",
     background: "#0F1F3A",
-    padding: "20px 24px",
     color: "#FFFFFF",
+    padding: "12px 16px",
+    fontSize: "14px",
+    fontWeight: 500,
   }}
 >
-  <p
+  {/* Info icon */}
+  <div
     style={{
-      margin: "0 0 14px 0",
-      fontSize: "14px",
-      lineHeight: 1.55,
-      fontWeight: 400,
+      width: "20px",
+      height: "20px",
+      borderRadius: "50%",
+      background: "#3B6EDC",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      fontSize: "12px",
+      fontWeight: 700,
+      flexShrink: 0,
     }}
+    aria-hidden="true"
   >
-Note: file will automatically download upon clicking link
-  </p>
+    i
+  </div>
+
+  <span>
+    <strong>Note:</strong> sample file will automatically download upon clicking link
+  </span>
 </div>
+
 
 <br />
