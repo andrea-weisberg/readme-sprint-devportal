@@ -23,8 +23,6 @@ The report includes the following details:
 
 ## Report format
 
-<br />
-
 <table>
   <thead>
     <tr>
@@ -46,8 +44,6 @@ The report includes the following details:
 </table>
 
 ## Report time frame
-
-<br />
 
 <table>
   <thead>
