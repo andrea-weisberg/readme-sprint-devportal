@@ -52,21 +52,7 @@ The report includes the following details:
       <td align="center">11:50, on day 1 of month</td>
 
       <td align="center">
-        When the report is generated, the timeframe of all captured data in this report is from
-
-        <br />
-
-        <br />
-
-        <strong>00:00:00 day 1 of previous month</strong> to
-        <strong>11:59:59 of the last day of previous month</strong> in:
-
-        <br />
-
-        <br />
-
-        • System time zone UTC+2<br />
-        • Asia client time zone UTC+7
+        When the report is generated, the timeframe of all captured data in this report is from 11:59:59 of the last day of previous month in:System time zone UTC+2 and Asia client time zone UTC+7
       </td>
     </tr>
   </tbody>
