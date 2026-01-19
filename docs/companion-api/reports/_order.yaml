@@ -9,6 +9,7 @@
 - google-pay-monthly-report-1
 - card-balance-report-1
 - qvr-data-report-1
+- qmr-data-report-1
 - linked-cards-report-1
 - secure-cards
 - apple-pay-monthly-declines-report-1
@@ -23,6 +24,5 @@
 - failed-transaction-report
 - forex-gains-report
 - index
-- qmr-data-report-1
 - summary-settlement-report
 - unsettled-transactions-report-2
