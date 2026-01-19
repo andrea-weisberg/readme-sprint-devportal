@@ -20,16 +20,23 @@ name: NavyBlock
       height: "20px",
       borderRadius: "50%",
       background: "#3B6EDC",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      fontSize: "12px",
-      fontWeight: 700,
+      display: "grid",
+      placeItems: "center",
       flexShrink: 0,
     }}
     aria-hidden="true"
   >
-    i
+    <span
+      style={{
+        display: "block",
+        lineHeight: "1",
+        fontSize: "12px",
+        fontWeight: 700,
+        transform: "translateY(-0.5px)", // micro-adjust for ReadMe fonts
+      }}
+    >
+      i
+    </span>
   </div>
 
   <span>
