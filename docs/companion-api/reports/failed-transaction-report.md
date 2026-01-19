@@ -41,6 +41,10 @@ Version 1 includes the following details:
 * **Transaction Internal Code** – this is a code that gives you the reason for transaction declines. List of codes can be downloaded [here](https://developer.sprint.paymentology.com/wp-content/uploads/2021/04/Failed-transaction-report-code-descriptions.xlsx)
 * **Digitized Wallet id** – the 3 digit numeric code that identifies the Xpay App. Find a list of the Wallet IDs [here](https://developer.sprint.paymentology.com/companion-api/tokenization2/token-lifecycle-management/#WID).
 
+<DeclinedNavyBox />
+
+***
+
 ### Version 2
 
 Version 2 includes the following details:
@@ -74,9 +78,73 @@ Version 2 includes the following details:
 * **MerchantCategoryCode** – the merchant category code.
 * **PaymentInitiator** – indicates whether a transaction was initiated by the Cardholder (CIT – Cardholder Initiated Transaction) or the Merchant (MIT – Merchant Initiated Transaction)
 
+<DeclinedNavyBox />
+
+***
+
 ## Report format
 
+<table>
+  <thead>
+    <tr>
+      <th align="center">FORMAT</th>
+      <th align="center">FILE NAME</th>
+      <th align="center">FREQUENCY</th>
+      <th align="center">ACCESSIBILITY</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">CSV</td>
+
+      <td align="center">
+        <strong>DAILY REPORT:</strong><br />
+        \[CampaignUUID]/\[CampaignName]*DailyAuthFailure*\[YYYYMMDD].csv<br /><br />
+        <strong>MONTHLY REPORT:</strong><br />
+        \[CampaignUUID]/failedtransactions\_\[CampaignName]\_\[YYYY-MM-DD-YYYY-MM-DD].csv
+      </td>
+
+      <td align="center">Daily & Monthly</td>
+      <td align="center">HTTP GET request or client SFTP folder</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Report time frame
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">UTC +2</th>
+      <th align="center">UTC +7</th>
+      <th align="center">REMARKS</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">06:30</td>
+      <td align="center">11:30</td>
+
+      <td align="center">
+        When the report is generated at <strong>06:30 UTC+2</strong> /
+        <strong>11:30 UTC+7</strong> (2020-09-10), the timeframe of all failed
+        transactions captured in this report is from
+        <strong>2020-09-09 00:00:00</strong> to
+        <strong>2020-09-09 11:59:59</strong> in:
+
+        <br />
+
+        <br />
+
+        • System time zone UTC+2<br />
+        • Asia client time zone UTC+7<br />
+        • Merchant time zone
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Report sample
 
