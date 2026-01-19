@@ -45,6 +45,8 @@ Version 1 includes the following details:
 * **Interchange amount** – this is the individual amounts earned per transaction.
 * **Network transaction id** – (Mastercard only) this is the Networks TraceID, it assists clients with matching pre-authorizations and incremental pre-authorizations to the settlements for those transactions.
 
+***
+
 ### Version 2.4
 
 Version 2.4 includes the following details:
@@ -83,10 +85,67 @@ Version 2.4 includes the following details:
 
 ## Report format
 
+<table>
+  <thead>
+    <tr>
+      <th align="center">FORMAT</th>
+      <th align="center">FILE NAME</th>
+      <th align="center">FREQUENCY</th>
+      <th align="center">ACCESSIBILITY</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">CSV</td>
+      <td align="center">\[CampaignUUID]/\[CampaignName]DailySettlements\[YYYYMMDD].csv</td>
+      <td align="center">Daily</td>
+      <td align="center">HTTP GET request or client SFTP folder</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Report time frame
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">UTC +2</th>
+      <th align="center">UTC +7</th>
+      <th align="center">REMARKS</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">04:00</td>
+      <td align="center">09:00</td>
+
+      <td align="center">
+        When the report is generated at <strong>04:00 UTC+2</strong> /
+        <strong>09:00 UTC+7</strong> (2020-09-10), the timeframe of all settled
+        transactions captured in this report is from
+        <strong>2020-09-09 00:00:00</strong> to
+        <strong>2020-09-09 11:59:59</strong> in:
+
+        <br />
+
+        <br />
+
+        • System time zone UTC+2<br />
+        • Asia client time zone UTC+7<br />
+        • Merchant time zone
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Report Sample
 
-**Detailed-Settlement-report1.png IMAGE GOES HERE.**
+<Image border={false} src="https://files.readme.io/369ced30e5c3f4ad95f542e8556ac38a11619d46cad93fbc563189218d7d1349-image.png" />
+
+<NavyBlock />
+
+<br />
 
 [CampaignNameDailySettlementsYYYYMMDD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2024/02/CampaignNameDailySettlementsYYYYMMDD.csv)
