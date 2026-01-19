@@ -13,6 +13,7 @@
 - qmr-data-report-1
 - summary-settlement-report
 - detailed-settlement-report-1
+- forex-gains-report
 - secure-cards
 - apple-pay-monthly-declines-report-1
 - apple-pay-monthly-fee-billing-report-1
@@ -23,6 +24,5 @@
 - card-order-report
 - ecommerce-report-1
 - failed-transaction-report
-- forex-gains-report
 - index
 - unsettled-transactions-report-2
