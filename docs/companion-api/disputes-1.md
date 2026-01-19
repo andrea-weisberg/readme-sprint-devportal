@@ -75,6 +75,100 @@ When the transaction was completed with electronically recorded card information
 
 There are four categories for chargeback processing:
 
-Mastercard Categories and Timeframes
+**Mastercard Categories and Timeframes**
 
+<br />
 
+<table>
+  <thead>
+    <tr>
+      <th align="center">Reason Code</th>
+      <th align="center">Reason Code Description</th>
+      <th align="center">Timeframe</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">4808</td>
+      <td align="center">Authorization-related Chargeback</td>
+      <td align="center">90 calendar days</td>
+    </tr>
+
+    <tr>
+      <td align="center">4853</td>
+      <td align="center">Cardholder dispute</td>
+      <td align="center">120 calendar days</td>
+    </tr>
+
+    <tr>
+      <td align="center">4837 / 4849 / 4870 / 4871</td>
+
+      <td align="center">
+        <strong>Fraud</strong><br />
+        No cardholder authorization<br />
+        Questionable merchant activity<br />
+        Chip liability shift<br />
+        Chip liability shift – Lost/Stolen / Never Received Issue (NRI) fraud
+      </td>
+
+      <td align="center">120 calendar days</td>
+    </tr>
+
+    <tr>
+      <td align="center">4834</td>
+      <td align="center">Point-of-interaction error</td>
+
+      <td align="center">
+        90 calendar days<br />
+        (ATM-related disputes: 120 calendar days)
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+Dispute Resolution Form – Fraud
+
+Dispute Resolution Form
+
+<br />
+
+<div
+  style={{
+    background: "#0F1F3A",
+    padding: "36px 40px",
+    color: "#FFFFFF",
+  }}
+>
+  <p
+    style={{
+      margin: "0 0 24px 0",
+      fontSize: "16px",
+      lineHeight: 1.6,
+      fontWeight: 400,
+    }}
+  >
+    Mastercard chargeback collaboration period is between 24–72 hours.
+    Chargebacks can take up to 72 hours to reflect as processed by Mastercard.
+    This means that the chargeback is actually paused for that period and the
+    <strong> 45 days waiting for second presentment</strong> only starts from
+    the date the chargeback is actually processed. If no second presentment is
+    received within 45 days, we automatically load the funds thereafter.
+  </p>
+
+  <p
+    style={{
+      margin: 0,
+      fontSize: "16px",
+      lineHeight: 1.6,
+      fontWeight: 600,
+    }}
+  >
+    Please be informed that all Mastercard chargebacks will have to wait for
+    <strong> 48 days</strong> to see if a chargeback is successful (no second
+    presentment) and then the funds will be loaded. Our Dispute Team will notify
+    due date on each chargeback case accordingly.
+  </p>
+</div>
+
+<br />
