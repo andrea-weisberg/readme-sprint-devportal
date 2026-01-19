@@ -74,3 +74,5 @@ The report includes the following details:
 <br />
 
 [CampaignName Blocked Transactions – 231015-231022.xls](https://developer.sprint.paymentology.com/wp-content/uploads/2024/02/CampaignName-Blocked-Transactions-231015-231022.xls)
+
+<br />
