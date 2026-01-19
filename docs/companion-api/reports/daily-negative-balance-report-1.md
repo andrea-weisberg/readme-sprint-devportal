@@ -27,9 +27,54 @@ The report includes the following details:
 
 ## Report format
 
+<table>
+  <thead>
+    <tr>
+      <th align="center">FORMAT</th>
+      <th align="center">FILE NAME</th>
+      <th align="center">FREQUENCY</th>
+      <th align="center">ACCESSIBILITY</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">CSV</td>
+      <td align="center">DailyNegativeBalanceReportOnChargebackQueue\_\[CampaignName]\_\[YYYYMMDD].csv</td>
+      <td align="center">Daily</td>
+      <td align="center">Email (automated)</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Report time frame
 
+<table>
+  <thead>
+    <tr>
+      <th align="center">UTC +2</th>
+      <th align="center">UTC +7</th>
+      <th align="center">REMARKS</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">Defined by client and configured by Paymentology.</td>
+      <td align="center">Defined by client and configured by Paymentology.</td>
+
+      <td align="center">
+        The daily scheduled task generates the report for the previous day.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ## Report sample
+
+<NavyBlock />
+
+<br />
 
 [DailyNegativeBalanceReportOnChargebackQueue_CampaignName_YYYYMMDD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2024/10/DailyNegativeBalanceReportOnChargebackQueue_CampaignName_YYYYMMDD.csv)
 
