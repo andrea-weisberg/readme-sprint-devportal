@@ -36,8 +36,6 @@ The report includes the following details:
 
 ## Report format
 
-<br />
-
 <table>
   <thead>
     <tr>
