@@ -5,9 +5,11 @@ hidden: false
 metadata:
   robots: index
 ---
-
-
 **Paymentology provides end-to-end reporting and reconciliation capabilities to allow you to track all the financial movements, revenues collected, failed transactions, and more.**
+
+<NavyBlock />
+
+<br />
 
 You can generate the following reports:
 
@@ -24,7 +26,7 @@ You can generate the following reports:
 * [Card balance report](https://developer.sprint.paymentology.com/companion-api/reports/card-balance-report/)
 * [Daily statement report](https://developer.sprint.paymentology.com/companion-api/reports/daily-statement-report/)
 
----
+***
 
 ## Other Reports
 
@@ -67,3 +69,4 @@ These reports can be downloaded directly from a URL:
 
 * [Daily sales and redemption report](https://developer.sprint.paymentology.com/companion-api/reports/daily-sales-and-redemption-report/)
 
+<br />
