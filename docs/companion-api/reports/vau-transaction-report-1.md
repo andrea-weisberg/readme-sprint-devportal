@@ -45,31 +45,29 @@ For example, if a card was sent to VISA in a VAU file on **Sep 18, 2023**, and t
 
 ## Report time frame
 
-<ReportTimeFrame />
-
-## Report sample
-
-<br />
-
 <table>
   <thead>
     <tr>
-      <th align="center">FORMAT</th>
-      <th align="center">FILE NAME</th>
-      <th align="center">FREQUENCY</th>
-      <th align="center">ACCESSIBILITY</th>
+      <th align="center">UTC +2</th>
+      <th align="center">UTC +7</th>
+      <th align="center">REMARKS</th>
     </tr>
   </thead>
 
   <tbody>
     <tr>
-      <td align="center">CSV</td>
-      <td align="center">VAUTransactionsReport\[ClientName]\_\[report generation date YYYY-MM-DD].csv</td>
-      <td align="center">Monthly</td>
-      <td align="center">Sent via email</td>
+      <td align="center">10:00</td>
+      <td align="center">15:00</td>
+
+      <td align="center">
+        The report is generated at the provided times on the 1st of every month
+        and issued to Visa clients via email.
+      </td>
     </tr>
   </tbody>
 </table>
+
+## Report sample
 
 <NavyBlock />
 
