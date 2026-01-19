@@ -35,7 +35,7 @@ The report includes the following details:
   <tbody>
     <tr>
       <td align="center">CSV</td>
-      <td align="center">[CampaignName]googlepaymonthlyreport[MMM YYYY].csv</td>
+      <td align="center">\[CampaignName]googlepaymonthlyreport\[MMM YYYY].csv</td>
       <td align="center">Monthly</td>
       <td align="center">HTTP get request and email.</td>
     </tr>
@@ -67,6 +67,10 @@ The report includes the following details:
 
 ## Report sample
 
-**CampaignName_googlepay_monthlyreport_MMM-YYYY-.png IMAGE GOES HERE.**
+<Image border={false} src="https://files.readme.io/cab65267d910d3d9dabfb6e432b1649a1dde22282b4056fcc0032f9b7379089e-image.png" />
+
+<NavyBlock />
+
+<br />
 
 [CampaignNamegooglepaymonthlyreportMMM YYYY.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNamegooglepaymonthlyreportMMM-YYYY.csv)
