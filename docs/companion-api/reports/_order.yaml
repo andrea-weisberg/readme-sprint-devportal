@@ -15,6 +15,7 @@
 - detailed-settlement-report-1
 - forex-gains-report
 - failed-transaction-report
+- card-order-report
 - secure-cards
 - apple-pay-monthly-declines-report-1
 - apple-pay-monthly-fee-billing-report-1
@@ -22,7 +23,6 @@
 - apple-pay-monthly-top-merchant-report-1
 - apple-pay-monthly-usage-frequency-report-1
 - apple-pay-quarterly-fee-billing-report-1
-- card-order-report
 - ecommerce-report-1
 - index
 - unsettled-transactions-report-2
