@@ -135,4 +135,120 @@ Dispute Resolution Form
 
 <NavyBlock />
 
+***
+
+# Visa: Dispute/Chargeback categories and timeframes
+
+Most disputes have 120 days time frame but for some such as, Authorization related are only 75 days.
+
+There are four categories for chargeback processing:
+
+**Dispute conditions under four VCR categories**
+
 <br />
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">Fraud</th>
+      <th align="center">Authorization</th>
+      <th align="center">Processing Errors</th>
+      <th align="center">Consumer Disputes</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">EMV Liability Shift Counterfeit Fraud</td>
+      <td align="center">Card Recovery Bulletin</td>
+      <td align="center">Late Presentment</td>
+      <td align="center">Merchandise / Services not received</td>
+    </tr>
+
+    <tr>
+      <td align="center">EMV Liability Shift Non-Counterfeit Fraud</td>
+      <td align="center">Declined Authorization</td>
+      <td align="center">Incorrect Transaction Code</td>
+      <td align="center">Cancelled Recurring</td>
+    </tr>
+
+    <tr>
+      <td align="center">Other Fraud – Card Present Environment</td>
+      <td align="center">No Authorization</td>
+      <td align="center">Incorrect Currency</td>
+      <td align="center">Not as Described or Defective Merchandise / Services</td>
+    </tr>
+
+    <tr>
+      <td align="center">Other Fraud – Card Absent Environment</td>
+
+      <td align="center" />
+
+      <td align="center">Incorrect Account Number</td>
+      <td align="center">Counterfeit Merchandise</td>
+    </tr>
+
+    <tr>
+      <td align="center">Visa Fraud Monitoring Program</td>
+
+      <td align="center" />
+
+      <td align="center">Incorrect Amount</td>
+      <td align="center">Misrepresentation</td>
+    </tr>
+
+    <tr>
+      <td align="center" />
+
+      <td align="center" />
+
+      <td align="center">Duplicate Processing / Paid by Other Means</td>
+      <td align="center">Credit Not Processed</td>
+    </tr>
+
+    <tr>
+      <td align="center" />
+
+      <td align="center" />
+
+      <td align="center">Invalid Data</td>
+      <td align="center">Cancelled Merchandise / Services</td>
+    </tr>
+
+    <tr>
+      <td align="center" />
+
+      <td align="center" />
+
+      <td align="center">Original Transaction Not Accepted</td>
+
+      <td align="center" />
+    </tr>
+
+    <tr>
+      <td align="center" />
+
+      <td align="center" />
+
+      <td align="center">Non-Receipt of Cash or Load Transaction Value</td>
+
+      <td align="center" />
+    </tr>
+  </tbody>
+</table>
+
+Visa Generic Dispute Form
+
+***
+
+# What is a Fraud Dispute?
+
+When a cardholder says that they do not recognize transactions and have no knowledge of the transactions and were not in the vicinity where the said transactions were performed – and their card was in their possession at the time of the the transaction i.e. they did not attempt the transaction at all.
+
+For all Fraud related chargebacks, we have to report the fraudulent transaction to the various card schemes on their respective platforms:
+
+* Mastercard – Fraud Center/SAFE
+* Visa – VROL
+* UPI – FRM
+
+If a transaction was processed with [3D Secure](), we are not able to submit a Fraud chargeback therefore, the first step is to establish if there was a 3D Secure validation done.
