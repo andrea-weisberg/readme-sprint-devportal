@@ -3,6 +3,7 @@
 - blocked-transactions-report-1
 - daily-sales-and-redemption-report-1
 - vau-transaction-report-1
+- authorisation-income-report-1
 - secure-cards
 - apple-pay-monthly-declines-report-1
 - apple-pay-monthly-fee-billing-report-1
@@ -10,7 +11,6 @@
 - apple-pay-monthly-top-merchant-report-1
 - apple-pay-monthly-usage-frequency-report-1
 - apple-pay-quarterly-fee-billing-report-1
-- authorisation-income-report-1
 - card-balance-report-1
 - card-order-report
 - daily-negative-balance-report-1
