@@ -36,8 +36,50 @@ The report includes the following details:
 
 ## Report format
 
+<br />
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">FORMAT</th>
+      <th align="center">FILE NAME</th>
+      <th align="center">FREQUENCY</th>
+      <th align="center">ACCESSIBILITY</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">CSV</td>
+      <td align="center">\[CampaignName]\_DailySalesRedemptionStatement \[YYYY-MM-DD].csv</td>
+      <td align="center">Daily</td>
+      <td align="center">Via download link</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Report time frame
 
+<table>
+  <thead>
+    <tr>
+      <th align="center">UTC +2</th>
+      <th align="center">UTC +7</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">08:00</td>
+      <td align="center">13:00</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Report sample
+
+<NavyBlock />
+
+<br />
 
 [CampaignName_DailySalesRedmeptionStatement YYYY-MM-DD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2024/02/CampaignName_DailySalesRedmeptionStatement-YYYY-MM-DD.csv)
