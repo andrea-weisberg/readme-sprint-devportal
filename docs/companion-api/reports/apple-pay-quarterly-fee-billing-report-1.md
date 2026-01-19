@@ -22,8 +22,6 @@ The report includes the following details:
   * `ECOF – eCommerce Card on File`
 * **Active Debit DPANS** – this is the total number of cards that made at least one successful spend.
 
-<br />
-
 {/* Info box 1 */}
 
 <div
