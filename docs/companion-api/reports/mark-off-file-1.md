@@ -37,8 +37,6 @@ The Mark-off file has the following fields:
 
 ## Report format
 
-<br />
-
 <table>
   <thead>
     <tr>
@@ -60,8 +58,6 @@ The Mark-off file has the following fields:
 </table>
 
 ## Report time frame
-
-<br />
 
 <table>
   <thead>
