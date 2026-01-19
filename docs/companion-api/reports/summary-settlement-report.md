@@ -1,5 +1,5 @@
 ---
-title: summary settlement report
+title: Summary settlement report
 deprecated: false
 hidden: false
 metadata:
@@ -28,10 +28,64 @@ Here is a description of the transactions you can find in the report:
 
 ## Report format
 
+<table>
+  <thead>
+    <tr>
+      <th align="center">FORMAT</th>
+      <th align="center">FILE NAME</th>
+      <th align="center">FREQUENCY</th>
+      <th align="center">ACCESSIBILITY</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">CSV or XLS</td>
+
+      <td align="center">
+        \[CampaignUUID]/\[CampaignName]Daily\_Settlement\_Report\_\[ICA]*\[YYYY\_MM\_DD].csv<br />
+        or<br />
+        \[CampaignUUID]/\[CampaignName]Daily\_Settlement\_Report*\[ICA]\_\[YYYY\_MM\_DD].xls
+      </td>
+
+      <td align="center">Daily</td>
+      <td align="center">HTTP GET request or client SFTP folder</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Report time frame
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">FORMAT</th>
+      <th align="center">FILE NAME</th>
+      <th align="center">FREQUENCY</th>
+      <th align="center">ACCESSIBILITY</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">CSV or XLS</td>
+
+      <td align="center">
+        \[CampaignUUID]/\[CampaignName]Daily\_Settlement\_Report\_\[ICA]*\[YYYY\_MM\_DD].csv<br />
+        or<br />
+        \[CampaignUUID]/\[CampaignName]Daily\_Settlement\_Report*\[ICA]\_\[YYYY\_MM\_DD].xls
+      </td>
+
+      <td align="center">Daily</td>
+      <td align="center">HTTP GET request or client SFTP folder</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Report Sample
 
-**summary-Settlement-report-final1.png IMAGE GOES HERE.**
+<Image border={false} src="https://files.readme.io/c6628862e371c950bd9e9f3ad091d46530c7158ba61dcfd2bc054e0b65fba296-image.png" />
+
+<br />
 
 [Daily_Settlement_Report_ICA_(YYYY_MM_DD).xls](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/Daily_Settlement_Report_ICA_YYYY_MM_DD.xls)
