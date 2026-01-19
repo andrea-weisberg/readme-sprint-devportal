@@ -7,7 +7,7 @@ metadata:
 ---
 This file contains a record of all successful transactions that Paymentology processes on behalf of a store of value like a wallet or a bank account. It includes the financial transactions between a store of value and Paymentology.Paymentology generates the Mark-off file daily at midnight in your local time zone. The file matches a report from a store of value for all successfully processed transactions.
 
-Ideally, the Mark-off file report and the store of value report should be in sync each day as the systems mirror one another. In case of any discrepancy, you should log a ticket via your Zendesk Portal. Select the ***Report a Service Incident*** form, and then choose ***Reporting*** and ***Discrepancy*** under the Request type, indicate the file’s date and the transaction in question. We’ll promptly address the issue.
+Ideally, the Mark-off file report and the store of value report should be in sync each day as the systems mirror one another. In case of any discrepancy, you should log a ticket via your Zendesk Portal. Select the _**Report a Service Incident**_ form, and then choose _**Reporting**_ and _**Discrepancy**_ under the Request type, indicate the file’s date and the transaction in question. We’ll promptly address the issue.
 
 You can generate the Mark-off file by sending an HTTP GET request and downloading the report as a CSV file.
 
@@ -37,10 +37,63 @@ The Mark-off file has the following fields:
 
 ## Report format
 
+<br />
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">FORMAT</th>
+      <th align="center">FILE NAME</th>
+      <th align="center">FREQUENCY</th>
+      <th align="center">ACCESSIBILITY</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">CSV</td>
+      <td align="center">\[CampaignUUID]/\[CampaignName]*MarkOffFile*\[YYYYMMDD].csv</td>
+      <td align="center">Daily</td>
+      <td align="center">HTTP GET request or client SFTP folder</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Report time frame
+
+<br />
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">UTC +2</th>
+      <th align="center">UTC +7</th>
+      <th align="center">REMARKS</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">19:00</td>
+      <td align="center">00:00</td>
+
+      <td align="center">
+        When the report is generated at <strong>19:00 UTC+2 (2020-09-10)</strong> /
+        <strong>00:00 UTC+7 (2020-09-11)</strong>, the timeframe of all authorized
+        transactions captured in this report is:<br /><br />
+        • 2020-09-09 00:00:00 UTC+7 (system time) to 2020-09-09 11:59:59 UTC+2 (system time)<br />
+        • 2020-09-10 00:00:00 UTC+7 (Asia client time) to 2020-09-10 11:59:59 UTC+2 (Asia client time)
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Report sample
 
-**Mark-Off-report-Companion-final.png IMAGE GOES HERE.**
+<Image border={false} src="https://files.readme.io/60da279f946b5549f5bf0b8e50d5ca5209930fed5debcb7efffb62946c9e5f1e-image.png" />
+
+<NavyBlock />
+
+<br />
 
 [CampaignName_MarkOffFile_GMT_plus_3_00h00_YYYYMMDD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2024/02/CampaignName_MarkOffFile_GMT_plus_3_00h00_YYYYMMDD.csv)
