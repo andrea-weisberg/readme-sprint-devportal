@@ -23,8 +23,16 @@ For example, if a card was sent to VISA in a VAU file on **Sep 18, 2023**, and t
 
 ## Report format
 
+<ReportFormat />
+
 ## Report time frame
 
+<ReportTimeFrame />
+
 ## Report sample
+
+<NavyBlock />
+
+<br />
 
 [VAUtransactionsReportClientName_YYYY-MM-DD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2024/02/VAUtransactionsReportClientName_YYYY-MM-DD.csv)
