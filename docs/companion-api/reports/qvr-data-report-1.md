@@ -44,9 +44,57 @@ In addition to the above, the following card/account data is provided:
 
 ## Report format
 
+<table>
+  <thead>
+    <tr>
+      <th align="center">FORMAT</th>
+      <th align="center">FILE NAME</th>
+      <th align="center">FREQUENCY</th>
+      <th align="center">ACCESSIBILITY</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">XLS</td>
+      <td align="center">QVR\_SRE\[SRE]\_YYYYMMDD-YYYYMMDD.xls</td>
+      <td align="center">Quarterly</td>
+      <td align="center">Via email</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Report time frame
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">TIME, DATE</th>
+      <th align="center">REMARKS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">
+        Clients are required to liaise with their client executive to confirm
+        when they will be scheduled to receive this report.
+      </td>
+      <td align="center">
+        Quarterly reports are produced as follows:<br/><br/>
+        <strong>Q1</strong> – (January, February, March) → produced April<br/>
+        <strong>Q2</strong> – (April, May, June) → produced July<br/>
+        <strong>Q3</strong> – (July, August, September) → produced October<br/>
+        <strong>Q4</strong> – (October, November, December) → produced January
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 ## Report sample
 
+<NavyBlock />
+
+<br />
+
 [QVR_SRE[SRE]_[YYYYMMDD]-[YYYYMMDD].xls](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/QVR_SRE-SRE_YYYYMMDD-YYYYMMDD.xls)
- 
