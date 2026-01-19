@@ -16,6 +16,8 @@ name: NavyBlock
       fontWeight: 400,
     }}
   >
-    You can generate all reports below by sending a HTTP GET Request and downloading the report as a CSV file. These downloadable reports are only available for 60 days.
+Note: file will automatically download upon clicking link
   </p>
 </div>
+
+<br />
