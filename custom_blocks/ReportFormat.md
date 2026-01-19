@@ -14,9 +14,9 @@ name: ReportFormat
   <tbody>
     <tr>
       <td align="center">CSV</td>
-      <td align="center">VAUTransactionsReport\[ClientName]\_\[report generation date YYYY-MM-DD].csv</td>
-      <td align="center">Monthly</td>
-      <td align="center">Sent via email</td>
+      <td align="center">[CampaignName]_authorisationincomereport_[YYYY_MM_DD].csv</td>
+      <td align="center">Daily</td>
+      <td align="center">HTTP get request</td>
     </tr>
   </tbody>
 </table>
