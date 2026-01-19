@@ -5,16 +5,17 @@ name: DeclinedNavyBox
   style={{
     background: "#0F1F3A",
     color: "#FFFFFF",
-    padding: "12px 16px",
+    height: "48px",                 // 👈 fixed height = true centering
     display: "flex",
     alignItems: "center",
     gap: "12px",
+    padding: "0 16px",              // 👈 horizontal only
     fontSize: "14px",
     fontWeight: 500,
     lineHeight: "20px",
   }}
 >
-  {/* Info icon (SVG – pixel perfect) */}
+  {/* Info icon */}
   <div
     style={{
       width: "20px",
@@ -33,20 +34,14 @@ name: DeclinedNavyBox
       height="12"
       viewBox="0 0 12 12"
       xmlns="http://www.w3.org/2000/svg"
-      style={{ display: "block" }}
     >
       <circle cx="6" cy="3" r="1" fill="#FFFFFF" />
       <rect x="5.25" y="5" width="1.5" height="5" rx="0.75" fill="#FFFFFF" />
     </svg>
   </div>
 
-  {/* Text – explicitly flex-aligned */}
-  <div
-    style={{
-      display: "flex",
-      alignItems: "center",
-    }}
-  >
+  {/* Text */}
+  <div style={{ display: "flex", alignItems: "center" }}>
     If the transaction did not reach Paymentology and was declined, this would
     not appear on the report.
   </div>
