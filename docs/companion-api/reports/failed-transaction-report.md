@@ -150,5 +150,9 @@ Version 2 includes the following details:
 
 <Image border={false} src="https://files.readme.io/3ed0015f41b8051dc70faa9609e39a8bdae3a7b08e6b6fb8f4e3c5cecabc3a8c-image.png" />
 
+<NavyBlock />
+
+<br />
+
 [CampaignName_DailyAuthFailure_YYYYMMDD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_DailyAuthFailure_YYYYMMDD.csv)
 [CampaignName_DailyAuthFailure_YYYYMMDD.csv – V2 sample](https://developer.sprint.paymentology.com/wp-content/uploads/2025/05/CampaignName_DailyAuthFailure_YYYYMMDD-V2.csv)
