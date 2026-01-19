@@ -27,10 +27,55 @@ The report includes the following details:
 
 ## Report format
 
+<table>
+  <thead>
+    <tr>
+      <th align="center">FORMAT</th>
+      <th align="center">FILE NAME</th>
+      <th align="center">FREQUENCY</th>
+      <th align="center">ACCESSIBILITY</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">CSV</td>
+      <td align="center">[CampaignName]_cardbalance_[YYYY]_[MM]_[DD].csv</td>
+      <td align="center">Daily</td>
+      <td align="center">HTTP GET request</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Report time frame
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">UTC +2</th>
+      <th align="center">UTC +7</th>
+      <th align="center">REMARKS</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">08:00</td>
+      <td align="center">13:00</td>
+
+      <td align="center">
+        When the report is generated, the timeframe of all captured data in this report is from 00:00:00 to 11:59:59 of the previous day: • System time zone UTC+2 • Asia client time zone UTC+7
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Report sample
 
-**CampaignName_cardbalances_YYYY_MM_DD-.png IMAGE GOES HERE.**
+<Image border={false} src="https://files.readme.io/742b51c0d34de54601aa8469cb10cca4279d96d47c7a762f1148af065a87c1d2-image.png" />
+
+<NavyBlock />
+
+<br />
 
 [CampaignName_cardbalances_YYYY_MM_DD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_cardbalances_YYYY_MM_DD.csv)
