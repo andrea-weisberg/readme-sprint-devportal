@@ -78,8 +78,11 @@ Here is a description of the transactions you can find in the report:
         transactions captured in this report is from
         <strong>2020-09-09 00:00:00</strong> to
         <strong>2020-09-09 11:59:59</strong> in:
+
         <br />
+
         <br />
+
         • System time zone UTC+2<br />
         • Asia client time zone UTC+7<br />
         • Merchant time zone
@@ -91,6 +94,8 @@ Here is a description of the transactions you can find in the report:
 ## Report Sample
 
 <Image border={false} src="https://files.readme.io/c6628862e371c950bd9e9f3ad091d46530c7158ba61dcfd2bc054e0b65fba296-image.png" />
+
+<NavyBlock />
 
 <br />
 
