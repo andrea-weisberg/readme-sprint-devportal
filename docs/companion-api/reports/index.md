@@ -14,34 +14,34 @@ metadata:
 
 <div
   style={{
-    background: "#0F1F3A",
-    color: "#FFFFFF",
-    padding: "0 16px",
-    minHeight: "48px",
-    display: "flex",
-    alignItems: "center",
-    gap: "12px",
-    fontSize: "14px",
+    background: '#0F1F3A',
+    color: '#FFFFFF',
+    padding: '0 16px',
+    minHeight: '48px',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+    fontSize: '14px',
     fontWeight: 500,
-    lineHeight: "20px",
+    lineHeight: '20px',
   }}
 >
   {/* Info icon (SVG, perfectly centered) */}
 
   <span
     style={{
-      width: "20px",
-      height: "20px",
-      borderRadius: "50%",
-      background: "#3B6EDC",
-      display: "inline-flex",
-      alignItems: "center",
-      justifyContent: "center",
+      width: '20px',
+      height: '20px',
+      borderRadius: '50%',
+      background: '#3B6EDC',
+      display: 'inline-flex',
+      alignItems: 'center',
+      justifyContent: 'center',
       flexShrink: 0,
     }}
     aria-hidden="true"
   >
-    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" style={{ display: "block" }}>
+    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" style={{ display: 'block' }}>
       {/* dot */}
 
       <circle cx="6" cy="3" r="1" fill="#FFFFFF" />
@@ -52,8 +52,8 @@ metadata:
     </svg>
   </span>
 
-  <span style={{ display: "inline-flex", alignItems: "center" }}>
-    <span style={{ fontWeight: 800, marginRight: "6px" }}>Note:</span>
+  <span style={{ display: 'inline-flex', alignItems: 'center' }}>
+    <span style={{ fontWeight: 800, marginRight: '6px' }}>Note:</span>
     <span>You can generate all reports below by sending a HTTP GET Request and downloading the report as a CSV file. These downloadable reports are only available for 60 days.</span>
   </span>
 </div>
