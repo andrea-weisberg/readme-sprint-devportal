@@ -230,6 +230,51 @@ After the VCN has been linked to the customer’s store of value, they can insta
 
 You can also create and issue multiple virtual cards and label them differently to allow for easier management and identification.
 
+<br />
+
+<div
+  style={{
+    background: "#0F1F3A",
+    color: "#FFFFFF",
+    padding: "16px 20px",
+    display: "flex",
+    alignItems: "center",
+    gap: "14px",
+    fontSize: "15px",
+    lineHeight: "1.6",
+    fontWeight: 500,
+  }}
+>
+  {/* Info icon */}
+
+  <span
+    style={{
+      width: "20px",
+      height: "20px",
+      borderRadius: "50%",
+      background: "#3B6EDC",
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
+      flexShrink: 0,
+    }}
+    aria-hidden="true"
+  >
+    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" style={{ display: "block" }}>
+      <circle cx="6" cy="3" r="1" fill="#FFFFFF" />
+
+      <rect x="5.25" y="5" width="1.5" height="5" rx="0.75" fill="#FFFFFF" />
+    </svg>
+  </span>
+
+  {/* Text */}
+
+  <span>
+    You’ll need to make a call to the <strong>CreateVirtualCard</strong> method
+    to create a VCN.
+  </span>
+</div>
+
 ## <a name="#physical" />2. Issuing a physical card
 
 You can create and issue a physical card and send a request to Paymentology to link it to a unique customer reference number.
