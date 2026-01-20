@@ -26,8 +26,6 @@ The Apple Pay monthly fee billing report includes the following details:
   * `ECOM`
   * `ECOF`
 
-<br />
-
 <div
   style={{
     background: "#0F1F3A",
