@@ -258,6 +258,8 @@ There are four categories for chargeback processing:
 
 * [Visa Generic Dispute Form](https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Visa-Generic-Dispute-Form.docx)
 
+***
+
 # What is a Fraud Dispute?
 
 When a cardholder says that they do not recognize transactions and have no knowledge of the transactions and were not in the vicinity where the said transactions were performed – and their card was in their possession at the time of the the transaction i.e. they did not attempt the transaction at all.
