@@ -5,33 +5,85 @@ hidden: false
 metadata:
   robots: index
 ---
-<p>This report provides clients with card details such as, current available balance, last load and lifetime expenditure. It is available for each Campaign.</p>
-<p>The report includes the following details:</p>
-<ul>
-<li><strong>Campaign name</strong> – name of client’s card program.</li>
-<li><strong>Voucher Number </strong>– the customer’s card number.</li>
-<li><strong>Sequence Number</strong> – this is a unique sequence card identifier showing a running number for the cards created.</li>
-<li><strong>Tracking Number</strong> – this is a unique 15-digit tracking identifier for the card.</li>
-<li><strong>WalletReference</strong> – this is a unique customer reference for the card.</li>
-<li><strong>Balance</strong> – this is the amount available on the card.</li>
-<li><strong>Last Load Amount</strong> – this is the value of the most recent load/top-up made to the card.</li>
-<li><strong>Last Load Date</strong> – this is the date the most recent load/top up was received on the card.</li>
-<li><strong>Last Load Merchant</strong> – this is the description of the merchant the <strong>Last Load</strong> was made through.</li>
-<li><strong>Load Total</strong> – this is the total value the card has been loaded since it was first issued.</li>
-<li><strong>Authorisation Total </strong>– this is the total value of all successful transactions the card has made since it was first issued.</li>
-<li><strong>Cancelled </strong>– this advises whether the card is currently in a cancelled state at the time of the report.</li>
-<li><strong>Stopped</strong> – this advises whether the card is currently in a stopped state at the time of the report.</li>
-<li><strong>Retired </strong>– this advises whether the card is in a retired state at the time of the report.</li>
-<li><strong>Voucher Expiry Date</strong> – specifies the date in which the card expires.</li>
-</ul>
-<p> </p>
+A report which includes all Loads, Redemptions, Authorization, Fees that takes place on a voucher/card.
 
-<h2>Report format</h2>
+The report includes the following details:
 
-<h2>Report time frame</h2>
+* **VoucherEngineRef** – this is the vouchers table reference (integer).
+* **VoucherNumber** – this is the actual card number (10 character string).
+* **ControlVoucherNumber** – this is the main card number for a pocket campaign, where one plastic card is linked to multiple cards i.e. the pockets. Note: **ControlVoucherNumber** is only included in PocketCampaigns (16 character string).
+* **TrackingNumber** – this is the public card number that we share with clients (15 character string).
+* **MerchantName** – this is the name of the merchant (string).
+* **Date** – this is the date of the transaction (YYYY/MM/DD HH:MM:SS).
+* **Type** – this is the transaction type, which include (string):
+  * **Issued** – a card allocated to a cardholder and loaded.
+  * **Redeemed** – spend.
+  * **Cancelled** – removing a load from a cardholders account.
+  * **Authorised** – an authorisation, the first level of a transaction.
+* **Method** – this is how the transaction was initiated or processed, which include (string):
+  * Web
+  * SMS
+  * Batch
+  * Terminal
+  * Application
+  * IVR
+  * n/a
+* **Value** – this is the amount of the transaction (decimal).
+* **Description** – this describes the transaction (string).
+* **SequenceNumber** – A sequence number is essentially another card identifier which tells you the actual sequence number of the card/voucher (string).
 
-<h2>Report sample</h2>
-<p>**CampaignName_cardbalances_YYYY_MM_DD-.png IMAGE GOES HERE.**</p>
+## Report format
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_cardbalances_YYYY_MM_DD.csv">CampaignName_cardbalances_YYYY_MM_DD.csv</a></p>
+<br />
 
+<table>
+  <thead>
+    <tr>
+      <th align="center">FORMAT</th>
+      <th align="center">FILE NAME</th>
+      <th align="center">FREQUENCY</th>
+      <th align="center">ACCESSIBILITY</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">CSV</td>
+
+      <td align="center">
+        \[CampaignName]\_DailySalesRedemptionStatement \[YYYY-MM-DD].csv
+      </td>
+
+      <td align="center">Daily</td>
+      <td align="center">Via download link</td>
+    </tr>
+  </tbody>
+</table>
+
+## Report time frame
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">UTC +2</th>
+      <th align="center">UTC +7</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">08:00</td>
+      <td align="center">13:00</td>
+    </tr>
+  </tbody>
+</table>
+
+## Report sample
+
+<NavyBlock />
+
+<br />
+
+CampaignName_DailySalesRedmeptionStatement YYYY-MM-DD.csv
+
+<br />
