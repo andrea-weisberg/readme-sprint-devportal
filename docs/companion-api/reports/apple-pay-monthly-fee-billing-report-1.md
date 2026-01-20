@@ -1,8 +1,5 @@
 ---
 title: Apple Pay Monthly Fee Billing Report
-excerpt: >-
-  Learn about the Apple Pay monthly fee billing report, including details on
-  total debit spend, POS and e-commerce spend shares, and report formats.
 deprecated: false
 hidden: false
 link:
