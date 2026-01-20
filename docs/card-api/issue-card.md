@@ -5,10 +5,122 @@ hidden: false
 metadata:
   robots: index
 ---
+# How to issue cards
 
 ## With the Card API you can offer your customers two types of cards:
 
-**Card-API-issuing-process-flow-v2.png IMAGE GOES HERE.**
+<br />
+
+<h2>With the Card API you can offer your customers two types of cards:</h2>
+
+<div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+    gap: "32px",
+    marginTop: "32px",
+  }}
+>
+  {/* Virtual card */}
+
+  <div
+    style={{
+      background: "#E9F6F1",
+      padding: "40px",
+      minHeight: "260px",
+      position: "relative",
+    }}
+  >
+    {/* Icon */}
+
+    <div
+      style={{
+        width: "88px",
+        height: "88px",
+        background: "#97E0CD",
+        borderRadius: "18px 18px 18px 44px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        marginBottom: "48px",
+      }}
+      aria-hidden="true"
+    >
+      {/* Phone icon */}
+
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#0B1320" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="6" y="2" width="12" height="20" rx="2" />
+
+        <line x1="12" y1="18" x2="12" y2="18" />
+
+        <rect x="8" y="7" width="8" height="6" />
+      </svg>
+    </div>
+
+    <h3 style={{ margin: "0 0 8px 0" }}>Virtual card</h3>
+
+    <p style={{ margin: 0, fontSize: "16px", lineHeight: "1.5" }}>
+      A digital card without any physical components
+    </p>
+  </div>
+
+  {/* Physical card */}
+
+  <div
+    style={{
+      background: "#E9F6F1",
+      padding: "40px",
+      minHeight: "260px",
+      position: "relative",
+    }}
+  >
+    {/* Icon */}
+
+    <div
+      style={{
+        width: "88px",
+        height: "88px",
+        background: "#97E0CD",
+        borderRadius: "18px 18px 18px 44px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        marginBottom: "48px",
+      }}
+      aria-hidden="true"
+    >
+      {/* Card icon */}
+
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#0B1320" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="5" width="20" height="14" rx="2" />
+
+        <line x1="2" y1="10" x2="22" y2="10" />
+
+        <circle cx="18" cy="15" r="1.5" />
+      </svg>
+    </div>
+
+    <h3 style={{ margin: "0 0 8px 0" }}>Physical card</h3>
+
+    <p style={{ margin: 0, fontSize: "16px", lineHeight: "1.5" }}>
+      The traditional plastic payment card
+    </p>
+  </div>
+</div>
+
+<style>
+  {`
+    @media (max-width: 900px) {
+      div[style*="grid-template-columns: repeat(2"] {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  `}
+</style>
+
+<Image border={false} src="https://files.readme.io/3b362893802c4f7f54194e744a4d8ce483d44262612f9059104a8ea6d2bec7eb-image.png" />
+
+<br />
 
 ## 1. Issuing a virtual card
 
