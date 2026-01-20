@@ -76,8 +76,6 @@ The report includes the following details:
   </span>
 </div>
 
-<br />
-
 <div
   style={{
     background: "#0F1F3A",
