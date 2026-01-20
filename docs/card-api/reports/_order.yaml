@@ -1,4 +1,5 @@
 - daily-statement-report
+- vau-transaction-report
 - apple-pay-monthly-declines-report
 - apple-pay-monthly-fee-billing-report
 - apple-pay-monthly-metric-report
@@ -23,4 +24,3 @@
 - qmr-data-report
 - qvr-data-report
 - summary-settlement-report-2
-- vau-transaction-report
