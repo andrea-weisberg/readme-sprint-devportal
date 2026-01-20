@@ -2,6 +2,7 @@
 - vau-transaction-report
 - qvr-data-report
 - blocked-transactions-report
+- mark-off-file
 - apple-pay-monthly-declines-report
 - apple-pay-monthly-fee-billing-report
 - apple-pay-monthly-metric-report
@@ -21,6 +22,5 @@
 - inactive-cards-report
 - index
 - linked-cards-report
-- mark-off-file
 - qmr-data-report
 - summary-settlement-report-2
