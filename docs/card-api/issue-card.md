@@ -9,8 +9,6 @@ metadata:
 
 ## With the Card API you can offer your customers two types of cards:
 
-<br />
-
 <div
   style={{
     display: "grid",
@@ -100,12 +98,12 @@ metadata:
 
 <style>
   {`
-      @media (max-width: 900px) {
-        div[style*="grid-template-columns: repeat(2"] {
-          grid-template-columns: 1fr !important;
+        @media (max-width: 900px) {
+          div[style*="grid-template-columns: repeat(2"] {
+            grid-template-columns: 1fr !important;
+          }
         }
-      }
-    `}
+      `}
 </style>
 
 <Image border={false} src="https://files.readme.io/3b362893802c4f7f54194e744a4d8ce483d44262612f9059104a8ea6d2bec7eb-image.png" />
@@ -119,6 +117,116 @@ You can use the Card API to create a Virtual Card Number (VCN), which you can li
 The VCN will then act as your customer’s identifier, which is useful if you want to manage or fund the card at a later stage. This means that you may not need to store the PAN number (Permanent Account Number) at all.
 
 Once the API receives the request, it will create a 16-digit PAN number, CVV (Card Verification value), and an expiry date — which are the constituents of the virtual card. You can then forward this information to your customer.
+
+<br />
+
+{/* PAN info */}
+
+<div
+  style={{
+    background: "#0F1F3A",
+    color: "#FFFFFF",
+    padding: "20px 24px",
+    display: "flex",
+    alignItems: "center",
+    gap: "16px",
+    marginBottom: "24px",
+  }}
+>
+  {/* Icon */}
+
+  <div
+    style={{
+      width: "56px",
+      height: "56px",
+      borderRadius: "8px",
+      background: "#3558B8",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      flexShrink: 0,
+    }}
+    aria-hidden="true"
+  >
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="5" y="3" width="14" height="18" rx="2" />
+
+      <line x1="8" y1="7" x2="16" y2="7" />
+
+      <line x1="8" y1="11" x2="16" y2="11" />
+
+      <line x1="8" y1="15" x2="14" y2="15" />
+    </svg>
+  </div>
+
+  {/* Text */}
+
+  <p
+    style={{
+      margin: 0,
+      fontSize: "15px",
+      lineHeight: "1.6",
+      fontWeight: 500,
+    }}
+  >
+    <strong>PAN number</strong> is a unique alphanumeric number (containing both
+    alphabetical and numerical characters) used for identification purposes.
+  </p>
+</div>
+
+{/* CVV info */}
+
+<div
+  style={{
+    background: "#0F1F3A",
+    color: "#FFFFFF",
+    padding: "20px 24px",
+    display: "flex",
+    alignItems: "center",
+    gap: "16px",
+  }}
+>
+  {/* Icon */}
+
+  <div
+    style={{
+      width: "56px",
+      height: "56px",
+      borderRadius: "8px",
+      background: "#3558B8",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      flexShrink: 0,
+    }}
+    aria-hidden="true"
+  >
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="5" y="3" width="14" height="18" rx="2" />
+
+      <line x1="8" y1="7" x2="16" y2="7" />
+
+      <line x1="8" y1="11" x2="16" y2="11" />
+
+      <line x1="8" y1="15" x2="14" y2="15" />
+    </svg>
+  </div>
+
+  {/* Text */}
+
+  <p
+    style={{
+      margin: 0,
+      fontSize: "15px",
+      lineHeight: "1.6",
+      fontWeight: 500,
+    }}
+  >
+    <strong>CVV</strong> is a static number similar to the separately grouped
+    numbers, usually three digits, found at the back of most physical debit and
+    credit cards.
+  </p>
+</div>
 
 After the VCN has been linked to the customer’s store of value, they can instantly start transacting on any e-commerce site or application that accepts the chosen card association.
 
