@@ -1,7 +1,12 @@
 ---
-title: Apple Pay quarterly fee billing report
+title: Apple Pay Quarterly Fee Billing Report
+excerpt: >-
+  Learn about the Apple Pay quarterly fee billing report, including details on
+  total debit spend, POS and e-commerce spend shares, and report formats.
 deprecated: false
 hidden: false
+link:
+  new_tab: false
 metadata:
   robots: index
 ---
