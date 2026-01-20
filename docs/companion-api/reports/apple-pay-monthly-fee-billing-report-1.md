@@ -1,5 +1,5 @@
 ---
-title: Apple Pay Monthly Fee Billing Report
+title: Apple Pay monthly Fee Billing Report
 deprecated: false
 hidden: false
 link:
