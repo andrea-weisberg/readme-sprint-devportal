@@ -5,7 +5,6 @@ hidden: false
 metadata:
   robots: index
 ---
-
 # What is a Dispute?
 
 A dispute is a transaction that a cardholder/customer does not agree with and therefore requests that part of, or the entire transaction be reversed or refunded.
@@ -17,6 +16,8 @@ A dispute is a transaction that a cardholder/customer does not agree with and th
 2. **Refund** – A refund is when funds are credited back to the customer’s card from a previously debited transaction. A refund is processed when the merchant refunds the customer for returned goods and the funds which were settled to the merchant’s account need to move back to the cardholder’s account.
 
 3. **Chargeback –** A chargeback is the return of funds for a deduct transaction that was previously processed from a cardholder’s card balance, due to a successful dispute by the consumer regarding the transaction.
+
+***
 
 # How Disputes Work
 
@@ -33,6 +34,8 @@ A second presentment (sometimes called a re-presentment) is the merchant’s opp
 ## What is Pre-Arbitration and Arbitration?
 
 Following a receipt of a second presentment (also knows as re-presentment), the cardholder can choose to further dispute the second presentment by submitting a Pre-Arbitration. If the Pre-Arbitration is not successful, the cardholder can further proceed with submitting an Arbitration (the final option in the Dispute cycle) which in most cases will mean that the card scheme will rule in the case, either in favour of the Issuer or Acquirer depending on the merit of the case. There are specific timeframes for these processes which differ between the card schemes.
+
+***
 
 # Dispute Lifecycle
 
@@ -62,7 +65,9 @@ Paymentology manages dispute handling and chargeback processing on behalf of our
 
 # Chargeback Process Flow
 
-**Chargeback-process-flow-v2.png IMAGE GOES HERE.**
+<Image border={false} src="https://files.readme.io/f65228ea164d4243d6699ba16f60a6aa97148370465bdf7c643fb50442611889-image.png" />
+
+***
 
 # Mastercard: Dispute/Chargeback categories and timeframes
 
@@ -70,8 +75,88 @@ When the transaction was completed with electronically recorded card informatio
 
 There are four categories for chargeback processing:
 
+<br />
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">REASON CODE</th>
+      <th align="center">REASON CODE DESCRIPTION</th>
+      <th align="center">TIMEFRAME</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">4808</td>
+      <td align="center">Authorization-related Chargeback</td>
+      <td align="center">90 calendar days</td>
+    </tr>
+
+    <tr>
+      <td align="center">4853</td>
+      <td align="center">Cardholder dispute</td>
+      <td align="center">120 calendar days</td>
+    </tr>
+
+    <tr>
+      <td align="center">4837 / 4849 / 4870 / 4871</td>
+
+      <td align="center">
+        <strong>Fraud</strong><br /><br />
+        • No cardholder authorization<br />
+        • Questionable merchant activity<br />
+        • Chip liability shift<br />
+        • Chip liability shift – Lost/Stolen / Never Received Issue (NRI) fraud
+      </td>
+
+      <td align="center">120 calendar days</td>
+    </tr>
+
+    <tr>
+      <td align="center">4834</td>
+      <td align="center">Point-of-interaction error</td>
+
+      <td align="center">
+        90 calendar days<br />
+        (ATM-related disputes: 120 calendar days)
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
 * [Dispute Resolution Form – Fraud](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/Dispute-Resolution-Form-Fraud.docx)
 * [Dispute Resolution Form](https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Dispute-Resolution-Form.docx)
+
+<div
+  style={{
+    background: "#0F1F3A",
+    color: "#FFFFFF",
+    padding: "24px 28px",
+    fontSize: "15px",
+    lineHeight: "1.6",
+  }}
+>
+  <p style={{ margin: "0 0 20px 0" }}>
+    Mastercard chargeback collaboration period is between <strong>24–72 hours</strong>.
+    Chargebacks can take up to <strong>72 hours</strong> to reflect as processed by
+    Mastercard. This means that the chargeback is paused for that period and the
+    <strong> 45 days waiting for second presentment</strong> only starts from the
+    date the chargeback is actually processed. If no second presentment is
+    received within 45 days, we automatically load the funds thereafter.
+  </p>
+
+  <p style={{ margin: 0, fontWeight: 600 }}>
+    Please be informed that all Mastercard chargebacks will have to wait for
+    <strong> 48 days</strong> to see if a chargeback is successful (no second
+    presentment) and then the funds will be loaded. Our Dispute Team will notify
+    the due date on each chargeback case accordingly.
+  </p>
+</div>
+
+***
 
 # Visa: Dispute/Chargeback categories and timeframes
 
