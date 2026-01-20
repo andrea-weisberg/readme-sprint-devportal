@@ -44,10 +44,64 @@ The report includes the following details:
 
 ## Report format
 
+<table>
+  <thead>
+    <tr>
+      <th align="center">FORMAT</th>
+      <th align="center">FILE NAME</th>
+      <th align="center">FREQUENCY</th>
+      <th align="center">ACCESSIBILITY</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">CSV</td>
+      <td align="center">EcommerceTransactions\_\[CampaignName]\_\[YYYYMMDD].csv</td>
+      <td align="center">Daily</td>
+      <td align="center">HTTP GET request</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Report time frame
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">UTC +2</th>
+      <th align="center">UTC +7</th>
+      <th align="center">REMARKS</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">09:00</td>
+      <td align="center">14:00</td>
+
+      <td align="center">
+        When the report is generated, the timeframe of all captured data in this
+        report is from <strong>00:00:00</strong> to <strong>11:59:59</strong> of
+        the previous day in:
+
+        <br />
+
+        <br />
+
+        • System time zone UTC+2<br />
+        • Asia client time zone UTC+7
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Report sample
 
-**EcommerceTransactions_CampaignName_YYYYMMDD-.png IMAGE GOES HERE.**
+<Image border={false} src="https://files.readme.io/0cc5ea1a226c0bb50341fcdb5f3f58f48a186885fc8cdf5221005bab83d119d8-image.png" />
+
+<NavyBlock />
+
+<br />
 
 [EcommerceTransactions_CampaignName_YYYYMMDD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/EcommerceTransactions_CampaignName_YYYYMMDD.csv)
