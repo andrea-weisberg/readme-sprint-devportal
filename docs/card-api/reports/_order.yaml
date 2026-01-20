@@ -5,6 +5,7 @@
 - mark-off-file
 - daily-sales-and-redemption-report
 - linked-cards-report
+- card-balance-report
 - apple-pay-monthly-declines-report
 - apple-pay-monthly-fee-billing-report
 - apple-pay-monthly-metric-report
@@ -12,7 +13,6 @@
 - apple-pay-monthly-usage-frequency-report
 - apple-pay-quarterly-fee-billing-report
 - authorisation-income-report
-- card-balance-report
 - card-order-report-2
 - daily-negative-balance-report
 - detailed-settlement-report
