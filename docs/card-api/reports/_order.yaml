@@ -1,3 +1,4 @@
+- daily-statement-report
 - apple-pay-monthly-declines-report
 - apple-pay-monthly-fee-billing-report
 - apple-pay-monthly-metric-report
@@ -10,7 +11,6 @@
 - card-order-report-2
 - daily-negative-balance-report
 - daily-sales-and-redemption-report
-- daily-statement-report
 - detailed-settlement-report
 - ecommerce-report
 - failed-transaction-report-2
