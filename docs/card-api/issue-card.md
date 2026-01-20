@@ -98,12 +98,12 @@ metadata:
 
 <style>
   {`
-        @media (max-width: 900px) {
-          div[style*="grid-template-columns: repeat(2"] {
-            grid-template-columns: 1fr !important;
+          @media (max-width: 900px) {
+            div[style*="grid-template-columns: repeat(2"] {
+              grid-template-columns: 1fr !important;
+            }
           }
-        }
-      `}
+        `}
 </style>
 
 <Image border={false} src="https://files.readme.io/3b362893802c4f7f54194e744a4d8ce483d44262612f9059104a8ea6d2bec7eb-image.png" />
@@ -117,8 +117,6 @@ You can use the Card API to create a Virtual Card Number (VCN), which you can li
 The VCN will then act as your customer’s identifier, which is useful if you want to manage or fund the card at a later stage. This means that you may not need to store the PAN number (Permanent Account Number) at all.
 
 Once the API receives the request, it will create a 16-digit PAN number, CVV (Card Verification value), and an expiry date — which are the constituents of the virtual card. You can then forward this information to your customer.
-
-<br />
 
 {/* PAN info */}
 
