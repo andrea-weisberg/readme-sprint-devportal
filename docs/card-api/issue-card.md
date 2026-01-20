@@ -98,12 +98,12 @@ metadata:
 
 <style>
   {`
-            @media (max-width: 900px) {
-              div[style*="grid-template-columns: repeat(2"] {
-                grid-template-columns: 1fr !important;
+              @media (max-width: 900px) {
+                div[style*="grid-template-columns: repeat(2"] {
+                  grid-template-columns: 1fr !important;
+                }
               }
-            }
-          `}
+            `}
 </style>
 
 <Image border={false} src="https://files.readme.io/3b362893802c4f7f54194e744a4d8ce483d44262612f9059104a8ea6d2bec7eb-image.png" />
@@ -277,8 +277,7 @@ You can also create and issue multiple virtual cards and label them differently 
   </span>
 </div>
 
-
-## <a name="#physical" />2. Issuing a physical card
+## 2. Issuing a physical card
 
 You can create and issue a physical card and send a request to Paymentology to link it to a unique customer reference number.
 
@@ -288,8 +287,149 @@ Once the card is linked, it is now ready to be funded and used as per the predef
 
 There are two options for issuing physical cards: Issue on-site and link immediately or issue with courier and link later
 
+**Option 1: Issue on-site and link immediately**
+
+You can use this option if you want the physical cards to be linked immediately, when they are bulk produced and stored on your end.
+
+​You could have a batch of cards at the stores, branches, or agent facilities. Then, if someone requests a card, you can decide whether to apply a fee for this purchase.
+
+<div
+  style={{
+    background: "#0F1F3A",
+    color: "#FFFFFF",
+    padding: "0 16px",
+    minHeight: "48px",
+    display: "flex",
+    alignItems: "center",
+    gap: "12px",
+    fontSize: "14px",
+    fontWeight: 500,
+    lineHeight: "20px",
+  }}
+>
+  {/* Info icon (SVG, perfectly centered) */}
+
+  <span
+    style={{
+      width: "20px",
+      height: "20px",
+      borderRadius: "50%",
+      background: "#3B6EDC",
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
+      flexShrink: 0,
+    }}
+    aria-hidden="true"
+  >
+    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" style={{ display: "block" }}>
+      {/* dot */}
+
+      <circle cx="6" cy="3" r="1" fill="#FFFFFF" />
+
+      {/* stem */}
+
+      <rect x="5.25" y="5" width="1.5" height="5" rx="0.75" fill="#FFFFFF" />
+    </svg>
+  </span>
+
+  <span style={{ display: "inline-flex", alignItems: "center" }}>
+    <span style={{ fontWeight: 800, marginRight: "6px" }} />
+
+    <span>After issuing the card, you’ll need to send a request to Paymentology, using the ​LinkCard method​​, for the physical card to be linked to a unique customer reference number.</span>
+  </span>
+</div>
+
+**Option 2: Issue with courier and link later**
+
+You can use this option if you want to order physical cards through your interface.
+
+For example, if you want to use a courier delivery process or personalize a cardholder’s name on the card, then this option could be for you.
+
+Note: Since the card manufacturer may take a few days before completing the order, using this option does not allow the physical cards to be issued instantly.
+
+<br />
+
+<div
+  style={{
+    background: "#0F1F3A",
+    color: "#FFFFFF",
+    padding: "0 16px",
+    minHeight: "48px",
+    display: "flex",
+    alignItems: "center",
+    gap: "12px",
+    fontSize: "14px",
+    fontWeight: 500,
+    lineHeight: "20px",
+  }}
+>
+  {/* Info icon (SVG, perfectly centered) */}
+
+  <span
+    style={{
+      width: "20px",
+      height: "20px",
+      borderRadius: "50%",
+      background: "#3B6EDC",
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
+      flexShrink: 0,
+    }}
+    aria-hidden="true"
+  >
+    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" style={{ display: "block" }}>
+      {/* dot */}
+
+      <circle cx="6" cy="3" r="1" fill="#FFFFFF" />
+
+      {/* stem */}
+
+      <rect x="5.25" y="5" width="1.5" height="5" rx="0.75" fill="#FFFFFF" />
+    </svg>
+  </span>
+
+  <span style={{ display: "inline-flex", alignItems: "center" }}>
+    <span style={{ fontWeight: 800, marginRight: "6px" }} />
+
+    <span>For Option 2, you’ll need to make a call to the OrderCard method, which allows you to use your interface to enter the cardholder’s details, address, and their unique reference number.</span>
+  </span>
+</div>
+
 Making this call will lead to the following:
 
 * A PAN number file will be created and sent to the card manufacturer automatically.
 * The card manufacturer will create the physical card and deliver it to the cardholder.
 * The cardholder will need to activate and link the card using the ActivateCard and LinkCard API method.
+
+<div
+  style={{
+    background: "#0F1F3A",
+    color: "#FFFFFF",
+    padding: "24px 28px",
+    fontSize: "15px",
+    lineHeight: "1.6",
+  }}
+>
+  <p style={{ margin: "0 0 16px 0", fontWeight: 700 }}>
+    Note:
+  </p>
+
+  <p style={{ margin: "0 0 16px 0" }}>
+    <strong>For virtual cards:</strong> Multiple cards can be linked to one
+    reference.
+  </p>
+
+  <p style={{ margin: "0 0 16px 0" }}>
+    <strong>For physical cards:</strong> Only one reference can be linked to a
+    card.
+  </p>
+
+  <p style={{ margin: 0, fontWeight: 600 }}>
+    A cardholder can have a virtual and a physical card linked to the same
+    reference.
+  </p>
+</div>
+
+<br />
