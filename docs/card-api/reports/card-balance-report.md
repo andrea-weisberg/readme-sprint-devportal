@@ -34,8 +34,6 @@ The report includes the following details:
 
 ## Report format
 
-<br />
-
 <table>
   <thead>
     <tr>
@@ -45,17 +43,14 @@ The report includes the following details:
       <th align="center">ACCESSIBILITY</th>
     </tr>
   </thead>
-
   <tbody>
     <tr>
       <td align="center">CSV</td>
-
       <td align="center">
-        \[CampaignName]\_DailySalesRedemptionStatement \[YYYY-MM-DD].csv
+        [CampaignName]_cardbalance_[YYYY]_[MM]_[DD].csv
       </td>
-
       <td align="center">Daily</td>
-      <td align="center">Via download link</td>
+      <td align="center">HTTP GET request</td>
     </tr>
   </tbody>
 </table>
@@ -79,6 +74,10 @@ The report includes the following details:
 </table>
 
 ## Report sample
+
+<Image border={false} src="https://files.readme.io/85749b116fabeda29ec501d1b9b3c4bfc975b2da17ff592ec2f9a235e92fb654-image.png" />
+
+<br />
 
 <NavyBlock />
 
