@@ -24,15 +24,65 @@ The Apple Pay monthly declines report includes the following details:
   * `>1000`
 * **Apple Pay Total POS Transactions** – this is the total number of transactions made using Apple Pay at Point of Sale for the reported month i.e. Apple Pay transactions that were not considered eCommerce.
 * **Apple Pay Declined POS Transactions** – this is the total number of declined transactions for the reported month that were attempted using Apple Pay at Point of Sale.
-* **Issuer POS Decline Rate (%)** – this is the percentage decline rate for the given month for Apple Pay POS transactions. The calculation is *Apple Pay Declined POS Transactions* / *Apple Pay Total POS Transactions* = ***Issuer POS Decline Rate.***
+* **Issuer POS Decline Rate (%)** – this is the percentage decline rate for the given month for Apple Pay POS transactions. The calculation is _Apple Pay Declined POS Transactions_ / _Apple Pay Total POS Transactions_ = _**Issuer POS Decline Rate.**_
 * **Apple Pay Total Remote Transactions** – this is the total number of remote transactions made using Apple Pay for the reported month i.e. Apple Pay transactions that were considered eCommerce.
 * **Apple Pay Declined Remote Transactions** – this is the total number of declined remote transactions for the reported month that were attempted using Apple Pay.
-* **Issuer Remote Decline Rate (%)** – this is the percentage decline rate for the given month for Apple Pay remote transactions. The calculation is *Apple Pay Declined Remote Transactions* / *Apple Pay Total Remote Transactions* = ***Issuer Remote Decline Rate.***
+* **Issuer Remote Decline Rate (%)** – this is the percentage decline rate for the given month for Apple Pay remote transactions. The calculation is _Apple Pay Declined Remote Transactions_ / _Apple Pay Total Remote Transactions_ = _**Issuer Remote Decline Rate.**_
 
 ## Report format
 
+<table>
+  <thead>
+    <tr>
+      <th align="center">FORMAT</th>
+      <th align="center">FILE NAME</th>
+      <th align="center">FREQUENCY</th>
+      <th align="center">ACCESSIBILITY</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">XLS</td>
+
+      <td align="center">
+        \[CampaignName]\_ApplePay Declines Report<br />
+        \[Month YYYY].xls
+      </td>
+
+      <td align="center">Monthly</td>
+      <td align="center">Via email</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Report time frame
 
+<table>
+  <thead>
+    <tr>
+      <th align="center">UTC +2</th>
+      <th align="center">UTC +7</th>
+      <th align="center">REMARKS</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">02:00</td>
+      <td align="center">07:00</td>
+
+      <td align="center">
+        Monthly Apple Pay reports are produced on day 2 of the following month.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ## Report sample
+
+<NavyBlock />
+
+<br />
 
 [CampaignName_ApplePay Declines Report MONTH YYYY.xls](https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/CampaignName_ApplePay-Declines-Report-MONTH-YYYY.xls)
