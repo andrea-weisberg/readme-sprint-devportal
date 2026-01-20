@@ -508,3 +508,87 @@ Key-Length-value (KLV) is a data encoding standard where the **Key** identifies 
     <tr><td>Generic Key</td><td align="center">999</td><td>Reserved for other uses</td><td /><td align="center" /></tr>
   </tbody>
 </table>
+
+***
+
+## Stop Reason ID Codes
+
+<br />
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">Reason ID</th>
+      <th align="center">Internal Code</th>
+      <th align="center">Network response (Mastercard)</th>
+      <th align="center">Network response (Visa)</th>
+      <th align="center">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td align="center">2008</td>
+      <td align="center">41</td>
+      <td align="center">41</td>
+      <td align="center">Lost Card</td>
+    </tr>
+
+    <tr>
+      <td align="center">2</td>
+      <td align="center">2009</td>
+      <td align="center">43</td>
+      <td align="center">43</td>
+      <td align="center">Stolen Card</td>
+    </tr>
+
+    <tr>
+      <td align="center">3</td>
+      <td align="center">1004</td>
+      <td align="center">62</td>
+      <td align="center">62</td>
+      <td align="center">Do not honor</td>
+    </tr>
+
+    <tr>
+      <td align="center">4</td>
+      <td align="center">1016</td>
+      <td align="center">51</td>
+      <td align="center">51</td>
+      <td align="center">Insufficient funds</td>
+    </tr>
+
+    <tr>
+      <td align="center">5</td>
+      <td align="center">1018</td>
+      <td align="center">14</td>
+      <td align="center">14</td>
+      <td align="center">Invalid card number</td>
+    </tr>
+
+    <tr>
+      <td align="center">6</td>
+      <td align="center">1006</td>
+      <td align="center">75</td>
+      <td align="center">75</td>
+      <td align="center">PIN tries exceeded</td>
+    </tr>
+
+    <tr>
+      <td align="center">7</td>
+      <td align="center">1002</td>
+      <td align="center">05</td>
+      <td align="center">59</td>
+      <td align="center">Do not honor</td>
+    </tr>
+
+    <tr>
+      <td align="center">Other</td>
+      <td align="center">1000</td>
+      <td align="center">05</td>
+      <td align="center">05</td>
+      <td align="center">Do not honor</td>
+    </tr>
+  </tbody>
+</table>
