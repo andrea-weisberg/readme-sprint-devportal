@@ -98,12 +98,12 @@ metadata:
 
 <style>
   {`
-              @media (max-width: 900px) {
-                div[style*="grid-template-columns: repeat(2"] {
-                  grid-template-columns: 1fr !important;
+                @media (max-width: 900px) {
+                  div[style*="grid-template-columns: repeat(2"] {
+                    grid-template-columns: 1fr !important;
+                  }
                 }
-              }
-            `}
+              `}
 </style>
 
 <Image border={false} src="https://files.readme.io/3b362893802c4f7f54194e744a4d8ce483d44262612f9059104a8ea6d2bec7eb-image.png" />
@@ -340,6 +340,8 @@ You can use this option if you want the physical cards to be linked immediately,
   </span>
 </div>
 
+<br />
+
 **Option 2: Issue with courier and link later**
 
 You can use this option if you want to order physical cards through your interface.
@@ -347,8 +349,6 @@ You can use this option if you want to order physical cards through your interfa
 For example, if you want to use a courier delivery process or personalize a cardholder’s name on the card, then this option could be for you.
 
 Note: Since the card manufacturer may take a few days before completing the order, using this option does not allow the physical cards to be issued instantly.
-
-<br />
 
 <div
   style={{
