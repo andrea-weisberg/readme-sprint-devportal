@@ -22,107 +22,52 @@ The report includes the following details:
   * `ECOF – eCommerce Card on File`
 * **Active Debit DPANS** – this is the total number of cards that made at least one successful spend.
 
-{/* Info box 1 */}
+<br />
 
 <div
   style={{
     background: "#0F1F3A",
     color: "#FFFFFF",
-    height: "56px",
+    padding: "0 16px",
+    minHeight: "48px",
     display: "flex",
     alignItems: "center",
-    padding: "0 16px",
-    marginBottom: "16px",
+    gap: "12px",
+    fontSize: "14px",
+    fontWeight: 500,
+    lineHeight: "20px",
   }}
 >
-  <div
+  {/* Info icon (SVG, perfectly centered) */}
+
+  <span
     style={{
+      width: "20px",
+      height: "20px",
+      borderRadius: "50%",
+      background: "#3B6EDC",
       display: "inline-flex",
       alignItems: "center",
-      gap: "12px",
-      fontSize: "14px",
-      fontWeight: 500,
-      lineHeight: "20px",
+      justifyContent: "center",
+      flexShrink: 0,
     }}
+    aria-hidden="true"
   >
-    {/* Info icon */}
+    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" style={{ display: "block" }}>
+      {/* dot */}
 
-    <span
-      style={{
-        width: "20px",
-        height: "20px",
-        borderRadius: "50%",
-        background: "#3B6EDC",
-        display: "inline-flex",
-        alignItems: "center",
-        justifyContent: "center",
-        flexShrink: 0,
-      }}
-      aria-hidden="true"
-    >
-      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" style={{ display: "block" }}>
-        <circle cx="6" cy="3" r="1" fill="#FFFFFF" />
+      <circle cx="6" cy="3" r="1" fill="#FFFFFF" />
 
-        <rect x="5.25" y="5" width="1.5" height="5" rx="0.75" fill="#FFFFFF" />
-      </svg>
-    </span>
+      {/* stem */}
 
-    <span>
-      <strong>DPAN (Device Primary Account Number)</strong> – A token that acts
-      as a surrogate for the customer’s card number and is used to make
-      contactless and e-commerce transactions using an Apple device.
-    </span>
-  </div>
-</div>
+      <rect x="5.25" y="5" width="1.5" height="5" rx="0.75" fill="#FFFFFF" />
+    </svg>
+  </span>
 
-{/* Info box 2 */}
-
-<div
-  style={{
-    background: "#0F1F3A",
-    color: "#FFFFFF",
-    height: "48px",
-    display: "flex",
-    alignItems: "center",
-    padding: "0 16px",
-  }}
->
-  <div
-    style={{
-      display: "inline-flex",
-      alignItems: "center",
-      gap: "12px",
-      fontSize: "14px",
-      fontWeight: 500,
-      lineHeight: "20px",
-    }}
-  >
-    {/* Info icon */}
-
-    <span
-      style={{
-        width: "20px",
-        height: "20px",
-        borderRadius: "50%",
-        background: "#3B6EDC",
-        display: "inline-flex",
-        alignItems: "center",
-        justifyContent: "center",
-        flexShrink: 0,
-      }}
-      aria-hidden="true"
-    >
-      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" style={{ display: "block" }}>
-        <circle cx="6" cy="3" r="1" fill="#FFFFFF" />
-
-        <rect x="5.25" y="5" width="1.5" height="5" rx="0.75" fill="#FFFFFF" />
-      </svg>
-    </span>
-
-    <span>
-      All amounts reported are in the cardholder billing currency.
-    </span>
-  </div>
+  <span style={{ display: "inline-flex", alignItems: "center" }}>
+    <span style={{ fontWeight: 800, marginRight: "6px" }}>Note:</span>
+    <span>sample file will automatically download upon clicking link</span>
+  </span>
 </div>
 
 ## Report format
@@ -185,6 +130,6 @@ The report includes the following details:
 
 <NavyBlock />
 
-<br />
-
 [CampaignName_ApplePay Quarterly Fee Billing Report Month YYYY.xls](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Quarterly-Fee-Billing-Report-Month-YYYY.xls)
+
+<br />
