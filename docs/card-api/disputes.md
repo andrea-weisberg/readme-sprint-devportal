@@ -164,6 +164,98 @@ Most disputes have 120 days time frame but for some such as, Authorization relat
 
 There are four categories for chargeback processing:
 
+<br />
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">FRAUD</th>
+      <th align="center">AUTHORIZATION</th>
+      <th align="center">PROCESSING ERRORS</th>
+      <th align="center">CONSUMER DISPUTES</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">EMV Liability Shift Non-Counterfeit Fraud</td>
+      <td align="center">Visa Fraud Monitoring Program</td>
+      <td align="center">Late Presentment</td>
+      <td align="center">Merchandise / Services not received</td>
+    </tr>
+
+    <tr>
+      <td align="center">EMV Liability Shift Non-Counterfeit Fraud</td>
+      <td align="center">Declined Authorization</td>
+      <td align="center">Incorrect Transaction Code</td>
+      <td align="center">Cancelled Recurring</td>
+    </tr>
+
+    <tr>
+      <td align="center">EMV Liability Shift Non-Counterfeit Fraud</td>
+      <td align="center">No Authorization</td>
+      <td align="center">Incorrect Currency</td>
+      <td align="center">Not as Described or Defective Merchandise / Services</td>
+    </tr>
+
+    <tr>
+      <td align="center">EMV Liability Shift Non-Counterfeit Fraud</td>
+
+      <td align="center" />
+
+      <td align="center">Incorrect Account Number</td>
+      <td align="center">Counterfeit Merchandise</td>
+    </tr>
+
+    <tr>
+      <td align="center">Visa Fraud Monitoring Program</td>
+
+      <td align="center" />
+
+      <td align="center">Incorrect Amount</td>
+      <td align="center">Misrepresentation</td>
+    </tr>
+
+    <tr>
+      <td align="center" />
+
+      <td align="center" />
+
+      <td align="center">Duplicate Processing / Paid by Other Means</td>
+      <td align="center">Credit Not Processed</td>
+    </tr>
+
+    <tr>
+      <td align="center" />
+
+      <td align="center" />
+
+      <td align="center">Invalid Data</td>
+      <td align="center">Cancelled Merchandise / Services</td>
+    </tr>
+
+    <tr>
+      <td align="center" />
+
+      <td align="center" />
+
+      <td align="center">Original Transaction Not Accepted</td>
+
+      <td align="center" />
+    </tr>
+
+    <tr>
+      <td align="center" />
+
+      <td align="center" />
+
+      <td align="center">Non-Receipt of Cash or Load Transaction Value</td>
+
+      <td align="center" />
+    </tr>
+  </tbody>
+</table>
+
 * [Visa Generic Dispute Form](https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Visa-Generic-Dispute-Form.docx)
 
 # What is a Fraud Dispute?
