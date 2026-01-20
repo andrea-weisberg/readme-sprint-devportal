@@ -5,8 +5,6 @@ hidden: false
 metadata:
   robots: index
 ---
-<br />
-
 <p>
   For clients using Paymentology’s tokenization, Paymentology can issue monthly
   reports to clients to assist in compiling their Apple report through the Apple
@@ -18,6 +16,8 @@ metadata:
   Sale), remote (in-App, Apple Pay on the web and eCommerce) and COF (Credential
   on File) Apple Pay spends for the specified month.
 </p>
+
+<br />
 
 <p>The report includes the following details:</p>
 
@@ -102,6 +102,8 @@ metadata:
     least once in the given month.
   </li>
 </ul>
+
+
 
 <h2>Report format</h2>
 
