@@ -452,3 +452,33 @@ The report linked below assists client’s with revenue reconciliation and repor
     <span>All adjustments are recorded in the mark-off file</span>
   </span>
 </div>
+
+***
+
+# Fraud
+
+**What is Fraud?**
+
+Fraud is a false or illegal transaction which results in a loss of funds. Paymentology provides the following Risk Management features:
+
+* Transaction Limits – Paymentology allows you to implement transaction limits per card or program. If the ceiling is reached, no further transactions are permitted.
+* Usage – Paymentology allows you to specify the payment methods that the card can be used with. If there is an attempted use of the card for an unspecified payment method, the transaction will fail and send a fraud alert.
+* Additional settings – Paymentology allows you to implement additional settings to reinforce the security of cards and help with fraud prevention.
+* Notifications – Paymentology lets you configure real-time notifications that keep customers informed about the state of their cards.
+* Checks and controls – Paymentology allows you to implement a variety of Issuance checks, Spend controls and Authorization checks
+
+Read more about Fraud and Risk [here]()
+
+## Dispute handling
+
+**What is a Dispute?**
+
+A dispute is a transaction that a cardholder/customer does not agree with and therefore requests that part of, or the entire transaction be reversed or refunded.
+
+### Types of Disputes:
+
+1. **Reversal** - A reversal is essentially a request for a transaction that was not completed and could have failed at a particular step of the transaction process. It is an advisement message to all parties of the transaction and ensures that the card and store of value are put back into their original state if a failed to deduct transaction had been initiated.If you sent a transaction and did not receive a confirmation that the transaction was successful, it could imply that the transaction did not reach the intended destination.
+2. **Refund**- A refund is when funds are credited back to the customer’s card from a previously debited transaction. A refund is processed when the merchant refunds the customer for returned goods and the funds which were settled to the merchant’s account need to move back to the cardholder’s account.
+3. **Chargeback**-  A chargeback is the return of funds for a deduct transaction that was previously processed from a cardholder’s card balance, due to a successful dispute by the consumer regarding the transaction
+
+Read about Chargeback related Dispute handling [here]()
