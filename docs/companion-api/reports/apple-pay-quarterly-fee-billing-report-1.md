@@ -70,7 +70,7 @@ The report includes the following details:
   </span>
 
   <span style={{ display: "inline-flex", alignItems: "center" }}>
-    <span style={{ fontWeight: 800, marginRight: "6px" }}>Note:</span>
+    <span style={{ fontWeight: 800, marginRight: "6px" }}></span>
     <span>DPAN (Device Primary Account Number) – A token that acts as a surrogate for the customer’s card number and is used to make contactless and e-commerce transactions using an Apple device.</span>
   </span>
 </div>
