@@ -1,5 +1,5 @@
 ---
-title: Remote
+title: Remote API
 deprecated: false
 hidden: false
 metadata:
