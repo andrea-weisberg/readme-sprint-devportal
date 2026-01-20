@@ -17,8 +17,8 @@ metadata:
   style={{
     display: "grid",
     gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
-    gap: "32px",
-    marginTop: "32px",
+    gap: "24px",
+    marginTop: "24px",
   }}
 >
   {/* Virtual card */}
@@ -26,40 +26,35 @@ metadata:
   <div
     style={{
       background: "#E9F6F1",
-      padding: "40px",
-      minHeight: "260px",
-      position: "relative",
+      padding: "28px",
+      minHeight: "200px",
     }}
   >
     {/* Icon */}
 
     <div
       style={{
-        width: "88px",
-        height: "88px",
+        width: "64px",
+        height: "64px",
         background: "#97E0CD",
-        borderRadius: "18px 18px 18px 44px",
+        borderRadius: "14px 14px 14px 32px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        marginBottom: "48px",
+        marginBottom: "24px",
       }}
       aria-hidden="true"
     >
-      {/* Phone icon */}
-
-      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#0B1320" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0B1320" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="6" y="2" width="12" height="20" rx="2" />
-
-        <line x1="12" y1="18" x2="12" y2="18" />
 
         <rect x="8" y="7" width="8" height="6" />
       </svg>
     </div>
 
-    <h3 style={{ margin: "0 0 8px 0" }}>Virtual card</h3>
+    <h3 style={{ margin: "0 0 6px 0", fontSize: "18px" }}>Virtual card</h3>
 
-    <p style={{ margin: 0, fontSize: "16px", lineHeight: "1.5" }}>
+    <p style={{ margin: 0, fontSize: "14px", lineHeight: "1.5" }}>
       A digital card without any physical components
     </p>
   </div>
@@ -69,29 +64,26 @@ metadata:
   <div
     style={{
       background: "#E9F6F1",
-      padding: "40px",
-      minHeight: "260px",
-      position: "relative",
+      padding: "28px",
+      minHeight: "200px",
     }}
   >
     {/* Icon */}
 
     <div
       style={{
-        width: "88px",
-        height: "88px",
+        width: "64px",
+        height: "64px",
         background: "#97E0CD",
-        borderRadius: "18px 18px 18px 44px",
+        borderRadius: "14px 14px 14px 32px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        marginBottom: "48px",
+        marginBottom: "24px",
       }}
       aria-hidden="true"
     >
-      {/* Card icon */}
-
-      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#0B1320" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0B1320" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="5" width="20" height="14" rx="2" />
 
         <line x1="2" y1="10" x2="22" y2="10" />
@@ -100,9 +92,9 @@ metadata:
       </svg>
     </div>
 
-    <h3 style={{ margin: "0 0 8px 0" }}>Physical card</h3>
+    <h3 style={{ margin: "0 0 6px 0", fontSize: "18px" }}>Physical card</h3>
 
-    <p style={{ margin: 0, fontSize: "16px", lineHeight: "1.5" }}>
+    <p style={{ margin: 0, fontSize: "14px", lineHeight: "1.5" }}>
       The traditional plastic payment card
     </p>
   </div>
