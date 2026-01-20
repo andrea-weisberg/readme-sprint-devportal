@@ -122,9 +122,7 @@ The report includes the following details:
   </span>
 </div>
 
-***
-
-# Report Format
+## Report Format
 
 <table>
   <thead>
@@ -151,7 +149,7 @@ The report includes the following details:
   </tbody>
 </table>
 
-# Report time frame
+## Report time frame
 
 <table>
   <thead>
@@ -174,7 +172,7 @@ The report includes the following details:
   </tbody>
 </table>
 
-# Report Sample
+## Report Sample
 
 <Image border={false} src="https://files.readme.io/60a1a7955b6db5769c33aed9edd580bb24feebd5655b07e45f77fed464306f26-image.png" />
 
