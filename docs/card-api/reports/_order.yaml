@@ -6,6 +6,7 @@
 - daily-sales-and-redemption-report
 - linked-cards-report
 - card-balance-report
+- inactive-cards-report
 - apple-pay-monthly-declines-report
 - apple-pay-monthly-fee-billing-report
 - apple-pay-monthly-metric-report
@@ -20,7 +21,6 @@
 - failed-transaction-report-2
 - forex-gains-report-2
 - google-pay-monthly-report
-- inactive-cards-report
 - index
 - qmr-data-report
 - summary-settlement-report-2
