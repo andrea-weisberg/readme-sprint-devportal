@@ -17,7 +17,89 @@ metadata:
   on File) Apple Pay spends for the specified month.
 </p>
 
-<br />
+<p>The report includes the following details:</p>
+
+<ul>
+  <li>
+    <strong>Reporting Month</strong> – the month the report data is based on.
+  </li>
+
+  <li>
+    <strong>Monthly DPAN transaction count</strong> – total number of settled
+    DPAN transactions made using Apple Pay for the given month.
+  </li>
+
+  <li>
+    <strong>Monthly DPAN spend</strong> – total value of settled DPAN transactions
+    made using Apple Pay for the given month.
+  </li>
+
+  <li>
+    <strong>
+      % of POS DPAN transactions out of the monthly processed DPAN transactions
+    </strong>
+
+    – percentage split of <strong>Monthly DPAN transaction count</strong> that
+    were POS (Point of Sale) type spends.
+  </li>
+
+  <li>
+    <strong>
+      % of Remote DPAN transactions out of the monthly processed DPAN transactions
+    </strong>
+
+    – percentage split of <strong>Monthly DPAN transaction count</strong> that
+    were remote type spends (in-App, Apple Pay on the web and eCommerce).
+  </li>
+
+  <li>
+    <strong>
+      % of COF DPAN transactions out of the monthly processed DPAN transactions
+    </strong>
+
+    – percentage split of <strong>Monthly DPAN transaction count</strong> that
+    were COF (Credential on File) type spends.
+  </li>
+
+  <li>
+    <strong>
+      % of POS DPAN spend amount out of the monthly processed DPAN transactions
+    </strong>
+
+    – percentage split of <strong>Monthly DPAN spend</strong> value that were POS
+    (Point of Sale) type spends.
+  </li>
+
+  <li>
+    <strong>
+      % of Remote DPAN spend amount out of the monthly processed DPAN transactions
+    </strong>
+
+    – percentage split of <strong>Monthly DPAN spend</strong> value that were
+    remote type spends (in-App, Apple Pay on the web and eCommerce).
+  </li>
+
+  <li>
+    <strong>
+      % of COF DPAN spend amount out of the monthly processed DPAN transactions
+    </strong>
+
+    – percentage split of <strong>Monthly DPAN spend</strong> value that were COF
+    (Credential on File) type spends.
+  </li>
+
+  <li>
+    <strong>Total Available DPANs</strong> – tokens available for use on Apple Pay
+    as of the end of the reporting month. This includes DPANs successfully
+    provisioned since launch, excluding inactive, pending, suspended, and deleted
+    tokens.
+  </li>
+
+  <li>
+    <strong>Monthly Active DPANs</strong> – count of DPANs that have transacted at
+    least once in the given month.
+  </li>
+</ul>
 
 <div
   style={{
@@ -109,109 +191,67 @@ metadata:
   <span style={{ display: "inline-flex", alignItems: "center" }}>
     <span style={{ fontWeight: 800, marginRight: "6px" }} />
 
-    <span>All amounts reported are in the cardholder billing currency.</span>
+    <span>Only settled transactions are included and all values specified are in the cardholder billing currency.</span>
   </span>
 </div>
 
-<p>The report includes the following details:</p>
-
-<ul>
-  <li>
-    <strong>Reporting Month</strong> – the month the report data is based on.
-  </li>
-
-  <li>
-    <strong>Monthly DPAN transaction count</strong> – total number of settled
-    DPAN transactions made using Apple Pay for the given month.
-  </li>
-
-  <li>
-    <strong>Monthly DPAN spend</strong> – total value of settled DPAN transactions
-    made using Apple Pay for the given month.
-  </li>
-
-  <li>
-    <strong>
-      % of POS DPAN transactions out of the monthly processed DPAN transactions
-    </strong>
-
-    – percentage split of <strong>Monthly DPAN transaction count</strong> that
-    were POS (Point of Sale) type spends.
-  </li>
-
-  <li>
-    <strong>
-      % of Remote DPAN transactions out of the monthly processed DPAN transactions
-    </strong>
-
-    – percentage split of <strong>Monthly DPAN transaction count</strong> that
-    were remote type spends (in-App, Apple Pay on the web and eCommerce).
-  </li>
-
-  <li>
-    <strong>
-      % of COF DPAN transactions out of the monthly processed DPAN transactions
-    </strong>
-
-    – percentage split of <strong>Monthly DPAN transaction count</strong> that
-    were COF (Credential on File) type spends.
-  </li>
-
-  <li>
-    <strong>
-      % of POS DPAN spend amount out of the monthly processed DPAN transactions
-    </strong>
-
-    – percentage split of <strong>Monthly DPAN spend</strong> value that were POS
-    (Point of Sale) type spends.
-  </li>
-
-  <li>
-    <strong>
-      % of Remote DPAN spend amount out of the monthly processed DPAN transactions
-    </strong>
-
-    – percentage split of <strong>Monthly DPAN spend</strong> value that were
-    remote type spends (in-App, Apple Pay on the web and eCommerce).
-  </li>
-
-  <li>
-    <strong>
-      % of COF DPAN spend amount out of the monthly processed DPAN transactions
-    </strong>
-
-    – percentage split of <strong>Monthly DPAN spend</strong> value that were COF
-    (Credential on File) type spends.
-  </li>
-
-  <li>
-    <strong>Total Available DPANs</strong> – tokens available for use on Apple Pay
-    as of the end of the reporting month. This includes DPANs successfully
-    provisioned since launch, excluding inactive, pending, suspended, and deleted
-    tokens.
-  </li>
-
-  <li>
-    <strong>Monthly Active DPANs</strong> – count of DPANs that have transacted at
-    least once in the given month.
-  </li>
-</ul>
-
 <h2>Report format</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">FORMAT</th>
+      <th align="center">FILE NAME</th>
+      <th align="center">FREQUENCY</th>
+      <th align="center">ACCESSIBILITY</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">XLS</td>
+
+      <td align="center">
+        \[CampaignName]\_ApplePay Monthly Metric Report<br />
+        \[Month] YYYY.xls
+      </td>
+
+      <td align="center">Monthly</td>
+      <td align="center">Via email</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>Report time frame</h2>
 
+<table>
+  <thead>
+    <tr>
+      <th align="center">UTC +2</th>
+      <th align="center">UTC +7</th>
+      <th align="center">REMARKS</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td align="center">02:00</td>
+      <td align="center">07:00</td>
+
+      <td align="center">
+        Monthly Apple Pay reports are produced on day 2 of the following month.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 <h2>Report sample</h2>
 
-<p>
-  <strong>
-    CampaignName\_ApplePay-Monthly-Metric-Report-Month-YYYY-\_-002.png
-  </strong>
+<Image border={false} src="https://files.readme.io/a66ea97929407216246f3aa30fbbfad829fde88464e670658a19e215b3dd8e4d-image.png" />
 
-  <br />
+<NavyBlock />
 
-  IMAGE GOES HERE
-</p>
+<br />
 
 <p>
   <a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Monthly-Metric-Report-Month-YYYY.xls">
