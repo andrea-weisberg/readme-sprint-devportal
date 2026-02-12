@@ -5,7 +5,12 @@ hidden: false
 metadata:
   robots: index
 ---
-# Token Payments on Digital Devices
+<!-- MIGRATION_METADATA
+Migrated-From: https://developer.sprint.paymentology.com/card-api/tokenization/payments/
+Source-Slug: payments
+Migrated-On: 2026-02-12T20:19:13+00:00
+Migrated-By: wp-readme-migration
+-->
 
 Today, digital devices are an increasingly popular way of making payments. Mobile phones, smartwatches, tablets, and other smart devices rely on tokenization to ensure payments are fast, simple, and secure.
 
@@ -21,11 +26,15 @@ The token will then be transmitted back to Apple to be programmed into your devi
 
 We’ll talk more about the tokenization process later.
 
-## Tokenization Participants
+
+## **Tokenization Participants**
 
 These are the main participants in the card tokenization process:
 
-* **Cardholder** – owns the payment card to be tokenized. Cardholders give their card details to a payment service provider, which then requests the card network to issue a token for the card.
-* **Payment service provider** – (such as an online retailer or a digital wallet) requests and stores tokens for the payment cards. Payment service providers, also called token requesters, undergo integration and certification with the card networks to use their tokenization services. This enables them to request and make purchases using tokens.
-* **Card scheme**– (such as Mastercard and Visa) offers the infrastructure for generating, storing, and managing the tokens. Paymentology’s Sprint tokenization solution currently leverages the MDES (Mastercard Digital Enablement Service) and, coming soon, VTS (Visa Token Service) tokenization management services. MDES enables online retailers and payment service providers to offer tokenization services for simple, fast, and secure payments worldwide. Mastercard MDES serves as the Token Service Provider, or TSP, in the provisioning and authorization process.
-* **Issuer processor** – (Paymentology) issues the payment cards from which the tokens are derived. Paymentology must authorize every request to provision tokens for the payment cards. This authorization process requires integrating and certifying Paymentology’s Sprint solution with the tokenization management services at the card network. Paymentology is currently integrated to Mastercard’s MDES for notifying clients of card provisioning as well as authorizations on cards that have been provisioned.
+- **Cardholder** – owns the payment card to be tokenized. Cardholders give their card details to a payment service provider, which then requests the card network to issue a token for the card.
+
+- **Payment service provider** – (such as an online retailer or a digital wallet) requests and stores tokens for the payment cards. Payment service providers, also called token requesters, undergo integration and certification with the card networks to use their tokenization services. This enables them to request and make purchases using tokens.
+
+- **Card scheme** – (such as Mastercard and Visa) offers the infrastructure for generating, storing, and managing the tokens. Paymentology’s Sprint tokenization solution currently leverages the MDES (Mastercard Digital Enablement Service) and, coming soon, VTS (Visa Token Service) tokenization management services. MDES enables online retailers and payment service providers to offer tokenization services for simple, fast, and secure payments worldwide. Mastercard MDES serves as the Token Service Provider, or TSP, in the provisioning and authorization process.
+
+- **Issuer processor** – (Paymentology) issues the payment cards from which the tokens are derived. Paymentology must authorize every request to provision tokens for the payment cards. This authorization process requires integrating and certifying Paymentology’s Sprint solution with the tokenization management services at the card network. Paymentology is currently integrated to Mastercard’s MDES for notifying clients of card provisioning as well as authorizations on cards that have been provisioned.
