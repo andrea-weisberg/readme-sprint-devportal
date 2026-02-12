@@ -5,31 +5,86 @@ hidden: false
 metadata:
   robots: index
 ---
-<h2>Breakdown of the chargebacks process with Chargeback API</h2>
-<p>The Paymentology dispute resolution cycle facilitates the whole process of reversing payments to cardholders. Card transaction disputes usually start when a cardholder or an issuer identifies suspicious, fraudulent, or erroneous charges on accounts.<br  />
-Issuers and acquirers then follow a process to attempt to resolve the dispute. In the case of Mastercard, the two parties use the Mastercom platform to create and manage disputes throughout their lifecycle, expedite the dispute resolution process, and ensure satisfactory handling of the claims.</p>
+<!-- MIGRATION_METADATA
+Migrated-From: https://developer.sprint.paymentology.com/chargeback-api/process-overview/
+Source-Slug: process-overview
+Migrated-On: 2026-02-12T21:14:52+00:00
+Migrated-By: wp-readme-migration
+-->
 
-<h2>Typical dispute resolution cycle steps:</h2>
+## Breakdown of the chargebacks process with Chargeback API
 
-<p>**Diagram-for-Sprint-Developer-Porta_Lightmode-2.png IMAGE GOES HERE.**</p>
+The Paymentology dispute resolution cycle facilitates the whole process of reversing payments to cardholders. Card transaction disputes usually start when a cardholder or an issuer identifies suspicious, fraudulent, or erroneous charges on accounts.
 
-<p>As part of the claim resolution process:</p>
-<ul>
-<li>Paymentology provides a Chargeback API that allows clients to submit the required data for making the first chargeback.</li>
-<li>Paymentology handles all chargebacks that move into second presentment, pre-arbitration, and arbitration stages.</li>
-<li>Paymentology provides an API that allows clients to submit the required data for pre-arbitration case filings.</li>
-<li>Paymentology allows clients to track the status of each phase of the dispute resolution cycle. We also provide up-to-date reports about the outcome of each step.</li>
-</ul>
+Issuers and acquirers then follow a process to attempt to resolve the dispute. In the case of Mastercard, the two parties use the Mastercom platform to create and manage disputes throughout their lifecycle, expedite the dispute resolution process, and ensure satisfactory handling of the claims.
 
-<h2>Let’s take a look at the steps in more detail</h2>
 
-<h3><a id="step 1"></a>step 1: First chargeback</h3>
-<p>If we deem the claim to be valid, we can make the first chargeback, transferring the disputed funds from the acquirer to us.<br  />
-We then communicate to the acquirer about the chargeback by giving a chargeback reason code as well as supportive data.<br  />
-The chargeback must be for a lesser transaction amount or the entire transaction amount—it cannot be higher than the entire amount.<br  />
-To successfully complete this step, we provide a Chargeback API that allows you to send us the following information:</p>
+> 📘 Info
+>
+> All chargebacks initiated will be processed using Mastercom Version 6.
 
-<h4>Payload example</h4>
+
+## Typical dispute resolution cycle steps:
+
+
+<!-- TODO: improve columns_with_icons_and_text layout. Source: https://developer.sprint.paymentology.com/chargeback-api/process-overview/ -->
+
+# [Step 1: First chargeback](#step 1)
+
+# [Step 2: Collaboration phase](#step 2)
+
+# [Step 3: Second presentment](#step 3)
+
+# [Step 4: Pre-arbitration case](#step 4)
+
+# [Step 5: Arbitration case](#step 5)
+
+
+
+
+As part of the claim resolution process:
+
+- Paymentology provides a Chargeback API that allows clients to submit the required data for making the first chargeback.
+
+- Paymentology handles all chargebacks that move into second presentment, pre-arbitration, and arbitration stages.
+
+- Paymentology provides an API that allows clients to submit the required data for pre-arbitration case filings.
+
+- Paymentology allows clients to track the status of each phase of the dispute resolution cycle. We also provide up-to-date reports about the outcome of each step.
+
+
+## Let’s take a look at the steps in more detail
+
+
+> 📘 Info
+>
+> After every step, the issuer or acquirer can opt to close the dispute. If not, the matter will eventually be escalated to Mastercard to issue a ruling.
+
+
+### Step 1: First chargeback
+
+If we deem the claim to be valid, we can make the first chargeback, transferring the disputed funds from the acquirer to us.
+
+We then communicate to the acquirer about the chargeback by giving a chargeback reason code as well as supportive data.
+
+The chargeback must be for a lesser transaction amount or the entire transaction amount—it cannot be higher than the entire amount.
+
+To successfully complete this step, we provide a Chargeback API that allows you to send us the following information:
+
+
+|  |  |
+| --- | --- |
+| Tracking number | trackingNumber |
+| Transaction ID | transactionId |
+| Auth number (optional) | authnumber |
+| System date | systemDate |
+| Settlement amount | settlementAmount |
+| Chargeback amount | chargebackAmount |
+| Reason code | reasonCode |
+| Supporting document | supportingDocument |
+
+
+#### Payload example
 
 ```json
 {
@@ -42,24 +97,38 @@ To successfully complete this step, we provide a Chargeback API that allows you 
     "reasonCode": "4834",
     "supportingDocument": "BASE64_ENCODED_FILE_HERE"
 }
-
 ```
 
-<h3><a id="step 2"></a>step 2: Collaboration phase</h3>
-<p>Issuer-initiated chargebacks remain in a pending status (no more than 72 hours) on issuers’ behalf to allow merchants to respond and resolve the inquiry.<br  />
-In this phase, the acquirer can reject the first chargeback and refund the disputed amount. This closes the dispute and prevents them from going through the chargeback process.<br  />
-If the acquirer rejects the first chargeback, we will get a notification of rejection and a refund should be processed by the acquirer. If they don’t reject it, the chargeback is then processed as normal to which the acquirer can then dispute if they disagree by making a second presentment.</p>
 
-<h3><a id="step 3"></a>step 3: Second presentment</h3>
-<p>If the acquirer is dissatisfied with the chargeback reason, they can create a second presentment that gives their side of the story.<br  />
-This step transfers the money from the issuer to the acquirer. The second presentment must be for a lesser chargeback amount or the entire chargeback amount. It cannot be higher than the entire amount.<br  />
-After receiving the second presentment, Paymentology will notify the client and present the documents for the case.<br  />
-The client will then decide the next course of action – either to accept the second presentment and close the dispute or continue with the dispute.</p>
+### Step 2: Collaboration phase
 
-<h3><a id="step 4"></a>step 4: Pre-arbitration case</h3>
-<p>If we are dissatisfied with the second presentment reason, we can make a second chargeback, which is referred to as an pre-arbitration case.<br  />
-Paymentology provides an API that allows clients to submit the required data for pre-arbitration case filings.<br  />
-The pre-arbitration case must be for a lesser second presentment amount or the entire amount—it cannot be higher than the entire amount.</p>
+Issuer-initiated chargebacks remain in a pending status (no more than 72 hours) on issuers’ behalf to allow merchants to respond and resolve the inquiry.
 
-<h3><a id="step 5"></a>step 5: Arbitration case</h3>
-<p>The arbitration case filing step escalates the issue to Mastercard. Mastercard will then examine the evidence provided by both the issuer and the acquirer to determine the party that carries the day.</p>
+In this phase, the acquirer can reject the first chargeback and refund the disputed amount. This closes the dispute and prevents them from going through the chargeback process.
+
+If the acquirer rejects the first chargeback, we will get a notification of rejection and a refund should be processed by the acquirer. If they don’t reject it, the chargeback is then processed as normal to which the acquirer can then dispute if they disagree by making a second presentment.
+
+
+### Step 3: Second presentment
+
+If the acquirer is dissatisfied with the chargeback reason, they can create a second presentment that gives their side of the story.
+
+This step transfers the money from the issuer to the acquirer. The second presentment must be for a lesser chargeback amount or the entire chargeback amount. It cannot be higher than the entire amount.
+
+After receiving the second presentment, Paymentology will notify the client and present the documents for the case.
+
+The client will then decide the next course of action – either to accept the second presentment and close the dispute or continue with the dispute.
+
+
+### Step 4: Pre-arbitration case
+
+If we are dissatisfied with the second presentment reason, we can make a second chargeback, which is referred to as an pre-arbitration case.
+
+Paymentology provides an API that allows clients to submit the required data for pre-arbitration case filings.
+
+The pre-arbitration case must be for a lesser second presentment amount or the entire amount—it cannot be higher than the entire amount.
+
+
+### Step 5: Arbitration case
+
+The arbitration case filing step escalates the issue to Mastercard. Mastercard will then examine the evidence provided by both the issuer and the acquirer to determine the party that carries the day.
