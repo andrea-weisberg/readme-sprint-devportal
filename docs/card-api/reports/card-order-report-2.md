@@ -5,19 +5,46 @@ hidden: false
 metadata:
   robots: index
 ---
-<p><span style={{fontWeight: "400"}}>If you choose the option of ordering cards via the </span><span className="xml-highlight">OrderCard</span> method, then a report will be available each day with information of the successful orders that were processed and sent to the card manufacturer.</p>
-<p>The report includes the following details:</p>
-<ul>
-<li><strong>Card number</strong> – the masked card number.</li>
-<li><strong>Wallet reference</strong> – <span style={{fontWeight: "400"}}>this column will be empty for Card API reporting.</span></li>
-<li><strong>Date created</strong> – the date that card was created.</li>
-</ul>
+<!-- MIGRATION_METADATA
+Migrated-From: https://developer.sprint.paymentology.com/card-api/reports/card-order-report-2/
+Source-Slug: card-order-report-2
+Migrated-On: 2026-02-12T21:32:28+00:00
+Migrated-By: wp-readme-migration
+-->
 
-<h2>Report format</h2>
+If you choose the option of ordering cards via the OrderCard method, then a report will be available each day with information of the successful orders that were processed and sent to the card manufacturer.
 
-<h2>Report time frame</h2>
+The report includes the following details:
 
-<h2>Report sample</h2>
-<p>**Card-Order-report-final-Card-API.png IMAGE GOES HERE.**</p>
+- **Card number** – the masked card number.
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_PanDetails_YYYYMMDD-card.csv">CampaignName_PanDetails_YYYYMMDD.csv</a></p>
+- **Wallet reference** – this column will be empty for Card API reporting.
+
+- **Date created** – the date that card was created.
+
+
+## Report format
+
+
+| FORMAT | FILE NAME | FREQUENCY | ACCESSIBILITY |
+| --- | --- | --- | --- |
+| CSV | [CampaignUUID]/[CampaignName]_PanDetails_[YYYYMMDD].csv | Daily | HTTP get request or client SFTP folder |
+
+
+## Report time frame
+
+
+| UTC +2 | UTC +7 | REMARKS |
+| --- | --- | --- |
+| 02:30 | 07:30 | Paymentology creates batch order and submits to manufacturer for printing physical cards at 19:30 UTC+2, and the Card Order Report itself will be made available by our system for client’s consumption on next day 02:30 UTC+2. |
+
+
+## Report sample
+
+
+> 📘 Info
+>
+> **Note: file will automatically download upon clicking link**
+
+
+[CampaignName_PanDetails_YYYYMMDD.csv](../../../assets/CampaignName_PanDetails_YYYYMMDD-card.csv)
