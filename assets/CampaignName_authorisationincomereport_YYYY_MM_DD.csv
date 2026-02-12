@@ -1,0 +1,11 @@
+CampaignID,CampaignName,TransactionDate,AccumulatedTransactionOriginalAmount,AccumulatedMarkupAmount,AccumulatedTransactionAuthorisedAmount,,,,
+1234,Clandestine Virtual Card,14/11/2023,263,3.13,274.46,,,,
+TransactionOriginalAmount,TransactionMarkupAmount,TransactionAuthorisedAmount,TransactionDescription,TransactionID,TransactionType,WalletReference,SystemDate,SequenceNumber,TrackingNumber
+4,0.07,5.02,AB *ABCD SHOP        London        GBR,123456,0,a1b2c3de-4f56-78g9-h0i1-2j34k56l123l,04:09.4,123,1.23E+14
+13.5,0.16,14.01,COMPANY LTD          LONDON W1     GBR,123457,0,a1b2c3de-4f56-78g9-h0i1-2j34k56l789m,28:26.7,7569,1.23E+14
+19.7,0.25,21,COLES SUPERMARKET    LONDON        GBR,12345,0,a1b2c3de-4f56-78g9-h0i1-2j34k56l777q,52:53.3,12345,1.23E+14
+110,1.17,112.34,ABC - ROAD NAME  Milton Keyne GBR,123458,0,a1b2c3de-4f56-78g9-h0i1-2j34k56l999b,04:36.8,321,1.23E+14
+7.2,0.09,8,CAFFE SHOPPE           LONDON        GBR,123459,0,a1b2c3de-4f56-78g9-h0i1-2j34k56l090k,08:57.9,432,1.23E+14
+71.9,0.94,75.29,THE CAMBRIDGE STORRE  +441234567890 GBR,123450,0,a1b2c3de-4f56-78g9-h0i1-2j34k56l565p,04:31.3,456,1.23E+14
+23,0.25,24.7,World of WARCRAFT         London        GBR,234567,0,a1b2c3de-4f56-78g9-h0i1-2j34k56l262w,16:15.9,789,1.23E+14
+13.7,0.2,14.1,COFFEE              LONDON        GBR,234568,0,a1b2c3de-4f56-78g9-h0i1-2j34k56l121s,59:37.7,678,1.23E+14
