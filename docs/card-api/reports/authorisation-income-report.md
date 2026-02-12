@@ -1,0 +1,39 @@
+---
+title: Authorisation income report
+deprecated: false
+hidden: false
+metadata:
+  robots: index
+---
+
+This daily report provides clients with transaction markup data to support their internal reporting and P & L reconciliation. The report includes the following details:
+
+- **CampaignID** – id number of client’s campaign.
+- **CampaignName** – name of client’s campaign.
+- **TransactionDate** – this is the date the transaction was authorised.
+- **AccumulatedTransactionOriginalAmount** – this is the total value of all the original amounts of the transactions without any markup.
+- **AccumulatedMarkupAmount** – this is the total value of all the markup amounts of the transactions.
+- **AccumulatedTransactionAuthorisedAmount** – this is the total value of all the transaction authorised amounts.
+- **TransactionOriginalAmount** – this is the value of the transaction without any markup.
+- **TransactionMarkupAmount** – this is the value of the markup amount.
+- **TransactionAuthorisedAmount** – this is the value of the full transaction including markup.
+- **TransactionDescription** – the merchant’s description.
+- **TransactionID** – a reference for the transaction.
+- **TransactionType** – character string identifying the type of transaction:
+  - 0 = POS
+  - 1 = ATM
+  - 2 = Adjustments
+- **WalletReference** – this is a unique customer reference for the card.
+- **SystemDate** – Paymentology’s system date in UTC +2 time zone.
+- **SequenceNumber** – this is a unique sequence card identifier showing a running number for the cards created.
+- **TrackingNumber** – this is a unique 15-digit tracking identifier for the card.
+
+## Report format
+
+## Report time frame
+
+## Report sample
+
+**CampaignName_authorisationincomereport_YYYY_MM_DD-.png IMAGE GOES HERE.**
+
+[CampaignName_authorisationincomereport_YYYY_MM_DD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_authorisationincomereport_YYYY_MM_DD.csv)

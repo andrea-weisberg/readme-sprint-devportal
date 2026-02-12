@@ -1,0 +1,58 @@
+---
+name: DeclinedNavyBox
+---
+<div
+  style={{
+    background: "#0F1F3A",
+    color: "#FFFFFF",
+    height: "48px",
+    padding: "0 16px",
+    display: "flex",
+    alignItems: "center",
+  }}
+>
+  <div
+    style={{
+      display: "inline-flex",
+      alignItems: "center",
+      gap: "12px",
+      height: "20px",        // lock content row height
+      lineHeight: "20px",
+      fontSize: "14px",
+      fontWeight: 500,
+      transform: "translateY(-1px)", // micro optical correction for ReadMe font rendering
+    }}
+  >
+    {/* Info icon */}
+    <span
+      style={{
+        width: "20px",
+        height: "20px",
+        borderRadius: "50%",
+        background: "#3B6EDC",
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexShrink: 0,
+      }}
+      aria-hidden="true"
+    >
+      <svg
+        width="12"
+        height="12"
+        viewBox="0 0 12 12"
+        xmlns="http://www.w3.org/2000/svg"
+        style={{ display: "block" }}
+      >
+        <circle cx="6" cy="3" r="1" fill="#FFFFFF" />
+        <rect x="5.25" y="5" width="1.5" height="5" rx="0.75" fill="#FFFFFF" />
+      </svg>
+    </span>
+
+    {/* Text */}
+    <span style={{ display: "inline-block" }}>
+      If the transaction did not reach Paymentology and was declined, this would
+      not appear on the report.
+    </span>
+  </div>
+</div>
