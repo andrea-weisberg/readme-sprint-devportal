@@ -5,43 +5,28 @@ hidden: false
 metadata:
   robots: index
 ---
+<!-- MIGRATION_METADATA
+Migrated-From: https://developer.sprint.paymentology.com/get-started/security/
+Source-Slug: security
+Migrated-On: 2026-02-12T19:23:24+00:00
+Migrated-By: wp-readme-migration
+-->
+
 **Security is central to everything we do at Paymentology**
 
-These are the measures Paymentology implements to ensure the security of Sprint’s API services:
-
-<br />
+These are the measures Paymentology implements to ensure the security of  Sprint’s API services:
 
 ## 1. Checksum
 
-To ensure that transactions are secure, Paymentology uses a checksum-based authentication method (<span title="SHA-256 stands for Secure Hash Algorithm 256-bit and is used for crptographic security" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>SHA256</span> to ensure the validity of processes. The checksum is generated mostly from the data in the <span title="The Paymentology issued terminal ID of the terminal requesting the transaction" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>TERMINAL ID</span> and <span title="HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>CHECKSUM</span> field, which is included in every single API call.
+To ensure that transactions are secure, Paymentology uses a checksum-based authentication method (SHA256) to ensure the validity of processes. The checksum is generated mostly from the data in the terminalID and checksum field, which is included in every single API call.
 
-You can think of the <span title="The Paymentology issued terminal ID of the terminal requesting the transaction" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>TERMINAL ID</span>
-and <span title="HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>CHECKSUM</span> fields as the <span title="A sequence of characters/string value that is used to identify a user on a digital platform" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>USERNAME</span>
-and <span title="A sequencce of characters/string value that allows a user access to a system or platform" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>PASSWORD</span>,
-respectively.
+You can think of the terminalID and checksum fields as the username and password, respectively. But the terminalID value in the request).
 
-This guarantees **authentication** as well as the **integrity** of every piece of data within the transaction.  The <span title="The Paymentology issued terminal ID of the terminal requesting the transaction" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>TERMINAL ID</span> is specific to you and you only, and only Paymentology will know the <span title="A sequencce of characters/string value that allows a user access to a system or platform" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>PASSWORD</span>
-associated with that <span title="The Paymentology issued terminal ID of the terminal requesting the transaction" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>TERMINAL ID</span>.
+This guarantees **authentication** as well as the **integrity** of every piece of data within the transaction. The terminalID is specific to you and you only, and only Paymentology will know the password associated with that terminalID.
 
-For this process to be fully secure, the recipient of the message will have to **recalculate** the <span title="HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>CHECKSUM</span> using all the individual details of the message and then **compare** it to the Paymentology supplied <span title="HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key" style={{ borderBottom: '1px dotted #E56A5D', cursor: 'help' }}>CHECKSUM</span>. If both are the same, the transaction gets authenticated and verified.
+For this process to be fully secure, the recipient of the message will have to **recalculate** the checksum using all the individual details of the message and then **compare** it to the Paymentology supplied checksum. If both are the same, the transaction gets authenticated and verified.
 
-During implementation, you can use our **[Checksum Generator tool](checksum-generator.md)** to compare the results of your checksum calculation to Paymentology’s checksum calculations.
-
-## 2. User-Agent Header
-
-Paymentology’s Sprint platform requires a User-Agent header to be included in every request to its API services. The User-Agent request header is a characteristic string that identifies your application, its version number, and the programming language used.
-
-Paymentology uses this information to effectively isolate problems that might be associated with your applications. It also enables Paymentology to identify you as the authorized caller.
-
-Any request without a User-Agent header shall be denied.
-
-Example (RFC 7231): [http://tools.ietf.org/html/rfc7231#section-5.5.3](http://tools.ietf.org/html/rfc7231#section-5.5.3) (application, version and programming lang)
-
-```txt
-User-Agent: <product> / <product-version> <comment>
-```
-
-During implementation, you can use our **[Checksum Generator tool](https://developer.sprint.paymentology.com/tools/checksum-generator/)** to compare the results of your checksum calculation to Paymentology’s checksum calculations.
+During implementation, you can use our [**Checksum Generator tool**](../tools/checksum-generator/) to compare the results of your checksum calculation to Paymentology’s checksum calculations.
 
 ## 2. User-Agent Header
 
@@ -53,12 +38,15 @@ Any request without a User-Agent header shall be denied.
 
 Example:
 
-[http://tools.ietf.org/html/rfc7231#section-5.5.3](http://tools.ietf.org/html/rfc7231#section-5.5.3)  
+http://tools.ietf.org/html/rfc7231#section-5.5.3
+
 (application, version and programming lang),
 
-```txt
-User-Agent: <product> / <product-version> <comment>
+```text
+<span class="xml-highlight">User-Agent: <product> / <product-version> <comment></span>
 ```
+
+##
 
 ## 3. Disclosure of expected traffic
 
