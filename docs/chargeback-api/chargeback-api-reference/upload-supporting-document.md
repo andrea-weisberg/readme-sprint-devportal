@@ -5,60 +5,70 @@ hidden: false
 metadata:
   robots: index
 ---
-<p>This API method is used to upload a supporting document after a chargeback is successfully created.</p>
+<!-- MIGRATION_METADATA
+Migrated-From: https://developer.sprint.paymentology.com/chargeback-api/chargeback-api-reference/upload-supporting-document/
+Source-Slug: upload-supporting-document
+Migrated-On: 2026-02-12T21:32:09+00:00
+Migrated-By: wp-readme-migration
+-->
 
-<h2>Request/response fields and samples</h2>
+This API method is used to upload a supporting document after a chargeback is successfully created.
+
+
+## Request/response fields and samples
+
 
 #### Path parameters
 
 | Parameter | type | Limits | required | Description |
-|---|---|---|:--:|---|
-| chargebackId | String |  | ✓ | <p>Chargeback id</p> |
-| claimID | String |  | ✓ | <p>Claim id</p> |
-| memo | String |  | ✓ | <p>Memo</p> |
-| filename | String |  | ✓ | <p>Filename</p> |
-| file | String |  | ✓ | <p>File content</p> |
+| --- | --- | --- | --- | --- |
+| chargebackId | String |  | ✓ | Chargeback ID |
+| claimID | String |  | ✓ | Claim ID |
+| memo | String |  | ✓ | Memo |
+| filename | String |  | ✓ | Filename |
+| file | String |  | ✓ | File content |
+
 
 ```json
 {
-    "chargebackId": "CHARGEBACK id",
+    "chargebackId": "CHARGEBACK ID",
     "claimID": "CLAIM_ID",
     "memo": "MEMO",
     "filename": "FILENAME",
     "file": "File content stored in a base64 encoded string"
 }
-
-```,```json
-{
-    "chargebackId": "chargebackId"
-}
-
 ```
+
 
 #### Response schema
 
-| Field | type | Description |
-|---|---|---|
+| Parameter | type | Description |
+| --- | --- | --- |
 | chargebackId | String |  |
+
 
 ```json
 {
-    "chargebackId": "CHARGEBACK id",
-    "claimID": "CLAIM_ID",
-    "memo": "MEMO",
-    "filename": "FILENAME",
-    "file": "File content stored in a base64 encoded string"
-}
-
-```,```json
-{
     "chargebackId": "chargebackId"
 }
-
 ```
 
-<h4>Other response codes</h4>
-<p>Further response codes and details can be found <a href="https://developer.sprint.paymentology.com/chargeback-api/response-codes/">here</a>.</p>
 
-<h2>Additional info</h2>
+#### Other response codes
 
+Further response codes and details can be found [here](../response-codes).
+
+
+## Additional info
+
+
+|  |  |
+| --- | --- |
+| HTTP Method | PUT |
+| URL+URI (SIT/UAT) | https://chargebacks.test.tutuka.cloud/client/claims/{claim-id}/chargebacks/{chargeback-id}/document |
+| HTTP Headers | Content-Type text/plain |
+| Query String Parameters |  |
+| Format | JSON |
+| Authentication | Bearer BEARER_TOKEN |
+| Successful Response Code | 200 |
+| Error Response Code | 500 |
