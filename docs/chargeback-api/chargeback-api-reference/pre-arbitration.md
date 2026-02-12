@@ -5,23 +5,33 @@ hidden: false
 metadata:
   robots: index
 ---
-<p>This method is used to submit a Pre-Arbitration case.</p>
+<!-- MIGRATION_METADATA
+Migrated-From: https://developer.sprint.paymentology.com/chargeback-api/chargeback-api-reference/pre-arbitration/
+Source-Slug: pre-arbitration
+Migrated-On: 2026-02-12T21:15:03+00:00
+Migrated-By: wp-readme-migration
+-->
 
-<h2>Request/response fields and samples</h2>
+This method is used to submit a Pre-Arbitration case.
+
+
+## Request/response fields and samples
+
 
 #### Path parameters
 
 | Parameter | type | Limits | required | Description |
-|---|---|---|:--:|---|
-| claimId | String |  | ✓ | <p>Claim id</p> |
-| chargebackId | String |  | ✓ | <p>Chargeback id</p> |
-| preArbitrationAmount | String |  | ✓ | <p>Pre-Arbitration case amount in cardholder currency.</p> |
-| memo | String |  | ✓ | <p>Memo for the case</p> |
-| messageText | String |  |  | <p>Message text. Use only when applicable, otherwise leave empty</p> |
-| newReasonCode | String |  |  | <p>New reason code. Use only when applicable i.e. changing reason code. Otherwise left empty.<br  /> Chargeback reason code list available <a href="https://developer.sprint.paymentology.com/chargeback-api/chargeback-reason-codes/">here</a></p> |
-| supportingDocument | String |  |  | <p>Document to support the case.<br  /> Use only when applicable, otherwise leave empty</p> |
-| clientReferenceNumber | String |  |  | <p>Client reference number.<br  /> Use only when applicable, otherwise leave empty</p> |
-| caseNotes | String |  |  | <p>Case notes.<br  /> Use only when applicable, otherwise leave empty</p> |
+| --- | --- | --- | --- | --- |
+| claimId | String |  | ✓ | Claim ID |
+| chargebackId | String |  | ✓ | Chargeback ID |
+| preArbitrationAmount | String |  | ✓ | Pre-Arbitration case amount in cardholder currency. |
+| memo | String |  | ✓ | Memo for the case |
+| messageText | String |  |  | Message text. Use only when applicable, otherwise leave empty |
+| newReasonCode | String |  |  | New reason code. Use only when applicable i.e. changing reason code. Otherwise left empty.<br><br>Chargeback reason code list available [here](../chargeback-reason-codes) |
+| supportingDocument | String |  |  | Document to support the case.<br><br>Use only when applicable, otherwise leave empty |
+| clientReferenceNumber | String |  |  | Client reference number.<br><br>Use only when applicable, otherwise leave empty |
+| caseNotes | String |  |  | Case notes.<br><br>Use only when applicable, otherwise leave empty |
+
 
 ```json
 {
@@ -35,42 +45,39 @@ metadata:
     "clientReferenceNumber": "CLIENT_REFERENCE_NUMBER",
     "caseNotes": "CASE_NOTES"
 }
-
-```,```json
-{
-    "caseId": "CASE_ID"
-}
-
 ```
+
 
 #### Response schema
 
-| Field | type | Description |
-|---|---|---|
-| caseId | String | <p>Pre-arbitration case id</p> |
+| Parameter | type | Description |
+| --- | --- | --- |
+| caseId | String | Pre-arbitration case ID |
+
 
 ```json
 {
-    "claimId": "CLAIM_ID",
-    "chargebackId": "CHARGEBACK_ID",
-    "preArbitrationAmount": "PREARBITRATION_AMOUNT",
-    "memo": "MEMO",
-    "messageText": "MESSAGE_TEXT",
-    "newReasonCode": "NEW_REASON_CODE",
-    "supportingDocument": "BASE64_ENCODED_FILE_HERE",
-    "clientReferenceNumber": "CLIENT_REFERENCE_NUMBER",
-    "caseNotes": "CASE_NOTES"
-}
-
-```,```json
-{
     "caseId": "CASE_ID"
 }
-
 ```
 
-<h4>Other response codes</h4>
-<p>Further response codes and details can be found <a href="https://developer.sprint.paymentology.com/chargeback-api/response-codes/">here</a>.</p>
 
-<h2>Additional info</h2>
+#### Other response codes
 
+Further response codes and details can be found [here](../response-codes).
+
+
+## Additional info
+
+
+|  |  |
+| --- | --- |
+| HTTP Method | POST |
+| URL_URI (SIT/UAT) | https://chargebacks.test.tutuka.cloud/client/prearbitration |
+| HTTP Headers | Content-Type text/plain |
+| Query String Parameters | - |
+| Format | JSON |
+| Authentication | Bearer BEARER_TOKEN |
+| Successful Response Code | 200 |
+| Error Response Code | 500 |
+| Validation Error Response Code | 422 |
