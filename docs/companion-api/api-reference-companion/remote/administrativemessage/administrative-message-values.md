@@ -19,8 +19,8 @@ Values for the messageName field
 
 ---
 
-## **digitization.activationmethods**
-
+<a id="activationmethods"></a>
+## digitization.activationmethods
 This event occurs at the beginning of the token provisioning process. This message signals that a token provision has been made and requires verification method in order to push the OTP. The type of method will need to be passed as well as the data for the method.
 
 KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’ = 915′, digitization path’ = 929, ‘wallet recommendation’ = 930,’tokenization pan source’ = 931.
@@ -139,8 +139,8 @@ KLV data – ‘digitized device id’ = 910, ‘digitized token requestor id’
 
 ---
 
-## **digitization.activation**
-
+<a id="activation"></a>
+## digitization.activation
 The activation code that Paymentology will receive from MDES. Paymentology will send this code in the AdministrativeMessage to the client so that the client can pass on the activation code to the cardholder to input in app.
 
 KLV data – ‘digitization activation’ (activation code) = 901, ‘digitization activation method type’ = 902, ‘digitization activation method value’ = 903, ‘digitization activation expiry’ = 904, ‘digitized token requestor id’ = 915. 
@@ -216,8 +216,8 @@ KLV data – ‘digitization activation’ (activation code) = 901, ‘digitizat
 
 ---
 
-## **digitization.complete**
-
+<a id="complete"></a>
+## digitization.complete
  MDES sends a notification to the Issuer confirming that the token creation is completed.
 
 KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digitized device id’ = 910, ‘digitized pan expiry’ = 911, ‘digitized fpan masked’ = 912, ‘Token Unique Reference’ = 913, ‘Digitized Token Requestor ID’ = 915, ‘Digitization event type’ = 923 , ‘Digitization event reason code’ = 924.
@@ -293,8 +293,8 @@ KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digi
 
 ---
 
-## **digitization.event.Deleted**
-
+<a id="eventdeleted"></a>
+## digitization.event.Deleted
 Informs the wallet about the removal of a token.
 
 KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digitized device id’ = 910, ‘digitized pan expiry’ = 911, ‘digitized fpan masked’ = 912, ‘Token Unique Reference’ = 913, ‘Digitized Token Requestor ID’ = 915, ‘Digitization event type’ = 923 , ‘Digitization event reason code’ = 924.
@@ -372,8 +372,8 @@ KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digi
 
 ---
 
-## **digitization.event.Deleted_from_device**
-
+<a id="deletedfromdevice"></a>
+## digitization.event.Deleted_from_device
 The account holder deletes their token from the wallet program on their device.
 
 KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digitized device id’ = 910, ‘digitized pan expiry’ = 911, ‘digitized fpan masked’ = 912, ‘Token Unique Reference’ = 913, ‘Digitized Token Requestor ID’ = 915, ‘Digitization event type’ = 923 , ‘Digitization event reason code’ = 924.
@@ -449,8 +449,8 @@ KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digi
 
 ---
 
-## **digitization.event.Stopped**
-
+<a id="stopped"></a>
+## digitization.event.Stopped
 When a token has been stopped.
 
 KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digitized device id’ = 910, ‘digitized pan expiry’ = 911, ‘digitized fpan masked’ = 912, ‘Token Unique Reference’ = 913, ‘Digitized Token Requestor ID’ = 915, ‘Digitization event type’ = 923 , ‘Digitization event reason code’ = 924.
@@ -526,8 +526,8 @@ KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digi
 
 ---
 
-## **digitization.event.Digitized**
-
+<a id="digitized"></a>
+## digitization.event.Digitized
 When a stopped token is reactivated.
 
 KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digitized device id’ = 910, ‘digitized pan expiry’ = 911, ‘digitized fpan masked’ = 912, ‘Token Unique Reference’ = 913, ‘Digitized Token Requestor ID’ = 915, ‘Digitization event type’ = 923 , ‘Digitization event reason code’ = 924.
@@ -603,8 +603,8 @@ KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digi
 
 ---
 
-## **digitization.event.Digitization_Exception**
-
+<a id="exception"></a>
+## digitization.event.Digitization_Exception
 When the activation code retries have been exceeded, an expired activation code was used, an invalid activation code was used, or an incorrect activation code has been entered
 
 KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digitized device id’ = 910, ‘digitized pan expiry’ = 911, ‘digitized fpan masked’ = 912, ‘Token Unique Reference’ = 913, ‘Digitized Token Requestor ID’ = 915, ‘Digitization event type’ = 923 , ‘Digitization event reason code’ = 924.
@@ -680,8 +680,8 @@ KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digi
 
 ---
 
-## **digitization.event.Replacement**
-
+<a id="replacement"></a>
+## digitization.event.Replacement
 Token is re-digitized or replaced (e.g. token expiry date update) and can only be done via the device.
 
 KLV data – ‘digitized pan’ = 254, ‘digitized wallet id’ = 255, ‘digitized device id’ = 910, ‘digitized pan expiry’ = 911, ‘digitized fpan masked’ = 912, ‘Token Unique Reference’ = 913, ‘Digitized Token Requestor ID’ = 915, ‘Digitization event type’ = 923 , ‘Digitization event reason code’ = 924.
