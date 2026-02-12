@@ -5,28 +5,60 @@ hidden: false
 metadata:
   robots: index
 ---
-<p>A report which provides detailed information about cards that were tokenised to a Google Pay wallet within a given month. Client’s can use the data from this report to fulfil their Google Pay reporting requirements.</p>
-<p>The report includes the following details:</p>
-<ul>
-<li><strong>FirstLastName </strong>– Customer’s first and last name</li>
-<li><strong>BillingPostalCode </strong>– Customer’s postal code</li>
-<li><strong>BillingStreetAddress </strong>– Customer’s postal street address</li>
-<li><strong>BillingCountryCode</strong> – Customer’s postal country</li>
-<li><strong>BillingCity</strong> – Customer’s postal city</li>
-<li><strong>BillingAdministrativeArea</strong> – Customer’s postal region or state</li>
-<li><strong>FullPhoneNumber </strong>– Customer’s contact number</li>
-<li><strong>OpaquePaymentCard</strong> – Google Pay tokenised card number</li>
-<li><strong>FundingPrimaryAccountNumber </strong>– Voucher number/Customer’s card number</li>
-<li><strong>ExpirationDate </strong>– Expiry date of <strong>OpaquePaymentCard</strong></li>
-</ul>
-<p> </p>
+<!-- MIGRATION_METADATA
+Migrated-From: https://developer.sprint.paymentology.com/companion-api/reports/google-pay-monthly-report/
+Source-Slug: google-pay-monthly-report
+Migrated-On: 2026-02-12T21:32:19+00:00
+Migrated-By: wp-readme-migration
+-->
 
-<h2>Report format</h2>
+A report which provides detailed information about cards that were tokenised to a Google Pay wallet within a given month. Client’s can use the data from this report to fulfil their Google Pay reporting requirements.
 
-<h2>Report time frame</h2>
+The report includes the following details:
 
-<h2>Report sample</h2>
-<p>**CampaignName_googlepay_monthlyreport_MMM-YYYY-.png IMAGE GOES HERE.**</p>
+- **FirstLastName **– Customer’s first and last name
 
-<p><a href="https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNamegooglepaymonthlyreportMMM-YYYY.csv">CampaignNamegooglepaymonthlyreportMMM YYYY.csv</a></p>
+- **BillingPostalCode **– Customer’s postal code
 
+- **BillingStreetAddress **– Customer’s postal street address
+
+- **BillingCountryCode** – Customer’s postal country
+
+- **BillingCity** – Customer’s postal city
+
+- **BillingAdministrativeArea** – Customer’s postal region or state
+
+- **FullPhoneNumber **– Customer’s contact number
+
+- **OpaquePaymentCard** – Google Pay tokenised card number
+
+- **FundingPrimaryAccountNumber **– Voucher number/Customer’s card number
+
+- **ExpirationDate **– Expiry date of **OpaquePaymentCard**
+
+
+## Report format
+
+
+| FORMAT | FILE NAME | FREQUENCY | ACCESSIBILITY |
+| --- | --- | --- | --- |
+| CSV | [CampaignName]googlepaymonthlyreport[MMM YYYY].csv | Monthly | HTTP get request and email. |
+
+
+## Report time frame
+
+
+| UTC +2 | UTC +7 | REMARKS |
+| --- | --- | --- |
+| 12:00 | 17:00 | The report is generated on day 1 of every month, the timeframe of all the captured data in this report is from 00:00:00 day 1 of previous month to 11:59:59 of last day of previous month in:<br>• System time zone UTC+2<br>• Asia client time zone UTC+7. |
+
+
+## Report sample
+
+
+> 📘 Info
+>
+> Note: file will automatically download upon clicking link
+
+
+[CampaignNamegooglepaymonthlyreportMMM YYYY.csv](../../../assets/CampaignNamegooglepaymonthlyreportMMM-YYYY.csv)
