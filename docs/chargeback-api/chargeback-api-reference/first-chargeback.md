@@ -5,10 +5,26 @@ hidden: false
 metadata:
   robots: index
 ---
-<p>After successfully connecting to the API Proxy, you can send the <b><i>fields/parameters</i></b> for the API request (as specified below) and receive a <b><i>response</i></b>.</p>
-<p>A successfully submitted First Chargeback will remain in a “pending status” (no more than 72 hours) on issuers’ behalf to allow merchants to respond and resolve the inquiry.</p>
+<!-- MIGRATION_METADATA
+Migrated-From: https://developer.sprint.paymentology.com/chargeback-api/chargeback-api-reference/first-chargeback/
+Source-Slug: first-chargeback
+Migrated-On: 2026-02-12T21:15:02+00:00
+Migrated-By: wp-readme-migration
+-->
 
-<h2>Request/response fields and samples</h2>
+After successfully connecting to the API Proxy, you can send the ***fields/parameters*** for the API request (as specified below) and receive a ***response***.
+
+A successfully submitted First Chargeback will remain in a “pending status” (no more than 72 hours) on issuers’ behalf to allow merchants to respond and resolve the inquiry.
+
+
+## Request/response fields and samples
+
+
+#### Path parameters
+
+| Parameter | type | Limits | required | Description |
+| --- | --- | --- | --- | --- |
+
 
 ```json
 {
@@ -21,44 +37,41 @@ metadata:
     "reasonCode": "4834",
     "supportingDocument": "BASE64_ENCODED_FILE_HERE"
 }
-
-```,```json
-{
-    "chargebackId": "CHARGEBACK id",
-    "claimID": "CLAIM_ID"
-}
-
 ```
+
 
 #### Response schema
 
-| Field | type | Description |
-|---|---|---|
-| chargebackId | String | <p>Chargeback id</p> |
-| claimID | String | <p>Claim id</p> |
+| Parameter | type | Description |
+| --- | --- | --- |
+| chargebackId | String | Chargeback ID |
+| claimID | String | Claim ID |
+
 
 ```json
 {
-    "trackingNumber": "tRaCkInGnUmBeR",
-    "transactionId": "tRaNsAcTiOnId",
-    "authnumber": "AuthNumber",
-    "systemDate": "2021-08-24 00:00:00",
-    "settlementAmount": 402.76,
-    "chargebackAmount": 5.74,
-    "reasonCode": "4834",
-    "supportingDocument": "BASE64_ENCODED_FILE_HERE"
-}
-
-```,```json
-{
-    "chargebackId": "CHARGEBACK id",
+    "chargebackId": "CHARGEBACK ID",
     "claimID": "CLAIM_ID"
 }
-
 ```
 
-<h4>Other response codes</h4>
-<p>Further response codes and details can be found <a href="https://developer.sprint.paymentology.com/chargeback-api/response-codes/">here</a>.</p>
 
-<h2>Additional info</h2>
+#### Other response codes
 
+Further response codes and details can be found [here](../response-codes).
+
+
+## Additional info
+
+
+|  |  |
+| --- | --- |
+| HTTP Method | POST |
+| URL+URI (SIT/UAT) | https://chargebacks.test.tutuka.cloud/client/chargebacks |
+| HTTP Headers | Content-Type text/plain |
+| Query String Parameters | ---- |
+| Format | JSON |
+| Authentication | Bearer BEARER_TOKEN |
+| Successful Response Code | 200 |
+| Error Response Code | 500 |
+| Validation Error Response Code | 422 |
