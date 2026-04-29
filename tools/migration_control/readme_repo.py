@@ -16,15 +16,27 @@ HTML_LINK_RE = re.compile(r"""href=["']([^"']+)["']""", re.IGNORECASE)
 HTML_IMAGE_RE = re.compile(r"""src=["']([^"']+)["']""", re.IGNORECASE)
 ORDER_RE = re.compile(r"^\s*-\s+(.+?)\s*$")
 LEGACY_HOST = "developer.sprint.paymentology.com"
+INTERNAL_DOC_DIRS = {"superpowers"}
 
 
 def scan_readme_repo(repo_root: Path) -> ReadMeInventory:
     docs_root = repo_root / "docs"
-    pages = tuple(_scan_page(repo_root, path) for path in sorted(docs_root.rglob("*.md")))
-    assets = tuple(sorted(relative_posix(path, repo_root) for path in (repo_root / "assets").rglob("*") if path.is_file()))
+    pages = tuple(
+        _scan_page(repo_root, path)
+        for path in sorted(docs_root.rglob("*.md"))
+        if _is_readme_doc(path, docs_root)
+    )
+    assets = tuple(
+        sorted(relative_posix(path, repo_root) for path in (repo_root / "assets").rglob("*") if path.is_file())
+    )
     order_entries = tuple(_scan_order_entries(docs_root))
 
     return ReadMeInventory(pages=pages, assets=assets, order_entries=order_entries)
+
+
+def _is_readme_doc(path: Path, docs_root: Path) -> bool:
+    rel_path = path.relative_to(docs_root)
+    return not (rel_path.parts and rel_path.parts[0] in INTERNAL_DOC_DIRS)
 
 
 def _scan_page(repo_root: Path, path: Path) -> ReadMePage:

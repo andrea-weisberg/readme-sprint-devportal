@@ -10,10 +10,13 @@ class ReadMeRepoScannerTests(TestCase):
         with TemporaryDirectory() as tmp:
             root = Path(tmp)
             docs = root / "docs" / "profile-api-reference"
+            internal_docs = root / "docs" / "superpowers" / "plans"
             docs.mkdir(parents=True)
+            internal_docs.mkdir(parents=True)
             (root / "assets").mkdir()
             (root / "assets" / "sample.csv").write_text("a,b\n", encoding="utf-8")
             (root / "docs" / "_order.yaml").write_text("- profile-api-reference\n", encoding="utf-8")
+            (internal_docs / "internal-plan.md").write_text("# Internal Plan\n", encoding="utf-8")
             (docs / "activate.md").write_text(
                 "---\n"
                 "title: Activate Card\n"
