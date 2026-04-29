@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from tools.migration_control.matching import build_parity_map
+from tools.migration_control.matching import build_parity_map, mapped_wordpress_paths
 from tools.migration_control.models import ReadMeInventory, ReadMePage, WordPressExport, WordPressPage
 
 
@@ -132,3 +132,44 @@ class MatchingTests(TestCase):
         self.assertEqual(rows[0].migration_status, "matched")
         self.assertEqual(rows[0].matched_path, "docs/card-api/carddetail.md")
         self.assertEqual(rows[0].match_kind, "url_leaf")
+
+    def test_build_parity_map_prefers_permalink_leaf_over_stale_slug(self):
+        export = WordPressExport(
+            pages=(
+                wp_page("1", "Legacy Label", "activate", "https://developer.sprint.paymentology.com/carddetail/"),
+            ),
+            attachments=(),
+        )
+        inventory = ReadMeInventory(
+            pages=(
+                readme_page("docs/profile-api-reference/activate.md", "Activate", "activate"),
+                readme_page("docs/card-api/carddetail.md", "Card Detail", "card-detail"),
+            ),
+            assets=(),
+            order_entries=(),
+        )
+
+        rows = build_parity_map(export, inventory, {})
+
+        self.assertEqual(rows[0].matched_path, "docs/card-api/carddetail.md")
+        self.assertEqual(rows[0].match_kind, "url_leaf")
+
+    def test_mapped_wordpress_paths_omits_stale_slug_aliases(self):
+        export = WordPressExport(
+            pages=(
+                wp_page("1", "Legacy Label", "activate", "https://developer.sprint.paymentology.com/carddetail/"),
+            ),
+            attachments=(),
+        )
+        inventory = ReadMeInventory(
+            pages=(
+                readme_page("docs/card-api/carddetail.md", "Card Detail", "card-detail"),
+            ),
+            assets=(),
+            order_entries=(),
+        )
+        rows = build_parity_map(export, inventory, {})
+
+        mapped = mapped_wordpress_paths(rows)
+
+        self.assertEqual(mapped, {"carddetail": "docs/card-api/carddetail.md"})

@@ -81,7 +81,7 @@ def mapped_wordpress_paths(rows: Iterable[ParityRow]) -> Dict[str, str]:
         wp_slug = normalize_path(row.wp_slug)
         if wp_path:
             mapped[wp_path] = row.matched_path
-        if wp_slug:
+        if wp_slug and wp_slug == _leaf(wp_path):
             mapped[wp_slug] = row.matched_path
 
     return mapped
@@ -135,20 +135,18 @@ def _find_matches(
 def _wordpress_candidates(page: WordPressPage) -> Tuple[Tuple[str, float, str], ...]:
     url_path = normalize_path(page.url)
     slug = normalize_path(page.slug)
-    leaf = PurePosixPath(url_path).name if url_path else ""
+    leaf = _leaf(url_path)
     title = slugify(page.title)
 
     candidates = [
         ("url_path", 1.0, url_path),
-        ("slug", 0.9, slug),
+        ("url_leaf", 0.85, leaf),
     ]
 
-    candidates.extend(
-        [
-            ("url_leaf", 0.85, leaf),
-            ("title", 0.75, title),
-        ]
-    )
+    if slug == leaf:
+        candidates.append(("slug", 0.9, slug))
+
+    candidates.append(("title", 0.75, title))
     return tuple(candidates)
 
 
@@ -157,8 +155,12 @@ def _is_confident_match(page: WordPressPage, match_kind: str, confidence: float)
         return True
 
     url_path = normalize_path(page.url)
-    leaf = PurePosixPath(url_path).name if url_path else ""
+    leaf = _leaf(url_path)
     return match_kind == "title" and leaf == slugify(page.title) and leaf != normalize_path(page.slug)
+
+
+def _leaf(path: str) -> str:
+    return PurePosixPath(path).name if path else ""
 
 
 def _row(
