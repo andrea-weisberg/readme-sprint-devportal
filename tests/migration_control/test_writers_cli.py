@@ -47,11 +47,19 @@ class WritersCliTests(TestCase):
 
             self.assertIn("Parsed WordPress: 1 published pages, 1 non-public pages, 1 attachments", result.stdout)
             self.assertTrue((output_dir / "summary.md").exists())
+            self.assertTrue((output_dir / "wordpress_inventory.csv").exists())
+            self.assertTrue((output_dir / "readme_inventory.csv").exists())
             self.assertTrue((output_dir / "parity_map.csv").exists())
             self.assertTrue((output_dir / "risk_queue.csv").exists())
 
+            with (output_dir / "wordpress_inventory.csv").open(newline="", encoding="utf-8") as handle:
+                wordpress_rows = list(csv.DictReader(handle))
+            with (output_dir / "readme_inventory.csv").open(newline="", encoding="utf-8") as handle:
+                readme_rows = list(csv.DictReader(handle))
             with (output_dir / "parity_map.csv").open(newline="", encoding="utf-8") as handle:
-                rows = list(csv.DictReader(handle))
+                parity_rows = list(csv.DictReader(handle))
 
-        self.assertEqual(rows[0]["wp_title"], "Activate Card")
-        self.assertEqual(rows[0]["migration_status"], "matched")
+        self.assertEqual(wordpress_rows[0]["title"], "Activate Card")
+        self.assertEqual(readme_rows[0]["path"], "docs/profile-api-reference/activate.md")
+        self.assertEqual(parity_rows[0]["wp_title"], "Activate Card")
+        self.assertEqual(parity_rows[0]["migration_status"], "matched")
