@@ -113,14 +113,21 @@ def _find_matches(
     page: WordPressPage,
     indexes: Mapping[str, CandidateIndex],
 ) -> Tuple[str, float, Tuple[ReadMePage, ...]]:
+    duplicate_match: Tuple[str, float, Tuple[ReadMePage, ...]] = ("", 0.0, ())
+
     for kind, confidence, key in _wordpress_candidates(page):
         matches = tuple(indexes[kind].get(key, ()))
-        if matches:
+        if len(matches) == 1:
             title_key = slugify(page.title)
             title_matches = tuple(indexes["title"].get(title_key, ()))
             if kind == "url_leaf" and key == title_key and title_matches == matches:
                 return "title", 0.75, title_matches
             return kind, confidence, matches
+        if len(matches) > 1 and not duplicate_match[2]:
+            duplicate_match = (kind, confidence, matches)
+
+    if duplicate_match[2]:
+        return duplicate_match
 
     return "", 0.0, ()
 

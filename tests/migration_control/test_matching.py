@@ -109,3 +109,26 @@ class MatchingTests(TestCase):
         self.assertEqual(rows[0].matched_path, "docs/card-api/carddetail.md")
         self.assertEqual(rows[0].match_kind, "url_leaf")
         self.assertEqual(rows[0].match_confidence, 0.85)
+
+    def test_build_parity_map_uses_later_unique_match_when_slug_duplicates(self):
+        export = WordPressExport(
+            pages=(
+                wp_page("1", "Legacy Label", "activate", "https://developer.sprint.paymentology.com/carddetail/"),
+            ),
+            attachments=(),
+        )
+        inventory = ReadMeInventory(
+            pages=(
+                readme_page("docs/profile-api-reference/activate.md", "Activate", "activate"),
+                readme_page("docs/card-api/activate.md", "Activate", "activate"),
+                readme_page("docs/card-api/carddetail.md", "Card Detail", "card-detail"),
+            ),
+            assets=(),
+            order_entries=(),
+        )
+
+        rows = build_parity_map(export, inventory, {})
+
+        self.assertEqual(rows[0].migration_status, "matched")
+        self.assertEqual(rows[0].matched_path, "docs/card-api/carddetail.md")
+        self.assertEqual(rows[0].match_kind, "url_leaf")
