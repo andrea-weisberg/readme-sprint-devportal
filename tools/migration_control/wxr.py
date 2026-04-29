@@ -17,7 +17,7 @@ NS = {
     "wp": "http://wordpress.org/export/1.2/",
 }
 
-LINK_RE = re.compile(r"""(?:href|src)=["']([^"']+)["']""", re.IGNORECASE)
+LINK_RE = re.compile(r"""(?:href|src)\s*=\s*["']([^"']+)["']""", re.IGNORECASE)
 TAG_RE = re.compile(r"<[^>]+>")
 
 
@@ -37,7 +37,7 @@ def parse_wxr(xml_path: Path) -> WordPressExport:
 
     return WordPressExport(
         pages=tuple(sorted(pages, key=lambda page: (page.menu_order, page.title.lower(), page.source_id))),
-        attachments=tuple(sorted(attachments, key=lambda attachment: attachment.url.lower())),
+        attachments=tuple(sorted(attachments, key=lambda attachment: attachment.url)),
     )
 
 
