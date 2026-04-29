@@ -20,7 +20,10 @@ def write_reports(
 ) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     _write_wordpress_inventory(output_dir / "wordpress_inventory.csv", wordpress_export)
+    _write_wordpress_attachments(output_dir / "wordpress_attachments.csv", wordpress_export)
     _write_readme_inventory(output_dir / "readme_inventory.csv", readme_inventory)
+    _write_readme_assets(output_dir / "readme_assets.csv", readme_inventory)
+    _write_readme_order_entries(output_dir / "readme_order_entries.csv", readme_inventory)
     _write_dataclass_csv(output_dir / "parity_map.csv", parity_rows, ParityRow)
     _write_dataclass_csv(output_dir / "risk_queue.csv", risks, RiskItem)
     _write_summary(output_dir / "summary.md", wordpress_export, readme_inventory, parity_rows, risks)
@@ -37,7 +40,9 @@ def _write_wordpress_inventory(path: Path, export: WordPressExport) -> None:
         "menu_order",
         "content_chars",
         "acf_key_count",
+        "acf_keys",
         "link_count",
+        "links",
     ]
     rows = [
         {
@@ -50,9 +55,26 @@ def _write_wordpress_inventory(path: Path, export: WordPressExport) -> None:
             "menu_order": page.menu_order,
             "content_chars": page.content_chars,
             "acf_key_count": len(page.acf_keys),
+            "acf_keys": _join_values(page.acf_keys),
             "link_count": len(page.links),
+            "links": _join_values(page.links),
         }
         for page in export.pages
+    ]
+    _write_csv(path, fieldnames, rows)
+
+
+def _write_wordpress_attachments(path: Path, export: WordPressExport) -> None:
+    fieldnames = ["source_id", "title", "url", "filename", "mime_type"]
+    rows = [
+        {
+            "source_id": attachment.source_id,
+            "title": attachment.title,
+            "url": attachment.url,
+            "filename": attachment.filename,
+            "mime_type": attachment.mime_type,
+        }
+        for attachment in export.attachments
     ]
     _write_csv(path, fieldnames, rows)
 
@@ -64,8 +86,11 @@ def _write_readme_inventory(path: Path, inventory: ReadMeInventory) -> None:
         "slug",
         "content_chars",
         "link_count",
+        "links",
         "image_count",
+        "images",
         "legacy_wordpress_link_count",
+        "legacy_wordpress_links",
     ]
     rows = [
         {
@@ -74,12 +99,23 @@ def _write_readme_inventory(path: Path, inventory: ReadMeInventory) -> None:
             "slug": page.slug,
             "content_chars": page.content_chars,
             "link_count": len(page.links),
+            "links": _join_values(page.links),
             "image_count": len(page.images),
+            "images": _join_values(page.images),
             "legacy_wordpress_link_count": len(page.legacy_wordpress_links),
+            "legacy_wordpress_links": _join_values(page.legacy_wordpress_links),
         }
         for page in inventory.pages
     ]
     _write_csv(path, fieldnames, rows)
+
+
+def _write_readme_assets(path: Path, inventory: ReadMeInventory) -> None:
+    _write_csv(path, ["path"], [{"path": asset} for asset in inventory.assets])
+
+
+def _write_readme_order_entries(path: Path, inventory: ReadMeInventory) -> None:
+    _write_csv(path, ["entry"], [{"entry": entry} for entry in inventory.order_entries])
 
 
 def _write_dataclass_csv(path: Path, rows: Sequence[object], row_type: Type[Any]) -> None:
@@ -135,10 +171,17 @@ def _write_summary(
             "## Generated Files",
             "",
             "- `wordpress_inventory.csv`",
+            "- `wordpress_attachments.csv`",
             "- `readme_inventory.csv`",
+            "- `readme_assets.csv`",
+            "- `readme_order_entries.csv`",
             "- `parity_map.csv`",
             "- `risk_queue.csv`",
         ]
     )
 
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def _join_values(values: Sequence[str]) -> str:
+    return " | ".join(values)
