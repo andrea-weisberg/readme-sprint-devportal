@@ -116,14 +116,14 @@ def _readme_page_risks(
                     recommended_action="Map the target page or keep the link only with an explicit launch waiver.",
                 )
 
-        for image in page.images:
-            if _is_local_asset(image) and not resolve_local_target(repo_root, page.path, image).exists():
+        for asset in _local_asset_targets(page):
+            if not resolve_local_target(repo_root, page.path, asset).exists():
                 yield RiskItem(
                     priority=0,
                     category="missing_asset",
                     file_or_source=page.path,
                     message="Referenced local asset is missing from the repository.",
-                    evidence=image,
+                    evidence=asset,
                     recommended_action="Restore the asset or update the page to a valid asset path.",
                 )
 
@@ -183,6 +183,10 @@ def _is_local_asset(target: str) -> bool:
         return False
     suffix = Path(target.split("#", 1)[0].split("?", 1)[0]).suffix.lower()
     return suffix in ASSET_EXTENSIONS
+
+
+def _local_asset_targets(page: ReadMePage) -> Tuple[str, ...]:
+    return tuple(target for target in (*page.images, *page.links) if _is_local_asset(target))
 
 
 def _dedupe(risks: Iterable[RiskItem]) -> List[RiskItem]:

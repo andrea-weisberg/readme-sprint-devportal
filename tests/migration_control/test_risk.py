@@ -51,7 +51,10 @@ class RiskQueueTests(TestCase):
                     page(
                         "docs/profile-api-reference/activate.md",
                         text="ICON_URL_1\n```,```xml\nimage.\n",
-                        links=("https://developer.sprint.paymentology.com/missing-target/",),
+                        links=(
+                            "https://developer.sprint.paymentology.com/missing-target/",
+                            "../../assets/missing-form.docx",
+                        ),
                         images=("../../assets/missing.csv",),
                         legacy=("https://developer.sprint.paymentology.com/missing-target/",),
                     ),
@@ -104,3 +107,5 @@ class RiskQueueTests(TestCase):
         self.assertIn("malformed_code_fence", categories)
         self.assertIn("manual_review", categories)
         self.assertTrue(all(risk.priority in {0, 1, 2} for risk in risks))
+        missing_assets = [risk for risk in risks if risk.category == "missing_asset"]
+        self.assertEqual({risk.evidence for risk in missing_assets}, {"../../assets/missing.csv", "../../assets/missing-form.docx"})
