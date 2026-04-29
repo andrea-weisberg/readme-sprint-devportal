@@ -34,7 +34,7 @@ WXR_FIXTURE = """<?xml version="1.0" encoding="UTF-8" ?>
       <wp:status>draft</wp:status>
       <wp:post_type>page</wp:post_type>
       <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
+      <wp:menu_order>9</wp:menu_order>
     </item>
     <item>
       <title>Dispute Form</title>
