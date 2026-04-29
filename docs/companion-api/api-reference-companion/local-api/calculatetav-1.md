@@ -53,7 +53,9 @@ metadata:
     </params>
 </methodCall>
 
-```,```null
+```
+
+```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
   <params  />
@@ -129,7 +131,9 @@ metadata:
     </params>
 </methodCall>
 
-```,```null
+```
+
+```null
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
   <params  />

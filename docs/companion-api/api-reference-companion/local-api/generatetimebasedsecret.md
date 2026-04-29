@@ -83,7 +83,9 @@ metadata:
     </params>
 </methodCall>
 
-```,```null
+```
+
+```null
 <methodResponse>
     <params  />
         <param  />
@@ -182,7 +184,9 @@ metadata:
     </params>
 </methodCall>
 
-```,```null
+```
+
+```null
 <methodResponse>
     <params  />
         <param  />

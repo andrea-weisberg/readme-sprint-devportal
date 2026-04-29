@@ -118,7 +118,9 @@ metadata:
   </params>
 </methodCall>
 
-```,```java
+```
+
+```java
 package com.tutuka.cipher;
 
 import org.apache.commons.codec.binary.Hex;
@@ -223,7 +225,9 @@ public class PINEncryptExample {
 
 }
 
-```,```xml
+```
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
   <params  />
@@ -347,7 +351,9 @@ public class PINEncryptExample {
   </params>
 </methodCall>
 
-```,```java
+```
+
+```java
 package com.tutuka.cipher;
 
 import org.apache.commons.codec.binary.Hex;
@@ -452,7 +458,9 @@ public class PINEncryptExample {
 
 }
 
-```,```xml
+```
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
   <params  />
@@ -568,7 +576,9 @@ public class PINEncryptExample {
   </params>
 </methodCall>
 
-```,```java
+```
+
+```java
 package com.tutuka.cipher;
 
 import org.apache.commons.codec.binary.Hex;
@@ -673,7 +683,9 @@ public class PINEncryptExample {
 
 }
 
-```,```xml
+```
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
   <params  />

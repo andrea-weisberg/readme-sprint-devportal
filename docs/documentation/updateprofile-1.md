@@ -147,4 +147,4 @@ Updates the clients profile
 | message             | String  |                                                  |
 | ProfileUpdated      | String  |                                                  |
 
-[Back to Profile API Reference](https://developer.sprint.paymentology.com/profile-api-reference/)
+[Back to Profile API Reference](../profile-api-reference)

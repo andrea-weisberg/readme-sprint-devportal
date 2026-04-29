@@ -1,6 +1,6 @@
 # Migration Control
 
-This package generates the Phase 1 control reports for migrating `developer.sprint.paymentology.com` from WordPress to ReadMe.
+This package generates and hardens the migration control outputs for moving `developer.sprint.paymentology.com` from WordPress to ReadMe.
 
 ## Run
 
@@ -21,6 +21,19 @@ python3 -m tools.migration_control.cli \
 - `parity_map.csv`: one row per published WordPress page showing the matched ReadMe file, match confidence, migration status, review risk, and notes.
 - `risk_queue.csv`: prioritized launch risks generated from missing pages, duplicate matches, missing must-keep sections, unmapped legacy links, missing assets, unresolved icon tokens, malformed code fences, and the existing manual review report.
 - `summary.md`: human-readable counts for the current run.
+
+## Phase 2 Hardening
+
+Apply the conservative mechanical hardening pass after generating fresh reports:
+
+```bash
+python3 -m tools.migration_control.hardening \
+  --repo-root "/Users/andreaweisberg/Desktop/Dev Portal/.tmp-readme-sprint-devportal-v1.0_codex" \
+  --risk-queue "/Users/andreaweisberg/Desktop/Dev Portal/.tmp-readme-sprint-devportal-v1.0_codex/review/migration-control/risk_queue.csv" \
+  --parity-map "/Users/andreaweisberg/Desktop/Dev Portal/.tmp-readme-sprint-devportal-v1.0_codex/review/migration-control/parity_map.csv"
+```
+
+This pass intentionally rewrites only legacy links whose target page is already an exact, high-confidence parity match with no review flag, and it splits malformed adjacent code fences without guessing languages.
 
 ## Priority Meanings
 

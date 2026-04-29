@@ -43,3 +43,4 @@ class ReadMeRepoScannerTests(TestCase):
         self.assertIn("../../assets/sample.csv", page.images)
         self.assertIn("../../assets/missing.png", page.images)
         self.assertEqual(page.legacy_wordpress_links, ("https://developer.sprint.paymentology.com/card-api/",))
+        self.assertEqual(page.migrated_from, "")

@@ -78,4 +78,4 @@ The report includes the following details:
 
 [DailyNegativeBalanceReportOnChargebackQueue_CampaignName_YYYYMMDD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2024/10/DailyNegativeBalanceReportOnChargebackQueue_CampaignName_YYYYMMDD.csv)
 
-[Back to Companion API Reports](https://developer.sprint.paymentology.com/companion-api/reports/)
+[Back to Companion API Reports](.)

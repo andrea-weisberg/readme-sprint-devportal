@@ -19,7 +19,7 @@ If the XML is identical but the checksums do not match, you can use the **Checks
 
 ## How to use XML Generator
 
-1. Go to [XML Poster & Generator](https://developer.sprint.paymentology.com/tools/xml-poster-generator/) under [Tools](https://developer.sprint.paymentology.com/tools/)
+1. Go to [XML Poster & Generator](..xml-poster-generator/) under [Tools](..)
 2. Select the API you want to create an XMLRPC request for (Companion Local API or Remote API)
 3. Select the method you want to create an XMLRPC request for
 4. Fill out the method arguments with your own data
@@ -42,7 +42,7 @@ Check the following:
 
 ## How to use XML Poster
 
-1. Go to [XML Poster & Generator](https://developer.sprint.paymentology.com/tools/xml-poster-generator/) under [Tools](https://developer.sprint.paymentology.com/tools/)
+1. Go to [XML Poster & Generator](..xml-poster-generator/) under [Tools](..)
 2. Choose the target API
 3. Paste your XML request
 4. Click on **Submit**

@@ -259,7 +259,7 @@ Different card schemes have different clearing cycles depending on the region/co
 
 The reports linked below assist client’s with settlement reconciliation.
 
-* [summary settlement report](https://developer.sprint.paymentology.com/companion-api/reports/summary-settlement-report/)
+* [summary settlement report](reports/summary-settlement-report)
 * [Detailed settlement report](https://developer.sprint.paymentology.com/companion-api/reports/detailed-settlement-report/)
 
 ***
@@ -279,7 +279,7 @@ Revenue is the income earned from Forex gains and interchange.
 
 The report linked below assists client’s with revenue reconciliation and reporting:
 
-* [Forex gains report](https://developer.sprint.paymentology.com/companion-api/reports/forex-gains-report/)
+* [Forex gains report](reports/forex-gains-report)
 
 # Adjustment Handling
 

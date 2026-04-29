@@ -27,7 +27,7 @@ Things to check:
 
 ## How to use SimPOS
 
-1. Go to [SimPOS](https://developer.sprint.paymentology.com/tools/simpos/) under [Tools](https://developer.sprint.paymentology.com/tools/)
+1. Go to [SimPOS](.) under [Tools](..)
 2. Click on the **Web** tab
 3. Enter the card number, expiry date and CVV for the test card that was created using `CreateLinkedCard` method on the **local API**
 4. Enter a random amount for the test transaction
@@ -35,4 +35,4 @@ Things to check:
 6. Click on **Swipe** button
 7. Wait for **Transaction result pop-up** which will show various response codes. Refer to the full list of response codes on the API documentation page.
 
-You can find a list of SimPOS Response codes [here](https://developer.sprint.paymentology.com/tools/simpos/simpos-result-codes/).
+You can find a list of SimPOS Response codes [here](simpos-result-codes).

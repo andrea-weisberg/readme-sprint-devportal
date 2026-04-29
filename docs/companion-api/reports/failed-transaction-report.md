@@ -39,7 +39,7 @@ Version 1 includes the following details:
 * **MCC** – the merchant category code.
 * **POS Entry mode** – indicates how the transaction was captured (capture Mode). Possible values include: ECOM (Ecommerce), NFC (Near Field Communication), MAG (Magnetic stripe), MAN (Manually), EMV (EMV chip).
 * **Transaction Internal Code** – this is a code that gives you the reason for transaction declines. List of codes can be downloaded [here](https://developer.sprint.paymentology.com/wp-content/uploads/2021/04/Failed-transaction-report-code-descriptions.xlsx)
-* **Digitized Wallet id** – the 3 digit numeric code that identifies the Xpay App. Find a list of the Wallet IDs [here](https://developer.sprint.paymentology.com/companion-api/tokenization2/token-lifecycle-management/#WID).
+* **Digitized Wallet id** – the 3 digit numeric code that identifies the Xpay App. Find a list of the Wallet IDs [here](../tokenization2/token-lifecycle-management#WID).
 
 <DeclinedNavyBox />
 
@@ -73,7 +73,7 @@ Version 2 includes the following details:
   * In most cases, the provided TransactionID will be different from the FailedTransactionID, as it’s a reference to the failed record. It’s usually 12-16 digits.
 * **FailedTransactionVoucherValue** – the voucher value at the point the transaction failed. Voucher value = Voucher Load value – (Already settled amount + Authorised amount).
 * **EntryMode** – indicates how the transaction was captured (capture Mode). Possible values include: ECOM (Ecommerce), NFC (Near Field Communication), MAG (Magnetic stripe), MAN (Manually), EMV (EMV chip).
-* **DigitizedWalletID** – the 3 digit numeric code that identifies the Xpay App. Find a list of the Wallet IDs [here](https://developer.sprint.paymentology.com/companion-api/tokenization2/token-lifecycle-management/#WID).
+* **DigitizedWalletID** – the 3 digit numeric code that identifies the Xpay App. Find a list of the Wallet IDs [here](../tokenization2/token-lifecycle-management#WID).
 * **MerchantNo** – the unique number used to identify the merchant.
 * **MerchantCategoryCode** – the merchant category code.
 * **PaymentInitiator** – indicates whether a transaction was initiated by the Cardholder (CIT – Cardholder Initiated Transaction) or the Merchant (MIT – Merchant Initiated Transaction)

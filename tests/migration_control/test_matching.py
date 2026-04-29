@@ -110,6 +110,67 @@ class MatchingTests(TestCase):
         self.assertEqual(rows[0].match_kind, "url_leaf")
         self.assertEqual(rows[0].match_confidence, 0.85)
 
+    def test_build_parity_map_uses_migrated_from_url_when_present(self):
+        export = WordPressExport(
+            pages=(
+                wp_page("1", "Remote", "remote", "https://developer.sprint.paymentology.com/companion-api/api-reference/remote/"),
+            ),
+            attachments=(),
+        )
+        inventory = ReadMeInventory(
+            pages=(
+                ReadMePage(
+                    path="docs/companion-api/api-reference-companion/remote/index.md",
+                    title="Remote API",
+                    slug="remote-api",
+                    content_chars=10,
+                    content_text="body",
+                    links=(),
+                    images=(),
+                    legacy_wordpress_links=(),
+                    migrated_from="https://developer.sprint.paymentology.com/companion-api/api-reference/remote/",
+                ),
+            ),
+            assets=(),
+            order_entries=(),
+        )
+
+        rows = build_parity_map(export, inventory, {})
+
+        self.assertEqual(rows[0].migration_status, "matched")
+        self.assertEqual(rows[0].matched_path, "docs/companion-api/api-reference-companion/remote/index.md")
+        self.assertEqual(rows[0].match_kind, "url_path")
+
+    def test_build_parity_map_dedupes_same_page_when_doc_key_matches_migrated_from(self):
+        export = WordPressExport(
+            pages=(
+                wp_page("1", "Tokenization", "tokenization", "https://developer.sprint.paymentology.com/card-api/tokenization/"),
+            ),
+            attachments=(),
+        )
+        inventory = ReadMeInventory(
+            pages=(
+                ReadMePage(
+                    path="docs/card-api/tokenization/index.md",
+                    title="Tokenization",
+                    slug="tokenization",
+                    content_chars=10,
+                    content_text="body",
+                    links=(),
+                    images=(),
+                    legacy_wordpress_links=(),
+                    migrated_from="https://developer.sprint.paymentology.com/card-api/tokenization/",
+                ),
+            ),
+            assets=(),
+            order_entries=(),
+        )
+
+        rows = build_parity_map(export, inventory, {})
+
+        self.assertEqual(rows[0].migration_status, "matched")
+        self.assertEqual(rows[0].matched_path, "docs/card-api/tokenization/index.md")
+
     def test_build_parity_map_uses_later_unique_match_when_slug_duplicates(self):
         export = WordPressExport(
             pages=(

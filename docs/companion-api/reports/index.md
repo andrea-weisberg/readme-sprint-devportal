@@ -30,12 +30,12 @@ metadata:
 You can generate the following reports:
 
 * [Mark-off file](https://developer.sprint.paymentology.com/companion-api/reports/mark-off-file)
-* [Summary settlement report](https://developer.sprint.paymentology.com/companion-api/reports/summary-settlement-report)
+* [Summary settlement report](summary-settlement-report)
 * [Detailed settlement report](https://developer.sprint.paymentology.com/companion-api/reports/detailed-settlement-report)
-* [Forex gains report](https://developer.sprint.paymentology.com/companion-api/reports/forex-gains-report)
-* [Failed transaction report](https://developer.sprint.paymentology.com/companion-api/reports/failed-transaction-report)
-* [Card order report](https://developer.sprint.paymentology.com/companion-api/reports/card-order-report)
-* [Unsettled transactions report](https://developer.sprint.paymentology.com/companion-api/reports/unsettled-transactions-report-2/)
+* [Forex gains report](forex-gains-report)
+* [Failed transaction report](failed-transaction-report)
+* [Card order report](card-order-report)
+* [Unsettled transactions report](unsettled-transactions-report-2)
 * [eCommerce report](https://developer.sprint.paymentology.com/companion-api/reports/ecommerce-report/)
 * [Inactive cards report](https://developer.sprint.paymentology.com/companion-api/reports/inactive-cards-report/)
 * [Authorisation income report](https://developer.sprint.paymentology.com/companion-api/reports/authorisation-income-report/)

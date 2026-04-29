@@ -245,15 +245,15 @@ For Card API, most of the API calls are applicable to both the Physical and Virt
 
 Follow for full [Card API Documentation](https://developer.sprint.paymentology.com/card-api/)
 
-Next, use the following tools to help you with the integration. These will ensure that you have built your Local API requests correctly. [Learn more about our tools.](https://developer.sprint.paymentology.com/tools/)
+Next, use the following tools to help you with the integration. These will ensure that you have built your Local API requests correctly. [Learn more about our tools.](../tools)
 
-* The [Checksum Generator](https://developer.sprint.paymentology.com/tools/checksum-generator/) allows you to calculate the checksum for a transaction based on a terminal password value and the request data. It replicates the same process that happens during authentication. You can use the tool to validate that your own calculated checksum is the same as the one the Paymentology Sprint system generates. The hash algorithm is SHA256 and is configured by Paymentology – please let us know which one you will be using.
+* The [Checksum Generator](../tools/checksum-generator) allows you to calculate the checksum for a transaction based on a terminal password value and the request data. It replicates the same process that happens during authentication. You can use the tool to validate that your own calculated checksum is the same as the one the Paymentology Sprint system generates. The hash algorithm is SHA256 and is configured by Paymentology – please let us know which one you will be using.
 
-* The [XML Generator](https://developer.sprint.paymentology.com/tools/xml-generator/) allows you to generate a valid XML request (including a checksum string) from your request parameters. To ensure compatibility, you can use the tool to confirm if your own generated XML requests, including the checksum, are the same with those that Paymentology generates.
+* The [XML Generator](../tools/xml-generator) allows you to generate a valid XML request (including a checksum string) from your request parameters. To ensure compatibility, you can use the tool to confirm if your own generated XML requests, including the checksum, are the same with those that Paymentology generates.
 
-* The [XML Poster](https://developer.sprint.paymentology.com/tools/xml-poster/) allows you to post XML requests directly to the Paymentology Sprint system. In case there is no other route, you can use the XML Poster to post requests created with the XML Generator to the Paymentology Sprint systems. For example, at the start of your testing, you'll not have a system in place for calling the Companion Card Local API; therefore, you can use this tool to post requests to the API directly—such as when creating your first test card.
+* The [XML Poster](../tools/xml-poster) allows you to post XML requests directly to the Paymentology Sprint system. In case there is no other route, you can use the XML Poster to post requests created with the XML Generator to the Paymentology Sprint systems. For example, at the start of your testing, you'll not have a system in place for calling the Companion Card Local API; therefore, you can use this tool to post requests to the API directly—such as when creating your first test card.
 
-* [SimPOS](https://developer.sprint.paymentology.com/tools/simpos/) is a transaction simulator tool that allows you to simulate remote API transactions. For example: you can use SimPOS to test that the flow of virtual card transactions within the Companion Card API is working properly.
+* [SimPOS](../tools/simpos) is a transaction simulator tool that allows you to simulate remote API transactions. For example: you can use SimPOS to test that the flow of virtual card transactions within the Companion Card API is working properly.
 
 ## 5. Download the test scenarios for your API
 

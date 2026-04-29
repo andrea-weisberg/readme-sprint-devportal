@@ -15,6 +15,7 @@ MARKDOWN_IMAGE_RE = re.compile(r"!\[[^\]]*\]\(([^)]+)\)")
 HTML_LINK_RE = re.compile(r"""href=["']([^"']+)["']""", re.IGNORECASE)
 HTML_IMAGE_RE = re.compile(r"""src=["']([^"']+)["']""", re.IGNORECASE)
 ORDER_RE = re.compile(r"^\s*-\s+(.+?)\s*$")
+MIGRATED_FROM_RE = re.compile(r"^\s*Migrated-From:\s*(\S.*?)\s*$", re.MULTILINE)
 LEGACY_HOST = "developer.sprint.paymentology.com"
 INTERNAL_DOC_DIRS = {"superpowers"}
 
@@ -60,6 +61,7 @@ def _scan_page(repo_root: Path, path: Path) -> ReadMePage:
         links=links,
         images=images,
         legacy_wordpress_links=legacy_links,
+        migrated_from=_migrated_from(text),
     )
 
 
@@ -100,6 +102,13 @@ def _clean_targets(targets: List[str]) -> List[str]:
         if value:
             cleaned.append(value)
     return cleaned
+
+
+def _migrated_from(text: str) -> str:
+    match = MIGRATED_FROM_RE.search(text)
+    if not match:
+        return ""
+    return clean_text(match.group(1))
 
 
 def _scan_order_entries(docs_root: Path) -> List[str]:

@@ -39,9 +39,9 @@ The Digital First card provides a simple and easy way for cardholders to manage 
 
 ### 3. Tokenization
 
-[Tokenization](https://developer.sprint.paymentology.com/companion-api/tokenization2/) is the process of substituting the card’s sensitive data, such as an account number, with non-sensitive, surrogate data, called a token. The PAN is usually replaced with a unique string of numbers that acts as a secure reference to the card.
+[Tokenization](../tokenization2) is the process of substituting the card’s sensitive data, such as an account number, with non-sensitive, surrogate data, called a token. The PAN is usually replaced with a unique string of numbers that acts as a secure reference to the card.
 
-Paymentology Sprint’s existing integration with MDES (Mastercard Digital Enablement Service) and [VTS](https://developer.sprint.paymentology.com/companion-api/tokenization2/visa-token-provisioning/) (Visa Token Service), both of which offer the infrastructure for generating and managing tokens, allows for instant tokenization of the Digital First cards once enrolment is complete.
+Paymentology Sprint’s existing integration with MDES (Mastercard Digital Enablement Service) and [VTS](../tokenization2/visa-token-provisioning) (Visa Token Service), both of which offer the infrastructure for generating and managing tokens, allows for instant tokenization of the Digital First cards once enrolment is complete.
 
 Paymentology has also partnered with Upaid Systems Ltd, a provider of centralized mobile payment processing platforms, to provide an MCBP (Mastercard Cloud-Based Payments) SDK for markets with no XPay presence. This allows customers to make the most of Paymentology Sprint’s tokenization technology. Customers can also manage tokens using Paymentology Sprint’s flexible APIs.
 
@@ -55,7 +55,7 @@ Paymentology Sprint’s Digital First card program offers the following benefits
 
 ## How to Issue a Digital First Card
 
-Digital First cards are issued just like virtual cards. You can use the Companion API to create a Virtual Card Number (VCN), which you can link to the unique customer reference number, as described [here](https://developer.sprint.paymentology.com/companion-api/issue-cards/). 
+Digital First cards are issued just like virtual cards. You can use the Companion API to create a Virtual Card Number (VCN), which you can link to the unique customer reference number, as described [here](.). 
 
 To print it later, you can follow the steps below:
 

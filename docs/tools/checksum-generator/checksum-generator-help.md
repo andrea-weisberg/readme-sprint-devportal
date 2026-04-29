@@ -36,7 +36,7 @@ Status100123ref4555612320170223T12:00:00
 
 ## How to use Checksum Generator
 
-1. Go to [Checksum Generator](https://developer.sprint.paymentology.com/tools/checksum-generator/) under [Tools](https://developer.sprint.paymentology.com/tools/)
+1. Go to [Checksum Generator](.) under [Tools](..)
 2. Enter your terminal password in the “Private Key” field
 3. Enter the request data in the “String to hash” field
 4. Click “Submit”

@@ -15,7 +15,7 @@ The process of enabling payments through tokens involves a number of steps.
 
 Let’s talk about them.
 
-**step 1:** The cardholder initiates the request for a token via push provisioning or manual provisioning. You can learn more about the two provisioning methods [here](https://developer.sprint.paymentology.com/companion-api/tokenization2/token-provisioning/).  
+**step 1:** The cardholder initiates the request for a token via push provisioning or manual provisioning. You can learn more about the two provisioning methods [here](token-provisioning).  
 **step 2:** The payment service provider (such as a digital wallet or an online retailer) requests a token from the card network.  
 **step 3:** The card network initiates the token approval process and transfers the requested information to Paymentology for verification checks.  
 **step 4:** Paymentology does the preliminary verification checks and decides whether to make the provisioning approval. Paymentology will perform all the base validations and ensure compliance with the recommended VTS compliance rules, such as card number validity, expiry date, CVV validity, or any other specific XPay wallet rules.  

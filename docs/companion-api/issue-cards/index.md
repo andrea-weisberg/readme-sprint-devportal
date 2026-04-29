@@ -34,7 +34,7 @@ metadata:
 
 <p>Once the card is activated and linked, it is now ready to be funded and used as per the predefined use cases, such as making ATM withdrawals, local and international online payments, point of sale transactions, or closed loop network transactions.</p>
 
-<h2>3. Issuing a <a href="https://developer.sprint.paymentology.com/companion-api/issue-cards/digital-first/">digital-first</a> card</h2>
+<h2>3. Issuing a <a href="digital-first">digital-first</a> card</h2>
 <p>Digital-first cards are available with Mastercard or Visa and currently available in select regions. The cards are issued similarly as a virtual card where you can use Companion API to create a Virtual Card Number (VCN) as described in the section Issuing a Virtual Card. To print it later, you can follow the steps below:</p>
 <h3>step 1: PrintLinkedCard</h3>
 <p>You can use this option if you want the existing digital first cards to be printed.</p>

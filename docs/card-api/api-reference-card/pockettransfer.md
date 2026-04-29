@@ -73,7 +73,9 @@ metadata:
     </params>
 </methodCall>
 
-```,```xml
+```
+
+```xml
 <methodResponse>
     <params  />
         <param  />
@@ -223,7 +225,9 @@ metadata:
     </params>
 </methodCall>
 
-```,```xml
+```
+
+```xml
 <methodResponse>
     <params  />
         <param  />

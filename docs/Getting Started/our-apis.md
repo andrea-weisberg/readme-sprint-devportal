@@ -165,7 +165,7 @@ The Card API is a prepaid card management interface that enables you to instantl
 
 With this API, you can provide anything from simple gift cards to multi-currency cards for travelling, payout and payroll cards or general-purpose reloadable cards for the unbanked, and many other types of secure payment cards. It offers a prepaid card and pocket management solution that acts as a link between Mastercard, Visa, Union Pay International, bank switches, and all kinds of reloadable customer cards.
 
-## 3. [QR Payments API](https://developer.sprint.paymentology.com/qr-payments-api/)
+## 3. [QR Payments API](../qr-payments-api)
 
 The QR Payments API allows you to create a **contactless merchant payment system** where customers can make electronic payments by scanning a QR code from a smartphone application. It’s a simple and secure way for consumers to push payments to merchants using their mobile money wallets or bank account balances.
 

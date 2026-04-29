@@ -49,7 +49,7 @@ Version 1 includes the following details:
 - **Transaction Internal Code** – this is a code that gives you the reason for transaction declines.  
   List of codes can be downloaded [here](https://developer.sprint.paymentology.com/wp-content/uploads/2021/04/Failed-transaction-report-code-descriptions.xlsx).
 - **Digitized Wallet id** – the 3 digit numeric code that identifies the Xpay App.  
-  Find a list of the Wallet IDs [here](https://developer.sprint.paymentology.com/companion-api/tokenization2/token-lifecycle-management/#WID).
+  Find a list of the Wallet IDs [here](../../companion-api/tokenization2/token-lifecycle-management#WID).
 
 <a id="ftrv2"></a>
 
@@ -83,7 +83,7 @@ Version 2 includes the following details:
 - **Transaction Internal Code** – this is a code that gives you the reason for transaction declines.  
   List of codes can be downloaded [here](https://developer.sprint.paymentology.com/wp-content/uploads/2021/04/Failed-transaction-report-code-descriptions.xlsx).
 - **Digitized Wallet id** – the 3 digit numeric code that identifies the Xpay App.  
-  Find a list of the Wallet IDs [here](https://developer.sprint.paymentology.com/companion-api/tokenization2/token-lifecycle-management/#WID).
+  Find a list of the Wallet IDs [here](../../companion-api/tokenization2/token-lifecycle-management#WID).
 - **Payment Initiator** – indicates whether a transaction was initiated by the Cardholder (CIT – Cardholder Initiated Transaction) or the Merchant (MIT – Merchant Initiated Transaction).
 
 ## Report format

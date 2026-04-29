@@ -139,7 +139,9 @@ Load Adjustment (Refund)
   </params>
 </methodCall>
 
-```,```xml
+```
+
+```xml
 "<methodResponse>
   <params  />
     <param  />
@@ -284,7 +286,9 @@ Load Adjustment (Refund)
   </params>
 </methodCall>
 
-```,```xml
+```
+
+```xml
 "<methodResponse>
   <params  />
     <param  />

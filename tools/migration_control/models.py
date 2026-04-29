@@ -51,6 +51,7 @@ class ReadMePage:
     links: Tuple[str, ...]
     images: Tuple[str, ...]
     legacy_wordpress_links: Tuple[str, ...]
+    migrated_from: str = ""
 
 
 @dataclass(frozen=True)

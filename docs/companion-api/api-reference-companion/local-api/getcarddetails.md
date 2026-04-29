@@ -12,7 +12,7 @@ metadata:
 <li>Session-Id="Encrypted" AES Key e-g (AB521456236KHU52) is required if encryption is needed and the campaign is configured for encryption of sensitive data.</li>
 <li>This is optional if encryption is not needed and the campaign is not configured for encryption of sensitive data.</li>
 </ul>
-<p>You can read more on how our Secure API’s work <a href="https://developer.sprint.paymentology.com/companion-api/secure-apis/">here</a> .</p>
+<p>You can read more on how our Secure API’s work <a href="../../secure-apis">here</a> .</p>
 
 #### Path parameters
 
@@ -62,7 +62,9 @@ metadata:
   </params>
 </methodCall>
 
-```,```xml
+```
+
+```xml
 <methodresponse>
     <params  />
         <param  />
@@ -202,7 +204,9 @@ metadata:
   </params>
 </methodCall>
 
-```,```xml
+```
+
+```xml
 <methodresponse>
     <params  />
         <param  />

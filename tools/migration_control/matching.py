@@ -97,6 +97,7 @@ def _build_readme_indexes(pages: Sequence[ReadMePage]) -> Dict[str, CandidateInd
 
     for page in pages:
         _append_index(indexes["url_path"], readme_doc_key(page.path), page)
+        _append_index(indexes["url_path"], normalize_path(page.migrated_from), page)
         _append_index(indexes["slug"], normalize_path(page.slug), page)
         _append_index(indexes["url_leaf"], filename_slug(page.path), page)
         _append_index(indexes["title"], slugify(page.title), page)
@@ -105,7 +106,7 @@ def _build_readme_indexes(pages: Sequence[ReadMePage]) -> Dict[str, CandidateInd
 
 
 def _append_index(index: Dict[str, List[ReadMePage]], key: str, page: ReadMePage) -> None:
-    if key:
+    if key and all(existing.path != page.path for existing in index[key]):
         index[key].append(page)
 
 
