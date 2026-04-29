@@ -116,6 +116,10 @@ def _find_matches(
     for kind, confidence, key in _wordpress_candidates(page):
         matches = tuple(indexes[kind].get(key, ()))
         if matches:
+            title_key = slugify(page.title)
+            title_matches = tuple(indexes["title"].get(title_key, ()))
+            if kind == "url_leaf" and key == title_key and title_matches == matches:
+                return "title", 0.75, title_matches
             return kind, confidence, matches
 
     return "", 0.0, ()
@@ -132,10 +136,12 @@ def _wordpress_candidates(page: WordPressPage) -> Tuple[Tuple[str, float, str], 
         ("slug", 0.9, slug),
     ]
 
-    if leaf == slug:
-        candidates.append(("url_leaf", 0.85, leaf))
-
-    candidates.append(("title", 0.75, title))
+    candidates.extend(
+        [
+            ("url_leaf", 0.85, leaf),
+            ("title", 0.75, title),
+        ]
+    )
     return tuple(candidates)
 
 

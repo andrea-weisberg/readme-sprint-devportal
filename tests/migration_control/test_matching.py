@@ -87,3 +87,25 @@ class MatchingTests(TestCase):
         self.assertEqual(rows[0].migration_status, "missing")
         self.assertEqual(rows[1].migration_status, "duplicate")
         self.assertIn("Multiple ReadMe candidates", rows[1].notes)
+
+    def test_build_parity_map_uses_url_leaf_when_slug_is_stale(self):
+        export = WordPressExport(
+            pages=(
+                wp_page("1", "Legacy Label", "stale-slug", "https://developer.sprint.paymentology.com/carddetail/"),
+            ),
+            attachments=(),
+        )
+        inventory = ReadMeInventory(
+            pages=(
+                readme_page("docs/card-api/carddetail.md", "Card Detail", "card-detail"),
+            ),
+            assets=(),
+            order_entries=(),
+        )
+
+        rows = build_parity_map(export, inventory, {})
+
+        self.assertEqual(rows[0].migration_status, "matched")
+        self.assertEqual(rows[0].matched_path, "docs/card-api/carddetail.md")
+        self.assertEqual(rows[0].match_kind, "url_leaf")
+        self.assertEqual(rows[0].match_confidence, 0.85)
