@@ -23,3 +23,20 @@ class SourcePage:
 class RebuildInventory:
     pages: tuple[SourcePage, ...]
     attachments: tuple[str, ...]
+
+
+@dataclass(frozen=True)
+class Classification:
+    top_bar: str
+    subsection: str
+    reason: str
+
+
+@dataclass(frozen=True)
+class DestinationPage:
+    source_url: str
+    path: str
+    title: str
+    top_bar: str
+    subsection: str
+    slug: str
