@@ -1,0 +1,308 @@
+source_url,top_bar,subsection,title,destination_path
+https://developer.sprint.paymentology.com/,Guides,Shared,Home,Guides/home.md
+https://developer.sprint.paymentology.com/3d-secure-out-of-band/,Guides,Shared,3D Secure - Out of band Authentication,Guides/3d-secure-out-of-band.md
+https://developer.sprint.paymentology.com/administrativemessage3dsecureotp/,Guides,Shared,AdministrativeMessage3DSecureOTP,Guides/administrativemessage3dsecureotp.md
+https://developer.sprint.paymentology.com/api-reference-sample/,Guides,Shared,API Reference Sample,Guides/api-reference-sample.md
+https://developer.sprint.paymentology.com/card-api/,Guides,Shared,Card API,Guides/card-api.md
+https://developer.sprint.paymentology.com/card-api/api-reference/,API Reference,Card API,Card API REFERENCE,API Reference/card-api/api-reference.md
+https://developer.sprint.paymentology.com/card-api/api-reference/activatetoken/,API Reference,Card API,ActivateToken,API Reference/card-api/activatetoken.md
+https://developer.sprint.paymentology.com/card-api/api-reference/addcardtag/,API Reference,Card API,AddCardTag,API Reference/card-api/addcardtag.md
+https://developer.sprint.paymentology.com/card-api/api-reference/addpocket/,API Reference,Card API,AddPocket,API Reference/card-api/addpocket.md
+https://developer.sprint.paymentology.com/card-api/api-reference/appendix/,API Reference,Card API,Response Codes,API Reference/card-api/appendix.md
+https://developer.sprint.paymentology.com/card-api/api-reference/bearerdetail/,API Reference,Card API,BearerDetail,API Reference/card-api/bearerdetail.md
+https://developer.sprint.paymentology.com/card-api/api-reference/calculatetav/,API Reference,Card API,CalculateTAV,API Reference/card-api/calculatetav.md
+https://developer.sprint.paymentology.com/card-api/api-reference/carddetail/,API Reference,Card API,CardDetail,API Reference/card-api/carddetail.md
+https://developer.sprint.paymentology.com/card-api/api-reference/changepin/,API Reference,Card API,ChangePin,API Reference/card-api/changepin.md
+https://developer.sprint.paymentology.com/card-api/api-reference/createvirtualcard/,API Reference,Card API,CreateVirtualCard,API Reference/card-api/createvirtualcard.md
+https://developer.sprint.paymentology.com/card-api/api-reference/createvirtualcardwithload/,API Reference,Card API,CreateVirtualCardWithLoad,API Reference/card-api/createvirtualcardwithload.md
+https://developer.sprint.paymentology.com/card-api/api-reference/deductfunds/,API Reference,Card API,DeductFunds,API Reference/card-api/deductfunds.md
+https://developer.sprint.paymentology.com/card-api/api-reference/deductfundsreverse/,API Reference,Card API,DeductFundsReverse,API Reference/card-api/deductfundsreverse.md
+https://developer.sprint.paymentology.com/card-api/api-reference/deletetoken-2/,API Reference,Card API,DeleteToken,API Reference/card-api/deletetoken-2.md
+https://developer.sprint.paymentology.com/card-api/api-reference/devalue/,API Reference,Card API,Devalue,API Reference/card-api/devalue.md
+https://developer.sprint.paymentology.com/card-api/api-reference/devaluereverse/,API Reference,Card API,DevalueReverse,API Reference/card-api/devaluereverse.md
+https://developer.sprint.paymentology.com/card-api/api-reference/inserttransactionfee/,API Reference,Card API,InsertTransactionFee,API Reference/card-api/inserttransactionfee.md
+https://developer.sprint.paymentology.com/card-api/api-reference/linkcard/,API Reference,Card API,LinkCard,API Reference/card-api/linkcard.md
+https://developer.sprint.paymentology.com/card-api/api-reference/listalltokens/,API Reference,Card API,ListAllTokens,API Reference/card-api/listalltokens.md
+https://developer.sprint.paymentology.com/card-api/api-reference/listcards/,API Reference,Card API,ListCards,API Reference/card-api/listcards.md
+https://developer.sprint.paymentology.com/card-api/api-reference/listtokens/,API Reference,Card API,ListTokens,API Reference/card-api/listtokens.md
+https://developer.sprint.paymentology.com/card-api/api-reference/loadfunds/,API Reference,Card API,LoadFunds,API Reference/card-api/loadfunds.md
+https://developer.sprint.paymentology.com/card-api/api-reference/loadfundsreverse/,API Reference,Card API,LoadFundsReverse,API Reference/card-api/loadfundsreverse.md
+https://developer.sprint.paymentology.com/card-api/api-reference/mostrecenttransactions/,API Reference,Card API,MostRecentTransactions,API Reference/card-api/mostrecenttransactions.md
+https://developer.sprint.paymentology.com/card-api/api-reference/ordercard/,API Reference,Card API,OrderCard,API Reference/card-api/ordercard.md
+https://developer.sprint.paymentology.com/card-api/api-reference/ordercardwithpinblock/,API Reference,Card API,OrderCardWithPinBlock,API Reference/card-api/ordercardwithpinblock.md
+https://developer.sprint.paymentology.com/card-api/api-reference/pockettransfer/,API Reference,Card API,PocketTransfer,API Reference/card-api/pockettransfer.md
+https://developer.sprint.paymentology.com/card-api/api-reference/pockettransferreverse/,API Reference,Card API,PocketTransferReverse,API Reference/card-api/pockettransferreverse.md
+https://developer.sprint.paymentology.com/card-api/api-reference/remotemessaging/,API Reference,Card API,Remote Messaging API,API Reference/card-api/remotemessaging.md
+https://developer.sprint.paymentology.com/card-api/api-reference/retirecard/,API Reference,Card API,RetireCard,API Reference/card-api/retirecard.md
+https://developer.sprint.paymentology.com/card-api/api-reference/set3dsecurecode/,API Reference,Card API,Set3dSecureCode,API Reference/card-api/set3dsecurecode.md
+https://developer.sprint.paymentology.com/card-api/api-reference/setbearerdetail/,API Reference,Card API,SetBearerDetail,API Reference/card-api/setbearerdetail.md
+https://developer.sprint.paymentology.com/card-api/api-reference/statement/,API Reference,Card API,Statement,API Reference/card-api/statement.md
+https://developer.sprint.paymentology.com/card-api/api-reference/stopcard/,API Reference,Card API,StopCard,API Reference/card-api/stopcard.md
+https://developer.sprint.paymentology.com/card-api/api-reference/stoptoken/,API Reference,Card API,StopToken,API Reference/card-api/stoptoken.md
+https://developer.sprint.paymentology.com/card-api/api-reference/threedsauthenticationoutcome/,API Reference,Card API,ThreeDSAuthenticationOutcome,API Reference/card-api/threedsauthenticationoutcome.md
+https://developer.sprint.paymentology.com/card-api/api-reference/togglevoucherfeature/,API Reference,Card API,ToggleVoucherFeature,API Reference/card-api/togglevoucherfeature.md
+https://developer.sprint.paymentology.com/card-api/api-reference/tokenapprovedevicebinding-2/,API Reference,Card API,TokenApproveDeviceBinding,API Reference/card-api/tokenapprovedevicebinding-2.md
+https://developer.sprint.paymentology.com/card-api/api-reference/tokenapprovedevicebinding/,API Reference,Card API,TokenApproveDeviceBinding,API Reference/card-api/tokenapprovedevicebinding.md
+https://developer.sprint.paymentology.com/card-api/api-reference/tokenremovedevicebinding/,API Reference,Card API,TokenRemoveDeviceBinding,API Reference/card-api/tokenremovedevicebinding.md
+https://developer.sprint.paymentology.com/card-api/api-reference/transferfunds/,API Reference,Card API,TransferFunds,API Reference/card-api/transferfunds.md
+https://developer.sprint.paymentology.com/card-api/api-reference/transferfundsreverse/,API Reference,Card API,TransferFundsReverse,API Reference/card-api/transferfundsreverse.md
+https://developer.sprint.paymentology.com/card-api/api-reference/transferlink/,API Reference,Card API,TransferLink,API Reference/card-api/transferlink.md
+https://developer.sprint.paymentology.com/card-api/api-reference/transfertoken-2/,API Reference,Card API,TransferToken,API Reference/card-api/transfertoken-2.md
+https://developer.sprint.paymentology.com/card-api/api-reference/unstopcard/,API Reference,Card API,UnStopCard,API Reference/card-api/unstopcard.md
+https://developer.sprint.paymentology.com/card-api/api-reference/unstoptoken/,API Reference,Card API,UnStopToken,API Reference/card-api/unstoptoken.md
+https://developer.sprint.paymentology.com/card-api/api-reference/updatecardexpirydate/,API Reference,Card API,UpdateCardExpiryDate,API Reference/card-api/updatecardexpirydate.md
+https://developer.sprint.paymentology.com/card-api/api-reference/updatecardlabel/,API Reference,Card API,UpdateCardLabel,API Reference/card-api/updatecardlabel.md
+https://developer.sprint.paymentology.com/card-api/api-reference/updatecvv/,API Reference,Card API,UpdateCVV,API Reference/card-api/updatecvv.md
+https://developer.sprint.paymentology.com/card-api/api-reference/updatetokenaccount/,API Reference,Card API,UpdateTokenAccount,API Reference/card-api/updatetokenaccount.md
+https://developer.sprint.paymentology.com/card-api/disputes/,Guides,Shared,Disputes,Guides/disputes.md
+https://developer.sprint.paymentology.com/card-api/issue-card/,Guides,Shared,Issue cards,Guides/issue-card.md
+https://developer.sprint.paymentology.com/card-api/manage-cards/,Guides,Shared,Manage cards,Guides/manage-cards.md
+https://developer.sprint.paymentology.com/card-api/manage-funds/,Guides,Shared,Manage funds,Guides/manage-funds.md
+https://developer.sprint.paymentology.com/card-api/reconciliation/,Guides,Shared,Reconciliation,Guides/reconciliation.md
+https://developer.sprint.paymentology.com/card-api/reports/,Reports,Card API,Reports,Reports/card-api/reports.md
+https://developer.sprint.paymentology.com/card-api/reports/apple-pay-monthly-declines-report/,Reports,Card API,Apple Pay monthly declines report,Reports/card-api/apple-pay-monthly-declines-report.md
+https://developer.sprint.paymentology.com/card-api/reports/apple-pay-monthly-fee-billing-report/,Reports,Card API,Apple Pay monthly fee billing report,Reports/card-api/apple-pay-monthly-fee-billing-report.md
+https://developer.sprint.paymentology.com/card-api/reports/apple-pay-monthly-metric-report/,Reports,Card API,Apple Pay monthly metric report,Reports/card-api/apple-pay-monthly-metric-report.md
+https://developer.sprint.paymentology.com/card-api/reports/apple-pay-monthly-top-merchant-report/,Reports,Card API,Apple Pay monthly top merchant report,Reports/card-api/apple-pay-monthly-top-merchant-report.md
+https://developer.sprint.paymentology.com/card-api/reports/apple-pay-monthly-usage-frequency-report/,Reports,Card API,Apple Pay monthly usage frequency report,Reports/card-api/apple-pay-monthly-usage-frequency-report.md
+https://developer.sprint.paymentology.com/card-api/reports/apple-pay-quarterly-fee-billing-report/,Reports,Card API,Apple Pay quarterly fee billing report,Reports/card-api/apple-pay-quarterly-fee-billing-report.md
+https://developer.sprint.paymentology.com/card-api/reports/authorisation-income-report/,Reports,Card API,Authorisation income report,Reports/card-api/authorisation-income-report.md
+https://developer.sprint.paymentology.com/card-api/reports/blocked-transactions-report/,Reports,Card API,Blocked transactions report,Reports/card-api/blocked-transactions-report.md
+https://developer.sprint.paymentology.com/card-api/reports/card-balance-report/,Reports,Card API,Card balance report,Reports/card-api/card-balance-report.md
+https://developer.sprint.paymentology.com/card-api/reports/card-order-report-2/,Reports,Card API,Card order report,Reports/card-api/card-order-report-2.md
+https://developer.sprint.paymentology.com/card-api/reports/daily-negative-balance-report/,Reports,Card API,Daily negative balance report,Reports/card-api/daily-negative-balance-report.md
+https://developer.sprint.paymentology.com/card-api/reports/daily-sales-and-redemption-report/,Reports,Card API,Daily sales and redemption report,Reports/card-api/daily-sales-and-redemption-report.md
+https://developer.sprint.paymentology.com/card-api/reports/daily-statement-report/,Reports,Card API,Daily statement report,Reports/card-api/daily-statement-report.md
+https://developer.sprint.paymentology.com/card-api/reports/detailed-settlement-report/,Reports,Card API,Detailed settlement report,Reports/card-api/detailed-settlement-report.md
+https://developer.sprint.paymentology.com/card-api/reports/ecommerce-report/,Reports,Card API,eCommerce report,Reports/card-api/ecommerce-report.md
+https://developer.sprint.paymentology.com/card-api/reports/failed-transaction-report-2/,Reports,Card API,Failed transaction report,Reports/card-api/failed-transaction-report-2.md
+https://developer.sprint.paymentology.com/card-api/reports/forex-gains-report-2/,Reports,Card API,Forex gains report,Reports/card-api/forex-gains-report-2.md
+https://developer.sprint.paymentology.com/card-api/reports/google-pay-monthly-report/,Reports,Card API,Google Pay monthly report,Reports/card-api/google-pay-monthly-report.md
+https://developer.sprint.paymentology.com/card-api/reports/inactive-cards-report/,Reports,Card API,Inactive cards report,Reports/card-api/inactive-cards-report.md
+https://developer.sprint.paymentology.com/card-api/reports/linked-cards-report/,Reports,Card API,Linked cards report,Reports/card-api/linked-cards-report.md
+https://developer.sprint.paymentology.com/card-api/reports/mark-off-file/,Reports,Card API,Mark-off file,Reports/card-api/mark-off-file.md
+https://developer.sprint.paymentology.com/card-api/reports/qmr-data-report/,Reports,Card API,QMR data report,Reports/card-api/qmr-data-report.md
+https://developer.sprint.paymentology.com/card-api/reports/qvr-data-report/,Reports,Card API,QVR data report,Reports/card-api/qvr-data-report.md
+https://developer.sprint.paymentology.com/card-api/reports/summary-settlement-report-2/,Reports,Card API,Summary settlement report,Reports/card-api/summary-settlement-report-2.md
+https://developer.sprint.paymentology.com/card-api/reports/vau-transaction-report/,Reports,Card API,VAU transaction report,Reports/card-api/vau-transaction-report.md
+https://developer.sprint.paymentology.com/card-api/secure-cards/,Guides,Shared,Secure cards,Guides/secure-cards.md
+https://developer.sprint.paymentology.com/card-api/secure-cards/offline-pin/,Guides,Shared,Offline PIN,Guides/offline-pin.md
+https://developer.sprint.paymentology.com/card-api/tokenization/,Guides,Shared,Tokenization,Guides/tokenization.md
+https://developer.sprint.paymentology.com/card-api/tokenization/lifecycle-management/,Guides,Shared,Lifecycle Management,Guides/lifecycle-management.md
+https://developer.sprint.paymentology.com/card-api/tokenization/payments/,Guides,Shared,Payments,Guides/payments.md
+https://developer.sprint.paymentology.com/card-api/tokenization/processing/,Guides,Shared,Processing,Guides/processing.md
+https://developer.sprint.paymentology.com/card-api/tokenization/provisioning/,Guides,Shared,Provisioning,Guides/provisioning.md
+https://developer.sprint.paymentology.com/chargeback-api/,API Reference,Chargeback API,Chargeback API,API Reference/chargeback-api/chargeback-api.md
+https://developer.sprint.paymentology.com/chargeback-api/chargeback-api-reference/,API Reference,Chargeback API,Chargeback API REFERENCE,API Reference/chargeback-api/chargeback-api-reference.md
+https://developer.sprint.paymentology.com/chargeback-api/chargeback-api-reference/document-status/,API Reference,Chargeback API,Document Status,API Reference/chargeback-api/document-status.md
+https://developer.sprint.paymentology.com/chargeback-api/chargeback-api-reference/first-chargeback/,API Reference,Chargeback API,First Chargeback,API Reference/chargeback-api/first-chargeback.md
+https://developer.sprint.paymentology.com/chargeback-api/chargeback-api-reference/pre-arbitration/,API Reference,Chargeback API,Pre-Arbitration,API Reference/chargeback-api/pre-arbitration.md
+https://developer.sprint.paymentology.com/chargeback-api/chargeback-api-reference/query-chargeback/,API Reference,Chargeback API,Query Chargeback,API Reference/chargeback-api/query-chargeback.md
+https://developer.sprint.paymentology.com/chargeback-api/chargeback-api-reference/second-presentment-documents/,API Reference,Chargeback API,Second Presentment Documents,API Reference/chargeback-api/second-presentment-documents.md
+https://developer.sprint.paymentology.com/chargeback-api/chargeback-api-reference/upload-supporting-document/,API Reference,Chargeback API,Upload Supporting Document,API Reference/chargeback-api/upload-supporting-document.md
+https://developer.sprint.paymentology.com/chargeback-api/chargeback-reason-codes/,API Reference,Chargeback API,Chargeback reason codes,API Reference/chargeback-api/chargeback-reason-codes.md
+https://developer.sprint.paymentology.com/chargeback-api/connectivity/,API Reference,Chargeback API,Connectivity,API Reference/chargeback-api/connectivity.md
+https://developer.sprint.paymentology.com/chargeback-api/process-overview/,API Reference,Chargeback API,Process overview,API Reference/chargeback-api/process-overview.md
+https://developer.sprint.paymentology.com/chargeback-api/remote-messaging-api/,API Reference,Chargeback API,Remote Messaging API,API Reference/chargeback-api/remote-messaging-api.md
+https://developer.sprint.paymentology.com/chargeback-api/remote-messaging-api/remote-messaging-api-chargeback-notification/,API Reference,Chargeback API,Remote Messaging API: chargeback notification,API Reference/chargeback-api/remote-messaging-api-chargeback-notification.md
+https://developer.sprint.paymentology.com/chargeback-api/response-codes/,API Reference,Chargeback API,Response codes,API Reference/chargeback-api/response-codes.md
+https://developer.sprint.paymentology.com/companion-api/,Guides,Shared,Companion API,Guides/companion-api.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/,API Reference,Companion API,API REFERENCE,API Reference/companion-api/api-reference.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/,API Reference,Companion API,Local API,API Reference/companion-api/local-api.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/activatecard/,API Reference,Companion API,ActivateCard,API Reference/companion-api/activatecard.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/activatetoken/,API Reference,Companion API,ActivateToken,API Reference/companion-api/activatetoken.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/calculatetav/,API Reference,Companion API,CalculateTAV,API Reference/companion-api/calculatetav.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/changepin/,API Reference,Companion API,ChangePin,API Reference/companion-api/changepin.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/createlinkedcard/,API Reference,Companion API,CreateLinkedCard,API Reference/companion-api/createlinkedcard.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/createlinkedcardmaskedresponse/,API Reference,Companion API,CreateLinkedCardMaskedResponse,API Reference/companion-api/createlinkedcardmaskedresponse.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/deletetoken/,API Reference,Companion API,DeleteToken,API Reference/companion-api/deletetoken.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/generatetimebasedsecret/,API Reference,Companion API,GenerateTimeBasedSecret,API Reference/companion-api/generatetimebasedsecret.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getactivelinkedcards/,API Reference,Companion API,GetActiveLinkedCards,API Reference/companion-api/getactivelinkedcards.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getcarddetails/,API Reference,Companion API,GetCardDetails,API Reference/companion-api/getcarddetails.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/getlinkedcards/,API Reference,Companion API,GetLinkedCards,API Reference/companion-api/getlinkedcards.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/linkcard/,API Reference,Companion API,LinkCard,API Reference/companion-api/linkcard.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/listalltokens/,API Reference,Companion API,ListAllTokens,API Reference/companion-api/listalltokens.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/listtokens/,API Reference,Companion API,ListTokens,API Reference/companion-api/listtokens.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/ordercard/,API Reference,Companion API,OrderCard,API Reference/companion-api/ordercard.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/ordercardwithpinblock/,API Reference,Companion API,OrderCardWithPinBlock,API Reference/companion-api/ordercardwithpinblock.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/printlinkedcard/,API Reference,Companion API,PrintLinkedCard,API Reference/companion-api/printlinkedcard.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/printlinkedcardwithpinblock/,API Reference,Companion API,PrintLinkedCardWithPINBlock,API Reference/companion-api/printlinkedcardwithpinblock.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/resetpin/,API Reference,Companion API,ResetPin,API Reference/companion-api/resetpin.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/retirecard/,API Reference,Companion API,RetireCard,API Reference/companion-api/retirecard.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/set3dsecurecode/,API Reference,Companion API,Set3dSecureCode,API Reference/companion-api/set3dsecurecode.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/status/,API Reference,Companion API,Status,API Reference/companion-api/status.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/stopcard/,API Reference,Companion API,StopCard,API Reference/companion-api/stopcard.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/stoptoken/,API Reference,Companion API,StopToken,API Reference/companion-api/stoptoken.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/threedsauthenticationoutcome/,API Reference,Companion API,ThreeDSAuthenticationOutcome,API Reference/companion-api/threedsauthenticationoutcome.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/togglevoucherfeature/,API Reference,Companion API,ToggleVoucherFeature,API Reference/companion-api/togglevoucherfeature.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/tokenapprovedevicebinding/,API Reference,Companion API,TokenApproveDeviceBinding,API Reference/companion-api/tokenapprovedevicebinding.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/tokenremovedevicebinding/,API Reference,Companion API,TokenRemoveDeviceBinding,API Reference/companion-api/tokenremovedevicebinding.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/transferlink/,API Reference,Companion API,TransferLink,API Reference/companion-api/transferlink.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/transfertoken/,API Reference,Companion API,TransferToken,API Reference/companion-api/transfertoken.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/unstopcard/,API Reference,Companion API,UnstopCard,API Reference/companion-api/unstopcard.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/unstoptoken/,API Reference,Companion API,UnstopToken,API Reference/companion-api/unstoptoken.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/updatebearer/,API Reference,Companion API,UpdateBearer,API Reference/companion-api/updatebearer.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/updatecvv/,API Reference,Companion API,UpdateCVV,API Reference/companion-api/updatecvv.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/updatetokenaccount/,API Reference,Companion API,UpdateTokenAccount,API Reference/companion-api/updatetokenaccount.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/remote/,API Reference,Companion API,Remote,API Reference/companion-api/remote.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/,API Reference,Companion API,AdministrativeMessage,API Reference/companion-api/administrativemessage.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/administrative-message-values/,API Reference,Companion API,Administrative message values,API Reference/companion-api/administrative-message-values.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/remote/balance/,API Reference,Companion API,Balance,API Reference/companion-api/balance.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/remote/brazilianinstallmentsettled/,API Reference,Companion API,BrazilianInstallmentSettled,API Reference/companion-api/brazilianinstallmentsettled.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/remote/deduct/,API Reference,Companion API,Deduct,API Reference/companion-api/deduct.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/remote/deductadjustment/,API Reference,Companion API,DeductAdjustment,API Reference/companion-api/deductadjustment.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/remote/deductreversal/,API Reference,Companion API,DeductReversal,API Reference/companion-api/deductreversal.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/remote/loadadjustment/,API Reference,Companion API,LoadAdjustment,API Reference/companion-api/loadadjustment.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/remote/loadauth/,API Reference,Companion API,LoadAuth,API Reference/companion-api/loadauth.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/remote/loadauthreversal/,API Reference,Companion API,LoadAuthReversal,API Reference/companion-api/loadauthreversal.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/remote/loadreversal/,API Reference,Companion API,LoadReversal,API Reference/companion-api/loadreversal.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/remote/mexicaninstallmentsettled/,API Reference,Companion API,MexicanInstallmentSettled,API Reference/companion-api/mexicaninstallmentsettled.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/remote/stop/,API Reference,Companion API,Stop,API Reference/companion-api/stop.md
+https://developer.sprint.paymentology.com/companion-api/api-reference/remote/validatepin/,API Reference,Companion API,ValidatePIN,API Reference/companion-api/validatepin.md
+https://developer.sprint.paymentology.com/companion-api/disputes/,Guides,Shared,Disputes,Guides/disputes.md
+https://developer.sprint.paymentology.com/companion-api/issue-cards/,Guides,Shared,Issue cards,Guides/issue-cards.md
+https://developer.sprint.paymentology.com/companion-api/issue-cards/digital-first/,Guides,Shared,Digital First,Guides/digital-first.md
+https://developer.sprint.paymentology.com/companion-api/klv-lookup/,Guides,Shared,KLV Lookup,Guides/klv-lookup.md
+https://developer.sprint.paymentology.com/companion-api/manage-cards/,Guides,Shared,Manage cards,Guides/manage-cards.md
+https://developer.sprint.paymentology.com/companion-api/manage-funds/,Guides,Shared,Manage funds,Guides/manage-funds.md
+https://developer.sprint.paymentology.com/companion-api/manage-funds/3d-secure/,Guides,Shared,3D Secure,Guides/3d-secure.md
+https://developer.sprint.paymentology.com/companion-api/manage-funds/automated-fuel-dispensers-afd-transactions/,Guides,Shared,AFD Transactions,Guides/automated-fuel-dispensers-afd-transactions.md
+https://developer.sprint.paymentology.com/companion-api/messages/,Guides,Shared,Messages,Guides/messages.md
+https://developer.sprint.paymentology.com/companion-api/reports/,Reports,Companion API,Reports,Reports/companion-api/reports.md
+https://developer.sprint.paymentology.com/companion-api/reports/apple-pay-monthly-declines-report/,Reports,Companion API,Apple Pay monthly declines report,Reports/companion-api/apple-pay-monthly-declines-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/apple-pay-monthly-fee-billing-report/,Reports,Companion API,Apple Pay monthly fee billing report,Reports/companion-api/apple-pay-monthly-fee-billing-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/apple-pay-monthly-metric-report/,Reports,Companion API,Apple Pay monthly metric report,Reports/companion-api/apple-pay-monthly-metric-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/apple-pay-monthly-top-merchant-report/,Reports,Companion API,Apple Pay monthly top merchant report,Reports/companion-api/apple-pay-monthly-top-merchant-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/apple-pay-monthly-usage-frequency-report/,Reports,Companion API,Apple Pay monthly usage frequency report,Reports/companion-api/apple-pay-monthly-usage-frequency-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/apple-pay-quarterly-fee-billing-report/,Reports,Companion API,Apple Pay quarterly fee billing report,Reports/companion-api/apple-pay-quarterly-fee-billing-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/authorisation-income-report/,Reports,Companion API,Authorisation income report,Reports/companion-api/authorisation-income-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/blocked-transactions-report/,Reports,Companion API,Blocked transactions report,Reports/companion-api/blocked-transactions-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/card-balance-report/,Reports,Companion API,Card balance report,Reports/companion-api/card-balance-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/card-order-report/,Reports,Companion API,Card order,Reports/companion-api/card-order-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/daily-negative-balance-report/,Reports,Companion API,Daily negative balance report,Reports/companion-api/daily-negative-balance-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/daily-sales-and-redemption-report/,Reports,Companion API,Daily sales and redemption report,Reports/companion-api/daily-sales-and-redemption-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/daily-statement-report/,Reports,Companion API,Daily statement report,Reports/companion-api/daily-statement-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/detailed-settlement-report/,Reports,Companion API,Detailed settlement report,Reports/companion-api/detailed-settlement-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/ecommerce-report/,Reports,Companion API,eCommerce report,Reports/companion-api/ecommerce-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/failed-transaction-report/,Reports,Companion API,Failed transaction report,Reports/companion-api/failed-transaction-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/forex-gains-report/,Reports,Companion API,Forex gains report,Reports/companion-api/forex-gains-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/google-pay-monthly-report/,Reports,Companion API,Google Pay monthly report,Reports/companion-api/google-pay-monthly-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/inactive-cards-report/,Reports,Companion API,Inactive cards report,Reports/companion-api/inactive-cards-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/linked-cards-report/,Reports,Companion API,Linked cards report,Reports/companion-api/linked-cards-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/mark-off-file/,Reports,Companion API,Mark-off file,Reports/companion-api/mark-off-file.md
+https://developer.sprint.paymentology.com/companion-api/reports/qmr-data-report/,Reports,Companion API,QMR data report,Reports/companion-api/qmr-data-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/qvr-data-report/,Reports,Companion API,QVR data report,Reports/companion-api/qvr-data-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/summary-settlement-report/,Reports,Companion API,Summary settlement report,Reports/companion-api/summary-settlement-report.md
+https://developer.sprint.paymentology.com/companion-api/reports/unsettled-transactions-report-2/,Reports,Companion API,Unsettled transactions report,Reports/companion-api/unsettled-transactions-report-2.md
+https://developer.sprint.paymentology.com/companion-api/reports/vau-transaction-report/,Reports,Companion API,VAU transaction report,Reports/companion-api/vau-transaction-report.md
+https://developer.sprint.paymentology.com/companion-api/secure-apis/,Guides,Shared,Secure APIs,Guides/secure-apis.md
+https://developer.sprint.paymentology.com/companion-api/secure-cards/,Guides,Shared,Secure cards,Guides/secure-cards.md
+https://developer.sprint.paymentology.com/companion-api/secure-cards/offline-pin/,Guides,Shared,Offline PIN,Guides/offline-pin.md
+https://developer.sprint.paymentology.com/companion-api/settlement-and-reconciliation/,Guides,Shared,Reconciliation,Guides/settlement-and-reconciliation.md
+https://developer.sprint.paymentology.com/companion-api/tokenization2/,Guides,Shared,Tokenization,Guides/tokenization2.md
+https://developer.sprint.paymentology.com/companion-api/tokenization2/token-lifecycle-management/,Guides,Shared,Lifecycle Management,Guides/token-lifecycle-management.md
+https://developer.sprint.paymentology.com/companion-api/tokenization2/token-payments/,Guides,Shared,Payments,Guides/token-payments.md
+https://developer.sprint.paymentology.com/companion-api/tokenization2/token-processing/,Guides,Shared,Processing,Guides/token-processing.md
+https://developer.sprint.paymentology.com/companion-api/tokenization2/token-provisioning/,Guides,Shared,Provisioning,Guides/token-provisioning.md
+https://developer.sprint.paymentology.com/companion-api/tokenization2/visa-token-provisioning/,Guides,Shared,VTS,Guides/visa-token-provisioning.md
+https://developer.sprint.paymentology.com/contact-us/,Guides,Shared,Contact us,Guides/contact-us.md
+https://developer.sprint.paymentology.com/generatetimebasedsecret/,Guides,Shared,generateTimeBasedSecret,Guides/generatetimebasedsecret.md
+https://developer.sprint.paymentology.com/get-started/,Guides,Shared,Get Started,Guides/get-started.md
+https://developer.sprint.paymentology.com/get-started/ask-ai/,Guides,Shared,Ask AI,Guides/ask-ai.md
+https://developer.sprint.paymentology.com/get-started/client-card-program/,Guides,Shared,Client Card Program,Guides/client-card-program.md
+https://developer.sprint.paymentology.com/get-started/client-testing-guide/,Guides,Shared,Client Testing Guide,Guides/client-testing-guide.md
+https://developer.sprint.paymentology.com/get-started/fraud/,Guides,Shared,Fraud and Risk,Guides/fraud.md
+https://developer.sprint.paymentology.com/get-started/glossary/,Guides,Shared,Glossary,Guides/glossary.md
+https://developer.sprint.paymentology.com/get-started/our-apis/,Guides,Shared,Our APIs,Guides/our-apis.md
+https://developer.sprint.paymentology.com/get-started/security/,Guides,Shared,Security,Guides/security.md
+https://developer.sprint.paymentology.com/get-started/testing/,Guides,Shared,Get connected,Guides/testing.md
+https://developer.sprint.paymentology.com/how_payments_work/,Guides,Shared,How Payments Work,Guides/how_payments_work.md
+https://developer.sprint.paymentology.com/login/,Guides,Shared,Login,Guides/login.md
+https://developer.sprint.paymentology.com/notifications/,Guides,Shared,Notifications,Guides/notifications.md
+https://developer.sprint.paymentology.com/privacy-policy/,Guides,Shared,Privacy Policy,Guides/privacy-policy.md
+https://developer.sprint.paymentology.com/profile-api-reference/,API Reference,Shared,Profile API Reference,API Reference/shared/profile-api-reference.md
+https://developer.sprint.paymentology.com/profile-api-reference/activate/,API Reference,Shared,Activate,API Reference/shared/activate.md
+https://developer.sprint.paymentology.com/profile-api-reference/activatetoken/,API Reference,Shared,ActivateToken,API Reference/shared/activatetoken.md
+https://developer.sprint.paymentology.com/profile-api-reference/allocatecard/,API Reference,Shared,AllocateCard,API Reference/shared/allocatecard.md
+https://developer.sprint.paymentology.com/profile-api-reference/allocatecreatevirtualcard/,API Reference,Shared,AllocateCreateVirtualCard,API Reference/shared/allocatecreatevirtualcard.md
+https://developer.sprint.paymentology.com/profile-api-reference/allocateiban/,API Reference,Shared,AllocateIBAN,API Reference/shared/allocateiban.md
+https://developer.sprint.paymentology.com/profile-api-reference/balance/,API Reference,Shared,Balance,API Reference/shared/balance.md
+https://developer.sprint.paymentology.com/profile-api-reference/calculatetav-2/,API Reference,Shared,CalculateTAV,API Reference/shared/calculatetav-2.md
+https://developer.sprint.paymentology.com/profile-api-reference/cancelscheduledstop/,API Reference,Shared,CancelScheduledStop,API Reference/shared/cancelscheduledstop.md
+https://developer.sprint.paymentology.com/profile-api-reference/cancelstopcard/,API Reference,Shared,CancelStopCard,API Reference/shared/cancelstopcard.md
+https://developer.sprint.paymentology.com/profile-api-reference/carddetail/,API Reference,Shared,CardDetail,API Reference/shared/carddetail.md
+https://developer.sprint.paymentology.com/profile-api-reference/changepin/,API Reference,Shared,ChangePin,API Reference/shared/changepin.md
+https://developer.sprint.paymentology.com/profile-api-reference/checkauthorisation/,API Reference,Shared,CheckAuthorisation,API Reference/shared/checkauthorisation.md
+https://developer.sprint.paymentology.com/profile-api-reference/checkload/,API Reference,Shared,CheckLoad,API Reference/shared/checkload.md
+https://developer.sprint.paymentology.com/profile-api-reference/createscheduledstop/,API Reference,Shared,CreateScheduledStop,API Reference/shared/createscheduledstop.md
+https://developer.sprint.paymentology.com/profile-api-reference/createvirtualcard/,API Reference,Shared,CreateVirtualCard,API Reference/shared/createvirtualcard.md
+https://developer.sprint.paymentology.com/profile-api-reference/deductcardloadprofile/,API Reference,Shared,DeductCardLoadProfile,API Reference/shared/deductcardloadprofile.md
+https://developer.sprint.paymentology.com/profile-api-reference/deletetoken/,API Reference,Shared,DeleteToken,API Reference/shared/deletetoken.md
+https://developer.sprint.paymentology.com/profile-api-reference/delinkcard/,API Reference,Shared,DeLinkCard,API Reference/shared/delinkcard.md
+https://developer.sprint.paymentology.com/profile-api-reference/devalueprofile/,API Reference,Shared,DevalueProfile,API Reference/shared/devalueprofile.md
+https://developer.sprint.paymentology.com/profile-api-reference/generatetimebasedsecret/,API Reference,Shared,GenerateTimeBasedSecret,API Reference/shared/generatetimebasedsecret.md
+https://developer.sprint.paymentology.com/profile-api-reference/getschedulestopdetail/,API Reference,Shared,GetScheduleStopDetail,API Reference/shared/getschedulestopdetail.md
+https://developer.sprint.paymentology.com/profile-api-reference/inserttransactionfee/,API Reference,Shared,InsertTransactionFee,API Reference/shared/inserttransactionfee.md
+https://developer.sprint.paymentology.com/profile-api-reference/linkcard/,API Reference,Shared,LinkCard,API Reference/shared/linkcard.md
+https://developer.sprint.paymentology.com/profile-api-reference/linkcardsbysequencerange/,API Reference,Shared,LinkCardsBySequenceRange,API Reference/shared/linkcardsbysequencerange.md
+https://developer.sprint.paymentology.com/profile-api-reference/listalltokens/,API Reference,Shared,ListAllTokens,API Reference/shared/listalltokens.md
+https://developer.sprint.paymentology.com/profile-api-reference/listtokens/,API Reference,Shared,ListTokens,API Reference/shared/listtokens.md
+https://developer.sprint.paymentology.com/profile-api-reference/loadcarddeductprofile/,API Reference,Shared,LoadCardDeductProfile,API Reference/shared/loadcarddeductprofile.md
+https://developer.sprint.paymentology.com/profile-api-reference/ordercard/,API Reference,Shared,OrderCard,API Reference/shared/ordercard.md
+https://developer.sprint.paymentology.com/profile-api-reference/register/,API Reference,Shared,Register,API Reference/shared/register.md
+https://developer.sprint.paymentology.com/profile-api-reference/resetpin/,API Reference,Shared,ResetPin,API Reference/shared/resetpin.md
+https://developer.sprint.paymentology.com/profile-api-reference/reversedeductcardloadprofile/,API Reference,Shared,ReverseDeductCardLoadProfile,API Reference/shared/reversedeductcardloadprofile.md
+https://developer.sprint.paymentology.com/profile-api-reference/reversedevalueprofile/,API Reference,Shared,ReverseDevalueProfile,API Reference/shared/reversedevalueprofile.md
+https://developer.sprint.paymentology.com/profile-api-reference/reversetransactionfee/,API Reference,Shared,ReverseTransactionFee,API Reference/shared/reversetransactionfee.md
+https://developer.sprint.paymentology.com/profile-api-reference/reversevastransferfunds/,API Reference,Shared,ReverseVasTransferFunds,API Reference/shared/reversevastransferfunds.md
+https://developer.sprint.paymentology.com/profile-api-reference/statement/,API Reference,Shared,Statement,API Reference/shared/statement.md
+https://developer.sprint.paymentology.com/profile-api-reference/statementbydaterange/,API Reference,Shared,StatementByDateRange,API Reference/shared/statementbydaterange.md
+https://developer.sprint.paymentology.com/profile-api-reference/status/,API Reference,Shared,Status,API Reference/shared/status.md
+https://developer.sprint.paymentology.com/profile-api-reference/stopcard/,API Reference,Shared,StopCard,API Reference/shared/stopcard.md
+https://developer.sprint.paymentology.com/profile-api-reference/stoptoken/,API Reference,Shared,StopToken,API Reference/shared/stoptoken.md
+https://developer.sprint.paymentology.com/profile-api-reference/togglevoucherfeature/,API Reference,Shared,ToggleVoucherFeature,API Reference/shared/togglevoucherfeature.md
+https://developer.sprint.paymentology.com/profile-api-reference/transferfunds/,API Reference,Shared,TransferFunds,API Reference/shared/transferfunds.md
+https://developer.sprint.paymentology.com/profile-api-reference/transferfundsbetweenprofiles/,API Reference,Shared,TransferFundsBetweenProfiles,API Reference/shared/transferfundsbetweenprofiles.md
+https://developer.sprint.paymentology.com/profile-api-reference/transferlink/,API Reference,Shared,TransferLink,API Reference/shared/transferlink.md
+https://developer.sprint.paymentology.com/profile-api-reference/transfertoken/,API Reference,Shared,TransferToken,API Reference/shared/transfertoken.md
+https://developer.sprint.paymentology.com/profile-api-reference/unstoptoken/,API Reference,Shared,UnStopToken,API Reference/shared/unstoptoken.md
+https://developer.sprint.paymentology.com/profile-api-reference/updateallocatedcard/,API Reference,Shared,UpdateAllocatedCard,API Reference/shared/updateallocatedcard.md
+https://developer.sprint.paymentology.com/profile-api-reference/updatebearer/,API Reference,Shared,UpdateBearer,API Reference/shared/updatebearer.md
+https://developer.sprint.paymentology.com/profile-api-reference/updatebearerextended/,API Reference,Shared,UpdateBearerExtended,API Reference/shared/updatebearerextended.md
+https://developer.sprint.paymentology.com/profile-api-reference/updateprofile/,API Reference,Shared,UpdateProfile,API Reference/shared/updateprofile.md
+https://developer.sprint.paymentology.com/profile-api-reference/updatescheduledstop/,API Reference,Shared,UpdateScheduledStop,API Reference/shared/updatescheduledstop.md
+https://developer.sprint.paymentology.com/profile-api-reference/updatetokenaccount/,API Reference,Shared,UpdateTokenAccount,API Reference/shared/updatetokenaccount.md
+https://developer.sprint.paymentology.com/profile-api-reference/uploadficadocument/,API Reference,Shared,UploadFicaDocument,API Reference/shared/uploadficadocument.md
+https://developer.sprint.paymentology.com/profile-api-reference/vastransferfunds/,API Reference,Shared,VasTransferFunds,API Reference/shared/vastransferfunds.md
+https://developer.sprint.paymentology.com/qr-payments-api/,Guides,Shared,QR Payments API,Guides/qr-payments-api.md
+https://developer.sprint.paymentology.com/qr-payments-api/api-reference/,API Reference,QR Payments,API REFERENCE,API Reference/qr-payments/api-reference.md
+https://developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/,API Reference,QR Payments,Appendix,API Reference/qr-payments/appendix.md
+https://developer.sprint.paymentology.com/qr-payments-api/api-reference/originating-institution/,API Reference,QR Payments,Originating Institution,API Reference/qr-payments/originating-institution.md
+https://developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution-remote/,API Reference,QR Payments,Receiving Institution (Remote),API Reference/qr-payments/receiving-institution-remote.md
+https://developer.sprint.paymentology.com/qr-payments-api/api-reference/receiving-institution/,API Reference,QR Payments,Receiving Institution,API Reference/qr-payments/receiving-institution.md
+https://developer.sprint.paymentology.com/qr-payments-api/qr-payments/,Guides,Shared,QR payments,Guides/qr-payments.md
+https://developer.sprint.paymentology.com/qr-payments-api/reports/,Reports,QR Payments,Reports,Reports/qr-payments/reports.md
+https://developer.sprint.paymentology.com/report-generator-offline/,Reports,Shared,Report Generator,Reports/shared/report-generator-offline.md
+https://developer.sprint.paymentology.com/report-generator-offline/report-generator-help/,Guides,Shared,Help,Guides/report-generator-help.md
+https://developer.sprint.paymentology.com/reporting-api-2/,Reports,Shared,Reporting API (companion),Reports/shared/reporting-api-2.md
+https://developer.sprint.paymentology.com/reporting-api/,Reports,Shared,Reporting API (Card),Reports/shared/reporting-api.md
+https://developer.sprint.paymentology.com/reset/,Guides,Shared,Reset,Guides/reset.md
+https://developer.sprint.paymentology.com/response-codes-2/,Guides,Shared,Response Codes - Remote API,Guides/response-codes-2.md
+https://developer.sprint.paymentology.com/response-codes-2/response-and-action-code-mapping/,Guides,Shared,Response and action code mapping,Guides/response-and-action-code-mapping.md
+https://developer.sprint.paymentology.com/response-codes/,Guides,Shared,Response Codes - Local API,Guides/response-codes.md
+https://developer.sprint.paymentology.com/reversedevalueprofile/,Guides,Shared,ReverseDevalueProfile,Guides/reversedevalueprofile.md
+https://developer.sprint.paymentology.com/tools/,Tools,Tools,Tools,Tools/tools.md
+https://developer.sprint.paymentology.com/tools/3d-secure-customization/,Tools,Tools,3D Secure Screen Customization,Tools/3d-secure-customization.md
+https://developer.sprint.paymentology.com/tools/3d-secure-customization/help/,Tools,Tools,Help,Tools/help.md
+https://developer.sprint.paymentology.com/tools/3d-secure-customization/one-time-password-otp-authentication/,Tools,Tools,One-time Password (OTP) Authentication,Tools/one-time-password-otp-authentication.md
+https://developer.sprint.paymentology.com/tools/3d-secure-customization/out-of-band-oob-authentication/,Tools,Tools,Out-of-Band (OOB) Authentication,Tools/out-of-band-oob-authentication.md
+https://developer.sprint.paymentology.com/tools/checksum-generator/,Tools,Tools,Checksum Generator,Tools/checksum-generator.md
+https://developer.sprint.paymentology.com/tools/checksum-generator/checksum-generator-help/,Tools,Tools,Help,Tools/checksum-generator-help.md
+https://developer.sprint.paymentology.com/tools/simpos/,Tools,Tools,SimPOS,Tools/simpos.md
+https://developer.sprint.paymentology.com/tools/simpos/help/,Tools,Tools,Help,Tools/help.md
+https://developer.sprint.paymentology.com/tools/simpos/simpos-result-codes/,Tools,Tools,SimPOS Result Codes,Tools/simpos-result-codes.md
+https://developer.sprint.paymentology.com/tools/xml-generator/,Tools,Tools,XML Generator,Tools/xml-generator.md
+https://developer.sprint.paymentology.com/tools/xml-generator/help/,Tools,Tools,Help,Tools/help.md
+https://developer.sprint.paymentology.com/tools/xml-poster/,Tools,Tools,XML Poster,Tools/xml-poster.md
+https://developer.sprint.paymentology.com/tutuka-transaction-stream-2/,Guides,Shared,Transaction Stream,Guides/tutuka-transaction-stream-2.md
+https://developer.sprint.paymentology.com/updateprofile/,Guides,Shared,UpdateProfile,Guides/updateprofile.md

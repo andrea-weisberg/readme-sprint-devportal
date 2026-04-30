@@ -4,17 +4,51 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest import TestCase
 
-from tests.migration_control.test_wxr import WXR_FIXTURE
+WXR_FIXTURE = """<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wp="http://wordpress.org/export/1.2/">
+  <channel>
+    <item>
+      <title>Client Testing Guide</title>
+      <link>https://developer.sprint.paymentology.com/get-started/client-testing-guide/</link>
+      <content:encoded><![CDATA[<p>Read <a href="https://developer.sprint.paymentology.com/card-api/api-reference/activatetoken/">ActivateToken</a>.</p>]]></content:encoded>
+      <wp:post_id>100</wp:post_id>
+      <wp:post_name>client-testing-guide</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>1</wp:menu_order>
+    </item>
+    <item>
+      <title>ActivateToken</title>
+      <link>https://developer.sprint.paymentology.com/card-api/api-reference/activatetoken/</link>
+      <content:encoded><![CDATA[<p>Activation details.</p>]]></content:encoded>
+      <wp:post_id>101</wp:post_id>
+      <wp:post_name>activatetoken</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>2</wp:menu_order>
+      <wp:postmeta>
+        <wp:meta_key>api_content_builder_0_request</wp:meta_key>
+        <wp:meta_value>request xml</wp:meta_value>
+      </wp:postmeta>
+    </item>
+  </channel>
+</rss>
+"""
 
 
 class RebuildCliSmokeTests(TestCase):
-    def test_cli_renders_staging_site(self):
+    def test_cli_renders_staging_site_and_writes_audit_reports(self):
         with TemporaryDirectory() as tmp:
             root = Path(tmp)
             xml_path = root / "export.xml"
             xml_path.write_text(WXR_FIXTURE, encoding="utf-8")
             (root / "docs").mkdir()
             output_root = root / "rebuild" / "readme-site"
+            report_root = root / "review" / "rebuild"
 
             result = subprocess.run(
                 [
@@ -28,19 +62,41 @@ class RebuildCliSmokeTests(TestCase):
                     "--output-root",
                     str(output_root),
                     "--report-root",
-                    str(root / "review" / "rebuild"),
+                    str(report_root),
                 ],
                 text=True,
                 capture_output=True,
             )
 
             self.assertEqual(result.returncode, 0, result.stderr)
-            self.assertIn(f"Rendered staging site: {output_root}", result.stdout)
+            self.assertIn("Source pages: 2", result.stdout)
+            self.assertIn("Rendered pages: 2", result.stdout)
+            self.assertIn("Rewritten links: 1", result.stdout)
+            self.assertIn(f"Staging site: {output_root}", result.stdout)
+            self.assertIn(f"Audit reports: {report_root}", result.stdout)
             self.assertEqual(
-                (output_root / "API Reference" / "shared" / "activate.md").read_text(encoding="utf-8"),
-                "# Activate Card\n",
+                (output_root / "Guides" / "client-testing-guide.md").read_text(encoding="utf-8"),
+                "# Client Testing Guide\n\nRead ActivateToken.\n",
             )
             self.assertEqual(
-                (output_root / "API Reference" / "shared" / "_order.yaml").read_text(encoding="utf-8"),
-                "- activate\n",
+                (output_root / "API Reference" / "card-api" / "activatetoken.md").read_text(encoding="utf-8"),
+                "# ActivateToken\n\nActivation details.\n",
+            )
+            self.assertEqual(
+                (report_root / "page_mapping.csv").read_text(encoding="utf-8"),
+                "source_url,top_bar,subsection,title,destination_path\n"
+                "https://developer.sprint.paymentology.com/card-api/api-reference/activatetoken/,API Reference,Card API,ActivateToken,API Reference/card-api/activatetoken.md\n"
+                "https://developer.sprint.paymentology.com/get-started/client-testing-guide/,Guides,Shared,Client Testing Guide,Guides/client-testing-guide.md\n",
+            )
+            self.assertEqual(
+                (report_root / "link_rewrites.csv").read_text(encoding="utf-8"),
+                "source_page,original_url,rewritten_url,status\n"
+                "https://developer.sprint.paymentology.com/get-started/client-testing-guide/,https://developer.sprint.paymentology.com/card-api/api-reference/activatetoken/,/api-reference/card-api/activatetoken,rewritten\n",
+            )
+            self.assertEqual(
+                (report_root / "summary.md").read_text(encoding="utf-8"),
+                "# ReadMe Rebuild Summary\n\n"
+                "- Source pages: 2\n"
+                "- Rendered pages: 2\n"
+                "- Rewritten links: 1\n",
             )

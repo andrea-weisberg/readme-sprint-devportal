@@ -6,7 +6,9 @@ import argparse
 from pathlib import Path
 from typing import Optional, Sequence
 
+from tools.readme_rebuild.audit import write_audit
 from tools.readme_rebuild.inventory import build_inventory
+from tools.readme_rebuild.links import rewrite_links
 from tools.readme_rebuild.mapping import map_page
 from tools.readme_rebuild.render import render_site
 
@@ -23,13 +25,40 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
     inventory = build_inventory(args.wordpress_export, args.repo_root)
     mapped_pages = tuple(map_page(page) for page in inventory.pages)
-    content_by_path = {
-        destination.path: f"# {destination.title}\n" for destination in mapped_pages
+    destinations_by_source = {
+        destination.source_url: destination for destination in mapped_pages
     }
+    content_by_path = {}
+    link_rewrites = []
+
+    for page, destination in zip(inventory.pages, mapped_pages):
+        rewritten_content, page_rewrites = rewrite_links(page, destinations_by_source)
+        content_by_path[destination.path] = _render_page_content(
+            destination.title, rewritten_content
+        )
+        link_rewrites.extend(page_rewrites)
 
     render_site(args.output_root, mapped_pages, content_by_path)
-    print(f"Rendered staging site: {args.output_root}")
+    summary = write_audit(args.report_root, mapped_pages, tuple(link_rewrites))
+    print(
+        "\n".join(
+            (
+                f"Source pages: {summary.source_pages}",
+                f"Rendered pages: {summary.rendered_pages}",
+                f"Rewritten links: {summary.rewritten_links}",
+                f"Staging site: {args.output_root}",
+                f"Audit reports: {args.report_root}",
+            )
+        )
+    )
     return 0
+
+
+def _render_page_content(title: str, body: str) -> str:
+    normalized_body = body.strip()
+    if not normalized_body:
+        return f"# {title}\n"
+    return f"# {title}\n\n{normalized_body}\n"
 
 
 if __name__ == "__main__":
