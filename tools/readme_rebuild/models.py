@@ -40,3 +40,11 @@ class DestinationPage:
     top_bar: str
     subsection: str
     slug: str
+
+
+@dataclass(frozen=True)
+class LinkRewrite:
+    source_page: str
+    original_url: str
+    rewritten_url: str
+    status: str
