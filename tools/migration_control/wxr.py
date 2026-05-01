@@ -18,6 +18,18 @@ NS = {
 }
 
 LINK_RE = re.compile(r"""(?:href|src)\s*=\s*["']([^"']+)["']""", re.IGNORECASE)
+BUILDER_CONTENT_KEY_RE = re.compile(
+    r"^(?:page|api)_content_builder_.*(?:content|text|description|title)$"
+)
+SERIALIZED_VALUE_RE = re.compile(r"^[abisOdN]:\d*(?:[:;{])")
+ANCHOR_RE = re.compile(
+    r"""<a\b[^>]*href\s*=\s*["']([^"']+)["'][^>]*>(.*?)</a>""",
+    re.IGNORECASE | re.DOTALL,
+)
+IMAGE_RE = re.compile(
+    r"""<img\b([^>]*?)src\s*=\s*["']([^"']+)["']([^>]*)>""",
+    re.IGNORECASE | re.DOTALL,
+)
 TAG_RE = re.compile(r"<[^>]+>")
 
 
@@ -42,7 +54,7 @@ def parse_wxr(xml_path: Path) -> WordPressExport:
 
 
 def _parse_page(item: ElementTree.Element) -> WordPressPage:
-    content = _text(item, "content:encoded")
+    content = _page_content(item)
     acf_keys = tuple(sorted(set(_acf_keys(item))))
 
     return WordPressPage(
@@ -57,6 +69,7 @@ def _parse_page(item: ElementTree.Element) -> WordPressPage:
         content_text=_html_to_text(content),
         acf_keys=acf_keys,
         links=tuple(_extract_links(content)),
+        content_markdown=_html_to_markdown(content),
     )
 
 
@@ -93,6 +106,34 @@ def _acf_keys(item: ElementTree.Element) -> Iterable[str]:
             yield key
 
 
+def _page_content(item: ElementTree.Element) -> str:
+    fragments: List[str] = []
+
+    content = _text(item, "content:encoded")
+    if _keep_content_fragment(content):
+        fragments.append(content)
+
+    for meta in item.findall("wp:postmeta", NS):
+        key = clean_text(_text(meta, "wp:meta_key"))
+        if not BUILDER_CONTENT_KEY_RE.match(key):
+            continue
+
+        value = _text(meta, "wp:meta_value")
+        if _keep_content_fragment(value):
+            fragments.append(value)
+
+    return "\n\n".join(fragment for fragment in fragments if clean_text(fragment))
+
+
+def _keep_content_fragment(value: str) -> bool:
+    cleaned = clean_text(value)
+    if not cleaned:
+        return False
+    if SERIALIZED_VALUE_RE.match(cleaned):
+        return False
+    return True
+
+
 def _extract_links(content: str) -> Tuple[str, ...]:
     links = [clean_text(match.group(1)) for match in LINK_RE.finditer(content)]
     return tuple(link for link in links if link)
@@ -102,3 +143,31 @@ def _html_to_text(content: str) -> str:
     without_tags = TAG_RE.sub(" ", content)
     text = clean_text(html.unescape(without_tags))
     return re.sub(r"\s+([.,;:!?])", r"\1", text)
+
+
+def _html_to_markdown(content: str) -> str:
+    markdown = ANCHOR_RE.sub(_anchor_to_markdown, content)
+    markdown = IMAGE_RE.sub(_image_to_markdown, markdown)
+    without_tags = TAG_RE.sub(" ", markdown)
+    text = clean_text(html.unescape(without_tags))
+    return re.sub(r"\s+([.,;:!?])", r"\1", text)
+
+
+def _anchor_to_markdown(match: re.Match[str]) -> str:
+    href = clean_text(html.unescape(match.group(1)))
+    label = _html_to_text(match.group(2))
+    if not href:
+        return label
+    if not label:
+        return href
+    return f"[{label}]({href})"
+
+
+def _image_to_markdown(match: re.Match[str]) -> str:
+    attributes = " ".join(part for part in match.groups() if part)
+    src = clean_text(html.unescape(match.group(2)))
+    alt_match = re.search(r"""alt\s*=\s*["']([^"']*)["']""", attributes, re.IGNORECASE)
+    alt = clean_text(html.unescape(alt_match.group(1))) if alt_match else ""
+    if not src:
+        return ""
+    return f"![{alt}]({src})"

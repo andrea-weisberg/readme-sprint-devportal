@@ -20,6 +20,7 @@ def build_inventory(wordpress_export: Path, repo_root: Path) -> RebuildInventory
             section_hint=_section_hint(page.url),
             content_text=page.content_text,
             links=page.links,
+            content_markdown=page.content_markdown or page.content_text,
         )
         for page in export.pages
         if page.launch_scope

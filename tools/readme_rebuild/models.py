@@ -17,6 +17,7 @@ class SourcePage:
     section_hint: str
     content_text: str
     links: tuple[str, ...]
+    content_markdown: str = ""
 
 
 @dataclass(frozen=True)

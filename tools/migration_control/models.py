@@ -19,6 +19,7 @@ class WordPressPage:
     content_text: str
     acf_keys: Tuple[str, ...]
     links: Tuple[str, ...]
+    content_markdown: str = ""
     post_type: str = "page"
 
     @property

@@ -2,4 +2,4 @@
 
 - Source pages: 307
 - Rendered pages: 307
-- Rewritten links: 1
+- Rewritten links: 519

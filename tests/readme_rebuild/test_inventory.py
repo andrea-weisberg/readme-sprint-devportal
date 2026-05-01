@@ -33,6 +33,10 @@ class InventoryTests(TestCase):
         self.assertEqual(inventory.pages[0].section_hint, "card-api/activate/")
         self.assertIn("Use Card API.", inventory.pages[0].content_text)
         self.assertEqual(
+            inventory.pages[0].content_markdown,
+            "Use [Card API](https://developer.sprint.paymentology.com/card-api/).",
+        )
+        self.assertEqual(
             inventory.pages[0].links,
             ("https://developer.sprint.paymentology.com/card-api/",),
         )

@@ -12,13 +12,17 @@ WXR_FIXTURE = """<?xml version="1.0" encoding="UTF-8" ?>
     <item>
       <title>Client Testing Guide</title>
       <link>https://developer.sprint.paymentology.com/get-started/client-testing-guide/</link>
-      <content:encoded><![CDATA[<p>Read <a href="https://developer.sprint.paymentology.com/card-api/api-reference/activatetoken/">ActivateToken</a>.</p>]]></content:encoded>
+      <content:encoded><![CDATA[]]></content:encoded>
       <wp:post_id>100</wp:post_id>
       <wp:post_name>client-testing-guide</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>page</wp:post_type>
       <wp:post_parent>0</wp:post_parent>
       <wp:menu_order>1</wp:menu_order>
+      <wp:postmeta>
+        <wp:meta_key>page_content_builder_0_content</wp:meta_key>
+        <wp:meta_value><![CDATA[<p>Read <a href="https://developer.sprint.paymentology.com/card-api/api-reference/activatetoken/">ActivateToken</a>.</p>]]></wp:meta_value>
+      </wp:postmeta>
     </item>
     <item>
       <title>ActivateToken</title>
@@ -76,7 +80,7 @@ class RebuildCliSmokeTests(TestCase):
             self.assertIn(f"Audit reports: {report_root}", result.stdout)
             self.assertEqual(
                 (output_root / "Guides" / "client-testing-guide.md").read_text(encoding="utf-8"),
-                "# Client Testing Guide\n\nRead ActivateToken.\n",
+                "# Client Testing Guide\n\nRead [ActivateToken](/api-reference/card-api/activatetoken).\n",
             )
             self.assertEqual(
                 (output_root / "API Reference" / "card-api" / "activatetoken.md").read_text(encoding="utf-8"),

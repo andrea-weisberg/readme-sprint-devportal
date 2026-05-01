@@ -74,6 +74,10 @@ class WxrParserTests(TestCase):
         self.assertIn("api_content_builder_0_request", page.acf_keys)
         self.assertEqual(page.links, ("https://developer.sprint.paymentology.com/card-api/",))
         self.assertIn("Use Card API.", page.content_text)
+        self.assertEqual(
+            page.content_markdown,
+            "Use [Card API](https://developer.sprint.paymentology.com/card-api/).",
+        )
 
         draft = export.pages[1]
         self.assertFalse(draft.launch_scope)
@@ -81,3 +85,44 @@ class WxrParserTests(TestCase):
         attachment = export.attachments[0]
         self.assertEqual(attachment.source_id, "201")
         self.assertEqual(attachment.filename, "dispute.docx")
+
+    def test_parse_wxr_includes_builder_content_and_links(self):
+        builder_fixture = """<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wp="http://wordpress.org/export/1.2/">
+  <channel>
+    <item>
+      <title>Get Started</title>
+      <link>https://developer.sprint.paymentology.com/get-started/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <wp:post_id>301</wp:post_id>
+      <wp:post_name>get-started</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>1</wp:menu_order>
+      <wp:postmeta>
+        <wp:meta_key>page_content_builder_0_content</wp:meta_key>
+        <wp:meta_value><![CDATA[<p>Read <a href="https://developer.sprint.paymentology.com/get-started/our-apis/">Our APIs</a>.</p>]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+  </channel>
+</rss>
+"""
+        with TemporaryDirectory() as tmp:
+            xml_path = Path(tmp) / "export.xml"
+            xml_path.write_text(builder_fixture, encoding="utf-8")
+
+            export = parse_wxr(xml_path)
+
+        page = export.pages[0]
+        self.assertEqual(page.content_text, "Read Our APIs.")
+        self.assertEqual(
+            page.content_markdown,
+            "Read [Our APIs](https://developer.sprint.paymentology.com/get-started/our-apis/).",
+        )
+        self.assertEqual(
+            page.links,
+            ("https://developer.sprint.paymentology.com/get-started/our-apis/",),
+        )

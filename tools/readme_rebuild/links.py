@@ -6,7 +6,7 @@ from tools.readme_rebuild.models import DestinationPage, LinkRewrite, SourcePage
 def rewrite_links(
     page: SourcePage, destinations: dict[str, DestinationPage]
 ) -> tuple[str, tuple[LinkRewrite, ...]]:
-    rewritten = page.content_text
+    rewritten = page.content_markdown or page.content_text
     rows = []
 
     for link in page.links:
