@@ -21,7 +21,7 @@ WXR_FIXTURE = """<?xml version="1.0" encoding="UTF-8" ?>
       <wp:menu_order>1</wp:menu_order>
       <wp:postmeta>
         <wp:meta_key>page_content_builder_0_content</wp:meta_key>
-        <wp:meta_value><![CDATA[<p>Read <a href="https://developer.sprint.paymentology.com/card-api/api-reference/activatetoken/">ActivateToken</a>.</p>]]></wp:meta_value>
+        <wp:meta_value><![CDATA[<h2>Choose an API</h2><p>Read <a href="https://developer.sprint.paymentology.com/card-api/api-reference/activatetoken/">ActivateToken</a>.</p><ul><li>First task</li><li>Second task</li></ul>]]></wp:meta_value>
       </wp:postmeta>
     </item>
     <item>
@@ -80,7 +80,7 @@ class RebuildCliSmokeTests(TestCase):
             self.assertIn(f"Audit reports: {report_root}", result.stdout)
             self.assertEqual(
                 (output_root / "Guides" / "client-testing-guide.md").read_text(encoding="utf-8"),
-                "# Client Testing Guide\n\nRead [ActivateToken](/api-reference/card-api/activatetoken).\n",
+                "# Client Testing Guide\n\n## Choose an API\n\nRead [ActivateToken](/api-reference/card-api/activatetoken).\n\n- First task\n- Second task\n",
             )
             self.assertEqual(
                 (output_root / "API Reference" / "card-api" / "activatetoken.md").read_text(encoding="utf-8"),

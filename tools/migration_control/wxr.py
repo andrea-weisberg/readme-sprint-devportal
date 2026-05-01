@@ -26,9 +26,16 @@ ANCHOR_RE = re.compile(
     r"""<a\b[^>]*href\s*=\s*["']([^"']+)["'][^>]*>(.*?)</a>""",
     re.IGNORECASE | re.DOTALL,
 )
+HEADING_RE = re.compile(r"<h([1-6])\b[^>]*>(.*?)</h\1>", re.IGNORECASE | re.DOTALL)
 IMAGE_RE = re.compile(
     r"""<img\b([^>]*?)src\s*=\s*["']([^"']+)["']([^>]*)>""",
     re.IGNORECASE | re.DOTALL,
+)
+LIST_ITEM_RE = re.compile(r"<li\b[^>]*>(.*?)</li>", re.IGNORECASE | re.DOTALL)
+BREAK_RE = re.compile(r"<br\s*/?>", re.IGNORECASE)
+BLOCK_TAG_RE = re.compile(
+    r"</?(?:p|div|ul|ol|section|article|table|tbody|thead|tr|td|th|blockquote)\b[^>]*>",
+    re.IGNORECASE,
 )
 TAG_RE = re.compile(r"<[^>]+>")
 
@@ -147,10 +154,13 @@ def _html_to_text(content: str) -> str:
 
 def _html_to_markdown(content: str) -> str:
     markdown = ANCHOR_RE.sub(_anchor_to_markdown, content)
+    markdown = HEADING_RE.sub(_heading_to_markdown, markdown)
     markdown = IMAGE_RE.sub(_image_to_markdown, markdown)
+    markdown = LIST_ITEM_RE.sub(_list_item_to_markdown, markdown)
+    markdown = BREAK_RE.sub("\n", markdown)
+    markdown = BLOCK_TAG_RE.sub("\n\n", markdown)
     without_tags = TAG_RE.sub(" ", markdown)
-    text = clean_text(html.unescape(without_tags))
-    return re.sub(r"\s+([.,;:!?])", r"\1", text)
+    return _normalize_markdown_text(without_tags)
 
 
 def _anchor_to_markdown(match: re.Match[str]) -> str:
@@ -171,3 +181,28 @@ def _image_to_markdown(match: re.Match[str]) -> str:
     if not src:
         return ""
     return f"![{alt}]({src})"
+
+
+def _heading_to_markdown(match: re.Match[str]) -> str:
+    level = max(1, min(6, int(match.group(1))))
+    heading = _html_to_text(match.group(2))
+    if not heading:
+        return ""
+    return f"\n\n{'#' * level} {heading}\n\n"
+
+
+def _list_item_to_markdown(match: re.Match[str]) -> str:
+    item = _html_to_text(match.group(1))
+    if not item:
+        return ""
+    return f"\n- {item}"
+
+
+def _normalize_markdown_text(value: str) -> str:
+    text = html.unescape(value)
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    text = re.sub(r"[^\S\n]+", " ", text)
+    text = re.sub(r" *\n *", "\n", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    text = re.sub(r"\s+([.,;:!?])", r"\1", text)
+    return text.strip()

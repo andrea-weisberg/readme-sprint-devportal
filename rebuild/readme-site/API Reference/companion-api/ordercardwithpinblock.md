@@ -1,3 +1,293 @@
 # OrderCardWithPinBlock
 
-Order a card for a specific cardholder. You can choose this method if you want the PIN of the card printed on its card carrier or if you have Offline PIN validation in your country. IMPORTANT: No commas, question marks or quotation marks are allowed in any of the fields. How it works Clients send the OrderCardWithPinBlock API request to Paymentology in Format 1 (using the key shared with them, which is the same key that is shared with the Card Manufacturer). Paymentology receives the API request and converts PIN block Format 1 to clear text PIN. Paymentology saves the details in the backend. Paymentology re-encrypts the clear text PIN into PIN block Format 0, this is then used in the PAN file sent to the Card Manufacturer. The Card Manufacturer then decrypts the PIN block as Format 0. The Java example snippet below is to be used to help perform the PIN encryption for the PIN that is to be inserted into the CardOrderWithPinBlock API request call. This is an example that encrypts the PIN using ISO Format 1. The key and PIN are removed from the main method. The code that takes a PIN and encrypts it using a key when you run it has the following values: String plainKey = ""; String pin = ""; package com.tutuka.cipher; import org.apache.commons.codec.binary.Hex; import javax.crypto.*; import javax.crypto.spec.DESedeKeySpec; import java.security.InvalidParameterException; import java.security.Key; public class PINEncryptExample { private static String formatPinBlock(String pin, int format) throws Exception { StringBuilder formattedPin = new StringBuilder(); String dpb; byte[] anbValue; byte[] pinValue; byte[] dpbValue = new byte [8]; int i=0; formattedPin.append(format); formattedPin.append(pin.length()); formattedPin.append(pin); int count = 14 - pin.length(); formattedPin.append(format == 0? new String(new char[count]).replace("\0", "F"): new String(new char[count]).replace("\0", "0")); pinValue = Hex.decodeHex(formattedPin.toString().toCharArray()); anbValue = Hex.decodeHex("0000000000000000".toCharArray()); for (byte b: pinValue) { dpbValue[i] = (byte) (b ^ anbValue[i++]); } dpb = Hex.encodeHexString(dpbValue); return dpb; } private static String getPinFromPinBlock(String dpb) throws Exception { byte[] dpbValue = Hex.decodeHex(dpb.toCharArray()); byte[] anbValue = new byte[8]; byte[] pinValue = new byte[8]; int i = 0; anbValue = Hex.decodeHex("0000000000000000".toCharArray()); for (byte b: dpbValue) { pinValue[i] = (byte) (b ^ anbValue[i++]); } String pinBlock = Hex.encodeHexString(pinValue); int len = Integer.parseInt(pinBlock.substring(1, 2)) + 2; String pin = pinBlock.substring(2, len); return pin; } public static String encode(String pin, String transformation, Key secKey) throws Exception { byte[] dpbValue = Hex.decodeHex(formatPinBlock(pin,1).toCharArray()); Cipher encrypter = Cipher.getInstance(transformation); encrypter.init(Cipher.ENCRYPT_MODE, secKey); byte[] encrypted = encrypter.doFinal(dpbValue); return Hex.encodeHexString(encrypted).toUpperCase(); } public static String decode(String epb, String transformation, Key secKey) throws Exception { byte[] epbValue = Hex.decodeHex(epb.toCharArray()); Cipher decrypter = Cipher.getInstance(transformation); decrypter.init(Cipher.DECRYPT_MODE, secKey); byte[] decrypted = decrypter.doFinal(epbValue); return getPinFromPinBlock(Hex.encodeHexString(decrypted).toUpperCase()); } public static void main(String args[]) throws Exception { String plainKey = ""; String pin = ""; String algorithm = "DESede"; String transformation = "DESede/ECB/Nopadding"; if(plainKey.length()!= 32 && plainKey.length()!= 48) throw new InvalidParameterException("the key argument needs to be either 32 or 48 characters"); String fullKey = plainKey; if(plainKey.length() == 32) fullKey = plainKey + plainKey.substring(0, 16); byte[] keyValue = Hex.decodeHex(fullKey.toCharArray()); DESedeKeySpec keySpec = new DESedeKeySpec(keyValue); SecretKey secKey = SecretKeyFactory.getInstance(algorithm).generateSecret(keySpec); String encryptedPin = encode(pin, transformation, secKey); System.out.println("Encrypted PIN: " + encryptedPin); String decrypted = decode(encryptedPin, transformation, secKey); System.out.println("Decrypted PIN: " + decrypted); } } Request details The Paymentology issued terminal ID of the terminal requesting the transaction This field can be used to enter the person’s title (e.g. Mr / Ms / Mrs / Dr / etc). (The combined value of title, initials and surname delimited with spaces should be maximum 20 characters). Field is required but can accept empty string This field can only contain alphabetic characters in UPPER CASE – no full stops are allowed between initials. (The combined value of title, initials and surname delimited with spaces should be maximum 20 characters). Field is required but can accept empty string This field can only be alphabetic characters in UPPER CASE – no full stops and/or special characters are allowed. In the case of -double barrel- surnames, such as FABER-SMITH we may have a hyphen between the two parts of the surname but without any spaces. (The combined value of title, initials and surname delimited with spaces should be maximum 20 characters). Field is required but can accept empty string This is the first line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 60 characters (Manufacturer dependent). The field may not start (first character) with a space or a full stop. Field is required but can accept empty string This is the second line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 60 characters (Manufacturer dependent). The field may not start (first character) with a space or a full stop. Field is required but can accept empty string This is the third line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 60 characters (Manufacturer dependent). The field may not start (first character) with a space or a full stop. Field is required but can accept empty string This is the fourth line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 60 characters (Manufacturer dependent). The field may not start (first character) with a space or a full stop. Field is required but can accept empty string This is the fifth line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 60 characters (Manufacturer dependent). The field may not start (first character) with a space or a full stop. Field is required but can accept empty string Customer specific additional data. Format to be negotiated per client. Field is required but can accept empty string Customer specific generated pin block. Refer to [pinBlock PIN encryption](#encryption) to help perform the PIN encryption required. A unique identifier generated by the client, which must not be duplicated over time. Client generated / local Transaction Date to assist in identifying transactions on the client side HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key pinBlock PIN encryption Code sample <?xml version="1.0"?> <methodCall> <methodName>OrderCardWithPinBlock</methodName> <params> <param> <value> <string>0014682067</string> </value> </param> <param> <value> <string>Miss</string> </value> </param> <param> <value> <string>TL</string> </value> </param> <param> <value> <string>Tutuka</string> </value> </param> <param> <value> <string>7 Plein</string> </value> </param> <param> <value> <string>Wanderers</string> </value> </param> <param> <value> <string>Johannesburg</string> </value> </param> <param> <value> <string>2001</string> </value> </param> <param> <value> <string>South Africa</string> </value> </param> <param> <value> <string>test123</string> </value> </param> <param> <value> <string>pinBlock</string> </value> </param> <param> <value> <string>12345</string> </value> </param> <param> <value> <dateTime.iso8601>20200710T16:08:00</dateTime.iso8601> </value> </param> <param> <value> <string>B8A794C187259DC5F65339C6C4F13567F9EC1008</string> </value> </param> </params> </methodCall> Response details Code sample <?xml version="1.0" encoding="UTF-8"?> <methodResponse> <params> <param> <value> <struct> <member> <name>resultCode</name> <value> <int>1</int> </value> </member> <member> <name>resultText</name> <value> <string>Approved</string> </value> </member> </struct> </value> </param> </params> </methodResponse> [Back to Local API menu](/api-reference/companion-api/local-api) Text used to accompany the resultCode and provide further detail of the transaction result.
+Order a card for a specific cardholder. You can choose this method if you want the PIN of the card printed on its card carrier or if you have Offline PIN validation in your country.
+
+IMPORTANT: No commas, question marks or quotation marks are allowed in any of the fields.
+
+### How it works
+
+- Clients send the OrderCardWithPinBlock API request to Paymentology in Format 1 (using the key shared with them, which is the same key that is shared with the Card Manufacturer).
+
+- Paymentology receives the API request and converts PIN block Format 1 to clear text PIN.
+
+- Paymentology saves the details in the backend.
+
+- Paymentology re-encrypts the clear text PIN into PIN block Format 0, this is then used in the PAN file sent to the Card Manufacturer.
+
+- The Card Manufacturer then decrypts the PIN block as Format 0.
+
+The Java example snippet below is to be used to help perform the PIN encryption for the PIN that is to be inserted into the CardOrderWithPinBlock API request call.
+
+- This is an example that encrypts the PIN using ISO Format 1.
+
+- The key and PIN are removed from the main method.
+
+- The code that takes a PIN and encrypts it using a key when you run it has the following values:
+
+- String plainKey = "";
+
+- String pin = "";
+
+package com.tutuka.cipher;
+
+import org.apache.commons.codec.binary.Hex;
+
+import javax.crypto.*;
+import javax.crypto.spec.DESedeKeySpec;
+import java.security.InvalidParameterException;
+import java.security.Key;
+
+public class PINEncryptExample {
+
+private static String formatPinBlock(String pin, int format) throws Exception {
+StringBuilder formattedPin = new StringBuilder();
+String dpb;
+byte[] anbValue;
+byte[] pinValue;
+byte[] dpbValue = new byte [8];
+int i=0;
+
+formattedPin.append(format);
+formattedPin.append(pin.length());
+formattedPin.append(pin);
+int count = 14 - pin.length();
+formattedPin.append(format == 0? new String(new char[count]).replace("\0", "F"): new String(new char[count]).replace("\0", "0"));
+
+pinValue = Hex.decodeHex(formattedPin.toString().toCharArray());
+
+anbValue = Hex.decodeHex("0000000000000000".toCharArray());
+for (byte b: pinValue) {
+dpbValue[i] = (byte) (b ^ anbValue[i++]);
+}
+
+dpb = Hex.encodeHexString(dpbValue);
+
+return dpb;
+}
+
+private static String getPinFromPinBlock(String dpb) throws Exception {
+byte[] dpbValue = Hex.decodeHex(dpb.toCharArray());
+byte[] anbValue = new byte[8];
+byte[] pinValue = new byte[8];
+int i = 0;
+
+anbValue = Hex.decodeHex("0000000000000000".toCharArray());
+for (byte b: dpbValue) {
+pinValue[i] = (byte) (b ^ anbValue[i++]);
+}
+
+String pinBlock = Hex.encodeHexString(pinValue);
+int len = Integer.parseInt(pinBlock.substring(1, 2)) + 2;
+String pin = pinBlock.substring(2, len);
+
+return pin;
+}
+
+public static String encode(String pin, String transformation, Key secKey) throws Exception {
+byte[] dpbValue = Hex.decodeHex(formatPinBlock(pin,1).toCharArray());
+
+Cipher encrypter = Cipher.getInstance(transformation);
+encrypter.init(Cipher.ENCRYPT_MODE, secKey);
+
+byte[] encrypted = encrypter.doFinal(dpbValue);
+
+return Hex.encodeHexString(encrypted).toUpperCase();
+}
+
+public static String decode(String epb, String transformation, Key secKey) throws Exception {
+byte[] epbValue = Hex.decodeHex(epb.toCharArray());
+
+Cipher decrypter = Cipher.getInstance(transformation);
+decrypter.init(Cipher.DECRYPT_MODE, secKey);
+
+byte[] decrypted = decrypter.doFinal(epbValue);
+
+return getPinFromPinBlock(Hex.encodeHexString(decrypted).toUpperCase());
+}
+
+public static void main(String args[]) throws Exception {
+String plainKey = "";
+String pin = "";
+String algorithm = "DESede";
+String transformation = "DESede/ECB/Nopadding";
+
+if(plainKey.length()!= 32 && plainKey.length()!= 48) throw new InvalidParameterException("the key argument needs to be either 32 or 48 characters");
+
+String fullKey = plainKey;
+if(plainKey.length() == 32) fullKey = plainKey + plainKey.substring(0, 16);
+
+byte[] keyValue = Hex.decodeHex(fullKey.toCharArray());
+DESedeKeySpec keySpec = new DESedeKeySpec(keyValue);
+SecretKey secKey = SecretKeyFactory.getInstance(algorithm).generateSecret(keySpec);
+
+String encryptedPin = encode(pin, transformation, secKey);
+
+System.out.println("Encrypted PIN: " + encryptedPin);
+
+String decrypted = decode(encryptedPin, transformation, secKey);
+
+System.out.println("Decrypted PIN: " + decrypted);
+
+}
+
+}
+
+### Request details
+
+The Paymentology issued terminal ID of the terminal requesting the transaction
+
+This field can be used to enter the person’s title (e.g. Mr / Ms / Mrs / Dr / etc).
+
+(The combined value of title, initials and surname delimited with spaces should be maximum 20 characters). Field is required but can accept empty string
+
+This field can only contain alphabetic characters in UPPER CASE – no full stops are allowed between initials.
+
+(The combined value of title, initials and surname delimited with spaces should be maximum 20 characters). Field is required but can accept empty string
+
+This field can only be alphabetic characters in UPPER CASE – no full stops and/or special characters are allowed. In the case of -double barrel- surnames, such as FABER-SMITH we may have a hyphen between the two parts of the surname but without any spaces.
+
+(The combined value of title, initials and surname delimited with spaces should be maximum 20 characters). Field is required but can accept empty string
+
+This is the first line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 60 characters (Manufacturer dependent).
+
+The field may not start (first character) with a space or a full stop. Field is required but can accept empty string
+
+This is the second line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 60 characters (Manufacturer dependent).
+
+The field may not start (first character) with a space or a full stop. Field is required but can accept empty string
+
+This is the third line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 60 characters (Manufacturer dependent).
+
+The field may not start (first character) with a space or a full stop. Field is required but can accept empty string
+
+This is the fourth line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 60 characters (Manufacturer dependent).
+
+The field may not start (first character) with a space or a full stop. Field is required but can accept empty string
+
+This is the fifth line of the address field which will be printed on a card mailer when required by the client – maximum length is 27 to 60 characters (Manufacturer dependent).
+
+The field may not start (first character) with a space or a full stop. Field is required but can accept empty string
+
+Customer specific additional data. Format to be negotiated per client. Field is required but can accept empty string
+
+Customer specific generated pin block.
+Refer to [pinBlock PIN encryption](#encryption) to help perform the PIN encryption required.
+
+A unique identifier generated by the client, which must not be duplicated over time.
+
+Client generated / local Transaction Date to assist in identifying transactions on the client side
+
+HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key
+
+#### pinBlock PIN encryption
+
+#### Code sample
+
+<?xml version="1.0"?>
+<methodCall>
+<methodName>OrderCardWithPinBlock</methodName>
+<params>
+<param>
+<value>
+<string>0014682067</string>
+</value>
+</param>
+<param>
+<value>
+<string>Miss</string>
+</value>
+</param>
+<param>
+<value>
+<string>TL</string>
+</value>
+</param>
+<param>
+<value>
+<string>Tutuka</string>
+</value>
+</param>
+<param>
+<value>
+<string>7 Plein</string>
+</value>
+</param>
+<param>
+<value>
+<string>Wanderers</string>
+</value>
+</param>
+<param>
+<value>
+<string>Johannesburg</string>
+</value>
+</param>
+<param>
+<value>
+<string>2001</string>
+</value>
+</param>
+<param>
+<value>
+<string>South Africa</string>
+</value>
+</param>
+<param>
+<value>
+<string>test123</string>
+</value>
+</param>
+<param>
+<value>
+<string>pinBlock</string>
+</value>
+</param>
+<param>
+<value>
+<string>12345</string>
+</value>
+</param>
+<param>
+<value>
+<dateTime.iso8601>20200710T16:08:00</dateTime.iso8601>
+</value>
+</param>
+<param>
+<value>
+<string>B8A794C187259DC5F65339C6C4F13567F9EC1008</string>
+</value>
+</param>
+</params>
+</methodCall>
+
+### Response details
+
+#### Code sample
+
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+<params>
+<param>
+<value>
+<struct>
+<member>
+<name>resultCode</name>
+<value>
+<int>1</int>
+</value>
+</member>
+<member>
+<name>resultText</name>
+<value>
+<string>Approved</string>
+</value>
+</member>
+</struct>
+</value>
+</param>
+</params>
+</methodResponse>
+
+[Back to Local API menu](/api-reference/companion-api/local-api)
+
+Text used to accompany the resultCode and provide further detail of the transaction result.

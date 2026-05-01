@@ -1,3 +1,69 @@
 # 3D Secure - Out of band Authentication
 
-Overview of Out-of-Band (OOB) Authentication Out-of-Band (OOB) authentication is an advanced type of two-factor authentication (2FA) that necessitates an additional verification method via a distinct communication channel. It is an optional yet highly advised Challenge flow authentication method for conducting 3DS transactions for Paymentology clients. This applies to both Mastercard and Visa transactions. Operational Workflow OOB serves as an authentication technique during the 3DS Challenge flow, steering the process to an Issuer’s mobile application rather than utilizing a one-time password (OTP) dispatched through SMS or text message. During the 3DS Challenge flow, a Push Notification is sent to the Issuer’s mobile application. This initiates the sending of an authentication request to the cardholder. Subsequently, the cardholder undergoes authentication in the Issuer’s application using biometric methods like facial recognition or thumbprint, or a one-time password. Following the authentication, the issuer communicates the result. If authenticated successfully, the merchant is enabled to initiate the authorization request, culminating in the completion of the transaction processing. Paymentology's OOB Solution: In the OOB Solution, several participants play crucial roles: Cardholder: Undertakes online purchases and authenticates via the Issuer Mobile app. ACS provider: The Access Control Server, authenticating the cardholder. Paymentology: Acts as the Issuer Processor, managing and executing the card transaction for the client. Issuing Client: Manages the OOB Issuer Mobile app and authenticates the client. Interaction Sequence: Message Reception and Forwarding: Paymentology intercepts a JSON message from the ACS provider at a newly defined endpoint, enclosing pertinent details. This data is relayed to our clients (administrative messages to Companion clients and Remote Messaging to others). The client, upon receipt, acknowledges and responds directly to Paymentology’s request and contacts their cardholder. Transaction Approval/Denial: Subsequently, the client, in a separate API request sent to Paymentology’s Card or Companion API, sanctions or refutes the transaction. Post-receipt, this acknowledgment is forwarded from Paymentology to the ACS provider, culminating in the process. Transaction flow When a 3DS enrolled cardholder performs an e-commerce transaction, authentication will need to take place: Request and initial response Paymentology is informed of the requested authentication by the ACS provider via an Authentication Request message. Paymentology check what type of product the client uses: If the client is a Companion API client, Paymentology sends an Administrative Message to the client MessageType: [3DSecureAppAuthentication](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/#3DSAppAuth) If the client is a Card API client, Paymentology sends a RemoteMessaging message to the client MessageType: [3DSecure.AppAuthentication](https://developer.sprint.paymentology.com/card-api/api-reference/remotemessaging/#appauth) The client does validation separately with their cardholder and the client acknowledges that they have received the 3DSecure.AppAuthentication message (mentioned above) from Paymentology by responding. Paymentology sends a message to the ACS provider to acknowledge they have forwarded the Authentication Request to the client.![3DS OOB Request and initial response](https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Request-and-initial-response-Light.png) Final response and final confirmation Once the client completes the authentication with the cardholder: The client sends a request to the ThreeDSAuthenticationOutcome API saying whether the authentication was successful or not. Companion API client's use this [ThreeDSAuthenticationOutcome](/api-reference/companion-api/threedsauthenticationoutcome) API. Card API client's use this [ThreeDSAuthenticationOutcome](/api-reference/card-api/threedsauthenticationoutcome) API. Paymentology sends a message to the ACS provider containing the authentication outcome. The ACS provider sends a final confirmation message to Paymentology. Paymentology check what type of product the client uses: Companion API clients receive an Administrative Message from Paymentology. MessageType: [3DSecureAppFinalisation](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/#3DSAppFinal) Card API clients receive a RemoteMessaging message from Paymentology. MessageType: [3DSecure.AppFinalisation](https://developer.sprint.paymentology.com/card-api/api-reference/remotemessaging/#appfinal)![3DS OOB Final response and final confirmation](https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Final-Response-and-Final-Confirmation-Light.png) In Summary: This secure and advanced authentication method ensures a seamless and secure transaction process, reinforcing the security apparatus by involving distinct communication channels for verification, thereby fostering enhanced security in online transactions. It is recommended for Paymentology clients aiming for robust and secure 3DS transaction processing.
+## Overview of Out-of-Band (OOB) Authentication
+
+Out-of-Band (OOB) authentication is an advanced type of two-factor authentication (2FA) that necessitates an additional verification method via a distinct communication channel. It is an optional yet highly advised Challenge flow authentication method for conducting 3DS transactions for Paymentology clients.
+
+This applies to both Mastercard and Visa transactions.
+
+### Operational Workflow
+
+OOB serves as an authentication technique during the 3DS Challenge flow, steering the process to an Issuer’s mobile application rather than utilizing a one-time password (OTP) dispatched through SMS or text message.
+
+During the 3DS Challenge flow, a Push Notification is sent to the Issuer’s mobile application. This initiates the sending of an authentication request to the cardholder. Subsequently, the cardholder undergoes authentication in the Issuer’s application using biometric methods like facial recognition or thumbprint, or a one-time password.
+
+Following the authentication, the issuer communicates the result. If authenticated successfully, the merchant is enabled to initiate the authorization request, culminating in the completion of the transaction processing.
+
+### Paymentology's OOB Solution:
+
+In the OOB Solution, several participants play crucial roles:
+
+- Cardholder: Undertakes online purchases and authenticates via the Issuer Mobile app.
+
+- ACS provider: The Access Control Server, authenticating the cardholder.
+
+- Paymentology: Acts as the Issuer Processor, managing and executing the card transaction for the client.
+
+- Issuing Client: Manages the OOB Issuer Mobile app and authenticates the client.
+
+### Interaction Sequence:
+
+- Message Reception and Forwarding: Paymentology intercepts a JSON message from the ACS provider at a newly defined endpoint, enclosing pertinent details. This data is relayed to our clients (administrative messages to Companion clients and Remote Messaging to others). The client, upon receipt, acknowledges and responds directly to Paymentology’s request and contacts their cardholder.
+
+- Transaction Approval/Denial: Subsequently, the client, in a separate API request sent to Paymentology’s Card or Companion API, sanctions or refutes the transaction. Post-receipt, this acknowledgment is forwarded from Paymentology to the ACS provider, culminating in the process.
+
+## Transaction flow
+
+When a 3DS enrolled cardholder performs an e-commerce transaction, authentication will need to take place:
+
+### Request and initial response
+
+Paymentology is informed of the requested authentication by the ACS provider via an Authentication Request message.
+
+- Paymentology check what type of product the client uses: If the client is a Companion API client, Paymentology sends an Administrative Message to the client MessageType: [3DSecureAppAuthentication](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/#3DSAppAuth)
+
+- If the client is a Card API client, Paymentology sends a RemoteMessaging message to the client MessageType: [3DSecure.AppAuthentication](https://developer.sprint.paymentology.com/card-api/api-reference/remotemessaging/#appauth)
+
+- The client does validation separately with their cardholder and the client acknowledges that they have received the 3DSecure.AppAuthentication message (mentioned above) from Paymentology by responding.
+
+- Paymentology sends a message to the ACS provider to acknowledge they have forwarded the Authentication Request to the client.![3DS OOB Request and initial response](https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Request-and-initial-response-Light.png)
+
+### Final response and final confirmation
+
+Once the client completes the authentication with the cardholder:
+
+- The client sends a request to the ThreeDSAuthenticationOutcome API saying whether the authentication was successful or not. Companion API client's use this [ThreeDSAuthenticationOutcome](/api-reference/companion-api/threedsauthenticationoutcome) API.
+
+- Card API client's use this [ThreeDSAuthenticationOutcome](/api-reference/card-api/threedsauthenticationoutcome) API.
+
+- Paymentology sends a message to the ACS provider containing the authentication outcome.
+
+- The ACS provider sends a final confirmation message to Paymentology.
+
+- Paymentology check what type of product the client uses: Companion API clients receive an Administrative Message from Paymentology. MessageType: [3DSecureAppFinalisation](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/#3DSAppFinal)
+
+- Card API clients receive a RemoteMessaging message from Paymentology. MessageType: [3DSecure.AppFinalisation](https://developer.sprint.paymentology.com/card-api/api-reference/remotemessaging/#appfinal)![3DS OOB Final response and final confirmation](https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Final-Response-and-Final-Confirmation-Light.png)
+
+### In Summary:
+
+This secure and advanced authentication method ensures a seamless and secure transaction process, reinforcing the security apparatus by involving distinct communication channels for verification, thereby fostering enhanced security in online transactions. It is recommended for Paymentology clients aiming for robust and secure 3DS transaction processing.

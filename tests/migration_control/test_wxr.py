@@ -104,7 +104,7 @@ class WxrParserTests(TestCase):
       <wp:menu_order>1</wp:menu_order>
       <wp:postmeta>
         <wp:meta_key>page_content_builder_0_content</wp:meta_key>
-        <wp:meta_value><![CDATA[<p>Read <a href="https://developer.sprint.paymentology.com/get-started/our-apis/">Our APIs</a>.</p>]]></wp:meta_value>
+        <wp:meta_value><![CDATA[<h2>Choose an API</h2><p>Read <a href="https://developer.sprint.paymentology.com/get-started/our-apis/">Our APIs</a>.</p><ul><li>First task</li><li>Second task</li></ul>]]></wp:meta_value>
       </wp:postmeta>
     </item>
   </channel>
@@ -117,10 +117,13 @@ class WxrParserTests(TestCase):
             export = parse_wxr(xml_path)
 
         page = export.pages[0]
-        self.assertEqual(page.content_text, "Read Our APIs.")
+        self.assertIn("Choose an API", page.content_text)
+        self.assertIn("Read Our APIs.", page.content_text)
+        self.assertIn("First task", page.content_text)
+        self.assertIn("Second task", page.content_text)
         self.assertEqual(
             page.content_markdown,
-            "Read [Our APIs](https://developer.sprint.paymentology.com/get-started/our-apis/).",
+            "## Choose an API\n\nRead [Our APIs](https://developer.sprint.paymentology.com/get-started/our-apis/).\n\n- First task\n- Second task",
         )
         self.assertEqual(
             page.links,
