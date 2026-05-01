@@ -20,8 +20,8 @@ Profile owner cellphone number
 
 Profile owner is a registered company.
 Possible values:
-0 (false)
-1 (true)
+**0** (false)
+**1** (true)
 
 Profile company VAT number
 

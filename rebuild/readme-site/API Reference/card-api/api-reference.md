@@ -2,7 +2,7 @@
 
 The Card API contains the API and API methods that we use to call you to send transactions on to the store of value for authorizations. Transactions originate from the merchant and are sent to Paymentology via the financial networks and then are forwarded to the store of value for authorization.
 
-Note: You will need to implement the relevant method names corresponding to the different calls in order to perform the necessary actions on your system.
+**Note:** You will need to implement the relevant method names corresponding to the different calls in order to perform the necessary actions on your system.
 
 # Available methods
 
@@ -99,6 +99,26 @@ Note: You will need to implement the relevant method names corresponding to the 
 - [UpdateCVV](/api-reference/card-api/updatecvv) - Generate a new CVV2 of the specified card
 
 - [UpdateTokenAccount](/api-reference/card-api/updatetokenaccount) - Updates the card PAN information associated with a token
+
+# [Remote Messaging API](https://developer.sprint.paymentology.com/remotemessaging/) for Non-Companion clients
+
+The Remote Messaging API is hosted on your platform and allows us to call you to send administrative advice messages.
+
+- [3DSecure.AppAuthentication](https://developer.sprint.paymentology.com/remotemessaging/#appauth)
+
+- [3DSecure.AppFinalisation](https://developer.sprint.paymentology.com/remotemessaging/#appfinal)
+
+- [3DSecure.OTP](https://developer.sprint.paymentology.com/remotemessaging/#3DSecure)
+
+- [3DSecure Cardholder's Contact Detail Collection](https://developer.sprint.paymentology.com/remotemessaging/#3DSecureCCD)
+
+- [digitization.activation](https://developer.sprint.paymentology.com/remotemessaging/#activation)
+
+- [digitization.activationmethods](https://developer.sprint.paymentology.com/remotemessaging/#activationmethods)
+
+- [digitization.event](https://developer.sprint.paymentology.com/remotemessaging/#event)
+
+- [Response Reference](https://developer.sprint.paymentology.com/remotemessaging/#responsereference)
 
 The Tutuka issued terminal ID of the terminal requesting the transaction
 
@@ -478,23 +498,3 @@ Customer reference linked with this card
 The tracking number of the card to reset the pin for
 
 The name of the feature to enable/disable. Possible values: ENABLE_MAGSTRIPE and ENABLE_INTERNATIONAL
-
-# [Remote Messaging API](https://developer.sprint.paymentology.com/remotemessaging/) for Non-Companion clients
-
-The Remote Messaging API is hosted on your platform and allows us to call you to send administrative advice messages.
-
-- [3DSecure.AppAuthentication](https://developer.sprint.paymentology.com/remotemessaging/#appauth)
-
-- [3DSecure.AppFinalisation](https://developer.sprint.paymentology.com/remotemessaging/#appfinal)
-
-- [3DSecure.OTP](https://developer.sprint.paymentology.com/remotemessaging/#3DSecure)
-
-- [3DSecure Cardholder's Contact Detail Collection](https://developer.sprint.paymentology.com/remotemessaging/#3DSecureCCD)
-
-- [digitization.activation](https://developer.sprint.paymentology.com/remotemessaging/#activation)
-
-- [digitization.activationmethods](https://developer.sprint.paymentology.com/remotemessaging/#activationmethods)
-
-- [digitization.event](https://developer.sprint.paymentology.com/remotemessaging/#event)
-
-- [Response Reference](https://developer.sprint.paymentology.com/remotemessaging/#responsereference)

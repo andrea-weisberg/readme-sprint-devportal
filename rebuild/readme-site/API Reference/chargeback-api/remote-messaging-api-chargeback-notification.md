@@ -38,7 +38,7 @@ As described in response reference below.
 
 Response should contain all the same fields as the original request. In addition a resultCode will be always added and specific response information when that is required by the method. The resultCode will be a string field with values from the table below:
 
-NOTE:
+**NOTE:**
 
 - The range of response codes may be expanded in the future. Ither response codes, not in the table above, should not be used without explicit written confirmation. The behavior of the system is undefined when using codes not in the listing.
 

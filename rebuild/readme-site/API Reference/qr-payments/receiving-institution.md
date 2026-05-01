@@ -10,33 +10,6 @@
 
 The method returns a QR including the received information and a new card number linked to the input reference with every request.
 
-## DeactivateQR
-
-Deactivate a card.
-
-<methodResponse>
-<params>
-<param>
-<value>
-<struct>
-<member>
-<name>resultCode</name>
-<value>
-<double>1</double>
-</value>
-</member>
-<member>
-<name>resultText</name>
-<value>
-<string>Approved</string>
-</value>
-</member>
-</struct>
-</value>
-</param>
-</params>
-</methodResponse>
-
 The Paymentology issued terminal ID of the terminal requesting the transaction
 
 Mastercard defined merchant category code
@@ -158,6 +131,10 @@ The first 15 digits of the card number
 </params>
 </methodResponse>
 
+## DeactivateQR
+
+Deactivate a card.
+
 The Paymentology issued terminal ID of the terminal requesting the transaction
 
 The full 16-digit card number
@@ -202,5 +179,28 @@ HMAC-SHA256 hashed signature of the concatenated method name with all argument v
 Status code indicating transaction result
 
 Text indicating transaction result
+
+<methodResponse>
+<params>
+<param>
+<value>
+<struct>
+<member>
+<name>resultCode</name>
+<value>
+<double>1</double>
+</value>
+</member>
+<member>
+<name>resultText</name>
+<value>
+<string>Approved</string>
+</value>
+</member>
+</struct>
+</value>
+</param>
+</params>
+</methodResponse>
 
 [Appendix](https://developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/#RI)

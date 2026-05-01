@@ -4,11 +4,11 @@ If you choose the option of ordering cards via the OrderCard method, then a repo
 
 The report includes the following details:
 
-- Card number – the masked card number.
+- **Card number** – the masked card number.
 
-- Wallet reference – this column will be empty for Card API reporting.
+- **Wallet reference** – this column will be empty for Card API reporting.
 
-- Date created – the date that card was created.
+- **Date created** – the date that card was created.
 
 ## Report format
 
@@ -16,6 +16,6 @@ The report includes the following details:
 
 ## Report sample![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Card-Order-report-final-Card-API.png)
 
-Note: file will automatically download upon clicking link
+**Note: file will automatically download upon clicking link**
 
 [CampaignName_PanDetails_YYYYMMDD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_PanDetails_YYYYMMDD-card.csv)

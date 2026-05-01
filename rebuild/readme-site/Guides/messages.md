@@ -1,10 +1,10 @@
 # Messages
 
-These are two types of messages that Paymentology Sprint can send to a client:
+**These are two types of messages that Paymentology Sprint can send to a client:**
 
 ## 1. Administrative Messages
 
-These messages are sent to the client to complete certain actions.
+These messages are **sent to the client to complete certain actions**.
 
 ### Use cases:
 
@@ -16,4 +16,4 @@ These messages are sent to the client to complete certain actions.
 
 ## 2. Stop Messages
 
-These messages are sent to notify you if Paymentology stopped the companion card. For example, if a validation process has failed to pass, Paymentology would stop the card for security reasons and send a notification to that effect. This requires making a call to the [StopCard](/api-reference/companion-api/stopcard) method.
+These messages are **sent to notify you if Paymentology stopped the companion card.** For example, if a validation process has failed to pass, Paymentology would stop the card for security reasons and send a notification to that effect. This requires making a call to the [StopCard](/api-reference/companion-api/stopcard) method.

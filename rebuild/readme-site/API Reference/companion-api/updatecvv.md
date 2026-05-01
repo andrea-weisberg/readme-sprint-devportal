@@ -2,9 +2,9 @@
 
 Generate a new CVV2 of the specified card.
 
-IMPORTANT:
+**IMPORTANT:**
 
-This API method contains PCI sensitive information.
+**This API method contains PCI sensitive information.**
 
 - Session-Id=Encrypted AES Key e-g (AB521456236KHU52) is required if encryption is needed and the campaign is configured for encryption of sensitive data.
 
@@ -64,6 +64,18 @@ HMAC-SHA256 hashed signature of the concatenated method name with all argument v
 
 Status code indicating transaction result.
 
+Text indicating transaction result.
+
+Newly updated CVV2 returned.
+
+(Encrypted depending on configuration).
+
+(optional)
+
+The key with which encrypted data in response is encrypted.
+
+(Key used for encryption).
+
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
 <params>
@@ -95,15 +107,3 @@ Status code indicating transaction result.
 </methodResponse>
 
 [Back to Local API menu](/api-reference/companion-api/local-api)
-
-Text indicating transaction result.
-
-Newly updated CVV2 returned.
-
-(Encrypted depending on configuration).
-
-(optional)
-
-The key with which encrypted data in response is encrypted.
-
-(Key used for encryption).

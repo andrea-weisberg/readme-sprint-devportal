@@ -2,21 +2,21 @@
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas, ligula et tristique vestibulum, tellus mauris eleifend nibh, eget rutrum arcu libero commodo eros. Morbi est metus, scelerisque id consequat a, malesuada feugiat nisi.
 
+Unique ID for the form. Find in your form URL. For example, in the URL "https://mysite.typeform.com/to/u6nXL7" the form_id is
+
+Webhook URL.
+
+Unique name you want to use for the webhook.
+
+True if you want to send responses to the webhook immediately. Otherwise, false
+
+If specified, will be used to sign the webhook payload with HMAC SHA256, so that you can verify that it came from Typeform.
+
 EXAMPLE
 {
 "url": "https://test.com",
 "enabled": true
 }
-
-Unique ID for the form. Find in your form URL. For example, in the URL "https://mysite.typeform.com/to/u6nXL7" the form_id is
-
-Unique name you want to use for the webhook.
-
-Webhook URL.
-
-True if you want to send responses to the webhook immediately. Otherwise, false
-
-If specified, will be used to sign the webhook payload with HMAC SHA256, so that you can verify that it came from Typeform.
 
 Unique ID for the webhook
 

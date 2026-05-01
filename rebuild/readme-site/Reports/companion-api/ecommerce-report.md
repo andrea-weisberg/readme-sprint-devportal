@@ -4,37 +4,37 @@ A report that shows successful and failed Ecommerce transactions along with asso
 
 The report includes the following details:
 
-- TransactionID - it’s a reference for the transaction
+- **TransactionID -**it’s a reference for the transaction
 
-- TrackingNumber - this is a unique 15-digit tracking identifier for the card.
+- **TrackingNumber** - this is a unique 15-digit tracking identifier for the card.
 
-- TransactionDescription - this is a description of the merchant.
+- **TransactionDescription**- this is a description of the merchant.
 
-- TransactionAmount - the value of the transaction
+- **TransactionAmount** - the value of the transaction
 
-- TransactionDate - This is the authorization date of the transaction
+- **TransactionDate**- This is the authorization date of the transaction
 
-- MerchantIdentitifer - this is numeric identifier of the merchant. Usually 15 digits.
+- **MerchantIdentitifer** - this is numeric identifier of the merchant. Usually 15 digits.
 
-- Fee - this is the value of a fee the card has incurred for the transaction. Fee type must be one of the below: 51 - Ecommerce Fee
+- **Fee** - this is the value of a fee the card has incurred for the transaction. Fee type must be one of the below: 51 - Ecommerce Fee
 
 - 52 - Online Fee
 
 - 6 - POS Purchase Fee
 
-- 3DS - specifies whether 3DS authentication occurred prior to the authorisation.
+- **3DS**- specifies whether 3DS authentication occurred prior to the authorisation.
 
-- SuccessfulTransaction - specifies whether the transaction was approved or declined.
+- **SuccessfulTransaction** - specifies whether the transaction was approved or declined.
 
-- TransactionFeeID - the identifier of the transaction fee incurred.
+- **TransactionFeeID** - the identifier of the transaction fee incurred.
 
-- TransactionFeeDescription - describes the transaction fee.
+- **TransactionFeeDescription** - describes the transaction fee.
 
-- TransactionFeeDate - the date in which the transaction fee was applied.
+- **TransactionFeeDate** - the date in which the transaction fee was applied.
 
-- DeclineReason - describes why the transaction was declined. If the transaction was successful then this filed is left blank.
+- **DeclineReason** - describes why the transaction was declined. If the transaction was successful then this filed is left blank.
 
-- CaptureType - Capture type must be one of the below: ECOM - Transaction captured online
+- **CaptureType** - Capture type must be one of the below: ECOM - Transaction captured online
 
 - MAG - Magnetic Stripe captured transaction
 
@@ -42,7 +42,7 @@ The report includes the following details:
 
 - ECOF - Online Card On File transaction
 
-- CaptureMode - this is the respective capture mode of the card’s transaction. Capture Mode must be one of the below: MAG - Magnetic Stripe captured transaction
+- **CaptureMode** - this is the respective capture mode of the card’s transaction. Capture Mode must be one of the below: MAG - Magnetic Stripe captured transaction
 
 - EMV - Electronic chip captured transaction
 
@@ -54,7 +54,7 @@ The report includes the following details:
 
 - NFC - Transaction captured via a Near Field Communication device
 
-- Recurring - specifies whether the transactions is a once off or recurring through COF method.
+- **Recurring** - specifies whether the transactions is a once off or recurring through COF method.
 
 ## Report format
 

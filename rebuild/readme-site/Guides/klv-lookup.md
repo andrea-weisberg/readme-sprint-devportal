@@ -1,8 +1,8 @@
 # KLV Lookup
 
-Key-Length-Value (KLV) is a data encoding standard where the Key identifies the data, Length specifies the data's length and Value is the data itself. KLV is an instance of the TLV encoding scheme used for optional information element within communication protocols.
+Key-Length-Value (KLV) is a data encoding standard where the **Key** identifies the data, **Length** specifies the data's length and **Value**is the data itself. KLV is an instance of the TLV encoding scheme used for optional information element within communication protocols.
 
-The length of each string is:
+**The length of each string is:**
 
 - A Key indicator of 3 digits, zero left padded.
 
@@ -10,7 +10,7 @@ The length of each string is:
 
 - A Value with the number of characters as specified by the Length indicator.
 
-It is important to note:
+**It is important to note:**
 
 - Keys do not need to be in any particular order or sequence within transactionData.
 
@@ -26,7 +26,7 @@ It is important to note:
 
 - Transaction types which include KLV data are: [Balance](/api-reference/companion-api/balance) [Deduct](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#Deduct) [Deduct Adjustment](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#DeductAdjustment) [Load Auth](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#LoadAuth) [Load Auth Reversal](/api-reference/companion-api/loadauthreversal) [Load Adjustment](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#LoadAdjustment) [Stop](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#Stop)
 
-- Tokenisation [Administrative](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#AdministrativeMessage) [Message](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#AdministrativeMessage)
+- Tokenisation [Administrative](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#AdministrativeMessage)**[Message](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/#AdministrativeMessage)**
 
 - 3DSecure [3DSecureOTP](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/#3DSecure) [3DSecureAppAuthentication](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/#3DSAppAuth) original transaction amount
 

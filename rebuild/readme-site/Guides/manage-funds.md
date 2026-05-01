@@ -1,6 +1,6 @@
 # Manage funds
 
-When the cardholder has either a virtual or a physical companion card (or both), they can start transacting against their store of value. These transactions originate from the merchant and are then sent to Paymentology via the card schemes, before being forwarded to the store of value for validation and authorization.
+**When the cardholder has either a virtual or a physical companion card (or both), they can start transacting against their store of value. These transactions originate from the merchant and are then sent to Paymentology via the card schemes, before being forwarded to the store of value for validation and authorization.**
 
 To enable and manage this process, Paymentology Sprint uses what is called the [Remote API](/api-reference/companion-api/remote).
 
@@ -38,9 +38,9 @@ Reversals are triggered by merchants for three reasons:
 
 Scenario: In this scenario, a [Deduct](/api-reference/companion-api/remotededuct/)request was sent to the store of value system but there was no response received. This will cause a time out, as no response will be sent back to the merchant.
 
-A full cycle of an authorization must be concluded within 5 seconds meaning a response from the store of value system needs to be received with 2 seconds maximum.
+**A full cycle of an authorization must be concluded within 5 seconds meaning a response from the store of value system needs to be received with 2 seconds maximum.**
 
-Due to no response, a [DeductReversal](/api-reference/companion-api/remotedeductreversal/) will be triggered and the store of value system will match the TransactionID of the initial [Deduct](/api-reference/companion-api/remotededuct/)and match it with the ReferenceID in the [DeductReversal](/api-reference/companion-api/remotedeductreversal/)and Approves the [DeductReversal](/api-reference/companion-api/remotedeductreversal/)by responding with 1 - Success and reverse the funds the funds back.
+Due to no response, a [DeductReversal](/api-reference/companion-api/remotedeductreversal/) will be triggered and the store of value system will match the **TransactionID**of the initial [Deduct](/api-reference/companion-api/remotededuct/)and match it with the **ReferenceID** in the [DeductReversal](/api-reference/companion-api/remotedeductreversal/)and **Approves** the [DeductReversal](/api-reference/companion-api/remotedeductreversal/)by responding with **1 - Success** and reverse the funds the funds back.
 
 The store of value system does not have the option to respond with a -9 Crashed or disapproved response.
 
@@ -48,7 +48,7 @@ The store of value system does not have the option to respond with a -9 Crashed 
 
 Scenario: In the scenario, due to connectivity issues the [Deduct](/api-reference/companion-api/remotededuct/)request is not sent to the store of value system. This results in a timeout in the transaction. The merchant will timeout the transaction and trigger a [DeductReversal](/api-reference/companion-api/remotedeductreversal/)which will be sent to the store of value system. At this point, the store of value system has no record of the initial [Deduct](/api-reference/companion-api/remotededuct/).
 
-The store of value system will attempt to match the ReferenceID in the [DeductReversal](/api-reference/companion-api/remotedeductreversal/), which they will not find as the initial [Deduct](/api-reference/companion-api/remotededuct/)did not reach the store of value system. The store of value system will send an acknowledgement = 1 – Success but no funds will be moved on the store of value system
+The store of value system will attempt to match the **ReferenceID** in the [DeductReversal](/api-reference/companion-api/remotedeductreversal/), which they will not find as the initial [Deduct](/api-reference/companion-api/remotededuct/)did not reach the store of value system. The store of value system will send an acknowledgement = **1 – Success**but no funds will be moved on the store of value system
 
 The store of value system may not respond with a -9 Crashed or disapproved response.
 
@@ -56,7 +56,7 @@ The store of value system may not respond with a -9 Crashed or disapproved respo
 
 Scenario: In this scenario, the authorization is cancelled/ voided immediately after a successful transaction has been concluded. The store of value system will have received the initial [Deduct](/api-reference/companion-api/remotededuct/)request.
 
-The store of value system will match the ReferenceID of the [DeductReversal](/api-reference/companion-api/remotedeductreversal/)to the Transaction ID of the initial [Deduct](/api-reference/companion-api/remotededuct/)request. They will reverse the funds and respond with 1 – Success.
+The store of value system will match the **ReferenceID** of the [DeductReversal](/api-reference/companion-api/remotedeductreversal/)to the **Transaction ID** of the initial [Deduct](/api-reference/companion-api/remotededuct/)request. They will reverse the funds and respond with **1 – Success.**
 
 The store of value system may not respond with a -9 Crashed or disapproved response.
 
@@ -82,19 +82,19 @@ These are the common types of adjustment transactions on companion cards:
 
 Let’s look at each of them.
 
-### i) Load adjustment transactions
+### **i) Load adjustment transactions**
 
 If there is a need to load money back into a store of value, Paymentology will send a load adjustment request so that the store of value makes the adjustment.
 
-LoadAuth
+**LoadAuth**
 
-LoadAuth is an authorisation, but for a load, rather than a deduct. This would most commonly be the result of a refund from a merchant. But it could also be a load from a "money send" type transaction, where cardholders can transfer funds over the MC network, if your program allows this. This method is most similar to the [Deduct](/api-reference/companion-api/remotededuct/) method, which is an authorisation for a redemption.
+LoadAuth is an authorisation, but for a load, rather than a deduct. This would most commonly be the result of a **refund** from a merchant. But it could also be a load from a "money send" type transaction, where cardholders can transfer funds over the MC network, if your program allows this. This method is most similar to the [Deduct](/api-reference/companion-api/remotededuct/) method, which is an authorisation for a redemption.
 
 You can decline this transaction i.e. choose not to approve it. If you decline, the refund will not be completed at the merchant. There are 3 important things to note:
 
-- If you approve this transaction, do not immediately load the card
+- If you approve this transaction, **do not** immediately load the card
 
-- Unlike [Deduct](/api-reference/companion-api/remotededuct/), the card should only be loaded when the funds are cleared because then you know you have received them (for most systems, after evaluating and approving this transaction, there would be nothing further for you to do). You may choose to reflect a pending amount on cardholder statements but this should not be included in their available balance
+- Unlike [Deduct](/api-reference/companion-api/remotededuct/), the card should **only** be loaded when the funds are cleared because then you know you have received them (for most systems, after evaluating and approving this transaction, there would be nothing further for you to do). You may choose to reflect a pending amount on cardholder statements but this should not be included in their available balance
 
 - If you decline this transaction, you should expect cardholder frustration because cardholders are not familiar with refunds being declined because it does not depend on their available balance. Therefore, it is recommended that you approve these transactions unless there are strong reasons not to. NB. If a refund is fraudulent for some reason, the liability sits with the Merchant.
 
@@ -116,7 +116,7 @@ A Load Adjustment is an adjustment being made that gives money to the cardholder
 
 As for a [LoadAuth](/api-reference/companion-api/remoteloadauth/), this is the result of a refund or a money transfer request that loads funds to a cardholder but this is an advice message confirming that the funds have moved.
 
-When a [LoadAuth](/api-reference/companion-api/remoteloadauth/)is settled, it will result in a [LoadAdjustment](/api-reference/companion-api/remoteloadadjustment/)(this assumes no [LoadAuthReversal](/api-reference/companion-api/remoteloadauthreversal/)occurred). As with all advice messages, it is required that the message is approved. There is no other option except for a system failure/crash. Your response of "1" is not "approving" the adjustment, it is confirming that you have been notified of the adjustment. All adjustments have already occurred and declining such a message will not change that. If you respond with anything besides approval, it results in a process of manual intervention to investigate why the failure occurred and to work with you to take steps to correct it.
+When a [LoadAuth](/api-reference/companion-api/remoteloadauth/)is settled, it will result in a [LoadAdjustment](/api-reference/companion-api/remoteloadadjustment/)(this assumes no [LoadAuthReversal](/api-reference/companion-api/remoteloadauthreversal/)occurred). As with all advice messages, it is **required** that the message is approved. There is no other option except for a system failure/crash. Your response of "1" is not "approving" the adjustment, it is confirming that you have been notified of the adjustment. All adjustments have already occurred and declining such a message will not change that. If you respond with anything besides approval, it results in a process of manual intervention to investigate why the failure occurred and to work with you to take steps to correct it.
 
 Many clients wish to link any refunds back to the original transaction. MasterCard has implemented some fields to allow this, but merchants do not use these fields. From their perspective, they do not see any reason necessary to complete the development necessary for this to work. This is similar to merchants being mandated to obtain authorisation for refunds, which they also tend not to do. To a significant degree, you would want to be cautious about how much energy you invest in trying to do this. As an Issuer, if you receive a refund settlement, you must process and if there is fraud taking place at the Merchant, it is at the Merchant's cost - not yours.
 
@@ -132,13 +132,11 @@ In other words, once you have acknowledged the API call with a valid APO respons
 
 - You still have control of the funds and when and where to load them without having caused a failure by rejecting the API call
 
-NB. You are putting the system back to how it was before the transaction that is being reversed but you should never delete anything, only post contra-transactions. However, be careful of repeats - you don't want to accidentally keep deducting or loading additional funds every time a reversal is repeated
-
 ### ​ii) Load reversal transactions
 
 If there is a need to load money back into a store of value, and the client is not accepting the adjustment request, Paymentology will send a load reversal request to ensure that no action is undertaken.
 
-LoadAuthReversal
+**LoadAuthReversal**
 
 This is a reversal message for [LoadAuth](/api-reference/companion-api/remoteloadauth/). It is the equivalent of [DeductReversal](/api-reference/companion-api/remotedeductreversal/). This will be sent if we do not receive any response to the [LoadAuth](/api-reference/companion-api/remoteloadauth/). As with all adjustments and reversals, they are "advice" messages, they are "telling" you to do something. They are not asking you to approve something. Your response should therefore be an acknowledgement that you have received the message not that you "approve" the message. For all reversals, we will keep resending if we do not receive positive acknowledgement. Failure to respond repeatedly results in manual intervention which should only happen if your system is down.
 
@@ -159,6 +157,8 @@ Our recommendation for reversals is:
 After that, Paymentology will resend a [LoadAdjustment](/api-reference/companion-api/remoteloadadjustment/)request so that an OK response can be returned. This pattern will continue ten times until the adjustment is processed adequately against the stored value.
 
 You’ll need to make a call to the [LoadReversal](/api-reference/companion-api/remoteloadreversal/)method.
+
+NB. You are putting the system back to how it was before the transaction that is being reversed but you should never delete anything, only post contra-transactions. However, be careful of repeats - you don't want to accidentally keep deducting or loading additional funds every time a reversal is repeated
 
 Remember, the transaction and reversal failures may be the result of a network interruption that is happening after you have responded each time. You may receive multiple reversals for a reversal which you have already processed so you must be able to identify that you have already processed the reversal to prevent "duplication".
 
@@ -188,9 +188,9 @@ One big difference is that, almost without exception, a [LoadAdjustment](/api-re
 
 Some important points to note about reversals:
 
-- It is possible to receive a reversal for which you cannot find the original reference. - You might not find it because you never received the original transaction (this is normal, and part of the design of reversals) - You might not find it because, even though you received it, you already reversed it In both cases, you would effectively do nothing, because there is nothing to reverse.
+- It **is** possible to receive a reversal for which you cannot find the original reference. - You might not find it because you never received the original transaction (this is normal, and part of the design of reversals) - You might not find it because, even though you received it, you already reversed it In both cases, you would effectively do nothing, because there is nothing to reverse.
 
-- Do not debit/credit (whichever is applicable) just because you received a reversal. You have to find the original transaction, confirm it has not been reversed, and reverse it. If you cannot find it, or it has already been reversed, there is nothing further to do. You must also still respond positively to the Reversal API call confirming you received it
+- Do **not** debit/credit (whichever is applicable) just because you received a reversal. You have to find the original transaction, confirm it has not been reversed, and reverse it. If you cannot find it, or it has already been reversed, there is nothing further to do. You must also still respond positively to the Reversal API call confirming you received it
 
 - You do not need to tell us (since it is not relevant) whether you found the original transaction to reverse or not
 

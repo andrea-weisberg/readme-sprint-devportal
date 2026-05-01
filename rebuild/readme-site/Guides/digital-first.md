@@ -1,6 +1,8 @@
 # Digital First
 
-Today’s consumers do everything on their mobile phones or online. The Paymentology Sprint Digital First card program allows you to design a simple, secure and flexible financial experience that emulates the digital lifestyle of today’s generation.
+**Today’s consumers do everything on their mobile phones or online. The Paymentology Sprint Digital First card program allows you to design a simple, secure and flexible financial experience that emulates the digital lifestyle of today’s generation.**
+
+Digital First is available across all supported card schemes in select regions.
 
 ## What is Digital First?
 
@@ -56,14 +58,12 @@ Digital First cards are issued just like virtual cards. You can use the Companio
 
 To print it later, you can follow the steps below:
 
-- Step 1: Option 1: [PrintLinkedCard](https://developer.sprint.paymentology.com/printlinkedcard/) — Use this option if you want the existing Digital First cards to be printed. OR
+- **Step 1:** **Option 1:** [PrintLinkedCard](https://developer.sprint.paymentology.com/printlinkedcard/) — Use this option if you want the existing Digital First cards to be printed. **OR**
 
-- Option 2: [PrintLinkedCardWithPINBlock](/api-reference/companion-api/printlinkedcardwithpinblock) —Use this option if you want the existing Digital First cards to be printed with PIN block.
+- **Option 2:** [PrintLinkedCardWithPINBlock](/api-reference/companion-api/printlinkedcardwithpinblock) —Use this option if you want the existing Digital First cards to be printed with PIN block.
 
-- Step 2: [ToggleVoucherFeature](https://developer.sprint.paymentology.com/togglevoucherfeature/) — Use this when you want the printed Digital First cards to be used at POS terminals.
+- **Step 2:** [ToggleVoucherFeature](https://developer.sprint.paymentology.com/togglevoucherfeature/) — Use this when you want the printed Digital First cards to be used at POS terminals.
 
-Digital First is available across all supported card schemes in select regions.
-
-This is an example of a Digital First card powered by Paymentology Sprint for our client Grab in Asia![Grab numberless card](https://developer.sprint.paymentology.com/wp-content/uploads/2021/02/Grab-numberless-card.jpeg)
+**This is an example of a Digital First card powered by Paymentology Sprint for our client Grab in Asia**![Grab numberless card](https://developer.sprint.paymentology.com/wp-content/uploads/2021/02/Grab-numberless-card.jpeg)
 
 Image credit: Grab

@@ -6,15 +6,15 @@ The purpose of this report is for Apple to understand the top 100 Merchants that
 
 The report includes the following details:
 
-- Rank - Merchant rank in descending order based on % of total Apple Pay transaction (spend).
+- **Rank**- Merchant rank in descending order based on % of total Apple Pay transaction (spend).
 
-- Top 100 Merchants - this is the merchant description.
+- **Top 100 Merchants** - this is the merchant description.
 
-- % of Total Apple Pay Transaction (Spend) - this is the merchants total spend amount as a percent of the overall Apple Pay transaction spend.
+- **% of Total Apple Pay Transaction (Spend)** - this is the merchants total spend amount as a percent of the overall Apple Pay transaction spend.
 
-- Transaction Spend - this is the total value in Apple Pay transactions spent at the merchant within the given month.
+- **Transaction Spend** - this is the total value in Apple Pay transactions spent at the merchant within the given month.
 
-- Transaction Count - this is the total count of Apple Pay transactions at the merchant within the given month.
+- **Transaction Count** - this is the total count of Apple Pay transactions at the merchant within the given month.
 
 ## Report format
 
@@ -22,6 +22,6 @@ The report includes the following details:
 
 ## Report sample![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Top-Merchant-Report-MMM-YYYY-_.png)
 
-Note: file will automatically download upon clicking link
+**Note: file will automatically download upon clicking link**
 
 [CampaignName_ApplePay Top Merchant Report MMM YYYY.xls](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Top-Merchant-Report-MMM-YYYY.xls)

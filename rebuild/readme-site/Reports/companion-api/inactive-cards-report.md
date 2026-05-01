@@ -4,11 +4,11 @@ This report provides client's with a list of inactive cards across their campaig
 
 The report includes the following details:
 
-- VoucherNumber - the customer’s card number.
+- **VoucherNumber** - the customer’s card number.
 
-- SequenceNumber - this is a unique sequence card identifier showing a running number for the cards created.
+- **SequenceNumber**- this is a unique sequence card identifier showing a running number for the cards created.
 
-- ProfileNumber - Profile number linked with the VoucherNumber.
+- **ProfileNumber** - Profile number linked with the VoucherNumber.
 
 ## Report format
 

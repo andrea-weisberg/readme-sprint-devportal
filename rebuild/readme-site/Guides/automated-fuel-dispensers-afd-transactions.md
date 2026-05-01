@@ -6,31 +6,31 @@ In the past, fueling was a tedious process—an attendant had to manually pump t
 
 With Paymentology Sprint's support for AFD transactions, you can make payments for your cardholders at the pump painless, fast, and secure.
 
-## Benefits of AFD Transactions
+## **Benefits of AFD Transactions**
 
-- Speeds up fueling for customers
+- **Speeds up fueling for customers**
 
 At unattended terminals, a customer can quickly and conveniently obtain fuel without the time-consuming hassle of having to wait to be served. A customer can simply tap, dip, or swipe their card without the manual process of engaging an attendant.
 
-- Enhances customer experience
+- **Enhances customer experience**
 
 AFDs offer a convenient way for drivers to gas up and get back on the road without the usual fueling hassles. This streamlined experience results in customer loyalty and more business to merchants.
 
-- Reduces costs
+- **Reduces costs**
 
 Although AFDs require an initial capital cost to install and set up, they can reduce operational costs in the long run. Their automated nature implies that personnel costs are minimal.
 
 The convenience of AFDs also enables customers not to waste time and fuel—which equals money—when fueling their vehicles.
 
-- Increases purchase sizes
+- **Increases purchase sizes**
 
 Since AFDs allow customers to use their payment cards, which could be directly connected to their deposit and line-of-credit accounts, they reduce the chances of abandoning payments. Merchants do not need to worry about customers not having enough cash in their wallets.
 
-- Lowers theft possibilities
+- **Lowers theft possibilities**
 
 The traditional way of using cash at fuel outlets is prone to employee theft, robbery, or unintentional miscounting. By eliminating cash, this risk is drastically reduced.
 
-## Best Practices For AFD Transactions
+## **Best Practices For AFD Transactions**
 
 - Ensure all purchase transactions are properly authorized. Remember that the available authorization methods vary based on the merchant type and region.
 

@@ -1,8 +1,8 @@
 # Reporting API (companion)
 
-The Reporting API is a local API which can be called to obtain files produced by Tutuka, foe example, reports.
+**The Reporting API is a local API which can be called to obtain files produced by Tutuka, foe example, reports.**
 
-In order to call this API, a token must be obtained from the Tutuka Token Service. This token is validated by the API and allows access to resources based on certain values contained within the token.
+**In order to call this API, a token must be obtained from the Tutuka Token Service. This token is validated by the API and allows access to resources based on certain values contained within the token.**
 
 ### The Reporting API is only available to clients on our AWS UAT environment and will become available to all clients in September 2021
 
@@ -10,7 +10,7 @@ In order to call this API, a token must be obtained from the Tutuka Token Servic
 
 The token will remain valid for 24 hours, after which a fresh token should be obtained.
 
-To obtain a token from the Token service, you will require a ClientID and Client secret which can be obtained from your Client Executive. These values are highly sensitive and should be treated as such. Storing these values in browsers, local disk and source control is not recommended. Should these values be compromised, contact your Client executive urgently.
+To obtain a token from the Token service, you will require a **ClientID** and **Client secret** which can be obtained from your Client Executive. These values are highly sensitive and should be treated as such. Storing these values in browsers, local disk and source control is not recommended. Should these values be compromised, contact your Client executive urgently.
 
 In order to obtain a token, an http request to: https://auth.uat.tutuka.cloud/oauth/token using Basic Authentication and providing the BASE64 encoded ClientID and Secret in the Authorization Header specifying the client_credentials grant type in the body. e.g.
 async function getAccessToken() {

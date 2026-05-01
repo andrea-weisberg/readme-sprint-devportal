@@ -77,29 +77,29 @@ The expiry date of the card
 
 The transaction history of the card:
 
-transactionDate
+**transactionDate**
 
-Description: Date of the transaction
+**Description**: Date of the transaction
 
-Type: date
+**Type**: date
 
-transactionAmount
+**transactionAmount**
 
-Description: amount of the transaction in cents
+**Description**: amount of the transaction in cents
 
-Type: integer
+**Type**: integer
 
-transactionDescription
+**transactionDescription**
 
-Description: Name of the merchant where transaction originated
+**Description**: Name of the merchant where transaction originated
 
-Type: string
+**Type**: string
 
-transactionType
+**transactionType**
 
-Description: Type of the transaction i.e. load, deduction, authorisation
+**Description**: Type of the transaction i.e. load, deduction, authorisation
 
-Type: integer
+**Type**: integer
 
 Echo
 

@@ -2,7 +2,7 @@
 
 This method can only return the result codes of 1 (success) or -9 (an error occurred while queuing the Reversal).
 
-KLV will not be sent for reversals. Only reference data will be included if there is any. If KLV data is needed please lookup [KLV](/guides/klv-lookup) from the reference data included.
+**KLV will not be sent for reversals. Only reference data will be included if there is any. If KLV data is needed please lookup [KLV](/guides/klv-lookup) from the reference data included.**
 
 The Paymentology issued terminal ID of the terminal requesting the transaction
 

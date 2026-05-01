@@ -2,7 +2,7 @@
 
 Reverse a deduct that was previously requested on a wallet.
 
-KLV will not be sent for reversals.
+**KLV will not be sent for reversals.**
 
 The Paymentology issued terminal ID of the terminal requesting the transaction
 

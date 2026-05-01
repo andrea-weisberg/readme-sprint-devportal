@@ -68,30 +68,30 @@ Text indicating transaction result
 array
 The tokens linked to this card, where each token has the following fields:
 
-TokenUniqueReference, string, 48 characters
+**TokenUniqueReference**, string, 48 characters
 
 Unique reference to the token.
 
-DigitizationRequestDateTime, string
+**DigitizationRequestDateTime**, string
 
 Date and time of the initial request for digitization of the Account PAN for this token. This is a conditional field, not present for CoF tokens, string in ISO 8601 format eg. “20150121T02:04:35”
 
-TokenType, string, Valid values:
+**TokenType**, string, Valid values:
 Type of token
 
 “S” – Embedded Secure Element Token
 “C” – Mastercard Cloud-Based Payments token
 “F” – CoF (Card on File) token
 
-DeviceID, string
+**DeviceID**, string
 
 Serial number of the device provisioned with the token. May be masked. Conditional field, not present for CoF tokens, and only present when provided by a Wallet Provider. May be masked (by the Wallet Provider). Example (unmasked) “C2ZBY14310005664”. Example (masked) “xxxxY1431xxxxxxx”.
 
-DeviceName, string
+**DeviceName**, string
 
 Nickname of the device provisioned with the token. Conditional field, not present for CoF tokens, and only present when the Payment App Provider has implemented the ‘Get Device Info’ MDES API. Eg: “John’s phone”
 
-DeviceType, string
+**DeviceType**, string
 
 Type of the device provisioned with the token. Valid values: NOTE – Some values from 00–19 may indicate not only the physical form factor but also other attributes such as device technology and payment app specifications.
 
@@ -131,11 +131,11 @@ Type of the device provisioned with the token. Valid values: NOTE – Some value
 ’33’ – Media/Gaming Device Media or gaming device, including a set top box, media player, and television.
 ’34’ to ’99’ – Reserved for future form factors. Any value in this range may occur within form factor and transaction data without prior notice. Conditional field, not present for CoF tokens, and only present when supplied by the Payment App Provider.
 
-ExpirationDate, date
+**ExpirationDate**, date
 
 Expiration date of token. Conditional field, present once the token has been designated for the digitization. Four digit string. Format “mmyy”.
 
-CurrentStatusDescription, string
+**CurrentStatusDescription**, string
 
 Description of the current status.
 
@@ -144,15 +144,15 @@ Active. The token is linked to the Account PAN and may initiate new transactions
 Suspended. The token is linked to the Account PAN but may not perform transactions at the request of one or more suspenders.
 Deleted. The token is logically deleted but is still linked to the Account PAN for the purposes of post-authorization transaction processing. Eg. “Active”
 
-TokenActivatedDateTime, date
+**TokenActivatedDateTime**, date
 
 Date and time that the token was activated. Conditional field, present only once the Token has been activated. string in ISO 8601. Example: “20150121T02:04:45”
 
-TokenRequestorName, string
+**TokenRequestorName**, string
 
 The legal name of the token requestor.
 
-WalletID, string
+**WalletID**, string
 
 Identifier of the Wallet Provider who requested the digitization or tokenization. Always populated for any token.
 

@@ -1,8 +1,20 @@
 # How Payments Work
 
-There are different stages of a transaction when a card is used to pay for goods and services.
+**There are different stages of a transaction when a card is used to pay for goods and services.**
 
 Let's look at each of them.
+
+## Who is involved in the transaction?
+
+**Cardholder** – the customer who uses their card to pay for goods and services
+
+**Merchant** – a person or business that provides the goods and services
+
+**Card scheme** – the payment network linked to the card eg. Mastercard, Visa, UnionPay, etc. that links the two financial institutions on either end of the transaction
+
+**Issuer** – the financial institution that issued the card to the Cardholder (Tutuka)
+
+**Acquirer** – the bank that processes the transaction on behalf of the Merchant to ensure settlement of the transaction
 
 ## What is a transaction?
 
@@ -10,10 +22,10 @@ A transaction is the movement of money from a cardholder's account to a merchant
 
 ## Stages in a transaction
 
-Payment request - This is when the cardholder uses their card and the request is routed to the Issuer (Tutuka)
-[Authorisation](/guides/companion-apisettlement-and-reconciliation/#authorization) - This is the process of checking the available funds on a card in order to reserve funds when the card is used for a purchase
-[Settlement](/guides/companion-apisettlement-and-reconciliation/#settlements) - This is when funds are deducted from the Issuer/client’s bank account and deposited into a merchants bank account to settle a card transaction.
-[Disputes](/guides/disputes) - This happens when a cardholder disagrees with a deduct on their card statement
+**Payment request -**This is when the cardholder uses their card and the request is routed to the Issuer (Tutuka)
+**[Authorisation](/guides/companion-apisettlement-and-reconciliation/#authorization) -**This is the process of checking the available funds on a card in order to reserve funds when the card is used for a purchase
+**[Settlement](/guides/companion-apisettlement-and-reconciliation/#settlements) -**This is when funds are deducted from the Issuer/client’s bank account and deposited into a merchants bank account to settle a card transaction.
+[Disputes](/guides/disputes) **-** This happens when a cardholder disagrees with a deduct on their card statement
 
 ## How the transaction is processed
 
@@ -33,19 +45,7 @@ Payment request - This is when the cardholder uses their card and the request is
 
 - The Acquirer sends the response to the Merchant and the Cardholder
 
-- The transaction is completed once funds are deducted from the Cardholder’s balance and settled in the Merchant’s account
-
-## Who is involved in the transaction?
-
-Cardholder – the customer who uses their card to pay for goods and services
-
-Merchant – a person or business that provides the goods and services
-
-Card scheme – the payment network linked to the card eg. Mastercard, Visa, UnionPay, etc. that links the two financial institutions on either end of the transaction
-
-Issuer – the financial institution that issued the card to the Cardholder (Tutuka)
-
-Acquirer – the bank that processes the transaction on behalf of the Merchant to ensure settlement of the transaction![General transaction lifecycle](https://developer.sprint.paymentology.com/wp-content/uploads/2021/10/Payment-lifecycle.png)
+- The transaction is completed once funds are deducted from the Cardholder’s balance and settled in the Merchant’s account![General transaction lifecycle](https://developer.sprint.paymentology.com/wp-content/uploads/2021/10/Payment-lifecycle.png)
 
 # Types of Transactions
 
@@ -69,8 +69,8 @@ ATM Transactions - This is when you use your physical card at an ATM to withdraw
 
 # [Disputes](/guides/disputes)
 
-- Reversal A reversal is essentially a request for a transaction that was not completed and could have failed at a particular step of the transaction process. It is an advisement message to all parties of the transaction and ensures that the card and store of value are put back into their original state if a failed to deduct transaction had been initiated. If you sent a transaction and did not receive a confirmation that the transaction was successful, it could imply that the transaction did not reach the intended destination. Read more about Reversals [here](/guides/companion-apimanage-funds/#Reversal).
+- **Reversal**A reversal is essentially a request for a transaction that was not completed and could have failed at a particular step of the transaction process. It is an advisement message to all parties of the transaction and ensures that the card and store of value are put back into their original state if a failed to deduct transaction had been initiated. If you sent a transaction and did not receive a confirmation that the transaction was successful, it could imply that the transaction did not reach the intended destination. Read more about Reversals [here](/guides/companion-apimanage-funds/#Reversal).
 
-- Refund A refund is when funds are credited back to the customer’s card from a previously debited transaction. A refund could be processed when the customer returns previously purchased goods hence the funds which were settled to the merchant’s account need to move back to the cardholder’s account. Read more about Refunds [here](/guides/companion-apimanage-funds/#Loadadjustment).
+- **Refund**A refund is when funds are credited back to the customer’s card from a previously debited transaction. A refund could be processed when the customer returns previously purchased goods hence the funds which were settled to the merchant’s account need to move back to the cardholder’s account. Read more about Refunds [here](/guides/companion-apimanage-funds/#Loadadjustment).
 
-- Chargeback A chargeback is the return of funds for a deduct transaction that was previously processed from a cardholder’s card balance, due to a successful dispute by the consumer regarding the transaction. Read about Chargeback related Dispute handling [here](/guides/disputes)
+- **Chargeback**A chargeback is the return of funds for a deduct transaction that was previously processed from a cardholder’s card balance, due to a successful dispute by the consumer regarding the transaction. Read about Chargeback related Dispute handling [here](/guides/disputes)

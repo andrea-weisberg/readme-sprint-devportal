@@ -8,19 +8,19 @@ Declined transactions include those that were declined due to: daily limits exce
 
 The Apple Pay monthly declines report includes the following details:
 
-- Transaction Size - is the transaction amount of the reported transaction, denominated in Euros. In cases where the campaign billing currency, is in US Dollars (USD) [This also applies to other currencies], the amount will be converted to Euros using Paymentology's exchange rate applicable at the end of the relevant month. Transaction size is split into: 1000
+- **Transaction Size** - is the transaction amount of the reported transaction, denominated in Euros. In cases where the campaign billing currency, is in US Dollars (USD) [This also applies to other currencies], the amount will be converted to Euros using Paymentology's exchange rate applicable at the end of the relevant month. Transaction size is split into: 1000
 
-- Apple Pay Total POS Transactions - this is the total number of transactions made using Apple Pay at Point of Sale for the reported month i.e. Apple Pay transactions that were not considered eCommerce.
+- **Apple Pay Total POS Transactions** - this is the total number of transactions made using Apple Pay at Point of Sale for the reported month i.e. Apple Pay transactions that were not considered eCommerce.
 
-- Apple Pay Declined POS Transactions - this is the total number of declined transactions for the reported month that were attempted using Apple Pay at Point of Sale.
+- **Apple Pay Declined POS Transactions** - this is the total number of declined transactions for the reported month that were attempted using Apple Pay at Point of Sale.
 
-- Issuer POS Decline Rate (%) - this is the percentage decline rate for the given month for Apple Pay POS transactions. The calculation is Apple Pay Declined POS Transactions / Apple Pay Total POS Transactions = Issuer POS Decline Rate.
+- **Issuer POS Decline Rate (%)** - this is the percentage decline rate for the given month for Apple Pay POS transactions. The calculation is Apple Pay Declined POS Transactions / Apple Pay Total POS Transactions = **Issuer POS Decline Rate.**
 
-- Apple Pay Total Remote Transactions - this is the total number of remote transactions made using Apple Pay for the reported month i.e. Apple Pay transactions that were considered eCommerce.
+- **Apple Pay Total Remote Transactions** - this is the total number of remote transactions made using Apple Pay for the reported month i.e. Apple Pay transactions that were considered eCommerce.
 
-- Apple Pay Declined Remote Transactions - this is the total number of declined remote transactions for the reported month that were attempted using Apple Pay.
+- **Apple Pay Declined Remote Transactions** - this is the total number of declined remote transactions for the reported month that were attempted using Apple Pay.
 
-- Issuer Remote Decline Rate (%) - this is the percentage decline rate for the given month for Apple Pay remote transactions. The calculation is Apple Pay Declined Remote Transactions / Apple Pay Total Remote Transactions = Issuer Remote Decline Rate.
+- **Issuer Remote Decline Rate (%)**- this is the percentage decline rate for the given month for Apple Pay remote transactions. The calculation is Apple Pay Declined Remote Transactions / Apple Pay Total Remote Transactions = **Issuer Remote Decline Rate.**
 
 ## Report format
 

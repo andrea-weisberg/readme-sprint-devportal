@@ -12,79 +12,79 @@ There are two versions of this report available:
 
 This report includes the following details:
 
-- CampaignName - Name of client’s campaign
+- **CampaignName** - Name of client’s campaign
 
-- TransactionDate - This is the authorization date of the transaction
+- **TransactionDate**- This is the authorization date of the transaction
 
-- TransactionAmount - the value of the transaction
+- **TransactionAmount** - the value of the transaction
 
-- TransactionNarrative - it’s the merchant’s description
+- **TransactionNarrative** - it’s the merchant’s description
 
-- TransactionDecription - this describes the transaction type, such as: DEDUCT - deductions or debits
+- **TransactionDecription**- this describes the transaction type, such as: DEDUCT - deductions or debits
 
 - LOAD - refunds or credits
 
 - CHARGEBACK
 
-- TransactionID - it’s a reference for the transaction
+- **TransactionID** - it’s a reference for the transaction
 
-- TransactionType - it can be marked as any of the following: 0 - POS Transaction
+- **TransactionType** - it can be marked as any of the following: 0 - POS Transaction
 
 - 1 - ATM Transaction
 
 - 2 - Adjustment
 
-- WalletReference - this is a unique customer reference for the card (applicable to Companion API). This column will be empty for Card API reporting.
+- **WalletReference** - this is a unique customer reference for the card (applicable to Companion API). This column will be empty for Card API reporting.
 
-- SystemDate - this is Paymentology’s system date in UTC +2 time zone.
+- **SystemDate** - this is Paymentology’s system date in UTC +2 time zone.
 
-- SequenceNumber - this is a unique sequence card identifier showing a running number for the cards created.
+- **SequenceNumber**- this is a unique sequence card identifier showing a running number for the cards created.
 
-- TrackingNumber - this is a unique 15-digit tracking identifier for the card.
+- **TrackingNumber** - this is a unique 15-digit tracking identifier for the card.
 
 ### Version 2
 
 This report includes the following details:
 
-- CampaignName - Name of client’s campaign
+- **CampaignName** - Name of client’s campaign
 
-- TransactionDate - This is the authorization date of the transaction
+- **TransactionDate**- This is the authorization date of the transaction
 
-- TransactionAmount - the value of the transaction
+- **TransactionAmount** - the value of the transaction
 
-- TransactionNarrative - it’s the merchant’s description
+- **TransactionNarrative** - it’s the merchant’s description
 
-- TransactionDecription - this describes the transaction type, such as: DEDUCT - deductions or debits
+- **TransactionDecription**- this describes the transaction type, such as: DEDUCT - deductions or debits
 
 - LOAD - refunds or credits
 
 - CHARGEBACK
 
-- TransactionID - it’s a reference for the transaction
+- **TransactionID** - it’s a reference for the transaction
 
-- TransactionType - it can be marked as any of the following: 0 - POS Transaction
+- **TransactionType** - it can be marked as any of the following: 0 - POS Transaction
 
 - 1 - ATM Transaction
 
 - 2 - Adjustment
 
-- WalletReference - this is a unique customer reference for the card (applicable to Companion API). This column will be empty for Card API reporting.
+- **WalletReference** - this is a unique customer reference for the card (applicable to Companion API). This column will be empty for Card API reporting.
 
-- SystemDate - this is Paymentology’s system date in UTC +2 time zone.
+- **SystemDate** - this is Paymentology’s system date in UTC +2 time zone.
 
-- SequenceNumber - this is a unique sequence card identifier showing a running number for the cards created.
+- **SequenceNumber**- this is a unique sequence card identifier showing a running number for the cards created.
 
-- TrackingNumber - this is a unique 15-digit tracking identifier for the card.
+- **TrackingNumber** - this is a unique 15-digit tracking identifier for the card.
 
-- NetworkTransactionID - the Transaction ID of the transaction, as created by the card network. You can match this against the Transaction ID on the [Mark-off file](/reports/companion-api/mark-off-file)
-
-## Report sample![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_UnsettledTransactionReport_YYYYMMDD-.png)
+- **NetworkTransactionID** - the Transaction ID of the transaction, as created by the card network. You can match this against the Transaction ID on the [Mark-off file](/reports/companion-api/mark-off-file)
 
 ## Report format
 
 ## Report time frame
 
-Note: file will automatically download upon clicking link
+## Report sample![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_UnsettledTransactionReport_YYYYMMDD-.png)
+
+**Note: file will automatically download upon clicking link**
 
 [CampaignName_UnsettledTransactionReport_YYYYMMDD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_UnsettledTransactionReport_YYYYMMDD.csv)
 

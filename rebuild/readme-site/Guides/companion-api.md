@@ -2,11 +2,11 @@
 
 ## Companion API is a simple API that allows you to issue cards and hold your customers' card balances on your platform
 
-A Companion card is a card that is linked to a store of value (SVA) like a wallet or a bank account. What makes this API different from the others we offer, is that the customer's card balance sits within the SVA and not on the card. Choose the Companion API if you want to issue cards and hold your customers' card balances on your own platform.
+**A Companion card is a card that is linked to a store of value (SVA) like a wallet or a bank account. What makes this API different from the others we offer, is that the customer's card balance sits within the SVA and not on the card. Choose the Companion API if you want to issue cards and hold your customers' card balances on your own platform.**
 
 With this API, you can issue physical and virtual prepaid cards linked to a separate SVA. Cards are linked to the SVA, so whenever transactions are made, the SVA is debited.
 
-Note: You’ll be responsible for authorising transactions with this API.
+**Note:** You’ll be responsible for authorising transactions with this API.
 
 If you want Paymentology to hold your customer’s balance for you, use the [Card API](/guides/card-api) instead. If you're not sure which API to choose, read about [our APIs](/guides/our-apis) first or [get in touch](/guides/contact-us).
 
@@ -22,9 +22,9 @@ Give your cardholders access to the global open-loop world of payments so that t
 
 Empower customers who don’t qualify for a credit card or bank account with a virtual or physical card that they can use to shop online
 
-The Companion API is split into two separate APIs based on whether we are calling you (we call it Remote API ), or you're calling us ( Local API ):
+The Companion API is split into two separate APIs based on whether we are calling you (we call it **Remote API**), or you're calling us (**Local API**):
 
-Local API - you call us
+**Local API - you call us**
 
 - This API allows you to call us to perform necessary actions on your cards
 
@@ -32,7 +32,7 @@ Local API - you call us
 
 - It is hosted by Paymentology
 
-Remote API - we call you
+**Remote API - we call you**
 
 - This API allows us to call you to perform actions on your SVA/wallet e.g. Deducting/loading funds, balance inquiries, etc.
 

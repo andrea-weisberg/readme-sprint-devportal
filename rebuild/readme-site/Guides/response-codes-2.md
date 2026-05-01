@@ -32,7 +32,7 @@ KLV: A type of TLV encoded string with characteristics:
 
 - Available keys are subject to change and will often be customer specific, thus these will be communicated via means other than this API documentation.
 
-For example the KLV 01206AB48DE003044577 contains:
+For example the KLV **01206AB48DE003044577** contains:
 
 - Key 012 with length 06 and value AB48DE
 

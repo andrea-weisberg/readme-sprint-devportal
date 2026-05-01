@@ -4,7 +4,7 @@ In the payment industry sensitive data has a real importance. Confidentiality of
 
 To achieve this we offer Secure API methods to support end to end encryption of data.
 
-IMPORTANT: Specific campaign settings are required for these Secure API's. To have these enabled, please reach out to your Client Executive or lodge a request via our [Customer Support Platform](https://support.paymentology.com/).
+**IMPORTANT:** Specific campaign settings are required for these Secure API's. To have these enabled, please reach out to your Client Executive or lodge a request via our [Customer Support Platform](https://support.paymentology.com/).
 
 ## Encryption details
 
@@ -57,6 +57,12 @@ PIN BLOCK Format ISO format 2 will be used to communicate the encrypted PIN bloc
 
 The length of IV key will be dependent on the mode of encryption used.
 
+### Algorithm used for protecting sensitive data
+
+### Algorithm used for protecting keys
+
+When we talk about encrypting/decrypting keys the correct terminology is the wrapping or unwrapping of a key. There are algorithms that are specifically created for wrapping/unwrapping keys.
+
 ### Important notes
 
 - When not explicitly specified in the OAEP configuration the MGF1 padding will default to using SHA-1 which is not sufficient.
@@ -82,15 +88,9 @@ In both cases the key type must be specified as Cipher.SECRET_KEY and the algori
 
 If possible and necessary, code samples can be provided.
 
-### Algorithm used for protecting sensitive data
-
-### Algorithm used for protecting keys
-
-When we talk about encrypting/decrypting keys the correct terminology is the wrapping or unwrapping of a key. There are algorithms that are specifically created for wrapping/unwrapping keys.
-
 ## API methods using card data encryption
 
-REMINDER: These API methods contain PCI sensitive information.
+**REMINDER:** These API methods contain PCI sensitive information.
 
 ### API methods with encrypted data in the response
 

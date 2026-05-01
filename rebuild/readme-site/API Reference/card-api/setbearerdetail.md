@@ -36,6 +36,16 @@ The KYC Image for the Bearer
 
 The street address of the card bearer. No special characters nor alphabetic, example “17014”
 
+The postal code of the card bearer. This value is left-justified with right-space-fill, example”12345 “,”123456789”
+
+City or area of the card bearer.
+
+ISO Alpha code indicating the country. eg. GBR.
+
+Email address of the card bearer.
+
+HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key
+
 <methodCall>
 <methodName>SetBearerDetail</methodName>
 <params>
@@ -210,13 +220,3 @@ Text indicating transaction result
 </methodResponse>
 
 [BACK TO CARD API MENU](/api-reference/card-api/api-reference)
-
-The postal code of the card bearer. This value is left-justified with right-space-fill, example”12345 “,”123456789”
-
-City or area of the card bearer.
-
-ISO Alpha code indicating the country. eg. GBR.
-
-Email address of the card bearer.
-
-HMAC-SHA256 hashed signature of the concatenated method name with all argument values using the terminal password as private key

@@ -6,23 +6,23 @@ So for example if a card was sent to VISA in a VAU file on the date Sep 18, 2023
 
 The VAU Transaction Report has the following fields:
 
-- Wallet Reference - this is the unique identifier of the wallet (12 character string).
+- **Wallet Reference** - this is the unique identifier of the wallet (12 character string).
 
-- Merchant Name - this is the name of the merchant where the transaction took place (string).
+- **Merchant Name** - this is the name of the merchant where the transaction took place (string).
 
-- Pre Authorisation Date - date of the pre-authorisation (MM/DD/YYYY HH:MM:SS).
+- **Pre Authorisation Date** - date of the pre-authorisation (MM/DD/YYYY HH:MM:SS).
 
-- Vau File System Date - VAU file generation date (MM/DD/YYYY HH:MM:SS).
+- **Vau File System Date** - VAU file generation date (MM/DD/YYYY HH:MM:SS).
 
-- Voucher ID - corresponds to the transaction ID associated with the voucher (integer).
+- **Voucher ID** - corresponds to the transaction ID associated with the voucher (integer).
 
-- TrackingNumber - this is the unique identifier linked to the voucher number (15 character string).
+- **TrackingNumber** - this is the unique identifier linked to the voucher number (15 character string).
 
-- Voucher Number - the voucher number sent to VISA in the VAU file (16 character string).
+- **Voucher Number** - the voucher number sent to VISA in the VAU file (16 character string).
 
-- Expiry Date - the old expiry date sent to VISA in the VAU file (YYMM).
+- **Expiry Date** - the old expiry date sent to VISA in the VAU file (YYMM).
 
-- Service Identifier - this identifies the type of change that occurred on the card (string).
+- **Service Identifier** - this identifies the type of change that occurred on the card (string).
 
 ## Report format
 

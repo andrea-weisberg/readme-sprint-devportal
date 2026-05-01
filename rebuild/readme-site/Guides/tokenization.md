@@ -8,11 +8,11 @@ The Sprint platform allows you to take advantage of the tokenization technologyâ
 
 So, tokenization mainly involves two key tasks:
 
-- Card provisioning - when a token is created for a full PAN.
+- **Card provisioning** - when a token is created for a full PAN.
 
-- Token lifecycle management - when an event occurs on a token.
+- **Token lifecycle management** - when an event occurs on a token.
 
-## Benefits of Tokenization
+## **Benefits of Tokenization**
 
 - Tokenizing customersâ€™ private account data greatly enhances the security of transactions. A token has no meaningful value, if breached.
 
@@ -22,6 +22,6 @@ So, tokenization mainly involves two key tasks:
 
 - It simplifies attaining and maintaining compliance with the payment industry standards, which fosters customer loyalty and trust.
 
-## Terminology
+## **Terminology**
 
 Here is a table describing the common phrases used in the tokenization process.

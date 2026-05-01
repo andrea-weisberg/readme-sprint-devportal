@@ -4,34 +4,6 @@ Paymentology provides a number of advanced fraud prevention and risk control mec
 
 Let’s look at the fraud control measures.
 
-## Additional Settings
-
-Paymentology Sprint allows you to implement additional settings to reinforce the security of cards and help with fraud prevention. These are the additional card settings:
-
-- Enable multiple currencies linked cards
-
-- Allow releasing of authorisations
-
-- Max threshold to release funds for unsettled authorisations
-
-- Time period to release authorisations
-
-- Expiry time period
-
-- PIN length
-
-- BIN range splitting
-
-- Filtering rules
-
-- Cards created active or inactive
-
-- Is the card readable
-
-- Allow batch top ups from administrator portal
-
-- Allow card orders from administrator portal
-
 ## Transaction Limits
 
 Paymentology Sprint allows you to implement transaction limits per card or program. If the ceiling is reached, no further transactions are permitted.
@@ -73,6 +45,34 @@ Paymentology Sprint allows you to specify the payment methods that the card can 
 - EMV
 
 - E-commerce
+
+## Additional Settings
+
+Paymentology Sprint allows you to implement additional settings to reinforce the security of cards and help with fraud prevention. These are the additional card settings:
+
+- Enable multiple currencies linked cards
+
+- Allow releasing of authorisations
+
+- Max threshold to release funds for unsettled authorisations
+
+- Time period to release authorisations
+
+- Expiry time period
+
+- PIN length
+
+- BIN range splitting
+
+- Filtering rules
+
+- Cards created active or inactive
+
+- Is the card readable
+
+- Allow batch top ups from administrator portal
+
+- Allow card orders from administrator portal
 
 ## Notifications
 

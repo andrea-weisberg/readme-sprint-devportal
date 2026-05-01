@@ -7,7 +7,7 @@ Connecting to the Chargeback API means you can automate submissions of your char
 
 ## API Gateway token
 
-Below are the default specifications for the token bearer details for authentication as reflected in the First Chargeback example [here](/api-reference/chargeback-api/first-chargeback).
+Below are the default specifications for the **token bearer** details for authentication as reflected in the First Chargeback example [here](/api-reference/chargeback-api/first-chargeback).
 
 #### Other response codes
 

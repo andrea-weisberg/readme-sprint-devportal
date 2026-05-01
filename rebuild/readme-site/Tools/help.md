@@ -4,15 +4,15 @@
 
 You will use the 3D Secure Screen Customization after agreeing to implement the 3D Secure functionality for your chosen API (Card or Companion). We support different cardholder authentication methods to suit your needs, please choose the tool corresponding to the method you are implementing with Paymentology.
 
-This tool is for clients who have already signed up with Paymentology and are using the Sprint platform.
+**This tool is for clients who have already signed up with Paymentology and are using the Sprint platform.**
 
 ## How to use the 3D Secure Screen Customization tool
 
 First, you must select the type of 3DS Authentication you wish to use. Paymentology currently supports One-time Password (OTP) and Out-of-Band (OOB) authentication methods.
 
-One-Time Password Authentication:
+**One-Time Password Authentication:**
 
-Info Screen
+**Info Screen**
 
 - Select the language that will be displayed to your customers. The fixed labels will be translated to the selected language.
 
@@ -28,15 +28,15 @@ Info Screen
 
 - Select the number of minutes the screen should be available before it times out. Maximum time allowed is 15 minutes.
 
-Error Screen
+**Error Screen**
 
 - This error screen is for any error that is not the incorrect OTP entered. Enter a name for this message in the “Title” box.
 
 - Enter the text for the message in the “Main text” box.
 
-Out-of-Band Authentication:
+**Out-of-Band Authentication:**
 
-Info Screen
+**Info Screen**
 
 - Select the language that will be displayed to your customers. The fixed labels will be translated to the selected language.
 
@@ -48,7 +48,7 @@ Info Screen
 
 - Enter the text for your message in the “Main text” box.
 
-Error Screen
+**Error Screen**
 
 - The error screen is displayed to the user when a system error occurs during the payment authentication process. Enter a name for this message in the "Title" box.
 

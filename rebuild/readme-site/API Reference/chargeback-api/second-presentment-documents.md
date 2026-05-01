@@ -4,13 +4,6 @@ Once in the 2nd Presentment phase, this API method is used to receive the suppor
 
 Once in the 2nd Presentment phase, this API method is used to receive the supporting documents raised by the acquirer for a claim.
 
-{
-"fileAttachment": {
-"filename": "FILE_NAME",
-"file": "BASE64_ENCODED_FILE"
-}
-}
-
 ## Request/response fields and samples
 
 Chargeback ID
@@ -33,6 +26,13 @@ File attachment
 Filename
 
 File content in base64 encoded string
+
+{
+"fileAttachment": {
+"filename": "FILE_NAME",
+"file": "BASE64_ENCODED_FILE"
+}
+}
 
 #### Other response codes
 

@@ -2,7 +2,7 @@
 
 Generates a “secret token” to enable communication with our tokenisation APIs.
 
-IMPORTANT: As push provisioning needs to be completed in one minute or less, the recommended setting for the Request Parameter: timeStep is 60.
+**IMPORTANT:** As push provisioning needs to be completed in one minute or less, the recommended setting for the Request Parameter: timeStep is 60.
 
 The Paymentology issued terminal ID of the terminal requesting the transaction
 
@@ -12,11 +12,11 @@ The card number, sequence number or tracking number of the specified card
 
 Window during which TOTP is valid in seconds.
 
-IMPORTANT: The recommended value for this is 60 as push provisioning needs to be completed in one minute or less.
+**IMPORTANT:** The recommended value for this is 60 as push provisioning needs to be completed in one minute or less.
 
-Default: 8 – Length of card secret 1-8
+Default: **8** – Length of card secret 1-8
 
-Default: HmacSHA512 – Hashing algorithm used for TOTP generation
+Default: **HmacSHA512** – Hashing algorithm used for TOTP generation
 
 Possible Values:
 

@@ -10,25 +10,6 @@
 
 [Administrative Message - 3D Secure App Finalisation](#3DSAppFinal) - Advises final status of 3DSecure OOB authentication.
 
-"<?xml version=""1.0"" encoding=""UTF-8""?>
-<methodResponse>
-<params>
-<param>
-<value>
-<struct>
-<member>
-<name>resultCode</name>
-<value>
-<int>1</int>
-</value>
-</member>
-</struct>
-</value>
-</param>
-</params>
-</methodResponse>
-"
-
 # Administrative Message - Tokenization Related Messages
 
 Sends tokenization related messages to the client.
@@ -93,6 +74,25 @@ HMAC-SHA256 hashed signature of the concatenated method name with all argument v
 
 Status code indicating transaction result
 
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<methodResponse>
+<params>
+<param>
+<value>
+<struct>
+<member>
+<name>resultCode</name>
+<value>
+<int>1</int>
+</value>
+</member>
+</struct>
+</value>
+</param>
+</params>
+</methodResponse>
+"
+
 # Administrative Message - 3D Secure OTP
 
 Sends message with 3D Secure OTP
@@ -105,7 +105,7 @@ Only if the 3DS validation option is 'SMS OTP':
 
 KLV data - '3D Secure OTP RefCode' = 934.
 
-For more information on KLV data, click [here](/guides/klv-lookup)
+**For more information on KLV data, click [here](/guides/klv-lookup)**
 
 The Paymentology issued terminal ID of the terminal requesting the transaction
 
@@ -249,6 +249,8 @@ HMAC-SHA256 hashed signature of the concatenated method name with all argument v
 
 Status code indicating transaction result
 
+Masked contact details (phone number and email address) linked with the card
+
 <methodresponse>
 <params>
 <param>
@@ -299,11 +301,9 @@ Status code indicating transaction result
 </params>
 </methodresponse>
 
-## Administrative Message - 3DSecureAppAuthentication
+## Administrative Message - **3DSecureAppAuthentication**
 
 This message is used to trigger the process of cardholder authentication. You only need to respond to this message to indicate you have received the message and will initiate the cardholder authentication. This is then followed by calling Paymentology's [ThreeDSAuthenticationOutcome](/api-reference/companion-api/threedsauthenticationoutcome) API.
-
-Masked contact details (phone number and email address) linked with the card
 
 The Paymentology issued terminal ID of the terminal requesting the transaction
 
@@ -388,7 +388,7 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 
-## Administrative Message - 3DSecure.AppFinalisation
+## Administrative Message - **3DSecure.AppFinalisation**
 
 This message is used to inform the client of the final status of the 3DSecure OOB authentication.
 Messages include the following:

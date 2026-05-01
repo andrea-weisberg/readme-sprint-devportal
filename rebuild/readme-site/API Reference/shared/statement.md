@@ -2,7 +2,7 @@
 
 Retrieve the statement of a card.
 
-NOTE: Do not use the Statement method when the Balance method will be sufficient, as the Statement method may take considerably longer to return a response.
+**NOTE:** Do not use the Statement method when the Balance method will be sufficient, as the Statement method may take considerably longer to return a response.
 
 The Paymentology issued terminal ID of the terminal requesting the transaction.
 
@@ -66,10 +66,10 @@ The expiry date of the card.
 The transaction history of the card.
 
 The array includes:
-transactionDate - Date of the transaction (date)
-transactionAmount - Amount of the transactionin cents (integer)
-transactionDescription - Name of the merchant where the transaction originated (string)
-transactionType - Type of the transaction:
+**transactionDate** - Date of the transaction (date)
+**transactionAmount** - Amount of the transactionin cents (integer)
+**transactionDescription** - Name of the merchant where the transaction originated (string)
+**transactionType** - Type of the transaction:
 1. load
 2. deduction
 3. authorisation

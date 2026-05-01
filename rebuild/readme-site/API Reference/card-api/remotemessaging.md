@@ -1,12 +1,12 @@
 # Remote Messaging API
 
-Remote messaging API allows Paymentology to call you to send administrative advice messages for Card API. These advice messages are sent using webhook-like schema. If you are integrating the service, you must create an endpoint accessible from the Paymentology network, which would be able to process the requests outlined below.
+**Remote messaging API allows Paymentology to call you to send administrative advice messages for Card API. These advice messages are sent using webhook-like schema. If you are integrating the service, you must create an endpoint accessible from the Paymentology network, which would be able to process the requests outlined below.**
 
 ## How it works
 
-- All messages are sent as HTTP POST requests.
+- All messages are sent as **HTTP POST** requests.
 
-- Message content is always a JSON document.
+- Message content is always a **JSON** document.
 
 - Methods structure is defined below, and it corresponds to the schema of the JSON document sent.
 
@@ -14,7 +14,7 @@ Remote messaging API allows Paymentology to call you to send administrative advi
 
 - In the code samples provided, we use cURL to send requests
 
-- In the code samples provided, we use a mock endpoint for testing - [https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm](https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm)
+- In the code samples provided, we use a **mock** **endpoint** for testing**- [https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm](https://api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm)**
 
 ## Expectations
 
@@ -28,7 +28,7 @@ Client specific headers can be used, if previously agreed, in accordance to meas
 
 ## Response
 
-HTTP response code 200 (OK) is expected to confirm that the message was accepted.
+HTTP response code **200 (OK)** is expected to confirm that the message was accepted.
 
 ## Methods:
 
@@ -52,7 +52,7 @@ HTTP response code 200 (OK) is expected to confirm that the message was accepted
 
 Process 3DS OTP token for an end customer to be able to complete the challenge of a live transaction.
 
-IMPORTANT: the "refCode" field is only applicable if the campaign option is enabled.
+**IMPORTANT:** the "refCode" field is only applicable if the campaign option is enabled.
 
 OTP challenge code
 
@@ -61,6 +61,15 @@ Customer reference this card is linked to
 Method name: 3DSecure.OTP
 
 Tracking number of the card, for which OTP token is being sent
+
+Name of or information related to the merchant
+
+The monetary amount related the transaction
+
+Dynamic generated 4 letters code to be used along with OTP messages
+**if Campaign is configured to.**
+
+The local currency code of the acquirer or source location of the transaction
 
 curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v1_0/jsonMock.cfm' \
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0123456789,Checksum=1A11111B2222222C33D44E5555C3F666F1111722228B168892D544050B9B4D3A' \
@@ -78,6 +87,20 @@ curl --location --request POST 'https: //api.voucherengine.com/remoteMessaging/v
 
 Echo
 
+As described in response reference
+
+Echo
+
+Method name: 3DSecure.OTP
+
+Echo
+
+Echo
+
+Echo
+
+Echo
+
 {
 "challenge": "123456",
 "resultCode": "0000",
@@ -88,19 +111,6 @@ Echo
 "trackingNumber": "765432100000123",
 "currencyCode": "840"
 }
-
-Name of or information related to the merchant
-
-The monetary amount related the transaction
-
-Dynamic generated 4 letters code to be used along with OTP messages
-if Campaign is configured to.
-
-As described in response reference
-
-Echo
-
-Method name: 3DSecure.OTP
 
 # Administrative Message – 3D Secure Cardholder Contact Detail Collection
 
@@ -158,6 +168,18 @@ curl --location --request POST 'https://api.voucherengine.com/remoteMessaging/v1
 --header 'Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794' \
 --header 'Content-Type: application/json' \
 --data-raw '{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}'
+
+Echo
+
+As described in response reference
+
+Echo
+
+Echo
+
+Echo
+
+Echo
 
 Echo
 
@@ -282,56 +304,6 @@ JSON array of methods where each element has:
 
 {"resultCode":"0000","customerReference":"15e6405d-9220-453b-b66b-02d8f9a46ac7","messageType":"digitization.activationmethods","walletIdentifier":"217","activationMethods":[{"value":"555123451","type":1}],"trackingNumber":"162961400000233","tokenRequestorId":"50139059239"}
 
-# Response Reference
-
-Response should contain all the same fields as the original request. In addition, a resultCode will be always added and specific response information when that is required by the method. The resultCode will be a string field with values from the table below:![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Result-codes.png)
-
-## Note:
-
-- The range of response codes may be expanded in the future. Other response codes, not in the table above, should not be used without explicit written confirmation. The behavior of the system is undefined when using codes not in the listing.
-
-- Response codes should always be four-digit codes. For example, using “0” instead of “0000” (approval) can, and will, yield different than expected results.
-
-## Method
-
-To calculate the checksum, the payload is treated as a single UTF-8 byte stream, excluding surrounding space characters, if any. The resulting value is passed into HMAC function: HMAC(secret, payload), which signifies the HMAC-keyed hash algorithm using octet string represented by "secret" as the key and the octet string "payload" as the input string. The size of the result is the hash result size for the hash function in use. In this case, it is 32 octets for SHA-256 as mandated. The "secret" is associated with the Terminal value and shared in a separate communication medium prior to enactment of the API.
-
-All the examples supplied in the documentation calculate the authorization header using the non existing terminal 0061218987 with the password: 1234567890
-
-Example (javascript)
-const crypto = require('crypto-js')
-const authorizationTerminal = '0061218987'
-const terminalPassword = '1234567890'
-const payload = `{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}`
-const hashing = crypto.HmacSHA256(payload,terminalPassword).toString(crypto.enc.Hex)
-const httpHeader = 'Authorization: CS-HMAC-SHA-256 Terminal=' + authorizationTerminal + ',Checksum=' + hashing
-console.log(httpHeader)
-
-Will produce the following output:
-Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
-
-The local currency code of the acquirer or source location of the transaction
-
-Echo
-
-Echo
-
-Echo
-
-Echo
-
-As described in response reference
-
-Echo
-
-Echo
-
-Echo
-
-Echo
-
-Echo
-
 ## 3DSecure.AppAuthentication
 
 This message is used to trigger the process of cardholder authentication. You only need to respond to this message to indicate you have received the message and will initiate the cardholder authentication. Once you have completed cardholder authentication you will send a message to our [ThreeDSAuthenticationOutcome](/api-reference/card-api/threedsauthenticationoutcome) API.
@@ -378,14 +350,42 @@ Value indicating the status. Values include:
 2 - General error
 3 - Transaction cancelled before response was received
 
+# Response Reference
+
+Response should contain all the same fields as the original request. In addition, a resultCode will be always added and specific response information when that is required by the method. The resultCode will be a string field with values from the table below:![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Result-codes.png)
+
+## Note:
+
+- The range of response codes may be expanded in the future. Other response codes, not in the table above, should not be used without explicit written confirmation. The behavior of the system is undefined when using codes not in the listing.
+
+- Response codes should always be four-digit codes. For example, using “0” instead of “0000” (approval) can, and will, yield different than expected results.
+
 ## Optional Payload Integrity Verification
 
 In order to ensure the integrity of data, all messages can optionally (enabled per client) have a HTTP header named Authorization with a key and a hash of the entire payload.
 
-NOTE: Unless otherwise declared - this is applicable to all the methods of the API.
+**NOTE: Unless otherwise declared - this is applicable to all the methods of the API.**
 
 Example
 
 Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Structure.png)
+
+## Method
+
+To calculate the checksum, the payload is treated as a single UTF-8 byte stream, excluding surrounding space characters, if any. The resulting value is passed into HMAC function: HMAC(secret, payload), which signifies the HMAC-keyed hash algorithm using octet string represented by "secret" as the key and the octet string "payload" as the input string. The size of the result is the hash result size for the hash function in use. In this case, it is 32 octets for SHA-256 as mandated. The "secret" is associated with the Terminal value and shared in a separate communication medium prior to enactment of the API.
+
+All the examples supplied in the documentation calculate the authorization header using the non existing terminal 0061218987 with the password: 1234567890
+
+Example (javascript)
+const crypto = require('crypto-js')
+const authorizationTerminal = '0061218987'
+const terminalPassword = '1234567890'
+const payload = `{"challenge":"123456","customerReference":"500110022","messageType":"digitization.activation","walletIdentifier":"217","trackingNumber":"544911100000042","tokenRequestorId":"54139059333"}`
+const hashing = crypto.HmacSHA256(payload,terminalPassword).toString(crypto.enc.Hex)
+const httpHeader = 'Authorization: CS-HMAC-SHA-256 Terminal=' + authorizationTerminal + ',Checksum=' + hashing
+console.log(httpHeader)
+
+Will produce the following output:
+Authorization: CS-HMAC-SHA-256 Termi-nal=0061218987,Checksum=a6d5abb4a4c0e5a6f45287b040ed6cccc82900454959cbf65bbe8cbbf3c24794
 
 [Back to Card API menu](/api-reference/card-api/api-reference)

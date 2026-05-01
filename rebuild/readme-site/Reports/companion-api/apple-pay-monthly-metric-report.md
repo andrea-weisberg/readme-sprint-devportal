@@ -6,27 +6,27 @@ The monthly metric report provides clients with a breakdown of POS (Point of Sal
 
 The report includes the following details:
 
-- Reporting Month - the month the report data is based on.
+- **Reporting Month**- the month the report data is based on.
 
-- Monthly DPAN transaction count - total number of settled DPAN transactions made using Apple Pay for the given month.
+- **Monthly DPAN transaction count**- total number of settled DPAN transactions made using Apple Pay for the given month.
 
-- Monthly DPAN spend - total value of settled DPAN transactions made using Apple Pay for the given month.
+- **Monthly DPAN spend** - total value of settled DPAN transactions made using Apple Pay for the given month.
 
-- % of POS DPAN transactions out of the monthly processed DPAN transactions - percentage split of Monthly DPAN transaction count that were POS (Point of Sale) type spends.
+- **% of POS DPAN transactions out of the monthly processed DPAN transactions** - percentage split of **Monthly DPAN transaction count** that were POS (Point of Sale) type spends.
 
-- % of Remote DPAN transactions out of the monthly processed DPAN transactions - percentage split of Monthly DPAN transaction count that were remote type spends i.e. in-App, Apple Pay on the web and eCommerce.
+- **% of Remote DPAN transactions out of the monthly processed DPAN transactions**- percentage split of **Monthly DPAN transaction count** that were remote type spends i.e. in-App, Apple Pay on the web and eCommerce.
 
-- % of COF DPAN transactions out of the monthly processed DPAN transactions - percentage split of Monthly DPAN transaction count that were COF (Credential on File) type spends.
+- **% of COF DPAN transactions out of the monthly processed DPAN transactions**- percentage split of **Monthly DPAN transaction count** that were COF (Credential on File) type spends.
 
-- % of POS DPAN spend amount out of the monthly processed DPAN transactions - percentage split of Monthly DPAN spend value that were POS (Point of Sale) type spends.
+- **% of POS DPAN spend amount out of the monthly processed DPAN transactions** - percentage split of **Monthly DPAN spend** value that were POS (Point of Sale) type spends.
 
-- % of Remote DPAN spend amount out of the monthly processed DPAN transactions - percentage split of Monthly DPAN spend value that were remote type spends i.e. in-App, Apple Pay on the web and eCommerce.
+- **% of Remote DPAN spend amount out of the monthly processed DPAN transactions**- percentage split of **Monthly DPAN spend** value that were remote type spends i.e. in-App, Apple Pay on the web and eCommerce.
 
-- % of COF DPAN spend amount out of the monthly processed DPAN transactions - percentage split of Monthly DPAN spend value that were COF (Credential on File) type spends.
+- **% of COF DPAN spend amount out of the monthly processed DPAN transactions**- percentage split of **Monthly DPAN spend** value that were COF (Credential on File) type spends.
 
-- Total Available DPANs - these are the tokens that are available for use on Apple Pay as of the end of the reporting month. Total Available DPANs are defined as successfully provisioned since launch onto Apple Pay, excluding all inactive, pending, suspended, and deleted tokens.
+- **Total Available DPANs**- these are the tokens that are available for use on Apple Pay as of the end of the reporting month. Total Available DPANs are defined as successfully provisioned since launch onto Apple Pay, excluding all inactive, pending, suspended, and deleted tokens.
 
-- Monthly Active DPANs - this is the count of DPANs that have transacted at least once in the given month.
+- **Monthly Active DPANs** - this is the count of DPANs that have transacted at least once in the given month.
 
 DPAN (Device Primary Account Number) - A token that acts as a surrogate for the customer’s card number and is used to make contactless and e-commerce transactions using an Apple device.
 
@@ -38,6 +38,6 @@ Only settled transactions are included and all values specified are in the cardh
 
 ## Report sample![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Monthly-Metric-Report-Month-YYYY-_-002.png)
 
-Note: file will automatically download upon clicking link
+**Note: file will automatically download upon clicking link**
 
 [CampaignName_ApplePay Monthly Metric Report Month YYYY.xls](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Monthly-Metric-Report-Month-YYYY.xls)

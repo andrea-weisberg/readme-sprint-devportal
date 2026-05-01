@@ -2,7 +2,7 @@
 
 Transfer a reference to a new card. The old card will be stopped and the bearer details transferred to the new card. The new card will be linked and activated.
 
-NOTE: Applicable to our Visa product.
+**NOTE:** Applicable to our Visa product.
 
 The Paymentology issued terminal ID of the terminal requesting the transaction.
 

@@ -5,21 +5,21 @@ The report includes details about vouchers and reasons for transactions being fi
 
 The report includes the following details:
 
-- Campaign - name of client’s card program (string).
+- **Campaign** - name of client’s card program (string).
 
-- Terminal - terminal information i.e. merchant name, city, country etc (string).
+- **Terminal** - terminal information i.e. merchant name, city, country etc (string).
 
-- Reason - filtered transaction reason i.e. unmatched (string).
+- **Reason** - filtered transaction reason i.e. unmatched (string).
 
-- Keyword - filtered transaction blacklist keyword i.e. Estate Service Station (string). If there is no specific keyword then field will contain N/A.
+- **Keyword** - filtered transaction blacklist keyword i.e. Estate Service Station (string). If there is no specific keyword then field will contain N/A.
 
-- Type - filtered transaction type, such as (string): POS
+- **Type** - filtered transaction type, such as (string): POS
 
 - ATM
 
-- Date Blocked - date the the transaction was blocked (YYYY/MM/DD HH:MM:SS).
+- **Date Blocked** - date the the transaction was blocked (YYYY/MM/DD HH:MM:SS).
 
-- Identifier - the voucher number (numeric string).
+- **Identifier** - the voucher number (numeric string).
 
 ## Report format
 

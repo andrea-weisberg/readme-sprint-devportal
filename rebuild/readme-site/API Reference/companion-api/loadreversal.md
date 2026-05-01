@@ -1,6 +1,6 @@
 # LoadReversal
 
-Reverse a load that was previously requested on a wallet. KLV will not be sent for reversals. Only reference data will be included if there is any. If KLV data is needed please lookup [KLV](/guides/klv-lookup) from the reference data included.
+Reverse a load that was previously requested on a wallet.**KLV will not be sent for reversals. Only reference data will be included if there is any. If KLV data is needed please lookup [KLV](/guides/klv-lookup) from the reference data included.**
 
 The Paymentology issued terminal ID of the terminal requesting the transaction
 

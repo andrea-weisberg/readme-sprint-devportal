@@ -2,10 +2,6 @@
 
 This API method is used to upload a supporting document after a chargeback is successfully created.
 
-{
-"chargebackId": "chargebackId"
-}
-
 ## Request/response fields and samples
 
 Chargeback ID
@@ -24,6 +20,10 @@ File content
 "memo": "MEMO",
 "filename": "FILENAME",
 "file": "File content stored in a base64 encoded string"
+}
+
+{
+"chargebackId": "chargebackId"
 }
 
 #### Other response codes

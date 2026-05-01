@@ -4,25 +4,25 @@ A report which provides detailed information about cards that were tokenised to 
 
 The report includes the following details:
 
-- FirstLastName - Customer's first and last name
+- **FirstLastName**- Customer's first and last name
 
-- BillingPostalCode - Customer's postal code
+- **BillingPostalCode**- Customer's postal code
 
-- BillingStreetAddress - Customer's postal street address
+- **BillingStreetAddress**- Customer's postal street address
 
-- BillingCountryCode - Customer's postal country
+- **BillingCountryCode** - Customer's postal country
 
-- BillingCity - Customer's postal city
+- **BillingCity** - Customer's postal city
 
-- BillingAdministrativeArea - Customer's postal region or state
+- **BillingAdministrativeArea** - Customer's postal region or state
 
-- FullPhoneNumber - Customer's contact number
+- **FullPhoneNumber**- Customer's contact number
 
-- OpaquePaymentCard - Google Pay tokenised card number
+- **OpaquePaymentCard** - Google Pay tokenised card number
 
-- FundingPrimaryAccountNumber - Voucher number/Customer's card number
+- **FundingPrimaryAccountNumber**- Voucher number/Customer's card number
 
-- ExpirationDate - Expiry date of OpaquePaymentCard
+- **ExpirationDate**- Expiry date of **OpaquePaymentCard**
 
 ## Report format
 

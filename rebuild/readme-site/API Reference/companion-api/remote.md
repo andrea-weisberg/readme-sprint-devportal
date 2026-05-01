@@ -2,7 +2,7 @@
 
 The Remote API is hosted on your platform and allows us to call you to perform actions on your store of value/wallet e.g. Deducting/loading funds, balance inquiries, etc.
 
-Note: you will need to implement the relevant method names corresponding to the different calls in order to perform the necessary actions on your system.
+**Note:** you will need to implement the relevant method names corresponding to the different calls in order to perform the necessary actions on your system.
 
 ## Available Methods
 

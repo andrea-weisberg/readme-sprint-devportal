@@ -1,6 +1,8 @@
 # Reports
 
-Paymentology provides end-to-end reporting and reconciliation capabilities to allow you to track all your cards’ financial movements, revenues collected, failed transactions and more.
+**Paymentology provides end-to-end reporting and reconciliation capabilities to allow you to track all your cards’ financial movements, revenues collected, failed transactions and more**.
+
+You can generate all reports below by sending a HTTP GET Request and downloading the report as a CSV file. These downloadable reports are**only available for 60 days.**
 
 You can generate the following reports:
 
@@ -43,8 +45,6 @@ For clients using Paymentology’s tokenization services, Paymentology can issue
 - [Apple Pay monthly fee billing report](/reports/card-api/apple-pay-monthly-fee-billing-report)
 
 - [Apple Pay monthly declines report](/reports/card-api/apple-pay-monthly-declines-report)
-
-You can generate all reports below by sending a HTTP GET Request and downloading the report as a CSV file. These downloadable reports are only available for 60 days.
 
 ### Google Pay
 

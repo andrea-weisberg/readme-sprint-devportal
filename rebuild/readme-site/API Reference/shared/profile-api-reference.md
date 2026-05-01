@@ -78,7 +78,7 @@
 
 ## Additional Card Management API's
 
-NOTE: The Additional Card Management API's listed below are available to specific clients. Please confirm with your Account Manager.
+**NOTE:** The Additional Card Management API's listed below are available to specific clients. Please confirm with your Account Manager.
 
 - [TransferLink](/api-reference/shared/transferlink) - Transfer a reference to a new card (Visa).
 
@@ -94,7 +94,7 @@ NOTE: The Additional Card Management API's listed below are available to specifi
 
 ## Tokenisation Life Cycle Management API's
 
-NOTE: The Tokenisation Life Cycle Management API's listed below are available to Tokenisation enabled clients. Please contact your Account Manager if you require further information.
+**NOTE:** The Tokenisation Life Cycle Management API's listed below are available to Tokenisation enabled clients. Please contact your Account Manager if you require further information.
 
 - [ActivateToken](/api-reference/shared/activatetoken) - Used to activate a token for a digitization that has been approved and provisioned, but requires additional cardholder authentication prior to activation.
 

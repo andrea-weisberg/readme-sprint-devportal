@@ -6,17 +6,17 @@ Welcome to Paymentology’s Sprint Developer Portal, where you will find everyth
 
 ## Our API's
 
-We offer three simple and distinct APIs:
+**We offer three simple and distinct APIs:**
 
-Companion API
+**Companion API**
 
 Use this API if you would like to store your customers' card balances on your platform
 
-Card API
+**Card API**
 
 Use this API if you want us to store your customers' card balances for you
 
-QR Payments API
+**QR Payments API**
 
 Use this API to enable contactless QR Payments
 
@@ -26,19 +26,7 @@ The Card and Companion API each offer a unique customer journey, so you will nee
 
 ## Testing environments
 
-You’ll get access to our two testing environments:
-
-## Helpful tools
-
-We have a helpful set of tools to support your integration process:
-
-- XML Generator: allows you to generate a valid XML request (including a checksum string) from your request parameters
-
-- XML Poster: allows you to post XML requests directly to the Paymentology system
-
-- Checksum Generator: allows you to calculate the checksum for a transaction based on a terminal password value and the request data
-
-- API references: we have included API references under each of our three API sections
+**You’ll get access to our two testing environments:**
 
 ### Test environment
 
@@ -49,6 +37,18 @@ Simulate transactions in a test environment
 Simulate transactions in a live environment
 
 [EXPLORE OUR TESTING ENVIROMENTS](/guides/testing)
+
+## Helpful tools
+
+**We have a helpful set of tools to support your integration process:**
+
+- **XML Generator**: allows you to generate a valid XML request (including a checksum string) from your request parameters
+
+- **XML Poster**: allows you to post XML requests directly to the Paymentology system
+
+- **Checksum Generator**: allows you to calculate the checksum for a transaction based on a terminal password value and the request data
+
+- **API references**: we have included API references under each of our three API sections
 
 You will need to be registered to use our tools. [Sign up](https://developer.sprint.paymentology.com/register/) to get started.
 

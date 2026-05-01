@@ -14,4 +14,4 @@ Reports are generated on demand, which can take a few seconds, please be patient
 
 - Choose the report that you want to run
 
-- Click on "Generate Report" once and wait for the "Download File" popup to appear
+- Click on "Generate Report" **once** and wait for the "Download File" popup to appear

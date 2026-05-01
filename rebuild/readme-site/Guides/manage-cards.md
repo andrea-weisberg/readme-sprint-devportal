@@ -1,6 +1,6 @@
 # Manage cards
 
-You can manage the issued Paymentology cards and make updates to them whenever necessary. You can also use the API methods below to develop a UI that comes with self-help options that allow the cardholders to manage their cards by themselves.
+**You can manage the issued Paymentology cards and make updates to them whenever necessary. You can also use the API methods below to develop a UI that comes with self-help options that allow the cardholders to manage their cards by themselves.**
 
 These are the supported card management options:
 

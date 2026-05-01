@@ -2,9 +2,9 @@
 
 Get an array of card details of activated cards linked to the reference.
 
-IMPORTANT:
+**IMPORTANT:**
 
-This API method contains PCI sensitive information.
+**This API method contains PCI sensitive information.**
 
 - Session-Id=Encrypted AES Key e-g (AB521456236KHU52) is required if encryption is needed and the campaign is configured for encryption of sensitive data.
 
@@ -58,6 +58,8 @@ Array of structs containing card data.
 Will contain encrypted fields (CVV2, card number and expiry date) and an IV key (using which fields are encrypted) for each entry of card in the array.
 
 Status code indicating transaction result
+
+Text indicating transaction result.
 
 <methodresponse>
 <params>
@@ -133,5 +135,3 @@ Status code indicating transaction result
 </methodresponse>
 
 [Back to Local API menu](/api-reference/companion-api/local-api)
-
-Text indicating transaction result.

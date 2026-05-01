@@ -87,6 +87,16 @@ Echo of incoming value.
 
 Status code indicating transaction result.
 
+Echo of incoming value.
+
+Echo of incoming value.
+
+Status text indicating transaction result.
+
+Echo of incoming value.
+
+Echo of incoming value.
+
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
 <params>
@@ -154,13 +164,3 @@ Status code indicating transaction result.
 </methodResponse>
 
 [Back to Profile API Reference](/api-reference/shared/profile-api-reference)
-
-Echo of incoming value.
-
-Echo of incoming value.
-
-Status text indicating transaction result.
-
-Echo of incoming value.
-
-Echo of incoming value.

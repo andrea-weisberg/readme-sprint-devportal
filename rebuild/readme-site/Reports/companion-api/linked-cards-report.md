@@ -4,13 +4,13 @@ This report lists the cards that have been linked to a customer and when this oc
 
 The report includes the following details:
 
-- Campaign – name of client's card program.
+- **Campaign**– name of client's card program.
 
-- Voucher number – the customer’s card number.
+- **Voucher** **number**– the customer’s card number.
 
-- Reference - this is a unique customer reference for the card.
+- **Reference** - this is a unique customer reference for the card.
 
-- Date linked - specifies the date and time in which the card was linked to the Reference.
+- **Date linked** - specifies the date and time in which the card was linked to the **Reference**.
 
 ## Report format
 

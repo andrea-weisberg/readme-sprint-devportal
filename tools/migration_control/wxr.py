@@ -21,9 +21,15 @@ LINK_RE = re.compile(r"""(?:href|src)\s*=\s*["']([^"']+)["']""", re.IGNORECASE)
 BUILDER_CONTENT_KEY_RE = re.compile(
     r"^(?:page|api)_content_builder_.*(?:content|text|description|title)$"
 )
+BUILDER_INDEX_RE = re.compile(r"\d+")
+PAIRABLE_TITLE_RE = re.compile(r".*_columns_\d+_title$")
 SERIALIZED_VALUE_RE = re.compile(r"^[abisOdN]:\d*(?:[:;{])")
 ANCHOR_RE = re.compile(
     r"""<a\b[^>]*href\s*=\s*["']([^"']+)["'][^>]*>(.*?)</a>""",
+    re.IGNORECASE | re.DOTALL,
+)
+STRONG_RE = re.compile(
+    r"<(?:strong|b)\b[^>]*>(.*?)</(?:strong|b)>",
     re.IGNORECASE | re.DOTALL,
 )
 HEADING_RE = re.compile(r"<h([1-6])\b[^>]*>(.*?)</h\1>", re.IGNORECASE | re.DOTALL)
@@ -115,19 +121,22 @@ def _acf_keys(item: ElementTree.Element) -> Iterable[str]:
 
 def _page_content(item: ElementTree.Element) -> str:
     fragments: List[str] = []
+    builder_entries: List[tuple[str, str, int]] = []
 
     content = _text(item, "content:encoded")
     if _keep_content_fragment(content):
         fragments.append(content)
 
-    for meta in item.findall("wp:postmeta", NS):
+    for position, meta in enumerate(item.findall("wp:postmeta", NS)):
         key = clean_text(_text(meta, "wp:meta_key"))
         if not BUILDER_CONTENT_KEY_RE.match(key):
             continue
 
         value = _text(meta, "wp:meta_value")
         if _keep_content_fragment(value):
-            fragments.append(value)
+            builder_entries.append((key, value, position))
+
+    fragments.extend(_ordered_builder_fragments(builder_entries))
 
     return "\n\n".join(fragment for fragment in fragments if clean_text(fragment))
 
@@ -139,6 +148,56 @@ def _keep_content_fragment(value: str) -> bool:
     if SERIALIZED_VALUE_RE.match(cleaned):
         return False
     return True
+
+
+def _ordered_builder_fragments(
+    entries: List[tuple[str, str, int]]
+) -> List[str]:
+    ordered = sorted(entries, key=_builder_sort_key)
+    fragments: List[str] = []
+    index = 0
+
+    while index < len(ordered):
+        key, value, _ = ordered[index]
+        if index + 1 < len(ordered):
+            next_key, next_value, _ = ordered[index + 1]
+            if _can_pair_title_fragment(key, next_key):
+                fragments.append(_pair_title_fragment(value, next_value))
+                index += 2
+                continue
+        fragments.append(value)
+        index += 1
+
+    return fragments
+
+
+def _builder_sort_key(entry: tuple[str, str, int]) -> tuple[tuple[int, ...], int, int]:
+    key, _, position = entry
+    numeric_key = tuple(int(token) for token in BUILDER_INDEX_RE.findall(key))
+    return (numeric_key, _builder_suffix_priority(key), position)
+
+
+def _builder_suffix_priority(key: str) -> int:
+    if key.endswith("_title"):
+        return 0
+    if key.endswith("_content"):
+        return 1
+    if key.endswith("_text"):
+        return 2
+    if key.endswith("_description"):
+        return 3
+    return 4
+
+
+def _can_pair_title_fragment(current_key: str, next_key: str) -> bool:
+    if not PAIRABLE_TITLE_RE.match(current_key):
+        return False
+    prefix = current_key[: -len("_title")]
+    return next_key in {f"{prefix}_text", f"{prefix}_content", f"{prefix}_description"}
+
+
+def _pair_title_fragment(title: str, body: str) -> str:
+    return f"<p><strong>{html.escape(clean_text(title))}</strong></p>\n{body}"
 
 
 def _extract_links(content: str) -> Tuple[str, ...]:
@@ -154,6 +213,7 @@ def _html_to_text(content: str) -> str:
 
 def _html_to_markdown(content: str) -> str:
     markdown = ANCHOR_RE.sub(_anchor_to_markdown, content)
+    markdown = STRONG_RE.sub(_strong_to_markdown, markdown)
     markdown = HEADING_RE.sub(_heading_to_markdown, markdown)
     markdown = IMAGE_RE.sub(_image_to_markdown, markdown)
     markdown = LIST_ITEM_RE.sub(_list_item_to_markdown, markdown)
@@ -181,6 +241,13 @@ def _image_to_markdown(match: re.Match[str]) -> str:
     if not src:
         return ""
     return f"![{alt}]({src})"
+
+
+def _strong_to_markdown(match: re.Match[str]) -> str:
+    text = _html_to_text(match.group(1))
+    if not text:
+        return ""
+    return f"**{text}**"
 
 
 def _heading_to_markdown(match: re.Match[str]) -> str:

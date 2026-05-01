@@ -14,7 +14,7 @@ The above would have a request data string (minus the checksum itself which of c
 
 Status100123ref4555612320170223T12:00:00
 
-NB. During testing, avoid entering any personally identifiable information (PII), such as, user IDs, card numbers or email addresses.
+**NB.** **During testing, avoid entering any personally identifiable information (PII), such as, user IDs, card numbers or email addresses.**
 
 ## How to use Checksum Generator
 

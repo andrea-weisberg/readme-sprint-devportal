@@ -1,6 +1,6 @@
 # Notifications
 
-Paymentology's Sprint Transaction Stream service allows API consumers to receive real-time notifications of the undertaken transactions. By subscribing to the notification service, consumers can know the status of transactions in real-time.
+**Paymentology's Sprint Transaction Stream service allows API consumers to receive real-time notifications of the undertaken transactions. By subscribing to the notification service, consumers can know the status of transactions in real-time.**
 
 You can use the service for various purposes, including:
 
@@ -60,7 +60,13 @@ Because of the transient nature of the transaction stream, and the fact that del
 
 - Any kind of data reporting/ financial reporting
 
-Here is a description of the HTTP response status codes:
+## What happens if some transactions from the Transaction Stream are lost/not received?
+
+This can happen due to the nature of a streaming service. Every effort is made to ensure that all data is streamed timeously, but if records are not sent by us, or not received by you, those records are lost from the stream. Although not ideal:
+
+- The stream cannot be resent later because the transactions are now stale, and there is no benefit to real-time notifications
+
+- No financial activity will be impacted though, and all transactions will still be reflected in your daily files
 
 ## PubNub and the Transaction Stream Flow
 
@@ -69,28 +75,6 @@ Paymentology utilises PubNub (https://www.pubnub.com) for it’s real-time trans
 Paymentology has used this service so that a client can simply subscribe to this service to receive information when a transaction is processed. This is a real-time service so clients will see transaction information as a transaction is completed. A client can then decide how to capture, store and use this information.
 
 ### How does it work![Pubnub transaction stream flow](https://developer.sprint.paymentology.com/wp-content/uploads/2024/02/Diagram-for-Sprint-Developer-Porta_Lightmode-3.png)
-
-### Step 1: Get authentication data
-
-First, you need to authenticate against the events system and get session and listening endpoint information before consuming the PubNub API.
-
-So, you need to make a GET request to Paymentology's PubNub Authenticate REST API.
-
-To consume the API, you need to call the following endpoint:
-
-https://api.voucherengine.com/pubnub/json.cfm
-
-Furthermore, the API requires the following query string parameters:
-
-Here is a description of the above result:
-
-## What happens if some transactions from the Transaction Stream are lost/not received?
-
-This can happen due to the nature of a streaming service. Every effort is made to ensure that all data is streamed timeously, but if records are not sent by us, or not received by you, those records are lost from the stream. Although not ideal:
-
-- The stream cannot be resent later because the transactions are now stale, and there is no benefit to real-time notifications
-
-- No financial activity will be impacted though, and all transactions will still be reflected in your daily files
 
 - Transaction gets received from the VoucherEngine platform. As we receive it from the financial network and its being categorized according to the [Transaction types](#transaction) below
 
@@ -104,33 +88,7 @@ This can happen due to the nature of a streaming service. Every effort is made t
 
 - The Client Implementation starts receiving transactions while that connection remains open from the Clients Implementations end. The Client Implementation is responsible for refreshing the call explained at Step 3 within the TTL timespan which is also refreshing their AUTH tokenSteps 5 and 6 are strongly advised to be implemented by using the respective PubNub SDK based on the Client's preferable implementation language/ framework. Even though the PubNub system offers a RESTful API section that uses the HTTP protocol, it completely changes the way the system should work. For example: if the client choose that, they would have to make regular calls to PubNub so as to receive the transactions as they are done at that exact time
 
-### Step 2: Subscribe users to channel
-
-Next, you need to use the above response data to subscribe users to your channel so that they can receive notifications sent to that channel.
-
-This will involve making a GET request to the [PubNub REST API](https://www.pubnub.com/docs/pubnub-rest-api-documentation#publish-subscribe-subscribe-get), via the subscribe endpoint:
-
-https://pubsub.pubnub.com/v2/subscribe/
-
-Note that the endpoint corresponds to the SUBSCRIBEURI value from the previous response data.
-
-You need to specify the following path parameters:
-
-- SUBKEY —this is your PubNub subscribe API key.
-
-- CHANNEL —this is the channel name you are subscribing users to.
-
-- Callback —this is a JSONP callback name. If there is none, just specify it as 0 (zero).
-
-- Timetoken —for the initial subscribe, just specify it as 0 (zero).
-
-Furthermore, you need to specify the following query string parameters:
-
-Here is the Message (transaction) data structure that is accessible via “ d ” key above. Note that the structure is extensible and new fields may be added to all versions, as it’s meant to be a backwards compatible change. Remember to always refer to the most up-to-date version of this document for a complete listing of the fields.
-
-Here are the response code listings:
-
-## How to Integrate Transaction Stream
+## **How to Integrate Transaction Stream**
 
 Paymentology provides the Paymentology Events Authority API to allow you to integrate the Transaction Stream service into your use case.
 
@@ -140,9 +98,9 @@ Paymentology also leverages the [PubNub](https://www.pubnub.com/) platform for p
 
 This model consists of two important components:
 
-- Channels —these are the transient paths over which your data is transmitted.
+- **Channels** —these are the transient paths over which your data is transmitted.
 
-- Messages —these are the data you want to send to recipients.
+- **Messages** —these are the data you want to send to recipients.
 
 Essentially, to enable users to receive the notifications sent to a particular channel, they need to subscribe to it. If you publish a message to a channel, the notification will be delivered to every user subscribed to that channel.
 
@@ -155,6 +113,18 @@ These are the steps to follow to implement the Transaction Stream feature into y
 - Get the notification feed
 
 Let’s talk about the steps in more detail.
+
+### **Step 1: Get authentication data**
+
+First, you need to authenticate against the events system and get session and listening endpoint information before consuming the PubNub API.
+
+So, you need to make a GET request to Paymentology's PubNub Authenticate REST API.
+
+To consume the API, you need to call the following endpoint:
+
+**https://api.voucherengine.com/pubnub/json.cfm**
+
+Furthermore, the API requires the following query string parameters:
 
 GET request parameters need to be URL encoded otherwise the checksum is not calculated correctly
 
@@ -176,6 +146,32 @@ The above request will give the following response:
 "TTL":"86400"
 }
 
+Here is a description of the above result:
+
+Here is a description of the HTTP response status codes:
+
+### **Step 2: Subscribe users to channel**
+
+Next, you need to use the above response data to subscribe users to your channel so that they can receive notifications sent to that channel.
+
+This will involve making a GET request to the [PubNub REST API](https://www.pubnub.com/docs/pubnub-rest-api-documentation#publish-subscribe-subscribe-get), via the **subscribe** endpoint:
+
+**https://pubsub.pubnub.com/v2/subscribe/**
+
+Note that the endpoint corresponds to the **SUBSCRIBEURI** value from the previous response data.
+
+You need to specify the following path parameters:
+
+- **SUBKEY** —this is your PubNub subscribe API key.
+
+- **CHANNEL** —this is the channel name you are subscribing users to.
+
+- **Callback** —this is a JSONP callback name. If there is none, just specify it as 0 (zero).
+
+- **Timetoken** —for the initial subscribe, just specify it as 0 (zero).
+
+Furthermore, you need to specify the following query string parameters:
+
 GET{SUBSCRIBEURI}/{SUBKEY}/{CHANNEL}/{CALLBACK}/{TIMETOKEN}?auth={AUTH}&uuid={SERVERTRANSACTIONID}
 
 GET https://ps.pndsn.com/subscribe/mySubKey/ch1/myFunction/0?auth=authValue&uuid=db9c5e39-7c95-40f5-8d71-125765b6f561
@@ -186,34 +182,21 @@ The above request will give the following response:
 
 As you can see above, the response is an object that contains two elements:
 
-- The first element is an object consisting of two values: t —timetoken and r —region.
+- The first element is an object consisting of two values: **t** —timetoken and **r** —region.
 
 - The second element is an array of messages delivered from the subscribed channel.
 
 Generally, let’s look at all the possible data that could be returned from such a request:
 
+Here is the Message (transaction) data structure that is accessible via “ **d** ” key above. Note that the structure is extensible and new fields may be added to all versions, as it’s meant to be a backwards compatible change. Remember to always refer to the most up-to-date version of this document for a complete listing of the fields.
+
+Here are the response code listings:
+
 For more information on Transaction Stream/PubNub Response Codes and how they relate to Network and Card Scheme Response Codes, you can refer to the [Response and action code mapping table](/guides/response-and-action-code-mapping).
-
-## Subscribing and Retrieval via PubNub SDK
-
-A client will implement the service using one of the [available SDKs](https://www.pubnub.com/docs/platform/sdks#client-sdks) combining it with our custom authentication mechanism described in Step 1
-
-However we are able to provide a sample Java application which the client can download, run and then expand upon to build their own integration:
-
-- Example application source code: We provide source code of a very simple JAVA application which will connect to Paymentology's transaction publishing service, subscribe to a campaign, and then open a window on the screen which will flash up the merchant name whenever a transaction is made. This is not an actual running application that one can run on a PC but source code that can be used by the clients developers in their development software and make further use of it. To start working with this sample application, following steps need to be taken: 1. Ask your CE to enable PubNub feeds via your campaign settings..
-
-- 2. Then in src/main/java/com/tutuka/transactionscroller the following data need to be updated:
-
-//unique identifier for the device
-private static final String DEVICE_NAME = "";
-//your terminal ID that is attached to your campaign
-private static final String TERMINAL_ID = "";
-//your terminal password, associated with your terminal ID
-private static final String TERMINAL_PASSWORD = "";
 
 Here are the possible capture modes:
 
-### Step 3: Get the notification feed
+### **Step 3: Get the notification feed**
 
 {
 "response_code": "1016",
@@ -232,6 +215,23 @@ Here are the possible capture modes:
 "type": "deduct authorisation"
 }
 
+## Subscribing and Retrieval via PubNub SDK
+
+A client will implement the service using one of the [available SDKs](https://www.pubnub.com/docs/platform/sdks#client-sdks) combining it with our custom authentication mechanism described in Step 1
+
+However we are able to provide a sample Java application which the client can download, run and then expand upon to build their own integration:
+
+- Example application source code: We provide source code of a very simple JAVA application which will connect to Paymentology's transaction publishing service, subscribe to a campaign, and then open a window on the screen which will flash up the merchant name whenever a transaction is made. This is not an actual running application that one can run on a PC but source code that can be used by the clients developers in their development software and make further use of it. To start working with this sample application, following steps need to be taken: 1. Ask your CE to enable PubNub feeds via your campaign settings..
+
+- 2. Then in src/main/java/com/tutuka/transactionscroller the following data need to be updated:
+
+//unique identifier for the device
+private static final String DEVICE_NAME = "";
+//your terminal ID that is attached to your campaign
+private static final String TERMINAL_ID = "";
+//your terminal password, associated with your terminal ID
+private static final String TERMINAL_PASSWORD = "";
+
 - DEVICE_NAME is any string that can identify you as the client., It is just something we log on our side. It could be f.e. CLIENT_NAME_APP
 
 - TERMINAL_ID is the Terminal ID of your Default Issuing Merchant
@@ -244,7 +244,7 @@ Example for UAT:![](https://developer.sprint.paymentology.com/wp-content/uploads
 
 After following the above steps, you can start testing and working with the code.
 
-## Troubleshooting the Transaction Stream
+## **Troubleshooting the Transaction Stream**
 
 Importantly, you should use the Transaction Stream service for informational purposes only. The messages are not preserved anywhere, and in case of connectivity issues or other technical hiccups, they may be lost permanently.
 
@@ -294,7 +294,7 @@ Transaction types published are the following:
 
 - balance When the client request for balance
 
-## Environments
+## **Environments**
 
 The Transaction Streaming system is available in all the environments Paymentology uses. The underlying Pubnub infrastructure is the same in all the environments, the only differentiation that happens only from Pubnub is the CHANNEL.
 

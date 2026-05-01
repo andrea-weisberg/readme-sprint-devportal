@@ -46,6 +46,8 @@ HMAC-SHA256 hashed signature of the concatenated method name with all argument v
 
 Status code indicating transaction result
 
+Status text indicating result
+
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
 <params>
@@ -71,5 +73,3 @@ Status code indicating transaction result
 </methodResponse>
 
 [Back to Local API Menu](/api-reference/companion-api/local-api)
-
-Status text indicating result

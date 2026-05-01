@@ -6,30 +6,6 @@ Update the specified card’s bearer details.
 
 [Version 2.0](#version2.0)
 
-<?xml version="1.0" encoding="UTF-8"?>
-<methodResponse>
-<params>
-<param>
-<value>
-<struct>
-<member>
-<name>resultCode</name>
-<value>
-<int>1</int>
-</value>
-</member>
-<member>
-<name>resultText</name>
-<value>
-<string>Approved</string>
-</value>
-</member>
-</struct>
-</value>
-</param>
-</params>
-</methodResponse>
-
 ### Version 2.4
 
 The Paymentology issued terminal ID of the terminal requesting the transaction
@@ -254,5 +230,29 @@ HMAC-SHA256 hashed signature of the concatenated method name with all argument v
 Status code indicating transaction result
 
 Text indicating the transaction result
+
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+<params>
+<param>
+<value>
+<struct>
+<member>
+<name>resultCode</name>
+<value>
+<int>1</int>
+</value>
+</member>
+<member>
+<name>resultText</name>
+<value>
+<string>Approved</string>
+</value>
+</member>
+</struct>
+</value>
+</param>
+</params>
+</methodResponse>
 
 [Back to Local API menu](/api-reference/companion-api/local-api)

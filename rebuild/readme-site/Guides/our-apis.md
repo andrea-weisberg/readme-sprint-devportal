@@ -1,6 +1,6 @@
 # Our APIs
 
-Paymentology's Sprint product provides simple, seamless, and scalable API integration solutions that enable quick and easy implementation and management of your card programs. We act as a payment enabler between card schemes like Mastercard, Visa, and Union Pay and your closed-loop wallet platform. Through our APIs, we are able to connect you with the card scheme of your choice, shielding you from all the complexities necessary for direct integration, so that you can focus on your business.
+**Paymentology's Sprint product provides simple, seamless, and scalable API integration solutions that enable quick and easy implementation and management of your card programs. We act as a payment enabler between card schemes like Mastercard, Visa, and Union Pay and your closed-loop wallet platform. Through our APIs, we are able to connect you with the card scheme of your choice, shielding you from all the complexities necessary for direct integration, so that you can focus on your business.**
 
 We offer four main APIs:
 
@@ -13,6 +13,9 @@ API
 QR Payments
 API
 
+Transaction
+Stream
+
 Discover which one is right for you.
 
 ## 1. [Companion API](/guides/companion-api)
@@ -21,7 +24,7 @@ A Companion card is a card that is linked to a store of value (SVA) like a walle
 
 What makes this API different from the other APIs we offer is that the customer’s card balance sits within the SVA and not on the card. This means that you hold the customer's balance on your own platform.
 
-With this API, you can issue physical and virtual prepaid cards linked to a separate SVA. Cards are linked to the SVA, so whenever transactions are made, the store of value is debited. Paymentology is the payment processor that manages all transactions against a centralized store of value (SVA). You’ll be responsible for authorizing transactions with this API.
+With this API, you can issue physical and virtual prepaid cards linked to a separate SVA. Cards are linked to the SVA, so whenever transactions are made, the store of value is debited. Paymentology is the payment processor that manages all transactions against a centralized store of value (SVA). **You’ll be responsible for authorizing transactions with this API.**
 
 Transactions may use open-loop accounts like debit and credit cards, and closed-loop cards, like gift tokens or airtime vouchers. Companion cards allow individuals the flexibility to perform a wide range of transactions – from merchant payments to cash withdrawals to eCommerce to P2P transfers – all using their mobile wallet. You can generate pre-loaded Companion cards based on a customer’s SVA balance.
 
@@ -73,13 +76,13 @@ Learn more about [Card API!](/guides/card-api)
 
 ## 3. [QR Payments API](/guides/qr-payments-api)
 
-The QR Payments API allows you to create a contactless merchant payment system where customers can make electronic payments by scanning a QR code from a smartphone application. It’s a simple and secure way for consumers to push payments to merchants using their mobile money wallets or bank account balances.
+The QR Payments API allows you to create a **contactless merchant payment system** where customers can make electronic payments by scanning a QR code from a smartphone application. It’s a simple and secure way for consumers to push payments to merchants using their mobile money wallets or bank account balances.
 
-Paymentology's Sprint product allows integration into Mastercard QR and Visa QR for the issuing and acceptance of QR payments, offering a safe, innovative way for consumers to scan and pay. Where businesses don’t have the infrastructure or finances to purchase expensive in-a-box software, the QR Payments API provides a customizable solution, which mitigates the steep cost of specialized PoS hardware and alleviates the time delay between purchase and payment often associated with using bank cards. Money is transferred directly from their mobile account to merchant, no POS terminal needed, in a single transaction.
+**Paymentology's Sprint product allows integration into Mastercard QR** and **Visa QR** for the issuing and acceptance of QR payments, offering a safe, innovative way for consumers to scan and pay. Where businesses don’t have the infrastructure or finances to purchase expensive in-a-box software, the QR Payments API provides a customizable solution, which mitigates the steep cost of specialized PoS hardware and alleviates the time delay between purchase and payment often associated with using bank cards. Money is transferred directly from their mobile account to merchant, no POS terminal needed, in a single transaction.
 
 Unlike barcodes, which they loosely resemble, QR codes can store URLs, geographic coordinates, and text.
 
-The benefits of QR payments
+**The benefits of QR payments**
 
 - Customers can make cashless payments using their smartphones without needing bank accounts or physical plastic cards.
 
@@ -102,9 +105,6 @@ Customers without traditional bank accounts wanting to purchase goods and servic
 Ecommerce and other online transactions
 
 Learn more about [QR Payments API!](https://developer.sprint.paymentology.com/digital-api/)
-
-Transaction
-Stream
 
 ## 4. [Transaction Stream](/guides/notifications)
 

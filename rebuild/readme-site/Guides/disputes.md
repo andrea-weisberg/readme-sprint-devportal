@@ -6,11 +6,11 @@ A dispute is a transaction that a cardholder/customer does not agree with and th
 
 ## Types of Disputes:
 
-- Reversal - A reversal is essentially a request for a transaction that was not completed and could have failed at a particular step of the transaction process. It is an advisement message to all parties of the transaction and ensures that the card and store of value are put back into their original state if a failed to deduct transaction had been initiated. If you sent a transaction and did not receive a confirmation that the transaction was successful, it could imply that the transaction did not reach the intended destination.
+- **Reversal -**A reversal is essentially a request for a transaction that was not completed and could have failed at a particular step of the transaction process. It is an advisement message to all parties of the transaction and ensures that the card and store of value are put back into their original state if a failed to deduct transaction had been initiated. If you sent a transaction and did not receive a confirmation that the transaction was successful, it could imply that the transaction did not reach the intended destination.
 
-- Refund - A refund is when funds are credited back to the customer’s card from a previously debited transaction. A refund is processed when the merchant refunds the customer for returned goods and the funds which were settled to the merchant’s account need to move back to the cardholder’s account.
+- **Refund** - A refund is when funds are credited back to the customer’s card from a previously debited transaction. A refund is processed when the merchant refunds the customer for returned goods and the funds which were settled to the merchant’s account need to move back to the cardholder’s account.
 
-- Chargeback - A chargeback is the return of funds for a deduct transaction that was previously processed from a cardholder’s card balance, due to a successful dispute by the consumer regarding the transaction
+- **Chargeback -**A chargeback is the return of funds for a deduct transaction that was previously processed from a cardholder’s card balance, due to a successful dispute by the consumer regarding the transaction
 
 # How Disputes Work
 
@@ -64,8 +64,6 @@ Paymentology manages dispute handling and chargeback processing on behalf of our
 
 # Chargeback Process Flow![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Chargeback-process-flow-v2.png)
 
-[Visa Generic Dispute Form](https://developer.sprint.paymentology.com/wp-content/uploads/2023/06/Visa-Generic-Dispute-Form.docx)
-
 # Mastercard: Dispute/Chargeback categories and timeframes
 
 When the transaction was completed with electronically recorded card information (whether card-read or key-entered), the acquirer has a maximum of seven calendar days after the transaction date to present the transaction to the issuer. A pending authorization should not be reversed before the seven calendar days. However, An issuer must accept a transaction submitted beyond the applicable time frame when the account is in good standing or the transaction can be honored.
@@ -76,15 +74,17 @@ There are four categories for chargeback processing:
 
 [Dispute Resolution Form](https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Dispute-Resolution-Form.docx)
 
-Mastercard chargeback collaboration period is between 24-72 hours. Chargebacks can take up to 72 hours to reflect as processed by Mastercard. This means that the chargeback is actually paused for that period and the 45 days waiting for second presentment only starts from the date the chargeback is actually processed. If no second presentment is received within 45 days, we automatically load the funds thereafter.
+Mastercard chargeback collaboration period is between 24-72 hours. Chargebacks can take up to 72 hours to reflect as processed by Mastercard. This means that the chargeback is actually paused for that period and the **45 days waiting for second presentment** only starts from the date the chargeback is actually processed. If no second presentment is received within 45 days, we automatically load the funds thereafter.
 
-Please be informed that all Mastercard chargebacks will have to wait for 48 days to see if a chargeback is successful (no second presentment) and then the funds will be loaded. Our Dispute Team will notify due date on each chargeback case accordingly.
+**Please be informed that all Mastercard chargebacks will have to wait for 48 days to see if a chargeback is successful (no second presentment) and then the funds will be loaded. Our Dispute Team will notify due date on each chargeback case accordingly.**
 
 # Visa: Dispute/Chargeback categories and timeframes
 
 Most disputes have 120 days time frame but for some such as, Authorization related are only 75 days.
 
 There are four categories for chargeback processing:
+
+[Visa Generic Dispute Form](https://developer.sprint.paymentology.com/wp-content/uploads/2023/06/Visa-Generic-Dispute-Form.docx)
 
 # What is a Fraud Dispute?
 

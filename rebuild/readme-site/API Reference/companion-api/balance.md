@@ -62,6 +62,10 @@ Balance amount in cents
 
 Status code indicating transaction result
 
+(Optional) Actual/settled balance in cents
+
+(Optional) Address Verification Result
+
 <methodResponse>
 <params>
 <param>
@@ -86,7 +90,3 @@ Status code indicating transaction result
 </methodResponse>
 
 [Back to Remote API menu](/api-reference/companion-api/remote)
-
-(Optional) Actual/settled balance in cents
-
-(Optional) Address Verification Result

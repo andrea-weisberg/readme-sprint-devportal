@@ -20,7 +20,7 @@ The gender of the Cardholder
 
 The card number, sequence number or tracking number of the specified card.
 
-Permissible Values:
+**Permissible Values:**
 
 South African ID number - 1
 Foreign ID number - 2
@@ -49,7 +49,7 @@ The country the ID was issued in. The three digit country code as specified [her
 
 Indicator value for resident type of cardholder.
 
-Permissible Values:
+**Permissible Values:**
 
 Resident - 01
 Temporary Resident - 02
@@ -57,7 +57,7 @@ NON Resident - 03
 
 Numeric mapped value to indicate the type of employment of cardholder.
 
-Permissible Values:
+**Permissible Values:**
 
 Not Employed - 01
 Employed - 02
@@ -72,7 +72,7 @@ Freelance - 11
 
 Numeric mapped value to indicate the home language of cardholder.
 
-Permissible Values:
+**Permissible Values:**
 
 Afrikaans - 01
 Ndebele - 02
@@ -90,7 +90,7 @@ Sepedi - 13
 
 The numeric value mapped against Estimated monthly turnover of the cardholder.
 
-Permissible Values:
+**Permissible Values:**
 
 None - 01
 Unknown - 02
@@ -101,7 +101,7 @@ R 50,000 or more - 06
 
 The numeric value mapped against the expected source of funds of the cardholder.
 
-Permissible Values:
+**Permissible Values:**
 
 Alimony - 01
 Bonuses - 02
@@ -120,7 +120,7 @@ Others - 14
 
 The numeric value mapped against the Estimated Cash transaction value of the cardholder.
 
-Permissible Values:
+**Permissible Values:**
 
 None - 01
 Unknown - 02
@@ -131,7 +131,7 @@ R 50,000 or more - 06
 
 The numeric value mapped against the expected use of channel of the cardholder.
 
-Permissible Values:
+**Permissible Values:**
 
 Suite - 01
 ATM - 02
@@ -141,7 +141,7 @@ Combination - 05
 
 The numeric value mapped against the expected foreign transaction value of the cardholder.
 
-Permissible Values:
+**Permissible Values:**
 
 None - 01
 Unknown - 02
@@ -154,13 +154,13 @@ Nationality of the cardholder. The three digit country code as specified [here](
 
 Numeric mapped value for the type of Industry the cardholder is employed in.
 
-Industry IDs are present in the downloadable document below:
+**Industry IDs are present in the downloadable document below:**
 
 [IndustryID_PermissibleValues](https://developer.sprint.paymentology.com/wp-content/uploads/2024/07/IndustryID_PermissibleValues.pdf)
 
 The numeric value mapped against the high-level industry cardholder is involved in.
 
-Permissible Values:
+**Permissible Values:**
 
 Agriculture, Hunting, Forestry and Fishing - 01
 Mining and Quarrying - 02
@@ -189,7 +189,7 @@ Suburb or Distriict name of the cardholder.
 
 The numeric value mpped against residential status of the cardholder.
 
-Permissible Values:
+**Permissible Values:**
 
 Owner - 01
 Tenant - 02

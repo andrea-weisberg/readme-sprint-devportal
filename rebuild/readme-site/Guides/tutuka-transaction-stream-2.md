@@ -1,6 +1,6 @@
 # Transaction Stream
 
-Paymentology’s Transaction Stream service allows API consumers to receive real-time notifications of the undertaken transactions. By subscribing to the notification service, consumers can know the status of transactions in real-time.
+**Paymentology’s Transaction Stream service allows API consumers to receive real-time notifications of the undertaken transactions. By subscribing to the notification service, consumers can know the status of transactions in real-time.**
 
 You can use the service for various purposes, including:
 
@@ -38,7 +38,7 @@ You can get the following information for each undertaken transaction:
 
 - MCC (Merchant Category Code)
 
-## How to Integrate Transaction Stream
+## **How to Integrate Transaction Stream**
 
 Paymentology provides the Events Authority API to allow you to integrate the Transaction Stream service into your use case.
 
@@ -48,9 +48,9 @@ The [PubNub](https://www.pubnub.com/) platform is levergaed for powering the rea
 
 This model consists of two important components:
 
-- Channels —these are the transient paths over which your data is transmitted.
+- **Channels** —these are the transient paths over which your data is transmitted.
 
-- Messages —these are the data you want to send to recipients.
+- **Messages** —these are the data you want to send to recipients.
 
 Essentially, to enable users to receive the notifications sent to a particular channel, they need to subscribe to it. If you publish a message to a channel, the notification will be delivered to every user subscribed to that channel.
 
@@ -64,7 +64,7 @@ These are the steps to follow to implement the Transaction Stream feature into y
 
 Let’s talk about the steps in more detail.
 
-### Step 1: Get authentication data
+### **Step 1: Get authentication data**
 
 First, you need to authenticate against the events system and get session and listening endpoint information before consuming the PubNub API.
 
@@ -72,7 +72,7 @@ So, you need to make a GET request to Paymentology's PubNub Authenticate REST AP
 
 To consume the API, you need to call the following endpoint:
 
-https://api.tutuka.com/pubnub/json.cfm
+**https://api.tutuka.com/pubnub/json.cfm**
 
 Here is an example of a GET request to the REST API:
 
@@ -91,25 +91,25 @@ The above request will give the following response:
 "TTL": "86400"
 }
 
-### Step 2: Subscribe users to channel
+### **Step 2: Subscribe users to channel**
 
 Next, you need to use the above response data to subscribe users to your channel so that they can receive notifications sent to that channel.
 
-This will involve making a GET request to the [PubNub REST API](https://www.pubnub.com/docs/pubnub-rest-api-documentation#publish-subscribe-subscribe-get), via the subscribe endpoint:
+This will involve making a GET request to the [PubNub REST API](https://www.pubnub.com/docs/pubnub-rest-api-documentation#publish-subscribe-subscribe-get), via the **subscribe** endpoint:
 
-https://pubsub.pubnub.com/v2/subscribe/
+**https://pubsub.pubnub.com/v2/subscribe/**
 
-Note that the endpoint corresponds to the SUBSCRIBEURI value from the previous response data.
+Note that the endpoint corresponds to the **SUBSCRIBEURI** value from the previous response data.
 
 You need to specify the following path parameters:
 
-- SUBKEY —this is your PubNub subscribe API key.
+- **SUBKEY** —this is your PubNub subscribe API key.
 
-- CHANNEL —this is the channel name you are subscribing users to.
+- **CHANNEL** —this is the channel name you are subscribing users to.
 
-- Callback —this is a JSONP callback name. If there is none, just specify it as 0 (zero).
+- **Callback** —this is a JSONP callback name. If there is none, just specify it as 0 (zero).
 
-- Timetoken —for the initial subscribe, just specify it as 0 (zero).
+- **Timetoken** —for the initial subscribe, just specify it as 0 (zero).
 
 The above request will give the following response:
 
@@ -117,11 +117,11 @@ The above request will give the following response:
 
 As you can see above, the response is an object that contains two elements:
 
-- The first element is an object consisting of two values: t —timetoken and r —region.
+- The first element is an object consisting of two values: **t** —timetoken and **r** —region.
 
 - The second element is an array of messages delivered from the subscribed channel.
 
-## Troubleshooting Transaction Stream
+## **Troubleshooting Transaction Stream**
 
 Importantly, you should use the Transaction Stream service for informational purposes only. The messages are not preserved anywhere, and in case of connectivity issues or other technical hiccups, they may be lost permanently.
 

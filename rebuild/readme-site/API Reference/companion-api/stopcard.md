@@ -2,7 +2,7 @@
 
 Stop the specified card.
 
-NB. Error message “Operation not allowed” will appear if client tries to stop a card that is already stopped with a different reason code on our system.
+NB. Error message **“Operation not allowed”** will appear if client tries to stop a card that is already stopped with a different reason code on our system.
 
 The Paymentology issued terminal ID of the terminal requesting the transaction
 
@@ -80,6 +80,8 @@ HMAC-SHA256 hashed signature of the concatenated method name with all argument v
 
 Status code indicating transaction result
 
+Text indicating transaction result
+
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
 <params>
@@ -105,5 +107,3 @@ Status code indicating transaction result
 </methodResponse>
 
 [Back to Local API menu](/api-reference/companion-api/local-api)
-
-Text indicating transaction result

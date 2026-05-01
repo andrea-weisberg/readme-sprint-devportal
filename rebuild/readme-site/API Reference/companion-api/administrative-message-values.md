@@ -20,108 +20,12 @@ Values for the messageName field
 
 - [digitization.event.Replacement](#replacement)
 
-## digitization.activationmethods
+## **digitization.activationmethods**
 
 This event occurs at the beginning of the token provisioning process. This message signals that a token provision has been made and requires verification method in order to push the OTP. The type of method will need to be passed as well as the data for the method.
 KLV data - 'digitized device id' = 910, 'digitized token requestor id' = 915', digitization path' = 929, 'wallet recommendation' = 930,'tokenization pan source' = 931.
 
-For more information on KLV data, click [here](/guides/klv-lookup)
-
-## digitization.complete
-
-MDES sends a notification to the Issuer confirming that the token creation is completed.
-
-KLV data - 'digitized pan' = 254, 'digitized wallet id' = 255, 'digitized device id' = 910, 'digitized pan expiry' = 911, 'digitized fpan masked' = 912, 'Token Unique Reference' = 913, 'Digitized Token Requestor ID' = 915, 'Digitization event type' = 923, 'Digitization event reason code' = 924.
-
-For more information on KLV data, click [here](/guides/klv-lookup)
-
-<methodResponse>
-<params>
-<param>
-<value>
-<struct>
-<member>
-<name>resultCode</name>
-<value>
-<int>1</int>
-</value>
-</member>
-</struct>
-</value>
-</param>
-</params>
-</methodResponse>
-
-#### Response
-
-<?xml version="1.0"?>
-<methodCall>
-<methodName>AdministrativeMessage</methodName>
-<params>
-<param>
-<value>
-<string>0054239023</string>
-</value>
-</param>
-<param>
-<value>
-<string>mdestesting</string>
-</value>
-</param>
-<param>
-<value>
-<string>digitization.event.Digitized</string>
-</value>
-</param>
-<param>
-<value>
-<string>2541652650724000966222550332791000911042310912165313XXXXXXXX4948913000</string>
-</value>
-</param>
-<param>
-<value>
-<string>286071</string>
-</value>
-</param>
-<param>
-<value>
-<dateTime.iso8601>20201014T06:29:16</dateTime.iso8601>
-</value>
-</param>
-<param>
-<value>
-<string>78CC973C9D48947793D2AAA667314D7B3E829374</string>
-</value>
-</param>
-</params>
-</methodCall>
-
-#### Request
-
-## digitization.event.Deleted_from_device
-
-The account holder deletes their token from the wallet program on their device.
-
-KLV data - 'digitized pan' = 254, 'digitized wallet id' = 255, 'digitized device id' = 910, 'digitized pan expiry' = 911, 'digitized fpan masked' = 912, 'Token Unique Reference' = 913, 'Digitized Token Requestor ID' = 915, 'Digitization event type' = 923, 'Digitization event reason code' = 924.
-
-For more information on KLV data, click [here](/guides/klv-lookup)
-
-<methodResponse>
-<params>
-<param>
-<value>
-<struct>
-<member>
-<name>resultCode</name>
-<value>
-<int>1</int>
-</value>
-</member>
-</struct>
-</value>
-</param>
-</params>
-</methodResponse>
+**For more information on KLV data, click [here](/guides/klv-lookup)**
 
 #### Request
 
@@ -165,194 +69,6 @@ For more information on KLV data, click [here](/guides/klv-lookup)
 <string>DE6AFB51241B7F9D443BC719299B06432C706DC47D76CE10D6C32401135D2D49</string>
 </value>
 </param>
-</methodCall>
-
-#### Response
-
-<methodResponse>
-<params>
-<param>
-<value>
-<struct>
-<member>
-<name>resultCode</name>
-<value>
-<int>1</int>
-</value>
-</member>
-</struct>
-</value>
-</param>
-</params>
-</methodResponse>
-
-<?xml version="1.0"?>
-<methodCall>
-<methodName>AdministrativeMessage</methodName>
-<params>
-<param>
-<value>
-<string>0054239023</string>
-</value>
-</param>
-<param>
-<value>
-<string>mdestesting</string>
-</value>
-</param>
-<param>
-<value>
-<string>digitization.complete</string>
-</value>
-</param>
-<param>
-<value>
-<string>254165308426600000116255031039100221911042311912165190XXXXXXXX953891348DAPLMC00002584413e8419ef209a4257a24cfc68ce45d378</string>
-</value>
-</param>
-<param>
-<value>
-<string>663851</string>
-</value>
-</param>
-<param>
-<value>
-<dateTime.iso8601>20201008T12:29:55</dateTime.iso8601>
-</value>
-</param>
-<param>
-<value>
-<string>6E4103865CAD4496FCA1EC15181449A64D128AA7BE8E8FF8FF0FBB9E2766341D</string>
-</value>
-</param>
-</params>
-</methodCall>
-
-#### Response
-
-#### Request
-
-<?xml version="1.0"?>
-<methodCall>
-<methodName>AdministrativeMessage</methodName>
-<params>
-<param>
-<value>
-<string>0054239023</string>
-</value>
-</param>
-<param>
-<value>
-<string>mdestesting</string>
-</value>
-</param>
-<param>
-<value>
-<string>digitization.event.Deleted_from_Device</string>
-</value>
-</param>
-<param>
-<value>
-<string>254165308426600000116255031039100221911042311912165190XXXXXXXX953891300</string>
-</value>
-</param>
-<param>
-<value>
-<string>559069</string>
-</value>
-</param>
-<param>
-<value>
-<dateTime.iso8601>20201008T12:32:27</dateTime.iso8601>
-</value>
-</param>
-<param>
-<value>
-<string>BF8A989DB976A4E8A9830C1D32DC0388F94257192FE964B5508D15FCBCBE20CD</string>
-</value>
-</param>
-</params>
-</methodCall>
-
-## digitization.event.Digitized
-
-When a stopped token is reactivated.
-
-KLV data - 'digitized pan' = 254, 'digitized wallet id' = 255, 'digitized device id' = 910, 'digitized pan expiry' = 911, 'digitized fpan masked' = 912, 'Token Unique Reference' = 913, 'Digitized Token Requestor ID' = 915, 'Digitization event type' = 923, 'Digitization event reason code' = 924.
-
-For more information on KLV data, click [here](/guides/klv-lookup)
-
-#### Request
-
-#### Response
-
-<methodResponse>
-<params>
-<param>
-<value>
-<struct>
-<member>
-<name>resultCode</name>
-<value>
-<int>1</int>
-</value>
-</member>
-</struct>
-</value>
-</param>
-</params>
-</methodResponse>
-
-## digitization.event.Replacement
-
-Token is re-digitized or replaced (e.g. token expiry date update) and can only be done via the device.
-
-KLV data - 'digitized pan' = 254, 'digitized wallet id' = 255, 'digitized device id' = 910, 'digitized pan expiry' = 911, 'digitized fpan masked' = 912, 'Token Unique Reference' = 913, 'Digitized Token Requestor ID' = 915, 'Digitization event type' = 923, 'Digitization event reason code' = 924.
-
-For more information on KLV data, click [here](/guides/klv-lookup)
-
-#### Request
-
-<?xml version="1.0"?>
-<methodCall>
-<methodName>AdministrativeMessage</methodName>
-<params>
-<param>
-<value>
-<string>0009555048</string>
-</value>
-</param>
-<param>
-<value>
-<string>65432115</string>
-</value>
-</param>
-<param>
-<value>
-<string>digitization.event.Replacement</string>
-</value>
-</param>
-<param>
-<value>
-<string>042323DF.COMc4a92491c88162e9493933cc7915115011442868492317event.Replacement92400</string>
-</value>
-</param>
-<param>
-<value>
-<string>111111</string>
-</value>
-</param>
-<param>
-<value>
-<dateTime.iso8601>20250506T12:21:45</dateTime.iso8601>
-</value>
-</param>
-<param>
-<value>
-<string>DE6AFB51241B7F9D443BC719299B06432C706DC47D76CE10D6C32401135D2D49</string>
-</value>
-</param>
-</params>
 </methodCall>
 
 #### Response
@@ -406,13 +122,13 @@ For more information on KLV data, click [here](/guides/klv-lookup)
 </params>
 </methodresponse>
 
-## digitization.activation
+## **digitization.activation**
 
 The activation code that Paymentology will receive from MDES. Paymentology will send this code in the AdministrativeMessage to the client so that the client can pass on the activation code to the cardholder to input in app.
 
 KLV data - 'digitization activation' (activation code) = 901, 'digitization activation method type' = 902, 'digitization activation method value' = 903, 'digitization activation expiry' = 904, 'digitized token requestor id' = 915.
 
-For more information on KLV data, click [here](/guides/klv-lookup)
+**For more information on KLV data, click [here](/guides/klv-lookup)**
 
 #### Request
 
@@ -477,13 +193,84 @@ For more information on KLV data, click [here](/guides/klv-lookup)
 </params>
 </methodResponse>
 
-## digitization.event.Deleted
+## **digitization.complete**
+
+MDES sends a notification to the Issuer confirming that the token creation is completed.
+
+KLV data - 'digitized pan' = 254, 'digitized wallet id' = 255, 'digitized device id' = 910, 'digitized pan expiry' = 911, 'digitized fpan masked' = 912, 'Token Unique Reference' = 913, 'Digitized Token Requestor ID' = 915, 'Digitization event type' = 923, 'Digitization event reason code' = 924.
+
+**For more information on KLV data, click [here](/guides/klv-lookup)**
+
+#### Request
+
+<?xml version="1.0"?>
+<methodCall>
+<methodName>AdministrativeMessage</methodName>
+<params>
+<param>
+<value>
+<string>0054239023</string>
+</value>
+</param>
+<param>
+<value>
+<string>mdestesting</string>
+</value>
+</param>
+<param>
+<value>
+<string>digitization.complete</string>
+</value>
+</param>
+<param>
+<value>
+<string>254165308426600000116255031039100221911042311912165190XXXXXXXX953891348DAPLMC00002584413e8419ef209a4257a24cfc68ce45d378</string>
+</value>
+</param>
+<param>
+<value>
+<string>663851</string>
+</value>
+</param>
+<param>
+<value>
+<dateTime.iso8601>20201008T12:29:55</dateTime.iso8601>
+</value>
+</param>
+<param>
+<value>
+<string>6E4103865CAD4496FCA1EC15181449A64D128AA7BE8E8FF8FF0FBB9E2766341D</string>
+</value>
+</param>
+</params>
+</methodCall>
+
+#### Response
+
+<methodResponse>
+<params>
+<param>
+<value>
+<struct>
+<member>
+<name>resultCode</name>
+<value>
+<int>1</int>
+</value>
+</member>
+</struct>
+</value>
+</param>
+</params>
+</methodResponse>
+
+## **digitization.event.Deleted**
 
 Informs the wallet about the removal of a token.
 
 KLV data - 'digitized pan' = 254, 'digitized wallet id' = 255, 'digitized device id' = 910, 'digitized pan expiry' = 911, 'digitized fpan masked' = 912, 'Token Unique Reference' = 913, 'Digitized Token Requestor ID' = 915, 'Digitization event type' = 923, 'Digitization event reason code' = 924.
 
-For more information on KLV data, click [here](/guides/klv-lookup)
+**For more information on KLV data, click [here](/guides/klv-lookup)**
 
 NB. Token deactivation for any other wallet program will result in the deactivation message being sent to the client and the token being deactivated, preventing further transactions being processed.
 
@@ -550,13 +337,84 @@ NB. Token deactivation for any other wallet program will result in the deactivat
 </params>
 </methodResponse>
 
-## digitization.event.Stopped
+## **digitization.event.Deleted_from_device**
+
+The account holder deletes their token from the wallet program on their device.
+
+KLV data - 'digitized pan' = 254, 'digitized wallet id' = 255, 'digitized device id' = 910, 'digitized pan expiry' = 911, 'digitized fpan masked' = 912, 'Token Unique Reference' = 913, 'Digitized Token Requestor ID' = 915, 'Digitization event type' = 923, 'Digitization event reason code' = 924.
+
+**For more information on KLV data, click [here](/guides/klv-lookup)**
+
+#### Request
+
+<?xml version="1.0"?>
+<methodCall>
+<methodName>AdministrativeMessage</methodName>
+<params>
+<param>
+<value>
+<string>0054239023</string>
+</value>
+</param>
+<param>
+<value>
+<string>mdestesting</string>
+</value>
+</param>
+<param>
+<value>
+<string>digitization.event.Deleted_from_Device</string>
+</value>
+</param>
+<param>
+<value>
+<string>254165308426600000116255031039100221911042311912165190XXXXXXXX953891300</string>
+</value>
+</param>
+<param>
+<value>
+<string>559069</string>
+</value>
+</param>
+<param>
+<value>
+<dateTime.iso8601>20201008T12:32:27</dateTime.iso8601>
+</value>
+</param>
+<param>
+<value>
+<string>BF8A989DB976A4E8A9830C1D32DC0388F94257192FE964B5508D15FCBCBE20CD</string>
+</value>
+</param>
+</params>
+</methodCall>
+
+#### Response
+
+<methodResponse>
+<params>
+<param>
+<value>
+<struct>
+<member>
+<name>resultCode</name>
+<value>
+<int>1</int>
+</value>
+</member>
+</struct>
+</value>
+</param>
+</params>
+</methodResponse>
+
+## **digitization.event.Stopped**
 
 When a token has been stopped.
 
 KLV data - 'digitized pan' = 254, 'digitized wallet id' = 255, 'digitized device id' = 910, 'digitized pan expiry' = 911, 'digitized fpan masked' = 912, 'Token Unique Reference' = 913, 'Digitized Token Requestor ID' = 915, 'Digitization event type' = 923, 'Digitization event reason code' = 924.
 
-For more information on KLV data, click [here](/guides/klv-lookup)
+**For more information on KLV data, click [here](/guides/klv-lookup)**
 
 #### Request
 
@@ -621,13 +479,84 @@ For more information on KLV data, click [here](/guides/klv-lookup)
 </params>
 </methodResponse>
 
-## digitization.event.Digitization_Exception
+## **digitization.event.Digitized**
+
+When a stopped token is reactivated.
+
+KLV data - 'digitized pan' = 254, 'digitized wallet id' = 255, 'digitized device id' = 910, 'digitized pan expiry' = 911, 'digitized fpan masked' = 912, 'Token Unique Reference' = 913, 'Digitized Token Requestor ID' = 915, 'Digitization event type' = 923, 'Digitization event reason code' = 924.
+
+**For more information on KLV data, click [here](/guides/klv-lookup)**
+
+#### Request
+
+<?xml version="1.0"?>
+<methodCall>
+<methodName>AdministrativeMessage</methodName>
+<params>
+<param>
+<value>
+<string>0054239023</string>
+</value>
+</param>
+<param>
+<value>
+<string>mdestesting</string>
+</value>
+</param>
+<param>
+<value>
+<string>digitization.event.Digitized</string>
+</value>
+</param>
+<param>
+<value>
+<string>2541652650724000966222550332791000911042310912165313XXXXXXXX4948913000</string>
+</value>
+</param>
+<param>
+<value>
+<string>286071</string>
+</value>
+</param>
+<param>
+<value>
+<dateTime.iso8601>20201014T06:29:16</dateTime.iso8601>
+</value>
+</param>
+<param>
+<value>
+<string>78CC973C9D48947793D2AAA667314D7B3E829374</string>
+</value>
+</param>
+</params>
+</methodCall>
+
+#### Response
+
+<methodResponse>
+<params>
+<param>
+<value>
+<struct>
+<member>
+<name>resultCode</name>
+<value>
+<int>1</int>
+</value>
+</member>
+</struct>
+</value>
+</param>
+</params>
+</methodResponse>
+
+## **digitization.event.Digitization_Exception**
 
 When the activation code retries have been exceeded, an expired activation code was used, an invalid activation code was used, or an incorrect activation code has been entered
 
 KLV data - 'digitized pan' = 254, 'digitized wallet id' = 255, 'digitized device id' = 910, 'digitized pan expiry' = 911, 'digitized fpan masked' = 912, 'Token Unique Reference' = 913, 'Digitized Token Requestor ID' = 915, 'Digitization event type' = 923, 'Digitization event reason code' = 924.
 
-For more information on KLV data, click [here](/guides/klv-lookup)
+**For more information on KLV data, click [here](/guides/klv-lookup)**
 
 #### Request
 
@@ -675,6 +604,77 @@ For more information on KLV data, click [here](/guides/klv-lookup)
 
 #### Response
 
+<methodResponse>
+<params>
+<param>
+<value>
+<struct>
+<member>
+<name>resultCode</name>
+<value>
+<int>1</int>
+</value>
+</member>
+</struct>
+</value>
+</param>
+</params>
+</methodResponse>
+
+## **digitization.event.Replacement**
+
+Token is re-digitized or replaced (e.g. token expiry date update) and can only be done via the device.
+
+KLV data - 'digitized pan' = 254, 'digitized wallet id' = 255, 'digitized device id' = 910, 'digitized pan expiry' = 911, 'digitized fpan masked' = 912, 'Token Unique Reference' = 913, 'Digitized Token Requestor ID' = 915, 'Digitization event type' = 923, 'Digitization event reason code' = 924.
+
+**For more information on KLV data, click [here](/guides/klv-lookup)**
+
+#### Request
+
+<?xml version="1.0"?>
+<methodCall>
+<methodName>AdministrativeMessage</methodName>
+<params>
+<param>
+<value>
+<string>0009555048</string>
+</value>
+</param>
+<param>
+<value>
+<string>65432115</string>
+</value>
+</param>
+<param>
+<value>
+<string>digitization.event.Replacement</string>
+</value>
+</param>
+<param>
+<value>
+<string>042323DF.COMc4a92491c88162e9493933cc7915115011442868492317event.Replacement92400</string>
+</value>
+</param>
+<param>
+<value>
+<string>111111</string>
+</value>
+</param>
+<param>
+<value>
+<dateTime.iso8601>20250506T12:21:45</dateTime.iso8601>
+</value>
+</param>
+<param>
+<value>
+<string>DE6AFB51241B7F9D443BC719299B06432C706DC47D76CE10D6C32401135D2D49</string>
+</value>
+</param>
+</params>
+</methodCall>
+
+#### Response
+
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
 <params>
@@ -701,4 +701,4 @@ For more information on KLV data, click [here](/guides/klv-lookup)
 
 The Wallet side is expected to respond to the messages above with approval, meaning response code 1.
 
-Note: During the testing session, the tester from Paymentology will manually post mock messages to your wallet and expect approval response in return.
+**Note:** During the testing session, the tester from Paymentology will manually post mock messages to your wallet and expect approval response in return.

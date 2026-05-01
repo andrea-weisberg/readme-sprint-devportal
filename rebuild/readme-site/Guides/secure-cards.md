@@ -1,6 +1,6 @@
 # Secure cards
 
-The Sprint Card API allows you to access a wide range of features to ensure the security of card transactions.
+**The Sprint Card API allows you to access a wide range of features to ensure the security of card transactions.**
 
 Here are the main features to use to ensure the security of your cards:
 
@@ -13,18 +13,6 @@ Here are the main features to use to ensure the security of your cards:
 - Adding pockets to your card
 
 Let's look at each of them.
-
-## 2. Using a dynamic CVV on virtual cards​ ​
-
-​The Card Verification Value (CVV), which comes with every virtual card, is an essential feature for improving security. This static number helps in validating the identity of the cardholder, ensuring the card cannot be used for making fraudulent transactions.
-
-​
-
-And if you intend to revamp the security of a virtual card, or if a cardholder suspects their CVV has been compromised, you can simply update the CVV.
-
-​
-
-To update the CVV, you’ll need to make a call to the UpdateCVV method. Paymentology will then create a new CVV that you can send to your cardholder.
 
 ## 1. Using a dynamic secure code on virtual cards​ ​
 
@@ -39,6 +27,18 @@ To secure your virtual card with a dynamic secure code, you’ll need to make a 
 ​
 
 Then, a One Time PIN (OTP), which is triggered by the OTPRequest method, will be delivered to the cardholder to enable them to complete the secure code process and finalize the transaction.
+
+## 2. Using a dynamic CVV on virtual cards​ ​
+
+​The Card Verification Value (CVV), which comes with every virtual card, is an essential feature for improving security. This static number helps in validating the identity of the cardholder, ensuring the card cannot be used for making fraudulent transactions.
+
+​
+
+And if you intend to revamp the security of a virtual card, or if a cardholder suspects their CVV has been compromised, you can simply update the CVV.
+
+​
+
+To update the CVV, you’ll need to make a call to the UpdateCVV method. Paymentology will then create a new CVV that you can send to your cardholder.
 
 ## 3. Using a PIN on physical cards​ ​
 

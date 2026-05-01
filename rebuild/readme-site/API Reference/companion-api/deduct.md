@@ -138,6 +138,14 @@ Deduct (POS)
 
 Status code indicating transaction result
 
+(Optional) When used in combination with result code 2, on transactions that support partial authorisation, the amount of the authorisation value to be partially approved in cents
+
+(Optional) Actual/settled balance in cents
+
+(Optional) Available balance in cents
+
+(Optional) Address Verification Result
+
 "<?xml version=""1.0"" encoding=""UTF-8""?>
 <methodResponse>
 <params>
@@ -157,11 +165,3 @@ Status code indicating transaction result
 </methodResponse>"
 
 [Back to Remote API menu](/api-reference/companion-api/remote)
-
-(Optional) When used in combination with result code 2, on transactions that support partial authorisation, the amount of the authorisation value to be partially approved in cents
-
-(Optional) Actual/settled balance in cents
-
-(Optional) Available balance in cents
-
-(Optional) Address Verification Result

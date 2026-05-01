@@ -14,9 +14,9 @@ Token lifecycle management involves passing messages between Paymentology and MD
 
 - Token re-digitized (re-digitized or updated)
 
-The token lifecycle events are managed through the AdministrativeMessage method. The messageName path parameter, required in the AdministrativeMessage method, specifies the name of the administrative messages sent to the client.
+The token lifecycle events are managed through the **AdministrativeMessage** method. The **messageName**path parameter, required in the **AdministrativeMessage** method, specifies the name of the administrative messages sent to the client.
 
-These are the possible values for the messageName data field when managing tokens:
+These are the possible values for the **messageName**data field when managing tokens:
 
 - [Digitization.event.stopped](https://developer.sprint.paymentology.com/administrative-message-values/#stopped) (token suspended)
 
@@ -46,7 +46,7 @@ This is when Paymentology informs a wallet that the account holder has deleted t
 
 This is when Paymentology informs the wallet that a token has been removed in its entirety.
 
-- [Digitization.event.Replacement](https://developer.sprint.paymentology.com/administrative-message-values/#replacement)
+- **[Digitization.event.Replacement](https://developer.sprint.paymentology.com/administrative-message-values/#replacement)**
 
 This is when Paymentology informs the wallet that a token has been re-digitized or replaced. For example, a token expiry date can be updated based on the new replaced card.
 
@@ -60,4 +60,4 @@ Note that a 3-digit numeric value represents the IDs.
 
 Notably, the digital wallets handle token provisioning differently. For example, Apple Pay and Google Pay work in the same way. So, for manual provisioning, an OTP will be issued, and they’ll be no OTP for push provisioning.
 
-However, Samsung Pay does not issue an OTP, either for manual provisioning or push provisioning. So, during manual provisioning, Paymentology will just notify the client via [Digitization.complete](https://developer.sprint.paymentology.com/administrative-message-values/#complete) of the successful tokenization of the cardholder’s card on Samsung Pay.
+However, Samsung Pay does not issue an OTP, either for manual provisioning or push provisioning. So, during manual provisioning, Paymentology will just notify the client via **[Digitization.complete](https://developer.sprint.paymentology.com/administrative-message-values/#complete)**of the successful tokenization of the cardholder’s card on Samsung Pay.

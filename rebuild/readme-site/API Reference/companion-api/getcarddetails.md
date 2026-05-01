@@ -2,9 +2,9 @@
 
 Get card details of a specific card.
 
-IMPORTANT:
+**IMPORTANT:**
 
-This API method contains PCI sensitive information.
+**This API method contains PCI sensitive information.**
 
 - Session-Id=Encrypted AES Key e-g (AB521456236KHU52) is required if encryption is needed and the campaign is configured for encryption of sensitive data.
 

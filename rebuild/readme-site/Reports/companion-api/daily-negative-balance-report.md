@@ -8,29 +8,29 @@ This report provides clients with detailed information on cards that have entere
 
 The report includes the following details:
 
-- VoucherNumber - The voucher number associated with the card (masked for security purposes, only last four digits visible).
+- **VoucherNumber** - The voucher number associated with the card (masked for security purposes, only last four digits visible).
 
-- TrackingNumber - Unique identifier for tracking the transaction.
+- **TrackingNumber** - Unique identifier for tracking the transaction.
 
-- WalletReference - The unique wallet identifier associated with the card.
+- **WalletReference** - The unique wallet identifier associated with the card.
 
-- CardStatus - Current status of the card (e.g. Active, Inactive).
+- **CardStatus** - Current status of the card (e.g. Active, Inactive).
 
-- VoucherBalanceAmount - The balance of the card.
+- **VoucherBalanceAmount** - The balance of the card.
 
-- CampaignName - Name of the campaign to which the card belongs.
+- **CampaignName** - Name of the campaign to which the card belongs.
 
-- AuthorisationID - The unique authorization ID for the transaction that led to the balance.
+- **AuthorisationID** - The unique authorization ID for the transaction that led to the balance.
 
-- AuthorisationAmount - The authorized amount for the transaction.
+- **AuthorisationAmount** - The authorized amount for the transaction.
 
-- AuthorisationDate - The date when the authorization was made.
+- **AuthorisationDate** - The date when the authorization was made.
 
-- TransactionType - Type of transaction. 0 = POS transaction, 1 = ATM transaction, 2 = Adjustment.
+- **TransactionType** - Type of transaction. 0 = POS transaction, 1 = ATM transaction, 2 = Adjustment.
 
-- CampaignCurrencySymbol - The currency of the campaign to which the card belongs in ISO4217 alpha (e.g. USD).
+- **CampaignCurrencySymbol** - The currency of the campaign to which the card belongs in ISO4217 alpha (e.g. USD).
 
-- MerchantName - The name and address of the merchant where the transaction occurred.
+- **MerchantName** - The name and address of the merchant where the transaction occurred.
 
 ## Report format
 
@@ -38,7 +38,7 @@ The report includes the following details:
 
 ## Report sample
 
-Note: sample file will automatically download upon clicking link
+**Note: sample file will automatically download upon clicking link**
 
 [DailyNegativeBalanceReportOnChargebackQueue_CampaignName_YYYYMMDD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2024/10/DailyNegativeBalanceReportOnChargebackQueue_CampaignName_YYYYMMDD.csv)
 

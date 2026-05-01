@@ -137,6 +137,10 @@ HMAC-SHA1 hashed signature of the concatenated method name with all argument val
 </params>
 </methodCall>
 
+Status code indicating transaction result
+
+Result text indicating Approved or Declined
+
 <?xml version="1.0" encoding="UTF-8"?>
 <methodResponse>
 <params>
@@ -160,9 +164,5 @@ HMAC-SHA1 hashed signature of the concatenated method name with all argument val
 </param>
 </params>
 </methodResponse>
-
-Status code indicating transaction result
-
-Result text indicating Approved or Declined
 
 [Back to Local API Menu](/api-reference/companion-api/local-api)

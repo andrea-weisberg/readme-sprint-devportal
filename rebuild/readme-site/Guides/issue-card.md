@@ -2,19 +2,10 @@
 
 ## With the Card API you can o ffer your customers two types of cards:
 
-Virtual card
-A digital card without any physical components
+**Virtual card**A digital card without any physical components
 
-Physical card
+**Physical card**
 The traditional plastic payment card![Card API Issuing process flow](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Card-API-issuing-process-flow-v2.png)
-
-Option 1: Issue on-site and link immediately
-
-You can use this option if you want the physical cards to be linked immediately, when they are bulk produced and stored on your end.
-
-​You could have a batch of cards at the stores, branches, or agent facilities. Then, if someone requests a card, you can decide whether to apply a fee for this purchase.
-
-After issuing the card, you’ll need to send a request to Paymentology, using the ​LinkCard method ​​, for the physical card to be linked to a unique customer reference number.
 
 ## 1. Issuing a virtual card
 
@@ -44,9 +35,17 @@ Once the card is linked, it is now ready to be funded and used as per the predef
 
 ​There are two options for issuing physical cards: Issue on-site and link immediately or issue with courier and link later
 
+**Option 1: Issue on-site and link immediately**
+
+You can use this option if you want the physical cards to be linked immediately, when they are bulk produced and stored on your end.
+
+​You could have a batch of cards at the stores, branches, or agent facilities. Then, if someone requests a card, you can decide whether to apply a fee for this purchase.
+
 After issuing the card, you’ll need to send a request to Paymentology, using the ​LinkCard method ​​, for the physical card to be linked to a unique customer reference number.
 
-Option 2: Issue with courier and link later
+After issuing the card, you’ll need to send a request to Paymentology, using the ​LinkCard method ​​, for the physical card to be linked to a unique customer reference number.
+
+**Option 2: Issue with courier and link later**
 
 You can use this option if you want to order physical cards through your interface.
 
@@ -64,10 +63,10 @@ Making this call will lead to the following:
 
 - The cardholder will need to activate and link the card using the ActivateCard and LinkCard API method.
 
-Note:
+**Note:**
 
-For virtual cards: Multiple cards can be linked to one reference.
+For **virtual cards**: Multiple cards can be linked to one reference.
 
-For physical cards: Only one reference can be linked to a card.
+For **physical cards**: Only one reference can be linked to a card.
 
-A cardholder can have a virtual and a physical card linked to the same reference.
+**A cardholder can have a virtual and a physical card linked to the same reference.**

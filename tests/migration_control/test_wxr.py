@@ -129,3 +129,64 @@ class WxrParserTests(TestCase):
             page.links,
             ("https://developer.sprint.paymentology.com/get-started/our-apis/",),
         )
+
+    def test_parse_wxr_orders_builder_fragments_and_pairs_column_titles(self):
+        builder_fixture = """<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wp="http://wordpress.org/export/1.2/">
+  <channel>
+    <item>
+      <title>Get Started</title>
+      <link>https://developer.sprint.paymentology.com/get-started/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <wp:post_id>302</wp:post_id>
+      <wp:post_name>get-started</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>1</wp:menu_order>
+      <wp:postmeta>
+        <wp:meta_key>page_content_builder_11_content</wp:meta_key>
+        <wp:meta_value><![CDATA[<h2>Helpful tools</h2>]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key>page_content_builder_8_columns_0_text</wp:meta_key>
+        <wp:meta_value><![CDATA[<h3>Test environment</h3><p>Simulate transactions in a test environment</p>]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key>page_content_builder_2_columns_0_text</wp:meta_key>
+        <wp:meta_value><![CDATA[<p>Use this API if you want us to store balances.</p>]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key>page_content_builder_2_columns_0_title</wp:meta_key>
+        <wp:meta_value><![CDATA[Card API]]></wp:meta_value>
+      </wp:postmeta>
+      <wp:postmeta>
+        <wp:meta_key>page_content_builder_8_columns_1_text</wp:meta_key>
+        <wp:meta_value><![CDATA[<h3>Live environment</h3><p>Simulate transactions in a live environment</p>]]></wp:meta_value>
+      </wp:postmeta>
+    </item>
+  </channel>
+</rss>
+"""
+        with TemporaryDirectory() as tmp:
+            xml_path = Path(tmp) / "export.xml"
+            xml_path.write_text(builder_fixture, encoding="utf-8")
+
+            export = parse_wxr(xml_path)
+
+        page = export.pages[0]
+        self.assertIn("**Card API**", page.content_markdown)
+        self.assertLess(
+            page.content_markdown.index("**Card API**"),
+            page.content_markdown.index("## Helpful tools"),
+        )
+        self.assertLess(
+            page.content_markdown.index("### Test environment"),
+            page.content_markdown.index("## Helpful tools"),
+        )
+        self.assertLess(
+            page.content_markdown.index("### Live environment"),
+            page.content_markdown.index("## Helpful tools"),
+        )
