@@ -1,0 +1,45 @@
+---
+title: Google Pay monthly report
+category:
+  uri: Reports - Card API
+slug: google-pay-monthly-report
+position: 19
+parent:
+  uri: reports
+---
+
+A report which provides detailed information about cards that were tokenised to a Google Pay wallet within a given month. Client's can use the data from this report to fulfil their Google Pay reporting requirements.
+
+The report includes the following details:
+
+- **FirstLastName**- Customer's first and last name
+
+- **BillingPostalCode**- Customer's postal code
+
+- **BillingStreetAddress**- Customer's postal street address
+
+- **BillingCountryCode** - Customer's postal country
+
+- **BillingCity** - Customer's postal city
+
+- **BillingAdministrativeArea** - Customer's postal region or state
+
+- **FullPhoneNumber**- Customer's contact number
+
+- **OpaquePaymentCard** - Google Pay tokenised card number
+
+- **FundingPrimaryAccountNumber**- Voucher number/Customer's card number
+
+- **ExpirationDate**- Expiry date of **OpaquePaymentCard**
+
+## Report format
+
+## Report time frame
+
+## Report sample
+
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_googlepay_monthlyreport_MMM-YYYY-.png)
+
+Note: file will automatically download upon clicking link
+
+[CampaignNamegooglepaymonthlyreportMMM YYYY.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignNamegooglepaymonthlyreportMMM-YYYY.csv)

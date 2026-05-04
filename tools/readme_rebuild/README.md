@@ -12,7 +12,8 @@ python3 -m tools.readme_rebuild.cli \
   --wordpress-export /path/to/export.xml \
   --repo-root /path/to/repo \
   --output-root /path/to/rebuild/readme-site \
-  --report-root /path/to/review/rebuild
+  --report-root /path/to/review/rebuild \
+  --rdme-output-root /path/to/rebuild/rdme-upload
 ```
 
 The pipeline currently performs these steps in order:
@@ -25,3 +26,6 @@ The pipeline currently performs these steps in order:
    - `page_mapping.csv`
    - `link_rewrites.csv`
    - `summary.md`
+6. Optionally emit an `rdme` upload source tree with YAML frontmatter for:
+   - `docs upload`
+   - `reference upload`

@@ -1,0 +1,55 @@
+---
+title: First Chargeback
+category:
+  uri: Chargeback API
+slug: first-chargeback
+position: 6
+---
+
+After successfully connecting to the API Proxy, you can send the **fields/parameters** for the API request (as specified below) and receive a **response**.
+
+A successfully submitted First Chargeback will remain in a "pending status" (no more than 72 hours) on issuers' behalf to allow merchants to respond and resolve the inquiry.
+
+## Request/response fields and samples
+
+Card tracking number
+
+Transaction ID
+
+Auth number (optional)
+
+Settlement date
+
+Settlement amount in the cardholder's currency
+
+Chargeback amount in the cardholder's currency
+
+Chargeback reason code (Please refer to the [chargeback reason code list](/api-reference/chargeback-api/chargeback-reason-codes))
+
+Supporting document to be supplied with the first chargeback. Not more than 14.5MB
+
+{
+"trackingNumber": "tRaCkInGnUmBeR",
+"transactionId": "tRaNsAcTiOnId",
+"authnumber": "AuthNumber",
+"systemDate": "2021-08-24 00:00:00",
+"settlementAmount": 402.76,
+"chargebackAmount": 5.74,
+"reasonCode": "4834",
+"supportingDocument": "BASE64_ENCODED_FILE_HERE"
+}
+
+Chargeback ID
+
+Claim ID
+
+{
+"chargebackId": "CHARGEBACK ID",
+"claimID": "CLAIM_ID"
+}
+
+#### Other response codes
+
+Further response codes and details can be found [here](/api-reference/chargeback-api/response-codes).
+
+## Additional info
