@@ -90,7 +90,7 @@ def _bucket_for_page(page: DestinationPage) -> tuple[str, str]:
     if page.top_bar == "API Reference":
         return ("reference", page.subsection)
     if page.top_bar == "Reports":
-        return ("docs", f"Reports - {page.subsection}")
+        return ("docs", "Reports")
     if page.top_bar == "Tools":
         return ("docs", "Tools")
     return ("docs", "Guides")
@@ -103,7 +103,7 @@ def _relative_export_path(page: DestinationPage) -> Path:
     if top == "API Reference":
         return Path("reference", path.parts[1], path.name)
     if top == "Reports":
-        return Path("docs", f"reports-{slugify(page.subsection)}", path.name)
+        return Path("docs", "reports", slugify(page.subsection), path.name)
     if top == "Tools":
         return Path("docs", "tools", path.name)
     return Path("docs", "guides", path.name)
@@ -113,13 +113,18 @@ def _category_title_for_page(page: DestinationPage) -> str:
     if page.top_bar == "API Reference":
         return page.subsection
     if page.top_bar == "Reports":
-        return f"Reports - {page.subsection}"
+        return "Reports"
     if page.top_bar == "Tools":
         return "Tools"
     return "Guides"
 
 
 def _slug_for_export(page: DestinationPage) -> str:
+    if page.top_bar == "Reports":
+        subsection_slug = slugify(page.subsection)
+        if page.slug == "reports":
+            return f"{subsection_slug}-reports"
+        return f"{subsection_slug}-{page.slug}"
     return SLUG_OVERRIDES.get(page.path, page.slug)
 
 
@@ -131,7 +136,7 @@ def _parent_slugs_by_bucket(
     for bucket, pages in pages_by_bucket.items():
         for page in pages:
             if page.slug in {"api-reference", "reports", "tools"}:
-                parent_slugs[bucket] = page.slug
+                parent_slugs[bucket] = _slug_for_export(page)
                 break
 
     return parent_slugs
@@ -143,7 +148,7 @@ def _bucket_page_sort_key(page: DestinationPage) -> tuple[int, str]:
 
 
 def _parent_slug_for_page(page: DestinationPage, parent_slug: str | None) -> str | None:
-    if not parent_slug or page.slug == parent_slug:
+    if not parent_slug or _slug_for_export(page) == parent_slug:
         return None
     return parent_slug
 

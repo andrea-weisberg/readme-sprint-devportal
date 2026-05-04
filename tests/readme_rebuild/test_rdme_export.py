@@ -112,7 +112,7 @@ class RdmeExportTests(TestCase):
             self.assertEqual(manifest.reference_count, 2)
             self.assertEqual(
                 manifest.guide_categories,
-                ("Guides", "Reports - Card API", "Tools"),
+                ("Guides", "Reports", "Tools"),
             )
             self.assertEqual(manifest.reference_categories, ("Card API",))
 
@@ -154,17 +154,62 @@ class RdmeExportTests(TestCase):
                 "Details.\n",
             )
             self.assertEqual(
-                (output_root / "docs" / "reports-card-api" / "card-balance-report.md").read_text(encoding="utf-8"),
+                (output_root / "docs" / "reports" / "card-api" / "card-balance-report.md").read_text(encoding="utf-8"),
                 "---\n"
                 "title: Card Balance Report\n"
                 "category:\n"
-                "  uri: Reports - Card API\n"
-                "slug: card-balance-report\n"
+                "  uri: Reports\n"
+                "slug: card-api-card-balance-report\n"
                 "position: 2\n"
                 "parent:\n"
-                "  uri: reports\n"
+                "  uri: card-api-reports\n"
                 "---\n\n"
                 "Body.\n",
+            )
+
+    def test_export_rdme_source_namespaces_report_parent_pages_by_family(self):
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            output_root = root / "rdme-upload"
+            pages = (
+                DestinationPage(
+                    "https://developer.sprint.paymentology.com/reports/card-api/reports/",
+                    "Reports/card-api/reports.md",
+                    "Reports",
+                    "Reports",
+                    "Card API",
+                    "reports",
+                ),
+                DestinationPage(
+                    "https://developer.sprint.paymentology.com/reports/companion-api/reports/",
+                    "Reports/companion-api/reports.md",
+                    "Reports",
+                    "Reports",
+                    "Companion API",
+                    "reports",
+                ),
+            )
+
+            export_rdme_source(
+                output_root,
+                pages,
+                {
+                    "Reports/card-api/reports.md": "# Reports\n\nCard.\n",
+                    "Reports/companion-api/reports.md": "# Reports\n\nCompanion.\n",
+                },
+            )
+
+            self.assertIn(
+                "slug: card-api-reports\n",
+                (output_root / "docs" / "reports" / "card-api" / "reports.md").read_text(encoding="utf-8"),
+            )
+            self.assertNotIn(
+                "parent:\n  uri: card-api-reports\n",
+                (output_root / "docs" / "reports" / "card-api" / "reports.md").read_text(encoding="utf-8"),
+            )
+            self.assertIn(
+                "slug: companion-api-reports\n",
+                (output_root / "docs" / "reports" / "companion-api" / "reports.md").read_text(encoding="utf-8"),
             )
 
     def test_export_rdme_source_quotes_yaml_sensitive_titles(self):
