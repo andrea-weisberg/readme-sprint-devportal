@@ -3,7 +3,9 @@ title: Activate
 category:
   uri: Shared
 slug: activate
-position: 1
+position: 3
+parent:
+  uri: profile-api-reference
 ---
 
 Activate a card.

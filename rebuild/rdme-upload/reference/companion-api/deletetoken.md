@@ -3,9 +3,9 @@ title: DeleteToken
 category:
   uri: Companion API
 slug: deletetoken
-position: 15
+position: 30
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Remove a payment token linked to a card
@@ -107,5 +107,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

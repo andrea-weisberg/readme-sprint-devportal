@@ -3,9 +3,9 @@ title: ChangePin
 category:
   uri: Companion API
 slug: changepin
-position: 9
+position: 19
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Change the specified card's PIN.
@@ -114,5 +114,3 @@ Text indicating transaction result.
 </params>
 </methodResponse>
 ```
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

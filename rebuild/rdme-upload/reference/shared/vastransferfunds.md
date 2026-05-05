@@ -3,7 +3,9 @@ title: VasTransferFunds
 category:
   uri: Shared
 slug: vastransferfunds
-position: 54
+position: 52
+parent:
+  uri: profile-api-reference
 ---
 
 Transfer funds from a card for a VAS transaction.

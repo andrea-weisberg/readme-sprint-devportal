@@ -3,7 +3,9 @@ title: Lifecycle Management
 category:
   uri: Guides
 slug: token-lifecycle-management
-position: 54
+position: 31
+parent:
+  uri: tokenization2
 ---
 
 Token lifecycle management refers to handling the different states of the token, from creation to expiry. All tokens have a lifecycle; that is, the series of events happening from the date of creation to the expiry date when they’re no longer valid. The expiry date is usually linked to the expiry date of the full PAN that was used for provisioning.
@@ -22,7 +24,7 @@ Token lifecycle management involves passing messages between Paymentology and MD
 
 The token lifecycle events are managed through the **AdministrativeMessage** method. The **messageName**path parameter, required in the **AdministrativeMessage** method, specifies the name of the administrative messages sent to the client.
 
-![Token lofecycle management flow](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Token-life-cycle-management-v2.png)
+![Token lofecycle management flow](https://files.readme.io/5a86663285f52255a5595d5462036930bd9f9d13fa3678dd5bfb7771472f7ab0-6aa31462e570c3cb02833fa8d41ba7a84ec1758ecbdecab32a9481ce9ed799f9-Token-life-cycle-management-v2.png)
 
 These are the possible values for the **messageName**data field when managing tokens:
 

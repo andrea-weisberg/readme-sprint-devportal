@@ -3,7 +3,7 @@ title: Get Started
 category:
   uri: Guides
 slug: get-started
-position: 17
+position: 38
 ---
 
 Get started

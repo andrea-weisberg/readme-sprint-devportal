@@ -3,9 +3,9 @@ title: Card order
 category:
   uri: Reports
 slug: companion-api-card-order-report
-position: 38
+position: 46
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 A **card order** is a request to print a physical card. With the Companion API, you can optionally issue a physical card to a customer by sending an order for printing to the card manufacturer. To initiate a request to print a physical card, you use the [OrderCard](/api-reference/companion-api/ordercard) method in the Local API. On a daily basis at 19:30 UTC+2, Paymentology creates a batch order and submits it to the manufacturer for printing. A **card order**report lists all the orders that were processed on the previous day. SFTP folder
@@ -26,7 +26,7 @@ The report includes the following details:
 
 ## Report sample
 
-![Card order report](https://developer.sprint.paymentology.com/wp-content/uploads/2023/02/Card-Order1-300x195.png)
+![Card order report](https://files.readme.io/c7cb6002150860f823b7ec758d8061582c8c8ad4669fb356872047e5d95f997e-91c11ca4ea4e9d48e15f98858a4e17d59f9f83dfaf7d89dc5448b127c00273af-Card-Order1-300x195.png)
 
 **Note: file will automatically download upon clicking link**
 

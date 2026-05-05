@@ -3,9 +3,9 @@ title: ThreeDSAuthenticationOutcome
 category:
   uri: Companion API
 slug: threedsauthenticationoutcome
-position: 41
+position: 8
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Gives the result of the 3D Secure App Authentication

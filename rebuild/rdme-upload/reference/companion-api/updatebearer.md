@@ -3,9 +3,9 @@ title: UpdateBearer
 category:
   uri: Companion API
 slug: updatebearer
-position: 49
+position: 21
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Update the specified card’s bearer details.
@@ -270,5 +270,3 @@ Text indicating the transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

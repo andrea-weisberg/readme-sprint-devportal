@@ -3,9 +3,9 @@ title: LoadReversal
 category:
   uri: Companion API
 slug: loadreversal
-position: 26
+position: 43
 parent:
-  uri: api-reference
+  uri: remote
 ---
 
 Reverse a load that was previously requested on a wallet.**KLV will not be sent for reversals. Only reference data will be included if there is any. If KLV data is needed please lookup [KLV](/guides/klv-lookup) from the reference data included.**
@@ -110,5 +110,3 @@ Status code indicating transaction result
 </param>
 </params>
 </methodResponse>"
-
-[Back to Remote API menu](/api-reference/companion-api/remote)

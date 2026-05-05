@@ -3,7 +3,7 @@ title: TransferFunds
 category:
   uri: Card API
 slug: transferfunds
-position: 41
+position: 40
 parent:
   uri: api-reference
 ---
@@ -209,5 +209,3 @@ Status text indicating transaction result
 </param>
 </params>
 </methodResponse>
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

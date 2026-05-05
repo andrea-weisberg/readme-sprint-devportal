@@ -3,7 +3,9 @@ title: StopCard
 category:
   uri: Shared
 slug: stopcard
-position: 39
+position: 37
+parent:
+  uri: profile-api-reference
 ---
 
 Stop a card with one of the following allowed (integer) values for stopReasonID:
@@ -174,5 +176,3 @@ Text indicating the transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](https://developer.sprint.paymentology.com/card-api/profile-api-reference/)

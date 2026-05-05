@@ -3,9 +3,9 @@ title: Daily sales and redemption report
 category:
   uri: Reports
 slug: companion-api-daily-sales-and-redemption-report
-position: 40
+position: 33
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 A report which includes all Loads, Redemptions, Authorization, Fees that takes place on a voucher/card.

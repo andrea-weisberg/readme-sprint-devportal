@@ -3,9 +3,9 @@ title: UpdateTokenAccount
 category:
   uri: Companion API
 slug: updatetokenaccount
-position: 51
+position: 36
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Updates the card PAN information associated with a token i.e. VoucherID, Expiry Update and Account Deletion
@@ -117,5 +117,3 @@ Status text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API Menu](/api-reference/companion-api/local-api)

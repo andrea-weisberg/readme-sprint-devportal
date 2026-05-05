@@ -3,7 +3,9 @@ title: 3D Secure
 category:
   uri: Guides
 slug: 3d-secure
-position: 2
+position: 23
+parent:
+  uri: manage-funds
 ---
 
 **3D Secure (Three-Domain Secure) is an additional authentication step which provides an added layer of security for online card transactions by reducing the risk of unauthorized card use due to the card not being physically present.**
@@ -22,7 +24,7 @@ The primary benefit of using 3D Secure is to reduce the risk of fraud. 3D Secure
 
 - **Dynamic 3D Secure -**this uses an OTP (one-time password) that is generated before a payment is processed after a cardholder has entered their card details online. The OTP is sent to the cardholder via text or email and is valid for a limited time. For Dynamic 3D Secure code, use the [AdministrativeMessage3DSecureOTP](https://developer.sprint.paymentology.com/companion-api/api-reference/remote/administrativemessage/#3DSecure) call.
 
-![Tutuka Dynamic 3DS flow](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/image-35-v2.png)
+![Tutuka Dynamic 3DS flow](https://files.readme.io/afdc913359d30d66ddb14194d8a0a230210ead7477cc8cc341a87599395ad172-86d0b80e33093e2685b34d812248d78323eea38a546bd48a2bed6db355d4fe06-image-35-v2.png)
 
 These are the steps involved in the Dynamic 3D Secure validation and transaction authorization:
 

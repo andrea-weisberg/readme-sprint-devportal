@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: delinkcard
 position: 18
+parent:
+  uri: profile-api-reference
 ---
 
 Provides a method to unlink a card from a specified profile.

@@ -3,7 +3,7 @@ title: AdministrativeMessage3DSecureOTP
 category:
   uri: Guides
 slug: administrativemessage3dsecureotp
-position: 3
+position: 62
 ---
 
 Sends message with 3D Secure OTP
@@ -87,5 +87,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Remote API menu](/api-reference/companion-api/remote)

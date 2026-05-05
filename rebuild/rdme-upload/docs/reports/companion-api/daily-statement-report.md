@@ -3,9 +3,9 @@ title: Daily statement report
 category:
   uri: Reports
 slug: companion-api-daily-statement-report
-position: 41
+position: 34
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 The daily statement report can be used by client's to assist with their reconciliation and program activity reporting.

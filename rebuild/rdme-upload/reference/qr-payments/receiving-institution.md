@@ -3,7 +3,7 @@ title: Receiving Institution
 category:
   uri: QR Payments
 slug: receiving-institution
-position: 5
+position: 2
 parent:
   uri: api-reference
 ---

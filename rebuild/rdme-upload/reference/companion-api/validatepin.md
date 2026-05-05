@@ -3,9 +3,9 @@ title: ValidatePIN
 category:
   uri: Companion API
 slug: validatepin
-position: 52
+position: 48
 parent:
-  uri: api-reference
+  uri: remote
 ---
 
 Validate the PIN.
@@ -79,5 +79,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Remote API menu](/api-reference/companion-api/remote)

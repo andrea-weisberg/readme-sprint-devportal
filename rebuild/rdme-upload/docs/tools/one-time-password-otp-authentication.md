@@ -3,8 +3,8 @@ title: One-time Password (OTP) Authentication
 category:
   uri: Tools
 slug: one-time-password-otp-authentication
-position: 8
+position: 9
 parent:
-  uri: tools
+  uri: 3d-secure-customization
 ---
 

@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: checkauthorisation
 position: 12
+parent:
+  uri: profile-api-reference
 ---
 
 Provides a method to check if the specified amount was deducted from a card.

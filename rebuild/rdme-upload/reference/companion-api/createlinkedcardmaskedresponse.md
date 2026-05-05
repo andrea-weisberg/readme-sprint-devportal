@@ -3,9 +3,9 @@ title: CreateLinkedCardMaskedResponse
 category:
   uri: Companion API
 slug: createlinkedcardmaskedresponse
-position: 11
+position: 3
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Create a new, active virtual card and link it to a reference with the given bearer details.
@@ -159,5 +159,3 @@ Generated tracking number for the created card.
 </params>
 </methodResponse>
 ```
-
-[Back to Local API Menu](/api-reference/companion-api/local-api)

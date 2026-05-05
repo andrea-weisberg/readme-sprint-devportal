@@ -3,7 +3,9 @@ title: Connectivity
 category:
   uri: Chargeback API
 slug: connectivity
-position: 4
+position: 3
+parent:
+  uri: chargeback-api
 ---
 
 This page explains how to connect to our Chargeback API gateway.

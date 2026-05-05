@@ -3,9 +3,9 @@ title: Balance
 category:
   uri: Companion API
 slug: balance
-position: 6
+position: 47
 parent:
-  uri: api-reference
+  uri: remote
 ---
 
 Checks the balance on a card.
@@ -100,5 +100,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Remote API menu](/api-reference/companion-api/remote)

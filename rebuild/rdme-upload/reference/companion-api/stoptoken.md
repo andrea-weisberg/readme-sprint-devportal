@@ -3,9 +3,9 @@ title: StopToken
 category:
   uri: Companion API
 slug: stoptoken
-position: 40
+position: 31
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Stops a token reference or all the ones linked to a card. The token or tokens can be unstopped using UnStopToken
@@ -122,5 +122,3 @@ Status text indicating result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API Menu](/api-reference/companion-api/local-api)

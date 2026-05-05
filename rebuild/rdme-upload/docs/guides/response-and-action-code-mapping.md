@@ -3,7 +3,9 @@ title: Response and action code mapping
 category:
   uri: Guides
 slug: response-and-action-code-mapping
-position: 44
+position: 58
+parent:
+  uri: response-codes-2
 ---
 
 Each action taken on a transaction is associated with a code; different codes are assigned to the same action by different parties/networks i.e. Mastercard, Visa, Remote API, Transaction Stream.

@@ -3,7 +3,9 @@ title: Pre-Arbitration
 category:
   uri: Chargeback API
 slug: pre-arbitration
-position: 7
+position: 14
+parent:
+  uri: chargeback-api-reference
 ---
 
 This method is used to submit a Pre-Arbitration case.

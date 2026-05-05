@@ -21,8 +21,11 @@ def build_inventory(wordpress_export: Path, repo_root: Path) -> RebuildInventory
             content_text=page.content_text,
             links=page.links,
             content_markdown=page.content_markdown or page.content_text,
+            parent_id=page.parent_id,
+            menu_order=page.menu_order,
+            source_index=index,
         )
-        for page in export.pages
+        for index, page in enumerate(export.pages, start=1)
         if page.launch_scope
     )
     attachments = tuple(attachment.url for attachment in export.attachments)

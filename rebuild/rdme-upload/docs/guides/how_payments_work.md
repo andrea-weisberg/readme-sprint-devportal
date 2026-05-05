@@ -3,7 +3,7 @@ title: How Payments Work
 category:
   uri: Guides
 slug: how_payments_work
-position: 20
+position: 49
 ---
 
 **There are different stages of a transaction when a card is used to pay for goods and services.**
@@ -53,7 +53,7 @@ A transaction is the movement of money from a cardholder's account to a merchant
 
 - The transaction is completed once funds are deducted from the Cardholder’s balance and settled in the Merchant’s account
 
-![General transaction lifecycle](https://developer.sprint.paymentology.com/wp-content/uploads/2021/10/Payment-lifecycle.png)
+![General transaction lifecycle](https://files.readme.io/cfbd62ddad91c81668719cea776d9aa1e6d054a9888a72650d3f2b88a8bd5101-79be594188d53f35c1400ea5426082381deac06819496d18a93056569257e6a5-Payment-lifecycle.png)
 
 # Types of Transactions
 

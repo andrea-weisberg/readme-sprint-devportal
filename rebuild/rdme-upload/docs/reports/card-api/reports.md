@@ -3,7 +3,9 @@ title: Reports
 category:
   uri: Reports
 slug: card-api-reports
-position: 1
+position: 2
+parent:
+  uri: qr-payments-reports
 ---
 
 **Paymentology provides end-to-end reporting and reconciliation capabilities to allow you to track all your cards’ financial movements, revenues collected, failed transactions and more**.

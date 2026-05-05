@@ -3,7 +3,7 @@ title: LinkCard
 category:
   uri: Card API
 slug: linkcard
-position: 18
+position: 26
 parent:
   uri: api-reference
 ---
@@ -136,5 +136,3 @@ Status text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

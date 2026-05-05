@@ -3,7 +3,9 @@ title: ReverseVasTransferFunds
 category:
   uri: Shared
 slug: reversevastransferfunds
-position: 35
+position: 33
+parent:
+  uri: profile-api-reference
 ---
 
 Reverse a VAS transfer on the card.

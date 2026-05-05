@@ -3,9 +3,9 @@ title: UpdateCVV
 category:
   uri: Companion API
 slug: updatecvv
-position: 50
+position: 27
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Generate a new CVV2 of the specified card.
@@ -117,5 +117,3 @@ The key with which encrypted data in response is encrypted.
 </params>
 </methodResponse>
 ```
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

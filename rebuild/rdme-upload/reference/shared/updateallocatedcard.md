@@ -3,7 +3,9 @@ title: UpdateAllocatedCard
 category:
   uri: Shared
 slug: updateallocatedcard
-position: 47
+position: 45
+parent:
+  uri: profile-api-reference
 ---
 
 Updates the cellphone or ID number linked to an allocated card.

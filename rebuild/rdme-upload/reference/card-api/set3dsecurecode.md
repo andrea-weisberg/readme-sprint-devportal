@@ -3,7 +3,7 @@ title: Set3dSecureCode
 category:
   uri: Card API
 slug: set3dsecurecode
-position: 31
+position: 36
 parent:
   uri: api-reference
 ---
@@ -143,5 +143,3 @@ Status text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

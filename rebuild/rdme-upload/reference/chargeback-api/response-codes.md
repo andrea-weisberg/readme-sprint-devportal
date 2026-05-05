@@ -3,7 +3,9 @@ title: Response codes
 category:
   uri: Chargeback API
 slug: response-codes
-position: 12
+position: 7
+parent:
+  uri: chargeback-api
 ---
 
 ## Error response code 400

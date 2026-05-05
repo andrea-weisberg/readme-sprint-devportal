@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Optional, Sequence
 
 from tools.readme_rebuild.audit import write_audit
+from tools.readme_rebuild.assets import ImageSyncSummary, sync_wordpress_images
 from tools.readme_rebuild.inventory import build_inventory
 from tools.readme_rebuild.links import rewrite_links
 from tools.readme_rebuild.mapping import map_page
@@ -23,6 +24,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     parser.add_argument("--output-root", required=True, type=Path)
     parser.add_argument("--report-root", required=True, type=Path)
     parser.add_argument("--rdme-output-root", type=Path)
+    parser.add_argument("--rdme-api-key")
+    parser.add_argument("--asset-cache-root", type=Path)
     args = parser.parse_args(argv)
 
     inventory = build_inventory(args.wordpress_export, args.repo_root)
@@ -42,8 +45,15 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
     render_site(args.output_root, mapped_pages, content_by_path)
     summary = write_audit(args.report_root, mapped_pages, tuple(link_rewrites))
+    image_summary: ImageSyncSummary | None = None
     if args.rdme_output_root:
         export_rdme_source(args.rdme_output_root, mapped_pages, content_by_path)
+        if args.rdme_api_key:
+            image_summary = sync_wordpress_images(
+                args.rdme_output_root,
+                args.rdme_api_key,
+                args.asset_cache_root or args.repo_root / "rebuild" / "asset-cache",
+            )
     print(
         "\n".join(
             tuple(
@@ -57,6 +67,13 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                     (
                         f"ReadMe upload source: {args.rdme_output_root}"
                         if args.rdme_output_root
+                        else ""
+                    ),
+                    (
+                        f"ReadMe images: {image_summary.uploaded_images} uploaded, "
+                        f"{image_summary.reused_images} reused, "
+                        f"{image_summary.image_references_rewritten} references rewritten"
+                        if image_summary
                         else ""
                     ),
                 )

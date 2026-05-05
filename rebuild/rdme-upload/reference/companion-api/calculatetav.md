@@ -3,9 +3,9 @@ title: CalculateTAV
 category:
   uri: Companion API
 slug: calculatetav
-position: 8
+position: 37
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Return the TAV (Token Authentication Value) of the specified card. The Token Authentication Value will be returned in Base64 format.
@@ -104,5 +104,3 @@ Status code indicating transaction result. In the event of a successful result t
 </params>
 </methodResponse>
 ```
-
-[Back to Local API Menu](/api-reference/companion-api/local-api)

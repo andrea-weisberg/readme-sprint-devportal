@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: listtokens
 position: 26
+parent:
+  uri: profile-api-reference
 ---
 
 Returns all the tokens linked to a card.
@@ -465,5 +467,3 @@ Error Fault for invalid checksum authentication returns the following message:
 </fault>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](#https://developer.sprint.paymentology.com/profile-api-reference/)

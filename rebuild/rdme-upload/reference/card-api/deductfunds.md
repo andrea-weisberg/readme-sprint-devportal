@@ -3,7 +3,7 @@ title: DeductFunds
 category:
   uri: Card API
 slug: deductfunds
-position: 12
+position: 20
 parent:
   uri: api-reference
 ---
@@ -188,5 +188,3 @@ Status code indicating transaction result
 </param>
 </params>
 </methodResponse>
-
-[Back to Card API Menu](/api-reference/card-api/api-reference)

@@ -3,7 +3,9 @@ title: StatementByDateRange
 category:
   uri: Shared
 slug: statementbydaterange
-position: 37
+position: 35
+parent:
+  uri: profile-api-reference
 ---
 
 Returns the statement between two dates.
@@ -192,5 +194,3 @@ Text indicating the transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](https://developer.sprint.paymentology.com/card-api/profile-api-reference/)

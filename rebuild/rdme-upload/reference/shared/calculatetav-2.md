@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: calculatetav-2
 position: 7
+parent:
+  uri: profile-api-reference
 ---
 
 This API is used to create Token Authentication Value (TAV)
@@ -103,5 +105,3 @@ TAV)
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

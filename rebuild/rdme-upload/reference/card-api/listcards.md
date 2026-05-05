@@ -3,7 +3,7 @@ title: ListCards
 category:
   uri: Card API
 slug: listcards
-position: 20
+position: 27
 parent:
   uri: api-reference
 ---
@@ -244,5 +244,3 @@ Status text indicating transaction result
 </param>
 </params>
 </methodResponse>
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

@@ -3,7 +3,9 @@ title: Register
 category:
   uri: Shared
 slug: register
-position: 30
+position: 28
+parent:
+  uri: profile-api-reference
 ---
 
 Creates and registers a new profile.
@@ -332,5 +334,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

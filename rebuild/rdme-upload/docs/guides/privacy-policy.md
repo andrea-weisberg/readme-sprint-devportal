@@ -3,7 +3,7 @@ title: Privacy Policy
 category:
   uri: Guides
 slug: privacy-policy
-position: 36
+position: 52
 ---
 
 ## Who we are

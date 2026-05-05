@@ -3,7 +3,9 @@ title: AllocateCreateVirtualCard
 category:
   uri: Shared
 slug: allocatecreatevirtualcard
-position: 4
+position: 54
+parent:
+  uri: profile-api-reference
 ---
 
 Create a virtual card with specified amount loaded, linked to the specified profile and allocated to a cardholder with specified details.
@@ -184,5 +186,3 @@ The tracking number of the virtual card
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](https://developer.sprint.paymentology.com/card-api/profile-api-reference/)

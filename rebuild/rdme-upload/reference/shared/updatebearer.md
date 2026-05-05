@@ -3,7 +3,9 @@ title: UpdateBearer
 category:
   uri: Shared
 slug: updatebearer
-position: 48
+position: 46
+parent:
+  uri: profile-api-reference
 ---
 
 Updates the firstName, lastName, cellphone and ID number linked to an allocated card.

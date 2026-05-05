@@ -3,9 +3,9 @@ title: QVR data report
 category:
   uri: Reports
 slug: companion-api-qvr-data-report
-position: 51
+position: 40
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 The QVR data report can be provided to clients using Visa. It contains data to assist clients with their Visa quarterly reporting requirements. The report includes the following:

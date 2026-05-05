@@ -3,7 +3,9 @@ title: ActivateToken
 category:
   uri: Shared
 slug: activatetoken
-position: 2
+position: 4
+parent:
+  uri: profile-api-reference
 ---
 
 Used to activate a token for a digitization that has been approved and provisioned, but requires additional cardholder authentication prior to activation.
@@ -145,5 +147,3 @@ Error Fault for invalid checksum authentication returns the following message:
 </fault>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

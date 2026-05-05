@@ -3,7 +3,9 @@ title: OrderCard
 category:
   uri: Shared
 slug: ordercard
-position: 28
+position: 55
+parent:
+  uri: profile-api-reference
 ---
 
 Order a card for a specific cardholder. A card can be printed with cardholder details by the card manufacturer. No commas, question marks or quotation marks are allowed in any of the fields
@@ -153,5 +155,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](https://developer.sprint.paymentology.com/card-api/profile-api-reference/)

@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: listalltokens
 position: 25
+parent:
+  uri: profile-api-reference
 ---
 
 Returns all the tokens (active and inactive) linked to a card
@@ -465,5 +467,3 @@ Error Fault for invalid checksum authentication returns the following message:
 </fault>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

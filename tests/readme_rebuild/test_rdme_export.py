@@ -17,6 +17,7 @@ class RdmeExportTests(TestCase):
 
             pages = (
                 DestinationPage(
+                    "1",
                     "https://developer.sprint.paymentology.com/get-started/get-started/",
                     "Guides/get-started.md",
                     "Get Started",
@@ -40,6 +41,7 @@ class RdmeExportTests(TestCase):
             output_root = root / "rdme-upload"
             pages = (
                 DestinationPage(
+                    "1",
                     "https://developer.sprint.paymentology.com/get-started/get-started/",
                     "Guides/get-started.md",
                     "Get Started",
@@ -48,6 +50,7 @@ class RdmeExportTests(TestCase):
                     "get-started",
                 ),
                 DestinationPage(
+                    "2",
                     "https://developer.sprint.paymentology.com/tools/",
                     "Tools/tools.md",
                     "Tools",
@@ -56,14 +59,17 @@ class RdmeExportTests(TestCase):
                     "tools",
                 ),
                 DestinationPage(
+                    "3",
                     "https://developer.sprint.paymentology.com/tools/xml-poster/",
                     "Tools/xml-poster.md",
                     "XML Poster",
                     "Tools",
                     "Tools",
                     "xml-poster",
+                    "2",
                 ),
                 DestinationPage(
+                    "4",
                     "https://developer.sprint.paymentology.com/card-api/api-reference/",
                     "API Reference/card-api/api-reference.md",
                     "Card API Reference",
@@ -72,14 +78,17 @@ class RdmeExportTests(TestCase):
                     "api-reference",
                 ),
                 DestinationPage(
+                    "5",
                     "https://developer.sprint.paymentology.com/card-api/api-reference/activatetoken/",
                     "API Reference/card-api/activatetoken.md",
                     "ActivateToken",
                     "API Reference",
                     "Card API",
                     "activatetoken",
+                    "4",
                 ),
                 DestinationPage(
+                    "6",
                     "https://developer.sprint.paymentology.com/reports/card-api/reports/",
                     "Reports/card-api/reports.md",
                     "Reports",
@@ -88,12 +97,14 @@ class RdmeExportTests(TestCase):
                     "reports",
                 ),
                 DestinationPage(
+                    "7",
                     "https://developer.sprint.paymentology.com/reports/card-api/card-balance-report/",
                     "Reports/card-api/card-balance-report.md",
                     "Card Balance Report",
                     "Reports",
                     "Card API",
                     "card-balance-report",
+                    "6",
                 ),
             )
             content_by_path = {
@@ -109,12 +120,12 @@ class RdmeExportTests(TestCase):
             manifest = export_rdme_source(output_root, pages, content_by_path)
 
             self.assertEqual(manifest.docs_count, 5)
-            self.assertEqual(manifest.reference_count, 2)
+            self.assertEqual(manifest.reference_count, 3)
             self.assertEqual(
                 manifest.guide_categories,
                 ("Guides", "Reports", "Tools"),
             )
-            self.assertEqual(manifest.reference_categories, ("Card API",))
+            self.assertEqual(manifest.reference_categories, ("Card API", "Shared"))
 
             self.assertEqual(
                 (output_root / "docs" / "guides" / "get-started.md").read_text(encoding="utf-8"),
@@ -154,6 +165,22 @@ class RdmeExportTests(TestCase):
                 "Details.\n",
             )
             self.assertEqual(
+                (output_root / "reference" / "shared" / "api-reference.md").read_text(encoding="utf-8"),
+                "---\n"
+                "title: API Reference\n"
+                "category:\n"
+                "  uri: Shared\n"
+                "slug: api-reference\n"
+                "position: 1\n"
+                "---\n\n"
+                "Browse the API families below using ReadMe's native reference navigation.\n\n"
+                "- Card API\n"
+                "- Companion API\n"
+                "- QR Payments\n"
+                "- Chargeback API\n"
+                "- Shared\n",
+            )
+            self.assertEqual(
                 (output_root / "docs" / "reports" / "card-api" / "card-balance-report.md").read_text(encoding="utf-8"),
                 "---\n"
                 "title: Card Balance Report\n"
@@ -173,6 +200,7 @@ class RdmeExportTests(TestCase):
             output_root = root / "rdme-upload"
             pages = (
                 DestinationPage(
+                    "1",
                     "https://developer.sprint.paymentology.com/reports/card-api/reports/",
                     "Reports/card-api/reports.md",
                     "Reports",
@@ -181,6 +209,7 @@ class RdmeExportTests(TestCase):
                     "reports",
                 ),
                 DestinationPage(
+                    "2",
                     "https://developer.sprint.paymentology.com/reports/companion-api/reports/",
                     "Reports/companion-api/reports.md",
                     "Reports",
@@ -218,6 +247,7 @@ class RdmeExportTests(TestCase):
             output_root = root / "rdme-upload"
             pages = (
                 DestinationPage(
+                    "1",
                     "https://developer.sprint.paymentology.com/chargeback-api/remote-messaging-api-chargeback-notification/",
                     "API Reference/chargeback-api/remote-messaging-api-chargeback-notification.md",
                     "Remote Messaging API: chargeback notification",
@@ -258,6 +288,7 @@ class RdmeExportTests(TestCase):
             output_root = root / "rdme-upload"
             pages = (
                 DestinationPage(
+                    "1",
                     "https://developer.sprint.paymentology.com/get-started/companion-api/",
                     "Guides/companion-api.md",
                     "Companion API",
@@ -266,6 +297,7 @@ class RdmeExportTests(TestCase):
                     "companion-api",
                 ),
                 DestinationPage(
+                    "2",
                     "https://developer.sprint.paymentology.com/card-api/api-reference/togglevoucherfeature/",
                     "API Reference/card-api/togglevoucherfeature.md",
                     "ToggleVoucherFeature",
@@ -312,12 +344,91 @@ class RdmeExportTests(TestCase):
                 "```\n",
             )
 
+    def test_export_rdme_source_strips_legacy_back_links(self):
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            output_root = root / "rdme-upload"
+            pages = (
+                DestinationPage(
+                    "1",
+                    "https://developer.sprint.paymentology.com/card-api/api-reference/ordercard/",
+                    "API Reference/card-api/ordercard.md",
+                    "OrderCard",
+                    "API Reference",
+                    "Card API",
+                    "ordercard",
+                ),
+            )
+
+            export_rdme_source(
+                output_root,
+                pages,
+                {
+                    "API Reference/card-api/ordercard.md": "# OrderCard\n\nBody.\n\n[Back to Card API Menu](/api-reference/card-api/api-reference)\n"
+                },
+            )
+
+            self.assertNotIn(
+                "Back to Card API Menu",
+                (output_root / "reference" / "card-api" / "ordercard.md").read_text(encoding="utf-8"),
+            )
+
+    def test_export_rdme_source_uses_source_index_for_guide_positions(self):
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            output_root = root / "rdme-upload"
+            pages = (
+                DestinationPage(
+                    "2",
+                    "https://developer.sprint.paymentology.com/get-started/testing/",
+                    "Guides/testing.md",
+                    "Testing",
+                    "Guides",
+                    "Shared",
+                    "testing",
+                    "",
+                    1,
+                    2,
+                ),
+                DestinationPage(
+                    "1",
+                    "https://developer.sprint.paymentology.com/get-started/get-started/",
+                    "Guides/get-started.md",
+                    "Get Started",
+                    "Guides",
+                    "Shared",
+                    "get-started",
+                    "",
+                    0,
+                    1,
+                ),
+            )
+
+            export_rdme_source(
+                output_root,
+                pages,
+                {
+                    "Guides/testing.md": "# Testing\n\nTesting body.\n",
+                    "Guides/get-started.md": "# Get Started\n\nGet Started body.\n",
+                },
+            )
+
+            self.assertIn(
+                "position: 1\n",
+                (output_root / "docs" / "guides" / "get-started.md").read_text(encoding="utf-8"),
+            )
+            self.assertIn(
+                "position: 2\n",
+                (output_root / "docs" / "guides" / "testing.md").read_text(encoding="utf-8"),
+            )
+
     def test_export_rdme_source_applies_known_slug_overrides(self):
         with TemporaryDirectory() as tmp:
             root = Path(tmp)
             output_root = root / "rdme-upload"
             pages = (
                 DestinationPage(
+                    "1",
                     "https://developer.sprint.paymentology.com/get-started/companion-api/",
                     "Guides/companion-api.md",
                     "Companion API",
@@ -336,4 +447,49 @@ class RdmeExportTests(TestCase):
             self.assertIn(
                 "slug: companion-api-guide\n",
                 (output_root / "docs" / "guides" / "companion-api.md").read_text(encoding="utf-8"),
+            )
+
+    def test_export_rdme_source_uses_parent_child_hierarchy_for_guides(self):
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            output_root = root / "rdme-upload"
+            pages = (
+                DestinationPage(
+                    "10",
+                    "https://developer.sprint.paymentology.com/get-started/",
+                    "Guides/get-started.md",
+                    "Get Started",
+                    "Guides",
+                    "Shared",
+                    "get-started",
+                    "",
+                    0,
+                    10,
+                ),
+                DestinationPage(
+                    "11",
+                    "https://developer.sprint.paymentology.com/get-started/our-apis/",
+                    "Guides/our-apis.md",
+                    "Our APIs",
+                    "Guides",
+                    "Shared",
+                    "our-apis",
+                    "10",
+                    1,
+                    11,
+                ),
+            )
+
+            export_rdme_source(
+                output_root,
+                pages,
+                {
+                    "Guides/get-started.md": "# Get Started\n\nRoot.\n",
+                    "Guides/our-apis.md": "# Our APIs\n\nChild.\n",
+                },
+            )
+
+            self.assertIn(
+                "parent:\n  uri: get-started\n",
+                (output_root / "docs" / "guides" / "our-apis.md").read_text(encoding="utf-8"),
             )

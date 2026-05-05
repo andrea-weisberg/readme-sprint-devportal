@@ -3,7 +3,9 @@ title: QR payments
 category:
   uri: Guides
 slug: qr-payments
-position: 40
+position: 54
+parent:
+  uri: qr-payments-api
 ---
 
 The QR payments API allows you to create a contactless merchant payment system where customers can make electronic payments by scanning a QR code from a smartphone application. It’s a simple and secure way for consumers to push payments to merchants using their mobile money wallets or bank account balances.
@@ -34,13 +36,13 @@ This is a typical QR transaction process:
 
 - The RI credits the merchant’s bank account and sends a notification that the payment has been received successfully.
 
-![End to end - how QR payments work](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/QR-Payments-End-to-end-v2.png)
+![End to end - how QR payments work](https://files.readme.io/69c2a6317c634da0fb236616d8f800ca5a8f0964c0515db58c67c0ebb188e5f6-e2fddfd6c0ab0b2ea40a76f8dc043d0ad9f061cc855e57ec99edb6d01d6cc9b8-QR-Payments-End-to-end-v2.png)
 
 ## About the Originating Institution (OI)
 
 The Originating Institution (OI) is the store of value provider that issues the customer’s card or account. When the consumer initiates a QR Payment transaction by scanning the merchants static QR code, the OI verifies the available funds on the consumer’s account and debits it. To transfer a QR payment to a merchant, you’ll need to make a call to the ​TransferPaymentToMerchant method.
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/QR-Payments-send-bank-v2-1.png)
+![](https://files.readme.io/06fb3f9667be901530b55a0ae12e1c573585703075a6f13c329ac8e39a153e1e-ea56700e20c34e879e37411c2ada384968df2432e186191580ceda25ff07f1f5-QR-Payments-send-bank-v2-1.png)
 
 To transfer a QR payment to a merchant, you’ll need to make a call to the TransferPaymentToMerchant method.
 
@@ -60,7 +62,7 @@ The RI can make the following API requests:
 
 - Make a call to the LoadReversal method to reverse the loaded funds from a merchant's wallet. If there is no response returned, a timeout occurs, or an incorrect response code is returned, then a reversal will be triggered.
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/QR-Payments-receive-bank-v2.png)
+![](https://files.readme.io/1cee9ddb6e9bc669a05a1b400cfb2376e9c613b11371523ee3e0f1f4f5e4f71f-e943503df5817af962e1b0d03daf2388139080be1161e8b9c9fcff6d86b4f08f-QR-Payments-receive-bank-v2.png)
 
 It will be triggered ten times at 5-minute intervals until a valid response code is returned; thereafter, it results in a fail that Tutuka flags.
 
@@ -76,7 +78,7 @@ Before a merchant can accept QR payments, you’ll need to onboard them first an
 
 To create the QR code, you’ll use the Mastercard QR generator. You should ensure that the correct data is imported into the generator.
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/QR-Payments-Merchant-onboarding-v2.png)
+![](https://files.readme.io/5f85a2395dce675a696444663c1a2a7edad28a94b26818ce8d55dda00ef68142-dd813051be43ef32d6ece84f28fc4a95e386abb5a5217110b6d5c697380b9e89-QR-Payments-Merchant-onboarding-v2.png)
 
 To produce the correct image, be mindful of any spaces at the beginning and end of the data inputs. Lastly, you can download the MasterPass QR Tester App to test that the QR code is correct and meets all Mastercard’s specifications.
 

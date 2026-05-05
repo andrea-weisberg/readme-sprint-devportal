@@ -3,9 +3,9 @@ title: Daily negative balance report
 category:
   uri: Reports
 slug: companion-api-daily-negative-balance-report
-position: 39
+position: 32
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 This report provides clients with detailed information on cards that have entered into a negative balance status. It provides essential, actionable information to trace the transactions and correct the negative balance scenarios.
@@ -49,5 +49,3 @@ The report includes the following details:
 **Note: sample file will automatically download upon clicking link**
 
 [DailyNegativeBalanceReportOnChargebackQueue_CampaignName_YYYYMMDD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2024/10/DailyNegativeBalanceReportOnChargebackQueue_CampaignName_YYYYMMDD.csv)
-
-[Back to Companion API Reports](#https://developer.sprint.paymentology.com/companion-api/reports/)

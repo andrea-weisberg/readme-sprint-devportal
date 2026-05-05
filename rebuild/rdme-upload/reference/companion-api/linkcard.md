@@ -3,9 +3,9 @@ title: LinkCard
 category:
   uri: Companion API
 slug: linkcard
-position: 20
+position: 14
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Link a card to a reference with the given bearer details. Linking a card will not activate it. Inactive cards need to be activated using the Activate call before they will become functional.
@@ -115,5 +115,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API Menu](/api-reference/companion-api/local-api)

@@ -3,7 +3,7 @@ title: Mark-off file
 category:
   uri: Reports
 slug: card-api-mark-off-file
-position: 24
+position: 12
 parent:
   uri: card-api-reports
 ---
@@ -42,7 +42,7 @@ The Mark-off file has the following fields:
 
 ## Report sample
 
-![Report sample for Mark off file](https://developer.sprint.paymentology.com/wp-content/uploads/2021/08/MarkOff-report-final-Card-API.png)
+![Report sample for Mark off file](https://files.readme.io/d34311536d96450e69d3de2115f73b4a561944d17a48055844a2843f09afa26e-a43b0b62a93ff174c5210d285858f6ea0fab2ae35573226edf3bc66befe73dcb-MarkOff-report-final-Card-API.png)
 
 **Note: file will automatically download upon clicking link**
 

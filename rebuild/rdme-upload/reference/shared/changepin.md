@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: changepin
 position: 11
+parent:
+  uri: profile-api-reference
 ---
 
 Change the pin on the card associated with the customer reference and tracking number
@@ -145,5 +147,3 @@ Status text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

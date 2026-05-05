@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: deductcardloadprofile
 position: 16
+parent:
+  uri: profile-api-reference
 ---
 
 Deduct requested amount from card and load the amount back to the profile.
@@ -45,5 +47,3 @@ Transaction fee amount in cents
 Status code indicating transaction result
 
 Text indicating transaction result
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

@@ -3,7 +3,9 @@ title: UnStopToken
 category:
   uri: Shared
 slug: unstoptoken
-position: 46
+position: 44
+parent:
+  uri: profile-api-reference
 ---
 
 Unstops a token reference or all the ones linked to a card.
@@ -184,5 +186,3 @@ Error Fault for invalid checksum authentication is the following message:
 </fault>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

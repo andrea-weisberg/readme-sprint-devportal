@@ -3,9 +3,9 @@ title: Help
 category:
   uri: Tools
 slug: help
-position: 7
+position: 11
 parent:
-  uri: tools
+  uri: 3d-secure-customization
 ---
 
 ## When to use 3D Secure Screen Customization tool

@@ -3,9 +3,9 @@ title: ToggleVoucherFeature
 category:
   uri: Companion API
 slug: togglevoucherfeature
-position: 42
+position: 13
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Toggles a voucher feature on or off
@@ -117,5 +117,3 @@ Status text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API MENU](/api-reference/companion-api/local-api)

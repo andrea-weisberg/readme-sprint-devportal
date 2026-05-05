@@ -3,9 +3,9 @@ title: GenerateTimeBasedSecret
 category:
   uri: Companion API
 slug: generatetimebasedsecret
-position: 16
+position: 4
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Generates a “secret token” to enable communication with our tokenisation APIs.
@@ -130,5 +130,3 @@ generated TOTP
 </params>
 </methodResponse>
 ```
-
-[Back to Local API Menu](/api-reference/companion-api/local-api)

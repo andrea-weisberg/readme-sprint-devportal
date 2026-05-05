@@ -3,7 +3,7 @@ title: StopCard
 category:
   uri: Card API
 slug: stopcard
-position: 34
+position: 39
 parent:
   uri: api-reference
 ---
@@ -167,5 +167,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

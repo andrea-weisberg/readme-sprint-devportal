@@ -3,9 +3,9 @@ title: RetireCard
 category:
   uri: Companion API
 slug: retirecard
-position: 35
+position: 28
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Retires the specified card. All financial functionality (loads, deducts, refunds, etc) will no longer work on the specified card.
@@ -88,5 +88,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

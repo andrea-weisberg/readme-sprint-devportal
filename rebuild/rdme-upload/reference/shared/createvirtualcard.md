@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: createvirtualcard
 position: 15
+parent:
+  uri: profile-api-reference
 ---
 
 Create a virtual card with specified amount loaded, linked to the specified profile and allocated to the profile owner.
@@ -153,5 +155,3 @@ Status text indicating the method call result
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](https://developer.sprint.paymentology.com/card-api/profile-api-reference/)

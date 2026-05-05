@@ -3,9 +3,9 @@ title: LoadAdjustment
 category:
   uri: Companion API
 slug: loadadjustment
-position: 23
+position: 42
 parent:
-  uri: api-reference
+  uri: remote
 ---
 
 Adjust a previous transaction, load a wallet
@@ -168,5 +168,3 @@ Status code indicating transaction result
 </param>
 </params>
 </methodResponse>"
-
-[Back to Remote API menu](/api-reference/companion-api/remote)

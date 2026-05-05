@@ -3,9 +3,9 @@ title: LoadAuthReversal
 category:
   uri: Companion API
 slug: loadauthreversal
-position: 25
+position: 51
 parent:
-  uri: api-reference
+  uri: remote
 ---
 
 This method can only return the result codes of 1 (success) or -9 (an error occurred while queuing the Reversal).
@@ -114,5 +114,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Remote API menu](/api-reference/companion-api/remote)

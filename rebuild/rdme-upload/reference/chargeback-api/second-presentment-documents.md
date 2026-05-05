@@ -4,6 +4,8 @@ category:
   uri: Chargeback API
 slug: second-presentment-documents
 position: 13
+parent:
+  uri: chargeback-api-reference
 ---
 
 Once in the 2nd Presentment phase, this API method is used to receive the supporting documents raised by the acquirer for a claim.

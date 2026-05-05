@@ -3,7 +3,7 @@ title: UpdateCardLabel
 category:
   uri: Card API
 slug: updatecardlabel
-position: 48
+position: 47
 parent:
   uri: api-reference
 ---
@@ -135,5 +135,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

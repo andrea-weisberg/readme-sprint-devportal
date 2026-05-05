@@ -3,7 +3,7 @@ title: Forex gains report
 category:
   uri: Reports
 slug: card-api-forex-gains-report-2
-position: 20
+position: 18
 parent:
   uri: card-api-reports
 ---
@@ -38,7 +38,7 @@ The Forex Gains Report is also known as the Forex Fee Report
 
 ## Report sample
 
-![Forex gains report sample](https://developer.sprint.paymentology.com/wp-content/uploads/2021/08/Forex-gains-report-final-Card-API.png)
+![Forex gains report sample](https://files.readme.io/0380c14d3696a8d603dae7d312b67989ab6fccd2b94c54e73bd6adb17570be94-236ad8ea63a94355f68b79d0e89dc5126bc9e083f001d22bf4dd554dfac649f5-Forex-gains-report-final-Card-API.png)
 
 **Note: file will automatically download upon clicking link**
 

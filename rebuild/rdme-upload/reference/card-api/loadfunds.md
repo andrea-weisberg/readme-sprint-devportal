@@ -3,7 +3,7 @@ title: LoadFunds
 category:
   uri: Card API
 slug: loadfunds
-position: 22
+position: 29
 parent:
   uri: api-reference
 ---
@@ -191,5 +191,3 @@ Status text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

@@ -3,7 +3,9 @@ title: UpdateBearerExtended
 category:
   uri: Shared
 slug: updatebearerextended
-position: 49
+position: 47
+parent:
+  uri: profile-api-reference
 ---
 
 Update the cardholder details.

@@ -304,5 +304,3 @@ Echo
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

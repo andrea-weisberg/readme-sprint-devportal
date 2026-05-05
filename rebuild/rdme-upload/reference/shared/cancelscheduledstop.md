@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: cancelscheduledstop
 position: 8
+parent:
+  uri: profile-api-reference
 ---
 
 Cancels an existing scheduled stop. Will return an error if there is no scheduled stop for this card.

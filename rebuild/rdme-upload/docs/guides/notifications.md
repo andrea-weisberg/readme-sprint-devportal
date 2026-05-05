@@ -3,7 +3,7 @@ title: Notifications
 category:
   uri: Guides
 slug: notifications
-position: 31
+position: 51
 ---
 
 **Paymentology's Sprint Transaction Stream service allows API consumers to receive real-time notifications of the undertaken transactions. By subscribing to the notification service, consumers can know the status of transactions in real-time.**
@@ -82,7 +82,7 @@ Paymentology has used this service so that a client can simply subscribe to this
 
 ### How does it work
 
-![Pubnub transaction stream flow](https://developer.sprint.paymentology.com/wp-content/uploads/2024/02/Diagram-for-Sprint-Developer-Porta_Lightmode-3.png)
+![Pubnub transaction stream flow](https://files.readme.io/0971789d6901565f21675e0ee3cc0b616efa79eeb6db8e3f8facd2e2cd1d6705-4554319bd482bae8077e6efe9414b1bf6823d7a8e2bda56f3ae635e12c966985-Diagram-for-Sprint-Developer-Porta_Lightmode-3.png)
 
 - Transaction gets received from the VoucherEngine platform. As we receive it from the financial network and its being categorized according to the [Transaction types](#transaction) below
 
@@ -250,7 +250,7 @@ Update the HTTP Builder in the src/main/java/com/tutuka/transactionscroller/auth
 
 Example for UAT:
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2022/03/TTS-UAT-300x62.png)
+![](https://files.readme.io/c79873439a22fd2eb4d3422ef088c23fe06a233eb842f1282bfca33774a6974c-8faff2dfc34ea9feda24f93a734b9434551640a69234973870d4224fa156cc25-TTS-UAT-300x62.png)
 
 After following the above steps, you can start testing and working with the code.
 

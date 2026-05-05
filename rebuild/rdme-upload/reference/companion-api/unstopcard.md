@@ -3,9 +3,9 @@ title: UnstopCard
 category:
   uri: Companion API
 slug: unstopcard
-position: 47
+position: 24
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Unstop the specified card.
@@ -95,5 +95,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

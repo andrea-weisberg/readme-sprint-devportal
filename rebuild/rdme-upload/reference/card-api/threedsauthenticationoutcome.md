@@ -3,7 +3,7 @@ title: ThreeDSAuthenticationOutcome
 category:
   uri: Card API
 slug: threedsauthenticationoutcome
-position: 36
+position: 6
 parent:
   uri: api-reference
 ---

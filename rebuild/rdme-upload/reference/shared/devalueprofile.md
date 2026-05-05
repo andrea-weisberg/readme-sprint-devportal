@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: devalueprofile
 position: 19
+parent:
+  uri: profile-api-reference
 ---
 
 Deducts the requested amount from the Profile specified with a redemption type of “Devalue”. To deduct the remaining balance from the Profile automatically, specify the amount to be 0 (zero).

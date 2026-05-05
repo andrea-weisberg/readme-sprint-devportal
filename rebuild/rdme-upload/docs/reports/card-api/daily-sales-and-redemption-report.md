@@ -3,7 +3,7 @@ title: Daily sales and redemption report
 category:
   uri: Reports
 slug: card-api-daily-sales-and-redemption-report
-position: 15
+position: 7
 parent:
   uri: card-api-reports
 ---

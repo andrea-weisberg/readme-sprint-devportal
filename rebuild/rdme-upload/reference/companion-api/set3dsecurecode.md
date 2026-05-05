@@ -3,9 +3,9 @@ title: Set3dSecureCode
 category:
   uri: Companion API
 slug: set3dsecurecode
-position: 36
+position: 26
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Set 3D Secure Code of the specified card.
@@ -93,5 +93,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

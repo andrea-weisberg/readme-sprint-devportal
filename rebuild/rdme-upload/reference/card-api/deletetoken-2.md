@@ -3,7 +3,7 @@ title: DeleteToken
 category:
   uri: Card API
 slug: deletetoken-2
-position: 14
+position: 22
 parent:
   uri: api-reference
 ---
@@ -157,5 +157,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

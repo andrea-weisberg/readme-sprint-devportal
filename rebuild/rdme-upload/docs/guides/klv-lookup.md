@@ -3,7 +3,9 @@ title: KLV Lookup
 category:
   uri: Guides
 slug: klv-lookup
-position: 23
+position: 35
+parent:
+  uri: companion-api-guide
 ---
 
 Key-Length-Value (KLV) is a data encoding standard where the **Key** identifies the data, **Length** specifies the data's length and **Value**is the data itself. KLV is an instance of the TLV encoding scheme used for optional information element within communication protocols.

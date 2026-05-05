@@ -3,7 +3,7 @@ title: CreateVirtualCard
 category:
   uri: Card API
 slug: createvirtualcard
-position: 10
+position: 19
 parent:
   uri: api-reference
 ---
@@ -197,5 +197,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Card API Menu](/api-reference/card-api/api-reference)

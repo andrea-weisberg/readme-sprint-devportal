@@ -3,7 +3,9 @@ title: Secure APIs
 category:
   uri: Guides
 slug: secure-apis
-position: 48
+position: 26
+parent:
+  uri: companion-api-guide
 ---
 
 In the payment industry sensitive data has a real importance. Confidentiality of the sensitive data is important even while processing transactions and should be kept private (encrypted).

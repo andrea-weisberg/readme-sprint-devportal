@@ -3,7 +3,7 @@ title: VAU transaction report
 category:
   uri: Reports
 slug: card-api-vau-transaction-report
-position: 28
+position: 15
 parent:
   uri: card-api-reports
 ---

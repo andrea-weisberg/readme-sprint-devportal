@@ -3,9 +3,9 @@ title: QMR data report
 category:
   uri: Reports
 slug: companion-api-qmr-data-report
-position: 50
+position: 39
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 Paymentology's QMR (Quarterly Mastercard Report) data report contains transaction data and card/account data for the given quarter. The report can be provided to clients using Mastercard, to assist clients with their Mastercard quarterly reporting requirements.

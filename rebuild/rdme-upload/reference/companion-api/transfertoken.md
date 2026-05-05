@@ -3,9 +3,9 @@ title: TransferToken
 category:
   uri: Companion API
 slug: transfertoken
-position: 46
+position: 29
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Transfer a payment token from one card to another.
@@ -75,5 +75,3 @@ HMAC-SHA256 hashed signature of the concatenated method name with all argument v
 ```
 
 Status code indicating transaction result
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

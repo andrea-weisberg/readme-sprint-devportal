@@ -3,7 +3,7 @@ title: UnStopCard
 category:
   uri: Card API
 slug: unstopcard
-position: 45
+position: 43
 parent:
   uri: api-reference
 ---
@@ -128,5 +128,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

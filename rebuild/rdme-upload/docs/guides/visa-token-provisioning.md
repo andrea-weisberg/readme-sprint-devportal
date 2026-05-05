@@ -3,7 +3,9 @@ title: VTS
 category:
   uri: Guides
 slug: visa-token-provisioning
-position: 62
+position: 32
+parent:
+  uri: tokenization2
 ---
 
 The Visa Token Service (VTS) is a Visa-powered security technology that substitutes sensitive account data, such as the 16-digit account number, with a unique token that safeguards the underlying card details from being compromised. This greatly improves the security of digital transactions and provides customers with a seamless purchasing experience.

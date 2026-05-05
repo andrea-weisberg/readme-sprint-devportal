@@ -3,7 +3,9 @@ title: Payments
 category:
   uri: Guides
 slug: payments
-position: 35
+position: 10
+parent:
+  uri: tokenization
 ---
 
 Today, digital devices are an increasingly popular way of making payments. Mobile phones, smartwatches, tablets, and other smart devices rely on tokenization to ensure payments are fast, simple, and secure.

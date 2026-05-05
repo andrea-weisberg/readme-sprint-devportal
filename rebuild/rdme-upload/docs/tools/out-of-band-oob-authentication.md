@@ -3,8 +3,8 @@ title: Out-of-Band (OOB) Authentication
 category:
   uri: Tools
 slug: out-of-band-oob-authentication
-position: 9
+position: 10
 parent:
-  uri: tools
+  uri: 3d-secure-customization
 ---
 

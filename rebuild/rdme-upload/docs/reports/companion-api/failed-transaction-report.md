@@ -3,9 +3,9 @@ title: Failed transaction report
 category:
   uri: Reports
 slug: companion-api-failed-transaction-report
-position: 44
+position: 45
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 This report gives details of the transactions that were declined daily. It contains a list of transactions that Paymentology or the client declined, and sent a declined response code to the card association. With the failed transaction report file, it becomes easier to find the reasons for failures in transactions and improve the process.
@@ -120,7 +120,7 @@ If the transaction did not reach Paymentology and was declined, this would not a
 
 ## Report sample
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/10/Failed-transaction-report1-1.png)
+![](https://files.readme.io/7d3cde74b505e1fe1f809c2fe21da41f87f3e35c77b2bbe2fafc205df75a17df-6efdd6553f367311dc80ccb76842e9d95671c2a917b6444bbb5ecb39e0e9317b-Failed-transaction-report1-1.png)
 
 **Note: file will automatically download upon clicking link**
 

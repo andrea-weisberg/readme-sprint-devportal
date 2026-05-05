@@ -3,7 +3,7 @@ title: CardDetail
 category:
   uri: Card API
 slug: carddetail
-position: 8
+position: 17
 parent:
   uri: api-reference
 ---
@@ -192,5 +192,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Card API Menu](/api-reference/card-api/api-reference)

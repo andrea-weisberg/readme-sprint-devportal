@@ -3,7 +3,7 @@ title: PocketTransfer
 category:
   uri: Card API
 slug: pockettransfer
-position: 27
+position: 33
 parent:
   uri: api-reference
 ---
@@ -183,5 +183,3 @@ The expiry date of the card
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

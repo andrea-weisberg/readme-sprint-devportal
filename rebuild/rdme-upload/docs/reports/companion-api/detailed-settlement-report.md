@@ -3,9 +3,9 @@ title: Detailed settlement report
 category:
   uri: Reports
 slug: companion-api-detailed-settlement-report
-position: 42
+position: 43
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 Paymentology also provides a detailed version of the Summary Settlement Report.The Detailed Settlement Report shows each settled transaction, which allows you to use the Transaction ID to mark off settled transactions from authorized transactions. This also assists in confirming the values of the amounts in the Summary Settlement Report. The network provides the Transaction ID field during authorization. The same Transaction ID for authorizations is included in the Detailed Settlement Report.
@@ -130,7 +130,7 @@ Version 2.4 includes the following details:
 
 ## Report Sample
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/10/Detailed-Settlement-report1.png)
+![](https://files.readme.io/399226d2db6d867f8092a7a178f0a19d015413ce817917e0d0811e8f4d4d1b86-f10db77fde840dd28faceaf6608d0a031ac7c1b6cea56d5fb2476a94eac31b52-Detailed-Settlement-report1.png)
 
 **Note: file will automatically download upon clicking link**
 

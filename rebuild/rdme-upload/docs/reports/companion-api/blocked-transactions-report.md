@@ -3,9 +3,9 @@ title: Blocked transactions report
 category:
   uri: Reports
 slug: companion-api-blocked-transactions-report
-position: 36
+position: 30
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 This report lists detailed information about filtered transactions for a specific set of campaigns, during a specified date range.

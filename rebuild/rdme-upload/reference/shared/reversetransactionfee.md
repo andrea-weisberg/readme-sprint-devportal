@@ -3,7 +3,9 @@ title: ReverseTransactionFee
 category:
   uri: Shared
 slug: reversetransactionfee
-position: 34
+position: 32
+parent:
+  uri: profile-api-reference
 ---
 
 Reverse a fee that was charged via the API using [InsertTransactionFee](/api-reference/shared/inserttransactionfee)
@@ -144,5 +146,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

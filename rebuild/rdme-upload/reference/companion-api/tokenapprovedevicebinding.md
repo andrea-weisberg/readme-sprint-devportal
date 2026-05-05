@@ -3,9 +3,9 @@ title: TokenApproveDeviceBinding
 category:
   uri: Companion API
 slug: tokenapprovedevicebinding
-position: 43
+position: 9
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Bind the device with the token
@@ -117,5 +117,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

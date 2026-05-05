@@ -3,7 +3,7 @@ title: ListAllTokens
 category:
   uri: Card API
 slug: listalltokens
-position: 19
+position: 4
 parent:
   uri: api-reference
 ---
@@ -361,5 +361,3 @@ CurrentStatusDescription
 </params>
 </methodResponse>
 ```
-
-[Back to Local API Menu](/api-reference/companion-api/local-api)

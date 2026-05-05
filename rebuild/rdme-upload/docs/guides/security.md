@@ -3,7 +3,9 @@ title: Security
 category:
   uri: Guides
 slug: security
-position: 51
+position: 41
+parent:
+  uri: get-started
 ---
 
 **Security is central to everything we do at Paymentology**

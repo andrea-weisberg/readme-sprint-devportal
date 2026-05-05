@@ -3,7 +3,9 @@ title: Secure cards
 category:
   uri: Guides
 slug: secure-cards
-position: 50
+position: 20
+parent:
+  uri: companion-api-guide
 ---
 
 **The Sprint Card API allows you to access a wide range of features to ensure the security of card transactions.**

@@ -3,7 +3,7 @@ title: AddPocket
 category:
   uri: Card API
 slug: addpocket
-position: 4
+position: 15
 parent:
   uri: api-reference
 ---
@@ -143,5 +143,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

@@ -3,7 +3,9 @@ title: Reconciliation
 category:
   uri: Guides
 slug: settlement-and-reconciliation
-position: 52
+position: 33
+parent:
+  uri: companion-api-guide
 ---
 
 **Reconciliation is the process of matching transactions reported by Paymentology to the transactions recorded on the wallet platform to ensure that the amount settled by the card scheme is accurate.**
@@ -66,7 +68,7 @@ The report linked below assists client's with authorization reconciliation.
 
 A settlement is when funds are deducted from the Issuer/client's bank account and deposited in to a merchants bank account to settle a card transaction.
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2024/07/Dual-message-settlement-process.png)
+![](https://files.readme.io/9068c7a5f68c0d3b26a144999752012d31f6f5f8a4585ff53899ad9322cba3c1-5041c475b07024907c78d9d0b135f8a9cf93f55ea10dc0f5cb3b201a50e9ef09-Dual-message-settlement-process.png)
 
 ## Settlement process:
 
@@ -98,7 +100,7 @@ Revenue is the income earned from Forex gains and interchange.
 
 ## Forex Fluctuation
 
-![Forex fluctuation flow](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Forex-fluctuation-v2.png)
+![Forex fluctuation flow](https://files.readme.io/341504fa8b07d822df08427e550e90c0c58e6369c9293c0f88e575755fc00e82-473719fa59186bd858d8ebfd92a3e5809920fb9eeaeee408f434d7fff5a562c3-Forex-fluctuation-v2.png)
 
 ## **Revenue reports**
 

@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: checkload
 position: 13
+parent:
+  uri: profile-api-reference
 ---
 
 Provides a method to check if the specified amount was loaded on a card.

@@ -3,7 +3,9 @@ title: ReverseDeductCardLoadProfile
 category:
   uri: Shared
 slug: reversedeductcardloadprofile
-position: 32
+position: 30
+parent:
+  uri: profile-api-reference
 ---
 
 Reverse a previous DeductCardLoadProfile request.

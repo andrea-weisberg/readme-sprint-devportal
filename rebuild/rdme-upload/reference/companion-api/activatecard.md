@@ -3,9 +3,9 @@ title: ActivateCard
 category:
   uri: Companion API
 slug: activatecard
-position: 2
+position: 17
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Activate the specified card if the card was initially created as inactive.
@@ -83,5 +83,3 @@ Status text indicating result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API Menu](/api-reference/companion-api/local-api)

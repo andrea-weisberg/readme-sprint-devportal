@@ -3,7 +3,7 @@ title: Help
 category:
   uri: Guides
 slug: report-generator-help
-position: 42
+position: 47
 ---
 
 ## About Report Generator

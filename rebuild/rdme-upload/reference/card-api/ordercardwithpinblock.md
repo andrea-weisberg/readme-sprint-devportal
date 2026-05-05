@@ -3,7 +3,7 @@ title: OrderCardWithPinBlock
 category:
   uri: Card API
 slug: ordercardwithpinblock
-position: 26
+position: 32
 parent:
   uri: api-reference
 ---
@@ -407,5 +407,3 @@ Status text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[back to card api menu](/api-reference/card-api/api-reference)

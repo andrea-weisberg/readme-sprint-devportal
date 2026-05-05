@@ -40,6 +40,9 @@ class InventoryTests(TestCase):
             inventory.pages[0].links,
             ("https://developer.sprint.paymentology.com/card-api/",),
         )
+        self.assertEqual(inventory.pages[0].parent_id, "7")
+        self.assertEqual(inventory.pages[0].menu_order, 3)
+        self.assertEqual(inventory.pages[0].source_index, 1)
         self.assertGreaterEqual(len(inventory.attachments), 1)
         self.assertEqual(
             inventory.attachments,

@@ -3,7 +3,7 @@ title: Daily statement report
 category:
   uri: Reports
 slug: card-api-daily-statement-report
-position: 16
+position: 8
 parent:
   uri: card-api-reports
 ---

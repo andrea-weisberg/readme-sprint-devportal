@@ -3,7 +3,7 @@ title: Chargeback API
 category:
   uri: Chargeback API
 slug: chargeback-api
-position: 2
+position: 1
 ---
 
 Our Chargeback API makes managing the chargeback lifecycle faster and easier.

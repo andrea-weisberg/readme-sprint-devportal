@@ -3,7 +3,7 @@ title: DeductFundsReverse
 category:
   uri: Card API
 slug: deductfundsreverse
-position: 13
+position: 21
 parent:
   uri: api-reference
 ---
@@ -174,5 +174,3 @@ Status text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

@@ -3,9 +3,9 @@ title: TokenRemoveDeviceBinding
 category:
   uri: Companion API
 slug: tokenremovedevicebinding
-position: 44
+position: 10
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Remove device with the token
@@ -117,5 +117,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Local Companion API menu](/api-reference/companion-api/local-api)

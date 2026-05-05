@@ -3,9 +3,9 @@ title: ResetPin
 category:
   uri: Companion API
 slug: resetpin
-position: 34
+position: 20
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Reset the specified card’s PIN. The random pin will be sent to the card bearer’s cell via text message.
@@ -90,5 +90,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

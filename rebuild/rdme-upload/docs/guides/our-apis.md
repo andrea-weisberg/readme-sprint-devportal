@@ -3,7 +3,9 @@ title: Our APIs
 category:
   uri: Guides
 slug: our-apis
-position: 34
+position: 40
+parent:
+  uri: get-started
 ---
 
 **Paymentology's Sprint product provides simple, seamless, and scalable API integration solutions that enable quick and easy implementation and management of your card programs. We act as a payment enabler between card schemes like Mastercard, Visa, and Union Pay and your closed-loop wallet platform. Through our APIs, we are able to connect you with the card scheme of your choice, shielding you from all the complexities necessary for direct integration, so that you can focus on your business.**

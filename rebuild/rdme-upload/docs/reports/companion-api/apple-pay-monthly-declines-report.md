@@ -3,9 +3,9 @@ title: Apple Pay monthly declines report
 category:
   uri: Reports
 slug: companion-api-apple-pay-monthly-declines-report
-position: 29
+position: 54
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 For clients using Paymentology’s tokenization, Paymentology can issue monthly reports to clients to utilize the report data to compile their Apple report through the Apple Partner Connect platform.

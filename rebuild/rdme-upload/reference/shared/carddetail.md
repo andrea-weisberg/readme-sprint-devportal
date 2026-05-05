@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: carddetail
 position: 10
+parent:
+  uri: profile-api-reference
 ---
 
 Returns details regarding the created virtual card.
@@ -144,5 +146,3 @@ Status text indicating the method call result
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](https://developer.sprint.paymentology.com/card-api/profile-api-reference/)

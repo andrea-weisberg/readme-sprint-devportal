@@ -3,9 +3,9 @@ title: OrderCard
 category:
   uri: Companion API
 slug: ordercard
-position: 29
+position: 15
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Order a card for a specific cardholder. A card can be printed with cardholder details by the card manufacturer. No commas, question marks or quotation marks are allowed in any of the fields.
@@ -155,5 +155,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

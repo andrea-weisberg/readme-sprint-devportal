@@ -3,7 +3,7 @@ title: RetireCard
 category:
   uri: Card API
 slug: retirecard
-position: 30
+position: 35
 parent:
   uri: api-reference
 ---
@@ -128,5 +128,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

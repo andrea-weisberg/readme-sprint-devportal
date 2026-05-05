@@ -3,7 +3,9 @@ title: Client Testing Guide
 category:
   uri: Guides
 slug: client-testing-guide
-position: 9
+position: 44
+parent:
+  uri: get-started
 ---
 
 ## How to start testing

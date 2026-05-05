@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: balance
 position: 6
+parent:
+  uri: profile-api-reference
 ---
 
 Retrieve the balance of a card.
@@ -175,5 +177,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

@@ -3,9 +3,9 @@ title: Google Pay monthly report
 category:
   uri: Reports
 slug: companion-api-google-pay-monthly-report
-position: 46
+position: 35
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 A report which provides detailed information about cards that were tokenised to a Google Pay wallet within a given month. Client's can use the data from this report to fulfil their Google Pay reporting requirements.
@@ -38,7 +38,7 @@ The report includes the following details:
 
 ## Report sample
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_googlepay_monthlyreport_MMM-YYYY-.png)
+![](https://files.readme.io/8b2597079f37306e1321bdbb031370b38b0ba1f60f677e7c1215f85d2063b6bc-9328617f59cdbfac94971f8d5f2159769d355535f651743d5dfa4bbf7be77000-CampaignName_googlepay_monthlyreport_MMM-YYYY-.png)
 
 Note: file will automatically download upon clicking link
 

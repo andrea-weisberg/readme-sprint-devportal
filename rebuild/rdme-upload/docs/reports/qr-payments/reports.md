@@ -3,9 +3,7 @@ title: Reports
 category:
   uri: Reports
 slug: qr-payments-reports
-position: 3
-parent:
-  uri: card-api-reports
+position: 1
 ---
 
 **Paymentology provides end-to-end reporting and reconciliation capabilities to allow you to track all the financial movements, revenues collected, failed transactions, and more.**
@@ -52,7 +50,7 @@ The Mark-off file has the following fields:
 
 ## Report Sample
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Mark-Off-report-Companion-final.png)
+![](https://files.readme.io/96b51a3047972c2db0e0be0257b3111e246dd49290536095cb812b35f855cd8b-b519d4989d092f850cc09c6d2dc1d94988b5625f2dc7a5614163777e59ec3a58-Mark-Off-report-Companion-final.png)
 
 ## 2. Summary settlement report
 
@@ -86,4 +84,4 @@ Here is a description of the transactions you can find in the report:
 
 ## Report Sample
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Summary-Settlement-report-final.png)
+![](https://files.readme.io/95590d58d103d5682fd117cc41a891217824c4eef49492cfd8011aba6e2b61fe-2bb5e9d1b99970b394e480386336e1c2c810d40cfd7dd68b5762bce3c8cdeecc-Summary-Settlement-report-final.png)

@@ -3,7 +3,7 @@ title: Appendix
 category:
   uri: QR Payments
 slug: appendix
-position: 2
+position: 5
 parent:
   uri: api-reference
 ---

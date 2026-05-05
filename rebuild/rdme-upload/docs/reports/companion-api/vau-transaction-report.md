@@ -3,9 +3,9 @@ title: VAU transaction report
 category:
   uri: Reports
 slug: companion-api-vau-transaction-report
-position: 54
+position: 41
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 The purpose of this report is to send to the client the transactions that are still being made to a certain card that was already sent to VISA via the VAU file.

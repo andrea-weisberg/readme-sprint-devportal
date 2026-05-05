@@ -3,7 +3,9 @@ title: Messages
 category:
   uri: Guides
 slug: messages
-position: 30
+position: 25
+parent:
+  uri: companion-api-guide
 ---
 
 **These are two types of messages that Paymentology Sprint can send to a client:**

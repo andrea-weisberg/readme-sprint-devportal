@@ -3,7 +3,9 @@ title: First Chargeback
 category:
   uri: Chargeback API
 slug: first-chargeback
-position: 6
+position: 10
+parent:
+  uri: chargeback-api-reference
 ---
 
 After successfully connecting to the API Proxy, you can send the **fields/parameters** for the API request (as specified below) and receive a **response**.

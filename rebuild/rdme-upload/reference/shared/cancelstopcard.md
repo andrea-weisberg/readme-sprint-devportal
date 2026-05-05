@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: cancelstopcard
 position: 9
+parent:
+  uri: profile-api-reference
 ---
 
 Un-stop a card
@@ -128,5 +130,3 @@ Text indicating the result of the transaction
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](https://developer.sprint.paymentology.com/card-api/profile-api-reference/)

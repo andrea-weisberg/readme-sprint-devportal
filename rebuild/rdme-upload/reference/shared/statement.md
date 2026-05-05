@@ -3,7 +3,9 @@ title: Statement
 category:
   uri: Shared
 slug: statement
-position: 36
+position: 34
+parent:
+  uri: profile-api-reference
 ---
 
 Retrieve the statement of a card.

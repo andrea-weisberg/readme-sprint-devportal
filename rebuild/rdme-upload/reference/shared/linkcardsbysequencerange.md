@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: linkcardsbysequencerange
 position: 24
+parent:
+  uri: profile-api-reference
 ---
 
 Link multiple cards to a profile using a range of sequence numbers.
@@ -175,5 +177,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

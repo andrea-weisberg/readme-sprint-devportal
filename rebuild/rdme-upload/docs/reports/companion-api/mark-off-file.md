@@ -3,9 +3,9 @@ title: Mark-off file
 category:
   uri: Reports
 slug: companion-api-mark-off-file
-position: 49
+position: 38
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 This file contains a record of all successful transactions that Paymentology processes on behalf of a store of value like a wallet or a bank account. It includes the financial transactions between a store of value and Paymentology.Paymentology generates the Mark-off file daily at midnight in your local time zone. The file matches a report from a store of value for all successfully processed transactions.
@@ -56,7 +56,7 @@ The Mark-off file has the following fields:
 
 ## Report sample
 
-![MarkOff sample](https://developer.sprint.paymentology.com/wp-content/uploads/2021/10/Mark-Off-report-Companion-final.png)
+![MarkOff sample](https://files.readme.io/879867bf5dc9bf4fa939d258a689bca83c398333c1045939b041201e3385ba50-396c57f3a93ca535ed2a75b4e0c5e3859c4b15618e2346fb2772fa274baf2461-Mark-Off-report-Companion-final.png)
 
 **Note: file will automatically download upon clicking link**
 

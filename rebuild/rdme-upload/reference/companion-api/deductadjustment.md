@@ -3,9 +3,9 @@ title: DeductAdjustment
 category:
   uri: Companion API
 slug: deductadjustment
-position: 13
+position: 40
 parent:
-  uri: api-reference
+  uri: remote
 ---
 
 Adjust a previous transaction, deduct the requested amount from a wallet.
@@ -110,5 +110,3 @@ Status code indicating transaction result
 </param>
 </params>
 </methodResponse>"
-
-[Back to Remote API menu](/api-reference/companion-api/remote)

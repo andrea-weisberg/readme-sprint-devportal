@@ -3,7 +3,9 @@ title: ToggleVoucherFeature
 category:
   uri: Shared
 slug: togglevoucherfeature
-position: 41
+position: 39
+parent:
+  uri: profile-api-reference
 ---
 
 Toggles a voucher feature on or off
@@ -172,5 +174,3 @@ Echo of incoming value.
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

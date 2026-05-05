@@ -12,6 +12,7 @@ class RenderTests(TestCase):
             root = Path(tmp)
             pages = (
                 DestinationPage(
+                    "1",
                     "https://developer.sprint.paymentology.com/get-started/our-apis/",
                     "Guides/our-apis.md",
                     "Our APIs",
@@ -20,6 +21,7 @@ class RenderTests(TestCase):
                     "our-apis",
                 ),
                 DestinationPage(
+                    "2",
                     "https://developer.sprint.paymentology.com/card-api/api-reference/activatetoken/",
                     "API Reference/card-api/activatetoken.md",
                     "ActivateToken",

@@ -3,7 +3,7 @@ title: ListTokens
 category:
   uri: Card API
 slug: listtokens
-position: 21
+position: 28
 parent:
   uri: api-reference
 ---
@@ -685,5 +685,3 @@ Example: 123
 </params>
 </methodResponse>
 ```
-
-# [Back to Card API menu](/api-reference/card-api/api-reference)

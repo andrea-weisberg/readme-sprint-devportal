@@ -3,7 +3,7 @@ title: Summary settlement report
 category:
   uri: Reports
 slug: card-api-summary-settlement-report-2
-position: 27
+position: 16
 parent:
   uri: card-api-reports
 ---
@@ -36,7 +36,7 @@ Here is a description of the transactions you can find in the report:
 
 ## Report sample
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Summary-Settlement-report-final.png)
+![](https://files.readme.io/95590d58d103d5682fd117cc41a891217824c4eef49492cfd8011aba6e2b61fe-2bb5e9d1b99970b394e480386336e1c2c810d40cfd7dd68b5762bce3c8cdeecc-Summary-Settlement-report-final.png)
 
 **Note: file will automatically download upon clicking link**
 

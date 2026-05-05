@@ -3,9 +3,9 @@ title: ListAllTokens
 category:
   uri: Companion API
 slug: listalltokens
-position: 21
+position: 6
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Returns all the tokens (active and inactive) linked to a card
@@ -361,5 +361,3 @@ CurrentStatusDescription
 </params>
 </methodResponse>
 ```
-
-[Back to Local API Menu](/api-reference/companion-api/local-api)

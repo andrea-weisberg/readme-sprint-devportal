@@ -19,6 +19,7 @@ class MappingTests(TestCase):
         destination = map_page(page)
 
         self.assertEqual(destination.path, "API Reference/card-api/activatetoken.md")
+        self.assertEqual(destination.source_index, 0)
 
     def test_map_choose_api_page_to_guides(self):
         page = SourcePage(

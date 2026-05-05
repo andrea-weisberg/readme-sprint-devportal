@@ -3,7 +3,9 @@ title: UploadFicaDocument
 category:
   uri: Shared
 slug: uploadficadocument
-position: 53
+position: 51
+parent:
+  uri: profile-api-reference
 ---
 
 Uploads identification to be FICA compliant.

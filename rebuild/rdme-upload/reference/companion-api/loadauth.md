@@ -3,9 +3,9 @@ title: LoadAuth
 category:
   uri: Companion API
 slug: loadauth
-position: 24
+position: 49
 parent:
-  uri: api-reference
+  uri: remote
 ---
 
 Sends the request to preload in case of a refund request or a request to load a card.
@@ -109,5 +109,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Remote API menu](/api-reference/companion-api/remote)

@@ -3,7 +3,9 @@ title: Lifecycle Management
 category:
   uri: Guides
 slug: lifecycle-management
-position: 24
+position: 13
+parent:
+  uri: tokenization
 ---
 
 Token lifecycle management refers to handling the different states of the token, from creation to expiry. All tokens have a lifecycle; that is, the series of events happening from the date of creation to the expiry date when they’re no longer valid. The expiry date is usually linked to the expiry date of the full PAN that was used for provisioning.

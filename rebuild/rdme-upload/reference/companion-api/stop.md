@@ -3,9 +3,9 @@ title: Stop
 category:
   uri: Companion API
 slug: stop
-position: 38
+position: 46
 parent:
-  uri: api-reference
+  uri: remote
 ---
 
 Notification that a card was stopped.
@@ -110,5 +110,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Remote API menu](/api-reference/companion-api/remote)

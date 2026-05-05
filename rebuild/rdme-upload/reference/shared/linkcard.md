@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: linkcard
 position: 23
+parent:
+  uri: profile-api-reference
 ---
 
 Link a card to a profile.
@@ -135,5 +137,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

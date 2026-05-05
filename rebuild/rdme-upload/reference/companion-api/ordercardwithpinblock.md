@@ -3,9 +3,9 @@ title: OrderCardWithPinBlock
 category:
   uri: Companion API
 slug: ordercardwithpinblock
-position: 30
+position: 16
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Order a card for a specific cardholder. You can choose this method if you want the PIN of the card printed on its card carrier or if you have Offline PIN validation in your country.
@@ -301,5 +301,3 @@ Text used to accompany the resultCode and provide further detail of the transact
 </params>
 </methodResponse>
 ```
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

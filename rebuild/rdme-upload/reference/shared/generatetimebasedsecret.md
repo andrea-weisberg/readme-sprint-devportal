@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: generatetimebasedsecret
 position: 20
+parent:
+  uri: profile-api-reference
 ---
 
 Generates a “secret token” to enable communication with our tokenisation APIs.
@@ -123,5 +125,3 @@ generated TOTP.
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

@@ -3,7 +3,9 @@ title: UpdateProfile
 category:
   uri: Shared
 slug: updateprofile
-position: 50
+position: 48
+parent:
+  uri: profile-api-reference
 ---
 
 Updates a profile owner's details.

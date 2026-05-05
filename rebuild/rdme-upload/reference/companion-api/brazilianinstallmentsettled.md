@@ -3,9 +3,9 @@ title: BrazilianInstallmentSettled
 category:
   uri: Companion API
 slug: brazilianinstallmentsettled
-position: 7
+position: 50
 parent:
-  uri: api-reference
+  uri: remote
 ---
 
 Notifies that a Brazilian installment transaction is settled.
@@ -153,5 +153,3 @@ resultCode
 </param>
 </params>
 </methodResponse>
-
-[back to remote api menu](/api-reference/companion-api/remote)

@@ -3,9 +3,9 @@ title: ActivateToken
 category:
   uri: Companion API
 slug: activatetoken
-position: 3
+position: 35
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Used to activate a token for a digitization that has been approved and provisioned, but requires additional cardholder authentication prior to activation. It is expected that a cardholder will complete the authentication process using an issuer's call center or using an issuer-supplied mobile application, and only then should the issuer use this API to activate the token.
@@ -120,5 +120,3 @@ Text used to accompany the resultCode and provide further detail of the transact
 </params>
 </methodResponse>
 ```
-
-[Back to Local API Menu](/api-reference/companion-api/local-api)

@@ -3,7 +3,7 @@ title: Apple Pay monthly usage frequency report
 category:
   uri: Reports
 slug: card-api-apple-pay-monthly-usage-frequency-report
-position: 8
+position: 25
 parent:
   uri: card-api-reports
 ---
@@ -52,7 +52,7 @@ Only settled transactions are counted.
 
 ## Report sample
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Monthly-Frequency-Report-Month-YYYY-_.png)
+![](https://files.readme.io/644a772179fb50ec05757e0e186de2dc2d2f2a2107254352ea0d2c41f2952510-ac11b5ca23bf95ae5e8f8d7c27a6e3a8f7ae2f3d414f66ef6d03e12e2b654370-CampaignName_ApplePay-Monthly-Frequency-Report-Month-YYYY-_.png)
 
 **Note: file will automatically download upon clicking link**
 

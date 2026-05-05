@@ -3,9 +3,9 @@ title: PrintLinkedCardWithPINBlock
 category:
   uri: Companion API
 slug: printlinkedcardwithpinblock
-position: 32
+position: 7
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 This API is used to Print the specified card if the card was initially created as virtual with PIN block
@@ -176,5 +176,3 @@ Result text indicating Approved or Declined
 </params>
 </methodResponse>
 ```
-
-[Back to Local API Menu](/api-reference/companion-api/local-api)

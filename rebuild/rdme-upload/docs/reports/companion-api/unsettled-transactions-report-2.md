@@ -3,9 +3,9 @@ title: Unsettled transactions report
 category:
   uri: Reports
 slug: companion-api-unsettled-transactions-report-2
-position: 53
+position: 47
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 This report provides client's with a full list of unsettled transactions, it assists with overall reconciliation.
@@ -92,7 +92,7 @@ This report includes the following details:
 
 ## Report sample
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_UnsettledTransactionReport_YYYYMMDD-.png)
+![](https://files.readme.io/c2c50e3a784b38eee19a01ae6a93c837513045e5e16a10dcead2539f65b24fc2-cabd41a28af62f156ef463924aa92ba462f6ad6cc7957aa4e804fe9013eba11f-CampaignName_UnsettledTransactionReport_YYYYMMDD-.png)
 
 **Note: file will automatically download upon clicking link**
 

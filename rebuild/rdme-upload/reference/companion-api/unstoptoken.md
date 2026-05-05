@@ -3,9 +3,9 @@ title: UnstopToken
 category:
   uri: Companion API
 slug: unstoptoken
-position: 48
+position: 32
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Unstops a token reference or all the ones linked to a card
@@ -122,5 +122,3 @@ Status text indicating result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API Menu](/api-reference/companion-api/local-api)

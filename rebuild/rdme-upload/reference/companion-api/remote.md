@@ -3,7 +3,7 @@ title: Remote
 category:
   uri: Companion API
 slug: remote
-position: 33
+position: 38
 parent:
   uri: api-reference
 ---

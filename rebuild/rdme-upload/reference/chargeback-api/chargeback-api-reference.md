@@ -3,7 +3,9 @@ title: Chargeback API REFERENCE
 category:
   uri: Chargeback API
 slug: chargeback-api-reference
-position: 1
+position: 8
+parent:
+  uri: chargeback-api
 ---
 
 The Chargeback API contains the endpoints that you call in order to create chargebacks as well as maintain the chargeback lifecycle.

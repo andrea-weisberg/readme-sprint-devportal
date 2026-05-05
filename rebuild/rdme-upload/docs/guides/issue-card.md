@@ -3,7 +3,9 @@ title: Issue cards
 category:
   uri: Guides
 slug: issue-card
-position: 21
+position: 4
+parent:
+  uri: card-api
 ---
 
 ## With the Card API you can o ffer your customers two types of cards:
@@ -13,7 +15,7 @@ position: 21
 **Physical card**
 The traditional plastic payment card
 
-![Card API Issuing process flow](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Card-API-issuing-process-flow-v2.png)
+![Card API Issuing process flow](https://files.readme.io/3e07667b0354c537c2ecad710df391cfdbcc42f98a8fda99f99ae3f961606c74-d6f44779aed6bb305555eb1f86772e580beba38fbd608810c494af28d8e4566e-Card-API-issuing-process-flow-v2.png)
 
 ## 1. Issuing a virtual card
 

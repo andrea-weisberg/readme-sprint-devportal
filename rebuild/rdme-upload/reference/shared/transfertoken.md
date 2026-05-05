@@ -3,7 +3,9 @@ title: TransferToken
 category:
   uri: Shared
 slug: transfertoken
-position: 45
+position: 43
+parent:
+  uri: profile-api-reference
 ---
 
 Transfer a payment token from one card to another
@@ -129,5 +131,3 @@ Error Fault for invalid checksum authentication returns the following message:
 </fault>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](#https://developer.sprint.paymentology.com/profile-api-reference/)

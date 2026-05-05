@@ -3,7 +3,9 @@ title: "Remote Messaging API: chargeback notification"
 category:
   uri: Chargeback API
 slug: remote-messaging-api-chargeback-notification
-position: 10
+position: 6
+parent:
+  uri: remote-messaging-api
 ---
 
 This message is to notify the client of Chargeback status updates.

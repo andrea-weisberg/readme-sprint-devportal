@@ -3,7 +3,7 @@ title: ToggleVoucherFeature
 category:
   uri: Card API
 slug: togglevoucherfeature
-position: 37
+position: 7
 parent:
   uri: api-reference
 ---
@@ -116,5 +116,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Card API Menu](/api-reference/card-api/api-reference)

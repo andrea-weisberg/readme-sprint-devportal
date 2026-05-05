@@ -3,9 +3,9 @@ title: Summary settlement report
 category:
   uri: Reports
 slug: companion-api-summary-settlement-report
-position: 52
+position: 42
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 This gives a daily summary of all the transactions settled by the card association. Paymentology gathers the information from the card association file and packages it into a summary report.It is a report where you can find a summary of transaction types, the number of transactions that have been settled for the day, fees and interchanges earned.
@@ -38,7 +38,7 @@ Here is a description of the transactions you can find in the report:
 
 ## Report Sample
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/10/Summary-Settlement-report-final1.png)
+![](https://files.readme.io/f172626f40b4e8991e0b1294ec929fd26c34ba5cd10e4ca670889473dbe4b16b-37f0bfe77527eb55651249a95fb2110726df5d0eb93899979404ef5d744264d2-Summary-Settlement-report-final1.png)
 
 **Note: file will automatically download upon clicking link**
 

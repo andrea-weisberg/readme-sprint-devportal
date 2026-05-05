@@ -3,7 +3,7 @@ title: Profile API Reference
 category:
   uri: Shared
 slug: profile-api-reference
-position: 29
+position: 2
 ---
 
 ## Card Issuance and Management API's

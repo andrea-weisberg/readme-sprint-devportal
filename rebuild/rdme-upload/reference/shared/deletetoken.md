@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: deletetoken
 position: 17
+parent:
+  uri: profile-api-reference
 ---
 
 Remove a payment token linked to a card
@@ -203,5 +205,3 @@ Error Fault for invalid checksum authentication returns the following message:
 </fault>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

@@ -3,9 +3,9 @@ title: Status
 category:
   uri: Companion API
 slug: status
-position: 37
+position: 25
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Return the status of the specified card.
@@ -182,5 +182,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

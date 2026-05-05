@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: allocateiban
 position: 5
+parent:
+  uri: profile-api-reference
 ---
 
 Allocate an IBAN [Account Number] for a card linked to the specified profile.

@@ -3,9 +3,9 @@ title: ListTokens
 category:
   uri: Companion API
 slug: listtokens
-position: 22
+position: 33
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Returns all the active tokens linked to a card
@@ -655,5 +655,3 @@ Example: 123
 </params>
 </methodResponse>
 ```
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

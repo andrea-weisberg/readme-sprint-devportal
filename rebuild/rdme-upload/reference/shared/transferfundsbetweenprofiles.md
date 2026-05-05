@@ -3,7 +3,9 @@ title: TransferFundsBetweenProfiles
 category:
   uri: Shared
 slug: transferfundsbetweenprofiles
-position: 43
+position: 41
+parent:
+  uri: profile-api-reference
 ---
 
 Transfer funds from one profile to another.
@@ -174,5 +176,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

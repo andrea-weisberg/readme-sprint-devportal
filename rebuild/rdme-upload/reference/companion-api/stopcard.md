@@ -3,9 +3,9 @@ title: StopCard
 category:
   uri: Companion API
 slug: stopcard
-position: 39
+position: 23
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Stop the specified card.
@@ -117,5 +117,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

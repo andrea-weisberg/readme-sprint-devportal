@@ -3,7 +3,7 @@ title: TokenApproveDeviceBinding
 category:
   uri: Card API
 slug: tokenapprovedevicebinding
-position: 39
+position: 8
 parent:
   uri: api-reference
 ---
@@ -166,5 +166,3 @@ Echo
 </params>
 </methodResponse>
 ```
-
-[Back to Card API menu](/api-reference/card-api/api-reference)

@@ -3,7 +3,7 @@ title: Statement
 category:
   uri: Card API
 slug: statement
-position: 33
+position: 38
 parent:
   uri: api-reference
 ---
@@ -586,5 +586,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

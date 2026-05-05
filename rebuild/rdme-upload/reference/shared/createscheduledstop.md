@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: createscheduledstop
 position: 14
+parent:
+  uri: profile-api-reference
 ---
 
 Schedules the stop of the card on the date of the parameter. There can only be one active scheduled stop for a card.

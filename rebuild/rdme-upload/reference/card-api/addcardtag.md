@@ -3,7 +3,7 @@ title: AddCardTag
 category:
   uri: Card API
 slug: addcardtag
-position: 3
+position: 12
 parent:
   uri: api-reference
 ---
@@ -144,5 +144,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

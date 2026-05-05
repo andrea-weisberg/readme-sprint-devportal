@@ -3,9 +3,9 @@ title: TransferLink
 category:
   uri: Companion API
 slug: transferlink
-position: 45
+position: 22
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Transfer a reference to a new card. The old card will be stopped and the bearer details transferred to the new card. The new card will be linked and activated.
@@ -95,5 +95,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

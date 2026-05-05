@@ -3,7 +3,9 @@ title: Upload Supporting Document
 category:
   uri: Chargeback API
 slug: upload-supporting-document
-position: 14
+position: 11
+parent:
+  uri: chargeback-api-reference
 ---
 
 This API method is used to upload a supporting document after a chargeback is successfully created.

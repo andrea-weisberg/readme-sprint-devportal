@@ -3,7 +3,9 @@ title: StopToken
 category:
   uri: Shared
 slug: stoptoken
-position: 40
+position: 38
+parent:
+  uri: profile-api-reference
 ---
 
 Stops a token reference or all the ones linked to a card.
@@ -184,5 +186,3 @@ Error Fault for invalid checksum authentication returns the following message:
 </fault>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

@@ -3,9 +3,9 @@ title: Help
 category:
   uri: Tools
 slug: checksum-generator-help
-position: 3
+position: 13
 parent:
-  uri: tools
+  uri: checksum-generator
 ---
 
 ## About the Checksum Generator

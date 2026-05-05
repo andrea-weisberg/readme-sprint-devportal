@@ -17,6 +17,7 @@ class LinkRewriteTests(TestCase):
         )
         destinations = {
             "https://developer.sprint.paymentology.com/card-api/api-reference/activatetoken/": DestinationPage(
+                "2",
                 "https://developer.sprint.paymentology.com/card-api/api-reference/activatetoken/",
                 "API Reference/card-api/activatetoken.md",
                 "ActivateToken",

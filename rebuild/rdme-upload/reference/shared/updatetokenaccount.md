@@ -3,7 +3,9 @@ title: UpdateTokenAccount
 category:
   uri: Shared
 slug: updatetokenaccount
-position: 52
+position: 50
+parent:
+  uri: profile-api-reference
 ---
 
 Updates the card PAN information associated with a token
@@ -142,5 +144,3 @@ Error Fault for invalid checksum authentication is the following message:
 </fault>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

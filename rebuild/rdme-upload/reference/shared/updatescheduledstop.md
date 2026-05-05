@@ -3,7 +3,9 @@ title: UpdateScheduledStop
 category:
   uri: Shared
 slug: updatescheduledstop
-position: 51
+position: 49
+parent:
+  uri: profile-api-reference
 ---
 
 Updates an existing scheduled stop.

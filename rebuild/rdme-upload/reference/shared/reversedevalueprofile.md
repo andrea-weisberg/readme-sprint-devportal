@@ -3,7 +3,9 @@ title: ReverseDevalueProfile
 category:
   uri: Shared
 slug: reversedevalueprofile
-position: 33
+position: 31
+parent:
+  uri: profile-api-reference
 ---
 
 Reverse a previous DevalueProfile request.

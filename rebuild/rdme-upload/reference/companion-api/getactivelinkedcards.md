@@ -3,9 +3,9 @@ title: GetActiveLinkedCards
 category:
   uri: Companion API
 slug: getactivelinkedcards
-position: 17
+position: 18
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Get an array of card details of activated cards linked to the reference.
@@ -141,5 +141,3 @@ Text indicating transaction result.
 </param>
 </params>
 </methodresponse>
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

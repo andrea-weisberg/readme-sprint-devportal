@@ -3,9 +3,9 @@ title: Reporting API (Card)
 category:
   uri: Reports
 slug: shared-reporting-api
-position: 57
+position: 55
 parent:
-  uri: card-api-reports
+  uri: qr-payments-reports
 ---
 
 **The Reporting API is a local API which can be called to obtain files produced by Tutuka, foe example, reports.**

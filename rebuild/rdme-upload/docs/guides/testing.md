@@ -3,7 +3,9 @@ title: Get connected
 category:
   uri: Guides
 slug: testing
-position: 53
+position: 42
+parent:
+  uri: get-started
 ---
 
 **To facilitate easier API integrations, Paymentology provides two integration environments: test environment and live environment.**

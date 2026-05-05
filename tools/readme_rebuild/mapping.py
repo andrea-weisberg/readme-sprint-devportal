@@ -20,10 +20,14 @@ def map_page(page: SourcePage) -> DestinationPage:
         path = f"Guides/{slug}.md"
 
     return DestinationPage(
+        source_id=page.source_id,
         source_url=page.source_url,
         path=path,
         title=page.title,
         top_bar=classification.top_bar,
         subsection=classification.subsection,
         slug=slug,
+        parent_source_id=page.parent_id,
+        menu_order=page.menu_order,
+        source_index=page.source_index,
     )

@@ -3,7 +3,7 @@ title: TransferLink
 category:
   uri: Card API
 slug: transferlink
-position: 43
+position: 11
 parent:
   uri: api-reference
 ---
@@ -151,5 +151,3 @@ Result text whether its approved or not
 </params>
 </methodResponse>
 ```
-
-[Back to Card API Menu](/api-reference/card-api/api-reference)

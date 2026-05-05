@@ -3,7 +3,7 @@ title: OrderCard
 category:
   uri: Card API
 slug: ordercard
-position: 25
+position: 31
 parent:
   uri: api-reference
 ---
@@ -251,5 +251,3 @@ Status text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[back to card api menu](/api-reference/card-api/api-reference)

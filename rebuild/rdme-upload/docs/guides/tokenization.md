@@ -3,7 +3,9 @@ title: Tokenization
 category:
   uri: Guides
 slug: tokenization
-position: 58
+position: 9
+parent:
+  uri: card-api
 ---
 
 Tokenization is the process of substituting the card’s sensitive data, such as an account number, with non-sensitive, surrogate data, called a token. The PAN (Primary Account Number) is usually replaced with a unique string of numbers that acts as a secure reference to the card.

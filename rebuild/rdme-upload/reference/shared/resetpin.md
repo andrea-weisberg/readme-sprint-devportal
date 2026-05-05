@@ -3,7 +3,9 @@ title: ResetPin
 category:
   uri: Shared
 slug: resetpin
-position: 31
+position: 29
+parent:
+  uri: profile-api-reference
 ---
 
 Provides a method to reset the PIN of a card.

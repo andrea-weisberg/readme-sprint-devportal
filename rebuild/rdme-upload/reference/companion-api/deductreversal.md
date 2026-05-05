@@ -3,9 +3,9 @@ title: DeductReversal
 category:
   uri: Companion API
 slug: deductreversal
-position: 14
+position: 41
 parent:
-  uri: api-reference
+  uri: remote
 ---
 
 Reverse a deduct that was previously requested on a wallet.
@@ -113,5 +113,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Remote API menu](/api-reference/companion-api/remote)

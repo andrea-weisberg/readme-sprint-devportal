@@ -3,7 +3,7 @@ title: SetBearerDetail
 category:
   uri: Card API
 slug: setbearerdetail
-position: 32
+position: 37
 parent:
   uri: api-reference
 ---
@@ -230,5 +230,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

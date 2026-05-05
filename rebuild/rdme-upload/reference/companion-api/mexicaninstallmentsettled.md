@@ -3,9 +3,9 @@ title: MexicanInstallmentSettled
 category:
   uri: Companion API
 slug: mexicaninstallmentsettled
-position: 28
+position: 52
 parent:
-  uri: api-reference
+  uri: remote
 ---
 
 Notifies that a Mexican installment transaction is settled.
@@ -110,5 +110,3 @@ resultCode
 </param>
 </params>
 </methodResponse>
-
-[BACK TO REMOTE API MENU](/api-reference/companion-api/remote)

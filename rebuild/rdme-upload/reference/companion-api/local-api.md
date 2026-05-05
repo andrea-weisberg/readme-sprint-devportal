@@ -3,7 +3,7 @@ title: Local API
 category:
   uri: Companion API
 slug: local-api
-position: 27
+position: 2
 parent:
   uri: api-reference
 ---

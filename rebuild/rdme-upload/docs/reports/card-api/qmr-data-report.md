@@ -3,7 +3,7 @@ title: QMR data report
 category:
   uri: Reports
 slug: card-api-qmr-data-report
-position: 25
+position: 13
 parent:
   uri: card-api-reports
 ---

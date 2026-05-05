@@ -3,9 +3,9 @@ title: Forex gains report
 category:
   uri: Reports
 slug: companion-api-forex-gains-report
-position: 45
+position: 44
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 If you’re marking up a transaction with a forex fee, you’ll receive a report each day showing the FX amount that you earned as revenue for the day.
@@ -38,7 +38,7 @@ The report includes the following details:
 
 ## Report sample
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/10/Forex-Gains1.png)
+![](https://files.readme.io/fa5353ca0cec6609573b6332eaf54e64ac5770ba190d88c79de7c831692728d6-d58c887aeaa18b21b3e5ff2f92c45612cf96fb3913008474092ce5a10bbe2c64-Forex-Gains1.png)
 
 **Note: file will automatically download upon clicking link**
 

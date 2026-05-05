@@ -3,7 +3,7 @@ title: generateTimeBasedSecret
 category:
   uri: Guides
 slug: generatetimebasedsecret
-position: 16
+position: 37
 ---
 
 Generates a "secret token" to enable communication with our tokenisation APIs.
@@ -115,5 +115,3 @@ generated TOTP
 </params>
 </methodResponse>
 ```
-
-[Back to Local API Menu](/api-reference/companion-api/local-api)

@@ -4,6 +4,8 @@ category:
   uri: Chargeback API
 slug: query-chargeback
 position: 9
+parent:
+  uri: chargeback-api-reference
 ---
 
 This method is used to query chargeback data from Paymentology.

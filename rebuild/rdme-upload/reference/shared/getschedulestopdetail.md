@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: getschedulestopdetail
 position: 21
+parent:
+  uri: profile-api-reference
 ---
 
 Returns the existing scheduled stops for a card. The response may return multiple records but only one of them can be in 'SCHEDULED' state.

@@ -3,9 +3,9 @@ title: Administrative message values
 category:
   uri: Companion API
 slug: administrative-message-values
-position: 4
+position: 45
 parent:
-  uri: api-reference
+  uri: administrativemessage
 ---
 
 Values for the messageName field

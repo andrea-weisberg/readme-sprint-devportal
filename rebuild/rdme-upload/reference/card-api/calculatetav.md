@@ -3,7 +3,7 @@ title: CalculateTAV
 category:
   uri: Card API
 slug: calculatetav
-position: 7
+position: 3
 parent:
   uri: api-reference
 ---
@@ -105,5 +105,3 @@ TAV)
 </params>
 </methodResponse>
 ```
-
-[Back To Card API Menu](/api-reference/card-api/api-reference)

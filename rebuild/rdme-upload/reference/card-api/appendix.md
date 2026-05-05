@@ -3,7 +3,7 @@ title: Response Codes
 category:
   uri: Card API
 slug: appendix
-position: 5
+position: 14
 parent:
   uri: api-reference
 ---

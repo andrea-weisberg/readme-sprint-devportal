@@ -29,15 +29,35 @@ def export_rdme_source(
 ) -> RdmeExportManifest:
     shutil.rmtree(output_root, ignore_errors=True)
     docs_count = 0
-    reference_count = 0
+    reference_count = 1
     guide_categories: set[str] = set()
-    reference_categories: set[str] = set()
+    reference_categories: set[str] = {"Shared"}
     ordered_pages = _sorted_pages(pages)
     pages_by_bucket = _group_pages_by_bucket(ordered_pages)
     parent_slugs = _parent_slugs_by_bucket(pages_by_bucket)
 
+    overview_path = output_root / "reference" / "shared" / "api-reference.md"
+    overview_path.parent.mkdir(parents=True, exist_ok=True)
+    overview_path.write_text(
+        _build_frontmatter(
+            title="API Reference",
+            category_title="Shared",
+            slug="api-reference",
+            position=1,
+            parent_slug=None,
+        )
+        + "\n\n"
+        + _api_reference_overview_body()
+        ,
+        encoding="utf-8",
+    )
+
     for bucket, bucket_pages in pages_by_bucket.items():
-        for position, page in enumerate(bucket_pages, start=1):
+        start_position = 2 if bucket == ("reference", "Shared") else 1
+        bucket_pages_by_source_id = {
+            page.source_id: page for page in bucket_pages if page.source_id
+        }
+        for offset, page in enumerate(bucket_pages, start=start_position):
             export_path = output_root / _relative_export_path(page)
             export_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -49,8 +69,12 @@ def export_rdme_source(
                 title=page.title,
                 category_title=category_title,
                 slug=_slug_for_export(page),
-                position=position,
-                parent_slug=_parent_slug_for_page(page, parent_slugs.get(bucket)),
+                position=offset,
+                parent_slug=_parent_slug_for_page(
+                    page,
+                    parent_slugs.get(bucket),
+                    bucket_pages_by_source_id,
+                ),
             )
             export_path.write_text(f"{frontmatter}\n\n{body}", encoding="utf-8")
 
@@ -70,7 +94,7 @@ def export_rdme_source(
 
 
 def _sorted_pages(pages: tuple[DestinationPage, ...]) -> tuple[DestinationPage, ...]:
-    return tuple(sorted(pages, key=lambda page: (page.path.count("/"), page.path)))
+    return tuple(sorted(pages, key=lambda page: (page.source_index, page.path)))
 
 
 def _group_pages_by_bucket(
@@ -80,8 +104,8 @@ def _group_pages_by_bucket(
     for page in pages:
         grouped[_bucket_for_page(page)].append(page)
 
-    for bucket_pages in grouped.values():
-        bucket_pages.sort(key=_bucket_page_sort_key)
+    for bucket, bucket_pages in grouped.items():
+        grouped[bucket] = _ordered_bucket_pages(bucket_pages)
 
     return grouped
 
@@ -144,13 +168,48 @@ def _parent_slugs_by_bucket(
 
 def _bucket_page_sort_key(page: DestinationPage) -> tuple[int, str]:
     priority = 0 if page.slug in {"api-reference", "reports", "tools"} else 1
-    return (priority, page.path)
+    return (priority, page.menu_order, page.source_index, page.path)
 
 
-def _parent_slug_for_page(page: DestinationPage, parent_slug: str | None) -> str | None:
-    if not parent_slug or _slug_for_export(page) == parent_slug:
+def _ordered_bucket_pages(bucket_pages: list[DestinationPage]) -> list[DestinationPage]:
+    pages_by_source_id = {page.source_id: page for page in bucket_pages if page.source_id}
+    children_by_parent: dict[str, list[DestinationPage]] = defaultdict(list)
+    roots: list[DestinationPage] = []
+
+    for page in bucket_pages:
+        if page.parent_source_id and page.parent_source_id in pages_by_source_id:
+            children_by_parent[page.parent_source_id].append(page)
+        else:
+            roots.append(page)
+
+    for children in children_by_parent.values():
+        children.sort(key=_bucket_page_sort_key)
+    roots.sort(key=_bucket_page_sort_key)
+
+    ordered: list[DestinationPage] = []
+
+    def visit(page: DestinationPage) -> None:
+        ordered.append(page)
+        for child in children_by_parent.get(page.source_id, ()):
+            visit(child)
+
+    for root in roots:
+        visit(root)
+
+    return ordered
+
+
+def _parent_slug_for_page(
+    page: DestinationPage,
+    bucket_parent_slug: str | None,
+    bucket_pages_by_source_id: dict[str, DestinationPage],
+) -> str | None:
+    if page.parent_source_id and page.parent_source_id in bucket_pages_by_source_id:
+        parent_page = bucket_pages_by_source_id[page.parent_source_id]
+        return _slug_for_export(parent_page)
+    if not bucket_parent_slug or _slug_for_export(page) == bucket_parent_slug:
         return None
-    return parent_slug
+    return bucket_parent_slug
 
 
 def _strip_leading_title(content: str, title: str) -> str:
@@ -207,6 +266,7 @@ def _yaml_string(value: str) -> str:
 def _sanitize_body_for_rdme(body: str) -> str:
     sanitized = body.replace("![", "\n\n![")
     sanitized = re.sub(r"\n{3,}", "\n\n", sanitized)
+    sanitized = _strip_legacy_navigation(sanitized)
     sanitized = _wrap_xml_blocks(sanitized)
     return sanitized
 
@@ -239,3 +299,26 @@ def _wrap_xml_blocks(body: str) -> str:
     flush_buffer()
     rendered = "\n".join(output).rstrip()
     return f"{rendered}\n" if rendered else ""
+
+
+def _strip_legacy_navigation(body: str) -> str:
+    lines = body.splitlines()
+    filtered: list[str] = []
+    for line in lines:
+        if re.match(r"^\s{0,3}#*\s*\[back to .*?\]\(.*\)\s*$", line, re.IGNORECASE):
+            continue
+        filtered.append(line)
+    rendered = "\n".join(filtered)
+    rendered = re.sub(r"\n{3,}", "\n\n", rendered).strip()
+    return f"{rendered}\n" if rendered else ""
+
+
+def _api_reference_overview_body() -> str:
+    return (
+        "Browse the API families below using ReadMe's native reference navigation.\n\n"
+        "- Card API\n"
+        "- Companion API\n"
+        "- QR Payments\n"
+        "- Chargeback API\n"
+        "- Shared\n"
+    )

@@ -3,7 +3,7 @@ title: UpdateCVV
 category:
   uri: Card API
 slug: updatecvv
-position: 49
+position: 48
 parent:
   uri: api-reference
 ---
@@ -124,5 +124,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[back to card api menu](/api-reference/card-api/api-reference)

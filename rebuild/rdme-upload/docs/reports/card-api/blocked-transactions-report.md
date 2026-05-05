@@ -3,7 +3,7 @@ title: Blocked transactions report
 category:
   uri: Reports
 slug: card-api-blocked-transactions-report
-position: 11
+position: 4
 parent:
   uri: card-api-reports
 ---

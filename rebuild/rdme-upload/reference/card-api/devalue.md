@@ -3,7 +3,7 @@ title: Devalue
 category:
   uri: Card API
 slug: devalue
-position: 15
+position: 23
 parent:
   uri: api-reference
 ---
@@ -200,5 +200,3 @@ Status text indicating transaction result
 </param>
 </params>
 </methodResponse>
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

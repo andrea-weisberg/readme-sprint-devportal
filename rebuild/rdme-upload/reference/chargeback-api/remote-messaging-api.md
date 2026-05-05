@@ -3,7 +3,9 @@ title: Remote Messaging API
 category:
   uri: Chargeback API
 slug: remote-messaging-api
-position: 11
+position: 5
+parent:
+  uri: chargeback-api
 ---
 
 Paymentology will notify clients on 2nd Presentments. Remote messaging API allows Paymentology to call you to send administrative advice messages. These advice messages are sent using webhook-like schema. If you are integrating the service, you must create an endpoint accessible from the Paymentology network, which would be able to process the requests outlined below.

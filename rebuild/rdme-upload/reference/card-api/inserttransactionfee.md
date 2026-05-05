@@ -3,7 +3,7 @@ title: InsertTransactionFee
 category:
   uri: Card API
 slug: inserttransactionfee
-position: 17
+position: 25
 parent:
   uri: api-reference
 ---
@@ -188,5 +188,3 @@ Status text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

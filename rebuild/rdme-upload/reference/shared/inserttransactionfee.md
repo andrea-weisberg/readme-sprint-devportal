@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: inserttransactionfee
 position: 22
+parent:
+  uri: profile-api-reference
 ---
 
 Deduct requested amount from card as a fee using one of the following (integer) fee type IDs:
@@ -297,5 +299,3 @@ Text indicating the transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

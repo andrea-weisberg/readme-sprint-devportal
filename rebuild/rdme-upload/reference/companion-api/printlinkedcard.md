@@ -3,9 +3,9 @@ title: PrintLinkedCard
 category:
   uri: Companion API
 slug: printlinkedcard
-position: 31
+position: 12
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Print the specified card if the card was initially created as virtual.
@@ -169,5 +169,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Local API menu](/api-reference/companion-api/local-api)

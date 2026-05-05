@@ -110,7 +110,7 @@ If the transaction did not reach Paymentology and was declined, this would not a
 
 ## Report sample
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/01/Failed-transactions-report-Card-Final.png)
+![](https://files.readme.io/639ff8fa23da7bca459bc03da7b7b9ed6d47538f0de8a5e211b3a4232dd7fe89-66a8df8432a8214f139c4c34c2b5e576cf55e1203b84e29b57940581de9a06ba-Failed-transactions-report-Card-Final.png)
 
 **Note: file will automatically download upon clicking link**
 

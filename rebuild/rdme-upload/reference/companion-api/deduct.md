@@ -3,9 +3,9 @@ title: Deduct
 category:
   uri: Companion API
 slug: deduct
-position: 12
+position: 39
 parent:
-  uri: api-reference
+  uri: remote
 ---
 
 Deduct the requested amount from a wallet.
@@ -177,5 +177,3 @@ Status code indicating transaction result
 </params>
 </methodResponse>"
 ```
-
-[Back to Remote API menu](/api-reference/companion-api/remote)

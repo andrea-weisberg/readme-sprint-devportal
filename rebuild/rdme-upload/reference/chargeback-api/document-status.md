@@ -3,7 +3,9 @@ title: Document Status
 category:
   uri: Chargeback API
 slug: document-status
-position: 5
+position: 12
+parent:
+  uri: chargeback-api-reference
 ---
 
 Once a document is uploaded, use this method to verify the status of document.

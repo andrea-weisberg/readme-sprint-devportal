@@ -3,7 +3,7 @@ title: UpdateCardExpiryDate
 category:
   uri: Card API
 slug: updatecardexpirydate
-position: 47
+position: 46
 parent:
   uri: api-reference
 ---
@@ -136,5 +136,3 @@ Status text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

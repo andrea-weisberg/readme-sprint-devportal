@@ -117,5 +117,3 @@ Status text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Card API Menu](/api-reference/card-api/api-reference)

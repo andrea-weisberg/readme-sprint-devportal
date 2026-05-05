@@ -3,7 +3,7 @@ title: Daily negative balance report
 category:
   uri: Reports
 slug: card-api-daily-negative-balance-report
-position: 14
+position: 6
 parent:
   uri: card-api-reports
 ---
@@ -49,5 +49,3 @@ The report includes the following details:
 **Note: sample file will automatically download upon clicking link**
 
 [DailyNegativeBalanceReportOnChargebackQueue_CampaignName_YYYYMMDD.csv](https://developer.sprint.paymentology.com/wp-content/uploads/2024/10/DailyNegativeBalanceReportOnChargebackQueue_CampaignName_YYYYMMDD.csv)
-
-[Back to Card API Reports](#https://developer.sprint.paymentology.com/card-api/reports/)

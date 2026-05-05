@@ -3,7 +3,9 @@ title: AllocateCard
 category:
   uri: Shared
 slug: allocatecard
-position: 3
+position: 53
+parent:
+  uri: profile-api-reference
 ---
 
 Allocate a card to a bearer.
@@ -196,5 +198,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Menu](/api-reference/shared/profile-api-reference)

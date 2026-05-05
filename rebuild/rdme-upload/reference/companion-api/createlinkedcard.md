@@ -3,9 +3,9 @@ title: CreateLinkedCard
 category:
   uri: Companion API
 slug: createlinkedcard
-position: 10
+position: 11
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Create a new, active virtual card and link it to a reference with the given bearer details.
@@ -185,5 +185,3 @@ The initialization vector used to initialize the encryption/decryption algorithm
 </params>
 </methodResponse>
 ```
-
-[Back to Local API Menu](/api-reference/companion-api/local-api)

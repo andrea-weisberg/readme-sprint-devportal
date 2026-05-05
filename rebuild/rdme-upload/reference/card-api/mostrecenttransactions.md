@@ -3,7 +3,7 @@ title: MostRecentTransactions
 category:
   uri: Card API
 slug: mostrecenttransactions
-position: 24
+position: 5
 parent:
   uri: api-reference
 ---
@@ -262,5 +262,3 @@ Array includes:
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

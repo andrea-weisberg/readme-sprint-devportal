@@ -3,9 +3,9 @@ title: GetCardDetails
 category:
   uri: Companion API
 slug: getcarddetails
-position: 18
+position: 5
 parent:
-  uri: api-reference
+  uri: local-api
 ---
 
 Get card details of a specific card.
@@ -184,5 +184,3 @@ Text indicating transaction result.
 </param>
 </params>
 </methodresponse>
-
-[Back to Local API Menu](/api-reference/companion-api/local-api)

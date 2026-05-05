@@ -3,7 +3,9 @@ title: Status
 category:
   uri: Shared
 slug: status
-position: 38
+position: 36
+parent:
+  uri: profile-api-reference
 ---
 
 Retrieve the current status of a card.

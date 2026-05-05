@@ -3,7 +3,7 @@ title: TransferToken
 category:
   uri: Card API
 slug: transfertoken-2
-position: 44
+position: 42
 parent:
   uri: api-reference
 ---
@@ -102,5 +102,3 @@ Status text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

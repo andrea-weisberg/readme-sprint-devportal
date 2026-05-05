@@ -3,7 +3,7 @@ title: API Reference Sample
 category:
   uri: Guides
 slug: api-reference-sample
-position: 4
+position: 2
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas, ligula et tristique vestibulum, tellus mauris eleifend nibh, eget rutrum arcu libero commodo eros. Morbi est metus, scelerisque id consequat a, malesuada feugiat nisi.

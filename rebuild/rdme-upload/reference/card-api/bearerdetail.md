@@ -3,7 +3,7 @@ title: BearerDetail
 category:
   uri: Card API
 slug: bearerdetail
-position: 6
+position: 16
 parent:
   uri: api-reference
 ---
@@ -212,5 +212,3 @@ The KYC Image for the Bearer
 </params>
 </methodResponse>
 ```
-
-[BACK TO CARD API MENU](/api-reference/card-api/api-reference)

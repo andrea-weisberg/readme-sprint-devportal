@@ -3,7 +3,7 @@ title: 3D Secure Screen Customization
 category:
   uri: Tools
 slug: 3d-secure-customization
-position: 2
+position: 8
 parent:
   uri: tools
 ---

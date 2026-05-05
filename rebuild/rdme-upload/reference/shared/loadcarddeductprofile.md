@@ -4,6 +4,8 @@ category:
   uri: Shared
 slug: loadcarddeductprofile
 position: 27
+parent:
+  uri: profile-api-reference
 ---
 
 Load a card with the requested amount and deduct the amount off the profile.
@@ -166,5 +168,3 @@ Text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)

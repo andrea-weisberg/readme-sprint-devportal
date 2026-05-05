@@ -3,14 +3,16 @@ title: Processing
 category:
   uri: Guides
 slug: processing
-position: 37
+position: 11
+parent:
+  uri: tokenization
 ---
 
 Processing a transaction using a token basically follows these steps:
 
 (We’ll assume that the card’s data has already been provisioned)
 
-![Authorization Request flow](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Tokenization-Flow_01-v2.png)
+![Authorization Request flow](https://files.readme.io/f0317f94b8f1ad08c7982af55fc0b7e9c71f647470fc8d008b0d6a7cb10b3caf-5db04940ade8083c09d83c2e1e622157b05b2df05e75030ac8fd3d77e31dcba8-Tokenization-Flow_01-v2.png)
 
 **Step 1:**The cardholder initiates the transaction and provides their sensitive credit card details. The transaction can be initiated via a mobile app, at an NFC store, or on an e-commerce site.
 

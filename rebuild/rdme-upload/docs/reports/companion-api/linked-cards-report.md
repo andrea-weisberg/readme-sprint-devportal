@@ -3,9 +3,9 @@ title: Linked cards report
 category:
   uri: Reports
 slug: companion-api-linked-cards-report
-position: 48
+position: 37
 parent:
-  uri: card-api-reports
+  uri: companion-api-reports
 ---
 
 This report lists the cards that have been linked to a customer and when this occurred.
@@ -26,7 +26,7 @@ The report includes the following details:
 
 ## Report sample
 
-![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_Linked_Cards_YYYYMMDD-.png)
+![](https://files.readme.io/b720c58cc6324a136728dec9a962c4bddbe711cbad6e1ffb9b6303330582d0aa-3af885904631637ee0ca4042a60b8d8c57ad1f28c54698b2260ad2934a9565ae-CampaignName_Linked_Cards_YYYYMMDD-.png)
 
 Note: file will automatically download upon clicking link
 

@@ -3,7 +3,7 @@ title: ChangePin
 category:
   uri: Card API
 slug: changepin
-position: 9
+position: 18
 parent:
   uri: api-reference
 ---
@@ -146,5 +146,3 @@ Status text indicating transaction result
 </params>
 </methodResponse>
 ```
-
-[Back to Card API Menu](/api-reference/card-api/api-reference)
