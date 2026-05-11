@@ -3,7 +3,7 @@ title: Fraud and Risk
 category:
   uri: Guides
 slug: fraud
-position: 45
+position: 8
 parent:
   uri: get-started
 ---

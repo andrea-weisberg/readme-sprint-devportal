@@ -3,7 +3,7 @@ title: Response Codes - Remote API
 category:
   uri: Guides
 slug: response-codes-2
-position: 57
+position: 50
 ---
 
 ## Important

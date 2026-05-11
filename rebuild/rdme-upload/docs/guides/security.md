@@ -3,7 +3,7 @@ title: Security
 category:
   uri: Guides
 slug: security
-position: 41
+position: 4
 parent:
   uri: get-started
 ---

@@ -3,7 +3,7 @@ title: Blocked transactions report
 category:
   uri: Reports
 slug: companion-api-blocked-transactions-report
-position: 30
+position: 4
 parent:
   uri: companion-api-reports
 ---

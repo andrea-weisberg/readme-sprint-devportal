@@ -3,7 +3,7 @@ title: Client Testing Guide
 category:
   uri: Guides
 slug: client-testing-guide
-position: 44
+position: 7
 parent:
   uri: get-started
 ---

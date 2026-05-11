@@ -3,7 +3,7 @@ title: Provisioning
 category:
   uri: Guides
 slug: provisioning
-position: 12
+position: 40
 parent:
   uri: tokenization
 ---
@@ -12,7 +12,7 @@ Provisioning is the process whereby a payment service provider (token requester)
 
 Provisioning basically follows these steps:
 
-![Provisioning flow](https://files.readme.io/613410c930955943de043113d61c015c3cad9bd84b1e9316e02cb73f0221403f-9472affd88cb1d72735e2da840e51b0dcc9651af1c20cb4115ae593b3c4688f3-Tokenization-Flow_02-v2-1.png)
+![Provisioning flow](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Tokenization-Flow_02-v2-1.png)
 
 **Step 1:**The cardholder initiates the request process via push provisioning or manual provisioning.
 

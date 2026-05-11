@@ -3,7 +3,7 @@ title: Card API
 category:
   uri: Guides
 slug: card-api
-position: 3
+position: 30
 ---
 
 ## Card API is a simple API where we hold your customer's balance for you
@@ -16,7 +16,7 @@ Choose the **Card API** if you would like Paymentology to store the customer's b
 
 If you want to hold your customer’s card balances on your own platform, use the [Companion API](/guides/companion-api) instead. If you're not sure which API to choose, read about [our APIs](/guides/our-apis) first or [get in touch](/guides/contact-us).
 
-![Card API transaction processing flow diagram](https://files.readme.io/97a363c3cfdf5e52abf9f7282fd845f539668c9011ff4d539fcc68e615da771a-84ed79c324ffc9cf6563d1d178e23c3864a311ae13f5fbe67e87ef72c3dfff49-Card-API-transaction-processing-1-v2-1.png)
+![Card API transaction processing flow diagram](https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Card-API-transaction-processing-1-v2-1.png)
 
 #### Choose the Card API if you want to:
 

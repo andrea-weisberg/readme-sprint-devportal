@@ -3,7 +3,7 @@ title: Transaction Stream
 category:
   uri: Guides
 slug: tutuka-transaction-stream-2
-position: 60
+position: 47
 ---
 
 **Paymentology’s Transaction Stream service allows API consumers to receive real-time notifications of the undertaken transactions. By subscribing to the notification service, consumers can know the status of transactions in real-time.**

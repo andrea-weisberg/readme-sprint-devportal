@@ -3,7 +3,7 @@ title: QVR data report
 category:
   uri: Reports
 slug: card-api-qvr-data-report
-position: 14
+position: 31
 parent:
   uri: card-api-reports
 ---

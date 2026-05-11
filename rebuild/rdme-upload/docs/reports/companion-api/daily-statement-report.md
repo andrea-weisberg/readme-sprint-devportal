@@ -3,7 +3,7 @@ title: Daily statement report
 category:
   uri: Reports
 slug: companion-api-daily-statement-report
-position: 34
+position: 2
 parent:
   uri: companion-api-reports
 ---

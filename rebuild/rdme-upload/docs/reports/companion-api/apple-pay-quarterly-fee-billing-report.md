@@ -3,7 +3,7 @@ title: Apple Pay quarterly fee billing report
 category:
   uri: Reports
 slug: companion-api-apple-pay-quarterly-fee-billing-report
-position: 48
+position: 21
 parent:
   uri: companion-api-reports
 ---
@@ -38,7 +38,7 @@ All amounts reported are in the cardholder billing currency.
 
 ## Report sample
 
-![](https://files.readme.io/157d370dd9b77ead3bf4ce40f7f044d892c598c383983997dc29a740e382bd66-bd54c71353eea946a3f945d9f90a229bb925bf998c453c8dc38be5d4544a5ef3-CampaignName_ApplePay-Quarterly-Fee-Billing-Report-Month-YYYY-003.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Quarterly-Fee-Billing-Report-Month-YYYY-003.png)
 
 **Note: file will automatically download upon clicking link**
 

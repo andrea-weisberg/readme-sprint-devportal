@@ -3,7 +3,7 @@ title: Authorisation income report
 category:
   uri: Reports
 slug: card-api-authorisation-income-report
-position: 3
+position: 38
 parent:
   uri: card-api-reports
 ---
@@ -52,7 +52,7 @@ This daily report provides client's with transaction markup data to support thei
 
 ## Report sample
 
-![](https://files.readme.io/8dcaa7714288eae102bfbe3fc94825b4d2648236c90bfac5ccac88f259b7845d-511980392abaf9bdb7e83d3a6f990ebf982f1f13a2b56edfdfec6e677faf6226-CampaignName_authorisationincomereport_YYYY_MM_DD-.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_authorisationincomereport_YYYY_MM_DD-.png)
 
 Note: file will automatically download upon clicking link
 

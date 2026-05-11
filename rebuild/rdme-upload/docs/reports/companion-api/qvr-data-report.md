@@ -3,7 +3,7 @@ title: QVR data report
 category:
   uri: Reports
 slug: companion-api-qvr-data-report
-position: 40
+position: 13
 parent:
   uri: companion-api-reports
 ---

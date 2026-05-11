@@ -3,7 +3,7 @@ title: eCommerce report
 category:
   uri: Reports
 slug: card-api-ecommerce-report
-position: 22
+position: 47
 parent:
   uri: card-api-reports
 ---
@@ -70,7 +70,7 @@ The report includes the following details:
 
 ## Report sample
 
-![](https://files.readme.io/287ef133ecf7deca6fb99286ffb7dbf8c7c5cb6374e173c2667961ebe0537cbd-06354327c9066cfeb2d45c5fb41776417c9a76491df2bead9c2e658f7f485011-EcommerceTransactions_CampaignName_YYYYMMDD-.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/EcommerceTransactions_CampaignName_YYYYMMDD-.png)
 
 Note: file will automatically download upon clicking link
 

@@ -3,7 +3,7 @@ title: Apple Pay monthly fee billing report
 category:
   uri: Reports
 slug: card-api-apple-pay-monthly-fee-billing-report
-position: 26
+position: 52
 parent:
   uri: card-api-reports
 ---
@@ -34,7 +34,7 @@ Amount's reported are in the cardholder billing currency.
 
 ## Report sample
 
-![](https://files.readme.io/fb28fb979147be8486d6c6e85955afe22c48ac728b490f3d2f29431aec470638-1509585c5a0d5e098c9b249e5cd5c5b20717d95de9e30434aa971228acc58261-CampaignName_ApplePay-Monthly-Fee-Billing-Report-Month-YYYY-_-002.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Monthly-Fee-Billing-Report-Month-YYYY-_-002.png)
 
 **Note: file will automatically download upon clicking link**
 

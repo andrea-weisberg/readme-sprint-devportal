@@ -3,7 +3,7 @@ title: AFD Transactions
 category:
   uri: Guides
 slug: automated-fuel-dispensers-afd-transactions
-position: 24
+position: 18
 parent:
   uri: manage-funds
 ---
@@ -48,7 +48,7 @@ The traditional way of using cash at fuel outlets is prone to employee theft, ro
 
 ## AFD Transactions Flow
 
-![AFD Transaction processing](https://files.readme.io/cb39e38d079179b7babdbf65211439597564a3a4b3656ebd4f7c96f031488a09-172ea364d8fe2bb6f7ec13335cc7eb18dd5d50603ed9eb0415357504e9eddce3-AFD-Transaction-processing-v2.png)
+![AFD Transaction processing](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/AFD-Transaction-processing-v2.png)
 
 - Cardholder makes a transaction at an AFD POS
 

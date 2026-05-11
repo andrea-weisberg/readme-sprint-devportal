@@ -3,7 +3,7 @@ title: Messages
 category:
   uri: Guides
 slug: messages
-position: 25
+position: 20
 parent:
   uri: companion-api-guide
 ---

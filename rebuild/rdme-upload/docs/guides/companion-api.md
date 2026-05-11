@@ -3,7 +3,7 @@ title: Companion API
 category:
   uri: Guides
 slug: companion-api-guide
-position: 16
+position: 10
 ---
 
 ## Companion API is a simple API that allows you to issue cards and hold your customers' card balances on your platform
@@ -44,7 +44,7 @@ The Companion API is split into two separate APIs based on whether we are callin
 
 - It is hosted by you
 
-![Companion transaction processing flow](https://files.readme.io/7d79aafe3049406d3416eed967c34878c091458d93ef458da1ba92f6cc711ba9-2369964ee9fe7b0ffddfa7aed2434d2828bd5d1b5987194c760a635e1632ba83-Companion-Transaction-processing-v2-1.png)
+![Companion transaction processing flow](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Companion-Transaction-processing-v2-1.png)
 
 #### Find out how to use the Companion Card API to:
 

@@ -3,7 +3,7 @@ title: Apple Pay monthly declines report
 category:
   uri: Reports
 slug: card-api-apple-pay-monthly-declines-report
-position: 27
+position: 53
 parent:
   uri: card-api-reports
 ---

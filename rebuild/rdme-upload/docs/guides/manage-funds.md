@@ -3,9 +3,9 @@ title: Manage funds
 category:
   uri: Guides
 slug: manage-funds
-position: 22
+position: 34
 parent:
-  uri: companion-api-guide
+  uri: card-api
 ---
 
 **When the cardholder has either a virtual or a physical companion card (or both), they can start transacting against their store of value. These transactions originate from the merchant and are then sent to Paymentology via the card schemes, before being forwarded to the store of value for validation and authorization.**
@@ -34,7 +34,7 @@ When a cardholder makes an ATM, point of sale (POS), or e-commerce transaction, 
 
 You’ll need to respond with Approved for the transaction to be concluded successfully.
 
-![Companion API transaction processing](https://files.readme.io/d88d63598252f493642679a06d4eb85161d4080668635f64adf0537b1b7ed5b6-d04a2f183bd6bf4e85405338e2c5df4e3b9e53e4e98228379e7029ad1d379771-Companion-transaction-processing-3-v2.png)
+![Companion API transaction processing](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Companion-transaction-processing-3-v2.png)
 
 ## 3. A reversal for a deduct transaction
 
@@ -76,7 +76,7 @@ Paymentology will link the deduct reversal to the original authorization, we do 
 
 Here is a table that shows the only acceptable response codes that can be sent to Paymentology:
 
-![Reversal flow](https://files.readme.io/092575ff0b6822bf700b1ea7e64b881dc1f29b64650ffe151fb400adf8dc8a0b-a3fa269f2206e8108483dc14d7120a08ef380343bf9e77145d9bb04690a2dc51-Reversal-v2.png)
+![Reversal flow](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Reversal-v2.png)
 
 ## 4. Adjustments on a card
 

@@ -3,7 +3,7 @@ title: Detailed settlement report
 category:
   uri: Reports
 slug: companion-api-detailed-settlement-report
-position: 43
+position: 16
 parent:
   uri: companion-api-reports
 ---
@@ -130,7 +130,7 @@ Version 2.4 includes the following details:
 
 ## Report Sample
 
-![](https://files.readme.io/399226d2db6d867f8092a7a178f0a19d015413ce817917e0d0811e8f4d4d1b86-f10db77fde840dd28faceaf6608d0a031ac7c1b6cea56d5fb2476a94eac31b52-Detailed-Settlement-report1.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/10/Detailed-Settlement-report1.png)
 
 **Note: file will automatically download upon clicking link**
 

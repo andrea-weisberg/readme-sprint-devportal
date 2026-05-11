@@ -3,7 +3,7 @@ title: VAU transaction report
 category:
   uri: Reports
 slug: companion-api-vau-transaction-report
-position: 41
+position: 6
 parent:
   uri: companion-api-reports
 ---

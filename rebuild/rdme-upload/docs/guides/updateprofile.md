@@ -3,7 +3,7 @@ title: UpdateProfile
 category:
   uri: Guides
 slug: updateprofile
-position: 61
+position: 53
 ---
 
 Updates the clients profile

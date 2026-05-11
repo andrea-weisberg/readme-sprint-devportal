@@ -3,7 +3,7 @@ title: Response Codes - Local API
 category:
   uri: Guides
 slug: response-codes
-position: 56
+position: 49
 ---
 
 ## Important

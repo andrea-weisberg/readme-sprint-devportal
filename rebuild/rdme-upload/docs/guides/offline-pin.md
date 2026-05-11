@@ -3,7 +3,7 @@ title: Offline PIN
 category:
   uri: Guides
 slug: offline-pin
-position: 21
+position: 33
 parent:
   uri: secure-cards
 ---

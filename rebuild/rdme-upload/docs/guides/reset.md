@@ -3,6 +3,6 @@ title: Reset
 category:
   uri: Guides
 slug: reset
-position: 55
+position: 61
 ---
 

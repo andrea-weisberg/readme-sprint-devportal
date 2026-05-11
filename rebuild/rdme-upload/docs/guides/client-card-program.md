@@ -3,7 +3,7 @@ title: Client Card Program
 category:
   uri: Guides
 slug: client-card-program
-position: 43
+position: 6
 parent:
   uri: get-started
 ---
@@ -40,7 +40,7 @@ Whenever a transaction is undertaken for a card, all its associated settings are
 
 Here is an illustration that shows how Paymentology manages clients’ cards programs on the Sprint platform:
 
-![Card program management](https://files.readme.io/3641250e5e52f68c9525e2a67f322eb02ddfb1d96038f013412fad89eb475c75-8b844ab0dcb6e1442a3d6dec9b90e8c72ac1cce8751d26f3a20e3fd072c3d610-Campaigns.png)
+![Card program management](https://developer.sprint.paymentology.com/wp-content/uploads/2021/09/Campaigns.png)
 
 Let’s explain how it works:
 

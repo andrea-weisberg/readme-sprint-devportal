@@ -3,7 +3,7 @@ title: Card order
 category:
   uri: Reports
 slug: companion-api-card-order-report
-position: 46
+position: 19
 parent:
   uri: companion-api-reports
 ---
@@ -26,7 +26,7 @@ The report includes the following details:
 
 ## Report sample
 
-![Card order report](https://files.readme.io/c7cb6002150860f823b7ec758d8061582c8c8ad4669fb356872047e5d95f997e-91c11ca4ea4e9d48e15f98858a4e17d59f9f83dfaf7d89dc5448b127c00273af-Card-Order1-300x195.png)
+![Card order report](https://developer.sprint.paymentology.com/wp-content/uploads/2023/02/Card-Order1-300x195.png)
 
 **Note: file will automatically download upon clicking link**
 

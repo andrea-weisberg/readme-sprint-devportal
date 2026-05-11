@@ -3,7 +3,7 @@ title: Forex gains report
 category:
   uri: Reports
 slug: companion-api-forex-gains-report
-position: 44
+position: 17
 parent:
   uri: companion-api-reports
 ---
@@ -38,7 +38,7 @@ The report includes the following details:
 
 ## Report sample
 
-![](https://files.readme.io/fa5353ca0cec6609573b6332eaf54e64ac5770ba190d88c79de7c831692728d6-d58c887aeaa18b21b3e5ff2f92c45612cf96fb3913008474092ce5a10bbe2c64-Forex-Gains1.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/10/Forex-Gains1.png)
 
 **Note: file will automatically download upon clicking link**
 

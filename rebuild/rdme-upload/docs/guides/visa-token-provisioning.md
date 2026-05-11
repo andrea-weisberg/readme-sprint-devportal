@@ -3,7 +3,7 @@ title: VTS
 category:
   uri: Guides
 slug: visa-token-provisioning
-position: 32
+position: 26
 parent:
   uri: tokenization2
 ---

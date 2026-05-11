@@ -422,6 +422,72 @@ class RdmeExportTests(TestCase):
                 (output_root / "docs" / "guides" / "testing.md").read_text(encoding="utf-8"),
             )
 
+    def test_export_rdme_source_uses_wordpress_guide_menu_order_over_source_order(self):
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            output_root = root / "rdme-upload"
+            pages = (
+                DestinationPage(
+                    "2",
+                    "https://developer.sprint.paymentology.com/get-started/ask-ai/",
+                    "Guides/ask-ai.md",
+                    "Ask AI",
+                    "Guides",
+                    "Shared",
+                    "ask-ai",
+                    "1",
+                    0,
+                    20,
+                ),
+                DestinationPage(
+                    "1",
+                    "https://developer.sprint.paymentology.com/get-started/get-started/",
+                    "Guides/get-started.md",
+                    "Get Started",
+                    "Guides",
+                    "Shared",
+                    "get-started",
+                    "",
+                    0,
+                    30,
+                ),
+                DestinationPage(
+                    "3",
+                    "https://developer.sprint.paymentology.com/get-started/our-apis/",
+                    "Guides/our-apis.md",
+                    "Our APIs",
+                    "Guides",
+                    "Shared",
+                    "our-apis",
+                    "1",
+                    0,
+                    10,
+                ),
+            )
+
+            export_rdme_source(
+                output_root,
+                pages,
+                {
+                    "Guides/ask-ai.md": "# Ask AI\n\nBody.\n",
+                    "Guides/get-started.md": "# Get Started\n\nBody.\n",
+                    "Guides/our-apis.md": "# Our APIs\n\nBody.\n",
+                },
+            )
+
+            self.assertIn(
+                "position: 1\n",
+                (output_root / "docs" / "guides" / "get-started.md").read_text(encoding="utf-8"),
+            )
+            self.assertIn(
+                "position: 2\n",
+                (output_root / "docs" / "guides" / "ask-ai.md").read_text(encoding="utf-8"),
+            )
+            self.assertIn(
+                "position: 3\n",
+                (output_root / "docs" / "guides" / "our-apis.md").read_text(encoding="utf-8"),
+            )
+
     def test_export_rdme_source_applies_known_slug_overrides(self):
         with TemporaryDirectory() as tmp:
             root = Path(tmp)

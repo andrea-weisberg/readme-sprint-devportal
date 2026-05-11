@@ -3,7 +3,7 @@ title: Apple Pay monthly metric report
 category:
   uri: Reports
 slug: card-api-apple-pay-monthly-metric-report
-position: 24
+position: 50
 parent:
   uri: card-api-reports
 ---
@@ -46,7 +46,7 @@ Only settled transactions are included and all values specified are in the cardh
 
 ## Report sample
 
-![](https://files.readme.io/db7f6d9638c39963d9b5f4174b8316965eb159ff1bdad319eff9fda3b3611cca-60fed221a1e73aa846093e85dbe7126e1dde47918040c810cf1521b8f9a26885-CampaignName_ApplePay-Monthly-Metric-Report-Month-YYYY-_-002.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Monthly-Metric-Report-Month-YYYY-_-002.png)
 
 **Note: file will automatically download upon clicking link**
 

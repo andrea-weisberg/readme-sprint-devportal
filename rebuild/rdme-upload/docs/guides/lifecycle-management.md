@@ -3,7 +3,7 @@ title: Lifecycle Management
 category:
   uri: Guides
 slug: lifecycle-management
-position: 13
+position: 41
 parent:
   uri: tokenization
 ---

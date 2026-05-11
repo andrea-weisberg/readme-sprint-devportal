@@ -3,7 +3,7 @@ title: Card balance report
 category:
   uri: Reports
 slug: companion-api-card-balance-report
-position: 31
+position: 11
 parent:
   uri: companion-api-reports
 ---
@@ -48,7 +48,7 @@ The report includes the following details:
 
 ## Report sample
 
-![](https://files.readme.io/68ab30a5dd794fa4106a540db029880fd32851fa8e1f4f2b36be771853eedfa3-018ab4e0b759542de6a158f1f380dd2182df316fa8a91b54364bf652c74947c4-CampaignName_cardbalances_YYYY_MM_DD-.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_cardbalances_YYYY_MM_DD-.png)
 
 Note: file will automatically download upon clicking link
 

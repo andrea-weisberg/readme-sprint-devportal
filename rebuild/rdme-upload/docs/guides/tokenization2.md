@@ -3,7 +3,7 @@ title: Tokenization
 category:
   uri: Guides
 slug: tokenization2
-position: 27
+position: 21
 parent:
   uri: companion-api-guide
 ---

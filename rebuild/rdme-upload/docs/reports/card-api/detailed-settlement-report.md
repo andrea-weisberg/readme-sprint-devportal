@@ -3,7 +3,7 @@ title: Detailed settlement report
 category:
   uri: Reports
 slug: card-api-detailed-settlement-report
-position: 17
+position: 43
 parent:
   uri: card-api-reports
 ---
@@ -141,7 +141,7 @@ Builds off of V2.0 and does not contain the Chargeback record. Changes include a
 
 ## Report sample
 
-![](https://files.readme.io/524040466e92ff194fd213f05e5e87a99a69a90742b7d67678bfda6239253438-b7b365e75d3d3d7e253fded52038dea22c53c68f83e600906becb98ab4f4625a-Detailed-Settlement-report-1.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Detailed-Settlement-report-1.png)
 
 **Note: file will automatically download upon clicking link**
 

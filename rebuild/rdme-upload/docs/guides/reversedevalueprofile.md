@@ -3,7 +3,7 @@ title: ReverseDevalueProfile
 category:
   uri: Guides
 slug: reversedevalueprofile
-position: 59
+position: 52
 ---
 
 Reverses a devalue of a profile

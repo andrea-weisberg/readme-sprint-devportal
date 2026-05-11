@@ -3,7 +3,7 @@ title: 3D Secure - Out of band Authentication
 category:
   uri: Guides
 slug: 3d-secure-out-of-band
-position: 1
+position: 59
 ---
 
 ## Overview of Out-of-Band (OOB) Authentication
@@ -54,7 +54,7 @@ Paymentology is informed of the requested authentication by the ACS provider via
 
 - Paymentology sends a message to the ACS provider to acknowledge they have forwarded the **Authentication Request** to the client.
 
-![3DS OOB Request and initial response](https://files.readme.io/e1712d37136bb15324dbcf1b1e75729ae45f85c10cfa5a7fe0d77622585ce922-be502c3cb03e39e94063dd2904b6ed6e20e047fa602eff0616eefb27928ec563-Request-and-initial-response-Light.png)
+![3DS OOB Request and initial response](https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Request-and-initial-response-Light.png)
 
 ### Final response and final confirmation
 
@@ -72,7 +72,7 @@ Once the client completes the authentication with the cardholder:
 
 - Card API clients receive a RemoteMessaging message from Paymentology. MessageType: [3DSecure.AppFinalisation](https://developer.sprint.paymentology.com/card-api/api-reference/remotemessaging/#appfinal)
 
-![3DS OOB Final response and final confirmation](https://files.readme.io/a61c6cc22c952b4ae42ec0b712a40b191d21dac9e187f0669e22ab19fd7a6582-37b4becc0fcf86786e668d03d11a98b83a0b4ffd258b4ca7d13c9b727f4bffc7-Final-Response-and-Final-Confirmation-Light.png)
+![3DS OOB Final response and final confirmation](https://developer.sprint.paymentology.com/wp-content/uploads/2024/01/Final-Response-and-Final-Confirmation-Light.png)
 
 ### In Summary:
 

@@ -5,7 +5,7 @@ category:
 slug: shared-reporting-api-2
 position: 56
 parent:
-  uri: qr-payments-reports
+  uri: companion-api-reports
 ---
 
 **The Reporting API is a local API which can be called to obtain files produced by Tutuka, foe example, reports.**

@@ -3,7 +3,7 @@ title: Provisioning
 category:
   uri: Guides
 slug: token-provisioning
-position: 30
+position: 24
 parent:
   uri: tokenization2
 ---
@@ -12,7 +12,7 @@ Provisioning is the process whereby a payment service provider (token requester)
 
 Provisioning basically follows these steps:
 
-![Provisioning flow](https://files.readme.io/a2669c3adf38d8fecc2da43360a3e08bc110442127a5169778f222391ec90f5c-c4b1c52d37976038e491ce8c974ac0db07521f74b2cc60866c0012121d4b5607-Tokenization-Flow_02-v2.png)
+![Provisioning flow](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Tokenization-Flow_02-v2.png)
 
 **Step 1:**The cardholder initiates the request process via push provisioning or manual provisioning.
 
@@ -38,7 +38,7 @@ Here is a table that compares the differences between push provisioning and manu
 
 ## **How Push Provisioning Works**
 
-![How push provisioning works flow](https://files.readme.io/8454022a895829e69f6346d106a98a93fcd980864ad87c0577c8da962dfd83f0-0276499f96b9afb7ffaabf77b00a9d065b0b0688116cc08b0ddfe9d08ffe43cb-MDES-Push-provisioning1-v2.png)
+![How push provisioning works flow](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/MDES-Push-provisioning1-v2.png)
 
 Push provisioning is a generic capability that enables cardholders to “push” a token from the issuer experience into a destination wallet or merchant.
 
@@ -82,7 +82,7 @@ The following steps are an example of a client app communicating with a Wallet P
 
 ## **How Manual Provisioning Works**
 
-![](https://files.readme.io/dc8ef0b6962908f45926972733c33aa94060bc5bfb987370394fd7f5a8402079-2bc5b92ed6a3748d8f413623a49498dcbf6d93d7ddc7aca6abf96a5101eb4642-Mdes-Manual-provisioning-v2.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Mdes-Manual-provisioning-v2.png)
 
 Manual provisioning is where the cardholder physically enters the card details, such as PAN, expiry date, and CVV, into the digitized wallet. It requires the cardholder to enter an OTP via the selected verification method, usually SMS or email, to verify that they indeed own the card.
 

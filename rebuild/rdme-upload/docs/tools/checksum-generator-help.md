@@ -3,7 +3,7 @@ title: Help
 category:
   uri: Tools
 slug: checksum-generator-help
-position: 13
+position: 9
 parent:
   uri: checksum-generator
 ---

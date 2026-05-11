@@ -3,7 +3,7 @@ title: Daily negative balance report
 category:
   uri: Reports
 slug: card-api-daily-negative-balance-report
-position: 6
+position: 41
 parent:
   uri: card-api-reports
 ---

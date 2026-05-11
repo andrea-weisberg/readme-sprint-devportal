@@ -3,7 +3,7 @@ title: generateTimeBasedSecret
 category:
   uri: Guides
 slug: generatetimebasedsecret
-position: 37
+position: 48
 ---
 
 Generates a "secret token" to enable communication with our tokenisation APIs.

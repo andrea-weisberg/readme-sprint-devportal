@@ -3,7 +3,7 @@ title: Get connected
 category:
   uri: Guides
 slug: testing
-position: 42
+position: 5
 parent:
   uri: get-started
 ---

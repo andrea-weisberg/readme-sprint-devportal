@@ -3,7 +3,7 @@ title: QMR data report
 category:
   uri: Reports
 slug: companion-api-qmr-data-report
-position: 39
+position: 14
 parent:
   uri: companion-api-reports
 ---

@@ -3,9 +3,9 @@ title: Manage cards
 category:
   uri: Guides
 slug: manage-cards
-position: 19
+position: 31
 parent:
-  uri: companion-api-guide
+  uri: card-api
 ---
 
 **You can manage the issued Paymentology cards and make updates to them whenever necessary. You can also use the API methods below to develop a UI that comes with self-help options that allow the cardholders to manage their cards by themselves.**

@@ -3,7 +3,7 @@ title: Glossary
 category:
   uri: Guides
 slug: glossary
-position: 46
+position: 9
 parent:
   uri: get-started
 ---

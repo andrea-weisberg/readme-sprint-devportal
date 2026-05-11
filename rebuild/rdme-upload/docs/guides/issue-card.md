@@ -3,7 +3,7 @@ title: Issue cards
 category:
   uri: Guides
 slug: issue-card
-position: 4
+position: 36
 parent:
   uri: card-api
 ---
@@ -15,7 +15,7 @@ parent:
 **Physical card**
 The traditional plastic payment card
 
-![Card API Issuing process flow](https://files.readme.io/3e07667b0354c537c2ecad710df391cfdbcc42f98a8fda99f99ae3f961606c74-d6f44779aed6bb305555eb1f86772e580beba38fbd608810c494af28d8e4566e-Card-API-issuing-process-flow-v2.png)
+![Card API Issuing process flow](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Card-API-issuing-process-flow-v2.png)
 
 ## 1. Issuing a virtual card
 

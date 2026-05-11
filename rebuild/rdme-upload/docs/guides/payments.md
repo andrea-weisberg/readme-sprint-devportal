@@ -3,7 +3,7 @@ title: Payments
 category:
   uri: Guides
 slug: payments
-position: 10
+position: 38
 parent:
   uri: tokenization
 ---

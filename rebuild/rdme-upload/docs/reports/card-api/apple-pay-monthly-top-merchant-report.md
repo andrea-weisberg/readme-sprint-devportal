@@ -3,7 +3,7 @@ title: Apple Pay monthly top merchant report
 category:
   uri: Reports
 slug: card-api-apple-pay-monthly-top-merchant-report
-position: 23
+position: 49
 parent:
   uri: card-api-reports
 ---
@@ -30,7 +30,7 @@ The report includes the following details:
 
 ## Report sample
 
-![](https://files.readme.io/68537e746a7ef78e765b181e8f8b7edcb05f67ef71d11bed3a2e479ba570e99b-498e7819eaebcf549368a8be795c5aecfcd6e041559709a168cecc722a2fdb20-CampaignName_ApplePay-Top-Merchant-Report-MMM-YYYY-_.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/12/CampaignName_ApplePay-Top-Merchant-Report-MMM-YYYY-_.png)
 
 **Note: file will automatically download upon clicking link**
 

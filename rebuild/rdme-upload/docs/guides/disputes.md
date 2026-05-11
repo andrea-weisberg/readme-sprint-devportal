@@ -3,9 +3,9 @@ title: Disputes
 category:
   uri: Guides
 slug: disputes
-position: 34
+position: 35
 parent:
-  uri: companion-api-guide
+  uri: card-api
 ---
 
 # What is a Dispute?
@@ -72,7 +72,7 @@ Paymentology manages dispute handling and chargeback processing on behalf of our
 
 # Chargeback Process Flow
 
-![](https://files.readme.io/59bf4a6b1fc36388e3df00c8ee958805bdfe86adf0141b6d284f4a11dd96f520-cfe36b4f5eabd3094d639af6695b2ec5b2f5e9c8325e3761b44721f4c92bec1b-Chargeback-process-flow-v2.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Chargeback-process-flow-v2.png)
 
 # Mastercard: Dispute/Chargeback categories and timeframes
 

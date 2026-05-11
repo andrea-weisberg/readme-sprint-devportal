@@ -3,7 +3,7 @@ title: Issue cards
 category:
   uri: Guides
 slug: issue-cards
-position: 17
+position: 11
 parent:
   uri: companion-api-guide
 ---
@@ -22,7 +22,7 @@ You can use the Companion API to create a Virtual Card Number (VCN), which you c
 
 If the API receives the request, it will create a 16-digit PAN (Permanent Account Number), CVV (Card Verification Value), and expiry date. You can then deliver this information to your customer.
 
-![](https://files.readme.io/e39c8805b385c9c73a49cfc1545133518da54582a3e54cad10622e0f73014f84-91840452f6a2dae69cdd40c1f1e6cbf6062ac0bf157177ee66b0e1df28683936-How-to-issue-a-virtual-card-v2.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/How-to-issue-a-virtual-card-v2.png)
 
 **PAN number** is the 16 digit card number printed on the front of a physical card, or the 16 digit virtual card number.
 
@@ -36,7 +36,7 @@ You’ll need to make a call to the [CreateLinkedCard](/api-reference/companion-
 
 You can choose either of the following options for issuing a physical companion card: Issue on-site and link immediately or issue with courier and link later.
 
-![](https://files.readme.io/f9913086d1f71f5094982f8e72549d8b27759911d2f47184447a5a80615156f6-c5af537ac43c53e7a9bd38ec4de95291830ea34145ffe9d05fde60e8d249e40f-Physical-card-fulfilment-flow-v2.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Physical-card-fulfilment-flow-v2.png)
 
 ### Option 1: Issue on-site and link immediately
 
@@ -48,7 +48,7 @@ When activating and linking the card, you’ll need to make a call to the [Activ
 
 When activating and linking the card, you’ll need to make a call to the [ActivateCard](/api-reference/companion-api/activatecard) method first to ensure the card is in an active state. Once the card is activated, you’ll need to send a request to Paymentology, using the [LinkCard](/api-reference/companion-api/linkcard) method, for the card to be linked to a unique customer reference number.
 
-![Companion API card issuing flow](https://files.readme.io/ace0741e8b37e936bc74349b56243ff0fc922563cbebf652d55bc35714fcdd25-e44af861adced8e6d33bc880836e48f4703225af08368ddc5c350a7bb999dc87-Companion-card-issuing-flow-1-v2.png)
+![Companion API card issuing flow](https://developer.sprint.paymentology.com/wp-content/uploads/2023/03/Companion-card-issuing-flow-1-v2.png)
 
 ### Option 2: Issue with courier and link later
 

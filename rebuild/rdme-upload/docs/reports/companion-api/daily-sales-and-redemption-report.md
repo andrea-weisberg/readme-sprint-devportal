@@ -3,7 +3,7 @@ title: Daily sales and redemption report
 category:
   uri: Reports
 slug: companion-api-daily-sales-and-redemption-report
-position: 33
+position: 5
 parent:
   uri: companion-api-reports
 ---

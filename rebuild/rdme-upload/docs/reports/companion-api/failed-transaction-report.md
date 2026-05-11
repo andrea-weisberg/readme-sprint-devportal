@@ -3,7 +3,7 @@ title: Failed transaction report
 category:
   uri: Reports
 slug: companion-api-failed-transaction-report
-position: 45
+position: 18
 parent:
   uri: companion-api-reports
 ---
@@ -120,7 +120,7 @@ If the transaction did not reach Paymentology and was declined, this would not a
 
 ## Report sample
 
-![](https://files.readme.io/7d3cde74b505e1fe1f809c2fe21da41f87f3e35c77b2bbe2fafc205df75a17df-6efdd6553f367311dc80ccb76842e9d95671c2a917b6444bbb5ecb39e0e9317b-Failed-transaction-report1-1.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/10/Failed-transaction-report1-1.png)
 
 **Note: file will automatically download upon clicking link**
 

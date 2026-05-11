@@ -3,6 +3,6 @@ title: Home
 category:
   uri: Guides
 slug: home
-position: 48
+position: 54
 ---
 

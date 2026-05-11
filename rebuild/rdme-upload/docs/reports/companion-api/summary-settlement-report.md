@@ -3,7 +3,7 @@ title: Summary settlement report
 category:
   uri: Reports
 slug: companion-api-summary-settlement-report
-position: 42
+position: 15
 parent:
   uri: companion-api-reports
 ---
@@ -38,7 +38,7 @@ Here is a description of the transactions you can find in the report:
 
 ## Report Sample
 
-![](https://files.readme.io/f172626f40b4e8991e0b1294ec929fd26c34ba5cd10e4ca670889473dbe4b16b-37f0bfe77527eb55651249a95fb2110726df5d0eb93899979404ef5d744264d2-Summary-Settlement-report-final1.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/10/Summary-Settlement-report-final1.png)
 
 **Note: file will automatically download upon clicking link**
 

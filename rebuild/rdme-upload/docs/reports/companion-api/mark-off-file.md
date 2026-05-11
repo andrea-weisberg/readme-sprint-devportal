@@ -3,7 +3,7 @@ title: Mark-off file
 category:
   uri: Reports
 slug: companion-api-mark-off-file
-position: 38
+position: 3
 parent:
   uri: companion-api-reports
 ---
@@ -56,7 +56,7 @@ The Mark-off file has the following fields:
 
 ## Report sample
 
-![MarkOff sample](https://files.readme.io/879867bf5dc9bf4fa939d258a689bca83c398333c1045939b041201e3385ba50-396c57f3a93ca535ed2a75b4e0c5e3859c4b15618e2346fb2772fa274baf2461-Mark-Off-report-Companion-final.png)
+![MarkOff sample](https://developer.sprint.paymentology.com/wp-content/uploads/2021/10/Mark-Off-report-Companion-final.png)
 
 **Note: file will automatically download upon clicking link**
 

@@ -3,7 +3,7 @@ title: Daily negative balance report
 category:
   uri: Reports
 slug: companion-api-daily-negative-balance-report
-position: 32
+position: 8
 parent:
   uri: companion-api-reports
 ---

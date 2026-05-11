@@ -3,7 +3,7 @@ title: Our APIs
 category:
   uri: Guides
 slug: our-apis
-position: 40
+position: 3
 parent:
   uri: get-started
 ---

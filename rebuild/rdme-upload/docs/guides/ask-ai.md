@@ -3,7 +3,7 @@ title: Ask AI
 category:
   uri: Guides
 slug: ask-ai
-position: 39
+position: 2
 parent:
   uri: get-started
 ---
@@ -48,7 +48,7 @@ Ask AI can be used in two ways:
 
 #### Ask AI chat response example
 
-![](https://files.readme.io/854c63a0926a8c8dfed7be516266372b4a7a2bc6369ad6ffad3e0094a7ab0631-d085659a058c00725b3564ef955f7e1d82a19e9f5dc847a11c5f96ed0e98eab2-Sprint-chat-example-e1743472176526.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2025/04/Sprint-chat-example-e1743472176526.png)
 
 ### Ask AI Search
 
@@ -62,7 +62,7 @@ Ask AI can be used in two ways:
 
 #### Ask AI search response example
 
-![](https://files.readme.io/f2540f0f891730f0aec49a25d83ddbefd7f969cbfd2577aef80ce401cbc05bba-4b75abd5ecb89db7b6c87cf4e0d025c2baf1378c632f39fe1cd782ec5d0f2249-Sprint-search-example-e1743472098983.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2025/04/Sprint-search-example-e1743472098983.png)
 
 ## Ask AI tips
 
@@ -78,4 +78,4 @@ You can try by:
 
 Make sure to use the feedback buttons, as this can help ensure the accuracy of answers provided. The feedback buttons are located on the bottom right corner of Ask AI's response.
 
-![](https://files.readme.io/065c9b9e866b9653fdff753e63fa6762a5d08b1085f0e4569da3a0d97dc79ad3-dc95cba45ac2a9173e422a6446b8ca12835d8b8bb3735b497bfab8696ef4f3f4-Sprint-feedback-buttons-1-e1743472145749.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2025/04/Sprint-feedback-buttons-1-e1743472145749.png)

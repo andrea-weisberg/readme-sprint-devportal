@@ -3,7 +3,7 @@ title: Secure APIs
 category:
   uri: Guides
 slug: secure-apis
-position: 26
+position: 19
 parent:
   uri: companion-api-guide
 ---

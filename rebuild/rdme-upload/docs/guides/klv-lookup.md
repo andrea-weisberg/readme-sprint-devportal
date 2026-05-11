@@ -3,7 +3,7 @@ title: KLV Lookup
 category:
   uri: Guides
 slug: klv-lookup
-position: 35
+position: 29
 parent:
   uri: companion-api-guide
 ---

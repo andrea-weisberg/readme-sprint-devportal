@@ -3,7 +3,7 @@ title: QR Payments API
 category:
   uri: Guides
 slug: qr-payments-api
-position: 53
+position: 43
 ---
 
 **Our QR Payments API offers a simple plug-and-play model that integrates into digital wallets to enable secure contactless QR payments.**

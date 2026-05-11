@@ -3,7 +3,7 @@ title: Response and action code mapping
 category:
   uri: Guides
 slug: response-and-action-code-mapping
-position: 58
+position: 51
 parent:
   uri: response-codes-2
 ---

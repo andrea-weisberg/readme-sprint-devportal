@@ -13,6 +13,158 @@ SLUG_OVERRIDES = {
     "Guides/companion-api.md": "companion-api-guide",
 }
 
+GUIDE_ORDER = (
+    "get-started",
+    "ask-ai",
+    "our-apis",
+    "security",
+    "testing",
+    "client-card-program",
+    "client-testing-guide",
+    "fraud",
+    "glossary",
+    "companion-api-guide",
+    "issue-cards",
+    "digital-first",
+    "manage-cards",
+    "secure-cards",
+    "offline-pin",
+    "manage-funds",
+    "3d-secure",
+    "automated-fuel-dispensers-afd-transactions",
+    "secure-apis",
+    "messages",
+    "tokenization2",
+    "token-payments",
+    "token-processing",
+    "token-provisioning",
+    "token-lifecycle-management",
+    "visa-token-provisioning",
+    "settlement-and-reconciliation",
+    "disputes",
+    "klv-lookup",
+    "card-api",
+    "issue-card",
+    "tokenization",
+    "payments",
+    "processing",
+    "provisioning",
+    "lifecycle-management",
+    "reconciliation",
+    "qr-payments-api",
+    "qr-payments",
+    "notifications",
+    "report-generator-help",
+    "tutuka-transaction-stream-2",
+    "generatetimebasedsecret",
+    "response-codes",
+    "response-codes-2",
+    "response-and-action-code-mapping",
+    "reversedevalueprofile",
+    "updateprofile",
+    "home",
+    "contact-us",
+    "login",
+    "privacy-policy",
+    "api-reference-sample",
+)
+
+TOOLS_ORDER = (
+    "tools",
+    "simpos",
+    "help",
+    "simpos-result-codes",
+    "xml-generator",
+    "xml-poster",
+    "checksum-generator",
+    "checksum-generator-help",
+    "3d-secure-customization",
+    "one-time-password-otp-authentication",
+    "out-of-band-oob-authentication",
+)
+
+REPORT_ROOT_ORDER = {
+    "Companion API": 0,
+    "Card API": 1,
+    "QR Payments": 2,
+    "Shared": 3,
+}
+
+REPORT_CHILD_ORDER_BY_FAMILY = {
+    "Companion API": (
+        "reports",
+        "daily-statement-report",
+        "mark-off-file",
+        "blocked-transactions-report",
+        "daily-sales-and-redemption-report",
+        "vau-transaction-report",
+        "authorisation-income-report",
+        "daily-negative-balance-report",
+        "inactive-cards-report",
+        "google-pay-monthly-report",
+        "card-balance-report",
+        "linked-cards-report",
+        "qvr-data-report",
+        "qmr-data-report",
+        "summary-settlement-report",
+        "detailed-settlement-report",
+        "forex-gains-report",
+        "failed-transaction-report",
+        "card-order-report",
+        "unsettled-transactions-report-2",
+        "apple-pay-quarterly-fee-billing-report",
+        "apple-pay-monthly-top-merchant-report",
+        "ecommerce-report",
+        "apple-pay-monthly-metric-report",
+        "apple-pay-monthly-usage-frequency-report",
+        "apple-pay-monthly-fee-billing-report",
+        "apple-pay-monthly-declines-report",
+    ),
+    "Card API": (
+        "reports",
+        "daily-statement-report",
+        "vau-transaction-report",
+        "qvr-data-report",
+        "blocked-transactions-report",
+        "mark-off-file",
+        "daily-sales-and-redemption-report",
+        "linked-cards-report",
+        "card-balance-report",
+        "inactive-cards-report",
+        "authorisation-income-report",
+        "google-pay-monthly-report",
+        "qmr-data-report",
+        "daily-negative-balance-report",
+        "summary-settlement-report-2",
+        "detailed-settlement-report",
+        "forex-gains-report-2",
+        "failed-transaction-report-2",
+        "card-order-report-2",
+        "ecommerce-report",
+        "apple-pay-quarterly-fee-billing-report",
+        "apple-pay-monthly-top-merchant-report",
+        "apple-pay-monthly-metric-report",
+        "apple-pay-monthly-usage-frequency-report",
+        "apple-pay-monthly-fee-billing-report",
+        "apple-pay-monthly-declines-report",
+    ),
+    "QR Payments": (
+        "reports",
+    ),
+    "Shared": (
+        "reporting-api",
+        "reporting-api-2",
+        "report-generator-offline",
+    ),
+}
+
+GUIDE_ORDER_RANK = {slug: index for index, slug in enumerate(GUIDE_ORDER)}
+TOOLS_ORDER_RANK = {slug: index for index, slug in enumerate(TOOLS_ORDER)}
+REPORT_CHILD_ORDER_RANK = {
+    family: {slug: index for index, slug in enumerate(slugs)}
+    for family, slugs in REPORT_CHILD_ORDER_BY_FAMILY.items()
+}
+
 
 @dataclass(frozen=True)
 class RdmeExportManifest:
@@ -166,9 +318,15 @@ def _parent_slugs_by_bucket(
     return parent_slugs
 
 
-def _bucket_page_sort_key(page: DestinationPage) -> tuple[int, str]:
+def _bucket_page_sort_key(page: DestinationPage) -> tuple[int, int, int, int, str]:
     priority = 0 if page.slug in {"api-reference", "reports", "tools"} else 1
-    return (priority, page.menu_order, page.source_index, page.path)
+    return (
+        priority,
+        _section_order_rank(page),
+        page.menu_order,
+        page.source_index,
+        page.path,
+    )
 
 
 def _ordered_bucket_pages(bucket_pages: list[DestinationPage]) -> list[DestinationPage]:
@@ -197,6 +355,19 @@ def _ordered_bucket_pages(bucket_pages: list[DestinationPage]) -> list[Destinati
         visit(root)
 
     return ordered
+
+
+def _section_order_rank(page: DestinationPage) -> int:
+    export_slug = _slug_for_export(page)
+    if page.top_bar == "Guides":
+        return GUIDE_ORDER_RANK.get(export_slug, 10_000)
+    if page.top_bar == "Tools":
+        return TOOLS_ORDER_RANK.get(export_slug, 10_000)
+    if page.top_bar == "Reports":
+        if page.slug == "reports":
+            return REPORT_ROOT_ORDER.get(page.subsection, 10_000)
+        return REPORT_CHILD_ORDER_RANK.get(page.subsection, {}).get(page.slug, 10_000)
+    return 10_000
 
 
 def _parent_slug_for_page(
