@@ -178,6 +178,7 @@ class RdmeExportTests(TestCase):
                 "- Companion API\n"
                 "- QR Payments\n"
                 "- Chargeback API\n"
+                "- Profile API Reference\n"
                 "- Shared\n",
             )
             self.assertEqual(

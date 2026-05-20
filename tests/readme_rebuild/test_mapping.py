@@ -53,7 +53,7 @@ class MappingTests(TestCase):
         self.assertEqual(destination.subsection, "Shared")
         self.assertEqual(destination.path, "Reports/shared/implementation-report.md")
 
-    def test_map_profile_api_reference_page_to_shared_api_reference_path(self):
+    def test_map_profile_api_reference_page_to_profile_api_reference_path(self):
         page = SourcePage(
             "6",
             "ListAllTokens",
@@ -67,8 +67,8 @@ class MappingTests(TestCase):
         destination = map_page(page)
 
         self.assertEqual(destination.top_bar, "API Reference")
-        self.assertEqual(destination.subsection, "Shared")
-        self.assertEqual(destination.path, "API Reference/shared/listalltokens-2.md")
+        self.assertEqual(destination.subsection, "Profile API Reference")
+        self.assertEqual(destination.path, "API Reference/profile-api-reference/listalltokens-2.md")
 
     def test_map_tools_page_to_tools_path(self):
         page = SourcePage(

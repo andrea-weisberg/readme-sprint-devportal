@@ -100,7 +100,7 @@ class IaTests(TestCase):
 
         self.assertEqual(result.top_bar, "Reports")
 
-    def test_classify_profile_api_reference_page_as_api_reference_shared(self):
+    def test_classify_profile_api_reference_page_as_profile_api_reference(self):
         page = SourcePage(
             "7",
             "ListAllTokens",
@@ -114,7 +114,7 @@ class IaTests(TestCase):
         result = classify_page(page)
 
         self.assertEqual(result.top_bar, "API Reference")
-        self.assertEqual(result.subsection, "Shared")
+        self.assertEqual(result.subsection, "Profile API Reference")
 
     def test_classify_api_reference_with_report_in_title_as_api_reference(self):
         page = SourcePage(

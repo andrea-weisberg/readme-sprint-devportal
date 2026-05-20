@@ -12,4 +12,5 @@ Browse the API families below using ReadMe's native reference navigation.
 - Companion API
 - QR Payments
 - Chargeback API
+- Profile API Reference
 - Shared

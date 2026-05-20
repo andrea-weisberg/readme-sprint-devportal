@@ -26,5 +26,5 @@ def _api_family_for_url(url: str) -> str:
     if "/chargeback-api/" in url:
         return "Chargeback API"
     if "/profile-api-reference/" in url:
-        return "Shared"
+        return "Profile API Reference"
     return ""

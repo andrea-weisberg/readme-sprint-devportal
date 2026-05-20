@@ -220,60 +220,60 @@ https://developer.sprint.paymentology.com/how_payments_work/,Guides,Shared,How P
 https://developer.sprint.paymentology.com/login/,Guides,Shared,Login,Guides/login.md
 https://developer.sprint.paymentology.com/notifications/,Guides,Shared,Notifications,Guides/notifications.md
 https://developer.sprint.paymentology.com/privacy-policy/,Guides,Shared,Privacy Policy,Guides/privacy-policy.md
-https://developer.sprint.paymentology.com/profile-api-reference/,API Reference,Shared,Profile API Reference,API Reference/shared/profile-api-reference.md
-https://developer.sprint.paymentology.com/profile-api-reference/activate/,API Reference,Shared,Activate,API Reference/shared/activate.md
-https://developer.sprint.paymentology.com/profile-api-reference/activatetoken/,API Reference,Shared,ActivateToken,API Reference/shared/activatetoken.md
-https://developer.sprint.paymentology.com/profile-api-reference/allocatecard/,API Reference,Shared,AllocateCard,API Reference/shared/allocatecard.md
-https://developer.sprint.paymentology.com/profile-api-reference/allocatecreatevirtualcard/,API Reference,Shared,AllocateCreateVirtualCard,API Reference/shared/allocatecreatevirtualcard.md
-https://developer.sprint.paymentology.com/profile-api-reference/allocateiban/,API Reference,Shared,AllocateIBAN,API Reference/shared/allocateiban.md
-https://developer.sprint.paymentology.com/profile-api-reference/balance/,API Reference,Shared,Balance,API Reference/shared/balance.md
-https://developer.sprint.paymentology.com/profile-api-reference/calculatetav-2/,API Reference,Shared,CalculateTAV,API Reference/shared/calculatetav-2.md
-https://developer.sprint.paymentology.com/profile-api-reference/cancelscheduledstop/,API Reference,Shared,CancelScheduledStop,API Reference/shared/cancelscheduledstop.md
-https://developer.sprint.paymentology.com/profile-api-reference/cancelstopcard/,API Reference,Shared,CancelStopCard,API Reference/shared/cancelstopcard.md
-https://developer.sprint.paymentology.com/profile-api-reference/carddetail/,API Reference,Shared,CardDetail,API Reference/shared/carddetail.md
-https://developer.sprint.paymentology.com/profile-api-reference/changepin/,API Reference,Shared,ChangePin,API Reference/shared/changepin.md
-https://developer.sprint.paymentology.com/profile-api-reference/checkauthorisation/,API Reference,Shared,CheckAuthorisation,API Reference/shared/checkauthorisation.md
-https://developer.sprint.paymentology.com/profile-api-reference/checkload/,API Reference,Shared,CheckLoad,API Reference/shared/checkload.md
-https://developer.sprint.paymentology.com/profile-api-reference/createscheduledstop/,API Reference,Shared,CreateScheduledStop,API Reference/shared/createscheduledstop.md
-https://developer.sprint.paymentology.com/profile-api-reference/createvirtualcard/,API Reference,Shared,CreateVirtualCard,API Reference/shared/createvirtualcard.md
-https://developer.sprint.paymentology.com/profile-api-reference/deductcardloadprofile/,API Reference,Shared,DeductCardLoadProfile,API Reference/shared/deductcardloadprofile.md
-https://developer.sprint.paymentology.com/profile-api-reference/deletetoken/,API Reference,Shared,DeleteToken,API Reference/shared/deletetoken.md
-https://developer.sprint.paymentology.com/profile-api-reference/delinkcard/,API Reference,Shared,DeLinkCard,API Reference/shared/delinkcard.md
-https://developer.sprint.paymentology.com/profile-api-reference/devalueprofile/,API Reference,Shared,DevalueProfile,API Reference/shared/devalueprofile.md
-https://developer.sprint.paymentology.com/profile-api-reference/generatetimebasedsecret/,API Reference,Shared,GenerateTimeBasedSecret,API Reference/shared/generatetimebasedsecret.md
-https://developer.sprint.paymentology.com/profile-api-reference/getschedulestopdetail/,API Reference,Shared,GetScheduleStopDetail,API Reference/shared/getschedulestopdetail.md
-https://developer.sprint.paymentology.com/profile-api-reference/inserttransactionfee/,API Reference,Shared,InsertTransactionFee,API Reference/shared/inserttransactionfee.md
-https://developer.sprint.paymentology.com/profile-api-reference/linkcard/,API Reference,Shared,LinkCard,API Reference/shared/linkcard.md
-https://developer.sprint.paymentology.com/profile-api-reference/linkcardsbysequencerange/,API Reference,Shared,LinkCardsBySequenceRange,API Reference/shared/linkcardsbysequencerange.md
-https://developer.sprint.paymentology.com/profile-api-reference/listalltokens/,API Reference,Shared,ListAllTokens,API Reference/shared/listalltokens.md
-https://developer.sprint.paymentology.com/profile-api-reference/listtokens/,API Reference,Shared,ListTokens,API Reference/shared/listtokens.md
-https://developer.sprint.paymentology.com/profile-api-reference/loadcarddeductprofile/,API Reference,Shared,LoadCardDeductProfile,API Reference/shared/loadcarddeductprofile.md
-https://developer.sprint.paymentology.com/profile-api-reference/ordercard/,API Reference,Shared,OrderCard,API Reference/shared/ordercard.md
-https://developer.sprint.paymentology.com/profile-api-reference/register/,API Reference,Shared,Register,API Reference/shared/register.md
-https://developer.sprint.paymentology.com/profile-api-reference/resetpin/,API Reference,Shared,ResetPin,API Reference/shared/resetpin.md
-https://developer.sprint.paymentology.com/profile-api-reference/reversedeductcardloadprofile/,API Reference,Shared,ReverseDeductCardLoadProfile,API Reference/shared/reversedeductcardloadprofile.md
-https://developer.sprint.paymentology.com/profile-api-reference/reversedevalueprofile/,API Reference,Shared,ReverseDevalueProfile,API Reference/shared/reversedevalueprofile.md
-https://developer.sprint.paymentology.com/profile-api-reference/reversetransactionfee/,API Reference,Shared,ReverseTransactionFee,API Reference/shared/reversetransactionfee.md
-https://developer.sprint.paymentology.com/profile-api-reference/reversevastransferfunds/,API Reference,Shared,ReverseVasTransferFunds,API Reference/shared/reversevastransferfunds.md
-https://developer.sprint.paymentology.com/profile-api-reference/statement/,API Reference,Shared,Statement,API Reference/shared/statement.md
-https://developer.sprint.paymentology.com/profile-api-reference/statementbydaterange/,API Reference,Shared,StatementByDateRange,API Reference/shared/statementbydaterange.md
-https://developer.sprint.paymentology.com/profile-api-reference/status/,API Reference,Shared,Status,API Reference/shared/status.md
-https://developer.sprint.paymentology.com/profile-api-reference/stopcard/,API Reference,Shared,StopCard,API Reference/shared/stopcard.md
-https://developer.sprint.paymentology.com/profile-api-reference/stoptoken/,API Reference,Shared,StopToken,API Reference/shared/stoptoken.md
-https://developer.sprint.paymentology.com/profile-api-reference/togglevoucherfeature/,API Reference,Shared,ToggleVoucherFeature,API Reference/shared/togglevoucherfeature.md
-https://developer.sprint.paymentology.com/profile-api-reference/transferfunds/,API Reference,Shared,TransferFunds,API Reference/shared/transferfunds.md
-https://developer.sprint.paymentology.com/profile-api-reference/transferfundsbetweenprofiles/,API Reference,Shared,TransferFundsBetweenProfiles,API Reference/shared/transferfundsbetweenprofiles.md
-https://developer.sprint.paymentology.com/profile-api-reference/transferlink/,API Reference,Shared,TransferLink,API Reference/shared/transferlink.md
-https://developer.sprint.paymentology.com/profile-api-reference/transfertoken/,API Reference,Shared,TransferToken,API Reference/shared/transfertoken.md
-https://developer.sprint.paymentology.com/profile-api-reference/unstoptoken/,API Reference,Shared,UnStopToken,API Reference/shared/unstoptoken.md
-https://developer.sprint.paymentology.com/profile-api-reference/updateallocatedcard/,API Reference,Shared,UpdateAllocatedCard,API Reference/shared/updateallocatedcard.md
-https://developer.sprint.paymentology.com/profile-api-reference/updatebearer/,API Reference,Shared,UpdateBearer,API Reference/shared/updatebearer.md
-https://developer.sprint.paymentology.com/profile-api-reference/updatebearerextended/,API Reference,Shared,UpdateBearerExtended,API Reference/shared/updatebearerextended.md
-https://developer.sprint.paymentology.com/profile-api-reference/updateprofile/,API Reference,Shared,UpdateProfile,API Reference/shared/updateprofile.md
-https://developer.sprint.paymentology.com/profile-api-reference/updatescheduledstop/,API Reference,Shared,UpdateScheduledStop,API Reference/shared/updatescheduledstop.md
-https://developer.sprint.paymentology.com/profile-api-reference/updatetokenaccount/,API Reference,Shared,UpdateTokenAccount,API Reference/shared/updatetokenaccount.md
-https://developer.sprint.paymentology.com/profile-api-reference/uploadficadocument/,API Reference,Shared,UploadFicaDocument,API Reference/shared/uploadficadocument.md
-https://developer.sprint.paymentology.com/profile-api-reference/vastransferfunds/,API Reference,Shared,VasTransferFunds,API Reference/shared/vastransferfunds.md
+https://developer.sprint.paymentology.com/profile-api-reference/,API Reference,Profile API Reference,Profile API Reference,API Reference/profile-api-reference/profile-api-reference.md
+https://developer.sprint.paymentology.com/profile-api-reference/activate/,API Reference,Profile API Reference,Activate,API Reference/profile-api-reference/activate.md
+https://developer.sprint.paymentology.com/profile-api-reference/activatetoken/,API Reference,Profile API Reference,ActivateToken,API Reference/profile-api-reference/activatetoken.md
+https://developer.sprint.paymentology.com/profile-api-reference/allocatecard/,API Reference,Profile API Reference,AllocateCard,API Reference/profile-api-reference/allocatecard.md
+https://developer.sprint.paymentology.com/profile-api-reference/allocatecreatevirtualcard/,API Reference,Profile API Reference,AllocateCreateVirtualCard,API Reference/profile-api-reference/allocatecreatevirtualcard.md
+https://developer.sprint.paymentology.com/profile-api-reference/allocateiban/,API Reference,Profile API Reference,AllocateIBAN,API Reference/profile-api-reference/allocateiban.md
+https://developer.sprint.paymentology.com/profile-api-reference/balance/,API Reference,Profile API Reference,Balance,API Reference/profile-api-reference/balance.md
+https://developer.sprint.paymentology.com/profile-api-reference/calculatetav-2/,API Reference,Profile API Reference,CalculateTAV,API Reference/profile-api-reference/calculatetav-2.md
+https://developer.sprint.paymentology.com/profile-api-reference/cancelscheduledstop/,API Reference,Profile API Reference,CancelScheduledStop,API Reference/profile-api-reference/cancelscheduledstop.md
+https://developer.sprint.paymentology.com/profile-api-reference/cancelstopcard/,API Reference,Profile API Reference,CancelStopCard,API Reference/profile-api-reference/cancelstopcard.md
+https://developer.sprint.paymentology.com/profile-api-reference/carddetail/,API Reference,Profile API Reference,CardDetail,API Reference/profile-api-reference/carddetail.md
+https://developer.sprint.paymentology.com/profile-api-reference/changepin/,API Reference,Profile API Reference,ChangePin,API Reference/profile-api-reference/changepin.md
+https://developer.sprint.paymentology.com/profile-api-reference/checkauthorisation/,API Reference,Profile API Reference,CheckAuthorisation,API Reference/profile-api-reference/checkauthorisation.md
+https://developer.sprint.paymentology.com/profile-api-reference/checkload/,API Reference,Profile API Reference,CheckLoad,API Reference/profile-api-reference/checkload.md
+https://developer.sprint.paymentology.com/profile-api-reference/createscheduledstop/,API Reference,Profile API Reference,CreateScheduledStop,API Reference/profile-api-reference/createscheduledstop.md
+https://developer.sprint.paymentology.com/profile-api-reference/createvirtualcard/,API Reference,Profile API Reference,CreateVirtualCard,API Reference/profile-api-reference/createvirtualcard.md
+https://developer.sprint.paymentology.com/profile-api-reference/deductcardloadprofile/,API Reference,Profile API Reference,DeductCardLoadProfile,API Reference/profile-api-reference/deductcardloadprofile.md
+https://developer.sprint.paymentology.com/profile-api-reference/deletetoken/,API Reference,Profile API Reference,DeleteToken,API Reference/profile-api-reference/deletetoken.md
+https://developer.sprint.paymentology.com/profile-api-reference/delinkcard/,API Reference,Profile API Reference,DeLinkCard,API Reference/profile-api-reference/delinkcard.md
+https://developer.sprint.paymentology.com/profile-api-reference/devalueprofile/,API Reference,Profile API Reference,DevalueProfile,API Reference/profile-api-reference/devalueprofile.md
+https://developer.sprint.paymentology.com/profile-api-reference/generatetimebasedsecret/,API Reference,Profile API Reference,GenerateTimeBasedSecret,API Reference/profile-api-reference/generatetimebasedsecret.md
+https://developer.sprint.paymentology.com/profile-api-reference/getschedulestopdetail/,API Reference,Profile API Reference,GetScheduleStopDetail,API Reference/profile-api-reference/getschedulestopdetail.md
+https://developer.sprint.paymentology.com/profile-api-reference/inserttransactionfee/,API Reference,Profile API Reference,InsertTransactionFee,API Reference/profile-api-reference/inserttransactionfee.md
+https://developer.sprint.paymentology.com/profile-api-reference/linkcard/,API Reference,Profile API Reference,LinkCard,API Reference/profile-api-reference/linkcard.md
+https://developer.sprint.paymentology.com/profile-api-reference/linkcardsbysequencerange/,API Reference,Profile API Reference,LinkCardsBySequenceRange,API Reference/profile-api-reference/linkcardsbysequencerange.md
+https://developer.sprint.paymentology.com/profile-api-reference/listalltokens/,API Reference,Profile API Reference,ListAllTokens,API Reference/profile-api-reference/listalltokens.md
+https://developer.sprint.paymentology.com/profile-api-reference/listtokens/,API Reference,Profile API Reference,ListTokens,API Reference/profile-api-reference/listtokens.md
+https://developer.sprint.paymentology.com/profile-api-reference/loadcarddeductprofile/,API Reference,Profile API Reference,LoadCardDeductProfile,API Reference/profile-api-reference/loadcarddeductprofile.md
+https://developer.sprint.paymentology.com/profile-api-reference/ordercard/,API Reference,Profile API Reference,OrderCard,API Reference/profile-api-reference/ordercard.md
+https://developer.sprint.paymentology.com/profile-api-reference/register/,API Reference,Profile API Reference,Register,API Reference/profile-api-reference/register.md
+https://developer.sprint.paymentology.com/profile-api-reference/resetpin/,API Reference,Profile API Reference,ResetPin,API Reference/profile-api-reference/resetpin.md
+https://developer.sprint.paymentology.com/profile-api-reference/reversedeductcardloadprofile/,API Reference,Profile API Reference,ReverseDeductCardLoadProfile,API Reference/profile-api-reference/reversedeductcardloadprofile.md
+https://developer.sprint.paymentology.com/profile-api-reference/reversedevalueprofile/,API Reference,Profile API Reference,ReverseDevalueProfile,API Reference/profile-api-reference/reversedevalueprofile.md
+https://developer.sprint.paymentology.com/profile-api-reference/reversetransactionfee/,API Reference,Profile API Reference,ReverseTransactionFee,API Reference/profile-api-reference/reversetransactionfee.md
+https://developer.sprint.paymentology.com/profile-api-reference/reversevastransferfunds/,API Reference,Profile API Reference,ReverseVasTransferFunds,API Reference/profile-api-reference/reversevastransferfunds.md
+https://developer.sprint.paymentology.com/profile-api-reference/statement/,API Reference,Profile API Reference,Statement,API Reference/profile-api-reference/statement.md
+https://developer.sprint.paymentology.com/profile-api-reference/statementbydaterange/,API Reference,Profile API Reference,StatementByDateRange,API Reference/profile-api-reference/statementbydaterange.md
+https://developer.sprint.paymentology.com/profile-api-reference/status/,API Reference,Profile API Reference,Status,API Reference/profile-api-reference/status.md
+https://developer.sprint.paymentology.com/profile-api-reference/stopcard/,API Reference,Profile API Reference,StopCard,API Reference/profile-api-reference/stopcard.md
+https://developer.sprint.paymentology.com/profile-api-reference/stoptoken/,API Reference,Profile API Reference,StopToken,API Reference/profile-api-reference/stoptoken.md
+https://developer.sprint.paymentology.com/profile-api-reference/togglevoucherfeature/,API Reference,Profile API Reference,ToggleVoucherFeature,API Reference/profile-api-reference/togglevoucherfeature.md
+https://developer.sprint.paymentology.com/profile-api-reference/transferfunds/,API Reference,Profile API Reference,TransferFunds,API Reference/profile-api-reference/transferfunds.md
+https://developer.sprint.paymentology.com/profile-api-reference/transferfundsbetweenprofiles/,API Reference,Profile API Reference,TransferFundsBetweenProfiles,API Reference/profile-api-reference/transferfundsbetweenprofiles.md
+https://developer.sprint.paymentology.com/profile-api-reference/transferlink/,API Reference,Profile API Reference,TransferLink,API Reference/profile-api-reference/transferlink.md
+https://developer.sprint.paymentology.com/profile-api-reference/transfertoken/,API Reference,Profile API Reference,TransferToken,API Reference/profile-api-reference/transfertoken.md
+https://developer.sprint.paymentology.com/profile-api-reference/unstoptoken/,API Reference,Profile API Reference,UnStopToken,API Reference/profile-api-reference/unstoptoken.md
+https://developer.sprint.paymentology.com/profile-api-reference/updateallocatedcard/,API Reference,Profile API Reference,UpdateAllocatedCard,API Reference/profile-api-reference/updateallocatedcard.md
+https://developer.sprint.paymentology.com/profile-api-reference/updatebearer/,API Reference,Profile API Reference,UpdateBearer,API Reference/profile-api-reference/updatebearer.md
+https://developer.sprint.paymentology.com/profile-api-reference/updatebearerextended/,API Reference,Profile API Reference,UpdateBearerExtended,API Reference/profile-api-reference/updatebearerextended.md
+https://developer.sprint.paymentology.com/profile-api-reference/updateprofile/,API Reference,Profile API Reference,UpdateProfile,API Reference/profile-api-reference/updateprofile.md
+https://developer.sprint.paymentology.com/profile-api-reference/updatescheduledstop/,API Reference,Profile API Reference,UpdateScheduledStop,API Reference/profile-api-reference/updatescheduledstop.md
+https://developer.sprint.paymentology.com/profile-api-reference/updatetokenaccount/,API Reference,Profile API Reference,UpdateTokenAccount,API Reference/profile-api-reference/updatetokenaccount.md
+https://developer.sprint.paymentology.com/profile-api-reference/uploadficadocument/,API Reference,Profile API Reference,UploadFicaDocument,API Reference/profile-api-reference/uploadficadocument.md
+https://developer.sprint.paymentology.com/profile-api-reference/vastransferfunds/,API Reference,Profile API Reference,VasTransferFunds,API Reference/profile-api-reference/vastransferfunds.md
 https://developer.sprint.paymentology.com/qr-payments-api/,Guides,Shared,QR Payments API,Guides/qr-payments-api.md
 https://developer.sprint.paymentology.com/qr-payments-api/api-reference/,API Reference,QR Payments,API REFERENCE,API Reference/qr-payments/api-reference.md
 https://developer.sprint.paymentology.com/qr-payments-api/api-reference/appendix/,API Reference,QR Payments,Appendix,API Reference/qr-payments/appendix.md

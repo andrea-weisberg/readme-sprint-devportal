@@ -528,5 +528,6 @@ def _api_reference_overview_body() -> str:
         "- Companion API\n"
         "- QR Payments\n"
         "- Chargeback API\n"
+        "- Profile API Reference\n"
         "- Shared\n"
     )
