@@ -1,5 +1,5 @@
 ---
-title: Help
+title: Checksum Generator Help
 category:
   uri: Tools
 slug: checksum-generator-help

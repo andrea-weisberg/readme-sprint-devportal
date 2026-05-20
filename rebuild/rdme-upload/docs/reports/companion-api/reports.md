@@ -1,5 +1,5 @@
 ---
-title: Reports
+title: Companion API Reports
 category:
   uri: Reports
 slug: companion-api-reports

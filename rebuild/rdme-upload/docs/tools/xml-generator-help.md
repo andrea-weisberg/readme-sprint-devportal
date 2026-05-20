@@ -1,5 +1,5 @@
 ---
-title: Help
+title: XML Generator Help
 category:
   uri: Tools
 slug: xml-generator-help

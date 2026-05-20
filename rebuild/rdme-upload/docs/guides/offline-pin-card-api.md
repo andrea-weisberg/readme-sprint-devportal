@@ -1,5 +1,5 @@
 ---
-title: Offline PIN
+title: Offline PIN (Card API)
 category:
   uri: Guides
 slug: offline-pin-card-api

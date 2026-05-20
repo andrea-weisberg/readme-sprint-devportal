@@ -1,5 +1,5 @@
 ---
-title: Disputes
+title: Disputes (Card API)
 category:
   uri: Guides
 slug: disputes-card-api

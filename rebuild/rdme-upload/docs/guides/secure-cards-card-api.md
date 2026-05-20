@@ -1,5 +1,5 @@
 ---
-title: Secure cards
+title: Secure cards (Card API)
 category:
   uri: Guides
 slug: secure-cards-card-api

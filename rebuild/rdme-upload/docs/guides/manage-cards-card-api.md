@@ -1,5 +1,5 @@
 ---
-title: Manage cards
+title: Manage cards (Card API)
 category:
   uri: Guides
 slug: manage-cards-card-api

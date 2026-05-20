@@ -240,6 +240,10 @@ class RdmeExportTests(TestCase):
                 "slug: companion-api-reports\n",
                 (output_root / "docs" / "reports" / "companion-api" / "reports.md").read_text(encoding="utf-8"),
             )
+            self.assertNotIn(
+                "parent:\n  uri: card-api-reports\n",
+                (output_root / "docs" / "reports" / "companion-api" / "reports.md").read_text(encoding="utf-8"),
+            )
 
     def test_export_rdme_source_quotes_yaml_sensitive_titles(self):
         with TemporaryDirectory() as tmp:
@@ -513,6 +517,63 @@ class RdmeExportTests(TestCase):
             self.assertIn(
                 "slug: companion-api-guide\n",
                 (output_root / "docs" / "guides" / "companion-api.md").read_text(encoding="utf-8"),
+            )
+
+    def test_export_rdme_source_disambiguates_duplicate_titles(self):
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            output_root = root / "rdme-upload"
+            pages = (
+                DestinationPage(
+                    "1",
+                    "https://developer.sprint.paymentology.com/card-api/disputes/",
+                    "Guides/disputes-card-api.md",
+                    "Disputes",
+                    "Guides",
+                    "Shared",
+                    "disputes-card-api",
+                ),
+                DestinationPage(
+                    "2",
+                    "https://developer.sprint.paymentology.com/tools/simpos/help/",
+                    "Tools/simpos-help.md",
+                    "Help",
+                    "Tools",
+                    "Tools",
+                    "simpos-help",
+                ),
+                DestinationPage(
+                    "3",
+                    "https://developer.sprint.paymentology.com/card-api/reports/",
+                    "Reports/card-api/reports.md",
+                    "Reports",
+                    "Reports",
+                    "Card API",
+                    "reports",
+                ),
+            )
+
+            export_rdme_source(
+                output_root,
+                pages,
+                {
+                    "Guides/disputes-card-api.md": "# Disputes\n\nBody.\n",
+                    "Tools/simpos-help.md": "# Help\n\nBody.\n",
+                    "Reports/card-api/reports.md": "# Reports\n\nBody.\n",
+                },
+            )
+
+            self.assertIn(
+                "title: Disputes (Card API)\n",
+                (output_root / "docs" / "guides" / "disputes-card-api.md").read_text(encoding="utf-8"),
+            )
+            self.assertIn(
+                "title: SIMPOS Help\n",
+                (output_root / "docs" / "tools" / "simpos-help.md").read_text(encoding="utf-8"),
+            )
+            self.assertIn(
+                "title: Card API Reports\n",
+                (output_root / "docs" / "reports" / "card-api" / "reports.md").read_text(encoding="utf-8"),
             )
 
     def test_export_rdme_source_uses_parent_child_hierarchy_for_guides(self):

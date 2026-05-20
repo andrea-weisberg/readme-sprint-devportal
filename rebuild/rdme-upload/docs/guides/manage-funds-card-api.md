@@ -1,5 +1,5 @@
 ---
-title: Manage funds
+title: Manage funds (Card API)
 category:
   uri: Guides
 slug: manage-funds-card-api

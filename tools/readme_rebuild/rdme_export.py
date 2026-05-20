@@ -217,8 +217,9 @@ def export_rdme_source(
             body = _sanitize_body_for_rdme(
                 _strip_leading_title(content_by_path[page.path], page.title)
             )
+            export_title = _export_title_for_page(page)
             frontmatter = _build_frontmatter(
-                title=page.title,
+                title=export_title,
                 category_title=category_title,
                 slug=_slug_for_export(page),
                 position=offset,
@@ -304,6 +305,27 @@ def _slug_for_export(page: DestinationPage) -> str:
     return SLUG_OVERRIDES.get(page.path, page.slug)
 
 
+def _export_title_for_page(page: DestinationPage) -> str:
+    slug = _slug_for_export(page)
+
+    if page.top_bar == "Reports" and page.slug == "reports":
+        return f"{page.subsection} Reports"
+
+    if slug.endswith("-card-api"):
+        return f"{page.title} (Card API)"
+
+    tool_help_titles = {
+        "3d-secure-customization-help": "3D Secure Customization Help",
+        "xml-generator-help": "XML Generator Help",
+        "simpos-help": "SIMPOS Help",
+        "checksum-generator-help": "Checksum Generator Help",
+    }
+    if slug in tool_help_titles:
+        return tool_help_titles[slug]
+
+    return page.title
+
+
 def _parent_slugs_by_bucket(
     pages_by_bucket: dict[tuple[str, str], list[DestinationPage]]
 ) -> dict[tuple[str, str], str]:
@@ -375,6 +397,21 @@ def _parent_slug_for_page(
     bucket_parent_slug: str | None,
     bucket_pages_by_source_id: dict[str, DestinationPage],
 ) -> str | None:
+    if page.top_bar == "Reports":
+        if page.slug == "reports":
+            return None
+        report_root = next(
+            (
+                candidate
+                for candidate in bucket_pages_by_source_id.values()
+                if candidate.top_bar == "Reports"
+                and candidate.subsection == page.subsection
+                and candidate.slug == "reports"
+            ),
+            None,
+        )
+        if report_root:
+            return _slug_for_export(report_root)
     if page.parent_source_id and page.parent_source_id in bucket_pages_by_source_id:
         parent_page = bucket_pages_by_source_id[page.parent_source_id]
         return _slug_for_export(parent_page)
