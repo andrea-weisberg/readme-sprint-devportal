@@ -3,7 +3,7 @@ title: Tokenization
 category:
   uri: Guides
 slug: tokenization
-position: 37
+position: 32
 parent:
   uri: card-api
 ---

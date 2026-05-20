@@ -1,11 +1,13 @@
 - 3d-secure-customization
+- 3d-secure-customization-help
 - checksum-generator
 - checksum-generator-help
-- help
 - one-time-password-otp-authentication
 - out-of-band-oob-authentication
 - simpos
+- simpos-help
 - simpos-result-codes
 - tools
 - xml-generator
+- xml-generator-help
 - xml-poster

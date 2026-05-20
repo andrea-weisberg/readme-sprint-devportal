@@ -3,7 +3,7 @@ title: Provisioning
 category:
   uri: Guides
 slug: provisioning
-position: 40
+position: 35
 parent:
   uri: tokenization
 ---

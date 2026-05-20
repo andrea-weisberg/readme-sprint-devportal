@@ -54,10 +54,10 @@ https://developer.sprint.paymentology.com/card-api/api-reference/updatecardexpir
 https://developer.sprint.paymentology.com/card-api/api-reference/updatecardlabel/,API Reference,Card API,UpdateCardLabel,API Reference/card-api/updatecardlabel.md
 https://developer.sprint.paymentology.com/card-api/api-reference/updatecvv/,API Reference,Card API,UpdateCVV,API Reference/card-api/updatecvv.md
 https://developer.sprint.paymentology.com/card-api/api-reference/updatetokenaccount/,API Reference,Card API,UpdateTokenAccount,API Reference/card-api/updatetokenaccount.md
-https://developer.sprint.paymentology.com/card-api/disputes/,Guides,Shared,Disputes,Guides/disputes.md
+https://developer.sprint.paymentology.com/card-api/disputes/,Guides,Shared,Disputes,Guides/disputes-card-api.md
 https://developer.sprint.paymentology.com/card-api/issue-card/,Guides,Shared,Issue cards,Guides/issue-card.md
-https://developer.sprint.paymentology.com/card-api/manage-cards/,Guides,Shared,Manage cards,Guides/manage-cards.md
-https://developer.sprint.paymentology.com/card-api/manage-funds/,Guides,Shared,Manage funds,Guides/manage-funds.md
+https://developer.sprint.paymentology.com/card-api/manage-cards/,Guides,Shared,Manage cards,Guides/manage-cards-card-api.md
+https://developer.sprint.paymentology.com/card-api/manage-funds/,Guides,Shared,Manage funds,Guides/manage-funds-card-api.md
 https://developer.sprint.paymentology.com/card-api/reconciliation/,Guides,Shared,Reconciliation,Guides/reconciliation.md
 https://developer.sprint.paymentology.com/card-api/reports/,Reports,Card API,Reports,Reports/card-api/reports.md
 https://developer.sprint.paymentology.com/card-api/reports/apple-pay-monthly-declines-report/,Reports,Card API,Apple Pay monthly declines report,Reports/card-api/apple-pay-monthly-declines-report.md
@@ -85,8 +85,8 @@ https://developer.sprint.paymentology.com/card-api/reports/qmr-data-report/,Repo
 https://developer.sprint.paymentology.com/card-api/reports/qvr-data-report/,Reports,Card API,QVR data report,Reports/card-api/qvr-data-report.md
 https://developer.sprint.paymentology.com/card-api/reports/summary-settlement-report-2/,Reports,Card API,Summary settlement report,Reports/card-api/summary-settlement-report-2.md
 https://developer.sprint.paymentology.com/card-api/reports/vau-transaction-report/,Reports,Card API,VAU transaction report,Reports/card-api/vau-transaction-report.md
-https://developer.sprint.paymentology.com/card-api/secure-cards/,Guides,Shared,Secure cards,Guides/secure-cards.md
-https://developer.sprint.paymentology.com/card-api/secure-cards/offline-pin/,Guides,Shared,Offline PIN,Guides/offline-pin.md
+https://developer.sprint.paymentology.com/card-api/secure-cards/,Guides,Shared,Secure cards,Guides/secure-cards-card-api.md
+https://developer.sprint.paymentology.com/card-api/secure-cards/offline-pin/,Guides,Shared,Offline PIN,Guides/offline-pin-card-api.md
 https://developer.sprint.paymentology.com/card-api/tokenization/,Guides,Shared,Tokenization,Guides/tokenization.md
 https://developer.sprint.paymentology.com/card-api/tokenization/lifecycle-management/,Guides,Shared,Lifecycle Management,Guides/lifecycle-management.md
 https://developer.sprint.paymentology.com/card-api/tokenization/payments/,Guides,Shared,Payments,Guides/payments.md
@@ -293,16 +293,16 @@ https://developer.sprint.paymentology.com/response-codes/,Guides,Shared,Response
 https://developer.sprint.paymentology.com/reversedevalueprofile/,Guides,Shared,ReverseDevalueProfile,Guides/reversedevalueprofile.md
 https://developer.sprint.paymentology.com/tools/,Tools,Tools,Tools,Tools/tools.md
 https://developer.sprint.paymentology.com/tools/3d-secure-customization/,Tools,Tools,3D Secure Screen Customization,Tools/3d-secure-customization.md
-https://developer.sprint.paymentology.com/tools/3d-secure-customization/help/,Tools,Tools,Help,Tools/help.md
+https://developer.sprint.paymentology.com/tools/3d-secure-customization/help/,Tools,Tools,Help,Tools/3d-secure-customization-help.md
 https://developer.sprint.paymentology.com/tools/3d-secure-customization/one-time-password-otp-authentication/,Tools,Tools,One-time Password (OTP) Authentication,Tools/one-time-password-otp-authentication.md
 https://developer.sprint.paymentology.com/tools/3d-secure-customization/out-of-band-oob-authentication/,Tools,Tools,Out-of-Band (OOB) Authentication,Tools/out-of-band-oob-authentication.md
 https://developer.sprint.paymentology.com/tools/checksum-generator/,Tools,Tools,Checksum Generator,Tools/checksum-generator.md
 https://developer.sprint.paymentology.com/tools/checksum-generator/checksum-generator-help/,Tools,Tools,Help,Tools/checksum-generator-help.md
 https://developer.sprint.paymentology.com/tools/simpos/,Tools,Tools,SimPOS,Tools/simpos.md
-https://developer.sprint.paymentology.com/tools/simpos/help/,Tools,Tools,Help,Tools/help.md
+https://developer.sprint.paymentology.com/tools/simpos/help/,Tools,Tools,Help,Tools/simpos-help.md
 https://developer.sprint.paymentology.com/tools/simpos/simpos-result-codes/,Tools,Tools,SimPOS Result Codes,Tools/simpos-result-codes.md
 https://developer.sprint.paymentology.com/tools/xml-generator/,Tools,Tools,XML Generator,Tools/xml-generator.md
-https://developer.sprint.paymentology.com/tools/xml-generator/help/,Tools,Tools,Help,Tools/help.md
+https://developer.sprint.paymentology.com/tools/xml-generator/help/,Tools,Tools,Help,Tools/xml-generator-help.md
 https://developer.sprint.paymentology.com/tools/xml-poster/,Tools,Tools,XML Poster,Tools/xml-poster.md
 https://developer.sprint.paymentology.com/tutuka-transaction-stream-2/,Guides,Shared,Transaction Stream,Guides/tutuka-transaction-stream-2.md
 https://developer.sprint.paymentology.com/updateprofile/,Guides,Shared,UpdateProfile,Guides/updateprofile.md

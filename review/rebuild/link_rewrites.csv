@@ -4,10 +4,10 @@ https://developer.sprint.paymentology.com/3d-secure-out-of-band/,https://develop
 https://developer.sprint.paymentology.com/administrativemessage3dsecureotp/,https://developer.sprint.paymentology.com/companion-api/api-reference/remote/,/api-reference/companion-api/remote,rewritten
 https://developer.sprint.paymentology.com/administrativemessage3dsecureotp/,https://developer.sprint.paymentology.com/companion-api/klv-lookup/,/guides/klv-lookup,rewritten
 https://developer.sprint.paymentology.com/card-api/,https://developer.sprint.paymentology.com/card-api/issue-card/,/guides/issue-card,rewritten
-https://developer.sprint.paymentology.com/card-api/,https://developer.sprint.paymentology.com/card-api/manage-cards/,/guides/manage-cards,rewritten
-https://developer.sprint.paymentology.com/card-api/,https://developer.sprint.paymentology.com/card-api/manage-funds/,/guides/manage-funds,rewritten
+https://developer.sprint.paymentology.com/card-api/,https://developer.sprint.paymentology.com/card-api/manage-cards/,/guides/manage-cards-card-api,rewritten
+https://developer.sprint.paymentology.com/card-api/,https://developer.sprint.paymentology.com/card-api/manage-funds/,/guides/manage-funds-card-api,rewritten
 https://developer.sprint.paymentology.com/card-api/,https://developer.sprint.paymentology.com/card-api/reports/,/reports/card-api/reports,rewritten
-https://developer.sprint.paymentology.com/card-api/,https://developer.sprint.paymentology.com/card-api/secure-cards/,/guides/secure-cards,rewritten
+https://developer.sprint.paymentology.com/card-api/,https://developer.sprint.paymentology.com/card-api/secure-cards/,/guides/secure-cards-card-api,rewritten
 https://developer.sprint.paymentology.com/card-api/,https://developer.sprint.paymentology.com/card-api/tokenization/,/guides/tokenization,rewritten
 https://developer.sprint.paymentology.com/card-api/,https://developer.sprint.paymentology.com/companion-api/,/guides/companion-api,rewritten
 https://developer.sprint.paymentology.com/card-api/,https://developer.sprint.paymentology.com/contact-us/,/guides/contact-us,rewritten

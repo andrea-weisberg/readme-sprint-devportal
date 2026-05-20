@@ -3,67 +3,47 @@ title: Secure cards
 category:
   uri: Guides
 slug: secure-cards
-position: 32
+position: 14
 parent:
-  uri: card-api
+  uri: companion-api-guide
 ---
 
-**The Sprint Card API allows you to access a wide range of features to ensure the security of card transactions.**
+**The Paymentology Sprint Companion API allows you to secure your cards and ensure the safety of transactions.**
 
-Here are the main features to use to ensure the security of your cards:
+You can use the following three main ways to secure your companion cards:
 
 - Dynamic secure code on virtual cards
 
-- Dynamic CVV on virtual cards
-
 - PIN on physical cards
 
-- Adding pockets to your card
+## 1. Securing a virtual card with a dynamic secure code
 
-Let's look at each of them.
+You can add an extra layer of security to your virtual card using a dynamic secure code. **The secure code is what Mastercard refers to as 3D Secure, and Visa refers to it as Visa Secure (formerly Verified by Visa (VbV)).** Mastercard and Visa created the technical standard to secure Cardholder Not Present (CNP) transactions.
 
-## 1. Using a dynamic secure code on virtual cards​ ​
+**This method provides additional authentication to secure a customer’s virtual card during an online transaction.** It protects consumers against unauthorized use of cards and businesses from potential fraud liabilities.
 
-​A dynamic secure code allows you to increase the security of your virtual cards. If you add a dynamic secure code, it will be required at the time of making any transaction, enhancing payments security and safeguarding against fraud.
+3D Secure enables consumers to verify transactions using a One Time Pin (OTP), which is sent to their mobile device.
 
-​
+If your card program is enabled for Dynamic 3D Secure, the cardholder will be sent an OTP to conclude an online transaction. Through the Remote AdminMessage, Paymentology will send the OTP to your platform, which you can then send on to the cardholder.
 
-The secure code is what Mastercard refers to as 3D Secure, and Visa refers to it as Visa Secure (formerly Verified by Visa (VbV)).
+## 2. Securing a physical card with a PIN
 
-To secure your virtual card with a dynamic secure code, you’ll need to make a call to the AdministrativeMessage method.
+Your customers will require a PIN (personal identification number) for all ATM transactions. A secret PIN assists in verifying your users’ identity and allowing them to perform secure transactions.
 
-​
+There are two options for managing your PIN: **Paymentology manages the PIN** or **you manage the PIN**
 
-Then, a One Time PIN (OTP), which is triggered by the OTPRequest method, will be delivered to the cardholder to enable them to complete the secure code process and finalize the transaction.
+**OPTION 1** - Paymentology manages the PIN
 
-## 2. Using a dynamic CVV on virtual cards​ ​
+If you choose this option, Paymentology will manage the PIN on your behalf. This implies that **Paymentology will validate the PIN before sending it to a store of value for authorizing the transaction.**
 
-​The Card Verification Value (CVV), which comes with every virtual card, is an essential feature for improving security. This static number helps in validating the identity of the cardholder, ensuring the card cannot be used for making fraudulent transactions.
+When Paymentology manages the PIN, you can choose between these options:
 
-​
+**a)** The PIN is pre-printed in a tamper-proof package containing the card. This would be the PIN the cardholder would use for making transactions.
 
-And if you intend to revamp the security of a virtual card, or if a cardholder suspects their CVV has been compromised, you can simply update the CVV.
+**b)** The PIN is not printed on the package. This implies it would be set when the card is linked or issued.
 
-​
+In case the card PIN needs to be set for the first time or changed at a later time, or if the customer forgets it or requests it to be changed, you’ll need to make a call to the [ChangePIN](/api-reference/companion-api/changepin) method to do this. Once the API request has been completed, Paymentology will issue a new PIN, which the cardholder can use for making transactions.
 
-To update the CVV, you’ll need to make a call to the UpdateCVV method. Paymentology will then create a new CVV that you can send to your cardholder.
+**OPTION 2** - You manage the PIN
 
-## 3. Using a PIN on physical cards​ ​
-
-​A PIN (personal identification number) is required to perform all ATM transactions. A secret PIN verifies a user’s identity and allows them to perform secure transactions. Apart from managing the transactions on the card, Paymentology will also manage its PIN. The PIN can either be pre-printed in a tamper-proof package containing the card or it can be set when the card is linked/issued.
-
-​
-
-If the card PIN needs to be set for the first time or changed at a later time, or if the customer forgets it or requests it to be changed, you’ll need to make a call to the ​ ChangePIN method. After the API request has been completed, Paymentology will issue a new PIN.
-
-## 4. Adding pockets to your card​ ​
-
-​Although the ability to add multiple pockets may not be suitable for everyone, this feature allows you to enhance the versatility and security of your card. You will have your main Permanent Account Number (PAN) as your “control” card and multiple pockets that sit under this with different balances.
-
-​
-
-Pockets are a useful feature to help customers manage their money. Different pockets can be set up, like for example multiple currency pockets, savings pockets, expenditure pockets, or lifestyle pockets. Each pocket comes with its own balance management system, which also enhances its security.
-
-​
-
-To add multiple pockets to your card, you’ll need to make a call to the ​ AddPocket method​.
+This second option allows the store of value organization to manage the PIN and perform PIN validation based on a PINblock that Paymentology sends. Paymentology will then send a PINblock in the KLV (Key-Length-Value) transaction data based on pre-shared keys, which allow for encryption and decryption to pass the PIN for secure validation.

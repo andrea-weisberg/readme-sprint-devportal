@@ -2,10 +2,10 @@
 title: Disputes
 category:
   uri: Guides
-slug: disputes
-position: 28
+slug: disputes-card-api
+position: 42
 parent:
-  uri: companion-api-guide
+  uri: card-api
 ---
 
 # What is a Dispute?
@@ -14,11 +14,11 @@ A dispute is a transaction that a cardholder/customer does not agree with and th
 
 ## Types of Disputes:
 
-- **Reversal -**A reversal is essentially a request for a transaction that was not completed and could have failed at a particular step of the transaction process. It is an advisement message to all parties of the transaction and ensures that the card and store of value are put back into their original state if a failed to deduct transaction had been initiated. If you sent a transaction and did not receive a confirmation that the transaction was successful, it could imply that the transaction did not reach the intended destination.
+- **Reversal –**A reversal is essentially a request for a transaction that was not completed and could have failed at a particular step of the transaction process. It is an advisement message to all parties of the transaction and ensures that the card and store of value are put back into their original state if a failed to deduct transaction had been initiated. If you sent a transaction and did not receive a confirmation that the transaction was successful, it could imply that the transaction did not reach the intended destination.
 
-- **Refund** - A refund is when funds are credited back to the customer’s card from a previously debited transaction. A refund is processed when the merchant refunds the customer for returned goods and the funds which were settled to the merchant’s account need to move back to the cardholder’s account.
+- **Refund** – A refund is when funds are credited back to the customer’s card from a previously debited transaction. A refund is processed when the merchant refunds the customer for returned goods and the funds which were settled to the merchant’s account need to move back to the cardholder’s account.
 
-- **Chargeback -**A chargeback is the return of funds for a deduct transaction that was previously processed from a cardholder’s card balance, due to a successful dispute by the consumer regarding the transaction
+- **Chargeback –**A chargeback is the return of funds for a deduct transaction that was previously processed from a cardholder’s card balance, due to a successful dispute by the consumer regarding the transaction
 
 # How Disputes Work
 
@@ -26,11 +26,11 @@ A dispute is a transaction that a cardholder/customer does not agree with and th
 
 Once a dispute is raised, card issuers (like Paymentology) are able to submit a chargeback using a specific set of reason codes via the card scheme (Mastercard/Visa). There are a specific set of rules and timeframes set out by the card scheme that need to be followed in order to submit a chargeback.
 
-Chargebacks can only be submitted if the transaction has settled i.e. funds have moved from the Issuer's bank account to the merchant's bank account for the transaction.
+Chargebacks can only be submitted if the transaction has settled i.e. funds have moved from the Issuer’s bank account to the merchant’s bank account for the transaction.
 
 ## What is a Second Presentment?
 
-A second presentment (sometimes called a re-presentment) is the merchant's opportunity to disagree with the chargeback request submitted by the Issuer on behalf of the cardholder. After a chargeback request has been submitted, the merchant/acquirer will have 10/30/45 days in which they may submit second presentments (also called pre-arbitration with some card schemes), depending on card scheme rules.
+A second presentment (sometimes called a re-presentment) is the merchant’s opportunity to disagree with the chargeback request submitted by the Issuer on behalf of the cardholder. After a chargeback request has been submitted, the merchant/acquirer will have 10/35/45 days in which they may submit second presentments (also called pre-arbitration with some card schemes), depending on card scheme rules.
 
 ## What is Pre-Arbitration and Arbitration?
 
@@ -38,7 +38,7 @@ Following a receipt of a second presentment (also knows as re-presentment), the 
 
 # Dispute Lifecycle
 
-Paymentology manages dispute handling and chargeback processing on behalf of our clients in two ways:
+Paymentology manages dispute handling and chargeback processing on behalf of our clients in three ways:
 
 - Client initiated disputes
 
@@ -46,9 +46,9 @@ Paymentology manages dispute handling and chargeback processing on behalf of our
 
 ## 1. Individual chargeback submission
 
-- Paymentology will provide the client with one of two chargeback dispute forms: - General dispute form - Fraud dispute form
+- Paymentology will provide the client with one of two chargeback dispute forms: – General dispute form – Fraud dispute form
 
-- The client's merchant/customer will complete the form and select the appropriate reason
+- The client’s merchant/customer will complete the form and select the appropriate reason
 
 - The client will send this dispute to Paymentology's Global support team via email - support@paymentology.com
 
@@ -58,7 +58,7 @@ Paymentology manages dispute handling and chargeback processing on behalf of our
 
 ## 2. Batch chargeback process
 
-- The client can send Paymentology a list of disputes, using a predefined batch chargeback submission template that has been requested to chargeback. The client can define the chargeback reason code. Depending on whether the documentation is required or not, Paymentology will submit these chargebacks on the client's behalf.
+- The client can send Paymentology a list of disputes, using a predefined batch chargeback submission template that has been requested to chargeback. The client can define the chargeback reason code. Depending on whether the documentation is required or not, Paymentology will submit these chargebacks on the client’s behalf.
 
 - Paymentology will monitor and track the chargeback throughout the dispute lifecycle of submission, second presentments and arbitration.
 
@@ -94,18 +94,18 @@ Most disputes have 120 days time frame but for some such as, Authorization relat
 
 There are four categories for chargeback processing:
 
-[Visa Generic Dispute Form](https://developer.sprint.paymentology.com/wp-content/uploads/2023/06/Visa-Generic-Dispute-Form.docx)
+[Visa Generic Dispute Form](https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Visa-Generic-Dispute-Form.docx)
 
 # What is a Fraud Dispute?
 
-When a cardholder says that they do not recognize transactions and have no knowledge of the transactions and were not in the vicinity where the said transactions were performed - and their card was in their possession at the time of the the transaction i.e. they did not attempt the transaction at all.
+When a cardholder says that they do not recognize transactions and have no knowledge of the transactions and were not in the vicinity where the said transactions were performed – and their card was in their possession at the time of the the transaction i.e. they did not attempt the transaction at all.
 
 For all Fraud related chargebacks, we have to report the fraudulent transaction to the various card schemes on their respective platforms:
 
-- Mastercard - Fraud Center/SAFE
+- Mastercard – Fraud Center/SAFE
 
-- Visa - VROL
+- Visa – VROL
 
-- UPI - FRM
+- UPI – FRM
 
 If a transaction was processed with [3D Secure](/guides/3d-secure), we are not able to submit a Fraud chargeback therefore, the first step is to establish if there was a 3D Secure validation done.

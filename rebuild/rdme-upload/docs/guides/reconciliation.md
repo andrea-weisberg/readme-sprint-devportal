@@ -3,7 +3,7 @@ title: Reconciliation
 category:
   uri: Guides
 slug: reconciliation
-position: 42
+position: 37
 parent:
   uri: card-api
 ---

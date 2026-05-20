@@ -1,69 +1,43 @@
 # Manage cards
 
-**You can manage the issued Paymentology cards and make updates to them whenever necessary. You can also use the API methods below to develop a UI that comes with self-help options that allow the cardholders to manage their cards by themselves.**
+**You can manage the issued Paymentology Sprint cards and make updates to them whenever necessary. You can also use the API methods below to develop a UI that comes with self-help options that allow the cardholders to manage their cards by themselves.**
 
 These are the supported card management options:
 
-- Getting card balances and other details
+- [Stopping](#stop) a card
 
-- Getting a card's transactions statement
+- [Unstopping](#unstop) a card
 
-- Adding cardholder details to a card
+- [Retiring](#retire) a card
 
-- Retrieving cardholder details
+- [Replacing](#replace) a card
 
-- Getting a list of cards linked to a customer
+- [Retrieving](#retrieve) card details
 
-- Enabling and disabling a card's features
-
-- Updating a card label
-
-- Stopping a card
-
-- Unstopping a card
-
-- Retiring a card
+- Getting the [status](#status) on a card
 
 Let's look at each of them.
 
-## 1. Getting card balances and other details
+## 1. Stopping a card
 
-To get the balance on a card, get the card details, or get the status of a card, you'll need to make a call to the CardDetail method.
+To stop a card temporarily, you’ll need to call the [​StopCard](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/#StopCard) method​​.
 
-## 2. Getting a card's transaction statement
+## 2. Unstopping a card
 
-To get a statement of the list of transactions on a card, you'll need to make a call to the Statement method.
+To unstop a card that was stopped previously, you’ll need to call the ​[UnStopCard](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/#UnstopCard) method​​.
 
-## 3. Adding cardholder details to a card
+## 3. Retiring a card
 
-To add the cardholder's details to a card, store KYC (Know Your Customer) information, or perform the sanctions screening, you'll need to make a call to the SetBearerDetail method.
+To cancel (retire) your card permanently, you’ll need to call the ​ [RetireCard](https://developer.sprint.paymentology.com/retirecard/) method​.
 
-You can also choose to opt-out of some parameter options. For example, if you only want to set the cardholder's details, then this is the only information you can send, and the rest of the parameter options will remain as null.
+## 4. Replacing a card
 
-## 4. Retrieving cardholder details
+​To replace an old card with a new card and transfer the link from the old card to the new card, you’ll need to call the ​[TransferLink](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/#TransferLink) method.
 
-To retrieve the set details of the cardholder, you'll need to make a call to the BearerDetail method.
+## 5. Retrieving card details
 
-## 5. Getting a list of cards linked to a customer
+To get the details of a card that was previously linked or created, you’ll need to make a call to the ​[GetActiveLinkedCards](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/#GetActiveLinkedCards) method. Active card refers to a card that is not stopped, retired or cancelled.
 
-To get a list of all cards linked to a customer reference number, you'll need to make a call to the ListCards method.
+## 6. Getting the status on a card
 
-## 6. Enabling and disabling a card's features
-
-To enable and disable features on specific cards, such as the ability to make international transactions or magstripe transactions, you'll need to make a call to the ToggleVoucherFeature method.
-
-## 7. Updating a card label
-
-To update a label for a card that has already been issued, you'll need to make a call to the UpdateCardLabel method.
-
-## 8. Stopping a card
-
-To stop a card temporarily, you'll need to make a call to the StopCard method.
-
-## 9. Unstopping a card
-
-To unstop a card that was stopped previously, you'll need to make a call to the UnstopCard method.
-
-## 10. Retiring a card
-
-To cancel (retire) your card permanently, you'll need to make a call to the RetireCard method. You should ensure the funds are removed from the card before it is retired. Once retired, the card will not be able to be used again.
+To retrieve the status of a card that is linked to a unique customer reference number, you’ll need to make a call to the [Status](https://developer.sprint.paymentology.com/companion-api/api-reference/local-api/#Status) method​​.

@@ -3,7 +3,7 @@ title: Processing
 category:
   uri: Guides
 slug: processing
-position: 39
+position: 34
 parent:
   uri: tokenization
 ---

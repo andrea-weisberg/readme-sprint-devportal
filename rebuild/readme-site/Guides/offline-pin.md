@@ -8,10 +8,10 @@ The way the offline PIN transactions differ from online PIN transactions is with
 
 ### How to update the Offline PIN
 
-- The issuer calls the [ChangePIN](/api-reference/card-api/changepin) API
+- The Issuer calls the [ChangePIN](/api-reference/companion-api/changepin) API
 
-- We instantly update the online PIN, and record the fact that the offline PIN needs updating
+- We instantly update the online PIN, and record that the offline PIN needs to be updated
 
-- The next time a card-present transaction arrives, that is not NFC based, we will return the issuer script to the terminal, which should tell the card to update the script
+- The next time a card-present transaction arrives, that is not NFC based, Paymentology will return a message to the terminal, which should tell the card to update the issuer script
 
 - In the following transaction, if it specifies that the previous attempt to update the issuer script fails, we will mark the update as needing reprocessing again

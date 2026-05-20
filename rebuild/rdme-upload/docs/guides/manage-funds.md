@@ -3,9 +3,9 @@ title: Manage funds
 category:
   uri: Guides
 slug: manage-funds
-position: 34
+position: 16
 parent:
-  uri: card-api
+  uri: companion-api-guide
 ---
 
 **When the cardholder has either a virtual or a physical companion card (or both), they can start transacting against their store of value. These transactions originate from the merchant and are then sent to Paymentology via the card schemes, before being forwarded to the store of value for validation and authorization.**

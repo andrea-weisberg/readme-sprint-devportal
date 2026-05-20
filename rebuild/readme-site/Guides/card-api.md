@@ -24,11 +24,11 @@ Add or deduct funds from the customer’s stored value account.
 
 - [Issue cards](/guides/issue-card)
 
-- [Manage cards](/guides/manage-cards)
+- [Manage cards](/guides/manage-cards-card-api)
 
-- [Secure cards](/guides/secure-cards)
+- [Secure cards](/guides/secure-cards-card-api)
 
-- [Manage funds](/guides/manage-funds)
+- [Manage funds](/guides/manage-funds-card-api)
 
 - [Make Tokenized payments](/guides/tokenization)
 

@@ -86,6 +86,22 @@ class MappingTests(TestCase):
         self.assertEqual(destination.top_bar, "Tools")
         self.assertEqual(destination.path, "Tools/checksum-generator.md")
 
+    def test_map_tool_help_page_to_parent_specific_slug(self):
+        page = SourcePage(
+            "70",
+            "Help",
+            "https://developer.sprint.paymentology.com/tools/xml-generator/help/",
+            "help",
+            "",
+            "body",
+            (),
+        )
+
+        destination = map_page(page)
+
+        self.assertEqual(destination.slug, "xml-generator-help")
+        self.assertEqual(destination.path, "Tools/xml-generator-help.md")
+
     def test_map_companion_api_page_to_companion_reference_path(self):
         page = SourcePage(
             "8",
@@ -146,3 +162,19 @@ class MappingTests(TestCase):
 
         self.assertEqual(destination.slug, "api-overview-v2")
         self.assertEqual(destination.path, "Guides/api-overview-v2.md")
+
+    def test_map_card_api_duplicate_guide_to_family_specific_slug(self):
+        page = SourcePage(
+            "71",
+            "Manage funds",
+            "https://developer.sprint.paymentology.com/card-api/manage-funds/",
+            "manage-funds",
+            "",
+            "body",
+            (),
+        )
+
+        destination = map_page(page)
+
+        self.assertEqual(destination.slug, "manage-funds-card-api")
+        self.assertEqual(destination.path, "Guides/manage-funds-card-api.md")

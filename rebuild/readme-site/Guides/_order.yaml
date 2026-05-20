@@ -11,6 +11,7 @@
 - contact-us
 - digital-first
 - disputes
+- disputes-card-api
 - fraud
 - generatetimebasedsecret
 - get-started
@@ -23,10 +24,13 @@
 - lifecycle-management
 - login
 - manage-cards
+- manage-cards-card-api
 - manage-funds
+- manage-funds-card-api
 - messages
 - notifications
 - offline-pin
+- offline-pin-card-api
 - our-apis
 - payments
 - privacy-policy
@@ -43,6 +47,7 @@
 - reversedevalueprofile
 - secure-apis
 - secure-cards
+- secure-cards-card-api
 - security
 - settlement-and-reconciliation
 - testing

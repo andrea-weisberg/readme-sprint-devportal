@@ -3,7 +3,7 @@ title: Issue cards
 category:
   uri: Guides
 slug: issue-card
-position: 36
+position: 31
 parent:
   uri: card-api
 ---
