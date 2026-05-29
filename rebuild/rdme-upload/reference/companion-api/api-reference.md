@@ -1,5 +1,5 @@
 ---
-title: API REFERENCE
+title: Companion API Reference
 category:
   uri: Companion API
 slug: api-reference

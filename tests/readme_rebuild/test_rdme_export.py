@@ -577,6 +577,120 @@ class RdmeExportTests(TestCase):
                 (output_root / "docs" / "reports" / "card-api" / "reports.md").read_text(encoding="utf-8"),
             )
 
+    def test_export_rdme_source_disambiguates_additional_duplicate_guide_titles(self):
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            output_root = root / "rdme-upload"
+            pages = (
+                DestinationPage(
+                    "1",
+                    "https://developer.sprint.paymentology.com/card-api/issue-card/",
+                    "Guides/issue-card.md",
+                    "Issue cards",
+                    "Guides",
+                    "Shared",
+                    "issue-card",
+                ),
+                DestinationPage(
+                    "2",
+                    "https://developer.sprint.paymentology.com/companion-api/issue-cards/",
+                    "Guides/issue-cards.md",
+                    "Issue cards",
+                    "Guides",
+                    "Shared",
+                    "issue-cards",
+                ),
+                DestinationPage(
+                    "3",
+                    "https://developer.sprint.paymentology.com/card-api/tokenization/",
+                    "Guides/tokenization.md",
+                    "Tokenization",
+                    "Guides",
+                    "Shared",
+                    "tokenization",
+                ),
+                DestinationPage(
+                    "4",
+                    "https://developer.sprint.paymentology.com/companion-api/tokenization2/",
+                    "Guides/tokenization2.md",
+                    "Tokenization",
+                    "Guides",
+                    "Shared",
+                    "tokenization2",
+                ),
+            )
+
+            export_rdme_source(
+                output_root,
+                pages,
+                {
+                    "Guides/issue-card.md": "# Issue cards\n\nCard API issue cards.\n",
+                    "Guides/issue-cards.md": "# Issue cards\n\nCompanion API issue cards.\n",
+                    "Guides/tokenization.md": "# Tokenization\n\nCard API tokenization.\n",
+                    "Guides/tokenization2.md": "# Tokenization\n\nCompanion API tokenization.\n",
+                },
+            )
+
+            self.assertIn(
+                "title: Issue cards (Card API)\n",
+                (output_root / "docs" / "guides" / "issue-card.md").read_text(encoding="utf-8"),
+            )
+            self.assertIn(
+                "title: Issue cards (Companion API)\n",
+                (output_root / "docs" / "guides" / "issue-cards.md").read_text(encoding="utf-8"),
+            )
+            self.assertIn(
+                "title: Tokenization (Card API)\n",
+                (output_root / "docs" / "guides" / "tokenization.md").read_text(encoding="utf-8"),
+            )
+            self.assertIn(
+                "title: Tokenization (Companion API)\n",
+                (output_root / "docs" / "guides" / "tokenization2.md").read_text(encoding="utf-8"),
+            )
+
+    def test_export_rdme_source_titles_reference_landing_pages_by_family(self):
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            output_root = root / "rdme-upload"
+            pages = (
+                DestinationPage(
+                    "1",
+                    "https://developer.sprint.paymentology.com/companion-api/api-reference/",
+                    "API Reference/companion-api/api-reference.md",
+                    "API REFERENCE",
+                    "API Reference",
+                    "Companion API",
+                    "api-reference",
+                ),
+                DestinationPage(
+                    "2",
+                    "https://developer.sprint.paymentology.com/qr-payments-api/api-reference/",
+                    "API Reference/qr-payments/api-reference.md",
+                    "API REFERENCE",
+                    "API Reference",
+                    "QR Payments",
+                    "api-reference",
+                ),
+            )
+
+            export_rdme_source(
+                output_root,
+                pages,
+                {
+                    "API Reference/companion-api/api-reference.md": "# API REFERENCE\n\nCompanion intro.\n",
+                    "API Reference/qr-payments/api-reference.md": "# API REFERENCE\n\nQR intro.\n",
+                },
+            )
+
+            self.assertIn(
+                "title: Companion API Reference\n",
+                (output_root / "reference" / "companion-api" / "api-reference.md").read_text(encoding="utf-8"),
+            )
+            self.assertIn(
+                "title: QR Payments API Reference\n",
+                (output_root / "reference" / "qr-payments" / "api-reference.md").read_text(encoding="utf-8"),
+            )
+
     def test_export_rdme_source_uses_parent_child_hierarchy_for_guides(self):
         with TemporaryDirectory() as tmp:
             root = Path(tmp)

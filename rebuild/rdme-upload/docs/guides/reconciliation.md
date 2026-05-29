@@ -1,5 +1,5 @@
 ---
-title: Reconciliation
+title: Reconciliation (Card API)
 category:
   uri: Guides
 slug: reconciliation

@@ -1,5 +1,5 @@
 ---
-title: Tokenization
+title: Tokenization (Card API)
 category:
   uri: Guides
 slug: tokenization

@@ -1,5 +1,5 @@
 ---
-title: Processing
+title: Processing (Companion API)
 category:
   uri: Guides
 slug: token-processing

@@ -1,5 +1,5 @@
 ---
-title: Payments
+title: Payments (Card API)
 category:
   uri: Guides
 slug: payments

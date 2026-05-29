@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from collections import defaultdict
 from pathlib import Path
+import shutil
 
 from tools.readme_rebuild.models import DestinationPage
 
@@ -11,6 +12,7 @@ def render_site(
     pages: tuple[DestinationPage, ...],
     content_by_path: dict[str, str],
 ) -> None:
+    shutil.rmtree(output_root, ignore_errors=True)
     folder_entries: dict[str, set[str]] = defaultdict(set)
 
     for page in pages:

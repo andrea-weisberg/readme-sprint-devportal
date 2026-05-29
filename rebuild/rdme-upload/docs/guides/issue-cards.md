@@ -1,5 +1,5 @@
 ---
-title: Issue cards
+title: Issue cards (Companion API)
 category:
   uri: Guides
 slug: issue-cards

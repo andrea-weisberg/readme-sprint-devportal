@@ -27,7 +27,7 @@ All chargebacks initiated will be processed using Mastercom Version 6.
 
 # [Step 5: Arbitration case](#step 5)
 
-![Chargeback process flow](https://files.readme.io/d11e6b3c053bedbb269224e75bf20073cad75324f0a6f074e411a97ea2ff3d95-12d7a3f67664aa42591868f0e5be8299700e9a1e7ee5aa09d610466da32eee64-Diagram-for-Sprint-Developer-Porta_Lightmode-2.png)
+![Chargeback process flow](https://developer.sprint.paymentology.com/wp-content/uploads/2024/02/Diagram-for-Sprint-Developer-Porta_Lightmode-2.png)
 
 As part of the claim resolution process:
 

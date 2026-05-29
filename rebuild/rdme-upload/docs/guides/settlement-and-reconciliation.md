@@ -1,5 +1,5 @@
 ---
-title: Reconciliation
+title: Reconciliation (Companion API)
 category:
   uri: Guides
 slug: settlement-and-reconciliation

@@ -1,5 +1,5 @@
 ---
-title: Lifecycle Management
+title: Lifecycle Management (Companion API)
 category:
   uri: Guides
 slug: token-lifecycle-management

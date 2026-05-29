@@ -1,5 +1,5 @@
 ---
-title: Card API REFERENCE
+title: Card API Reference
 category:
   uri: Card API
 slug: api-reference

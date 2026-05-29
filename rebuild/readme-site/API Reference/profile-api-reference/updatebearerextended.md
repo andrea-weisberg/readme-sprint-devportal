@@ -2,7 +2,7 @@
 
 Update the cardholder details.
 
-This is an extended API to update additional details like address and employment details. Use [UpdateBearer](/api-reference/shared/updatebearer) in case you only need to update details like name and contact details.
+This is an extended API to update additional details like address and employment details. Use [UpdateBearer](/api-reference/profile-api-reference/updatebearer) in case you only need to update details like name and contact details.
 
 The Paymentology issued terminal ID of the terminal requesting the transaction.
 

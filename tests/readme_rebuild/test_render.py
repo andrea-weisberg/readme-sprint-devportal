@@ -7,6 +7,39 @@ from tools.readme_rebuild.render import render_site
 
 
 class RenderTests(TestCase):
+    def test_render_site_replaces_existing_output(self):
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            stale_file = root / "API Reference" / "shared" / "legacy.md"
+            stale_file.parent.mkdir(parents=True, exist_ok=True)
+            stale_file.write_text("# Legacy\n", encoding="utf-8")
+
+            pages = (
+                DestinationPage(
+                    "1",
+                    "https://developer.sprint.paymentology.com/profile-api-reference/activate/",
+                    "API Reference/profile-api-reference/activate.md",
+                    "Activate",
+                    "API Reference",
+                    "Profile API Reference",
+                    "activate",
+                ),
+            )
+
+            render_site(
+                root,
+                pages,
+                {
+                    "API Reference/profile-api-reference/activate.md": "# Activate\n",
+                },
+            )
+
+            self.assertFalse(stale_file.exists())
+            self.assertEqual(
+                (root / "API Reference" / "profile-api-reference" / "activate.md").read_text(encoding="utf-8"),
+                "# Activate\n",
+            )
+
     def test_render_site_writes_markdown_and_order_files(self):
         with TemporaryDirectory() as tmp:
             root = Path(tmp)

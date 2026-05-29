@@ -1,10 +1,12 @@
-# LoadCardDeductProfile
+# TransferFunds
 
-Load a card with the requested amount and deduct the amount off the profile.
+Transfer funds from one card to another.
 
 The Paymentology issued terminal ID of the terminal requesting the transaction
 
-The profile to which the card belongs, funds will be deducted from this profile.
+The profile to which the card belongs, funds will be loaded to this profile
+
+The card number, tracking number or sequence number of the card to deduct
 
 The card number, tracking number or sequence number of the card to load
 
@@ -18,7 +20,7 @@ HMAC-SHA1 hashed signature of the concatenated method name with all argument val
 
 <?xml version="1.0"?>
 <methodCall>
-<methodName>LoadCardDeductProfile</methodName>
+<methodName>TransferFunds</methodName>
 <params>
 <param>
 <value>
@@ -27,7 +29,7 @@ HMAC-SHA1 hashed signature of the concatenated method name with all argument val
 </param>
 <param>
 <value>
-<string>12345</string>
+<string>P12345</string>
 </value>
 </param>
 <param>
@@ -37,22 +39,32 @@ HMAC-SHA1 hashed signature of the concatenated method name with all argument val
 </param>
 <param>
 <value>
-<string>5000</string>
+<string>123456789</string>
 </value>
 </param>
 <param>
 <value>
-<string>ABCDE12345</string>
+<string>987654321</string>
 </value>
 </param>
 <param>
 <value>
-<dateTime.iso8601>2023-11-08T12:34:56</dateTime.iso8601>
+<int>1000</int>
 </value>
 </param>
 <param>
 <value>
-<string>3b4c4444e1c4444d8e444a4c0c2c2d444e4d4444</string>
+<string>T987654321</string>
+</value>
+</param>
+<param>
+<value>
+<dateTime.iso8601>2023-11-08T12:44:44</dateTime.iso8601>
+</value>
+</param>
+<param>
+<value>
+<string>3b7c4444e1c4444d8e444a4c0c2c2d444e3d4444</string>
 </value>
 </param>
 </params>
@@ -62,7 +74,9 @@ Echo of incoming value
 
 Echo of incoming value
 
-Echo of incoming value
+Number of the card found using the cardIdentifier
+
+Number of the card found using the cardIdentifier
 
 Echo of incoming value
 
@@ -75,6 +89,8 @@ Balance amount in cents
 Authorisation number for transaction
 
 The expiry date of the card
+
+Transaction fee amount in cents
 
 Status code indicating transaction result
 
@@ -94,11 +110,17 @@ Text indicating transaction result
 <member>
 <name>profileNumber</name>
 <value>
-<string>12345</string>
+<string>P12345</string>
 </value>
 </member>
 <member>
-<name>cardNumber</name>
+<name>cardNumberFrom</name>
+<value>
+<string>987654321</string>
+</value>
+</member>
+<member>
+<name>cardNumberTo</name>
 <value>
 <string>987654321</string>
 </value>
@@ -106,25 +128,25 @@ Text indicating transaction result
 <member>
 <name>requestAmount</name>
 <value>
-<int>5000</int>
+<int>1000</int>
 </value>
 </member>
 <member>
 <name>clientTransactionID</name>
 <value>
-<string>ABCDE12345</string>
+<string>T987654321</string>
 </value>
 </member>
 <member>
 <name>serverTransactionID</name>
 <value>
-<string>2023-11-08T12:34:56Z</string>
+<string>ST123456789</string>
 </value>
 </member>
 <member>
 <name>balanceAmount</name>
 <value>
-<int>45000</int>
+<int>5000</int>
 </value>
 </member>
 <member>
@@ -136,19 +158,25 @@ Text indicating transaction result
 <member>
 <name>expiryDate</name>
 <value>
-<string>2023-12-31</string>
+<dateTime.iso8601>2023-12-31T00:00:00</dateTime.iso8601>
+</value>
+</member>
+<member>
+<name>transactionFee</name>
+<value>
+<int>50</int>
 </value>
 </member>
 <member>
 <name>resultCode</name>
 <value>
-<int>0</int>
+<int>200</int>
 </value>
 </member>
 <member>
 <name>resultText</name>
 <value>
-<string>Transaction successful</string>
+<string>Funds transferred successfully</string>
 </value>
 </member>
 </struct>
@@ -157,4 +185,4 @@ Text indicating transaction result
 </params>
 </methodResponse>
 
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)
+[Back to Profile API Reference](/api-reference/profile-api-reference/profile-api-reference)

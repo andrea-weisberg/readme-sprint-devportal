@@ -1,5 +1,5 @@
 ---
-title: Tokenization
+title: Tokenization (Companion API)
 category:
   uri: Guides
 slug: tokenization2

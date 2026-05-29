@@ -40,4 +40,4 @@ Status code indicating transaction result
 
 Text indicating transaction result
 
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)
+[Back to Profile API Reference](/api-reference/profile-api-reference/profile-api-reference)

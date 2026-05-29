@@ -1,5 +1,5 @@
 ---
-title: Lifecycle Management
+title: Lifecycle Management (Card API)
 category:
   uri: Guides
 slug: lifecycle-management

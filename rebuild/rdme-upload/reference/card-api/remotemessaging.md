@@ -362,7 +362,7 @@ Value indicating the status. Values include:
 
 Response should contain all the same fields as the original request. In addition, a resultCode will be always added and specific response information when that is required by the method. The resultCode will be a string field with values from the table below:
 
-![](https://files.readme.io/decac2d5a41c9c47659cb9cfbed019c78bd1e1204507fe8fe72ca121ebe43dac-93d93026a16d4e8554d93904d1375825444e3d0a6ee351a206561c5cf3a99d77-Result-codes.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Result-codes.png)
 
 ## Note:
 
@@ -380,7 +380,7 @@ Example
 
 Authorization: CS-HMAC-SHA-256 Terminal=0061218987,Checksum=9AE9FC1FCA7602C7000B708CA10B396C0E44FF324976AF70D406C22DC0D89A9B
 
-![](https://files.readme.io/5c061190a9c50dca885da0a85bc68f7a313424ea322d4fba607dba0794a60dfe-d1cc947201157c1e36f409aedb4760f84e0dd8fa25ba8768add3d69bf58d7421-Structure.png)
+![](https://developer.sprint.paymentology.com/wp-content/uploads/2021/06/Structure.png)
 
 ## Method
 

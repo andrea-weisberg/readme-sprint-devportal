@@ -1,5 +1,5 @@
 ---
-title: API REFERENCE
+title: QR Payments API Reference
 category:
   uri: QR Payments
 slug: api-reference

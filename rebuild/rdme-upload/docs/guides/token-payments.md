@@ -1,5 +1,5 @@
 ---
-title: Payments
+title: Payments (Companion API)
 category:
   uri: Guides
 slug: token-payments

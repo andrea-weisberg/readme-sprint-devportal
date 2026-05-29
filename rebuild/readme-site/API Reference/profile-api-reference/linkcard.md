@@ -126,4 +126,4 @@ Text indicating transaction result
 </params>
 </methodResponse>
 
-[Back to Profile API Reference](/api-reference/shared/profile-api-reference)
+[Back to Profile API Reference](/api-reference/profile-api-reference/profile-api-reference)

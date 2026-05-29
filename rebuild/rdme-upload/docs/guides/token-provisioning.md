@@ -1,5 +1,5 @@
 ---
-title: Provisioning
+title: Provisioning (Companion API)
 category:
   uri: Guides
 slug: token-provisioning

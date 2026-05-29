@@ -13,6 +13,24 @@ SLUG_OVERRIDES = {
     "Guides/companion-api.md": "companion-api-guide",
 }
 
+GUIDE_TITLE_SUFFIX_SLUGS = {
+    "disputes-card-api",
+    "issue-card",
+    "issue-cards",
+    "lifecycle-management",
+    "payments",
+    "processing",
+    "provisioning",
+    "reconciliation",
+    "settlement-and-reconciliation",
+    "token-lifecycle-management",
+    "token-payments",
+    "token-processing",
+    "token-provisioning",
+    "tokenization",
+    "tokenization2",
+}
+
 GUIDE_ORDER = (
     "get-started",
     "ask-ai",
@@ -308,8 +326,18 @@ def _slug_for_export(page: DestinationPage) -> str:
 def _export_title_for_page(page: DestinationPage) -> str:
     slug = _slug_for_export(page)
 
+    if page.top_bar == "API Reference" and page.slug == "api-reference":
+        if page.subsection.endswith("API"):
+            return f"{page.subsection} Reference"
+        return f"{page.subsection} API Reference"
+
     if page.top_bar == "Reports" and page.slug == "reports":
         return f"{page.subsection} Reports"
+
+    if page.top_bar == "Guides" and page.slug in GUIDE_TITLE_SUFFIX_SLUGS:
+        family = _guide_api_family_suffix(page.source_url)
+        if family:
+            return f"{page.title} ({family})"
 
     if slug.endswith("-card-api"):
         return f"{page.title} (Card API)"
@@ -324,6 +352,15 @@ def _export_title_for_page(page: DestinationPage) -> str:
         return tool_help_titles[slug]
 
     return page.title
+
+
+def _guide_api_family_suffix(source_url: str) -> str:
+    url = source_url.lower()
+    if "/card-api/" in url:
+        return "Card API"
+    if "/companion-api/" in url:
+        return "Companion API"
+    return ""
 
 
 def _parent_slugs_by_bucket(
